@@ -22,11 +22,12 @@ def find_matching_translation(english_block_text, pt_window_text):
     TASK: Identify the Portuguese text segment that corresponds to the English input.
     
     CRITICAL RULES:
-    1. CONTEXT AWARENESS: The Portuguese text is a "sliding window". It may start in the middle of a word (e.g., "ing to the store") or sentence. IGNORE any broken fragments at the very beginning of the window. Look for the first COMPLETE sentence that matches the meaning.
-    2. FLEXIBILITY: The translation may be non-literal, inverted, or missing small emphasis words. Match based on MEANING.
-    3. EXACT EXTRACT: Once you locate the matching segment, extract the substring EXACTLY as it appears in the Portuguese text. Do not correct typos, punctuation, or grammar. Copy it byte-for-byte.
-    4. BOUNDARIES: Do not include text from the next sentence.
-    5. JSON OUTPUT: { "portuguese_substring": "..." }
+    1. CONTEXT AWARENESS: The Portuguese text is a "sliding window". It may start in the middle of a word (e.g., "ing to the store") or sentence. IGNORE any broken fragments at the very beginning of the window. Look  for the first COMPLETE sentence that matches the meaning.
+    2. FULL COVERAGE: The English input might be a long sentence that was translated into TWO or THREE short sentences in Portuguese. - You MUST select all of them. - Do NOT stop at the first period if the English meaning continues
+    3. FLEXIBILITY: The translation may be non-literal, inverted, or missing small emphasis words. Match based on MEANING.
+    4. EXACT EXTRACT: Once you locate the matching segment, extract the substring EXACTLY as it appears in the Portuguese text. Do not correct typos, punctuation, or grammar. Copy it byte-for-byte.
+    5. BOUNDARIES: Do not include text from the next sentence.
+    6. JSON OUTPUT: { "portuguese_substring": "..." }
     """
 
     user_prompt = f"""
@@ -66,6 +67,7 @@ def find_matching_translation(english_block_text, pt_window_text):
 
             # RETRY LOGIC: If AI returns empty string, try again.
             if not matched_text.strip():
+                debug_trap = True
                 if attempt < max_retries - 1:
                     print(f"   ⚠️ Matcher returned empty string. Retrying... ({attempt+1}/{max_retries})")
                     continue # Try again

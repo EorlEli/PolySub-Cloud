@@ -3,167 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subtitle Aligner | GPT-5-mini</title>
+    <title>PolySub | Video Localization</title>
     <style>
-        :root {
-            --primary: #2563eb;
-            --success: #16a34a;
-            --bg: #f8fafc;
-            --card: #ffffff;
-        }
-
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background-color: var(--bg);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            color: #334155;
-        }
-
-        .container {
-            background: var(--card);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 500px;
-            text-align: center;
-        }
-
-        h1 { margin-bottom: 0.5rem; color: #1e293b; }
-        p.subtitle { color: #64748b; margin-bottom: 2rem; font-size: 0.9rem; }
-
-        .upload-group { margin-bottom: 1.5rem; text-align: left; }
-        label { display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem; }
+        :root { --primary: #6366f1; --bg: #f8fafc; --text: #334155; }
+        body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
         
-        input[type="file"] {
-            display: block;
-            width: 100%;
-            padding: 0.5rem;
-            border: 2px dashed #cbd5e1;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: border-color 0.2s;
-        }
-        input[type="file"]:hover { border-color: var(--primary); }
+        .card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); width: 100%; max-width: 480px; text-align: center; }
+        h1 { margin: 0 0 0.5rem 0; color: #1e293b; }
+        p { color: #64748b; margin-bottom: 2rem; }
 
+        .drop-zone {
+            border: 2px dashed #cbd5e1; border-radius: 12px; padding: 2rem;
+            cursor: pointer; transition: all 0.2s; margin-bottom: 1.5rem;
+        }
+        .drop-zone:hover { border-color: var(--primary); background: #eef2ff; }
+        .drop-zone.has-file { border-color: #10b981; background: #ecfdf5; }
+        
+        select { width: 100%; padding: 0.8rem; border: 1px solid #cbd5e1; border-radius: 8px; margin-bottom: 1.5rem; font-size: 1rem; }
+        
         button {
-            background-color: var(--primary);
-            color: white;
-            border: none;
-            padding: 0.75rem 2rem;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            width: 100%;
-            transition: opacity 0.2s;
+            width: 100%; padding: 1rem; background: var(--primary); color: white;
+            border: none; border-radius: 8px; font-weight: 600; font-size: 1rem;
+            cursor: pointer; transition: opacity 0.2s;
         }
-        button:hover { opacity: 0.9; }
-        button:disabled { background-color: #94a3b8; cursor: not-allowed; }
+        button:disabled { opacity: 0.7; cursor: wait; }
 
-        #status {
-            margin-top: 1.5rem;
-            padding: 1rem;
-            border-radius: 8px;
-            display: none;
-            font-size: 0.9rem;
-        }
-        .status-loading { background-color: #e0f2fe; color: #0369a1; }
-        .status-success { background-color: #dcfce7; color: #15803d; }
-        .status-error { background-color: #fee2e2; color: #b91c1c; }
-
-        /* Spinner animation */
-        .spinner {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border: 2px solid currentColor;
-            border-right-color: transparent;
-            border-radius: 50%;
-            animation: spin 0.75s linear infinite;
-            margin-right: 8px;
-        }
-        @keyframes spin { 100% { transform: rotate(360deg); } }
+        #status { margin-top: 1.5rem; font-size: 0.9rem; display: none; padding: 1rem; border-radius: 8px; }
+        .loading { background: #e0f2fe; color: #0369a1; }
+        .error { background: #fee2e2; color: #b91c1c; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Subtitle Aligner</h1>
-        <p class="subtitle">Powered by GPT-5-mini</p>
+    <div class="card">
+        <h1>PolySub</h1>
+        <p>AI Video Localization Service</p>
 
         <form id="uploadForm">
-            <div class="upload-group">
-                <label for="englishVtt">1. English Subtitle (.vtt)</label>
-                <input type="file" id="englishVtt" accept=".vtt" required>
+            <div class="drop-zone" id="dropZone" onclick="document.getElementById('videoFile').click()">
+                <span id="fileName">📁 Click to Upload Video (.mp4)</span>
+                <input type="file" id="videoFile" accept=".mp4,.mov,.avi" style="display: none" required>
             </div>
 
-            <div class="upload-group">
-                <label for="portugueseTxt">2. Portuguese Translation (.txt)</label>
-                <input type="file" id="portugueseTxt" accept=".txt" required>
-            </div>
+            <select id="language" required>
+                <option value="Portuguese">Translate to Portuguese</option>
+                <option value="Spanish">Translate to Spanish</option>
+                <option value="French">Translate to French</option>
+                <option value="German">Translate to German</option>
+                <option value="Italian">Translate to Italian</option>
+            </select>
 
-            <button type="submit" id="submitBtn">Start Alignment</button>
+            <button type="submit" id="btn">Start Processing</button>
         </form>
 
         <div id="status"></div>
     </div>
 
     <script>
+        const fileInput = document.getElementById('videoFile');
+        const dropZone = document.getElementById('dropZone');
+        const fileNameDisplay = document.getElementById('fileName');
         const form = document.getElementById('uploadForm');
         const statusDiv = document.getElementById('status');
-        const btn = document.getElementById('submitBtn');
+        const btn = document.getElementById('btn');
+
+        // Visual feedback when file is selected
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length > 0) {
+                fileNameDisplay.innerText = "✅ " + fileInput.files[0].name;
+                dropZone.classList.add('has-file');
+            }
+        });
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
-            // UI Updates
-            btn.disabled = true;
-            btn.innerText = "Processing...";
-            statusDiv.style.display = 'block';
-            statusDiv.className = 'status-loading';
-            statusDiv.innerHTML = '<span class="spinner"></span> Aligning subtitles... Check server logs for details.';
+            if (!fileInput.files[0]) return alert("Please select a video file!");
 
-            // Prepare Data
+            // UI Loading State
+            btn.disabled = true;
+            btn.innerText = "Extracting & Translating... (This takes time)";
+            statusDiv.style.display = 'block';
+            statusDiv.className = 'loading';
+            statusDiv.innerText = "⏳ Uploading video and processing... Please wait.";
+
             const formData = new FormData();
-            formData.append('english_vtt', document.getElementById('englishVtt').files[0]);
-            formData.append('portuguese_txt', document.getElementById('portugueseTxt').files[0]);
+            formData.append('video_file', fileInput.files[0]);
+            formData.append('target_language', document.getElementById('language').value);
 
             try {
-                const response = await fetch('/process/', {
-                    method: 'POST',
-                    body: formData
-                });
+                const response = await fetch('/process_video/', { method: 'POST', body: formData });
 
                 if (!response.ok) {
-                    const errorText = await response.json();
-                    throw new Error(errorText.detail || 'Processing failed');
+                    const err = await response.json();
+                    throw new Error(err.detail || 'Server Error');
                 }
 
-                // Handle File Download
+                // Download File
                 const blob = await response.blob();
                 const url = window.URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = "Portuguese_Aligned.vtt";
+                // Get filename from header or default
+                const header = response.headers.get('Content-Disposition');
+                let filename = "subtitles.vtt";
+                if (header && header.indexOf('filename=') !== -1) {
+                    filename = header.split('filename=')[1].replace(/"/g, '');
+                }
+                a.download = filename;
                 document.body.appendChild(a);
                 a.click();
                 a.remove();
 
-                // Success Message
-                statusDiv.className = 'status-success';
-                statusDiv.innerText = '✅ Done! Download started.';
-            
+                statusDiv.innerText = "✅ Done! Download started.";
+                statusDiv.style.background = "#dcfce7";
+                statusDiv.style.color = "#15803d";
+
             } catch (error) {
-                statusDiv.className = 'status-error';
-                statusDiv.innerText = '❌ Error: ' + error.message;
+                statusDiv.className = 'error';
+                statusDiv.innerText = "❌ Error: " + error.message;
             } finally {
                 btn.disabled = false;
-                btn.innerText = "Start Alignment";
+                btn.innerText = "Start Processing";
             }
         });
     </script>

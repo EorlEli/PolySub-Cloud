@@ -1,132 +1,127 @@
-import uvicorn
-from fastapi import FastAPI, UploadFile, File, HTTPException
-from fastapi.responses import FileResponse, HTMLResponse
-import logging
-import sys
 import os
-from dotenv import load_dotenv
+import shutil
+import uvicorn
+import time
+from fastapi import FastAPI, File, UploadFile, Form, HTTPException
+from fastapi.responses import Response, FileResponse
+from fastapi.staticfiles import StaticFiles
 
-# --- SETUP LOGGING ---
-logging.basicConfig(stream=sys.stderr, level=logging.INFO)
+# Import our new modules
+from grouper import read_vtt, parse_vtt_time
+from transcriber import extract_audio, transcribe_audio
+from text_translator import translate_full_text
+from engine import run_alignment_engine
+from utils import reset_session_cost, get_session_cost, log_whisper_cost # Import these!
 
-# --- IMPORT MODULES ---
-try:
-    from grouper import parse_vtt_lines, get_clean_blocks
-    from matcher import find_matching_translation
-    from distributor import distribute_translation
-except ImportError as e:
-    print(f"CRITICAL: Could not import modules. {e}")
-    exit(1)
-
-load_dotenv()
 app = FastAPI()
 
-def generate_vtt_string(segments):
-    output = ["WEBVTT\n"]
-    for i, seg in enumerate(segments, 1):
-        output.append(str(i))
-        output.append(f"{seg['start']} --> {seg['end']}")
-        output.append(f"{seg['text']}\n")
-    return "\n".join(output)
+# Mount static files (to serve index.html)
+app.mount("/static", StaticFiles(directory=".", html=True), name="static")
 
-@app.get("/", response_class=HTMLResponse)
-async def read_root():
-    try:
-        with open("index.html", "r", encoding="utf-8") as f:
-            return f.read()
-    except FileNotFoundError:
-        return "<h1>Backend is running. Upload index.html.</h1>"
+@app.get("/")
+async def read_index():
+    return FileResponse("index.html")
 
-@app.post("/process/")
-async def process_subtitles(
-    english_vtt: UploadFile = File(...),
-    portuguese_txt: UploadFile = File(...)
+@app.post("/process_video/")
+async def process_video_endpoint(
+    video_file: UploadFile = File(...),
+    target_language: str = Form("Portuguese") # Default if not chosen
 ):
-    print(f"\n--- NEW JOB: {english_vtt.filename} (STRICT CURSOR MODE) ---")
-
-    # 1. READ FILES
     try:
-        vtt_content = (await english_vtt.read()).decode("utf-8")
-        pt_full_text = (await portuguese_txt.read()).decode("utf-8")
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Error reading files: {e}")
+        # --- 0. RESET COST COUNTER & START TIMER ---
+        reset_session_cost()
+        job_start_time = time.time()
+        
+        # --- 1. SETUP ---
+        video_filename = f"temp_{video_file.filename}"
+        print(f"\n🎬 NEW JOB: {video_filename} -> {target_language}")
+        
+        # Save uploaded video to disk
+        with open(video_filename, "wb") as buffer:
+            shutil.copyfileobj(video_file.file, buffer)
 
-    # 2. GROUPING
-    print("1. Grouping English lines...")
-    raw_lines = parse_vtt_lines(vtt_content)
-    blocks = get_clean_blocks(raw_lines)
-    
-    if not blocks:
-        raise HTTPException(status_code=400, detail="No blocks found.")
-    print(f"   -> Found {len(blocks)} blocks.")
+        # --- 2. EXTRACT AUDIO ---
+        # Create a unique audio filename
+        audio_filename = f"temp_audio_{video_file.filename}.mp3"
+        audio_path = extract_audio(video_filename, audio_filename)
+        if not audio_path:
+            raise HTTPException(status_code=500, detail="Audio extraction failed.")
 
-    final_segments = []
-    
-    # --- LOGIC: STRICT CURSOR ---
-    pt_cursor = 0 
-    
-    # We use 1000 chars (approx 150 words). 
-    # This is plenty for even the longest sentence, but efficient.
-    WINDOW_SIZE = 1000 
-
-    try:
-        for i, block in enumerate(blocks):
-            en_text = " ".join([l['text'] for l in block])
-            print(f"[{i+1}/{len(blocks)}] Processing lines {block[0]['id']}-{block[-1]['id']}...")
-
-            # --- STEP A: PREPARE WINDOW (The Fix) ---
-            # We create a "Rearview Mirror" of 50 characters.
-            # This prevents the "Greedy Neighbor" bug where the previous block eat the first word of this block.
-            overlap = 50
-            window_start = max(0, pt_cursor - overlap)
-            window_end = pt_cursor + WINDOW_SIZE
+        # --- 3. TRANSCRIBE (Whisper) ---
+        # Returns: (VTT String, English Text String)
+        vtt_content, full_english_text = transcribe_audio(audio_path)
+        
+        # CALCULATE WHISPER COST
+        try:
+            import re
+            # Find the very last timestamp in the file
+            timestamps = re.findall(r"--> (\d{2}:\d{2}:\d{2}\.\d{3})", vtt_content)
             
-            # Slice the text using the new, wider window
-            pt_window = pt_full_text[window_start : window_end]
-
-            # --- STEP B: FIND MATCH ---
-            matched_text = find_matching_translation(en_text, pt_window)
-            
-            if not matched_text:
-                # If we still don't find it, we log it but do NOT crash.
-                print(f"   ⚠️ Block {i+1}: No match found. Cursor stuck at {pt_cursor}.")
-                debug_trap = True
-                matched_text = "[TRANSLATION NOT FOUND]"
+            if timestamps:
+                last_timestamp = timestamps[-1]
                 
-                # OPTIONAL: You could force the cursor forward slightly to try to "skip" the bad spot
-                # pt_cursor += 50 
-            else:
-                # --- STEP C: UPDATE CURSOR (Math Adjustment) ---
-                found_index = pt_window.find(matched_text)
+                # REUSE THE ROBUST FUNCTION FROM GROUPER.PY
+                # It handles 00:00:00.000 correctly without crashing
+                seconds = parse_vtt_time(last_timestamp)
                 
-                if found_index != -1:
-                    # We must calculate the absolute position in the file.
-                    # Formula: (Start of Window) + (Location in Window) + (Length of Match)
-                    absolute_end = window_start + found_index + len(matched_text)
-                    
-                    # Log the jump
-                    # print(f"   -> Match found. Moving cursor to {absolute_end}")
-                    
-                    # Update the master cursor
-                    pt_cursor = absolute_end
-                else:
-                    print("   ⚠️ Error: AI returned text not found in window.")
+                log_whisper_cost(seconds)
 
-            # --- STEP D: DISTRIBUTE LINES ---
-            new_segments = distribute_translation(block, matched_text)
-            final_segments.extend(new_segments)
+        except Exception as e:
+            print(f"⚠️ Could not calculate Whisper cost: {e}")
+        
+        # Save VTT to a temp file because 'read_vtt' expects a file path
+        temp_vtt_path = "temp_generated.vtt"
+        with open(temp_vtt_path, "w", encoding="utf-8") as f:
+            f.write(vtt_content)
+
+        # --- 4. TRANSLATE TEXT (GPT) ---
+        full_target_text = translate_full_text(full_english_text, target_language)
+        if not full_target_text:
+            raise HTTPException(status_code=500, detail="Translation failed.")
+
+        # --- 5. ALIGNMENT ENGINE (The Core) ---
+        # Parse the English VTT we just made
+        blocks = read_vtt(temp_vtt_path)
+        
+        # Run your logic loop
+        final_segments = run_alignment_engine(blocks, full_target_text)
+
+        # --- 6. OUTPUT GENERATION ---
+        output_vtt = "WEBVTT\n\n"
+        for seg in final_segments:
+            output_vtt += f"{seg['start']} --> {seg['end']}\n{seg['text']}\n\n"
+
+        # --- 7. TIME, COST & CLEANUP ---
+        job_end_time = time.time()
+        total_time = job_end_time - job_start_time
+        total_spent = get_session_cost()
+        print(f"\n💰 JOB COMPLETE. TOTAL ESTIMATED COST: ${total_spent:.5f}\n")
+        print(f"⏰ TOTAL JOB TIME: {total_time:.2f} seconds\n")
+
+        # Delete temp files to keep folder clean
+        temp_files = [video_filename, audio_path, temp_vtt_path]
+        for f in temp_files:
+            if f and os.path.exists(f):
+                try:
+                    os.remove(f)
+                except PermissionError:
+                    print(f"⚠️ Could not delete {f} (File in use)")
+
+        print("✅ Job Complete. Sending file to user.")
+        
+        # Return the file as a download
+        return Response(content=output_vtt, media_type="text/vtt", headers={
+            "Content-Disposition": f"attachment; filename=subtitles_{target_language}.vtt"
+        })
 
     except Exception as e:
-        print(f"CRITICAL ERROR: {e}")
+        print(f"❌ CRITICAL ERROR: {e}")
+        # Clean up video if it exists even on error
+        if os.path.exists(video_filename):
+            os.remove(video_filename)
         raise HTTPException(status_code=500, detail=str(e))
 
-    # 4. OUTPUT
-    final_vtt = generate_vtt_string(final_segments)
-    output_filename = "Portuguese_Aligned.vtt"
-    with open(output_filename, "w", encoding="utf-8") as f:
-        f.write(final_vtt)
-    
-    return FileResponse(output_filename, media_type='text/vtt', filename=output_filename)
-
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    print("🚀 Starting PolySub Server...")
+    print("👉 Open your browser at: http://127.0.0.1:8080")
+    uvicorn.run(app, host="127.0.0.1", port=8080)
