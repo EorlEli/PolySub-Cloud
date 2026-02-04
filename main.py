@@ -53,7 +53,7 @@ async def process_video_endpoint(
         # Returns: (VTT String, English Text String)
         vtt_content, full_english_text = transcribe_audio(audio_path, use_correction=use_correction)
         
-        # CALCULATE WHISPER COST
+        # CALCULATE Speech2Text COST
         try:
             import re
             # Find the very last timestamp in the file
@@ -62,7 +62,7 @@ async def process_video_endpoint(
             if timestamps:
                 last_timestamp = timestamps[-1]
                 
-                # REUSE THE ROBUST FUNCTION FROM GROUPER.PY
+                # REUSE THE ROBUST FUNCTION FROM GROUPER.
                 # It handles 00:00:00.000 correctly without crashing
                 seconds = parse_vtt_time(last_timestamp)
                 
