@@ -6,10 +6,11 @@ from fastapi import FastAPI, File, UploadFile, Form, HTTPException
 from fastapi.responses import Response, FileResponse
 from fastapi.staticfiles import StaticFiles
 
+
 # Import our new modules
 from grouper import read_vtt, parse_vtt_time
 from transcriber import extract_audio, transcribe_audio
-from text_translator import translate_full_text
+from text_translator import translate_full_text, verify_translation_quality
 from engine import run_alignment_engine
 from utils import reset_session_cost, get_session_cost, log_whisper_cost # Import these!
 
@@ -25,7 +26,8 @@ async def read_index():
 @app.post("/process_video/")
 async def process_video_endpoint(
     video_file: UploadFile = File(...),
-    target_language: str = Form("Portuguese") # Default if not chosen
+    target_language: str = Form("Portuguese"), # Default if not chosen
+    use_correction: bool = Form(True) # Default to True
 ):
     try:
         # --- 0. RESET COST COUNTER & START TIMER ---
@@ -47,9 +49,9 @@ async def process_video_endpoint(
         if not audio_path:
             raise HTTPException(status_code=500, detail="Audio extraction failed.")
 
-        # --- 3. TRANSCRIBE (Whisper) ---
+        # --- 3. TRANSCRIBE ---
         # Returns: (VTT String, English Text String)
-        vtt_content, full_english_text = transcribe_audio(audio_path)
+        vtt_content, full_english_text = transcribe_audio(audio_path, use_correction=use_correction)
         
         # CALCULATE WHISPER COST
         try:
@@ -75,9 +77,12 @@ async def process_video_endpoint(
             f.write(vtt_content)
 
         # --- 4. TRANSLATE TEXT (GPT) ---
-        full_target_text = translate_full_text(full_english_text, target_language)
-        if not full_target_text:
+        full_target_text1 = translate_full_text(full_english_text, target_language)
+        if not full_target_text1:
             raise HTTPException(status_code=500, detail="Translation failed.")
+
+        # --- 4.5. VERIFY & REFINE TRANSLATION (LLM Check) ---
+        full_target_text = verify_translation_quality(full_english_text, full_target_text1, target_language)
 
         # --- 5. ALIGNMENT ENGINE (The Core) ---
         # Parse the English VTT we just made
@@ -90,6 +95,10 @@ async def process_video_endpoint(
         output_vtt = "WEBVTT\n\n"
         for seg in final_segments:
             output_vtt += f"{seg['start']} --> {seg['end']}\n{seg['text']}\n\n"
+
+        temp_vtt_path2 = "temp_generated_target.vtt"
+        with open(temp_vtt_path2, "w", encoding="utf-8") as f:
+            f.write(output_vtt)
 
         # --- 7. TIME, COST & CLEANUP ---
         job_end_time = time.time()
@@ -124,4 +133,4 @@ async def process_video_endpoint(
 if __name__ == "__main__":
     print("🚀 Starting PolySub Server...")
     print("👉 Open your browser at: http://127.0.0.1:8080")
-    uvicorn.run(app, host="127.0.0.1", port=8080)
+    uvicorn.run("main:app", host="127.0.0.1", port=8080, reload=True)

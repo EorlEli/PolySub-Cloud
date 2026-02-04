@@ -8,9 +8,9 @@ from utils import log_openai_usage
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def find_matching_translation(english_block_text, pt_window_text):
+def find_matching_translation(original_language_block_text, target_language_window_text):
     """
-    Finds the exact Portuguese substring corresponding to the English text.
+    Finds the exact target language substring corresponding to the original language text.
     Retries automatically if the AI returns an empty result.
     """
     
@@ -18,24 +18,24 @@ def find_matching_translation(english_block_text, pt_window_text):
     # We explicitly tell the AI about the "Sliding Window" artifacts (broken words).
     system_prompt = """
     You are a Translation Matcher.
-    INPUT: An English text segment and a Portuguese text window.
-    TASK: Identify the Portuguese text segment that corresponds to the English input.
+    INPUT: An original language text segment and a target language text window.
+    TASK: Identify the target language text segment that corresponds to the original language input.
     
     CRITICAL RULES:
-    1. CONTEXT AWARENESS: The Portuguese text is a "sliding window". It may start in the middle of a word (e.g., "ing to the store") or sentence. IGNORE any broken fragments at the very beginning of the window. Look  for the first COMPLETE sentence that matches the meaning.
-    2. FULL COVERAGE: The English input might be a long sentence that was translated into TWO or THREE short sentences in Portuguese. - You MUST select all of them. - Do NOT stop at the first period if the English meaning continues
-    3. FLEXIBILITY: The translation may be non-literal, inverted, or missing small emphasis words. Match based on MEANING.
-    4. EXACT EXTRACT: Once you locate the matching segment, extract the substring EXACTLY as it appears in the Portuguese text. Do not correct typos, punctuation, or grammar. Copy it byte-for-byte.
-    5. BOUNDARIES: Do not include text from the next sentence.
-    6. JSON OUTPUT: { "portuguese_substring": "..." }
+    1. CONTEXT AWARENESS: The target language text is a "sliding window". It may start in the middle of a word or sentence.
+    2. KEY INSTRUCTION: DO NOT ignore text at the start of the window. If the original language input corresponds to the text at the very beginning of the window (even if it looks like a fragment), YOU MUST MATCH IT.
+    3. PARTIAL MATCHING: The original language input is often just a fragment of a sentence. You must find the corresponding target fragment. Do NOT look for a "complete sentence" if the input is only a clause.
+    4. FULL COVERAGE: If the input requires it, select across multiple sentences.
+    5. EXACT EXTRACT: Extract the substring EXACTLY as it appears in the target language text. No corrections.
+    6. JSON OUTPUT: { "target_language_substring": "..." }
     """
 
     user_prompt = f"""
-    --- ENGLISH SEGMENT ---
-    {english_block_text}
+    --- ORIGINAL LANGUAGE SEGMENT ---
+    {original_language_block_text}
 
-    --- PORTUGUESE WINDOW (Search here) ---
-    {pt_window_text}
+    --- TARGET LANGUAGE WINDOW (Search here) ---
+    {target_language_window_text}
     """
 
     current_model = "gpt-5-nano"
@@ -63,7 +63,7 @@ def find_matching_translation(english_block_text, pt_window_text):
                 raise ValueError("Empty response from API")
                 
             result_json = json.loads(content)
-            matched_text = result_json.get("portuguese_substring", "")
+            matched_text = result_json.get("target_language_substring", "")
 
             # RETRY LOGIC: If AI returns empty string, try again.
             if not matched_text.strip():

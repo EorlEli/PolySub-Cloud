@@ -1,38 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PolySub | Video Localization</title>
     <style>
-        :root { --primary: #6366f1; --bg: #f8fafc; --text: #334155; }
-        body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        
-        .card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); width: 100%; max-width: 480px; text-align: center; }
-        h1 { margin: 0 0 0.5rem 0; color: #1e293b; }
-        p { color: #64748b; margin-bottom: 2rem; }
+        :root {
+            --primary: #6366f1;
+            --bg: #f8fafc;
+            --text: #334155;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 0.5rem 0;
+            color: #1e293b;
+        }
+
+        p {
+            color: #64748b;
+            margin-bottom: 2rem;
+        }
 
         .drop-zone {
-            border: 2px dashed #cbd5e1; border-radius: 12px; padding: 2rem;
-            cursor: pointer; transition: all 0.2s; margin-bottom: 1.5rem;
+            border: 2px dashed #cbd5e1;
+            border-radius: 12px;
+            padding: 2rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 1.5rem;
         }
-        .drop-zone:hover { border-color: var(--primary); background: #eef2ff; }
-        .drop-zone.has-file { border-color: #10b981; background: #ecfdf5; }
-        
-        select { width: 100%; padding: 0.8rem; border: 1px solid #cbd5e1; border-radius: 8px; margin-bottom: 1.5rem; font-size: 1rem; }
-        
-        button {
-            width: 100%; padding: 1rem; background: var(--primary); color: white;
-            border: none; border-radius: 8px; font-weight: 600; font-size: 1rem;
-            cursor: pointer; transition: opacity 0.2s;
-        }
-        button:disabled { opacity: 0.7; cursor: wait; }
 
-        #status { margin-top: 1.5rem; font-size: 0.9rem; display: none; padding: 1rem; border-radius: 8px; }
-        .loading { background: #e0f2fe; color: #0369a1; }
-        .error { background: #fee2e2; color: #b91c1c; }
+        .drop-zone:hover {
+            border-color: var(--primary);
+            background: #eef2ff;
+        }
+
+        .drop-zone.has-file {
+            border-color: #10b981;
+            background: #ecfdf5;
+        }
+
+        select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 1rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        button:disabled {
+            opacity: 0.7;
+            cursor: wait;
+        }
+
+        #status {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            display: none;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .loading {
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+
+        .error {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="card">
@@ -52,6 +128,13 @@
                 <option value="German">Translate to German</option>
                 <option value="Italian">Translate to Italian</option>
             </select>
+
+            <div style="margin-bottom: 1.5rem; text-align: left; display: flex; align-items: center; gap: 0.5rem;">
+                <input type="checkbox" id="useCorrection" checked style="width: auto; margin-right: 8px;">
+                <label for="useCorrection" style="color: #64748b; font-size: 0.95rem; cursor: pointer;">
+                    Enable AI Transcription Correction (Slower but more accurate)
+                </label>
+            </div>
 
             <button type="submit" id="btn">Start Processing</button>
         </form>
@@ -89,6 +172,7 @@
             const formData = new FormData();
             formData.append('video_file', fileInput.files[0]);
             formData.append('target_language', document.getElementById('language').value);
+            formData.append('use_correction', document.getElementById('useCorrection').checked);
 
             try {
                 const response = await fetch('/process_video/', { method: 'POST', body: formData });
@@ -128,4 +212,5 @@
         });
     </script>
 </body>
+
 </html>

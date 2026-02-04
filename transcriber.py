@@ -2,9 +2,15 @@ import os
 import ffmpeg
 from openai import OpenAI
 from dotenv import load_dotenv
+from deepgram import DeepgramClient
+# REMOVE deepgram_captions logic
+# from deepgram_captions import DeepgramConverter, webvtt
+
+from corrector import apply_corrections
 
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+deepgram_client = DeepgramClient(api_key=os.getenv("DEEPGRAM_API_KEY"))
 
 def extract_audio(video_path, output_audio_path="temp_audio.mp3"):
     """
@@ -35,48 +41,97 @@ def extract_audio(video_path, output_audio_path="temp_audio.mp3"):
         print(f"   ❌ FFmpeg Error: {e}")
         return None
 
-def transcribe_audio(audio_path):
+def format_timestamp(seconds):
     """
-    Step 3: Sends audio to OpenAI Whisper API to get the source VTT.
+    Converts float seconds to WebVTT timestamp format: HH:MM:SS.mmm
     """
-    print("   🎙️ Sending audio to Whisper API (Transcribing)...")
+    if seconds is None:
+        return "00:00:00.000"
     
-    audio_file = open(audio_path, "rb")
+    milliseconds = int((seconds % 1) * 1000)
+    int_seconds = int(seconds)
+    hours = int_seconds // 3600
+    minutes = (int_seconds % 3600) // 60
+    seconds_rem = int_seconds % 60
     
-    # We ask for TWO things:
-    # 1. The VTT file (for timestamps)
-    # 2. The Raw Text (for translation context)
-    
-    # First, get the VTT
-    transcript_vtt = client.audio.transcriptions.create(
-        model="whisper-1", 
-        file=audio_file, 
-        response_format="vtt"
-    )
-    
-    # Reset file pointer to read again for raw text
-    audio_file.seek(0)
-    
-    # Second, get the plain text (optional, but helpful for the Translator Step)
-    transcript_text = client.audio.transcriptions.create(
-        model="whisper-1", 
-        file=audio_file, 
-        response_format="text"
-    )
-    
-    print("   ✅ Transcription complete.")
-    return transcript_vtt, transcript_text
+    return f"{hours:02}:{minutes:02}:{seconds_rem:02}.{milliseconds:03}"
 
-# --- Quick Test Block ---
-if __name__ == "__main__":
-    # Test this file independently
-    # Put a dummy 'test.mp4' in your folder to test this.
-    test_video = "test.mp4" 
-    if os.path.exists(test_video):
-        audio = extract_audio(test_video)
-        if audio:
-            vtt, text = transcribe_audio(audio)
-            print("\n--- VTT PREVIEW ---\n", vtt)
-            print("\n--- TEXT PREVIEW ---\n", text)
-    else:
-        print("⚠️ No 'test.mp4' found. Please add a video file to test.")
+def generate_vtt_from_utterances(utterances):
+    """
+    Generates a WebVTT string from the list of utterances.
+    """
+    vtt_output = "WEBVTT\n\n"
+    
+    for u in utterances:
+        start_time = format_timestamp(u.get("start", 0))
+        end_time = format_timestamp(u.get("end", 0))
+        text = u.get("transcript", "").strip()
+        
+        # Output block
+        vtt_output += f"{start_time} --> {end_time}\n{text}\n\n"
+        
+    return vtt_output
+
+def transcribe_audio(audio_path, use_correction=True):
+    """
+    Step 3: Sends audio to Deepgram (Nova-2) to get VTT and Text.
+    """
+    print("   🎙️ Sending audio to Deepgram Nova-2 API...")
+    
+    try:
+        # 1. Read Audio File
+        with open(audio_path, "rb") as file:
+            buffer_data = file.read()
+        
+        # 2. Configure Deepgram Options
+        # smart_format=True: Adds punctuation and capitalization
+        # model="nova-2": Fastest and most accurate model
+        options = {
+            "model": "nova-3",
+            "smart_format": True,
+            "utterances": True,      # Required for VTT conversion
+            "detect_language": True, # Auto-detects language
+        }
+        
+        # 3. Call API (Once)
+        # Using deepgram-sdk v3+ structure: listen.v1.media.transcribe_file
+        response = deepgram_client.listen.v1.media.transcribe_file(
+            request=buffer_data,
+            **options
+        )
+        
+        # 4. LLM Correction
+        if use_correction:
+            print("   🧠 Analyzing and correcting transcription...")
+            # This updates response['results']['utterances'] transcript text
+            response, transcript_text = apply_corrections(response, openai_client)
+        else:
+            print("   ⏩ Skipping LLM correction (User disabled it).")
+            transcript_text = response.results.channels[0].alternatives[0].transcript
+        
+        # 5. Generate VTT (Custom Logic)
+        # We assume response is now a DICT (because apply_corrections converts it),
+        # or it is an Object (if skipped correction).
+        
+        # Normalize to dict if not already (for the VTT generator)
+        import json
+        if not isinstance(response, dict):
+             if hasattr(response, "to_dict"): response = response.to_dict()
+             elif hasattr(response, "model_dump"): response = response.model_dump()
+             else: response = json.loads(response.to_json())
+
+        try:
+            utterances = response["results"]["utterances"]
+        except KeyError:
+            # Fallback if no utterances
+            print("   ⚠️ No utterances found. Returning empty VTT.")
+            utterances = []
+
+        transcript_vtt = generate_vtt_from_utterances(utterances)
+        
+        print("   ✅ Transcription complete.")
+        return transcript_vtt, transcript_text
+
+    except Exception as e:
+        print(f"   ❌ Deepgram Error: {e}")
+        raise e
