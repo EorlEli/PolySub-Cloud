@@ -46,11 +46,26 @@ def run_alignment_engine(blocks, full_target_text):
             if found_index == -1 and len(matched_text) > 20:
                 anchor = matched_text[:20]
                 if target_language_window.count(anchor) == 1:
-                    found_index = target_language_window.find(anchor) # Fixed typo 'pt_window' -> 'target_language_window'
+                    found_index = target_language_window.find(anchor)
 
             if found_index != -1:
-                absolute_end = window_start + found_index + len(matched_text)
-                pt_cursor = absolute_end
+                #absolute_end = window_start + found_index + len(matched_text)
+                #pt_cursor = absolute_end
+                absolute_start = window_start + found_index
+                
+                # --- FIX: trim overlap if match starts before current cursor ---
+                if absolute_start < pt_cursor:
+                    overlap_len = pt_cursor - absolute_start
+                    # If the entire match is behind us, skip it (unlikely but safe)
+                    if overlap_len >= len(matched_text):
+                        matched_text = ""
+                    else:
+                        matched_text = matched_text[overlap_len:]
+                
+                # Recalculate positions based on (potentially trimmed) text
+                # We essentially just appended the NEW part of the match to the cursor
+                pt_cursor += len(matched_text)
+
             else:
                 print(f"   ⚠️ [Block {i+1}] Match text returned by AI not found in window.")
                 # Fallback: Assume we actally found it but couldn't locate string. 

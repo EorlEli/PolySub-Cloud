@@ -13,10 +13,10 @@ def distribute_translation(original_block, translated_text):
     # We use a hierarchical splitting strategy
     raw_chunks = intelligent_split(translated_text)
  
-    print(f"DEBUG: distribute_translation total_chars={len(translated_text)}")
-    print(f"DEBUG: raw_chunks count={len(raw_chunks)}")
-    for rc in raw_chunks:
-        print(f"   -> Chunk ({len(rc)}): {rc[:20]}...")
+    #print(f"DEBUG: distribute_translation total_chars={len(translated_text)}")
+    #print(f"DEBUG: raw_chunks count={len(raw_chunks)}")
+    #for rc in raw_chunks:
+    #    print(f"   -> Chunk ({len(rc)}): {rc[:20]}...")
     
     # 3. TIMING PHASE: Assign tentative times
     temp_segments = []

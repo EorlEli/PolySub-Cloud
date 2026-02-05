@@ -14,6 +14,7 @@ from text_translator import translate_full_text, verify_translation_quality
 from engine import run_alignment_engine
 from utils import reset_session_cost, get_session_cost, log_whisper_cost # Import these!
 from translation_evaluator import evaluate_translations
+from validator import validate_vtt_structure
 
 app = FastAPI()
 
@@ -110,6 +111,29 @@ async def process_video_endpoint(
         temp_vtt_path2 = "temp_generated_target.vtt"
         with open(temp_vtt_path2, "w", encoding="utf-8") as f:
             f.write(output_vtt)
+
+        # --- 6.5. VALIDATION ---
+        validation_report = validate_vtt_structure(temp_vtt_path, temp_vtt_path2)
+        
+        # Log Validation Results
+        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+        log_entry = f"[{timestamp}] Video: {video_file.filename} -> {target_language}\n"
+        if validation_report["valid"]:
+            log_entry += "✅ VALIDATION PASSED\n"
+        else:
+            log_entry += f"❌ VALIDATION FAILED ({len(validation_report['errors'])} errors)\n"
+            for err in validation_report['errors']:
+                log_entry += f"   - ERROR: {err}\n"
+                
+        if validation_report["warnings"]:
+             log_entry += f"⚠️ WARNINGS ({len(validation_report['warnings'])}):\n"
+             for warn in validation_report['warnings']:
+                 log_entry += f"   - {warn}\n"
+        
+        log_entry += "-"*40 + "\n"
+        
+        with open("validation_log.txt", "a", encoding="utf-8") as vf:
+            vf.write(log_entry)
 
         # --- 7. TIME, COST & CLEANUP ---
         job_end_time = time.time()
