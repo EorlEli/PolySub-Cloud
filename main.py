@@ -2,10 +2,10 @@ import os
 import shutil
 import uvicorn
 import time
-from fastapi import FastAPI, File, UploadFile, Form, HTTPException
+from fastapi import FastAPI, File, UploadFile, Form, HTTPException, BackgroundTasks
 from fastapi.responses import Response, FileResponse
 from fastapi.staticfiles import StaticFiles
-
+import threading
 
 # Import our new modules
 from grouper import read_vtt, parse_vtt_time
@@ -13,6 +13,7 @@ from transcriber import extract_audio, transcribe_audio
 from text_translator import translate_full_text, verify_translation_quality
 from engine import run_alignment_engine
 from utils import reset_session_cost, get_session_cost, log_whisper_cost # Import these!
+from translation_evaluator import evaluate_translations
 
 app = FastAPI()
 
@@ -27,7 +28,8 @@ async def read_index():
 async def process_video_endpoint(
     video_file: UploadFile = File(...),
     target_language: str = Form("Portuguese"), # Default if not chosen
-    use_correction: bool = Form(True) # Default to True
+    use_correction: bool = Form(True), # Default to True
+    background_tasks: BackgroundTasks = None
 ):
     try:
         # --- 0. RESET COST COUNTER & START TIMER ---
@@ -84,6 +86,15 @@ async def process_video_endpoint(
         # --- 4.5. VERIFY & REFINE TRANSLATION (LLM Check) ---
         full_target_text = verify_translation_quality(full_english_text, full_target_text1, target_language)
 
+        # START BACKGROUND EVALUATION (True Parallel - Starts Immediately)
+        # We use threading so it runs alongside the Alignment Engine, 
+        # instead of waiting for the file to be sent (which BackgroundTasks does).
+        eval_thread = threading.Thread(
+            target=evaluate_translations,
+            args=(full_english_text, full_target_text1, full_target_text, target_language)
+        )
+        eval_thread.start()
+
         # --- 5. ALIGNMENT ENGINE (The Core) ---
         # Parse the English VTT we just made
         blocks = read_vtt(temp_vtt_path)
@@ -108,7 +119,7 @@ async def process_video_endpoint(
         print(f"⏰ TOTAL JOB TIME: {total_time:.2f} seconds\n")
 
         # Delete temp files to keep folder clean
-        temp_files = [video_filename, audio_path, temp_vtt_path]
+        temp_files = [video_filename, audio_path, temp_vtt_path, temp_vtt_path2]
         for f in temp_files:
             if f and os.path.exists(f):
                 try:
