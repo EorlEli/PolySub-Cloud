@@ -1,0 +1,372 @@
+[2026-02-05 05:42:13] Video: 1.3.2.mp4 -> Spanish
+✅ VALIDATION PASSED
+⚠️ WARNINGS (4):
+   - Block 68 is too fast (37.5 CPS). Text: En un extremo,...
+   - Block 69 is too fast (37.5 CPS). Text: no hay responsabilidad: la res...
+   - Block 70 is too fast (37.5 CPS). Text: propietarios o usuarios humano...
+   - Found 3 blocks with CPS > 25.
+----------------------------------------
+[2026-02-05 08:09:03] Video: 1.3.2.mp4 -> Spanish
+✅ VALIDATION PASSED
+----------------------------------------
+[2026-02-05 08:59:51] Video: 1.1.4.mp4 -> Spanish
+✅ VALIDATION PASSED
+⚠️ WARNINGS (6):
+   - Block 48 has 3 lines (Ideal is 2).
+   - Block 106 has 3 lines (Ideal is 2).
+   - Block 10 is too fast (39.0 CPS). Text: Concretamente, nos preguntamos...
+   - Block 11 is too fast (39.0 CPS). Text: cosas como el razonamiento,
+la...
+   - Block 12 is too fast (39.0 CPS). Text: el aprendizaje y la toma de de...
+   - Found 8 blocks with CPS > 25.
+----------------------------------------
+[2026-02-05 10:45:29] Video: 1.1.4.mp4 -> Spanish
+✅ VALIDATION PASSED
+⚠️ WARNINGS (3):
+   - Block 48 has 3 lines (Ideal is 2).
+   - Block 108 has 3 lines (Ideal is 2).
+   - Block 128 has 3 lines (Ideal is 2).
+----------------------------------------
+[2026-02-05 11:09:01] Video: 1.1.4.mp4 -> Portuguese
+✅ VALIDATION PASSED
+⚠️ WARNINGS (2):
+   - Block 84 is too fast (25.0 CPS). Text: Provavelmente não....
+   - Found 1 blocks with CPS > 25.
+----------------------------------------
+[2026-02-05 11:52:19] Video: 1.3.1.mp4 -> Spanish
+✅ VALIDATION PASSED
+⚠️ WARNINGS (9):
+   - Block 52 has 3 lines (Ideal is 2).
+   - Block 122 has 3 lines (Ideal is 2).
+   - Block 155 has 3 lines (Ideal is 2).
+   - Block 165 has 3 lines (Ideal is 2).
+   - Block 188 has 3 lines (Ideal is 2).
+   - Block 238 has 3 lines (Ideal is 2).
+   - Block 227 is too fast (34.5 CPS). Text: Por otro lado, excusamos a las...
+   - Block 228 is too fast (34.0 CPS). Text: autocontrol racional
+está grav...
+   - Found 2 blocks with CPS > 25.
+----------------------------------------
+[2026-02-05 18:29:00] Video: The Deadliest Infectious Disease of All Time _ Crash Course Lecture.mp4 -> Spanish
+✅ VALIDATION PASSED
+⚠️ WARNINGS (18):
+   - Block 10 has 3 lines (Ideal is 2).
+   - Block 189 has 3 lines (Ideal is 2).
+   - Block 218 has 3 lines (Ideal is 2).
+   - Block 263 has 3 lines (Ideal is 2).
+   - Block 425 has 3 lines (Ideal is 2).
+   - Block 483 has 3 lines (Ideal is 2).
+   - Block 544 has 3 lines (Ideal is 2).
+   - Block 25 is too fast (25.9 CPS). Text: Y hemos identificado incluso
+l...
+   - Block 26 is too fast (26.2 CPS). Text: Entonces, ¿por qué siguen muri...
+   - Block 143 is too fast (42.1 CPS). Text: Como parte de nuestro deseo de...
+   - Block 144 is too fast (41.5 CPS). Text: ¿Por qué?”, al creernos que en...
+   - Block 145 is too fast (40.5 CPS). Text: ¿Por qué?...
+   - Block 146 is too fast (40.5 CPS). Text: ¿Por qué?...
+   - Block 214 is too fast (26.9 CPS). Text: Y, sin embargo, la tuberculosi...
+   - Block 673 is too fast (25.1 CPS). Text: Simplemente estaba demasiado e...
+   - Block 774 is too fast (48.1 CPS). Text: el doctor A. Wilberforce Willi...
+   - Block 813 is too fast (27.2 CPS). Text: Háznoslo saber en los
+comentar...
+   - Found 10 blocks with CPS > 25.
+----------------------------------------
+[2026-02-06 12:53:43] Video: 2.4.4.mp4 -> Spanish
+✅ VALIDATION PASSED
+----------------------------------------
+[2026-02-06 13:09:33] Video: 2.4.4.mp4 -> Italian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (1):
+   - Block 95 has 3 lines (Ideal is 2).
+----------------------------------------
+[2026-02-06 13:20:50] Video: 2.4.4.mp4 -> Portuguese
+✅ VALIDATION PASSED
+⚠️ WARNINGS (1):
+   - Block 4 has 3 lines (Ideal is 2).
+----------------------------------------
+[2026-02-06 13:41:40] Video: 2.4.3.mp4 -> Portuguese
+✅ VALIDATION PASSED
+⚠️ WARNINGS (1):
+   - Block 106 has 3 lines (Ideal is 2).
+----------------------------------------
+[2026-02-06 13:51:39] Video: 2.4.4.mp4 -> Italian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (1):
+   - Block 101 has 3 lines (Ideal is 2).
+----------------------------------------
+[2026-02-06 17:10:56] Video: The Deadliest Infectious Disease of All Time _ Crash Course Lecture.mp4 -> Portuguese
+❌ VALIDATION FAILED (189 errors)
+   - ERROR: Missing Translation for Block 410 (1715.97s - 1725.01s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 416 (1764.17s - 1769.78s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 417 (1769.78s - 1773.78s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 419 (1783.49s - 1791.09s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 420 (1791.09s - 1793.57s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 421 (1794.35s - 1795.54s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 422 (1795.54s - 1802.50s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 423 (1802.66s - 1806.74s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 424 (1807.69s - 1811.61s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 425 (1812.25s - 1815.93s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 426 (1816.49s - 1818.89s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 427 (1819.53s - 1822.65s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 433 (1842.76s - 1844.68s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 434 (1845.16s - 1851.17s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 435 (1851.25s - 1854.21s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 438 (1860.69s - 1863.34s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 439 (1863.77s - 1865.37s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 441 (1868.41s - 1872.49s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 442 (1872.49s - 1873.45s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 445 (1891.59s - 1892.87s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 446 (1893.11s - 1895.75s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 447 (1895.75s - 1897.35s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 451 (1906.02s - 1907.45s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 452 (1907.45s - 1911.21s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 453 (1911.29s - 1915.69s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 459 (1931.77s - 1934.97s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 460 (1935.65s - 1941.65s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 464 (1946.62s - 1956.51s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 465 (1956.83s - 1961.39s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 466 (1961.63s - 1974.79s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 467 (1974.95s - 1977.60s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 468 (1977.91s - 1979.03s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 469 (1979.12s - 1980.23s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 470 (1980.69s - 1984.05s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 471 (1984.13s - 1987.73s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 472 (1988.13s - 1994.69s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 473 (1995.27s - 1998.87s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 477 (2012.38s - 2020.38s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 478 (2020.78s - 2026.14s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 479 (2026.55s - 2028.07s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 485 (2048.24s - 2053.20s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 486 (2053.20s - 2057.20s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 491 (2069.12s - 2074.72s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 492 (2075.12s - 2082.72s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 493 (2082.80s - 2093.93s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 494 (2094.33s - 2098.57s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 495 (2098.57s - 2100.57s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 496 (2100.73s - 2102.57s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 497 (2102.57s - 2104.97s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 498 (2105.49s - 2110.93s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 499 (2111.09s - 2114.38s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 504 (2135.97s - 2139.18s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 505 (2139.26s - 2145.09s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 506 (2145.09s - 2146.93s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 507 (2146.93s - 2148.93s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 508 (2148.93s - 2149.57s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 509 (2149.82s - 2152.62s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 510 (2152.94s - 2154.54s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 511 (2155.58s - 2158.94s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 516 (2184.31s - 2186.07s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 517 (2186.07s - 2189.19s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 518 (2189.19s - 2195.03s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 519 (2195.66s - 2198.61s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 520 (2198.61s - 2202.78s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 521 (2202.93s - 2203.66s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 522 (2209.32s - 2214.68s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 523 (2214.68s - 2219.40s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 524 (2219.48s - 2222.68s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 525 (2223.16s - 2226.51s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 526 (2226.76s - 2229.24s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 535 (2258.34s - 2259.14s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 536 (2259.14s - 2263.14s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 537 (2263.55s - 2266.03s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 538 (2266.51s - 2274.19s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 539 (2274.59s - 2277.79s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 540 (2278.03s - 2280.67s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 541 (2281.09s - 2283.96s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 542 (2283.96s - 2286.61s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 544 (2290.20s - 2296.53s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 545 (2296.23s - 2298.71s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 546 (2298.95s - 2299.91s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 547 (2300.15s - 2309.59s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 552 (2318.43s - 2321.80s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 553 (2321.80s - 2324.84s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 554 (2325.30s - 2326.58s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 555 (2326.74s - 2333.94s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 556 (2334.18s - 2335.38s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 557 (2335.94s - 2339.38s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 558 (2339.86s - 2342.26s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 559 (2342.43s - 2346.59s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 560 (2347.07s - 2350.82s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 565 (2361.29s - 2367.29s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 566 (2367.51s - 2371.03s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 568 (2376.55s - 2378.80s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 569 (2378.88s - 2385.08s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 570 (2386.28s - 2388.28s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 571 (2388.28s - 2391.56s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 572 (2391.96s - 2398.84s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 573 (2399.16s - 2403.64s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 574 (2404.03s - 2413.48s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 575 (2413.96s - 2417.80s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 581 (2445.19s - 2448.87s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 582 (2449.45s - 2451.78s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 585 (2473.59s - 2477.19s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 586 (2477.61s - 2479.86s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 587 (2479.86s - 2482.41s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 588 (2482.66s - 2486.66s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 589 (2486.66s - 2488.73s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 590 (2488.89s - 2496.84s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 591 (2496.92s - 2499.56s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 595 (2511.09s - 2513.89s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 596 (2514.05s - 2517.41s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 597 (2517.82s - 2521.26s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 598 (2521.90s - 2522.62s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 599 (2522.70s - 2523.42s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 600 (2523.74s - 2525.74s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 601 (2526.14s - 2529.82s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 602 (2529.82s - 2544.16s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 603 (2544.40s - 2549.61s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 609 (2569.51s - 2570.30s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 610 (2572.30s - 2573.43s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 611 (2573.43s - 2576.30s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 612 (2576.55s - 2580.07s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 613 (2580.55s - 2590.95s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 614 (2590.95s - 2599.97s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 615 (2599.97s - 2601.41s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 616 (2601.72s - 2614.69s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 617 (2615.09s - 2626.49s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 618 (2627.05s - 2633.53s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 619 (2633.86s - 2640.90s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 624 (2658.16s - 2659.76s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 625 (2659.76s - 2662.64s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 626 (2663.11s - 2669.43s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 627 (2669.51s - 2672.63s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 632 (2687.28s - 2692.89s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 633 (2693.12s - 2694.08s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 634 (2694.24s - 2695.60s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 635 (2695.60s - 2700.72s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 644 (2719.37s - 2725.45s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 645 (2726.01s - 2729.37s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 646 (2734.53s - 2736.14s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 647 (2736.14s - 2749.92s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 649 (2760.03s - 2766.34s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 650 (2766.90s - 2767.55s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 651 (2767.70s - 2768.51s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 653 (2770.48s - 2771.20s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 654 (2771.76s - 2774.08s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 655 (2774.32s - 2778.64s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 656 (2778.72s - 2781.28s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 657 (2781.52s - 2785.14s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 658 (2785.38s - 2791.45s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 659 (2792.26s - 2794.66s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 660 (2794.66s - 2799.52s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 662 (2802.88s - 2803.92s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 663 (2804.56s - 2805.52s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 664 (2805.76s - 2811.28s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 665 (2810.95s - 2813.99s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 666 (2814.07s - 2816.07s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 668 (2821.59s - 2825.84s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 669 (2825.84s - 2827.04s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 670 (2827.04s - 2829.52s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 671 (2829.68s - 2832.16s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 672 (2832.48s - 2837.92s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 673 (2837.92s - 2840.39s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 674 (2841.11s - 2841.76s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 676 (2844.07s - 2851.19s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 680 (2864.80s - 2867.28s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 681 (2867.68s - 2868.88s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 682 (2869.20s - 2872.32s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 685 (2876.64s - 2878.07s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 686 (2878.32s - 2880.64s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 687 (2880.95s - 2882.31s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 688 (2882.71s - 2888.15s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 689 (2888.23s - 2890.31s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 690 (2890.39s - 2893.19s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 691 (2893.82s - 2898.14s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 692 (2898.14s - 2902.86s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 694 (2908.55s - 2911.61s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 696 (2914.57s - 2915.69s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 697 (2916.09s - 2916.97s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 698 (2916.97s - 2920.73s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 702 (2942.94s - 2950.94s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 703 (2951.26s - 2955.03s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 704 (2955.03s - 2958.78s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 705 (2959.26s - 2959.98s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 706 (2960.30s - 2961.82s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 707 (2962.14s - 2964.94s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 708 (2965.55s - 2972.75s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 709 (2972.91s - 2983.80s): No matching target subtitle found.
+⚠️ WARNINGS (17):
+   - Block 29 has 3 lines (Ideal is 2).
+   - Block 235 has 3 lines (Ideal is 2).
+   - Block 142 is too fast (36.0 CPS). Text: Por quê?...
+   - Block 143 is too fast (36.0 CPS). Text: Por quê?...
+   - Block 543 is too fast (29.8 CPS). Text: ma clínica médica todos os
+dia...
+   - Block 544 is too fast (29.8 CPS). Text: viver em instalações de intern...
+   - Block 545 is too fast (29.8 CPS). Text: cria enormes desafios para
+mui...
+   - Block 548 is too fast (70.0 CPS). Text: s levassem para casa duas
+sema...
+   - Block 560 is too fast (37.6 CPS). Text: Se Fumeza tivesse tido
+acesso ...
+   - Block 561 is too fast (37.6 CPS). Text: ou se a TB dela tivesse sido
+i...
+   - Block 562 is too fast (37.6 CPS). Text: ela poderia ter salvado
+a audi...
+   - Block 565 is too fast (44.7 CPS). Text: urante os quais ela tomou
+entr...
+   - Block 566 is too fast (44.7 CPS). Text: comprimidos antes de
+finalment...
+   - Block 567 is too fast (39.1 CPS). Text: E isso se deve, em grande
+part...
+   - Block 568 is too fast (44.3 CPS). Text: que podem curar pacientes
+com ...
+   - Block 569 is too fast (44.9 CPS). Text: drogas em apenas seis a nove m...
+   - Found 14 blocks with CPS > 25.
+----------------------------------------
+[2026-02-07 21:01:20] Video: The Deadliest Infectious Disease of All Time _ Crash Course Lecture.mp4 -> Portuguese
+❌ VALIDATION FAILED (1 errors)
+   - ERROR: Missing Translation for Block 433 (1842.76s - 1844.68s): No matching target subtitle found.
+⚠️ WARNINGS (13):
+   - Block 29 has 3 lines (Ideal is 2).
+   - Block 50 has 3 lines (Ideal is 2).
+   - Block 622 is too fast (27.8 CPS). Text: Mas ela continuou ficando
+cada...
+   - Block 649 is too fast (52.7 CPS). Text: Como medisse a Dra. Jennifer F...
+   - Block 736 is too fast (27.5 CPS). Text: Até bem recentemente,...
+   - Block 737 is too fast (27.5 CPS). Text: as recomendações da Organizaçã...
+   - Block 738 is too fast (27.9 CPS). Text: com TB resistente a fármacos e...
+   - Block 739 is too fast (27.5 CPS). Text: Carol Mitnick resumiu para mim...
+   - Block 740 is too fast (27.5 CPS). Text: cabana à beira da estrada
+e es...
+   - Block 772 is too fast (25.5 CPS). Text: Ele me perguntou, como se esti...
+   - Block 834 is too fast (26.6 CPS). Text: Se você quiser ajudar a manter...
+   - Block 835 is too fast (26.6 CPS). Text: para sempre, você pode se junt...
+   - Found 10 blocks with CPS > 25.
+----------------------------------------
+[2026-02-08 07:47:26] Video: 1.2.4.mp4 -> Portuguese
+❌ VALIDATION FAILED (3 errors)
+   - ERROR: Missing Translation for Block 158 (619.17s - 623.25s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 159 (623.49s - 628.85s): No matching target subtitle found.
+   - ERROR: Missing Translation for Block 200 (819.02s - 820.94s): No matching target subtitle found.
+⚠️ WARNINGS (8):
+   - Block 129 has 3 lines (Ideal is 2).
+   - Block 227 has 3 lines (Ideal is 2).
+   - Block 145 is too fast (26.1 CPS). Text: Mas ninguém leva a sério a ide...
+   - Block 171 is too fast (48.9 CPS). Text: Ele disse: "Admitidamente, sem...
+   - Block 172 is too fast (48.9 CPS). Text: No entanto,...
+   - Block 173 is too fast (48.9 CPS). Text: para compreender verdadeiramen...
+   - Block 174 is too fast (48.9 CPS). Text: é inútil concentrar-se apenas ...
+   - Found 5 blocks with CPS > 25.
+----------------------------------------
+[2026-02-08 09:11:57] Video: 1.2.4.mp4 -> Spanish
+✅ VALIDATION PASSED
+⚠️ WARNINGS (4):
+   - Cue 27 has 3 lines (Ideal is 2).
+   - Cue 71 has 3 lines (Ideal is 2).
+   - Cue 96 has 3 lines (Ideal is 2).
+   - Cue 143 has 3 lines (Ideal is 2).
+----------------------------------------
+[2026-02-08 10:06:36] Video: 1.2.4.mp4 -> Russian
+❌ VALIDATION FAILED (3 errors)
+   - ERROR: Missing Translation for Cue 133 (511.46s - 516.98s): No matching target subtitle found.
+   - ERROR: Missing Translation for Cue 134 (517.22s - 518.02s): No matching target subtitle found.
+   - ERROR: Missing Translation for Cue 135 (518.74s - 519.86s): No matching target subtitle found.
+⚠️ WARNINGS (5):
+   - Cue 215 has 3 lines (Ideal is 2).
+   - Cue 227 has 3 lines (Ideal is 2).
+   - Cue 138 is too fast (65.6 CPS). Text: Например, ураган —
+чрезвычайно...
+   - Cue 139 is too fast (65.2 CPS). Text: система с вихрями и эмirgентны...
+   - Found 2 blocks with CPS > 25.
+----------------------------------------

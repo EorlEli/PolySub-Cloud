@@ -24,10 +24,11 @@ def find_matching_translation(original_language_block_text, target_language_wind
     CRITICAL RULES:
     1. CONTEXT AWARENESS: The target language text is a "sliding window". It may start in the middle of a word or sentence.
     2. KEY INSTRUCTION: DO NOT ignore text at the start of the window. If the original language input corresponds to the text at the very beginning of the window (even if it looks like a fragment), YOU MUST MATCH IT.
-    3. PARTIAL MATCHING: The original language input is often just a fragment of a sentence. You must find the corresponding target fragment. Do NOT look for a "complete sentence" if the input is only a clause.
-    4. FULL COVERAGE: If the input requires it, select across multiple sentences.
-    5. EXACT EXTRACT: Extract the substring EXACTLY as it appears in the target language text. No corrections.
-    6. JSON OUTPUT: { "target_language_substring": "..." }
+    3. PARTIAL MATCHING: The original language input is often just a fragment of a sentence. You must find the corresponding target fragment. Do NOT look for a "complete sentence" if the translation of the original lnaguage input has been satisfied
+    4. QUOTE INDEPENDENCE: If the target text has quotes that wrap multiple sentences, but the source text only corresponds to one of them, YOU MUST BREAK THE QUOTE. Do not include the closing quote if it belongs to a later sentence.
+    5. LENGTH CHECK: Do not include subsequent sentences or text that is not visually present in the source input.
+    6. EXACT EXTRACT: Extract the substring EXACTLY as it appears in the target language text. Do NOT add closing quotes or punctuation that is not present in the window at that exact position.
+    7. JSON OUTPUT: { "target_language_substring": "..." }
     """
 
     user_prompt = f"""
@@ -72,8 +73,21 @@ def find_matching_translation(original_language_block_text, target_language_wind
                     print(f"   ⚠️ Matcher returned empty string. Retrying... ({attempt+1}/{max_retries})")
                     continue # Try again
                 else:
-                    print(f"   ❌ Matcher failed to find text after {max_retries} attempts.")
-                    return ""
+                     print(f"   ❌ Matcher failed to find text after {max_retries} attempts.")
+                     return ""
+
+            # --- PROGRAMMATIC VERIFICATION ---
+            # If the specific text isn't found in the window, it might be a hallucination (e.g. added quote).
+            if matched_text not in target_language_window_text:
+                # Try stripping trailing quotes/punctuation
+                stripped = matched_text.strip('"').strip("'").strip()
+                if stripped in target_language_window_text:
+                    # print(f"   🔧 Fixed hallucinated quotes: '{matched_text}' -> '{stripped}'")
+                    matched_text = stripped
+                else:
+                    # Try stripping just the last character (common for single hallucinated punct like " or .)
+                    if matched_text[:-1] in target_language_window_text:
+                         matched_text = matched_text[:-1]
 
             return matched_text
 

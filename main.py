@@ -57,6 +57,7 @@ async def process_video_endpoint(
         vtt_content, full_english_text = transcribe_audio(audio_path, use_correction=use_correction)
         
         # CALCULATE Speech2Text COST
+        audio_duration = 0
         try:
             import re
             # Find the very last timestamp in the file
@@ -68,6 +69,7 @@ async def process_video_endpoint(
                 # REUSE THE ROBUST FUNCTION FROM GROUPER.
                 # It handles 00:00:00.000 correctly without crashing
                 seconds = parse_vtt_time(last_timestamp)
+                audio_duration = seconds
                 
                 log_whisper_cost(seconds)
 
@@ -80,12 +82,15 @@ async def process_video_endpoint(
             f.write(vtt_content)
 
         # --- 4. TRANSLATE TEXT (GPT) ---
-        full_target_text1 = translate_full_text(full_english_text, target_language)
+        # Now returns a tuple: (full_text, source_chunks, translated_chunks)
+        full_target_text1, source_chunks, translated_chunks = translate_full_text(full_english_text, target_language)
+        
         if not full_target_text1:
             raise HTTPException(status_code=500, detail="Translation failed.")
 
         # --- 4.5. VERIFY & REFINE TRANSLATION (LLM Check) ---
-        full_target_text = verify_translation_quality(full_english_text, full_target_text1, target_language)
+        # Pass the chunks directly to verification for better context handling
+        full_target_text = verify_translation_quality(source_chunks, translated_chunks, target_language)
 
         # START BACKGROUND EVALUATION (True Parallel - Starts Immediately)
         # We use threading so it runs alongside the Alignment Engine, 
@@ -140,7 +145,14 @@ async def process_video_endpoint(
         total_time = job_end_time - job_start_time
         total_spent = get_session_cost()
         print(f"\n💰 JOB COMPLETE. TOTAL ESTIMATED COST: ${total_spent:.5f}\n")
-        print(f"⏰ TOTAL JOB TIME: {total_time:.2f} seconds\n")
+        print(f"⏰ TOTAL JOB TIME: {total_time/60:.2f} minutes\n")
+        print(f"🎵 AUDIO DURATION: {audio_duration:.2f} seconds ({audio_duration/60:.2f} minutes)\n")
+
+        # --- 8. Save transcripts for debugging
+        with open("full_english_text.txt", "w", encoding="utf-8") as f:
+            f.write(full_english_text)
+        with open("full_target_text.txt", "w", encoding="utf-8") as f:
+            f.write(full_target_text)
 
         # Delete temp files to keep folder clean
         temp_files = [video_filename, audio_path, temp_vtt_path, temp_vtt_path2]

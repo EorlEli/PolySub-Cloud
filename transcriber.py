@@ -110,22 +110,27 @@ def transcribe_audio(audio_path, use_correction=True):
             transcript_text = response.results.channels[0].alternatives[0].transcript
         
         # 5. Generate VTT (Custom Logic)
-        # We assume response is now a DICT (because apply_corrections converts it),
-        # or it is an Object (if skipped correction).
         
-        # Normalize to dict if not already (for the VTT generator)
+        # Normalize to dict if not already (for the VTT generator & normalization)
         import json
         if not isinstance(response, dict):
              if hasattr(response, "to_dict"): response = response.to_dict()
              elif hasattr(response, "model_dump"): response = response.model_dump()
              else: response = json.loads(response.to_json())
 
+        # 5b. Normalize Text (Fix "U. S." -> "U.S.")
+        transcript_text = normalize_spaced_acronyms(transcript_text)
+
         try:
             utterances = response["results"]["utterances"]
         except KeyError:
-            # Fallback if no utterances
             print("   ⚠️ No utterances found. Returning empty VTT.")
             utterances = []
+            
+        # Clean utterance transcripts
+        for u in utterances:
+             if 'transcript' in u:
+                 u['transcript'] = normalize_spaced_acronyms(u['transcript'])
 
         transcript_vtt = generate_vtt_from_utterances(utterances)
         
@@ -135,3 +140,16 @@ def transcribe_audio(audio_path, use_correction=True):
     except Exception as e:
         print(f"   ❌ Deepgram Error: {e}")
         raise e
+
+def normalize_spaced_acronyms(text):
+    """
+    Fixes "U. S. A." -> "U.S.A."
+    """
+    if not text: return ""
+    import re
+    pattern = r'(?<=\b[A-Z]\.)\s+(?=[A-Z]\.)'
+    for _ in range(3):
+        new_text = re.sub(pattern, '', text)
+        if new_text == text: break
+        text = new_text
+    return text

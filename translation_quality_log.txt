@@ -1,0 +1,790 @@
+
+--------------------------------------------------
+Timestamp: 2026-02-04 14:27:23
+Target Language: Russian
+Original Len: 5008 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 9,
+  "score_v2": 6,
+  "reasoning": "V1 более точно передаёт смысл оригинала и звучит естественно по-русски. V2 содержит явные грамматические ошибки (например, 'нечто подлежащие измерению' и несогласование рода 'выполняющий функции' с 'система'), а также стилистические неловкости, что снижает ясность и надёжность перевода."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-04 15:07:25
+Target Language: Portuguese
+Original Len: 5750 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 is more accurate and natural in Portuguese. It fixes several issues found in V1, such as gender agreement and grammar (deste slide vs. desta slide; no escuro), uses more natural phrasing for third‑person observables, and clarifies terminology (qualia with 'quale' etc.). V1 contains minor but noticeable errors and awkward constructions that slightly distort meaning or readability."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-04 15:42:49
+Target Language: German
+Original Len: 5745 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is overall more accurate and natural in German. It uses clearer, more precise terminology (e.g., 'Qualia' explanation with proper phrasing), adopts gender-inclusive wording for philosophers and scientists, and presents the arguments more fluidly. V1 contains minor issues, such as a less precise handling of the 'Qualia' derivation and slightly less natural phrasing in some passages."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-04 16:01:13
+Target Language: Russian
+Original Len: 5740 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 5,
+  "score_v2": 9.5,
+  "reasoning": "V2 more accurate and natural in Russian, with consistent terminology and correct grammar. It avoids English remnants and obvious errors found in V1 (e.g., 'зафылить' yoke, 'nor is it explanation', awkward phrasing). V1 also uses slightly archaic or awkward constructions and even contains a direct English fragment, reducing fidelity to the original. Overall, V2 better preserves meaning, flow, and terminological accuracy."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-04 18:04:46
+Target Language: Italian
+Original Len: 5741 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 8,
+  "reasoning": "V2 is generally more natural and faithful to the source: it refines terminology (correlati neurali, qualia, easy/hard problems), improves flow and readability, and maintains accuracy across the key concepts. The main minor flaw is a slightly awkward use of 'semplice veglia' in one place (better would be 'semplicemente svegli'), but this does not obscure meaning. Overall, V2 provides a cleaner and more consistent Italian rendering than V1."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-05 05:33:48
+Target Language: Spanish
+Original Len: 6466 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 is more faithful to the original meaning and reads more naturally in Spanish. It avoids leaving English phrases untranslated (a notable issue in V1: phrases like 'We need a broad societal dialogue' and 'guilty mind'), uses consistent formal register (e.g., 'Piense' vs 'Piensa'), and translates key terms accurately (e.g., 'mens rea' as 'mente culpable', 'autogobernante'). V1 also contains tense/register slips and several English insertions that disrupt readability. Overall, V2 improves accuracy, flow, and terminological consistency."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-05 06:48:02
+Target Language: Spanish
+Original Len: 6467 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 mostly preserves meaning while correcting a grammatical error in the Paradigma line (se puede ver referenciado) and improving punctuation (martillo; es decir). It also slightly refines phrasing for natural flow and accuracy (e.g., dirección contraria; mejora de continuidad). Overall, V2 reads more fluidly and stays closer to the original intent, though one phrase like 'extremo autogobernante del espectro' is somewhat less natural than ideal, it does not substantially hamper comprehension."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-05 08:50:34
+Target Language: Spanish
+Original Len: 7930 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 is more natural and faithful to the original, with smoother phrasing and more accurate rendering of ideas (e.g., 'pregunta crucial' of substrate independence, 'en profundidad' vs 'extensamente', and clearer concluding questions). V1 contains notable issues: a typographical/grammar error ('independencia de sustrato para la función' is awkward, and 'de de qué esté hecho' is a duplication), and a mistaken word ('multiply') that disrupts meaning in an important sentence. Overall, V2 preserves terminology consistently and improves readability without introducing new errors."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-05 09:31:05
+Target Language: Spanish
+Original Len: 7895 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 faithfully renders the original in natural Spanish with consistent terminology and flow. V1, however, contains an inadvertent English fragment ('still forms of information processing'), disrupting accuracy and coherence."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-05 10:58:24
+Target Language: Portuguese
+Original Len: 7946 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7.5,
+  "score_v2": 8.5,
+  "reasoning": "V2 improves accuracy and naturalness: it renders key concepts more clearly (distinção entre função e consciência; better flow around the functionalism discussion). Both are faithful to the original, but V1 contains minor grammar/phrasing issues (e.g., 'uma ábaco' and 'distinção, da consciência') that slightly hinder clarity. V2 largely preserves meaning while enhancing readability; remaining issues are minor (the same gender/orthography caveat for 'á baco' and occasional punctuation)."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-05 11:36:25
+Target Language: Spanish
+Original Len: 12428 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 is clearly more accurate and natural in Spanish. It avoids English insertions found in V1 (e.g., 'randomness', 'dropout' handling, mixed phrases), uses consistent and correct terminology (libre albedrío, determinismo, compatibilismo) and renders nuanced distinctions (aparente vs verdadera aleatoriedad) with proper Spanish phrasing. V1 contains several awkward or partially English phrases and some minor translation issues that reduce clarity and fluency."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-05 13:35:38
+Target Language: Spanish
+Original Len: 41427 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 5,
+  "score_v2": 9,
+  "reasoning": "V2 superiormente mejora precisión y fluidez: corrige errores fácticos presentes en V1 (por ejemplo, muestra Robert Koch correctamente y usa bedaquiline en lugar de una forma/adjetivo erróneo), mantiene terminología más natural (tuberculosis en lugar de TB en contextos variados), y presenta una traducción más consistente y legible a lo largo del texto. V1 contiene inexactitudes notables (Robert Coke), uso inconsistente de abreviaturas y varias elecciones de estilo que dificultan la lectura."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-06 12:46:49
+Target Language: Spanish
+Original Len: 5039 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 is cleaner and more faithful to the original. V1 contains a stray English fragment ('continuous and generally dynamic data') appended after the paragraph, which disrupts readability and correctness. Both share a minor terminology issue ('el analog' should be 'el análogo'), but the extra text in V1 makes it noticeably worse."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-06 13:03:13
+Target Language: Italian
+Original Len: 4999 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 8,
+  "score_v2": 7,
+  "reasoning": "V1 generally preserves the original meaning with natural Italian phrasing and consistent terminology. V2 is mostly faithful but contains a grammatical error (una incongruenza: 'Questo tipo di sistemi codificava' with plural 'sistemi'), and sometimes they switch to slightly less idiomatic or English-laden phrasing (e.g., 'deep neural networks'). These issues reduce clarity and grammatical correctness, giving V1 the edge in accuracy and fluency."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-06 13:14:05
+Target Language: Portuguese
+Original Len: 5005 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 offers a more natural and accurate Portuguese rendering. It improves the handling of 'data hungry' by phrases like 'exigir um pouco de dados' (instead of the awkward 'ser um pouco de dados'), and maintains correct terminology and coherence throughout. Both are faithful to the original, but V2 reads smoother and has fewer awkward constructions."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-06 13:35:14
+Target Language: Portuguese
+Original Len: 5657 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 is more accurate and fluent overall. It fixes several issues present in V1: grammar and agreement in the conditioning sentence, proper punctuation in the language section, and smoother, more natural Portuguese throughout (e.g., consistent use of formal/informal forms and better sentence structure). While V2 has a minor shift from plural to singular in the conditioning example, this is less impactful than the errors in V1. Overall, V2 preserves meaning more faithfully and reads more naturally in Portuguese."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-06 13:45:49
+Target Language: Italian
+Original Len: 5003 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 9.5,
+  "score_v2": 9.5,
+  "reasoning": "V1 e V2 sono praticamente identiche in contenuto, accuratezza, fluidità e terminologia. Nessuna introduce errori o migliorie sostanziali; quindi nessuna versione è significativamente migliore dell'altra."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-06 14:13:20
+Target Language: Portuguese
+Original Len: 41441 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is more faithful and natural in Portuguese. It corrects key details (e.g., uses COVID-19 with dash), maintains consistent terminology, and generally flows better. V1 contains untranslated or poorly translated bits (e.g., 'COVID nineteen' and an English lyric line left in), and some wording is less natural. Minor issues in V2 (a small spelling error 'provavalmente' and a couple of awkward phrases) are outweighed by its overall accuracy and readability."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-07 13:06:14
+Target Language: Portuguese
+Original Len: 41432 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 8,
+  "score_v2": 9,
+  "reasoning": "V2 apresenta uma versão mais polida e fiel ao original: corrige nuances de terminologia (ex.: pré-extensivamente resistente) com hifenização adequada, mantém a precisão técnica (M. tuberculosis, MDR-TB, DOTS, etc.) e apresenta fluxo mais natural em várias passagens. As diferenças entre as duas versões são sutis, mas V2 tende a soar mais fluida e padronizada em português, sem perder o sentido do texto original."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-07 15:26:08
+Target Language: Portuguese
+Original Len: 41445 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6.5,
+  "score_v2": 8.5,
+  "reasoning": "V2 é mais fiel ao significado original e flui melhor em português. Mantém nomes próprios e termos técnicos de forma consistente (Socios en Salud, Doctors Without Borders → Médicos Sem Fronteiras), utiliza a terminologia de forma mais uniforme (tuberculose versus consumo) e apresenta construções mais naturais. V1 tem algumas escolhas menos precisas/fluentes (uso de 'consumo' em trechos, inserção de termos em inglês como 'consumptives') que geram pequenas ambiguidades e atrapalham a fluidez em português."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-08 07:33:41
+Target Language: Portuguese
+Original Len: 12396 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 is the more accurate and fluent rendering overall. It corrects a critical error found in V1 where the phrase 'digestão de photosynthesis' appears (a mistaken blend of Portuguese and English for 'digestion of photosynthesis'); V2 fixes this to the proper 'digestão ou fotossíntese'. V2 also generally reads more naturally and adheres more closely to standard Portuguese terminology (e.g., "                                          
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  } 
+
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-08 08:53:51
+Target Language: Spanish
+Original Len: 12379 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 is clearly the more fluent and faithful translation. It fixes a notable flaw in V1 where an English phrase (It explains) accidentally remained in the Spanish text and where a sentence fragment duplicate appeared (could cross the same threshold too). V2 also improves naturalness by using appropriate Spanish verbs and phrasing (por ejemplo, reemplazar vs colocar, valor de Phi, composición biológica) and by providing proper punctuation (period after the global workspace description). It maintains technical accuracy across the main theories (functionalism, GWT, IIT, biological naturalism, emergentism, Orch-OR) and preserves the comparative structure with clearer transitions. Minor quibbles remain: the treatment of qualia/qualias is stylistic and contested in terminology, and V2 uses punzada de arrepentimiento to translate pang of regret, which is acceptable though not perfect for all readers. Overall, V2 offers native-level fluency, better coherence, and more precise terminology, making it the superior version."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-08 09:48:25
+Target Language: Russian
+Original Len: 12363 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 5,
+  "score_v2": 9,
+  "reasoning": "V2 is clearly superior because it provides a faithful, fluent Russian rendering of the original, avoids mixed-language insertions, and uses standard terminology consistently. Specific issues in V1 include: - English phrases left untranslated within the Russian text (e.g., the sentence about perfect simulation and the Dancing Qualia reference), which breaks readability and accuracy. - Inconsistent transliteration (e.g., айяуаски instead of аяуаски) and occasional awkward phrasing. - A few grammatical oddities and unnatural constructions that interrupt the flow. In contrast, V2: - renders all technical terms in Russian (e.g., Глобальное рабочее пространство, Интегрированная теория информации) and uses the correct mathematical symbol Φ for Phi. - translates thought experiments and key names (например, Танцующие квалиа) into appropriate Russian equivalents. - maintains a formal, academic tone throughout, matching the source register. - preserves nuance across sections (functionalism, biological naturalism, emergentism, Orch-OR) with coherent Russian syntax and terminology. Consequently, V2 achieves higher accuracy, fluency, tone, terminology consistency, and grammatical quality, while V1 exhibits major readability issues due to mixed languages and inconsistent transliterations."}
+--------------------------------------------------

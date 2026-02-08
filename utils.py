@@ -4,7 +4,8 @@ import sys
 # Prices in USD
 PRICING = {
     # Cost per 1 Million Tokens
-    "gpt-5-nano":  {"input": 0.05, "output": 0.40}, 
+    "gpt-5-nano":  {"input": 0.05, "output": 0.40},
+    "gpt-5.2":  {"input": 1.75, "output": 14.00},
     "whisper-1":   0.0043  # Cost per MINUTE of audio
 }
 

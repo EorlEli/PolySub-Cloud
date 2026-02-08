@@ -9,6 +9,9 @@ def distribute_translation(original_block, translated_text):
     end_seconds = parse_time(original_block[-1]['end'])
     total_duration = end_seconds - start_seconds
 
+    print(f"   [DEBUG DISTRIBUTOR] Start: {start_seconds}s | End: {end_seconds}s | Dur: {total_duration}s")
+    print(f"   [DEBUG DISTRIBUTOR] Text: {translated_text[:30]}...")
+
     # 2. SPLIT PHASE: Sentence -> Comma -> Space
     # We use a hierarchical splitting strategy
     raw_chunks = intelligent_split(translated_text)

@@ -36,8 +36,21 @@ def split_whisper_segment(segment):
     
     # Split by punctuation followed by space
     # The regex (?<=[.?!]) keeps the punctuation attached to the left part
-    parts = re.split(r'(?<=[.?!])\s+', text)
+    raw_parts = re.split(r'(?<=[.?!])\s+', text)
     
+    # MERGE STEP: Re-join parts that were split incorrectly (at abbreviations)
+    parts = []
+    if raw_parts:
+        current_part = raw_parts[0]
+        for next_part in raw_parts[1:]:
+            # If current_part ends in an abbreviation (like "M."), join with next
+            if is_abbreviation(current_part):
+                current_part += " " + next_part
+            else:
+                parts.append(current_part)
+                current_part = next_part
+        parts.append(current_part)
+
     if len(parts) <= 1:
         return [segment]
     
@@ -65,6 +78,48 @@ def split_whisper_segment(segment):
         current_time = part_end
         
     return sub_segments
+
+def is_abbreviation(text):
+    """
+    Checks if the text ends with an abbreviation (e.g., "M.", "U.S.", "Ph.D.").
+    Rules:
+    1. Single Letter + Dot (e.g. "M.", " J.")
+    2. Acronyms (sequence of Letter+Dot) (e.g. "U.S.", "U.S.A.")
+    """
+    text = text.strip()
+    if not text.endswith('.'):
+        return False
+
+    # Rule 1: Single Capital Letter at end ("... M.")
+    # Matches " M." or "^M."
+    if re.search(r'(^|\s)[A-Z]\.$', text):
+        return True
+
+    # Rule 2: Acronyms ("... U.S.")
+    # Matches ends with "X.Y." structure
+    if re.search(r'(^|\s)([A-Z]\.)+[A-Z]\.$', text):
+        return True
+
+    # Rule 3: Common Titles/Honorifics (Case-insensitive check)
+    # Includes "Doctor." specifically as requested.
+    common_titles = {
+        "Dr.", "Mr.", "Mrs.", "Ms.", "Mx.", "Prof.", "St.", 
+        "Rev.", "Gen.", "Rep.", "Sen.", "Gov.", "Pres.", "Hon.",
+        "Doctor." 
+    }
+    
+    # Check if the text *ends* with one of these (ignoring case for safety, though titles are usually capped)
+    # We use a simple suffix check.
+    # Note: "text" is the full segment text. We care about the last word.
+    parts = text.split()
+    if not parts: return False
+    last_word = parts[-1]
+    
+    # Clean matches
+    if last_word in common_titles:
+        return True
+        
+    return False
 
 def read_vtt(file_path):
     # 1. Read Raw File
@@ -103,13 +158,25 @@ def read_vtt(file_path):
         stripped = current_text.strip()
         
         # The condition that worked in your old tool:
-        if stripped.endswith(('.', '?', '!', '."', '?"')):
+        # FIX: Do NOT split if it's an abbreviation
+        if stripped.endswith(('.', '?', '!', '."', '?"')) and not is_abbreviation(stripped):
             blocks.append(current_block)
+            
+            # DEBUG LOGGING
+            b_start = current_block[0]['start']
+            b_end = current_block[-1]['end']
+            #print(f"   [DEBUG GROUPER] Finalized Block {len(blocks)}: IDs {current_block[0]['id']}..{current_block[-1]['id']} | Time: {b_start} -> {b_end}")
+            
             current_block = []
             current_text = ""
             
     # Add leftovers
     if current_block:
         blocks.append(current_block)
+        
+        # DEBUG LOGGING
+        b_start = current_block[0]['start']
+        b_end = current_block[-1]['end']
+        #print(f"   [DEBUG GROUPER] Finalized Block {len(blocks)} (Leftover): IDs {current_block[0]['id']}..{current_block[-1]['id']} | Time: {b_start} -> {b_end}")
 
     return blocks

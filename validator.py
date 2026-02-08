@@ -75,9 +75,9 @@ def validate_vtt_structure(original_vtt_path, target_vtt_path):
             max_lines_found = cue['lines']
             
         if cue['lines'] > 3:
-            errors.append(f"Block {i+1} has {cue['lines']} lines (Limit is 3).")
+            errors.append(f"Cue {i+1} has {cue['lines']} lines (Limit is 3).")
         elif cue['lines'] == 3:
-             warnings.append(f"Block {i+1} has 3 lines (Ideal is 2).")
+             warnings.append(f"Cue {i+1} has 3 lines (Ideal is 2).")
 
     # --- 2. Global Timing Check ---
     orig_start = original_cues[0]['start']
@@ -96,7 +96,43 @@ def validate_vtt_structure(original_vtt_path, target_vtt_path):
     if time_diff > tolerance:
         warnings.append(f"Duration mismatch: Original={orig_duration:.1f}s, Target={target_duration:.1f}s (Diff: {time_diff:.1f}s)")
 
-    # --- 3. Reading Speed Check (CPS) ---
+    # --- 3. Coverage Check (Strict) ---
+    # Ensure every original block has at least SOME representation in the target.
+    # If the alignment engine dropped a block, we will have a time range in Original 
+    # that has ZERO overlap with any Target cue.
+    
+    missing_blocks_count = 0
+    
+    for i, o_cue in enumerate(original_cues):
+        o_start = o_cue['start']
+        o_end = o_cue['end']
+        
+        # We only care about substantial blocks (e.g. > 0.5s)
+        if o_end - o_start < 0.5:
+            continue
+            
+        has_overlap = False
+        for t_cue in target_cues:
+            # Check overlap: start1 < end2 AND start2 < end1
+            if o_start < t_cue['end'] and t_cue['start'] < o_end:
+                # Calculate overlap duration
+                overlap_start = max(o_start, t_cue['start'])
+                overlap_end = min(o_end, t_cue['end'])
+                overlap_dur = overlap_end - overlap_start
+                
+                # If we have at least 100ms overlap, we count it as Covered
+                if overlap_dur > 0.1:
+                    has_overlap = True
+                    break
+        
+        if not has_overlap:
+            missing_blocks_count += 1
+            errors.append(f"Missing Translation for Cue {i+1} ({o_start:.2f}s - {o_end:.2f}s): No matching target subtitle found.")
+            
+    if missing_blocks_count > 0:
+        print(f"   ❌ Found {missing_blocks_count} missing blocks/gaps.")
+
+    # --- 4. Reading Speed Check (CPS) ---
     high_cps_count = 0
     for i, cue in enumerate(target_cues):
         # Ignore very short silences or empty cues
@@ -108,9 +144,7 @@ def validate_vtt_structure(original_vtt_path, target_vtt_path):
         
         if cps > 25:
              high_cps_count += 1
-             # Only log first few to avoid spam
-             if high_cps_count <= 3:
-                 warnings.append(f"Block {i+1} is too fast ({cps:.1f} CPS). Text: {cue['text'][:30]}...")
+             warnings.append(f"Cue {i+1} is too fast ({cps:.1f} CPS). Text: {cue['text'][:30]}...")
 
     if high_cps_count > 0:
         warnings.append(f"Found {high_cps_count} blocks with CPS > 25.")
