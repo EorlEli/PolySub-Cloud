@@ -18,61 +18,50 @@ def run_alignment_engine(blocks, full_target_text):
         block_end = block[-1]['end']
         print(f"[{i+1}/{len(blocks)}] Processing lines {block[0]['id']}-{block[-1]['id']} ({block_start}->{block_end})...")
         
-        # --- STEP A: Window (With Rearview Mirror) ---
-        overlap = 50
-        window_start = max(0, pt_cursor - overlap)
-        window_end = pt_cursor + WINDOW_SIZE
-        target_language_window = full_target_text[window_start : window_end]
+        # --- STEP A: Window and Context ---
+        CONTEXT_SIZE = 100
+        search_window_start = pt_cursor
+        search_window_end = min(len(full_target_text), pt_cursor + WINDOW_SIZE)
+        
+        # Context looks backwards from cursor
+        context_start = max(0, pt_cursor - CONTEXT_SIZE)
+        context_preview = full_target_text[context_start : pt_cursor]
+        
+        target_language_search_window = full_target_text[search_window_start : search_window_end]
         
         # --- STEP B: Find Match ---
-        # Note: find_matching_translation uses GPT-5-nano internally now
-        matched_text = find_matching_translation(original_language_block_text, target_language_window)
+        # Look ahead for Negative Constraint
+        next_block_text = ""
+        if i + 1 < len(blocks):
+            next_block_text = " ".join([l['text'] for l in blocks[i+1]])
+
+        matched_text = find_matching_translation(original_language_block_text, target_language_search_window, context_preview, next_block_text)
         
-        print(f"   [DEBUG] Block {i} Original: '{original_language_block_text[:30]}...'")
-        print(f"   [DEBUG] Block {i} Matched : '{matched_text}'")
+        print(f"   [DEBUG_ENGINE] Block {i} Input: '{original_language_block_text[:30]}...'")
+        print(f"   [DEBUG_ENGINE] Block {i} Match: '{matched_text}'")
         with open("debug_engine.log", "a", encoding="utf-8") as log:
             log.write(f"BLOCK {i} ({block_start} -> {block_end}):\nORG: {original_language_block_text}\nMATCH: {matched_text}\n\n")
         
         if not matched_text:
             print(f"   ⚠️ [Block {i+1}] No match found. Cursor at {pt_cursor}.")
             # Fallback: Force advance cursor to prevent stagnation.
-            # Estimate length based on English length * 1.0 (rough heuristic for EN->PT)
             estimated_len = len(original_language_block_text)
             pt_cursor += estimated_len 
-            matched_text = "" # Still empty for this block, but at least we move on.
+            matched_text = "" 
         else:
             # --- STEP C: Update Cursor ---
-            found_index = target_language_window.find(matched_text)
+            # Search specifically in the SEARCH WINDOW
+            found_index = target_language_search_window.find(matched_text)
             
-            # Anchor Logic (Optional Backup)
-            if found_index == -1 and len(matched_text) > 20:
-                anchor = matched_text[:20]
-                if target_language_window.count(anchor) == 1:
-                    found_index = target_language_window.find(anchor)
-
             if found_index != -1:
-                #absolute_end = window_start + found_index + len(matched_text)
-                #pt_cursor = absolute_end
-                absolute_start = window_start + found_index
+                # Found strictly inside the search window (ahead of cursor)
+                absolute_start = search_window_start + found_index
+                absolute_end = absolute_start + len(matched_text)
                 
-                # --- FIX: trim overlap if match starts before current cursor ---
-                if absolute_start < pt_cursor:
-                    overlap_len = pt_cursor - absolute_start
-                    # If the entire match is behind us, skip it (unlikely but safe)
-                    if overlap_len >= len(matched_text):
-                        matched_text = ""
-                    else:
-                        matched_text = matched_text[overlap_len:]
-                
-                # Recalculate positions based on (potentially trimmed) text
-                # Fix: If there was a gap (absolute_start > pt_cursor), jump to it.
-                # If there was an overlap (absolute_start < pt_cursor), we stay at pt_cursor.
-                pt_cursor = max(pt_cursor, absolute_start) + len(matched_text)
-
+                # Jump to the end of the match
+                pt_cursor = absolute_end
             else:
-                print(f"   ⚠️ [Block {i+1}] Match text returned by AI not found in window.")
-                # Fallback: Assume we actally found it but couldn't locate string. 
-                # Advance cursor by length of hypothetical match.
+                print(f"   ⚠️ [Block {i+1}] Match text returned by AI not found in search window.")
                 pt_cursor += len(matched_text)
 
         # --- STEP D: Distribute Lines ---

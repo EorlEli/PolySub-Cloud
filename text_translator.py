@@ -10,6 +10,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 MAX_CHUNK_SIZE = 4000  # Characters (approx 1000 tokens) - Safe size for reliable translation
 CONTEXT_SIZE = 200     # Characters of overlap/context
+MODEL_NAME = "gpt-5.2" # Global model setting
 
 def split_into_chunks(text, max_size=MAX_CHUNK_SIZE):
     """
@@ -39,6 +40,7 @@ def split_into_chunks(text, max_size=MAX_CHUNK_SIZE):
             current_chunk += part
             
     if current_chunk:
+        print (f"Last chunk: {current_chunk}")
         chunks.append(current_chunk)
         
     return chunks
@@ -71,6 +73,9 @@ def translate_full_text(full_text, target_language="Portuguese"):
     5. **Idioms**: Translate the *meaning*, not the words. Replace English idioms with {target_language} equivalents.
     6. **Context**: Use the provided context to maintain continuity.
     7. **Structure**: Use natural sentence structure in {target_language}.    
+    8. **Completeness**: Translate every single sentence. Do not summarize or skip text.
+    9. **Repetitions**: Keep repeated phrases (e.g., "Doing good. Doing good." -> "Estou bem. Estou bem.").
+    10. **1:1 rule**: Translate one original sentence into one translated sentence.
 
     OUTPUT:
     Return ONLY the translated text. No notes, no explanations, no preambles, no postambles.
@@ -90,14 +95,14 @@ def translate_full_text(full_text, target_language="Portuguese"):
         # Add context from the NEXT chunk if available (lookahead) could be useful but complex to implement here.
         
         user_content = f"""
-        [SOURCE TEXT TO TRANSLATE]:
-        {chunk}
+            [SOURCE TEXT TO TRANSLATE]:
+            {chunk}
         """
 
         try:
             start_time = time.perf_counter()
             response = client.chat.completions.create(
-                model="gpt-5-nano",
+                model=MODEL_NAME,
                 messages=[
                     {"role": "system", "content": system_prompt_base + context_instruction},
                     {"role": "user", "content": user_content}
@@ -140,6 +145,8 @@ def verify_translation_quality(source_chunks, translated_chunks, target_language
     3. **Terminological Consistency**: Ensure key terms are used correctly.
     4. **Fluidity**: Improve flow. If a sentence sounds awkward, rewrite it to sound native.
     5. **Formatting**: Preserve original punctuation style where appropriate for subtitles.
+    6. **1:1 Sentence Mapping**: Ensure each source sentence corresponds to exactly one translated sentence.
+    7. **Sentence Splitting**: If the translation combines sentences using colons, semicolons, or dashes, SPLIT them with a period (.). NEVER combine multiple source sentences into one.
 
     If the draft is already perfect, output it exactly as is.
     If it needs improvement, output ONLY the improved version.
@@ -161,7 +168,7 @@ def verify_translation_quality(source_chunks, translated_chunks, target_language
         try:
             start_time = time.perf_counter()
             response = client.chat.completions.create(
-                model="gpt-5-nano",
+                model=MODEL_NAME,
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_content}

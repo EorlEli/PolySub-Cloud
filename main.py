@@ -14,7 +14,9 @@ from text_translator import translate_full_text, verify_translation_quality
 from engine import run_alignment_engine
 from utils import reset_session_cost, get_session_cost, log_whisper_cost # Import these!
 from translation_evaluator import evaluate_translations
+from video_processor import burn_subtitles
 from validator import validate_vtt_structure
+
 
 app = FastAPI()
 
@@ -140,7 +142,19 @@ async def process_video_endpoint(
         with open("validation_log.txt", "a", encoding="utf-8") as vf:
             vf.write(log_entry)
 
-        # --- 7. TIME, COST & CLEANUP ---
+        # --- 7. BURN SUBTITLES INTO VIDEO ---
+        output_video_path = f"final_output_{video_file.filename}"
+        print(f"🔥 Burning subtitles into video: {output_video_path}")
+        
+        final_video = burn_subtitles(video_filename, temp_vtt_path2, output_video_path)
+        
+        if not final_video:
+             # Fallback to returning VTT if burning fails? 
+             # Or raise error? Let's print error and still return VTT for now, or raise.
+             # But user wants video. Let's assume it works or raise.
+             print("⚠️ Subtitle burning failed, returning simple VTT instead.")
+        
+        # --- 8. TIME, COST & CLEANUP ---
         job_end_time = time.time()
         total_time = job_end_time - job_start_time
         total_spent = get_session_cost()
@@ -148,27 +162,35 @@ async def process_video_endpoint(
         print(f"⏰ TOTAL JOB TIME: {total_time/60:.2f} minutes\n")
         print(f"🎵 AUDIO DURATION: {audio_duration:.2f} seconds ({audio_duration/60:.2f} minutes)\n")
 
-        # --- 8. Save transcripts for debugging
+        # --- 9. Save transcripts for debugging
         with open("full_english_text.txt", "w", encoding="utf-8") as f:
             f.write(full_english_text)
         with open("full_target_text.txt", "w", encoding="utf-8") as f:
             f.write(full_target_text)
 
-        # Delete temp files to keep folder clean
-        temp_files = [video_filename, audio_path, temp_vtt_path, temp_vtt_path2]
-        for f in temp_files:
-            if f and os.path.exists(f):
-                try:
-                    os.remove(f)
-                except PermissionError:
-                    print(f"⚠️ Could not delete {f} (File in use)")
+        # Cleanup function to be run after response
+        def cleanup_files():
+            files_to_remove = [video_filename, audio_path, temp_vtt_path, temp_vtt_path2, final_video]
+            for f in files_to_remove:
+                if f and os.path.exists(f):
+                    try:
+                        os.remove(f)
+                    except Exception as e:
+                        print(f"⚠️ Could not delete {f}: {e}")
+
+        # Add cleanup to background tasks
+        if background_tasks:
+            background_tasks.add_task(cleanup_files)
 
         print("✅ Job Complete. Sending file to user.")
         
-        # Return the file as a download
-        return Response(content=output_vtt, media_type="text/vtt", headers={
-            "Content-Disposition": f"attachment; filename=subtitles_{target_language}.vtt"
-        })
+        if final_video and os.path.exists(final_video):
+            return FileResponse(final_video, media_type="video/mp4", filename=f"subbed_{video_file.filename}")
+        else:
+            # Fallback
+            return Response(content=output_vtt, media_type="text/vtt", headers={
+                "Content-Disposition": f"attachment; filename=subtitles_{target_language}.vtt"
+            })
 
     except Exception as e:
         print(f"❌ CRITICAL ERROR: {e}")

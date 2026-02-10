@@ -37,10 +37,21 @@ def log_openai_usage(stage_name, start_time, response):
     model = response.model
     
     # Calculate Cost
+    # Calculate Cost
     cost = 0.0
-    # Simple logic to find price (defaults to nano price if unknown)
-    price_key = "gpt-5-nano" 
     
+    # pricing keys are "gpt-5.2", "gpt-5-nano", etc.
+    # The response.model might be specific like "gpt-5.2-turbo-2025..." so we check containment or exact match
+    price_key = "gpt-5-nano" # Default
+    
+    for key in PRICING:
+        if key in model:
+            price_key = key
+            break
+            
+    if price_key not in PRICING:
+         print(f"   ⚠️ Warning: Model '{model}' not found in pricing. Using default '{price_key}'")
+
     input_price = PRICING[price_key]["input"] / 1_000_000
     output_price = PRICING[price_key]["output"] / 1_000_000
     

@@ -8,38 +8,51 @@ from utils import log_openai_usage
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def find_matching_translation(original_language_block_text, target_language_window_text):
+def find_matching_translation(original_language_block_text, target_language_search_window, context_preview="", next_block_text=""):
     """
     Finds the exact target language substring corresponding to the original language text.
     Retries automatically if the AI returns an empty result.
+    
+    Args:
+        original_language_block_text: The source text block.
+        target_language_search_window: The target text to search within (starting from current cursor).
+        context_preview: The text immediately preceding the search window (for context only).
+        next_block_text: The text of the NEXT source block. Used as a negative constraint (STOP here).
     """
     
     # 1. THE ROBUST PROMPT
     # We explicitly tell the AI about the "Sliding Window" artifacts (broken words).
     system_prompt = """
     You are a Translation Matcher.
-    INPUT: An original language text segment and a target language text window.
-    TASK: Identify the target language text segment that corresponds to the original language input.
+    INPUT: An original language text segment, a target language search window, and previous context.
+    TASK: Identify the target language text segment WITHIN THE SEARCH WINDOW that corresponds to the original language input.
     
     CRITICAL RULES:
-    1. CONTEXT AWARENESS: The target language text is a "sliding window". It may start in the middle of a word or sentence.
-    2. KEY INSTRUCTION: DO NOT ignore text at the start of the window. If the original language input corresponds to the text at the very beginning of the window (even if it looks like a fragment), YOU MUST MATCH IT.
-    3. PARTIAL MATCHING: The original language input is often just a fragment of a sentence. You must find the corresponding target fragment. Do NOT look for a "complete sentence" if the translation of the original lnaguage input has been satisfied
+    1. CONTEXT AWARENESS: The prompt includes "Context (Previous Translation)". Do NOT match text inside the Context block. Only match text inside the "Search Window".
+    2. KEY INSTRUCTION: DO NOT ignore text at the start of the search window. If the original language input corresponds to the text at the very beginning of the search window (even if it looks like a fragment), YOU MUST MATCH IT.
+    3. PARTIAL MATCHING: The original language input is often just a fragment of a sentence. You must find the corresponding target fragment. Do NOT look for a "complete sentence" if the translation of the original language input has been satisfied
     4. QUOTE INDEPENDENCE: If the target text has quotes that wrap multiple sentences, but the source text only corresponds to one of them, YOU MUST BREAK THE QUOTE. Do not include the closing quote if it belongs to a later sentence.
     5. LENGTH CHECK: Do not include subsequent sentences or text that is not visually present in the source input.
-    6. EXACT EXTRACT: Extract the substring EXACTLY as it appears in the target language text. Do NOT add closing quotes or punctuation that is not present in the window at that exact position.
-    7. JSON OUTPUT: { "target_language_substring": "..." }
+    6. NEGATIVE CONSTRAINT: You are provided with the "Next Source Segment". You MUST STOP matching BEFORE the translation of this next segment begins. Do not include any part of the translation that corresponds to the next source segment.
+    7. EXACT EXTRACT: Extract the substring EXACTLY as it appears in the target language text. Do NOT add closing quotes or punctuation that is not present in the window at that exact position.
+    8. JSON OUTPUT: { "target_language_substring": "..." }
     """
 
     user_prompt = f"""
-    --- ORIGINAL LANGUAGE SEGMENT ---
-    {original_language_block_text}
+    --- CONTEXT (PREVIOUS TRANSLATION - DO NOT MATCH HERE) ---
+    ...{context_preview}
 
-    --- TARGET LANGUAGE WINDOW (Search here) ---
-    {target_language_window_text}
+    --- ORIGINAL LANGUAGE SEGMENT (MATCH THIS) ---
+    {original_language_block_text}
+    
+    --- NEXT SOURCE SEGMENT (DO NOT MATCH) ---
+    {next_block_text}
+
+    --- TARGET LANGUAGE SEARCH WINDOW (SEARCH HERE) ---
+    {target_language_search_window}
     """
 
-    current_model = "gpt-5-nano"
+    current_model = "gpt-5.2"
     max_retries = 3
 
     for attempt in range(max_retries):
@@ -78,16 +91,20 @@ def find_matching_translation(original_language_block_text, target_language_wind
 
             # --- PROGRAMMATIC VERIFICATION ---
             # If the specific text isn't found in the window, it might be a hallucination (e.g. added quote).
-            if matched_text not in target_language_window_text:
+            if matched_text not in target_language_search_window:
                 # Try stripping trailing quotes/punctuation
                 stripped = matched_text.strip('"').strip("'").strip()
-                if stripped in target_language_window_text:
+                if stripped in target_language_search_window:
                     # print(f"   🔧 Fixed hallucinated quotes: '{matched_text}' -> '{stripped}'")
                     matched_text = stripped
                 else:
                     # Try stripping just the last character (common for single hallucinated punct like " or .)
-                    if matched_text[:-1] in target_language_window_text:
+                    if matched_text[:-1] in target_language_search_window:
                          matched_text = matched_text[:-1]
+
+            # --- HEURISTIC WATCHDOG (NEW) ---
+            # Protection against "Colon Merges" or "Run-on Matches"
+            matched_text = heuristic_trim_match(original_language_block_text, matched_text)
 
             return matched_text
 
@@ -98,4 +115,65 @@ def find_matching_translation(original_language_block_text, target_language_wind
             time.sleep(1) # Small pause before retry
 
     return ""
+
+def heuristic_trim_match(source_text, match_text):
+    """
+    Safeguard: If the match is suspiciously long (> 2x source) and contains splitters (like : or .),
+    we programmatically check if splitting it yields a better length ratio.
+    """
+    if not source_text or not match_text:
+        return match_text
+
+    src_len = len(source_text)
+    match_len = len(match_text)
+    
+    # Only apply to non-trivial sentences (short words might have long translations naturally)
+    if src_len < 10:
+        return match_text
+        
+    ratio = match_len / src_len
+    
+    # If match is > 1.5x length of source, suspect a merge.
+    # (Spanish/Portuguese are usually ~1.2-1.4x English, so 1.5 is a tight but safe upper bound for "suspicious")
+    if ratio > 1.5:
+        # Check for strong splitters
+        # We look for sentence-ending or clause-breaking punctuation
+        splitters = [':', '.', ';', '—', ' – ', ' - '] 
+        
+        best_candidate = match_text
+        best_diff = abs(ratio - 1.3) # Target a theoretical 1.3x ratio
+        was_trimmed = False
+        
+        for punct in splitters:
+            if punct in match_text:
+                # Try splitting by the FIRST occurrence of the splitter
+                parts = match_text.split(punct)
+                if len(parts) > 1:
+                    candidate = parts[0].strip() + punct # Keep the punctuation? Usually yes.
+                    # Actually, if we split by colon, the colon might be part of the first sentence.
+                    # "Label: content". If source is "Label", match should be "Label:"? 
+                    # Or "Label". Let's keep it consistent.
+                    
+                    cand_len = len(candidate)
+                    if cand_len < 5: continue # Too short
+                    
+                    cand_ratio = cand_len / src_len
+                    
+                    # If this candidate is CLOSER to the ideal ratio (1.0 - 1.5 range)
+                    # We penalize very short (<0.5) and very long (>2.0)
+                    
+                    # Simple check: Is the candidate ratio "better" than the original monster ratio?
+                    # Original: 2.8. Candidate: 0.9.  0.9 is closer to 1.3 than 2.8.
+                    
+                    diff = abs(cand_ratio - 1.3)
+                    if diff < best_diff:
+                        best_candidate = candidate
+                        best_diff = diff
+                        was_trimmed = True
+        
+        if was_trimmed:
+             print(f"   ✂️ WATCHDOG TRIMMED: '{match_text[:20]}...' -> '{best_candidate[:20]}...' (Ratio {ratio:.1f}->{len(best_candidate)/src_len:.1f})")
+             return best_candidate
+             
+    return match_text
 
