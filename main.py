@@ -90,7 +90,7 @@ async def process_video_endpoint(
         if not full_target_text1:
             raise HTTPException(status_code=500, detail="Translation failed.")
 
-        # --- 4.5. VERIFY & REFINE TRANSLATION (LLM Check) ---
+        # --- 5. VERIFY & REFINE TRANSLATION (LLM Check) ---
         # Pass the chunks directly to verification for better context handling
         full_target_text = verify_translation_quality(source_chunks, translated_chunks, target_language)
 
@@ -103,14 +103,21 @@ async def process_video_endpoint(
         )
         eval_thread.start()
 
-        # --- 5. ALIGNMENT ENGINE (The Core) ---
+        # --- 6. SAVE TRANSCRIPTS FOR DEBUGGING ---
+
+        with open("full_english_text.txt", "w", encoding="utf-8") as f:
+            f.write(full_english_text)
+        with open("full_target_text.txt", "w", encoding="utf-8") as f:
+            f.write(full_target_text)
+
+        # --- 7. ALIGNMENT ENGINE (The Core) ---
         # Parse the English VTT we just made
         blocks = read_vtt(temp_vtt_path)
         
         # Run your logic loop
         final_segments = run_alignment_engine(blocks, full_target_text)
 
-        # --- 6. OUTPUT GENERATION ---
+        # --- 8. OUTPUT GENERATION ---
         output_vtt = "WEBVTT\n\n"
         for seg in final_segments:
             output_vtt += f"{seg['start']} --> {seg['end']}\n{seg['text']}\n\n"
@@ -119,7 +126,7 @@ async def process_video_endpoint(
         with open(temp_vtt_path2, "w", encoding="utf-8") as f:
             f.write(output_vtt)
 
-        # --- 6.5. VALIDATION ---
+        # --- 9. VALIDATION ---
         validation_report = validate_vtt_structure(temp_vtt_path, temp_vtt_path2)
         
         # Log Validation Results
@@ -142,7 +149,7 @@ async def process_video_endpoint(
         with open("validation_log.txt", "a", encoding="utf-8") as vf:
             vf.write(log_entry)
 
-        # --- 7. BURN SUBTITLES INTO VIDEO ---
+        # --- 10. BURN SUBTITLES INTO VIDEO ---
         output_video_path = f"final_output_{video_file.filename}"
         print(f"🔥 Burning subtitles into video: {output_video_path}")
         
@@ -154,7 +161,7 @@ async def process_video_endpoint(
              # But user wants video. Let's assume it works or raise.
              print("⚠️ Subtitle burning failed, returning simple VTT instead.")
         
-        # --- 8. TIME, COST & CLEANUP ---
+        # --- 11. TIME, COST & CLEANUP ---
         job_end_time = time.time()
         total_time = job_end_time - job_start_time
         total_spent = get_session_cost()
@@ -162,13 +169,7 @@ async def process_video_endpoint(
         print(f"⏰ TOTAL JOB TIME: {total_time/60:.2f} minutes\n")
         print(f"🎵 AUDIO DURATION: {audio_duration:.2f} seconds ({audio_duration/60:.2f} minutes)\n")
 
-        # --- 9. Save transcripts for debugging
-        with open("full_english_text.txt", "w", encoding="utf-8") as f:
-            f.write(full_english_text)
-        with open("full_target_text.txt", "w", encoding="utf-8") as f:
-            f.write(full_target_text)
-
-        # --- 10. BUNDLE OUTPUT ---
+        # --- 12. BUNDLE OUTPUT ---
         import zipfile
         zip_filename = f"output_{video_file.filename}.zip"
         

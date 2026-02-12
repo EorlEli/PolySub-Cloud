@@ -74,9 +74,9 @@ def generate_vtt_from_utterances(utterances):
 
 def transcribe_audio(audio_path, use_correction=True):
     """
-    Step 3: Sends audio to Deepgram (Nova-2) to get VTT and Text.
+    Step 3: Sends audio to Deepgram (Nova-3) to get VTT and Text.
     """
-    print("   🎙️ Sending audio to Deepgram Nova-2 API...")
+    print("   🎙️ Sending audio to Deepgram Nova-3 API...")
     
     try:
         # 1. Read Audio File
@@ -85,7 +85,7 @@ def transcribe_audio(audio_path, use_correction=True):
         
         # 2. Configure Deepgram Options
         # smart_format=True: Adds punctuation and capitalization
-        # model="nova-2": Fastest and most accurate model
+        # model="nova-3": Fastest and most accurate model
         options = {
             "model": "nova-3",
             "smart_format": True,

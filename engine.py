@@ -44,10 +44,36 @@ def run_alignment_engine(blocks, full_target_text):
         
         if not matched_text:
             print(f"   ⚠️ [Block {i+1}] No match found. Cursor at {pt_cursor}.")
-            # Fallback: Force advance cursor to prevent stagnation.
-            estimated_len = len(original_language_block_text)
-            pt_cursor += estimated_len 
-            matched_text = "" 
+            
+            # --- LOOKAHEAD RECOVERY ---
+            recov = False
+            if i + 1 < len(blocks):
+                 next_block_txt = next_block_text 
+                 
+                 # Anchor Strategy: Find Block N+1 to recover Block N
+                 print(f"   🔍 ANCHOR SEARCH: Looking for Block {i+2} to anchor mismatched Block {i+1}...")
+                 peek_match = find_matching_translation(next_block_txt, target_language_search_window, "", "")
+                 
+                 if peek_match:
+                     idx = target_language_search_window.find(peek_match)
+                     if idx != -1: 
+                         # Found the anchor!
+                         # Everything from 0 to idx is the "Gap".
+                         gap_text = target_language_search_window[:idx]
+                         
+                         print(f"   ⚓ ANCHOR FOUND: Block {i+2} starts at index {idx}.")
+                         print(f"   ✨ Gap Filled: Assigning '{gap_text[:30]}...' to Block {i+1}.")
+                         
+                         pt_cursor += idx
+                         matched_text = gap_text # Fallback to using the gap as the match
+                         recov = True
+
+            if not recov:
+                # Original Fallback: Force advance cursor to prevent stagnation.
+                estimated_len = len(original_language_block_text)
+                print(f"   Fallback: Advancing cursor by {estimated_len}")
+                pt_cursor += estimated_len 
+                matched_text = "" 
         else:
             # --- STEP C: Update Cursor ---
             # Search specifically in the SEARCH WINDOW
