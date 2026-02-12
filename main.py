@@ -168,9 +168,23 @@ async def process_video_endpoint(
         with open("full_target_text.txt", "w", encoding="utf-8") as f:
             f.write(full_target_text)
 
+        # --- 10. BUNDLE OUTPUT ---
+        import zipfile
+        zip_filename = f"output_{video_file.filename}.zip"
+        
+        with zipfile.ZipFile(zip_filename, 'w') as zipf:
+            # Add VTT
+            zipf.write(temp_vtt_path2, arcname=f"subtitles_{target_language}.vtt")
+            
+            # Add Video if it exists
+            if final_video and os.path.exists(final_video):
+                zipf.write(final_video, arcname=f"subbed_{video_file.filename}")
+            else:
+                 print("⚠️ Video generation failed, only zipping VTT.")
+
         # Cleanup function to be run after response
         def cleanup_files():
-            files_to_remove = [video_filename, audio_path, temp_vtt_path, temp_vtt_path2, final_video]
+            files_to_remove = [video_filename, audio_path, temp_vtt_path, temp_vtt_path2, final_video, zip_filename]
             for f in files_to_remove:
                 if f and os.path.exists(f):
                     try:
@@ -182,21 +196,18 @@ async def process_video_endpoint(
         if background_tasks:
             background_tasks.add_task(cleanup_files)
 
-        print("✅ Job Complete. Sending file to user.")
+        print("✅ Job Complete. Sending zip file to user.")
         
-        if final_video and os.path.exists(final_video):
-            return FileResponse(final_video, media_type="video/mp4", filename=f"subbed_{video_file.filename}")
-        else:
-            # Fallback
-            return Response(content=output_vtt, media_type="text/vtt", headers={
-                "Content-Disposition": f"attachment; filename=subtitles_{target_language}.vtt"
-            })
+        return FileResponse(zip_filename, media_type="application/zip", filename=zip_filename)
 
     except Exception as e:
         print(f"❌ CRITICAL ERROR: {e}")
         # Clean up video if it exists even on error
         if os.path.exists(video_filename):
-            os.remove(video_filename)
+            try:
+                os.remove(video_filename)
+            except:
+                pass
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
