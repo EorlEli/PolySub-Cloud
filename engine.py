@@ -3,7 +3,7 @@ from distributor import distribute_translation
 
 def run_alignment_engine(blocks, full_target_text):
     """
-    The Core Logic: Takes English VTT Blocks + Translated Text
+    The Core Logic: Takes Source VTT Blocks + Translated Text
     Returns: A list of aligned segment dictionaries.
     """
     pt_cursor = 0

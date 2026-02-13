@@ -1268,3 +1268,102 @@ Evaluation Result:
   "reasoning": "V2 is clearly the superior translation. It fixes several issues found in V1: (1) terminological accuracy and consistency improve with V2, notably aligning more closely with standard Russian for technical terms (vector embeddings, embedding models, approximate nearest neighbor, RAG) and correcting the audio model name to the conventional WAV2Vec 2.0; (2) there are fewer or no English fragments left in the text in V2, enhancing fluency and readability; (3) V2 uses more natural and precise phrasing in places where V1 was slightly awkward (for example, уточнения about the types of data and the examples of landscapes); (4) V2 provides clearer equivalents for the example about images, landscapes, and color context, reducing ambiguity (mountain vs beach, landscape phrasing); (5) the flow and tonality in V2 are more polished, making it read like high-quality Russian rather than a literal, clumsy rendering. Consequently, V2 preserves the meaning with higher accuracy and reads more fluently and formally, yielding higher scores across accuracy, fluency, tone, terminology, and grammar compared to V1. In particular, V2 achieves near-native fluency and precise terminology (score ~9/10) versus V1 (score ~7/10)."
 }
 --------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-13 06:27:59
+Target Language: Spanish
+Original Len: 7396 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 8,
+  "score_v2": 6,
+  "reasoning": "Overall, V1 is the better translation. It preserves the original terminology and avoids introducing distortions in product names, while V2 contains notable issues that hurt accuracy and tone. Key points:\\n- Terminology/Accuracy: V1 consistently uses the original product names (Cloud Code, Codex, Opus, Claude) as in the English text. V2, however, introduces misnomers like “Claude Code” (instead of Cloud Code) in multiple places, which is a factual inaccuracy and lowers reliability.\\n- Register and tone: The English text is casual and somewhat technical-lite. V1 maintains a natural, colloquial Spanish without crossing into harsh slang. V2 occasionally uses stronger slang (saca la mierda adelante) which shifts tone and may be inappropriate for some audiences; it also renders the sense less professionally aligned with the source.\\n- Fluency: Both versions are fluent, but V1’s phrasing tends to be cleaner and more consistently natural. V2 contains some awkward constructions and a few non-idiomatic lines (e.g., mixing informal phrasing with precise terms), aside from the misnaming.\\n- Minor accuracy tweaks: V2 makes some stylistic improvements (e.g., “gran parte del equipo es europeo” vs the English sense of a substantial European presence) but these are outweighed by the misnaming and the crude line noted above.\\n- Other notable points: V2 changes “post-entrenamiento” to “postentrenamiento” (minor) and uses slightly different phrasing in places that are not clearly superior overall. The mislabeling of Cloud Code as Claude Code is the decisive detractor.\\nBottom line: V1 aligns more faithfully with the source material, keeps branding accurate, and preserves a balanced, accessible tone, making it the more reliable choice despite minor stylistic rough edges."}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-13 09:08:29
+Target Language: Portuguese
+Original Len: 7381 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more natural, fluently written and faithful translation of the English source. It preserves nuances, maintains a consistent register, and uses clearer punctuation and formatting that improves readability without altering meaning. Specific improvements in V2 include: better pacing and paragraphing, more precise phrasing (e.g., “Como modelo de uso geral, o Opus é o melhor” vs. a structure in V1 that feels more like a rough transcript), and improved handling of examples and transitions (e.g., “Antes era mesmo mau, mas esforçou-se bastante para ficar muito bom a seguir instruções” is clearer than the equivalent in V1). V2 also maintains domain-appropriate terminology and keeps the conversational tone, which aligns with the source. The main drawback in V2 is a lingering ambiguity in the model naming (“Claude Opus 4.6”) that could confuse readers as it blends two model names into one phrase; this mirrors the original ambiguity and is less a translation flaw and more an issue in the source text itself. V1, by contrast, contains more awkward phrasing, run-on sentences, inconsistent punctuation, and some rough idiomatic choices that disrupt fluency and clarity (e.g., “Ui, disse aí um monte de coisas,” “Era muito agradável de usar,” and longer, choppier lines). Overall, V2 is the closer to a native, high-quality Portuguese rendering of the English source.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-13 09:26:37
+Target Language: Russian
+Original Len: 7967 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more polished and coherent translation. Key improvements include: (1) Terminology and abbreviation consistency — ACT-R is consistently written with a hyphen (ACT-R) and presented more uniformly; (2) Elimination of English-in-Russian phraseology — the awkward 'across tasks' phrase found in V1 is rewritten to a natural Russian equivalent in V2; (3) More natural phrasing and flow — V2 uses 'давайте рассмотрим' and smoother clauses, improving fluency and readability; (4) Improved coherence in the ACT-R section — V2 provides a clearer, natural progression of concepts and keeps terminology consistent (модули, память, буферы, центральная система продукций); (5) Minor refinements in tone and accuracy (e.g., avoiding unnecessarily literal constructions, aligning with formal academic style)."
+
+  }
+
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-13 10:45:06
+Target Language: Russian
+Original Len: 11373 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 5,
+  "score_v2": 9,
+  "reasoning": "V2 превосходит V1 по всем критериям перевода. Основные проблемы V1 — явные языковые ошибки и смешение языков: в тексте встречаются вставки на испанском (например, «10 por 100» и фразы вроде «для тестов…» с испанскими элементами), что приводит к потере единообразия и точности. Кроме того, в V1 встречаются варианты на разных формах названия («N 8 N» и «N8N»), а также фрагменты вроде «Alojar N 8 N por tu cuenta», которые нарушают стиль и читаемость. В результате точность и естественность читаемого текста страдают. V2 исправляет эти проблемы: терминология унифицирована под стиль русскоязычной технической документации (использование «самостоятельный хостинг» вместо «автозахостинг»; «N8N» пишется единообразно; плавный, нейтральный тон). В V2 сохраняются точные техничес детали, структура и порядок из оригинала, и текст читабелен на уровне оригинального российского оригинала. Единственные небольшие неточности в V2 — использование английского термина workflow в одном месте и редкие случаи, где можно было бы предпочесть «рабочий процесс» для единообразия; это несущественные мелочи по сравнению с общим качеством перевода. В итоге V2 получает высокий балл за точность, грамотность и естественность, а V1 — заметные языковые дефекты и смешение языков, которые снижают качество перевода." 
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-13 11:30:08
+Target Language: Portuguese
+Original Len: 1234 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 9,
+  "score_v2": 7,
+  "reasoning": "V1 is the more natural and accurate Portuguese rendering of the original English text. It preserves nuance and reads like fluent, native content. Key strengths of V1 include: natural phrasing (e.g., 'de olhos vendados' rather than the less natural 'com uma venda nos olhos'), consistent use of terminology, and a smooth flow that mirrors the original marketing tone. Specific examples: V1 renders the blindfold imagery as 'à escala de toda a empresa, mas de olhos vendados' which sounds idiomatic; it keeps the continuous, cohesive sentence structure that matches the source’s promotional cadence. In contrast, V2 contains stylistic and lexical issues that hinder fluency: the phrase 'com uma venda nos olhos' is less idiomatic for Portuguese speakers (more natural would be 'com os olhos vendados'), there is an abrupt shift in voice with abrupt imperatives ('Use os seus dados...'), and one sentence split ('Depois, ajudamo-lo... Use os seus dados... Vamos analisando...') fragments the flow. Minor semantic tweaks in V2 (e.g., 'num resultado de negócio' vs 'um resultado para o negócio', 'à escala de todo o seu negócio' vs 'à escala de toda a empresa') are not fatal but contribute to a slightly less polished overall impression. Overall, V1 maintains accuracy, fluency, tone, and grammar more consistently than V2.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-13 11:38:43
+Target Language: Russian
+Original Len: 1239 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is superior in accuracy and fluency. It replaces awkward or ambiguous phrasing from V1 (e.g., 'живут в разных системах' sounds odd; V2 uses 'существуют' and 'используют разные методы' for clarity). It breaks long sentences into clearer, more natural Russian statements, improving readability and keeping the marketing tone formal. Nuances from the source are better preserved: 'выявлять неэффективности' (not just 'находить'), 'расставлять приоритеты по влиянию на бизнес' remains, and 'постановка нынешнего процесса vs модель целевого процесса' is explicit ('текущий процесс' vs 'модель целевого процесса'). The line about 'firing on all cylinders' is more faithful in V2 ('на полную мощность') than V1 ('как часы'). Minor caveat: both translations render 'process excellence' as a noun phrase with 'совершенство/совершенствование'; V2 uses ' Celonis совершенство своих процессов', which is understandable but could be refined to 'Celonis для совершенствования процессов' in a more polished version. Overall, V2 offers better accuracy, fluency, and tone alignment with the source.)"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-13 13:39:04
+Target Language: Russian
+Original Len: 5023 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the clearer and more accurate rendering overall. Key improvements include: 1) Nuance of knowledge acquisition vs. extraction. The original text describes a bottleneck in acquiring knowledge and encoding it into explicit rules. V2 uses “приобретения знаний,” which faithfully mirrors this concept, whereas V1 uses “извлечения знаний,” which misaligns the original notion. 2) Style and fluency. V2 preserves a more natural and cohesive Russian academic tone (e.g., “рассуждения” rather than a looser phrasing, consistent terminology like “коннекционистский ИИ,” “GOFAI,” “перцептронов,” “нейросетей”). It also tightens some sentences for better readability, making it read more like native prose. 3) Terminology and accuracy. V2 keeps terminology consistent and precise (e.g., “обобщающая таблица” instead of looser wording, “структурой и функциями нашего мозга” rather than a slightly clunkier formulation). 4) Minor but meaningful corrections. For example, V2 uses more accurate phrasing for the neural-network discussion and learning: “обучение нейросети,” “веса,” “глубокое обучение,” and explicitly notes the data requirements in a more natural way. 5) Minor stylistic refinements that enhance readability without changing meaning (e.g., V2’s handling of “как я уже говорил”/“как мы говорили ранее” and the slightly more formal handling of the deduction example). Overall, V2 preserves all meaning of the source while achieving higher fluency, consistency, and terminological precision, hence its higher score. "
+}
+--------------------------------------------------

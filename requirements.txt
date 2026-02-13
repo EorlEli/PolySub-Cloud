@@ -3,3 +3,7 @@ uvicorn
 python-dotenv
 openai
 python-multipart
+google-cloud-storage
+google-cloud-firestore
+
+ffmpeg-python

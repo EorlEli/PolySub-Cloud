@@ -21,7 +21,7 @@ def evaluate_translations(original_text, text_v1, text_v2, target_language="Port
     You are an expert impartial judge of translation quality, specializing in {target_language}.
     
     YOUR GOAL:
-    Compare two translation versions (V1 and V2) of an English source text and determine which is definitively better.
+    Compare two translation versions (V1 and V2) of a source text and determine which is definitively better.
     
     CRITERIA FOR PERFECT TRANSLATION (Score 10/10):
     1. **Accuracy**: Zero loss of meaning. All nuances are preserved.
@@ -46,7 +46,7 @@ def evaluate_translations(original_text, text_v1, text_v2, target_language="Port
     """
 
     user_content = f"""
-    [ORIGINAL ENGLISH TEXT]:
+    [ORIGINAL SOURCE TEXT]:
     {original_text}
 
     [TRANSLATION V1 (Initial)]:

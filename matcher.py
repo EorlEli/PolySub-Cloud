@@ -34,6 +34,8 @@ def find_matching_translation(original_language_block_text, target_language_sear
     4. QUOTE INDEPENDENCE: If the target text has quotes that wrap multiple sentences, but the source text only corresponds to one of them, YOU MUST BREAK THE QUOTE. Do not include the closing quote if it belongs to a later sentence.
     5. LENGTH CHECK: Do not include subsequent sentences or text that is not visually present in the source input.
     6. NEGATIVE CONSTRAINT: You are provided with the "Next Source Segment". You MUST STOP matching BEFORE the translation of this next segment begins. Do not include any part of the translation that corresponds to the next source segment.
+       - SPECIAL CASE: If the "Next Source Segment" is a short question or phrase (e.g., "Right?", "No?", "Okay?"), and the translation window contains its corresponding translation (e.g., "¿no?", "¿verdad?", "¿vale?"), YOU MUST EXCLUDE IT from the current match.
+       - REPEATED TEXT: If the next source segment is a repeat of the end of the current segment, STOP before the repetition begins in the translation.
     7. EXACT EXTRACT: Extract the substring EXACTLY as it appears in the target language text. Do NOT add closing quotes or punctuation that is not present in the window at that exact position.
     8. JSON OUTPUT: { "target_language_substring": "..." }
     """
@@ -134,7 +136,7 @@ def heuristic_trim_match(source_text, match_text):
     ratio = match_len / src_len
     
     # If match is > 1.5x length of source, suspect a merge.
-    # (Spanish/Portuguese are usually ~1.2-1.4x English, so 1.5 is a tight but safe upper bound for "suspicious")
+    # (Target languages are usually ~1.2-1.4x Source, so 1.5 is a tight but safe upper bound for "suspicious")
     if ratio > 1.5:
         # Check for strong splitters
         # We look for sentence-ending or clause-breaking punctuation

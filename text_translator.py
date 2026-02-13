@@ -70,7 +70,7 @@ def translate_full_text(full_text, target_language="Portuguese"):
     2. **Accuracy**: Preserve the exact meaning, tone, and nuance of the source.
     3. **Terminology**: Use precise and consistent terminology.
     4. **Conciseness**: Subtitles must be easy to read. Avoid unnecessary wordiness.
-    5. **Idioms**: Translate the *meaning*, not the words. Replace English idioms with {target_language} equivalents.
+    5. **Idioms**: Translate the *meaning*, not the words. Replace source idioms with {target_language} equivalents.
     6. **Context**: Use the provided context to maintain continuity.
     7. **Structure**: Use natural sentence structure in {target_language}.    
     8. **Completeness**: Translate every single sentence. Do not summarize or skip text.

@@ -900,3 +900,66 @@ tus ...
    - Cue 26 has 3 lines (Ideal is 2).
    - Cue 133 has 3 lines (Ideal is 2).
 ----------------------------------------
+[2026-02-13 06:33:58] Video: Opus-4-6-vs-GPT-5-3-Codex.mp4 -> Spanish
+✅ VALIDATION PASSED
+⚠️ WARNINGS (13):
+   - Cue 84 has 3 lines (Ideal is 2).
+   - Cue 110 has 3 lines (Ideal is 2).
+   - Cue 132 has 3 lines (Ideal is 2).
+   - Cue 9 is too fast (31.1 CPS). Text: ¿Puedes hablar de esas diferen...
+   - Cue 10 is too fast (31.1 CPS). Text: Uf, he dicho un montón de cosa...
+   - Cue 22 is too fast (27.7 CPS). Text: Probablemente podrías
+suavizar...
+   - Cue 23 is too fast (47.8 CPS). Text: Sí, lo entiendo perfectamente....
+   - Cue 25 is too fast (26.5 CPS). Text: ¿Es eso lo que estás diciendo?...
+   - Cue 40 is too fast (80.7 CPS). Text: “Tienes toda la razón.”...
+   - Cue 98 is too fast (25.1 CPS). Text: Ni siquiera lo he probado toda...
+   - Cue 99 is too fast (28.1 CPS). Text: Yo… a mí me gusta un poco lo s...
+   - Cue 141 is too fast (27.2 CPS). Text: Guau....
+   - Found 9 blocks with CPS > 25.
+----------------------------------------
+[2026-02-13 09:14:00] Video: Opus-4-6-vs-GPT-5-3-Codex.mp4 -> Portuguese
+✅ VALIDATION PASSED
+⚠️ WARNINGS (7):
+   - Cue 150 has 3 lines (Ideal is 2).
+   - Cue 9 is too fast (25.7 CPS). Text: Oh, disse aí um monte de coisa...
+   - Cue 21 is too fast (32.5 CPS). Text: Tu provavelmente consegues
+apa...
+   - Cue 22 is too fast (28.8 CPS). Text: Eu sei exatamente....
+   - Cue 143 is too fast (27.2 CPS). Text: “Uau....
+   - Cue 156 is too fast (26.3 CPS). Text: Está difícil....
+   - Found 5 blocks with CPS > 25.
+----------------------------------------
+[2026-02-13 09:27:23] Video: 2.4.5.mp4 -> Russian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (2):
+   - Cue 19 has 3 lines (Ideal is 2).
+   - Cue 92 has 3 lines (Ideal is 2).
+----------------------------------------
+[2026-02-13 10:46:59] Video: Como-Usar-n8n-GRATIS.mp4 -> Russian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (5):
+   - Cue 58 has 3 lines (Ideal is 2).
+   - Cue 117 is too fast (25.0 CPS). Text: Тебе предложат бесплатную
+защи...
+   - Cue 118 is too fast (25.0 CPS). Text: Это дополнительный уровень без...
+   - Cue 177 is too fast (27.9 CPS). Text: Или просто пролистай и найди
+т...
+   - Found 3 blocks with CPS > 25.
+----------------------------------------
+[2026-02-13 11:29:50] Video: Celonis.mp4 -> Portuguese
+✅ VALIDATION PASSED
+⚠️ WARNINGS (2):
+   - Cue 10 is too fast (28.1 CPS). Text: Depressa....
+   - Found 1 blocks with CPS > 25.
+----------------------------------------
+[2026-02-13 11:38:55] Video: Celonis.mp4 -> Russian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (3):
+   - Cue 17 has 3 lines (Ideal is 2).
+   - Cue 27 is too fast (25.0 CPS). Text: Давайте поговорим....
+   - Found 1 blocks with CPS > 25.
+----------------------------------------
+[2026-02-13 13:39:06] Video: temp_2.4.4.mp4 -> Russian
+✅ VALIDATION PASSED
+----------------------------------------

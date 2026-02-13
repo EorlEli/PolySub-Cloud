@@ -1,0 +1,26 @@
+steps:
+  # 1. Build the Container Image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/polysub-worker', '.']
+
+  # 2. Push the Image to Container Registry (or Artifact Registry)
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/polysub-worker']
+
+  # 3. (Optional) Deploy/Update Cloud Run Job
+  # Note: This requires the Cloud Run Job to already exist or be created here.
+  # We'll assume updating an existing job named 'polysub-processor-job'
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'jobs'
+      - 'update'
+      - 'polysub-processor-job'
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/polysub-worker'
+      - '--region'
+      - 'us-central1' # Change to your region
+
+images:
+  - 'gcr.io/$PROJECT_ID/polysub-worker'

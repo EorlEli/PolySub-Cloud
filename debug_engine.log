@@ -23130,3 +23130,1996 @@ BLOCK 89 (00:09:29.230 -> 00:09:36.429):
 ORG: They are both a place to store unstructured data and a place to retrieve it quickly and semantically.
 MATCH: Это одновременно место для хранения неструктурированных данных и способ быстро извлекать их по смыслу.
 
+BLOCK 0 (00:00:02.960 -> 00:00:12.960):
+ORG: Maybe you can talk about the current two big competitors in terms of models, Claude 4/6 and GPT-4 Codex.
+MATCH: Quizá puedas hablar de los dos grandes competidores ahora mismo en cuanto a modelos, Claude 4/6 y GPT-4 Codex.  
+
+BLOCK 1 (00:00:13.824 -> 00:00:14.816):
+ORG: Which is better?
+MATCH: ¿Cuál es mejor?
+
+BLOCK 2 (00:00:14.816 -> 00:00:16.242):
+ORG: How different are they?
+MATCH: ¿En qué se diferencian?
+
+BLOCK 3 (00:00:17.024 -> 00:00:30.877):
+ORG: I think you've spoken about Codex reading more and Opus being more willing to take action faster and maybe being more creative in the actions it takes.
+MATCH: Creo que has dicho que Codex lee más y que Opus está más dispuesto a actuar antes y quizá es más creativo en las acciones que toma.
+
+BLOCK 4 (00:00:30.877 -> 00:00:37.030):
+ORG: But because Codex reads more, it's able to deliver maybe better code.
+MATCH: Pero como Codex lee más, puede que entregue mejor código.
+
+BLOCK 5 (00:00:37.189 -> 00:00:39.343):
+ORG: Can you speak to the differences there?
+MATCH: ¿Puedes hablar de esas diferencias?  
+Uf, he dicho un montón de cosas.
+
+BLOCK 6 (00:00:39.343 -> 00:00:40.590):
+ORG: Oh, I have a lot of words there.
+MATCH: 
+
+BLOCK 7 (00:00:43.324 -> 00:00:50.177):
+ORG: As a general purpose model, Opus is the best.
+MATCH: Como modelo de propósito general, Opus es el mejor.
+
+BLOCK 8 (00:00:50.177 -> 00:01:02.100):
+ORG: Like for Claude, Opus is extremely good in terms of role play, like really going into the character that you give it.
+MATCH: En Claude, Opus es extremadamente bueno para el roleplay, o sea, se mete de verdad en el personaje que le das.
+Se le da muy bien.
+
+BLOCK 9 (00:01:02.100 -> 00:01:12.135):
+ORG: It's very good at it was really bad, but it really made an effort to be really good at following commands.
+MATCH: Antes era malísimo, pero se esforzó mucho por volverse realmente bueno siguiendo instrucciones.
+
+BLOCK 10 (00:01:14.215 -> 00:01:17.956):
+ORG: It is usually quite fast at trying something.
+MATCH: Suele ser bastante rápido a la hora de probar algo.
+
+BLOCK 11 (00:01:17.956 -> 00:01:20.249):
+ORG: It's much more tailored to, like, trial and error.
+MATCH: Está mucho más orientado al ensayo y error.
+
+BLOCK 12 (00:01:22.399 -> 00:01:24.239):
+ORG: It's very pleasant to use.
+MATCH: Da gusto usarlo.
+
+BLOCK 13 (00:01:25.359 -> 00:01:36.841):
+ORG: In general, it's almost like Opus is is a little bit too American, and I should maybe it is a bad analogy.
+MATCH: En general, es casi como si Opus fuese un pelín demasiado americano, y quizá es una mala analogía.
+
+BLOCK 14 (00:01:36.841 -> 00:01:38.392):
+ORG: You probably could roll some of that.
+MATCH: Probablemente podrías suavizar un poco eso.
+
+BLOCK 15 (00:01:38.392 -> 00:01:39.020):
+ORG: I know exactly.
+MATCH: Sí, lo entiendo perfectamente.
+
+BLOCK 16 (00:01:39.020 -> 00:01:40.235):
+ORG: It's because Codex is German.
+MATCH: Es porque Codex es alemán.
+
+BLOCK 17 (00:01:40.235 -> 00:01:41.366):
+ORG: Is that what you're saying?
+MATCH: ¿Es eso lo que estás diciendo?
+
+BLOCK 18 (00:01:42.415 -> 00:01:45.569):
+ORG: Actually, now that you say it, it makes perfect sense.
+MATCH: La verdad, ahora que lo dices, tiene todo el sentido del mundo.
+
+BLOCK 19 (00:01:45.569 -> 00:01:47.556):
+ORG: Or you could sometimes explain it.
+MATCH: O a veces lo podrías explicar así.
+
+BLOCK 20 (00:01:48.260 -> 00:01:51.047):
+ORG: I will never be able to forget what you just said.
+MATCH: No voy a poder olvidar lo que acabas de decir.
+
+BLOCK 21 (00:01:51.047 -> 00:01:51.883):
+ORG: That's so true.
+MATCH: Es tal cual.
+
+BLOCK 22 (00:01:52.260 -> 00:01:55.140):
+ORG: But you also know that a lot of the Codex team is like European.
+MATCH: Pero también sabes que gran parte del equipo de Codex es europeo.  
+
+BLOCK 23 (00:01:57.540 -> 00:01:59.459):
+ORG: So maybe there's a bit more to it.
+MATCH: Así que igual hay algo más ahí.
+
+BLOCK 24 (00:01:59.859 -> 00:02:00.936):
+ORG: That's so true.
+MATCH: Totalmente.
+
+BLOCK 25 (00:02:00.936 -> 00:02:01.869):
+ORG: That's funny.
+MATCH: Qué bueno.
+
+BLOCK 26 (00:02:01.869 -> 00:02:05.796):
+ORG: But also, Anthropic, they fixed it a little bit.
+MATCH: Pero también, en Anthropic, lo ajustaron un poco.
+
+BLOCK 27 (00:02:05.796 -> 00:02:11.067):
+ORG: Like, Opus used to say, you're absolutely right all the time, and and today, it still triggers me.
+MATCH: Opus antes decía “tienes toda la razón” todo el rato y, a día de hoy, todavía me dispara.
+
+BLOCK 28 (00:02:11.067 -> 00:02:12.358):
+ORG: I can't hear it anymore.
+MATCH: Ya no lo soporto.
+
+BLOCK 29 (00:02:12.358 -> 00:02:13.487):
+ORG: It's not even a joke.
+MATCH: No es broma.
+
+BLOCK 30 (00:02:13.487 -> 00:02:17.146):
+ORG: I just this was like the the meme.
+MATCH: Esto era como el meme, ¿no?
+
+BLOCK 31 (00:02:17.146 -> 00:02:17.431):
+ORG: Right?
+MATCH: “Tienes toda la razón.”
+
+BLOCK 32 (00:02:17.431 -> 00:02:18.569):
+ORG: You're absolutely right.
+MATCH: 
+
+BLOCK 33 (00:02:19.509 -> 00:02:22.146):
+ORG: You're allergic to sycophancy a little bit.
+MATCH: Eres un poco alérgico a la complacencia, sí.
+
+BLOCK 34 (00:02:22.146 -> 00:02:22.453):
+ORG: Yeah.
+MATCH: Sí,
+
+BLOCK 35 (00:02:22.453 -> 00:02:23.066):
+ORG: I I can't.
+MATCH:  no puedo.
+
+BLOCK 36 (00:02:23.270 -> 00:02:34.811):
+ORG: Some other comparison is like, Opus is like the coworker that is a little silly sometimes, but it's really funny and you keep him around.
+MATCH: Otra comparación sería: Opus es como el compañero de curro que a veces es un poco tonto, pero es muy gracioso y lo mantienes por ahí.
+
+BLOCK 37 (00:02:34.811 -> 00:02:41.287):
+ORG: And Codex is like the the weirdo in the corner that you don't wanna talk to, but he's reliable and gets shit done.
+MATCH: Y Codex es como el rarito de la esquina con el que no te apetece hablar, pero es fiable y saca la mierda adelante.
+
+BLOCK 38 (00:02:41.287 -> 00:02:41.571):
+ORG: Yeah.
+MATCH: Sí.
+
+BLOCK 39 (00:02:43.205 -> 00:02:48.324):
+ORG: Ultimately This all feels very accurate.
+MATCH: En el fondo, todo esto suena muy acertado.
+
+BLOCK 40 (00:02:48.870 -> 00:02:55.590):
+ORG: I mean, if you're a skilled driver, you can get good results with any of those latest gen models.
+MATCH: Quiero decir, si eres un buen conductor, puedes conseguir buenos resultados con cualquiera de esos modelos de última generación.
+
+BLOCK 41 (00:02:58.389 -> 00:03:03.685):
+ORG: I like Codex more because it doesn't require so much charade.
+MATCH: A mí me gusta más Codex porque no requiere tanto teatro.
+
+BLOCK 42 (00:03:04.485 -> 00:03:07.872):
+ORG: It will just it will just read a lot of code by default.
+MATCH: Simplemente lee un montón de código por defecto.
+
+BLOCK 43 (00:03:07.872 -> 00:03:17.585):
+ORG: Opus, really have to like, you have to have plan mode, you have to push it harder to like go in these directions because it's it's just like like, yeah, can I go in?
+MATCH: Con Opus tienes que… o sea, tienes que usar el modo plan, tienes que empujarlo más para que vaya en esas direcciones porque es como… como “sí, ¿puedo entrar?, ¿puedo entrar?”.
+
+BLOCK 44 (00:03:17.585 -> 00:03:18.200):
+ORG: Can I go in?
+MATCH: 
+
+BLOCK 45 (00:03:18.200 -> 00:03:22.689):
+ORG: It's like it would just run off very fast, and that's a very localized solution.
+MATCH: Es como que sale disparado enseguida, y eso es una solución muy localizada.
+
+BLOCK 46 (00:03:22.769 -> 00:03:25.330):
+ORG: I think I think different is is in the post training.
+MATCH: Creo que la diferencia está en el postentrenamiento.
+
+BLOCK 47 (00:03:25.810 -> 00:03:34.795):
+ORG: It's not like the the raw model intelligence is so different, but it's just I think that they just gave it give it different different goals.
+MATCH: No es que la inteligencia “en crudo” del modelo sea tan distinta, sino que creo que simplemente les dieron objetivos diferentes.
+
+BLOCK 48 (00:03:35.115 -> 00:03:38.486):
+ORG: No model no model is better in in in every aspect.
+MATCH: Ningún modelo es mejor en todos los aspectos.
+
+BLOCK 49 (00:03:38.486 -> 00:03:41.048):
+ORG: What about the code that it generates?
+MATCH: ¿Y qué pasa con el código que genera?
+
+BLOCK 50 (00:03:41.915 -> 00:03:46.813):
+ORG: In terms of the actual quality of the code, is it basically the same?
+MATCH: En cuanto a la calidad real del código, ¿es básicamente lo mismo?  
+
+BLOCK 51 (00:03:46.813 -> 00:03:51.860):
+ORG: If you drive it right, Opus even sometimes can make more elegant solutions.
+MATCH: Si lo conduces bien, Opus incluso a veces puede dar soluciones más elegantes.
+
+BLOCK 52 (00:03:52.419 -> 00:03:54.500):
+ORG: But it requires more skill.
+MATCH: Pero requiere más pericia.
+
+BLOCK 53 (00:03:56.659 -> 00:04:04.254):
+ORG: It's it's harder to have so many sessions in parallel with Cloud Code because it's it's more interactive.
+MATCH: Es más difícil llevar tantas sesiones en paralelo con Cloud Code porque es más interactivo.
+
+BLOCK 54 (00:04:04.814 -> 00:04:09.614):
+ORG: And I I think that's what a lot of people like, especially if they come from coding themselves.
+MATCH: Y creo que eso es lo que le gusta a mucha gente, sobre todo si vienen de programar.
+
+BLOCK 55 (00:04:10.989 -> 00:04:19.166):
+ORG: Whereas, Claude is much more you have a discussion, and then it will just disappear for twenty minutes.
+MATCH: Mientras que con Claude es mucho más de: tú tienes una conversación y luego desaparece veinte minutos.
+
+BLOCK 56 (00:04:19.166 -> 00:04:22.204):
+ORG: Like even AMP, they did not edit the deep mode.
+MATCH: Incluso AMP, no habían editado el modo profundo.
+
+BLOCK 57 (00:04:22.350 -> 00:04:23.685):
+ORG: They finally I mocked them.
+MATCH: Al final, me burlé de ellos.
+
+BLOCK 58 (00:04:23.685 -> 00:04:25.416):
+ORG: You know, he finally saw the light.
+MATCH: Ya sabes, al final vieron la luz.
+
+BLOCK 59 (00:04:25.416 -> 00:04:29.026):
+ORG: And then they had this whole talk about you have to approach differently.
+MATCH: Y luego tuvieron toda esta charla de que hay que abordarlo de otra manera.
+
+BLOCK 60 (00:04:29.604 -> 00:04:39.520):
+ORG: And I think that's where that's where people struggle when they just try codecs after trying cloud code, is that it's it's a slightly different it's it's less interactive.
+MATCH: Y creo que ahí es donde la gente se atasca cuando prueba Codex después de Cloud Code.  
+Es un poco diferente.  
+Es menos interactivo.  
+
+
+BLOCK 61 (00:04:39.520 -> 00:04:49.197):
+ORG: It's it's like I have quite long discussions sometimes and then, like, go off and then, yeah, it doesn't matter if it takes ten, twenty, thirty, forty, fifty minutes or longer.
+MATCH: Yo a veces tengo discusiones bastante largas y luego, como, se va y… sí, me da igual si tarda diez, veinte, treinta, cuarenta, cincuenta minutos o más.  
+
+BLOCK 62 (00:04:49.197 -> 00:04:51.296):
+ORG: And they're like the six single, like, six hours.
+MATCH: Y es como… seis… como… seis horas.
+
+BLOCK 63 (00:04:53.134 -> 00:04:57.366):
+ORG: The latest trend can be very, very persistent until it works.
+MATCH: La tendencia más reciente es que puede ser muy, muy persistente hasta que funciona.
+
+BLOCK 64 (00:04:57.366 -> 00:05:06.735):
+ORG: If there's a clear solution, like this is this is what I want at the end, so it works, the model will work very hard to really get there.
+MATCH: Si hay una solución clara, en plan “esto es lo que quiero al final”, el modelo va a trabajar muchísimo para llegar de verdad hasta ahí.
+
+BLOCK 65 (00:05:07.375 -> 00:05:15.689):
+ORG: So I think ultimately they both need similar time.
+MATCH: Así que creo que, en última instancia, ambos necesitan un tiempo parecido.
+
+BLOCK 66 (00:05:17.210 -> 00:05:23.985):
+ORG: But on Claude, it's a little much harder and error-prone, and Codex sometimes overthinks.
+MATCH: Pero en Claude es un poco más difícil y más propenso a errores, y Codex a veces le da demasiadas vueltas.
+
+BLOCK 67 (00:05:23.985 -> 00:05:25.105):
+ORG: I prefer that.
+MATCH: Yo prefiero eso.
+
+BLOCK 68 (00:05:25.664 -> 00:05:35.425):
+ORG: I prefer the dry version where I have to read less over the more interactive, nice way.
+MATCH: Prefiero la versión seca, en la que tengo que leer menos, a la versión más interactiva y agradable.
+
+BLOCK 69 (00:05:37.970 -> 00:05:45.182):
+ORG: Like, people like that so much, though, that openly, I even added a second mode with, like, a more pleasant personality.
+MATCH: Pero a la gente le gusta tanto eso que, sinceramente, incluso añadí un segundo modo con una personalidad más agradable.
+
+BLOCK 70 (00:05:45.182 -> 00:05:46.535):
+ORG: I haven't even tried it yet.
+MATCH: Ni siquiera lo he probado todavía.
+
+BLOCK 71 (00:05:46.535 -> 00:05:47.743):
+ORG: I I kinda like the bread.
+MATCH: Yo… a mí me gusta un poco lo soso.
+
+BLOCK 72 (00:05:47.743 -> 00:05:47.984):
+ORG: Mhmm.
+MATCH: Mmm.
+
+BLOCK 73 (00:05:50.435 -> 00:05:51.154):
+ORG: Yeah.
+MATCH: Sí.
+
+BLOCK 74 (00:05:51.314 -> 00:05:59.537):
+ORG: I care about efficiency when I build it, and I I have fun in the very act of building.
+MATCH: Me importa la eficiencia cuando lo construyo, y me divierte el propio acto de construir.
+
+BLOCK 75 (00:05:59.537 -> 00:06:02.577):
+ORG: I don't need to have fun with my agent to build.
+MATCH: No necesito divertirme con mi agente para construir.
+
+BLOCK 76 (00:06:02.577 -> 00:06:07.432):
+ORG: So I have fun with my model that where I can then test those features.
+MATCH: Así que me lo paso bien con mi modelo, y ahí es donde luego puedo probar esas funciones.
+
+BLOCK 77 (00:06:07.432 -> 00:06:14.036):
+ORG: How long does it take for you to adjust, you know, if you switch?
+MATCH: ¿Cuánto tardas tú en adaptarte, ya sabes, si cambias?
+
+BLOCK 78 (00:06:14.036 -> 00:06:16.540):
+ORG: I don't know when was the last time you switched.
+MATCH: No sé cuándo fue la última vez que cambiaste.
+
+BLOCK 79 (00:06:16.540 -> 00:06:17.868):
+ORG: But to adjust to the feel.
+MATCH: Pero adaptarte a la sensación.
+
+BLOCK 80 (00:06:17.868 -> 00:06:27.841):
+ORG: Because you've kinda talked about, like, you have to kinda really feel where where a model is strong, where, like, how to navigate, how to prompt, how all that kind of stuff.
+MATCH: Porque has hablado de que tienes que sentir de verdad dónde es fuerte un modelo, cómo navegar, cómo prompear, y todo ese tipo de cosas.
+
+BLOCK 81 (00:06:27.841 -> 00:06:33.056):
+ORG: Like this by way of advice, because you've been through this journey of just playing with models.
+MATCH: Como consejo, porque tú has pasado por este recorrido de ir jugando con modelos.
+
+BLOCK 82 (00:06:34.710 -> 00:06:36.630):
+ORG: How long does it take to get a feel?
+MATCH: ¿Cuánto se tarda en cogerle el punto?
+
+BLOCK 83 (00:06:36.630 -> 00:06:42.887):
+ORG: If if someone switches, I would give it a week until you actually develop a gut feeling for it.
+MATCH: Si alguien cambia, yo le daría una semana hasta que de verdad desarrollas el instinto.
+
+BLOCK 84 (00:06:42.887 -> 00:06:43.139):
+ORG: Yeah.
+MATCH: Sí.
+
+BLOCK 85 (00:06:44.794 -> 00:06:54.633):
+ORG: This if you just I think some people also make the mistake of they pay 200 for the Cloud Code version, then they pay $20 for the OpenAI version.
+MATCH: Esto, si solo… yo creo que algunas personas también cometen el error de pagar 200 por la versión de Claude Code, y luego pagar 20 dólares por la versión de OpenAI.
+
+BLOCK 86 (00:06:54.633 -> 00:06:58.394):
+ORG: But if you pay the the $20 version, you get the slow version.
+MATCH: Pero si pagas la versión de 20, te toca la versión lenta.
+
+BLOCK 87 (00:06:58.794 -> 00:07:11.410):
+ORG: So your experience would be terrible, because you're used to this very interactive, very good system, and you switch to something that you have very little experience, and that's gonna be very slow.
+MATCH: Así que tu experiencia sería terrible, porque estás acostumbrado a un sistema muy interactivo y muy bueno, y te cambias a algo con lo que tienes muy poca experiencia, y va a ser muy lento.
+
+BLOCK 88 (00:07:11.889 -> 00:07:33.414):
+ORG: So I think, overnight shot themselves a little bit in the foot by making the cheap version also slow, I would have at least a small part of the fast preview or like the experience that you get when you pay 200 before degrading to it being slow, because it's already slow.
+MATCH: Así que creo que, de la noche a la mañana, se pegaron un tiro en el pie al hacer que la versión barata también fuera lenta.  
+Yo habría dejado al menos una pequeña parte de la vista previa rápida o, en plan, la experiencia que tienes cuando pagas 200 antes de degradar a que sea lento, porque ya es lento.
+
+BLOCK 89 (00:07:33.414 -> 00:07:38.922):
+ORG: I mean, made it better, I think it's and and they have plans to make it a lot better if the cerebral stuff is true.
+MATCH: Quiero decir, lo han mejorado, creo, y… y tienen planes para mejorarlo muchísimo si lo de lo “cerebral” es verdad.
+
+BLOCK 90 (00:07:40.115 -> 00:07:41.359):
+ORG: But yeah, it's a skill.
+MATCH: Pero sí, es una habilidad.
+
+BLOCK 91 (00:07:41.359 -> 00:07:42.116):
+ORG: It takes time.
+MATCH: Lleva tiempo.
+
+BLOCK 92 (00:07:42.116 -> 00:07:48.335):
+ORG: Even if you play you have a regular guitar and you switch it to an e guitar, you're not gonna play well right away.
+MATCH: Incluso si tocas una guitarra normal y te pasas a una guitarra eléctrica, no vas a tocar bien de inmediato.
+
+BLOCK 93 (00:07:48.335 -> 00:07:51.875):
+ORG: You have to, like, learn how it feels.
+MATCH: Tienes que, en plan, aprender cómo se siente.
+
+BLOCK 94 (00:07:52.439 -> 00:08:04.210):
+ORG: There's also this extra psychological effect that you've spoken about, which is hilarious to watch, which once people when the new model comes out, they try that model, they fall in love with it.
+MATCH: También está este efecto psicológico extra del que has hablado, que es divertidísimo de ver, que cuando sale el modelo nuevo, la gente lo prueba, se enamora.
+
+BLOCK 95 (00:08:04.210 -> 00:08:04.394):
+ORG: Wow.
+MATCH: Guau.
+
+BLOCK 96 (00:08:04.394 -> 00:08:16.384):
+ORG: This is the smartest thing of all time, and then they start saying, you could just watch the Reddit posts over time, start saying that we believe the intelligence of this model has been gradually degrading.
+MATCH: Esto es lo más inteligente de todos los tiempos, y luego empiezan a decir, puedes ver los posts de Reddit con el tiempo, que creemos que la inteligencia de este modelo se ha ido degradando gradualmente.
+
+BLOCK 97 (00:08:18.384 -> 00:08:29.060):
+ORG: It it says something about human nature and just the way our minds work when it's probably most likely the case that the intelligence of the model is not degrading.
+MATCH: Dice algo sobre la naturaleza humana y sobre cómo funciona nuestra mente cuando, lo más probable, es que la inteligencia del modelo no se esté degradando.
+
+BLOCK 98 (00:08:30.339 -> 00:08:32.931):
+ORG: It's in fact, you're getting used to a good thing.
+MATCH: De hecho, te estás acostumbrando a algo bueno.
+
+BLOCK 99 (00:08:32.931 -> 00:08:42.735):
+ORG: And your project grows, and you're adding slop, and you probably don't spend enough time to think about refactors, and you're making it harder and harder for the agent to work on your slop.
+MATCH: Y tu proyecto crece, y vas añadiendo porquería, y probablemente no dedicas tiempo suficiente a pensar en refactors, y le estás poniendo cada vez más difícil al agente trabajar en tu chapuza.  
+
+
+BLOCK 100 (00:08:42.975 -> 00:08:44.710):
+ORG: And then and then suddenly, oh, no.
+MATCH: Y entonces… y entonces de repente, oh, no.  
+
+
+BLOCK 101 (00:08:44.710 -> 00:08:45.205):
+ORG: It's hard.
+MATCH: Es difícil.
+
+BLOCK 102 (00:08:45.205 -> 00:08:47.188):
+ORG: I know it's not working as well anymore.
+MATCH: Sé que ya no funciona tan bien.
+
+BLOCK 103 (00:08:47.188 -> 00:08:53.065):
+ORG: What's the motivation for, like, one of those AI companies to actually make their model dumber?
+MATCH: ¿Qué motivación tendría, en plan, una de esas empresas de IA para hacer su modelo más tonto?
+
+BLOCK 104 (00:08:53.065 -> 00:08:57.629):
+ORG: Like, mostly will make it slower if if the server load is too high.
+MATCH: Como mucho lo harán más lento si la carga del servidor es demasiado alta.
+
+BLOCK 105 (00:08:57.629 -> 00:09:06.395):
+ORG: But, like, quantizing the model so you have a voice experience, so you go to the competitor Yeah.
+MATCH: Pero, en plan, cuantizar el modelo para que tengas una experiencia de voz, y que te vayas a la competencia.
+Sí.
+
+BLOCK 106 (00:09:06.395 -> 00:09:09.147):
+ORG: That just doesn't seem like a very smart move in any way.
+MATCH: Eso no parece una jugada muy inteligente en ningún sentido.
+
+BLOCK 0 (00:00:02.960 -> 00:00:12.960):
+ORG: Maybe you can talk about the current two big competitors in terms of models, Cloud Opus four six and GPT-3.5 Codex.
+MATCH: Talvez possas falar dos dois grandes concorrentes atuais em termos de modelos, o Claude Opus 4.6 e o GPT‑3.5 Codex.
+
+BLOCK 1 (00:00:13.824 -> 00:00:14.816):
+ORG: Which is better?
+MATCH: Qual é melhor?
+
+BLOCK 2 (00:00:14.816 -> 00:00:16.242):
+ORG: How different are they?
+MATCH: Em que é que diferem?
+
+BLOCK 3 (00:00:17.024 -> 00:00:30.877):
+ORG: I think you've spoken about Codex reading more and Opus being more willing to take action faster and maybe being more creative in the actions it takes.
+MATCH: Acho que já falaste do Codex ler mais e o Opus estar mais disposto a agir mais depressa e talvez ser mais criativo nas ações que toma.
+
+BLOCK 4 (00:00:30.877 -> 00:00:37.030):
+ORG: But because Codex reads more, it's able to deliver maybe better code.
+MATCH: Mas, como o Codex lê mais, consegue talvez entregar melhor código.
+
+BLOCK 5 (00:00:37.189 -> 00:00:39.343):
+ORG: Can you speak to the differences there?
+MATCH: Podes falar dessas diferenças?
+
+BLOCK 6 (00:00:39.343 -> 00:00:40.590):
+ORG: Oh, I have a lot of words there.
+MATCH: Oh, disse aí um monte de coisas.  
+
+BLOCK 7 (00:00:43.324 -> 00:00:50.177):
+ORG: As a general purpose model, Opus is the best.
+MATCH: Como modelo de uso geral, o Opus é o melhor.
+
+BLOCK 8 (00:00:50.177 -> 00:01:02.100):
+ORG: Like for OpenAI, Opus is extremely good in terms of role play, like really going into the character that you give it.
+MATCH: Tipo, para a OpenAI, o Opus é extremamente bom em roleplay, em entrar mesmo na personagem que lhe dás.
+
+BLOCK 9 (00:01:02.100 -> 00:01:12.135):
+ORG: It's very good at it was really bad, but it really made an effort to be really good at following commands.
+MATCH: É muito bom nisso.  
+Antes era mesmo mau, mas esforçou-se bastante para ficar muito bom a seguir instruções.
+
+BLOCK 10 (00:01:14.215 -> 00:01:17.956):
+ORG: It is usually quite fast at trying something.
+MATCH: Normalmente também é bastante rápido a experimentar alguma coisa.
+
+BLOCK 11 (00:01:17.956 -> 00:01:20.249):
+ORG: It's much more tailored to, like, trial and error.
+MATCH: Está muito mais talhado para tentativa e erro.
+
+BLOCK 12 (00:01:22.399 -> 00:01:24.239):
+ORG: It's very pleasant to use.
+MATCH: É muito agradável de usar.
+
+BLOCK 13 (00:01:25.359 -> 00:01:36.832):
+ORG: In general, it's almost like Opus was is a little bit too American, and I should maybe it is a bad analogy.
+MATCH: Em geral, é quase como se o Opus fosse um bocadinho americano demais, e talvez seja uma má analogia.
+
+BLOCK 14 (00:01:36.832 -> 00:01:38.371):
+ORG: You probably could roll some of that.
+MATCH: Tu provavelmente consegues aparar um bocado disso.
+
+BLOCK 15 (00:01:38.371 -> 00:01:38.995):
+ORG: I know exactly.
+MATCH: Eu sei exatamente.
+
+BLOCK 16 (00:01:38.995 -> 00:01:40.244):
+ORG: It's because Kodak's a German.
+MATCH: É porque o Codex é alemão.
+
+BLOCK 17 (00:01:40.244 -> 00:01:41.368):
+ORG: Is that what you're saying?
+MATCH: É isso que estás a dizer?
+
+BLOCK 18 (00:01:42.415 -> 00:01:44.944):
+ORG: Actually, now that you say it, it makes perfect sense.
+MATCH: Na verdade, agora que dizes isso, faz todo o sentido.
+
+BLOCK 19 (00:01:44.944 -> 00:01:47.567):
+ORG: Or you could you could sometimes sometimes I explain it.
+MATCH: Ou então, às vezes, eu explico assim.
+
+BLOCK 20 (00:01:48.260 -> 00:01:51.060):
+ORG: I will never be able to unthink what you just said.
+MATCH: Nunca mais vou conseguir deixar de pensar no que acabaste de dizer.
+
+BLOCK 21 (00:01:51.060 -> 00:01:51.884):
+ORG: That's so true.
+MATCH: É mesmo verdade.
+
+BLOCK 22 (00:01:52.260 -> 00:01:55.140):
+ORG: But you also know that a lot of the Codex team is like European.
+MATCH: Mas também sabes que grande parte da equipa do Codex é europeia.
+
+BLOCK 23 (00:01:57.540 -> 00:01:59.459):
+ORG: So maybe there's a bit more to it.
+MATCH: Por isso, se calhar há mais qualquer coisa aí.
+
+BLOCK 24 (00:01:59.859 -> 00:02:00.936):
+ORG: That's so true.
+MATCH: É mesmo verdade.
+
+BLOCK 25 (00:02:00.936 -> 00:02:01.869):
+ORG: That's funny.
+MATCH: Que engraçado.
+
+BLOCK 26 (00:02:01.869 -> 00:02:05.757):
+ORG: But also, Anthropic, they fixed it a little bit.
+MATCH: Mas também, na Anthropic, eles corrigiram um bocadinho isso.
+
+BLOCK 27 (00:02:05.757 -> 00:02:11.147):
+ORG: Like, Opus used to say, you're absolutely right all the time, and it it it today, it still triggers me.
+MATCH: Tipo, o Opus antes dizia “tens toda a razão” o tempo todo, e isso… hoje ainda me ativa.
+
+BLOCK 28 (00:02:11.147 -> 00:02:12.403):
+ORG: I can't hear it anymore.
+MATCH: Já não consigo ouvir.
+
+BLOCK 29 (00:02:12.403 -> 00:02:13.502):
+ORG: It's not even a joke.
+MATCH: Nem é brincadeira.
+
+BLOCK 30 (00:02:13.502 -> 00:02:17.146):
+ORG: I just this was like the the meme.
+MATCH: Isto era tipo o meme, não era?
+
+BLOCK 31 (00:02:17.146 -> 00:02:17.431):
+ORG: Right?
+MATCH: 
+
+BLOCK 32 (00:02:17.431 -> 00:02:18.569):
+ORG: You're absolutely right.
+MATCH: “Tens toda a razão.”
+
+BLOCK 33 (00:02:19.509 -> 00:02:22.146):
+ORG: You're allergic to sycophancy a little bit.
+MATCH: Tens um bocado de alergia a bajulação.
+
+BLOCK 34 (00:02:22.146 -> 00:02:22.453):
+ORG: Yeah.
+MATCH: Sim.
+
+BLOCK 35 (00:02:22.453 -> 00:02:23.066):
+ORG: I I can't.
+MATCH: Eu não consigo.
+
+BLOCK 36 (00:02:23.270 -> 00:02:34.811):
+ORG: Some other comparison is like, Opus is like the coworker that is a little silly sometimes, but it's really funny and you keep him around.
+MATCH: Outra comparação é: o Opus é tipo o colega de trabalho que às vezes é meio parvo, mas tem piada e tu manténs-no por perto.
+
+BLOCK 37 (00:02:34.811 -> 00:02:41.287):
+ORG: And Codex is like the the weirdo in the corner that you don't wanna talk to, but he's reliable and gets shit done.
+MATCH: E o Codex é tipo o esquisito no canto com quem não queres falar, mas é fiável e faz a merda acontecer.
+
+BLOCK 38 (00:02:41.287 -> 00:02:41.571):
+ORG: Yeah.
+MATCH: Sim.
+
+BLOCK 39 (00:02:43.205 -> 00:02:48.324):
+ORG: Ultimately This all feels very accurate.
+MATCH: No fundo, isto parece tudo muito certeiro.
+
+BLOCK 40 (00:02:48.870 -> 00:02:55.590):
+ORG: I mean, if you're a skilled driver, you can get good results with any of those latest gen models.
+MATCH: Quero dizer, se fores um condutor experiente, consegues bons resultados com qualquer um destes modelos de última geração.
+
+BLOCK 41 (00:02:58.389 -> 00:03:03.685):
+ORG: I like Codex more because it doesn't require so much charade.
+MATCH: Eu gosto mais do Codex porque não exige tanta encenação.
+
+BLOCK 42 (00:03:04.485 -> 00:03:07.872):
+ORG: It will just it will just read a lot of code by default.
+MATCH: Ele lê logo muito código por defeito.
+
+BLOCK 43 (00:03:07.872 -> 00:03:17.585):
+ORG: Opus, really have to like, you have to have plan mode, you have to push it harder to like go in these directions because it's it's just like like, yeah, can I go in?
+MATCH: No Opus, tens mesmo de… tens de pôr em modo plano, tens de apertar mais com ele para ir nessas direções, porque ele é mais do género: “ya, posso ir? posso ir?”  
+
+
+BLOCK 44 (00:03:17.585 -> 00:03:18.200):
+ORG: Can I go in?
+MATCH: 
+
+BLOCK 45 (00:03:18.200 -> 00:03:22.689):
+ORG: It's like it would just run off very fast, and that's a very localized solution.
+MATCH: E depois dispara logo, e isso dá uma solução muito localizada.
+
+BLOCK 46 (00:03:22.769 -> 00:03:25.330):
+ORG: I think I think different is is in the post training.
+MATCH: Acho que a diferença está no pós-treino.
+
+BLOCK 47 (00:03:25.810 -> 00:03:34.795):
+ORG: It's not like the the raw model intelligence is so different, but it's just I think that they just gave it give it different different goals.
+MATCH: Não é que a inteligência bruta do modelo seja assim tão diferente, é mais que acho que lhes deram objetivos diferentes.
+
+BLOCK 48 (00:03:35.115 -> 00:03:37.953):
+ORG: No model is better in every aspect.
+MATCH: Nenhum modelo é melhor em tudo.
+
+BLOCK 49 (00:03:37.953 -> 00:03:41.034):
+ORG: What about the code that it generates?
+MATCH: E quanto ao código que gera?
+
+BLOCK 50 (00:03:41.915 -> 00:03:46.813):
+ORG: In terms of the actual quality of the code, is it basically the same?
+MATCH: Em termos de qualidade do código em si, é basicamente igual?
+
+BLOCK 51 (00:03:46.813 -> 00:03:51.860):
+ORG: If you drive it right, Opus even sometimes can make more elegant solutions.
+MATCH: Se o guiares bem, o Opus às vezes até consegue soluções mais elegantes.
+
+BLOCK 52 (00:03:52.419 -> 00:03:54.500):
+ORG: But it requires more skill.
+MATCH: Mas exige mais perícia.
+
+BLOCK 53 (00:03:56.659 -> 00:04:04.254):
+ORG: It's it's harder to have so many sessions in parallel with Cloud Code because it's it's more interactive.
+MATCH: É mais difícil ter tantas sessões em paralelo com o Claude Code porque é mais interativo.
+
+BLOCK 54 (00:04:04.814 -> 00:04:09.614):
+ORG: And I I think that's what a lot of people like, especially if they come from coding themselves.
+MATCH: E acho que é isso que muita gente gosta, sobretudo se vêm de programar.
+
+BLOCK 55 (00:04:10.989 -> 00:04:19.166):
+ORG: Whereas, Claude is much more you have a discussion, and then it will just disappear for twenty minutes.
+MATCH: Já o Codex é muito mais: têm uma conversa e depois ele desaparece durante vinte minutos.
+
+BLOCK 56 (00:04:19.166 -> 00:04:22.204):
+ORG: Like even AMP, they did not edit the deep mode.
+MATCH: Tipo, até no AMP, eles nem editaram o modo profundo.
+
+BLOCK 57 (00:04:22.350 -> 00:04:23.685):
+ORG: They finally I mocked them.
+MATCH: Por fim… eu gozei com eles.
+
+BLOCK 58 (00:04:23.685 -> 00:04:25.416):
+ORG: You know, he finally saw the light.
+MATCH: Sabes, ele finalmente viu a luz.
+
+BLOCK 59 (00:04:25.416 -> 00:04:29.026):
+ORG: And then they had this whole talk about you have to approach differently.
+MATCH: E depois tiveram toda aquela conversa de “tens de abordar de forma diferente”.
+
+BLOCK 60 (00:04:29.604 -> 00:04:39.520):
+ORG: And I think that's where that's where people struggle when they just try codecs after trying cloud code, is that it's it's a slightly different it's it's less interactive.
+MATCH: E acho que é aí que as pessoas emperram quando experimentam o Codex depois de terem usado o Claude Code.  
+É um bocadinho diferente.  
+É menos interativo.
+
+BLOCK 61 (00:04:39.520 -> 00:04:50.000):
+ORG: It's it's like I have quite long discussions sometimes and then, like, go off and then, yeah, it doesn't matter if it takes ten, twenty, thirty, forty, fifty minutes or longer.
+MATCH: Eu às vezes tenho discussões bastante longas e depois ele vai-se embora e pronto, ya, não importa se demora dez, vinte, trinta, quarenta, cinquenta minutos ou mais.
+
+BLOCK 62 (00:04:50.000 -> 00:04:51.291):
+ORG: And they're like six hours.
+MATCH: E às vezes são tipo seis horas.
+
+BLOCK 63 (00:04:53.134 -> 00:04:57.366):
+ORG: The latest trend can be very, very persistent until it works.
+MATCH: A tendência mais recente é que ele consegue ser muito, muito persistente até funcionar.
+
+BLOCK 64 (00:04:57.366 -> 00:05:06.735):
+ORG: If there's a clear solution, like this is this is what I want at the end, so it works, the model will work very hard to really get there.
+MATCH: Se houver uma solução clara, tipo “é isto que eu quero no fim”, então funciona.  
+O modelo vai trabalhar imenso para chegar mesmo lá.
+
+BLOCK 65 (00:05:07.375 -> 00:05:15.689):
+ORG: So I think ultimately they both need similar time.
+MATCH: Portanto, acho que, no fim de contas, ambos precisam de um tempo semelhante.
+
+BLOCK 66 (00:05:17.210 -> 00:05:23.985):
+ORG: But on Claude it's a little much harder and error often, and Codex sometimes overthinks.
+MATCH: Mas no Claude é um pouco mais difícil e dá erro muitas vezes, e o Codex às vezes pensa demais.
+
+BLOCK 67 (00:05:23.985 -> 00:05:25.105):
+ORG: I prefer that.
+MATCH: Eu prefiro isso.
+
+BLOCK 68 (00:05:25.664 -> 00:05:35.425):
+ORG: I prefer the dry version where I have to read less over the more interactive, nice way.
+MATCH: Eu prefiro a versão mais seca, em que tenho de ler menos, à versão mais interativa e simpática.
+
+BLOCK 69 (00:05:37.970 -> 00:05:45.182):
+ORG: Like, people like that so much, though, that openly, I even added a second mode with, like, a more pleasant personality.
+MATCH: Mas as pessoas gostam tanto disso que, sinceramente, até adicionei um segundo modo com uma personalidade mais agradável.
+
+BLOCK 70 (00:05:45.182 -> 00:05:46.535):
+ORG: I haven't even tried it yet.
+MATCH: Ainda nem o experimentei.
+
+BLOCK 71 (00:05:46.535 -> 00:05:47.743):
+ORG: I I kinda like the bread.
+MATCH: Eu... eu meio que gosto do pão.
+
+BLOCK 72 (00:05:47.743 -> 00:05:47.984):
+ORG: Mhmm.
+MATCH: Mhmm.
+
+BLOCK 73 (00:05:50.435 -> 00:05:51.154):
+ORG: Yeah.
+MATCH: Sim.
+
+BLOCK 74 (00:05:51.314 -> 00:05:59.537):
+ORG: I care about efficiency when I build it, and I I have fun in the very act of building.
+MATCH: Eu ligo à eficiência quando construo isto, e eu... eu divirto-me no próprio ato de construir.
+
+BLOCK 75 (00:05:59.537 -> 00:06:02.577):
+ORG: I don't need to have fun with my agent to build.
+MATCH: Não preciso de me divertir com o meu agente para construir.
+
+BLOCK 76 (00:06:02.577 -> 00:06:07.432):
+ORG: So I have fun with my model that where I can then test those features.
+MATCH: Por isso, eu divirto-me é com o meu modelo, onde depois consigo testar essas funcionalidades.
+
+BLOCK 77 (00:06:07.432 -> 00:06:14.036):
+ORG: How long does it take for you to adjust, you know, if you switch?
+MATCH: Quanto tempo é que te demora a ajustares-te, sabes, se mudares?
+
+BLOCK 78 (00:06:14.036 -> 00:06:16.540):
+ORG: I don't know when was the last time you switched.
+MATCH: Já nem sei quando foi a última vez que mudaste.
+
+BLOCK 79 (00:06:16.540 -> 00:06:17.868):
+ORG: But to adjust to the feel.
+MATCH: Mas a ajustares-te à sensação.
+
+BLOCK 80 (00:06:17.868 -> 00:06:27.841):
+ORG: Because you've kinda talked about, like, you have to kinda really feel where where a model is strong, where, like, how to navigate, how to prompt, how all that kind of stuff.
+MATCH: Porque tu tens falado de, tipo, teres de sentir mesmo onde é que um modelo é forte, como navegar, como fazer prompts, e esse tipo de coisas.
+
+BLOCK 81 (00:06:27.841 -> 00:06:33.056):
+ORG: Like this by way of advice, because you've been through this journey of just playing with models.
+MATCH: Assim, como conselho, já que passaste por este percurso de andar a brincar com modelos.
+
+BLOCK 82 (00:06:34.710 -> 00:06:36.630):
+ORG: How long does it take to get a feel?
+MATCH: Quanto tempo demora até ganhares o jeito?
+
+BLOCK 83 (00:06:36.630 -> 00:06:42.887):
+ORG: If if someone switches, I would give it a week until you actually develop a gut feeling for it.
+MATCH: Se alguém mudar, eu diria uma semana, até desenvolveres mesmo um instinto para aquilo.
+
+BLOCK 84 (00:06:42.887 -> 00:06:43.139):
+ORG: Yeah.
+MATCH: Sim.
+
+BLOCK 85 (00:06:44.794 -> 00:06:54.669):
+ORG: This if you just I think some people also make the mistake of they pay 200 for the the cloud code version, then they pay $20 for the OpenAI version.
+MATCH: Isto... se tu só... acho que algumas pessoas também cometem o erro de pagar 200 pela versão cloud do Code, e depois pagam 20 dólares pela versão da OpenAI.
+
+BLOCK 86 (00:06:54.669 -> 00:06:58.394):
+ORG: But if you pay the the $20 version, you get the slow version.
+MATCH: Mas se pagas a versão de 20, ficas com a versão lenta.
+
+BLOCK 87 (00:06:58.794 -> 00:07:11.410):
+ORG: So your experience would be terrible, because you're used to this very interactive, very good system, and you switch to something that you have very little experience, and that's gonna be very slow.
+MATCH: Portanto, a tua experiência vai ser horrível, porque estás habituado a um sistema muito interativo e muito bom, e mudas para uma coisa de que tens muito pouca experiência, e que ainda por cima vai ser muito lenta.
+
+BLOCK 88 (00:07:11.889 -> 00:07:33.540):
+ORG: So I think overnight shot themselves in the foot a little by making the cheap version also slow, I would have at least a small part of the fast preview or like the experience that you get when you pay 200 before it degrades to being slow, because it's already slow.
+MATCH: Por isso, acho que a OpenAI acabou por dar um tiro no pé ao tornar a versão barata também lenta. Eu pelo menos deixava uma pequena parte do preview rápido, ou da experiência que tens quando pagas 200, antes de degradar para lento, porque assim já nasce lento.
+
+BLOCK 89 (00:07:33.540 -> 00:07:38.917):
+ORG: I mean, it would be better, and they have plans to make it a lot better if the cerebral stuff is true.
+MATCH: Quer dizer, seria melhor, e eles têm planos para melhorar muito, se essa cena do “cerebral” for verdade.
+
+BLOCK 90 (00:07:40.115 -> 00:07:41.359):
+ORG: But yeah, it's a skill.
+MATCH: Mas sim, é uma competência.
+
+BLOCK 91 (00:07:41.359 -> 00:07:42.116):
+ORG: It takes time.
+MATCH: Leva tempo.
+
+BLOCK 92 (00:07:42.116 -> 00:07:48.335):
+ORG: Even if you play you have a regular guitar and you switch it to an e guitar, you're not gonna play well right away.
+MATCH: Mesmo que toques uma guitarra normal e passes para uma guitarra elétrica, não vais tocar bem logo.
+
+BLOCK 93 (00:07:48.335 -> 00:07:51.875):
+ORG: You have to, like, learn how it feels.
+MATCH: Tens de, tipo, aprender como é que aquilo se sente.
+
+BLOCK 94 (00:07:52.439 -> 00:08:04.210):
+ORG: There's also this extra psychological effect that you've spoken about, which is hilarious to watch, which once people when the new model comes out, they try that model, they fall in love with it.
+MATCH: E há também este efeito psicológico extra de que tu já falaste, que é hilariante de ver. Quando sai um modelo novo, as pessoas experimentam esse modelo, apaixonam-se por ele.
+
+BLOCK 95 (00:08:04.210 -> 00:08:04.394):
+ORG: Wow.
+MATCH: “Uau.
+
+BLOCK 96 (00:08:04.394 -> 00:08:16.384):
+ORG: This is the smartest thing of all time, and then they start saying, you could just watch the Reddit posts over time, start saying that we believe the intelligence of this model has been gradually degrading.
+MATCH: Isto é a coisa mais inteligente de sempre.” E depois começam a dizer — dá para acompanhar os posts no Reddit ao longo do tempo — que acreditam que a inteligência deste modelo tem vindo a degradar gradualmente.
+
+BLOCK 97 (00:08:18.384 -> 00:08:29.060):
+ORG: It says something about human nature and just the way our minds work when it's probably most likely the case that the intelligence of the model is not degrading.
+MATCH: Isso diz muito sobre a natureza humana e sobre a forma como a nossa cabeça funciona, quando o mais provável é que a inteligência do modelo não esteja a degradar.
+
+BLOCK 98 (00:08:30.339 -> 00:08:32.931):
+ORG: It's in fact, you're getting used to a good thing.
+MATCH: Na verdade, estás é a habituar-te a uma coisa boa.
+
+BLOCK 99 (00:08:32.931 -> 00:08:42.735):
+ORG: And your project grows, and you're adding slop, and you probably don't spend enough time to think about refactors, and you're making it harder and harder for the agent to work on your slop.
+MATCH: E o teu projeto cresce, e vais adicionando porcaria, e provavelmente não passas tempo suficiente a pensar em refactors, e estás a tornar cada vez mais difícil para o agente trabalhar na tua porcaria.
+
+BLOCK 100 (00:08:42.975 -> 00:08:44.710):
+ORG: And then and then suddenly, oh, no.
+MATCH: E depois, de repente, “ai, não”.
+
+BLOCK 101 (00:08:44.710 -> 00:08:45.205):
+ORG: It's hard.
+MATCH: Está difícil.
+
+BLOCK 102 (00:08:45.205 -> 00:08:47.188):
+ORG: I know it's not working as well anymore.
+MATCH: “Eu sei, já não está a funcionar tão bem.”
+
+BLOCK 103 (00:08:47.188 -> 00:08:53.065):
+ORG: What's the motivation for, like, one of those AI companies to actually make their model dumber?
+MATCH: Qual é que seria a motivação para, tipo, uma dessas empresas de IA tornar o modelo mais burro?
+
+BLOCK 104 (00:08:53.065 -> 00:08:57.629):
+ORG: Like, mostly will make it slower if if the server load is too high.
+MATCH: Tipo, no máximo, tornam-no mais lento se a carga dos servidores for demasiado alta.
+
+BLOCK 105 (00:08:57.629 -> 00:09:06.395):
+ORG: But, like, quantizing the model so you have a voice experience, so you go to the competitor Yeah.
+MATCH: Mas, tipo, quantizar o modelo para teres uma experiência com voz, e assim ires para a concorrência? Sim.
+
+BLOCK 106 (00:09:06.395 -> 00:09:09.147):
+ORG: That just doesn't seem like a very smart move in any way.
+MATCH: Isso não me parece uma jogada minimamente inteligente.
+
+BLOCK 0 (00:00:00.480 -> 00:00:08.160):
+ORG: We have discussed the two major approaches to cognitive architectures: symbolic and connectionist.
+MATCH: Мы обсудили два основных подхода к когнитивным архитектурам: символический и коннекционистский.  
+
+
+BLOCK 1 (00:00:08.480 -> 00:00:14.400):
+ORG: Now let's look at some specific examples of cognitive architectures that have been developed over the years.
+MATCH: Теперь давайте рассмотрим некоторые конкретные примеры когнитивных архитектур, которые разрабатывались на протяжении многих лет.
+
+BLOCK 2 (00:00:15.504 -> 00:00:19.824):
+ORG: This will give you a better sense of how these ideas are put into practice.
+MATCH: Это даст вам лучшее представление о том, как эти идеи воплощаются на практике.
+
+BLOCK 3 (00:00:20.224 -> 00:00:23.265):
+ORG: Keep in mind that this is just a very brief overview.
+MATCH: Имейте в виду, что это лишь очень краткий обзор.
+
+BLOCK 4 (00:00:23.504 -> 00:00:28.384):
+ORG: Each of these architectures is complex and has a rich history of research behind it.
+MATCH: Каждая из этих архитектур сложна и имеет богатую историю исследований.
+
+BLOCK 5 (00:00:29.779 -> 00:00:37.140):
+ORG: Before diving into examples, it is important to recall the difference between a cognitive architecture and a specific cognitive model.
+MATCH: Прежде чем переходить к примерам, важно вспомнить разницу между когнитивной архитектурой и конкретной когнитивной моделью.
+
+BLOCK 6 (00:00:37.539 -> 00:00:43.780):
+ORG: A cognitive model is typically a more focused and detailed simulation of a particular cognitive process or task.
+MATCH: Когнитивная модель обычно представляет собой более узкую и детализированную симуляцию конкретного когнитивного процесса или задачи.
+
+BLOCK 7 (00:00:44.295 -> 00:00:51.655):
+ORG: A cognitive architecture, on the other hand, is the broader framework that can encompass many different cognitive models.
+MATCH: Когнитивная архитектура же, с другой стороны, — это более общий каркас, который может включать множество разных когнитивных моделей.
+
+BLOCK 8 (00:00:53.015 -> 00:00:57.015):
+ORG: First is SOAR, which stands for state, operator and result.
+MATCH: Первая — SOAR, что расшифровывается как state, operator and result.
+
+BLOCK 9 (00:00:57.789 -> 00:01:02.039):
+ORG: SOAR is one of the oldest and most influential cognitive architectures.
+MATCH: SOAR — одна из самых старых и самых влиятельных когнитивных архитектур.
+
+BLOCK 10 (00:01:02.039 -> 00:01:06.289):
+ORG: It was developed early in the eighties by Newell, Laird and Rosenbloom.
+MATCH: Её разработали в начале восьмидесятых Ньюэлл, Лэрд и Розенблум.
+
+BLOCK 11 (00:01:06.909 -> 00:01:15.884):
+ORG: SOAR is primarily a symbolic architecture based on the idea that all cognitive behavior can be represented as a search through a problem space.
+MATCH: SOAR — преимущественно символическая архитектура, основанная на идее, что всё когнитивное поведение можно представить как поиск в пространстве задач.
+
+BLOCK 12 (00:01:16.444 -> 00:01:20.765):
+ORG: In SOAR, knowledge is represented as if-then rules.
+MATCH: В SOAR знания представлены в виде правил «если — то».
+
+BLOCK 13 (00:01:21.084 -> 00:01:32.930):
+ORG: The system operates by repeatedly selecting operators, which represent actions, that transform the current state into a new state with the goal of reaching a desired goal state.
+MATCH: Система работает так: она многократно выбирает операторы, которые представляют собой действия и преобразуют текущее состояние в новое, с целью достижения желаемого целевого состояния.
+
+BLOCK 14 (00:01:33.569 -> 00:01:42.834):
+ORG: SOAR has a sophisticated learning mechanism called chunking, which allows it to learn new rules from experience, improving its performance over time.
+MATCH: В SOAR есть сложный механизм обучения, называемый chunking, который позволяет ей на основе опыта осваивать новые правила, улучшая эффективность со временем.
+
+BLOCK 15 (00:01:43.715 -> 00:01:52.355):
+ORG: SOAR has been applied to a wide range of tasks including problem solving, planning, aircraft simulation or natural language understanding.
+MATCH: SOAR применяли в самом широком спектре задач, включая решение проблем, планирование, моделирование полёта или понимание естественного языка.
+
+BLOCK 16 (00:01:54.869 -> 00:01:59.829):
+ORG: Then there is an ACTR, which stands for adaptive control of thought rational.
+MATCH: Затем идёт ACT-R, что расшифровывается как adaptive control of thought rational.
+
+BLOCK 17 (00:02:00.229 -> 00:02:08.789):
+ORG: ACTR, developed by John Anderson and his colleagues from Carnegie Mellon University, is another highly influential and widely used cognitive architecture.
+MATCH: ACT-R, разработанная Джоном Андерсоном и его коллегами из Университета Карнеги — Меллона, — ещё одна крайне влиятельная и широко используемая когнитивная архитектура.
+
+BLOCK 18 (00:02:09.724 -> 00:02:21.004):
+ORG: Unlike SOAR, which is primarily symbolic, ACTR is a hybrid architecture, aiming to integrate CRISP from both symbolic and connectionist approaches.
+MATCH: В отличие от SOAR, которая преимущественно символическая, ACT-R — гибридная архитектура, стремящаяся интегрировать идеи как символического, так и коннекционистского подходов.
+
+BLOCK 19 (00:02:22.540 -> 00:02:34.300):
+ORG: Its primary task is to create precise, testable computational model of human cognition, essentially to simulate how people perform various cognitive tasks.
+MATCH: Её основная задача — создавать точные, проверяемые вычислительные модели человеческого познания, то есть по сути моделировать, как люди выполняют различные когнитивные задачи.
+
+BLOCK 20 (00:02:35.814 -> 00:02:38.694):
+ORG: So how does work as a framework?
+MATCH: Так как же она работает как каркас?
+
+BLOCK 21 (00:02:39.175 -> 00:02:52.200):
+ORG: ACTR provides fixed models and mechanisms that stay the same across tasks, perceptual and motor interfaces, declarative and procedural memories, buffers, and a central production system.
+MATCH: ACT-R предоставляет фиксированные модули и механизмы, которые остаются одинаковыми для разных задач: перцептивные и моторные интерфейсы, декларативную и процедурную память, буферы и центральную систему продукций.
+
+BLOCK 22 (00:02:53.080 -> 00:03:01.560):
+ORG: Perceptual and motor modules handle vision, hearing and action, so the model can interact with simulated or real environments.
+MATCH: Перцептивные и моторные модули отвечают за зрение, слух и действия, так что модель может взаимодействовать с симулированной или реальной средой.
+
+BLOCK 23 (00:03:02.314 -> 00:03:15.034):
+ORG: Declarative memory stores facts as chunks, for example Stockholm is the capital of Sweden, two plus two is four, while procedural memory stores how-to knowledge as if then rules.
+MATCH: Декларативная память хранит факты в виде чанков, например: «Стокгольм — столица Швеции», «два плюс два — четыре», тогда как процедурная память хранит «знание как» в виде правил «если — то».
+
+BLOCK 24 (00:03:16.139 -> 00:03:24.540):
+ORG: Buffers are temporary workspaces that hold the currently active information and act like attentional bottlenecks between modules.
+MATCH: Буферы — это временные рабочие области, которые удерживают текущую активную информацию и служат своего рода «узким горлышком» внимания между модулями.
+
+BLOCK 25 (00:03:25.020 -> 00:03:30.192):
+ORG: And then we have the central production system, which is the core reasoning engine.
+MATCH: Затем у нас есть центральная система продукций, которая является основным механизмом рассуждения.
+
+BLOCK 26 (00:03:30.192 -> 00:03:40.715):
+ORG: It matches the rule conditions to buffer contents and fires selected rules to update buffers, retrieve from memory, or initiate actions.
+MATCH: Она сопоставляет условия правил с содержимым буферов и запускает выбранные правила, чтобы обновлять буферы, извлекать информацию из памяти или инициировать действия.
+
+BLOCK 27 (00:03:42.949 -> 00:03:49.909):
+ORG: To use ACTR for a specific cognitive task, the researcher creates a model using the ACTR framework.
+MATCH: Чтобы использовать ACT-R для конкретной когнитивной задачи, исследователь создаёт модель в рамках ACT-R.
+
+BLOCK 28 (00:03:50.389 -> 00:04:03.194):
+ORG: This model consists of specific chunks of declarative knowledge and specific production rules that represent the theory or hypothesis about how a human would perform a particular task.
+MATCH: Эта модель состоит из конкретных чанков декларативных знаний и конкретных продукционных правил, которые представляют теорию или гипотезу о том, как человек выполнил бы определённую задачу.
+
+BLOCK 29 (00:04:03.835 -> 00:04:08.795):
+ORG: Then the researcher runs this actor model, which is essentially a computer program that runs.
+MATCH: Затем исследователь запускает эту модель ACT-R, которая по сути является выполняющейся компьютерной программой.
+
+BLOCK 30 (00:04:09.194 -> 00:04:15.189):
+ORG: And then as the model runs, the actor architecture simulates the step by step cognitive processes.
+MATCH: И по мере работы модели архитектура ACT-R пошагово симулирует когнитивные процессы.
+
+BLOCK 31 (00:04:15.590 -> 00:04:25.029):
+ORG: It produces outputs that can be directly compared to human behavioral data, for example, reaction times, error rates, or learning curves.
+MATCH: Она выдаёт результаты, которые можно напрямую сопоставить с поведенческими данными человека, например, со временем реакции, частотой ошибок или кривыми обучения.
+
+BLOCK 32 (00:04:25.845 -> 00:04:39.285):
+ORG: Many ACTR models can also predict patterns of brain activity in different regions based on the activity of its modules, which can be then compared to actual human brain imaging, for example, from fMRI.
+MATCH: Многие модели ACT-R также могут предсказывать паттерны активности мозга в разных областях на основе активности своих модулей, и затем это можно сравнить с реальными данными нейровизуализации, например, с fMRI.
+
+BLOCK 33 (00:04:41.560 -> 00:04:47.319):
+ORG: The power of ACTR relies on its ability to make these precise quantitative predictions.
+MATCH: Сила ACT-R заключается в её способности делать такие точные количественные предсказания.
+
+BLOCK 34 (00:04:48.120 -> 00:04:58.014):
+ORG: If the model's simulated behavior matches human behavior closely, it provides support for the psychological theory embedded in the model.
+MATCH: Если смоделированное моделью поведение очень близко к человеческому, это служит подтверждением психологической теории, заложенной в модели.
+
+BLOCK 35 (00:04:58.735 -> 00:05:13.360):
+ORG: ACTR has been successfully used to model a vast array of cognitive phenomena, including learning, memory retrieval, problem solving, decision making, language processing and even how people interact with complex interfaces.
+MATCH: ACTR успешно применяли для моделирования огромного спектра когнитивных феноменов, включая обучение, извлечение воспоминаний, решение задач, принятие решений, обработку языка и даже то, как люди взаимодействуют со сложными интерфейсами.
+
+BLOCK 36 (00:05:13.680 -> 00:05:22.639):
+ORG: It serves as a unified theory of cognition, trying to explain diverse behaviors with a common set of underlying architectural mechanisms.
+MATCH: Она выступает как единая теория когнитивных процессов и пытается объяснить разнообразные формы поведения общим набором лежащих в основе архитектурных механизмов.
+
+BLOCK 37 (00:05:24.175 -> 00:05:27.295):
+ORG: And then we have, of course, the deep learning architecture.
+MATCH: А дальше у нас, конечно, архитектура глубокого обучения.
+
+BLOCK 38 (00:05:27.775 -> 00:05:39.580):
+ORG: It is not traditionally considered as a cognitive architecture in the same sense as SOAR and ACTR, but deep learning represents a powerful connectionist approach to building intelligent systems.
+MATCH: Традиционно её не считают когнитивной архитектурой в том же смысле, что SOAR и ACTR, но глубокое обучение — это мощный коннекционистский подход к построению интеллектуальных систем.
+
+BLOCK 39 (00:05:39.819 -> 00:05:45.900):
+ORG: We can refer to them as engineering tools designed to optimize performance from large amounts of data.
+MATCH: Мы можем рассматривать их как инженерные инструменты, предназначенные для оптимизации производительности на больших объёмах данных.
+
+BLOCK 40 (00:05:48.540 -> 00:05:51.980):
+ORG: Convolutional neural networks are a type of deep neural networks.
+MATCH: Сверточные нейронные сети — это один из видов глубоких нейронных сетей.
+
+BLOCK 41 (00:05:51.980 -> 00:05:53.020):
+ORG: neural networks.
+MATCH: Нейронных сетей.
+
+BLOCK 42 (00:05:53.555 -> 00:05:58.514):
+ORG: They are particularly well suited for processing images and other spatial data.
+MATCH: Они особенно хорошо подходят для обработки изображений и других пространственных данных.
+
+BLOCK 43 (00:05:58.995 -> 00:06:05.314):
+ORG: Think of CNNs, which are convolutional neural networks, as having specialized detectors.
+MATCH: Представьте CNN, то есть сверточные нейронные сети, как систему со специализированными детекторами.
+
+BLOCK 44 (00:06:06.020 -> 00:06:12.180):
+ORG: For example, imagine you are trying to classify whether the given colorful image is of a cat or a dog.
+MATCH: Например, представьте, что вы пытаетесь классифицировать, что изображено на данной цветной картинке: кошка или собака.
+
+BLOCK 45 (00:06:12.740 -> 00:06:19.060):
+ORG: Early detectors, the first layers of the network, look for very simple things in the image, like edges.
+MATCH: Ранние детекторы, первые слои сети, ищут на изображении самые простые вещи, например границы.
+
+BLOCK 46 (00:06:19.975 -> 00:06:31.175):
+ORG: Layer detectors combine these simple findings to spot more complex patterns, like textures or part of an object, and even later ones can recognize whole objects.
+MATCH: Детекторы на последующих слоях комбинируют эти простые находки, чтобы замечать более сложные паттерны, например текстуры или часть объекта, а ещё более поздние могут распознавать целые объекты.
+
+BLOCK 47 (00:06:31.589 -> 00:06:40.389):
+ORG: It's like a team where each member looks for something specific, and then they pool their findings together to understand the bigger picture.
+MATCH: Это похоже на команду, где каждый участник ищет что-то своё, а потом они объединяют результаты, чтобы понять общую картину.
+
+BLOCK 48 (00:06:41.189 -> 00:06:46.682):
+ORG: Eventually, the output layer, as we will study shortly, will output what is present in this image.
+MATCH: В итоге выходной слой, как мы скоро изучим, выдаст, что именно присутствует на этом изображении.
+
+BLOCK 49 (00:06:46.682 -> 00:06:53.495):
+ORG: Here, for instance, we have an example of a binary image classification, whether the image is of a cat or a dog.
+MATCH: Здесь, например, показан пример бинарной классификации изображения: кошка это или собака.
+
+BLOCK 50 (00:06:54.935 -> 00:06:58.855):
+ORG: Another type of deep neural networks is recurrent neural networks.
+MATCH: Другой тип глубоких нейронных сетей — это рекуррентные нейронные сети.
+
+BLOCK 51 (00:06:59.360 -> 00:07:03.520):
+ORG: They are designed to process sequential data such as text or speech.
+MATCH: Они предназначены для обработки последовательных данных, таких как текст или речь.
+
+BLOCK 52 (00:07:03.759 -> 00:07:12.319):
+ORG: They have a kind of short-term memory that lets them consider the words that came before when trying to understand or predict the current word.
+MATCH: У них есть своего рода кратковременная память, которая позволяет учитывать предыдущие слова, когда сеть пытается понять или предсказать текущее слово.
+
+BLOCK 53 (00:07:13.654 -> 00:07:18.535):
+ORG: This helps them grasp context in a way that simpler networks cannot.
+MATCH: Это помогает им улавливать контекст так, как не могут более простые сети.
+
+BLOCK 54 (00:07:19.095 -> 00:07:27.495):
+ORG: RNNs have been successfully applied to natural language processing tasks like machine translation, text generation and speech recognition.
+MATCH: RNN успешно применялись в задачах обработки естественного языка, таких как машинный перевод, генерация текста и распознавание речи.
+
+BLOCK 55 (00:07:29.370 -> 00:07:39.370):
+ORG: A more recently introduced family of deep learning connectionist architectures are the transformers that excel in natural language processing.
+MATCH: Более недавно появившееся семейство коннекционистских архитектур глубокого обучения — это трансформеры, которые особенно хороши в обработке естественного языка.
+
+BLOCK 56 (00:07:39.689 -> 00:07:44.775):
+ORG: They are the foundation of the existing large language models, the LLMs.
+MATCH: Они лежат в основе существующих больших языковых моделей, LLM.
+
+BLOCK 57 (00:07:45.014 -> 00:07:49.814):
+ORG: We will not discuss the intricacies of their architecture, this is not what this course is about.
+MATCH: Мы не будем обсуждать тонкости их архитектуры.  
+Это не тема этого курса.
+
+BLOCK 58 (00:07:51.654 -> 00:07:58.089):
+ORG: One useful way to understand AI approaches is to compare them to different cognitive processes.
+MATCH: Один полезный способ понимать подходы ИИ — сопоставлять их с различными когнитивными процессами.
+
+BLOCK 59 (00:07:58.649 -> 00:08:06.490):
+ORG: Symbolic AI tends to align with processes that are rule-based and explicit, such as reasoning or structural language use.
+MATCH: Символьный ИИ обычно соотносится с процессами, основанными на правилах и явными, например рассуждением или структурированным использованием языка.
+
+BLOCK 60 (00:08:07.050 -> 00:08:15.975):
+ORG: Connectionist AI, on the other hand, captures processes that rely on distributed patterns and adaptive learning, such as perception and motor control.
+MATCH: Коннекционистский ИИ, напротив, отражает процессы, опирающиеся на распределённые паттерны и адаптивное обучение, например восприятие и моторный контроль.
+
+BLOCK 61 (00:08:17.415 -> 00:08:24.774):
+ORG: In this table, you can see the comparison between symbolic and connectionist approaches for different cognitive processes.
+MATCH: В этой таблице вы видите сравнение символьного и коннекционистского подходов для разных когнитивных процессов.
+
+BLOCK 62 (00:08:27.569 -> 00:08:33.250):
+ORG: We talked about just a few examples of the many cognitive architectures that have been developed.
+MATCH: Мы разобрали лишь несколько примеров из множества когнитивных архитектур, которые были разработаны.
+
+BLOCK 63 (00:08:33.809 -> 00:08:45.684):
+ORG: There are many other architectures, some of them are shown here on the slide, each with its own strengths and weaknesses, and researchers are constantly working to develop new and improved architectures.
+MATCH: Есть много других архитектур.  
+Некоторые из них показаны здесь на слайде, каждая — со своими сильными и слабыми сторонами, и исследователи постоянно работают над созданием новых и улучшенных архитектур.
+
+BLOCK 64 (00:08:46.164 -> 00:08:52.964):
+ORG: The choice of which architecture to use depends on specific task and the goal of the researcher or developer.
+MATCH: Выбор того, какую архитектуру использовать, зависит от конкретной задачи и цели исследователя или разработчика.
+
+BLOCK 65 (00:08:54.100 -> 00:08:55.460):
+ORG: So let's conclude.
+MATCH: Итак, подведём итог.
+
+BLOCK 66 (00:08:55.700 -> 00:09:12.274):
+ORG: Symbolic architectures like SOAR are often preferred for tasks that require explicit reasoning and planning, while connectionist architectures like deep learning are often better suited for tasks that involve pattern recognition and deep learning from large amounts of data.
+MATCH: Символьные архитектуры, такие как SOAR, часто предпочитают для задач, где требуется явное рассуждение и планирование, тогда как коннекционистские архитектуры, такие как глубокое обучение, обычно лучше подходят для задач распознавания паттернов и обучения на больших объёмах данных.
+
+BLOCK 67 (00:09:13.894 -> 00:09:19.815):
+ORG: Hybrid architectures like ACTR attempt to combine the best of both worlds.
+MATCH: Гибридные архитектуры, такие как ACTR, пытаются объединить лучшее из обоих подходов.
+
+BLOCK 68 (00:09:20.375 -> 00:09:24.214):
+ORG: As we will see, there are a number of architectures that follow that approach.
+MATCH: Как мы увидим, есть целый ряд архитектур, которые следуют именно этой идее.
+
+BLOCK 0 (00:00:00.160 -> 00:00:04.400):
+ORG: En este video te mostraré cómo usar N 8 N completamente gratis.
+MATCH: В этом видео я покажу, как пользоваться N8N полностью бесплатно.
+
+BLOCK 1 (00:00:04.960 -> 00:00:16.714):
+ORG: N 8 N es una de las herramientas de automatización sin código más potentes que existen, y al final de este video lo tendrás funcionando con automatizaciones ilimitadas y sin cuotas mensuales de suscripción.
+MATCH: N8N — один из самых мощных no-code инструментов автоматизации, и к концу этого видео у тебя будет всё запущено: безлимитные автоматизации и никаких ежемесячных платежей за подписку.
+
+BLOCK 2 (00:00:16.875 -> 00:00:19.355):
+ORG: La clave es algo llamado autoalojamiento.
+MATCH: Ключ к этому — самостоятельный хостинг.
+
+BLOCK 3 (00:00:20.475 -> 00:00:22.714):
+ORG: Bien, entonces, ¿qué es el autoalojamiento?
+MATCH: Итак, что такое самостоятельный хостинг?
+
+BLOCK 4 (00:00:23.195 -> 00:00:24.923):
+ORG: Primero, retrocedamos un poco.
+MATCH: Для начала сделаем шаг назад.
+
+BLOCK 5 (00:00:24.923 -> 00:00:28.380):
+ORG: N 8 n es un software de automatización de flujos de trabajo.
+MATCH: N8N — это софт для автоматизации рабочих процессов.
+
+BLOCK 6 (00:00:28.380 -> 00:00:31.895):
+ORG: Es como Zapier o Make, pero más potente y mucho más flexible.
+MATCH: Это как Zapier или Make, только мощнее и гораздо гибче.
+
+BLOCK 7 (00:00:32.489 -> 00:00:36.809):
+ORG: Construyes automatizaciones conectando varios nodos, sin necesidad de programar.
+MATCH: Ты строишь автоматизации, соединяя разные узлы, и без программирования.
+
+BLOCK 8 (00:00:37.289 -> 00:00:40.890):
+ORG: Como cualquier software, necesita una máquina para ejecutarse.
+MATCH: Как любому софту, ему нужна машина, на которой он будет работать.
+
+BLOCK 9 (00:00:41.774 -> 00:00:43.454):
+ORG: Esa máquina es tu anfitrión.
+MATCH: Эта машина и есть твой хост.
+
+BLOCK 10 (00:00:44.094 -> 00:00:46.895):
+ORG: Hay 2 formas principales de alojar n 8 n.
+MATCH: Есть два основных способа хостинга N8N.
+
+BLOCK 11 (00:00:47.215 -> 00:00:49.375):
+ORG: La primera es n 8 n Cloud.
+MATCH: Первый — N8N Cloud.
+
+BLOCK 12 (00:00:49.695 -> 00:00:51.375):
+ORG: Esta es la opción gestionada.
+MATCH: Это управляемый вариант.
+
+BLOCK 13 (00:00:51.935 -> 00:00:55.774):
+ORG: N 8 n, la empresa, proporciona su propio hardware en la nube.
+MATCH: Компания N8N предоставляет своё собственное облачное железо.
+
+BLOCK 14 (00:00:56.539 -> 00:01:00.780):
+ORG: Te registras, todo está alojado para ti y simplemente funciona.
+MATCH: Ты регистрируешься, всё уже размещено за тебя — и просто работает.
+
+BLOCK 15 (00:01:01.259 -> 00:01:03.899):
+ORG: La desventaja es el costo y la flexibilidad.
+MATCH: Минусы — цена и гибкость.
+
+BLOCK 16 (00:01:04.459 -> 00:01:13.555):
+ORG: Su plan inicial cuesta alrededor de 20 dólares al mes si se factura anualmente o 24 dólares mensuales, Y a partir de ahí, escala según el uso.
+MATCH: Стартовый план стоит примерно 20 долларов в месяц при годовой оплате или 24 доллара при помесячной, и дальше цена растёт в зависимости от использования.
+
+BLOCK 17 (00:01:14.194 -> 00:01:16.435):
+ORG: La otra opción es el autoalojamiento.
+MATCH: Второй вариант — самостоятельный хостинг.
+
+BLOCK 18 (00:01:16.674 -> 00:01:22.194):
+ORG: Tú proporcionas tu propia máquina y, a cambio, el software es completamente gratis para siempre.
+MATCH: Ты предоставляешь свою машину, и взамен софт становится полностью бесплатным навсегда.  
+
+BLOCK 19 (00:01:22.755 -> 00:01:23.795):
+ORG: Tú controlas todo.
+MATCH: Ты контролируешь всё.
+
+BLOCK 20 (00:01:24.650 -> 00:01:27.209):
+ORG: El único costo es el hardware que lo ejecuta.
+MATCH: Единственная стоимость — железо, на котором это крутится.
+
+BLOCK 21 (00:01:27.609 -> 00:01:30.969):
+ORG: Entonces, si quieres autoalojar, ¿dónde lo ejecutas realmente?
+MATCH: Тогда если ты хочешь хостить самостоятельно, где именно это запускать?
+
+BLOCK 22 (00:01:31.689 -> 00:01:33.450):
+ORG: Tienes 3 opciones principales.
+MATCH: Есть три основных варианта.
+
+BLOCK 23 (00:01:33.689 -> 00:01:35.849):
+ORG: Primero, tu máquina local.
+MATCH: Первый — твой локальный компьютер.
+
+BLOCK 24 (00:01:36.090 -> 00:01:40.329):
+ORG: Tu portátil, tu computadora de escritorio, lo que sea que estés usando ahora mismo.
+MATCH: Ноутбук, стационарный ПК — что угодно, чем ты пользуешься прямо сейчас.
+
+BLOCK 25 (00:01:41.234 -> 00:01:46.674):
+ORG: Esta es la única opción realmente gratuita, pero solo funciona cuando tu computadora está encendida.
+MATCH: Это единственный вариант, который действительно бесплатный, но он работает только пока компьютер включён.
+
+BLOCK 26 (00:01:47.075 -> 00:01:49.789):
+ORG: Cierras tu portátil, tu automatización se detiene.
+MATCH: Закрыл ноутбук — автоматизация остановилась.
+
+BLOCK 27 (00:01:49.789 -> 00:01:52.594):
+ORG: Reinicias para una actualización, se detienen.
+MATCH: Перезагрузился ради обновления — они остановились.
+
+BLOCK 28 (00:01:53.340 -> 00:01:57.659):
+ORG: ¿Y si necesitas webhooks donde un servicio externo active tu flujo de trabajo?
+MATCH: А если тебе нужны вебхуки, когда внешний сервис должен запускать твой workflow?
+
+BLOCK 29 (00:01:58.140 -> 00:02:03.739):
+ORG: Tienes que lidiar con túneles, reenvío de puertos y exponer tu IP doméstica a Internet.
+MATCH: Придётся возиться с туннелями, пробросом портов и выставлять свой домашний IP в интернет.
+
+BLOCK 30 (00:02:04.219 -> 00:02:06.888):
+ORG: Para pruebas, está bien, seguro.
+MATCH: Для тестов — нормально, конечно.
+
+BLOCK 31 (00:02:06.888 -> 00:02:08.052):
+ORG: ¿Para algo real?
+MATCH: Для чего-то реального?
+
+BLOCK 32 (00:02:08.685 -> 00:02:09.885):
+ORG: No vale la pena.
+MATCH: Не стоит того.
+
+BLOCK 33 (00:02:11.324 -> 00:02:13.724):
+ORG: Una Raspberry Pi o un servidor en casa.
+MATCH: Вариант второй — Raspberry Pi или домашний сервер.
+
+BLOCK 34 (00:02:14.284 -> 00:02:29.909):
+ORG: Ahora tienes algo que siempre está encendido, pero tendrás que comprar hardware, instalar un sistema operativo, configurar Docker, lidiar con la red, el reenvío de puertos, DNS dinámico y esperar que tu Internet en casa se mantenga estable.
+MATCH: Теперь у тебя есть устройство, которое всегда включено, но нужно купить железо, установить операционную систему, настроить Docker, разбираться с сетью, пробросом портов, динамическим DNS и надеяться, что домашний интернет будет стабильным.
+
+BLOCK 35 (00:02:30.629 -> 00:02:32.949):
+ORG: Si se cae, tus automatizaciones se caen.
+MATCH: Если он упадёт, твои автоматизации тоже упадут.
+
+BLOCK 36 (00:02:34.014 -> 00:02:38.895):
+ORG: Esto es lo que dice la propia documentación de N 8 N sobre el autoalojamiento.
+MATCH: Вот что сама документация N8N говорит про самостоятельный хостинг.
+
+BLOCK 37 (00:02:38.895 -> 00:02:54.990):
+ORG: Alojar N 8 N por tu cuenta requiere conocimientos técnicos, incluyendo la configuración y administración de servidores y contenedores, la gestión de recursos y escalabilidad de la aplicación, la seguridad de servidores y aplicaciones y la configuración de N8N.
+MATCH: Самостоятельный хостинг N8N требует технических знаний, включая настройку и администрирование серверов и контейнеров, управление ресурсами и масштабируемостью приложения, безопасность серверов и приложений и настройку N8N.  
+
+BLOCK 38 (00:02:54.990 -> 00:02:57.754):
+ORG: También tendrás que sentirte cómodo usando la terminal.
+MATCH: Также тебе нужно уверенно пользоваться терминалом.
+
+BLOCK 39 (00:02:57.754 -> 00:03:05.845):
+ORG: He dejado el enlace a la documentación oficial abajo por si quieres seguir este camino, pero para la mayoría de las personas esto es más problema de lo que vale.
+MATCH: Я оставил ссылку на официальную документацию ниже на случай, если ты хочешь пойти этим путём, но для большинства людей это больше головной боли, чем оно того стоит.
+
+BLOCK 40 (00:03:06.375 -> 00:03:09.335):
+ORG: Lo que nos lleva a la opción número 3, un VPS.
+MATCH: Что и приводит нас к варианту номер три — VPS.
+
+BLOCK 41 (00:03:09.895 -> 00:03:22.349):
+ORG: Por tan solo 5 dólares al mes, obtienes una máquina que está siempre en línea, accesible desde cualquier parte del mundo, con una IP estática o incluso un dominio personalizado que gestiona correctamente los webhooks.
+MATCH: Всего за 5 долларов в месяц ты получаешь машину, которая всегда онлайн, доступна из любой точки мира, со статическим IP или даже с кастомным доменом, который нормально обрабатывает вебхуки.
+
+BLOCK 42 (00:03:22.909 -> 00:03:28.189):
+ORG: Sin hardware, sin dolores de cabeza, con la red doméstica, y otra persona se encarga del tiempo de actividad.
+MATCH: Никакого железа, никаких мучений с домашней сетью, и за аптайм отвечает кто-то другой.  
+
+BLOCK 43 (00:03:29.165 -> 00:03:35.645):
+ORG: Para la mayoría de las personas, especialmente si no tienes experiencia gestionando servidores, esta es la opción que recomiendo.
+MATCH: Для большинства людей, особенно если у тебя нет опыта администрирования серверов, это вариант, который я рекомендую.
+
+BLOCK 44 (00:03:36.125 -> 00:03:40.444):
+ORG: Bien, entonces, si un VPS es el camino a seguir, ¿cuál deberías usar?
+MATCH: Хорошо, если VPS — лучший путь, то какой выбрать?
+
+BLOCK 45 (00:03:41.085 -> 00:03:45.580):
+ORG: Hay muchas opciones disponibles, y, sinceramente, la mayoría funcionará perfectamente.
+MATCH: Вариантов много, и, если честно, большинство подойдёт отлично.
+
+BLOCK 46 (00:03:46.219 -> 00:03:52.699):
+ORG: Pero para este tutorial estoy usando Hostinger, y realmente creo que es la mejor opción para la mayoría de las personas.
+MATCH: Но в этом туториале я использую Hostinger, и я правда считаю, что для большинства людей это лучший выбор.
+
+BLOCK 47 (00:03:53.019 -> 00:03:54.152):
+ORG: Aquí está la razón.
+MATCH: Вот почему.
+
+BLOCK 48 (00:03:54.152 -> 00:03:57.373):
+ORG: Primero, tienen una plantilla de N8N con un solo clic.
+MATCH: Во‑первых, у них есть шаблон N8N в один клик.
+
+BLOCK 49 (00:03:57.373 -> 00:04:02.086):
+ORG: No necesitas instalar Docker, descargar imágenes ni tocar la línea de comandos.
+MATCH: Не нужно ставить Docker, скачивать образы и лезть в командную строку.
+
+BLOCK 50 (00:04:02.525 -> 00:04:07.085):
+ORG: Simplemente te registras, seleccionas la plantilla y N 8 N está funcionando.
+MATCH: Просто регистрируешься, выбираешь шаблон — и N8N уже работает.
+
+BLOCK 51 (00:04:07.724 -> 00:04:13.564):
+ORG: Eso por sí solo te ahorra mucho tiempo de configuración y posibles dolores de cabeza, especialmente si eres nuevo en esto.
+MATCH: Одно только это экономит кучу времени на настройке и избавляет от возможных проблем, особенно если ты новичок.  
+
+BLOCK 52 (00:04:14.580 -> 00:04:16.740):
+ORG: En segundo lugar, es barato.
+MATCH: Во‑вторых, это дёшево.
+
+BLOCK 53 (00:04:17.300 -> 00:04:20.819):
+ORG: Sus planes ya empiezan alrededor de 5 dólares al mes.
+MATCH: Тарифы у них начинаются примерно от 5 долларов в месяц.
+
+BLOCK 54 (00:04:21.220 -> 00:04:27.044):
+ORG: Y tengo un enlace que te da un 10 por 100 de descuento adicional sobre cualquier oferta que ya tengan activa.
+MATCH: И у меня есть ссылка, которая даёт дополнительную скидку 10% поверх любых уже действующих акций.
+
+BLOCK 55 (00:04:27.044 -> 00:04:29.982):
+ORG: Usa el enlace en pantalla o en la descripción de abajo.
+MATCH: Используй ссылку на экране или в описании ниже.
+
+BLOCK 56 (00:04:29.982 -> 00:04:37.645):
+ORG: Te llevará directamente a la página correcta, aplicará el descuento automáticamente y preseleccionará la plantilla de N 8 N para ti.
+MATCH: Она приведёт тебя сразу на нужную страницу, автоматически применит скидку и заранее выберет для тебя шаблон N8N.
+
+BLOCK 57 (00:04:38.125 -> 00:04:40.463):
+ORG: Déjame mostrarte exactamente cómo se ve eso.
+MATCH: Сейчас покажу, как это выглядит.
+
+BLOCK 58 (00:04:40.463 -> 00:04:47.848):
+ORG: Así que cuando hagas clic en ese enlace, llegarás a esta página o a una muy similar, y verás de inmediato que el cupón ya ha sido aplicado.
+MATCH: Так вот, когда ты нажмёшь на эту ссылку, попадёшь на эту страницу или очень похожую, и сразу увидишь, что купон уже применён.
+
+BLOCK 59 (00:04:47.848 -> 00:04:54.224):
+ORG: Adelante, haz clic en reclamar oferta, eso te llevará hacia abajo en la página, hasta la sección de precios para el VPS.
+MATCH: Давай, нажми «Получить предложение». Это прокрутит тебя вниз по странице — к разделу цен на VPS.
+
+BLOCK 60 (00:04:54.834 -> 00:04:58.224):
+ORG: El mínimo que necesitas para empezar es el plan KVM 1.
+MATCH: Минимум для старта — тариф KVM 1.
+
+BLOCK 61 (00:04:58.224 -> 00:05:04.611):
+ORG: Y como mencioné, normalmente comienza en 5 dólares por mes, pero nuestro descuento ya ha sido aplicado a este precio.
+MATCH: И, как я говорил, обычно он стоит 5 долларов в месяц, но наша скидка уже учтена в этой цене.
+
+BLOCK 62 (00:05:04.611 -> 00:05:06.467):
+ORG: Adelante, haz clic en elegir plan.
+MATCH: Давай, нажми «Выбрать тариф».
+
+BLOCK 63 (00:05:06.467 -> 00:05:09.251):
+ORG: En la siguiente página verás un resumen del pedido.
+MATCH: На следующей странице ты увидишь сводку заказа.
+
+BLOCK 64 (00:05:09.251 -> 00:05:12.526):
+ORG: El primer menú desplegable selecciona el período del pedido.
+MATCH: В первом выпадающем меню выбирается срок заказа.
+
+BLOCK 65 (00:05:12.526 -> 00:05:14.164):
+ORG: Por defecto, muestra 24 meses.
+MATCH: По умолчанию там стоит 24 месяца.
+
+BLOCK 66 (00:05:14.164 -> 00:05:17.602):
+ORG: Te recomiendo dejarlo así para obtener el mejor precio posible.
+MATCH: Я советую оставить так. Так цена получится максимально выгодной.
+
+BLOCK 67 (00:05:18.169 -> 00:05:22.329):
+ORG: Para respaldos diarios automáticos, aprovecha ahora el mejor precio.
+MATCH: Для автоматических ежедневных бэкапов сейчас самое время взять их по лучшей цене.
+
+BLOCK 68 (00:05:22.490 -> 00:05:24.360):
+ORG: Este cupón es de un solo uso.
+MATCH: Этот купон одноразовый.
+
+BLOCK 69 (00:05:24.360 -> 00:05:26.229):
+ORG: Si los quieres, agrégalos ya.
+MATCH: Если они тебе нужны, добавляй сразу.
+
+BLOCK 70 (00:05:26.229 -> 00:05:30.226):
+ORG: Elige una ubicación de servidor cercana a ti o a tu audiencia.
+MATCH: Выбери локацию сервера поближе к тебе или к твоей аудитории.
+
+BLOCK 71 (00:05:30.595 -> 00:05:32.368):
+ORG: Cuanto menor sea la latencia, mejor.
+MATCH: Чем ниже задержка, тем лучше.
+
+BLOCK 72 (00:05:32.368 -> 00:05:36.063):
+ORG: Por último, hay una sección opcional para seleccionar tu sistema operativo.
+MATCH: И наконец, есть необязательный раздел для выбора операционной системы.
+
+BLOCK 73 (00:05:36.063 -> 00:05:39.855):
+ORG: Pero no necesitas hacer nada aquí porque N 8 N ya debería estar seleccionado.
+MATCH: Но тут ничего делать не нужно, потому что N8N уже должен быть выбран.
+
+BLOCK 74 (00:05:41.170 -> 00:05:43.889):
+ORG: Haz clic en continuar en el resumen de tu pedido.
+MATCH: Нажми «Продолжить» в сводке заказа.
+
+BLOCK 75 (00:05:44.370 -> 00:05:46.290):
+ORG: Luego, registra tu cuenta.
+MATCH: Затем зарегистрируй аккаунт.
+
+BLOCK 76 (00:05:47.569 -> 00:05:51.810):
+ORG: Añade tu información de facturación e ingresa tu pago para finalizar.
+MATCH: Добавь платёжные данные и внеси оплату, чтобы завершить оформление.
+
+BLOCK 77 (00:05:51.889 -> 00:05:54.129):
+ORG: Tras el pago, recibirás la confirmación.
+MATCH: После оплаты ты получишь подтверждение.
+
+BLOCK 78 (00:05:54.564 -> 00:05:58.587):
+ORG: Puedes hacer clic en el botón o esperar a que termine la cuenta regresiva.
+MATCH: Можешь нажать кнопку или просто подождать, пока закончится обратный отсчёт.
+
+BLOCK 79 (00:05:58.587 -> 00:06:00.599):
+ORG: Ahora, tendrás que configurar tu VPS.
+MATCH: Теперь нужно настроить VPS.
+
+BLOCK 80 (00:06:00.599 -> 00:06:02.936):
+ORG: Lo primero es crear una contraseña de root.
+MATCH: Первое — создать пароль root.
+
+BLOCK 81 (00:06:03.524 -> 00:06:06.518):
+ORG: Esto es diferente a la contraseña de tu host en tu cuenta.
+MATCH: Это не тот пароль, который у тебя в аккаунте хостинга.
+
+BLOCK 82 (00:06:06.518 -> 00:06:08.428):
+ORG: Esta es la contraseña de tu servidor.
+MATCH: Это пароль от самого сервера.
+
+BLOCK 83 (00:06:09.839 -> 00:06:14.784):
+ORG: Asegúrate de que sea segura y guárdala en un lugar seguro, como un gestor de contraseñas.
+MATCH: Сделай его надёжным и сохрани в безопасном месте, например в менеджере паролей.
+
+BLOCK 84 (00:06:14.784 -> 00:06:16.396):
+ORG: Luego, haz clic en siguiente.
+MATCH: Потом нажми «Далее».
+
+BLOCK 85 (00:06:16.396 -> 00:06:21.230):
+ORG: Te ofrecerán un antimalware gratis, añade más protección, así que recomiendo activarlo.
+MATCH: Тебе предложат бесплатную защиту от вредоносного ПО. Это дополнительный уровень безопасности, так что рекомендую включить.
+
+BLOCK 86 (00:06:21.230 -> 00:06:22.897):
+ORG: Pulsa finalizar configuración.
+MATCH: Нажми «Завершить настройку».
+
+BLOCK 87 (00:06:23.064 -> 00:06:32.665):
+ORG: Hostinger configurará el VPS para N 8 N. Esto puede tardar unos minutos, así que es un buen momento para estirarte, tomar un vaso de agua o una taza de café.
+MATCH: Hostinger настроит VPS под N8N. Это может занять пару минут, так что самое время размяться, выпить воды или взять чашку кофе.
+
+BLOCK 88 (00:06:34.449 -> 00:06:38.043):
+ORG: Y así de fácil, nuestro servidor ya está configurado y listo para usarse.
+MATCH: И вот так просто — сервер уже настроен и готов к работе.
+
+BLOCK 89 (00:06:38.043 -> 00:06:41.834):
+ORG: Ahora, antes de continuar, necesitamos verificar nuestra cuenta de hostinger.
+MATCH: Теперь, прежде чем продолжить, нужно подтвердить наш аккаунт Hostinger.
+
+BLOCK 90 (00:06:41.834 -> 00:06:46.512):
+ORG: Abre tu bandeja de entrada en una nueva pestaña y busca un correo de verificación de hostinger.
+MATCH: Открой почту в новой вкладке и найди письмо для подтверждения от Hostinger.
+
+BLOCK 91 (00:06:47.144 -> 00:06:50.483):
+ORG: Haz clic en el botón para verificar tu cuenta de correo electrónico.
+MATCH: Нажми кнопку, чтобы подтвердить адрес электронной почты.
+
+BLOCK 92 (00:06:50.483 -> 00:06:53.822):
+ORG: Cuando llegues al panel de hostinger, ya estás listo para continuar.
+MATCH: Когда попадёшь в панель Hostinger, можно продолжать.
+
+BLOCK 93 (00:06:53.822 -> 00:06:56.327):
+ORG: Puedes cerrar esta pestaña y tu correo electrónico.
+MATCH: Эту вкладку и почту можно закрыть.
+
+BLOCK 94 (00:06:58.185 -> 00:07:07.629):
+ORG: Ahora, configura tu cuenta de N 8 N. Haz clic en administrar aplicación, ingresa tu correo electrónico, nombre y una contraseña.
+MATCH: Теперь настрой аккаунт N8N. Нажми «Управлять приложением», введи почту, имя и пароль.
+
+BLOCK 95 (00:07:08.829 -> 00:07:10.432):
+ORG: Luego, haz clic en siguiente.
+MATCH: Затем нажми «Далее».
+
+BLOCK 96 (00:07:10.432 -> 00:07:14.908):
+ORG: Solo completa la breve encuesta o simplemente haz clic en comenzar para omitirla.
+MATCH: Заполни короткий опрос или просто нажми «Начать», чтобы пропустить его.
+
+BLOCK 97 (00:07:14.908 -> 00:07:21.285):
+ORG: Ahora, este mensaje emergente que dice obtén funciones de pago gratis para siempre, es realmente importante.
+MATCH: А вот это всплывающее сообщение «Получите платные функции бесплатно навсегда» действительно важно.
+
+BLOCK 98 (00:07:21.444 -> 00:07:25.285):
+ORG: Asegúrate de que tu correo electrónico esté ingresado correctamente.
+MATCH: Убедись, что почта введена правильно.
+
+BLOCK 99 (00:07:25.444 -> 00:07:29.045):
+ORG: Luego, clic en envíame una clave de licencia gratuita.
+MATCH: Затем нажми «Отправьте мне бесплатный лицензионный ключ».
+
+BLOCK 100 (00:07:29.439 -> 00:07:36.195):
+ORG: Vuelve a abrir tu bandeja de entrada, busca y abre el correo de n 8 n, y haz clic en activar clave de licencia.
+MATCH: Снова открой почту, найди и открой письмо от n8n и нажми «Активировать лицензионный ключ».
+
+BLOCK 101 (00:07:36.195 -> 00:07:40.516):
+ORG: Recibirás una confirmación que indica que tu licencia ha sido activada.
+MATCH: Ты получишь подтверждение, что лицензия активирована.
+
+BLOCK 102 (00:07:40.516 -> 00:07:51.163):
+ORG: Puedes cerrar esas pestañas adicionales y regresar a la primera página de N 8 N. Ahora, N 8 N está completamente configurado y listo para usarse en tu servidor privado virtual.
+MATCH: Можешь закрыть лишние вкладки и вернуться на первую страницу N8N. Теперь N8N полностью настроен и готов к работе на твоём виртуальном приватном сервере.
+
+BLOCK 103 (00:07:51.163 -> 00:07:57.177):
+ORG: A continuación, puedes comprobar que N 8 N funciona correctamente instalando rápidamente una plantilla.
+MATCH: Дальше можно убедиться, что N8N работает как надо, быстро установив шаблон.
+
+BLOCK 104 (00:07:57.177 -> 00:08:02.782):
+ORG: Para acceder a las plantillas, haz clic en el icono de la caja en la esquina inferior izquierda.
+MATCH: Чтобы открыть шаблоны, нажми на иконку коробки в левом нижнем углу.
+
+BLOCK 105 (00:08:03.779 -> 00:08:08.019):
+ORG: Esto abrirá una ventana de diálogo que ofrece algunas plantillas destacadas.
+MATCH: Это откроет диалоговое окно с подборкой популярных шаблонов.
+
+BLOCK 106 (00:08:08.180 -> 00:08:11.939):
+ORG: Puedes seleccionar una de estas o hacer clic en ver más plantillas.
+MATCH: Ты можешь выбрать один из них или нажать «Посмотреть больше шаблонов».
+
+BLOCK 107 (00:08:12.454 -> 00:08:18.855):
+ORG: En la página que se carga, puedes filtrar las plantillas por categoría, buscar por aplicaciones o casos de uso.
+MATCH: На открывшейся странице ты можешь фильтровать шаблоны по категориям, а также искать по приложениям или сценариям использования.
+
+BLOCK 108 (00:08:21.334 -> 00:08:25.894):
+ORG: Cuando encuentres una plantilla que quieras usar, haz clic en el botón naranja, usar gratis.
+MATCH: Когда найдёшь шаблон, который хочешь использовать, нажми на оранжевую кнопку «Использовать бесплатно».
+
+BLOCK 109 (00:08:26.819 -> 00:08:29.060):
+ORG: Luego, haz clic en importar plantilla.
+MATCH: Затем нажми «Импортировать шаблон».
+
+BLOCK 110 (00:08:30.259 -> 00:08:36.820):
+ORG: Si la plantilla de flujo de trabajo que seleccionaste requiere credenciales de alguna cuenta, el asistente te pedirá que las configures.
+MATCH: Если выбранный шаблон рабочего процесса требует учётные данные какой‑то учётной записи, мастер попросит тебя их настроить.
+
+BLOCK 111 (00:08:37.299 -> 00:08:39.802):
+ORG: Simplemente sigue las indicaciones para comenzar.
+MATCH: Просто следуй подсказкам, чтобы начать.
+
+BLOCK 112 (00:08:39.802 -> 00:08:48.946):
+ORG: Y si necesitas ayuda para configurar alguna cuenta, la mayoría de los cuadros de diálogo de configuración de credenciales incluyen un enlace para abrir la documentación relevante.
+MATCH: А если нужна помощь с настройкой какой‑то учётной записи, в большинстве окон настройки учётных данных есть ссылка, чтобы открыть соответствующую документацию.
+
+BLOCK 113 (00:08:48.946 -> 00:09:00.287):
+ORG: Una vez que hayas terminado de configurar las credenciales de tu cuenta, podrás ver la plantilla completa cargada, y muchas plantillas te proporcionan notas y detalles específicos sobre cómo usar y configurar la plantilla.
+MATCH: Когда закончишь настраивать учётные данные своей учётной записи, ты увидишь полностью загруженный шаблон, и многие шаблоны содержат заметки и конкретные детали о том, как использовать и настраивать шаблон.
+
+BLOCK 114 (00:09:01.029 -> 00:09:05.418):
+ORG: Aquí he seleccionado una plantilla básica de inicio para un agente de IA.
+MATCH: Здесь я выбрал базовый стартовый шаблон для ИИ‑агента.
+
+BLOCK 115 (00:09:05.418 -> 00:09:14.015):
+ORG: Para interactuar con ella, hagamos clic en abrir chat, escribamos un saludo sencillo, podemos ver cómo el agente de IA piensa y luego responde.
+MATCH: Чтобы с ним взаимодействовать, нажмём «Открыть чат», напишем простое приветствие, и увидим, как ИИ‑агент думает, а затем отвечает.
+
+BLOCK 116 (00:09:15.514 -> 00:09:32.380):
+ORG: Ahora, otra ventaja de alojar el sistema por tu cuenta es que tienes acceso a nodos de la comunidad que ni siquiera están disponibles en el plan regular en la nube de N 8 N. Estos son nodos creados por la comunidad de usuarios de N 8 N, y luego puestos a disposición del público para que cualquiera los use.
+MATCH: Теперь ещё одно преимущество самостоятельного размещения — у тебя есть доступ к узлам сообщества, которых нет даже в обычном облачном тарифе n8n. Это узлы, которые создаёт сообщество пользователей n8n, а затем выкладывает в общий доступ, чтобы ими мог пользоваться кто угодно.
+
+BLOCK 117 (00:09:32.380 -> 00:09:40.506):
+ORG: Para acceder a los nodos de la comunidad, haz clic en el ícono de engranaje en la esquina inferior izquierda, y luego haz clic en nodos de la comunidad.
+MATCH: Чтобы получить доступ к узлам сообщества, нажми на иконку шестерёнки в левом нижнем углу, а затем выбери «Узлы сообщества».
+
+BLOCK 118 (00:09:40.506 -> 00:09:44.516):
+ORG: Haz clic en instalar un nodo de la comunidad, y luego haz clic en explorar.
+MATCH: Нажми «Установить узел сообщества», а затем нажми «Обзор».
+
+BLOCK 119 (00:09:44.516 -> 00:09:48.205):
+ORG: Puedes buscar nodos usando la barra de búsqueda en la parte superior.
+MATCH: Искать узлы можно через строку поиска вверху.
+
+BLOCK 120 (00:09:48.684 -> 00:09:51.884):
+ORG: Busca cosas como funcionalidades o nombres de aplicaciones.
+MATCH: Ищи, например, по функциям или названиям приложений.
+
+BLOCK 121 (00:09:52.365 -> 00:09:54.445):
+ORG: O desplázate y encuentra 1 que te guste.
+MATCH: Или просто пролистай и найди тот, который тебе понравится.
+
+BLOCK 122 (00:09:55.789 -> 00:09:58.509):
+ORG: Para instalar un nodo, copia el nombre del nodo.
+MATCH: Чтобы установить узел, скопируй его название.
+
+BLOCK 123 (00:09:58.990 -> 00:10:06.990):
+ORG: Luego, de vuelta en la página de la que veníamos en n 8 n, pega el nombre del nodo en el campo de nombre del paquete NPM.
+MATCH: Затем вернись на страницу n8n, откуда мы пришли, и вставь имя узла в поле «Имя пакета NPM».
+
+BLOCK 124 (00:10:07.149 -> 00:10:10.928):
+ORG: Haz clic en la casilla de reconocimiento, y luego haz clic en instalar.
+MATCH: Поставь галочку подтверждения, а затем нажми «Установить».
+
+BLOCK 125 (00:10:10.928 -> 00:10:15.292):
+ORG: Cuando todo esté instalado, debería aparecer en tu lista de nodos de la comunidad.
+MATCH: Когда всё будет установлено, узел должен появиться в твоём списке узлов сообщества.
+
+BLOCK 126 (00:10:15.904 -> 00:10:21.504):
+ORG: Para usar tu nuevo nodo de la comunidad en un flujo de trabajo, simplemente búscalo al agregar nodos.
+MATCH: Чтобы использовать новый узел сообщества в рабочем процессе, просто найди его при добавлении узлов.
+
+BLOCK 127 (00:10:22.879 -> 00:10:28.240):
+ORG: Lo verás aparecer en la lista con un ícono de caja al lado para indicar que es un nodo de la comunidad.
+MATCH: Ты увидишь его в списке с иконкой коробки рядом — это означает, что это узел сообщества.
+
+BLOCK 128 (00:10:29.600 -> 00:10:37.519):
+ORG: Ahora, hay una última ventaja que obtendrás al autohospedar N 8 N en tu propio VPS, pero esta ventaja también es una responsabilidad.
+MATCH: Теперь есть последняя выгода, которую ты получишь, если будешь самостоятельно размещать n8n на своём VPS, но эта выгода также является ответственностью.
+
+BLOCK 129 (00:10:38.324 -> 00:10:45.924):
+ORG: Si compras el plan administrado N 8 N Cloud a través de N 8 N, ellos se encargarán de las actualizaciones del software por ti.
+MATCH: Если ты покупаешь управляемый тариф n8n Cloud через n8n, они будут обновлять программное обеспечение за тебя.
+
+BLOCK 130 (00:10:46.245 -> 00:10:50.324):
+ORG: Pero cuando lo autohospedas, tú eliges exactamente cuándo actualizar el software.
+MATCH: Но при самостоятельном размещении ты сам выбираешь, когда именно обновлять софт.
+
+BLOCK 131 (00:10:50.889 -> 00:11:00.300):
+ORG: Esto también significa que eres responsable de actualizar el software periódicamente para asegurarte de que sea compatible con todos los nodos que estás usando.
+MATCH: Это также означает, что ты отвечаешь за регулярные обновления программного обеспечения, чтобы оно оставалось совместимым со всеми узлами, которые ты используешь.
+
+BLOCK 132 (00:11:00.300 -> 00:11:09.378):
+ORG: Para actualizar tu software de N 8 N, ve al administrador de VPS de hostinger y luego haz clic en administrador de Docker en la esquina superior derecha.
+MATCH: Чтобы обновить n8n, зайди в панель управления VPS в Hostinger и нажми «Docker Manager» в правом верхнем углу.
+
+BLOCK 133 (00:11:09.378 -> 00:11:15.015):
+ORG: Luego, en la sección proyecto, haz clic en los 3 puntos junto a N 8 N, y selecciona actualizar.
+MATCH: Затем в разделе «Проект» нажми на три точки рядом с n8n и выбери «Обновить».
+
+BLOCK 134 (00:11:15.615 -> 00:11:22.440):
+ORG: Verás un indicador que te dirá que se está actualizando y una confirmación que dice proyecto actualizado cuando haya terminado.
+MATCH: Ты увидишь индикатор, что идёт обновление, и подтверждение «Проект обновлён», когда процесс завершится.
+
+BLOCK 135 (00:11:23.160 -> 00:11:31.707):
+ORG: Ahora ya sabes cómo autohospedar N 8 N. No olvides el enlace de abajo para obtener un 10% de descuento adicional en tu hosting o VPS.
+MATCH: Теперь ты знаешь, как самостоятельно размещать n8n. Не забудь про ссылку ниже, чтобы получить дополнительные 10% скидки на хостинг или VPS.
+
+BLOCK 136 (00:11:31.707 -> 00:11:40.939):
+ORG: Y si quieres aprender cómo crear flujos de trabajo y agentes de IA desde 0 en N 8 N, mira mi tutorial completo que está enlazado en pantalla.
+MATCH: А если хочешь научиться с нуля создавать рабочие процессы и ИИ‑агентов в n8n, посмотри мой полный урок, ссылка на него на экране.
+
+BLOCK 137 (00:11:41.325 -> 00:11:42.445):
+ORG: Gracias por ver el video.
+MATCH: Спасибо за просмотр видео.
+
+BLOCK 0 (00:00:00.960 -> 00:00:07.519):
+ORG: Your business, any business, is made of hundreds, if not thousands, of individual processes.
+MATCH: O seu negócio, qualquer negócio, é feito de centenas, senão milhares, de processos individuais.
+
+BLOCK 1 (00:00:08.080 -> 00:00:12.719):
+ORG: Someone does x, which leads to y, which results in a business outcome.
+MATCH: Alguém faz X, o que leva a Y, o que resulta num resultado de negócio.
+
+BLOCK 2 (00:00:14.080 -> 00:00:14.799):
+ORG: Simple.
+MATCH: Simples.
+
+BLOCK 3 (00:00:14.960 -> 00:00:15.279):
+ORG: Right?
+MATCH: Certo?
+
+BLOCK 4 (00:00:16.135 -> 00:00:28.695):
+ORG: Well, when you add the complexity of different stages of the process living in different systems and being handled by different people in different departments using different methods, it gets very complicated.
+MATCH: Bem, quando se acrescenta a complexidade de diferentes etapas do processo estarem em sistemas diferentes e serem tratadas por pessoas diferentes, em departamentos diferentes, com métodos diferentes, torna-se muito complicado.
+
+BLOCK 5 (00:00:29.734 -> 00:00:30.054):
+ORG: Fast.
+MATCH: Depressa.
+
+BLOCK 6 (00:00:31.789 -> 00:00:40.350):
+ORG: Now imagine trying to fix these processes so they're efficient at the scale of your entire business while wearing a blindfold.
+MATCH: Agora imagine tentar corrigir estes processos para que sejam eficientes à escala de todo o seu negócio, com uma venda nos olhos.
+
+BLOCK 7 (00:00:41.149 -> 00:00:43.949):
+ORG: Here's where Celonis for process excellence comes in.
+MATCH: É aqui que entra a Celonis para a excelência de processos.
+
+BLOCK 8 (00:00:44.565 -> 00:00:49.545):
+ORG: We use the data from your systems to give you an X-ray of how your business is running.
+MATCH: Usamos os dados dos seus sistemas para lhe dar uma radiografia de como o seu negócio está a funcionar.
+
+BLOCK 9 (00:00:49.545 -> 00:00:55.685):
+ORG: So you get a precise, real-time, completely objective view of your processes.
+MATCH: Assim, obtém uma visão precisa, em tempo real e completamente objetiva dos seus processos.
+
+BLOCK 10 (00:00:56.450 -> 00:01:09.250):
+ORG: Then we help you automatically spot inefficiencies, use your data to prioritize issues by business impact, taking a look at best practices as we go, compare your as is process to-be process model.
+MATCH:  Depois, ajudamo-lo a identificar automaticamente ineficiências. Use os seus dados para priorizar problemas pelo impacto no negócio. Vamos analisando as melhores práticas pelo caminho. Compare o seu processo atual com o modelo do processo futuro.
+
+BLOCK 11 (00:01:09.489 -> 00:01:17.834):
+ORG: This helps you guarantee you're only getting changes you want, So you get processes that feel simple again and a business that's firing on all cylinders.
+MATCH: Isto ajuda-o a garantir que só obtém as mudanças que quer. Assim, obtém processos que voltam a parecer simples e um negócio a funcionar a todo o vapor.
+
+BLOCK 12 (00:01:18.314 -> 00:01:24.395):
+ORG: That's why over 1,300 of the world's leading companies trust Celonis with their process excellence.
+MATCH: É por isso que mais de 1.300 das principais empresas do mundo confiam na Celonis para a sua excelência de processos.
+
+BLOCK 13 (00:01:25.034 -> 00:01:26.314):
+ORG: Ready to become one of them?
+MATCH: Pronto para ser uma delas?
+
+BLOCK 14 (00:01:26.981 -> 00:01:27.701):
+ORG: Let's talk.
+MATCH: Vamos falar.
+
+BLOCK 0 (00:00:00.960 -> 00:00:07.519):
+ORG: Your business, any business, is made of hundreds, if not thousands, of individual processes.
+MATCH: Любой бизнес — ваш и вообще любой — состоит из сотен, а то и тысяч отдельных процессов.
+
+BLOCK 1 (00:00:08.080 -> 00:00:12.719):
+ORG: Someone does x, which leads to y, which results in a business outcome.
+MATCH: Кто-то делает X, это ведёт к Y, и в итоге получается бизнес-результат.
+
+BLOCK 2 (00:00:14.080 -> 00:00:14.799):
+ORG: Simple.
+MATCH: Просто
+
+BLOCK 3 (00:00:14.960 -> 00:00:15.279):
+ORG: Right?
+MATCH: , да?
+
+BLOCK 4 (00:00:16.135 -> 00:00:28.695):
+ORG: Well, when you add the complexity of different stages of the process living in different systems and being handled by different people in different departments using different methods, it gets very complicated.
+MATCH: Но когда разные этапы одного процесса существуют в разных системах, ими занимаются разные люди из разных отделов и используют разные методы, всё очень быстро усложняется.
+
+BLOCK 5 (00:00:29.734 -> 00:00:30.054):
+ORG: Fast.
+MATCH: 
+
+BLOCK 6 (00:00:31.789 -> 00:00:40.350):
+ORG: Now imagine trying to fix these processes so they're efficient at the scale of your entire business while wearing a blindfold.
+MATCH: А теперь представьте, что вы пытаетесь исправить эти процессы так, чтобы они эффективно работали в масштабе всей компании, — с завязанными глазами.
+
+BLOCK 7 (00:00:41.149 -> 00:00:43.949):
+ORG: Here's where Celonis for process excellence comes in.
+MATCH: Вот тут и приходит Celonis для совершенства процессов.
+
+BLOCK 8 (00:00:44.565 -> 00:00:49.545):
+ORG: We use the data from your systems to give you an X-ray of how your business is running.
+MATCH: Мы используем данные из ваших систем, чтобы сделать «рентген» того, как работает ваш бизнес.
+
+BLOCK 9 (00:00:49.545 -> 00:00:55.685):
+ORG: So you get a precise, real time, completely objective view of your processes.
+MATCH: И вы получаете точную, в реальном времени, полностью объективную картину ваших процессов.
+
+BLOCK 10 (00:00:56.450 -> 00:01:09.250):
+ORG: Then we help you automatically spot inefficiencies, use your data to prioritize issues by business impact, taking a look at best practices as we go, compare your as-is process to a to-be process model.
+MATCH: Затем мы помогаем автоматически выявлять неэффективности.  
+Мы используем ваши данные, чтобы расставлять приоритеты по влиянию на бизнес.  
+Мы по ходу дела обращаемся к лучшим практикам.  
+Мы сравниваем ваш текущий процесс с моделью целевого процесса.
+
+BLOCK 11 (00:01:09.489 -> 00:01:17.834):
+ORG: This helps you guarantee you're only getting changes you want, So you get processes that feel simple again and a business that's firing on all cylinders.
+MATCH: Это помогает гарантировать, что вы внедряете только те изменения, которые вам нужны.  
+Так вы получаете процессы, которые снова кажутся простыми, и бизнес, который работает на полную мощность.
+
+BLOCK 12 (00:01:18.314 -> 00:01:24.395):
+ORG: That's why over 1,300 of the world's leading companies trust Celonis with their process excellence.
+MATCH: Вот почему более 1 300 ведущих компаний мира доверяют Celonis совершенство своих процессов.
+
+BLOCK 13 (00:01:25.034 -> 00:01:26.314):
+ORG: Ready to become one of them?
+MATCH: Готовы стать одной из них?
+
+BLOCK 14 (00:01:26.981 -> 00:01:27.701):
+ORG: Let's talk.
+MATCH: Давайте поговорим.
+
+BLOCK 0 (00:00:01.120 -> 00:00:07.120):
+ORG: We have explored the key cognitive processes that cognitive architectures aim to model.
+MATCH: Мы рассмотрели ключевые когнитивные процессы, которые когнитивные архитектуры стремятся моделировать.
+
+BLOCK 1 (00:00:07.599 -> 00:00:17.734):
+ORG: Now let's examine the two major approaches to building these architectures in artificial intelligence: Symbolic AI and Connectionist AI.
+MATCH: Теперь давайте рассмотрим два основных подхода к построению таких архитектур в искусственном интеллекте: символический ИИ и коннекционистский ИИ.
+
+BLOCK 2 (00:00:19.494 -> 00:00:26.535):
+ORG: These represent fundamentally different ways of thinking about intelligence and how to achieve it in machines.
+MATCH: Это принципиально разные способы мыслить об интеллекте и о том, как добиться его в машинах.
+
+BLOCK 3 (00:00:28.480 -> 00:00:35.520):
+ORG: Symbolic AI, also known as GOFAI, is a traditional approach.
+MATCH: Символический ИИ, также известный как GOFAI, — традиционный подход.
+
+BLOCK 4 (00:00:35.920 -> 00:00:47.854):
+ORG: From the 1950s through the 1980s, Symbolic AI dominated research because logic and symbolic manipulation were seen as the closest analog to human reasoning.
+MATCH: С 1950-х по 1980-е годы символический ИИ доминировал в исследованиях, потому что логика и манипулирование символами считались ближайшим аналогом человеческого рассуждения.
+
+BLOCK 5 (00:00:48.494 -> 00:01:01.960):
+ORG: It is based on the idea that intelligence can be achieved by representing knowledge as explicit symbols, facts and rules, and then manipulating these symbols to reach new conclusions or make decisions.
+MATCH: Он основан на идее, что интеллекта можно достичь, представляя знания в виде явных символов, фактов и правил, а затем манипулируя этими символами, чтобы приходить к новым выводам или принимать решения.
+
+BLOCK 6 (00:01:02.679 -> 00:01:09.959):
+ORG: For example, a fact is that Pip is a mammal, with the rule that all mammals can breathe air.
+MATCH: Например, есть факт, что Пип — млекопитающее, и правило, что все млекопитающие могут дышать воздухом.
+
+BLOCK 7 (00:01:12.045 -> 00:01:24.525):
+ORG: Symbolic AI systems have an inference or reasoning engine, essentially a mechanism for applying its rules to its known facts to derive new facts or conclusions.
+MATCH: В системах символического ИИ есть механизм вывода или рассуждения — по сути, способ применять правила к известным фактам, чтобы получать новые факты или выводы.
+
+BLOCK 8 (00:01:25.819 -> 00:01:28.700):
+ORG: A very basic form of reasoning is a deduction.
+MATCH: Самая базовая форма рассуждения — дедукция.
+
+BLOCK 9 (00:01:29.500 -> 00:01:42.174):
+ORG: For instance, with the fact and the rule above, the system can perform a simple logical deduction: it knows that Pip is a mammal it has a rule that all mammals can breathe air.
+MATCH: Например, имея указанные выше факт и правило, система может выполнить простую логическую дедукцию: она знает, что Пип — млекопитающее. У неё есть правило, что все млекопитающие могут дышать воздухом.
+
+BLOCK 10 (00:01:42.655 -> 00:01:47.375):
+ORG: and therefore it can infer a new fact: Pip can breathe air.
+MATCH: И значит, она может вывести новый факт: Пип может дышать воздухом.
+
+BLOCK 11 (00:01:48.094 -> 00:01:56.439):
+ORG: This fact wasn't explicitly told to the system, it was derived by applying a general rule to a specific fact.
+MATCH: Этот факт системе не сообщали напрямую. Он был получен применением общего правила к частному факту.
+
+BLOCK 12 (00:01:56.920 -> 00:02:05.960):
+ORG: This process of manipulating symbols according to logical rules is the essence of how Symbolic AI approaches problem solving and reasoning.
+MATCH: Манипулирование символами по логическим правилам и составляет суть того, как символический ИИ подходит к решению задач и рассуждению.
+
+BLOCK 13 (00:02:07.814 -> 00:02:13.575):
+ORG: Expert systems, which were popular in the eighties, are a classic example of symbolic AI.
+MATCH: Экспертные системы, которые были популярны в восьмидесятые, — классический пример символического ИИ.
+
+BLOCK 14 (00:02:14.134 -> 00:02:23.590):
+ORG: This system encoded the knowledge of human experts in a specific domain as a large set of if then rules in a knowledge base.
+MATCH: Эти системы кодировали знания человеческих экспертов в конкретной области как большой набор правил «если — то» в базе знаний.
+
+BLOCK 15 (00:02:24.069 -> 00:02:32.069):
+ORG: The system could then use its inference engine to apply these rules to new cases and make recommendations or provide a diagnosis.
+MATCH: Затем система с помощью механизма вывода могла применять эти правила к новым случаям и выдавать рекомендации или ставить диагноз.
+
+BLOCK 16 (00:02:33.165 -> 00:02:45.805):
+ORG: To briefly summarize Symbolic AI, it is about building systems with explicitly represented knowledge and formal reasoning mechanisms to operate on that knowledge.
+MATCH: Если кратко подытожить символический ИИ, это про создание систем, где знания представлены явно, а поверх них работают формальные механизмы рассуждения, оперирующие этими знаниями.
+
+BLOCK 17 (00:02:46.379 -> 00:02:53.260):
+ORG: The intelligence lies in the richness of the knowledge base and the power of the inference rules.
+MATCH: Интеллект здесь — в богатстве базы знаний и силе правил вывода.
+
+BLOCK 18 (00:02:54.620 -> 00:03:11.594):
+ORG: In terms of the cognitive processes we outlined earlier, Symbolic AI has been most successful in modeling reasoning, decision making and memory, because these are areas where explicit rules and structured representations are effective.
+MATCH: Если соотнести это с когнитивными процессами, о которых мы говорили ранее, символический ИИ был наиболее успешен в моделировании рассуждения, принятия решений и памяти, потому что в этих областях хорошо работают явные правила и структурированные представления.
+
+BLOCK 19 (00:03:12.750 -> 00:03:25.949):
+ORG: However, it has clear limitations when it comes to processes such as perception, learning, motor control and attention, which require dealing with noisy, continuous and generally dynamic data.
+MATCH: Однако у него есть очевидные ограничения, когда речь заходит о процессах вроде восприятия, обучения, моторного контроля и внимания, которые требуют работы с шумными, непрерывными и в целом динамичными данными.
+
+BLOCK 20 (00:03:26.555 -> 00:03:33.594):
+ORG: These gaps motivated the search for alternative approaches, most notably connectionist AI.
+MATCH: Эти пробелы подтолкнули к поиску альтернативных подходов, прежде всего — коннекционистского ИИ.
+
+BLOCK 21 (00:03:34.715 -> 00:03:43.969):
+ORG: Connectionist AI covers a family of models from early perceptrons to modern neural networks, and it takes a very different approach.
+MATCH: Коннекционистский ИИ охватывает целое семейство моделей — от ранних перцептронов до современных нейросетей — и предлагает совсем другой подход.
+
+BLOCK 22 (00:03:44.449 -> 00:03:52.530):
+ORG: It is inspired by the structure and functions of our brain, which is composed of billions of interconnected neurons.
+MATCH: Он вдохновлён структурой и функциями нашего мозга, который состоит из миллиардов взаимосвязанных нейронов.
+
+BLOCK 23 (00:03:53.009 -> 00:04:04.835):
+ORG: Instead of manipulating symbols according to rules, Connectionist AI learns patterns from data, by adjusting the strengths of connections between artificial neurons.
+MATCH: Вместо того чтобы по правилам манипулировать символами, коннекционистский ИИ учится находить закономерности в данных, настраивая силы связей между искусственными нейронами.
+
+BLOCK 24 (00:04:05.395 -> 00:04:09.955):
+ORG: We will talk about neural networks in a sense a bit later, so don't be scared by this image.
+MATCH: О нейронных сетях мы в некотором смысле поговорим чуть позже, так что не пугайтесь этой картинки.
+
+BLOCK 25 (00:04:11.560 -> 00:04:22.920):
+ORG: As I said, in neural networks, information is represented as a pattern of activation across many simple processing units, the so-called artificial neurons or nodes, if you want.
+MATCH: Как я уже говорил, в нейросетях информация представляется как паттерн активации множества простых вычислительных единиц — так называемых искусственных нейронов или узлов, если хотите.
+
+BLOCK 26 (00:04:23.764 -> 00:04:29.125):
+ORG: These units are connected in a network, and each connection has a weight associated with it.
+MATCH: Эти единицы соединены в сеть, и у каждой связи есть свой вес.
+
+BLOCK 27 (00:04:29.764 -> 00:04:33.931):
+ORG: The weights determine how strongly one unit influences another.
+MATCH: Веса определяют, насколько сильно одна единица влияет на другую.
+
+BLOCK 28 (00:04:33.931 -> 00:04:38.098):
+ORG: You can think about these weights as knobs that you can adjust.
+MATCH: О весах можно думать как о ручках, которые можно подкручивать.
+
+BLOCK 29 (00:04:39.439 -> 00:05:05.004):
+ORG: Learning in a neural network involves adjusting these weights based on experience, so that the network becomes better and better at performing a particular task Deep learning, which has revolutionized AI in recent years, is a type of connectionist AI that uses neural networks with many layers, therefore it is called deep.
+MATCH: Обучение нейросети заключается в том, что эти веса подстраиваются на основе опыта, и сеть всё лучше и лучше справляется с конкретной задачей. Глубокое обучение, которое в последние годы произвело революцию в ИИ, — это разновидность коннекционистского ИИ, использующая нейросети со многими слоями, поэтому оно и называется «глубоким».
+
+BLOCK 30 (00:05:05.800 -> 00:05:16.360):
+ORG: These deep neural networks have achieved impressive results in areas like image recognition and natural language processing, often surpassing human performance.
+MATCH: Эти глубокие нейросети добились впечатляющих результатов в таких областях, как распознавание изображений и обработка естественного языка, нередко превосходя человеческие возможности.
+
+BLOCK 31 (00:05:19.644 -> 00:05:26.204):
+ORG: The key difference between symbolic and connectionist AI is in how they represent and process information.
+MATCH: Ключевое различие между символическим и коннекционистским ИИ заключается в том, как они представляют и обрабатывают информацию.
+
+BLOCK 32 (00:05:26.925 -> 00:05:33.564):
+ORG: Symbolic AI is strong at reasoning with what it already knows, but weak at learning new knowledge.
+MATCH: Символический ИИ силён в рассуждениях на основе того, что уже знает, но слаб в усвоении новых знаний.
+
+BLOCK 33 (00:05:34.370 -> 00:05:42.209):
+ORG: Connectionist AI, on the other hand, is strong at learning new knowledge but weak at explicit reasoning.
+MATCH: Коннекционистский ИИ, напротив, силён в освоении новых знаний, но слаб в явном рассуждении.
+
+BLOCK 34 (00:05:43.410 -> 00:05:45.649):
+ORG: Here is a table summarizing the two.
+MATCH: Вот таблица, обобщающая эти два подхода.
+
+BLOCK 35 (00:05:46.384 -> 00:05:48.145):
+ORG: Neither approach is perfect.
+MATCH: Ни один подход не идеален.
+
+BLOCK 36 (00:05:48.625 -> 00:05:53.745):
+ORG: Symbolic AI can be brittle and struggle to deal with noisy or incomplete data.
+MATCH: Символический ИИ может быть хрупким и с трудом справляться с зашумлёнными или неполными данными.
+
+BLOCK 37 (00:05:53.985 -> 00:06:04.269):
+ORG: It also faces a knowledge acquisition bottleneck, the difficulty of encoding all the necessary knowledge, all the knowledge that we have, into explicit rules.
+MATCH: Кроме того, он сталкивается с «бутылочным горлышком» приобретения знаний — трудностью закодировать все необходимые знания, все те знания, которыми мы обладаем, в виде явных правил.
+
+BLOCK 38 (00:06:04.829 -> 00:06:08.589):
+ORG: Connectionist AI, on the other hand, can be a black box.
+MATCH: Коннекционистский ИИ, с другой стороны, может быть «чёрным ящиком».
+
+BLOCK 39 (00:06:08.829 -> 00:06:14.910):
+ORG: It's often difficult to understand why a neural network makes a particular decision.
+MATCH: Часто трудно понять, почему нейросеть принимает то или иное решение.
+
+BLOCK 40 (00:06:15.375 -> 00:06:23.375):
+ORG: It also can be a bit data hungry and prone to biases present in the training data, as we discussed in the previous question.
+MATCH: Кроме того, ему часто требуется много данных, и он склонен воспроизводить перекосы, присутствующие в обучающих данных, как мы обсуждали в предыдущем вопросе.
+
+BLOCK 41 (00:06:24.014 -> 00:06:29.134):
+ORG: In the next section, we will discuss how to get the best from both approaches.
+MATCH: В следующем разделе мы обсудим, как извлечь лучшее из обоих подходов.
+
