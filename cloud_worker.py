@@ -29,7 +29,8 @@ def main():
 
     try:
         # 1. Update Status to Processing
-        doc_ref.update({"status": "processing", "worker_id": os.environ.get("HOSTNAME")})
+        # Use set(merge=True) so it creates the document if it doesn't exist (e.g. manual testing)
+        doc_ref.set({"status": "processing", "worker_id": os.environ.get("HOSTNAME")}, merge=True)
 
         # 2. Download Video
         print(f"📥 Downloading {VIDEO_FILENAME} from {INPUT_BUCKET_NAME}...")
