@@ -86,9 +86,10 @@ def main():
         sys.exit(1)
 
 if __name__ == "__main__":
-    # Check if necessary env vars are present
-    if not all([INPUT_BUCKET_NAME, OUTPUT_BUCKET_NAME, VIDEO_FILENAME, FIRESTORE_DOC_ID]):
-        print("❌ Missing required environment variables.")
+    # Check if necessary env vars are present (Removed FIRESTORE_DOC_ID from check)
+    if not all([INPUT_BUCKET_NAME, OUTPUT_BUCKET_NAME, VIDEO_FILENAME]):
+        print(f"❌ Missing required environment variables.")
+        print(f"Input: {INPUT_BUCKET_NAME}, Output: {OUTPUT_BUCKET_NAME}, File: {VIDEO_FILENAME}")
         sys.exit(1)
     
     main()
