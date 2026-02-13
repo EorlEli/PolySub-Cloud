@@ -84,7 +84,8 @@ def transcribe_audio(audio_path, use_correction=True):
             buffer_data = file.read()
         
         # 2. Configure Deepgram Options
-        # smart_format=True: Adds punctuation and capitalization
+        # smart_format=Tr
+        # italization
         # model="nova-3": Fastest and most accurate model
         options = {
             "model": "nova-3",

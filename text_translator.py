@@ -75,7 +75,7 @@ def translate_full_text(full_text, target_language="Portuguese"):
     7. **Structure**: Use natural sentence structure in {target_language}.    
     8. **Completeness**: Translate every single sentence. Do not summarize or skip text.
     9. **Repetitions**: Keep repeated phrases (e.g., "Doing good. Doing good." -> "Estou bem. Estou bem.").
-    10. **1:1 rule**: Translate one original sentence into one translated sentence.
+    10. **1:1 rule**: Translate one original sentence, the one which ends with a dot, question mark or exclamation mark, into one translated sentence, which ends with a dot, question mark or exclamation mark.
 
     OUTPUT:
     Return ONLY the translated text. No notes, no explanations, no preambles, no postambles.
@@ -147,6 +147,8 @@ def verify_translation_quality(source_chunks, translated_chunks, target_language
     5. **Formatting**: Preserve original punctuation style where appropriate for subtitles.
     6. **1:1 Sentence Mapping**: Ensure each source sentence corresponds to exactly one translated sentence.
     7. **Sentence Splitting**: If the translation combines sentences using colons, semicolons, or dashes, SPLIT them with a period (.). NEVER combine multiple source sentences into one.
+    8. **COMPLETENESS**: CRITICAL. Ensure EVERY source sentence logic is preserved. Do not skip content or summarize.
+
 
     If the draft is already perfect, output it exactly as is.
     If it needs improvement, output ONLY the improved version.

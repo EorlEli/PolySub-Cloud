@@ -110,10 +110,11 @@ def patch_response(response_dict, corrections):
                 new_transcript = current_transcript.replace(orig, repl)
                 print(f"      🔄 [Utterance {u_id}] Replaced '{orig}' -> '{repl}'")
                 target_utterance["transcript"] = new_transcript
+                
                 replacement_count += 1
             else:
                  print(f"      ⚠️ Warning: Could not find '{orig}' in utterance {u_id}")
-
+ 
         
         # --- Reconstruct the global transcript ---
         # The top-level 'transcript' must match the sum of utterances
