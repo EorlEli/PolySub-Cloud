@@ -788,3 +788,483 @@ Evaluation Result:
   "score_v2": 9,
   "reasoning": "V2 is clearly superior because it provides a faithful, fluent Russian rendering of the original, avoids mixed-language insertions, and uses standard terminology consistently. Specific issues in V1 include: - English phrases left untranslated within the Russian text (e.g., the sentence about perfect simulation and the Dancing Qualia reference), which breaks readability and accuracy. - Inconsistent transliteration (e.g., айяуаски instead of аяуаски) and occasional awkward phrasing. - A few grammatical oddities and unnatural constructions that interrupt the flow. In contrast, V2: - renders all technical terms in Russian (e.g., Глобальное рабочее пространство, Интегрированная теория информации) and uses the correct mathematical symbol Φ for Phi. - translates thought experiments and key names (например, Танцующие квалиа) into appropriate Russian equivalents. - maintains a formal, academic tone throughout, matching the source register. - preserves nuance across sections (functionalism, biological naturalism, emergentism, Orch-OR) with coherent Russian syntax and terminology. Consequently, V2 achieves higher accuracy, fluency, tone, terminology consistency, and grammatical quality, while V1 exhibits major readability issues due to mixed languages and inconsistent transliterations."}
 --------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-08 10:59:56
+Target Language: Russian
+Original Len: 8474 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 is definitively the better translation. It fixes several clear deficiencies in V1, resulting in higher accuracy and fluency. Notable issues in V1 include an English word accidentally left in a Russian sentence (concern) in a crucial line about philosophical concerns, which disrupts readability and accuracy. V2 corrects this with a fully Russian phrasing: это поднимает особую философскую проблему. V2 also corrects a problematic construction in a key sentence about autonomy and system design by preserving the negation: что системы расширяют возможности человека, не подрывая автономию человека и его способность влиять на решения ИИ. This preserves the nuance of augmenting capabilities without eroding agency, matching the source meaning more closely. In terms of tone and terminology, V2 uses consistent Russian IT terminology (ИИ‑системы, демографический паритет, процессуальная справедливость, повседневные выражения) and avoids stray English phrases such as state of the art. The refinements also improve readability and naturalness (e.g., replacing awkward clauses with smoother Russian equivalents, better sentence flow, and precise phrasing for philosophical and ethical concepts). Overall, V2 exhibits near-native fluency, precise accuracy, and better alignment with the source’s formal register, while V1 contains translating artefacts and less polished phrasing that reduce its quality.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-08 11:41:12
+Target Language: Portuguese
+Original Len: 8481 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is more fluent and faithful overall. Major improvements include: (1) correcting a grammar error in V1 ('esse questão' → 'essa questão'), (2) translating John Rawls' reference with the standard title 'Uma Teoria da Justiça' and refining the related discussion, (3) using the correct plural article 'os menos favorecidos', (4) adopting more natural phrasing and terminology (e.g., 'ótica' vs 'lente', 'objetivo principal' vs 'intenção'), (5) aligning with common Portuguese translations in key areas like 'caixa-preta' and 'controle humano efetivo' (or 'significativo' nuances). V2 also adds clarity in parts of the argument and maintains the source's tone and structure more closely. The only notable quirk is a sentence where 'dados sobre ferramentas de recrutamento' slightly shifts the focus from 'recruitment tools learning' to 'data about recruitment tools', but the overall meaning remains clear. Taken together, V2 offers higher fidelity, readability, and alignment with the source’s register.)"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-08 12:50:14
+Target Language: Portuguese
+Original Len: 22175 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 8,
+  "score_v2": 9,
+  "reasoning": "V2 (Refined) is the definitively better translation overall. It fixes several key issues found in V1 and renders the content more fluently and naturally in Portuguese. Specific improvements include: \n- Consistency of terminology: V2 consistently uses Microsoft 365 Copilot and related terms rather than alternating between Microsoft 365 Copilot and Microsoft three sixty five Copilot (as seen in V1). \n- Natural phrasing for core concepts: V1 renders “center of gravity” literally as “centro de gravidade,” which sounds odd in PT; V2 replaces this with “centro de operações” (and retains “hub” in a natural way), yielding a more authentic, native feel. \n- Tone and register: V2 maintains an informal yet professional tone appropriate to the source (dialogue/interview style) without the occasional stilted or overly literal phrasing present in V1 (e.g., V1’s awkward phrasing around “home page” and some transitions). \n- Idiomatic improvements: V2 improves several phrases to sound like natural speech in PT, such as “encontro social” for a social gathering, instead of the less natural “buzzing/agitação” used in V1. \n- Key content and structure preserved: Both versions cover the same topics (Copilot features, WorkIQ concept, agent modes, PowerPoint/Excel integration, etc.). V2 preserves all substantive content while enhancing fluency, cohesion, and readability. \n- Minor flaw in V2: a small typographical slip appears as “pontos-key” (instead of “pontos-chave”) in one place, which is a minor error that does not critically detract from comprehension but is worth correcting. This is the main observable flaw in an otherwise excellent translation. \nOverall, V2 delivers higher accuracy, better fluency, and a more appropriate tone, with only one minor typographical hiccup and a few borderline brand-name consistency choices. Hence, it earns a higher score and is the better version. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-09 11:41:27
+Target Language: Portuguese
+Original Len: 7217 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 9,
+  "reasoning": "V2 is definitively better because it preserves meaning while elevating fluency, tone, and correctness. The V1 translation contains clear quality issues that diminish accuracy and readability, most notably inserted English phrases within the translation (e.g., \"think about it; I really like it\"), which breaks cohesion and suggests sloppiness in translation. Specifically: \n- In V1, the Berkeley/Hegel passage includes English insertions (“think about it; I really like it”) that distort the target language and reduce perceived accuracy. V2 renders this in Portuguese: \"(pense nisso — eu realmente gosto disso)\".\n- V2 adopts more natural Portuguese phrasing and formal tone throughout, such as replacing V1’s more literal but slightly awkward phrasing with smoother alternatives (e.g., V2 uses \"conforme se vê nesta imagem famosa\" vs V1’s \"como podemos ver nesta imagem famosa\").\n- Terminology and structure are more consistent in V2 (e.g., mind–corpo with an en dash, and digressão/functionalismo phrasing) and avoid abrupt code-switching or English interjections.\n- V2 reduces awkward or misaligned phrasing found in V1 (e.g., the question about physical vs non-physical properties is more naturally rendered; V2’s phrasing of the interaction between mind and body is clearer).\nOverall, V2 preserves all substantive content of the source while delivering a more native, fluent, and register-accurate Portuguese translation. It also corrects the major fidelity issue present in V1 (English insertions) and improves the stylistic presentation without sacrificing meaning."  
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-09 12:19:53
+Target Language: Portuguese
+Original Len: 7599 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 8,
+  "reasoning": "V2 is the more polished and coherent translation overall. Key improvements over V1 include: \n- Terminology and accuracy: V2 corrects a number of terms (e.g., replacing sonar with ecolocalização for the bat reference, and using cor vermelha for clarity when discussing Mary). It also standardizes phrasing (e.g., 'As funções associadas à consciência' vs 'a função associada à consciência'). \n- Fluency and naturalness: V2 reads more like native Portuguese text (e.g., 'em contrapartida' to introduce the pessimistic view, and 'aplicar novamente essa lente' instead of a less idiomatic 'voltar essa lente'). \n- Consistency: V2 generally maintains consistent terminology and tone throughout (e.g., Mary’s Room is rendered as 'experimento do Quarto de Mary', which is natural in Portuguese, rather than leaving an English phrase). \n- Minor but notable content refinements: V2 shifts some phrasing to be more precise (e.g., 'para esclarecer esse debate, e o experimento mental de Mary ilustra isso vividamente' vs a less natural construction in V1). \n\nHowever, V2 has a couple of minor issues:\n- A small typographical error ('helpa' instead of 'ajuda a').\n- A slightly awkward phrase in one spot ('quando Mary finalmente sai do quarto para fora') which could be smoothed to 'quando Mary finalmente sai do quarto e vê pela primeira vez a cor vermelha'.\n\nImpact on the criteria:\n- Accuracy: Both are largely faithful, but V2 avoids the small English slip found in V1 ('vividly illustrates this').\n- Fluency and tone: V2 is more fluent and natural-sounding in Portuguese.\n- Terminology: V2 uses more precise terminology (ecolocalização, cor vermelha) and maintains consistency.\n- Grammar/punctuation: V2 is generally better, aside from the two minor issues noted.\n\nOverall, V2 is the preferable translation and should be rated higher for quality."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-09 15:32:48
+Target Language: Portuguese
+Original Len: 6494 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more accurate and fluent translation overall. It fixes several issues present in V1 and reads more naturally as a native Portuguese text. Key improvements include:\n- Grammar and agreement fixes: V1 incorrectly uses 'as IA de jogos atuais' (singular after 'as'), whereas V2 correctly renders it as 'as IAs de jogos atuais'. V2 also uses 'nenhuma responsabilidade' (correct gender) where V1 had 'nenhum responsabilidade'.\n- Terminology consistency: V2 consistently uses 'IAs' plural and, in places, 'responsabilização' to reflect accountability concepts, which is more precise in a legal/ethical context.\n- Stylistic refinement: V2 removes informal filler and clumsy phrasings (e.g., replaces 'como, você sabe' with a more formal phrasing in the comparable segment and uses 'por exemplo' instead of a less formal approach).\n- Nuanced accuracy: V2 preserves the intended distinctions more faithfully, e.g., uses 'da forma como agiu' and 'manifestações de responsabilidade' in a more natural way, and selects 'seres humanos' over 'humanos' for smoother readability in some lines.\n- Minor but meaningful edits: V2 uses 'falta de responsabilização' (a more precise legal term) where appropriate, and 'governará esses futuros agentes não humanos' aligns with the future-oriented legal/ethical framing.\n\nOverall, V2 maintains the same meaning as the original but achieves higher native-level fluency, better grammatical accuracy, and more consistent, domain-appropriate terminology, which justifies a higher score and makes it the definitive better version."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-09 18:00:01
+Target Language: Spanish
+Original Len: 6462 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 9,
+  "score_v2": 6,
+  "reasoning": "V1 is the more precise and natural translation overall. It preserves the full meaning, nuance, and formal register of the English source, and it uses standard, consistent Spanish terminology throughout. Specific strengths of V1 include: accurate rendering of key concepts (free will, autonomous AI, mens rea, moral vs legal responsibility), clear distinction between moral and legal responsibility, and a consistent formal style appropriate for an academic discussion. It also maintains faithful phrasing for important clauses (e.g., “paradigma del cero absoluto,” “brecha de responsabilidad,” “explicación inteligible,” “agentes por derecho propio”). The final sentence remains grammatical with plural bases: “se convierten en las bases de las leyes y del código…” which matches the sense of “foundations” in the English text. V2, while largely understandable, contains several issues that reduce accuracy and fluency: (1) stylistic and lexical choices that are less natural or slightly off (e.g., “Hacemos responsables a las personas” instead of the more idiomatic “Rendimos cuentas a las personas”), (2) a factual-terminology slip in a key line (“explicación intelligible” uses the English word intelligible rather than the proper Spanish “inteligible” or “inteligible”), (3) inconsistent or awkward phrasing around pluralization and examples (e.g., “retroalimentación entre humanos y máquinas” vs “humano y máquinas” elsewhere, inconsistency with “equipos humano-IA”), (4) an informal colloquial insertion (“pero ya sabes a qué me refiero”) that mismatches the formal academic tone, and (5) a pluralization error at the end where V2 uses “la base” (singular) instead of “las bases” (plural) to match “foundations.” These issues collectively impair fluency and precision, even though most of V2’s content maps to the source. For example, the awkward phrase “explicación intelligible” is a clear non-Spanish loan, and “tal como lo plantea el modelo uno” is a less natural rendering of the sourcing reference than V1’s more straightforward approach. Given the importance of accuracy, tone, and terminology in this text, V1 is the definitive choice." 
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 05:56:09
+Target Language: Portuguese
+Original Len: 3407 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 8,
+  "score_v2": 9,
+  "reasoning": "V2 is overall more fluent and polished in Portuguese while preserving all technical nuances. Specific points:\n- Fluência/estilo: V2 uses phrasing that reads more como um texto original em PT, com escolhas como \"fluxo cuidadosamente orquestrado de informações que avança pelas camadas da rede\" e \"propagação para frente\", que soam mais naturais do que algumas construções em V1.\n- Precisão de conceito: V2 mantém a ideia central com termos técnicos corretos (ex: ReLU, sigmóide, tangente hiperbólica) e inclui a explicação da não linearidade de forma clara.\n- Terminologia: V2 adota convenções modernas (por exemplo, \"ReLU (unidade linear retificada)\"), e usa expressões equivalentes mais precisas em alguns pontos (\"não linearidade\" em vez de \"não linearidade\" com artigo, mantendo consistência), sem perder o sentido.\n- Pontuação e gramática: V2 corrige ou evita pequenas ambiguidades presentes em V1 (por exemplo, a concordância entre sujeito e verbo na ideia de fluxo que avança; V1 às vezes apresenta formações mais pesadas ou ligeiramente menos naturais).\n- Pontos menores onde V1 é menos preciso: V1 utiliza estruturas como \"poﬆa a soma ponderada das entradas mais o viés\" com variações menores de estilo; V2 uniformiza algumas dessas estruturas (ex.: o uso de parênteses em ReLU para clareza). Além disso, V2 evita o ponto de atenção em V1 de uma construção como \"sem não linearidade\" que pode soar estranha a leitores fluentes.\n\nEm resumo, ambas as versões transmitem o conteúdo com precisão, mas V2 apresenta maior naturalidade, consistência terminológica e fluidez, tornando-a a melhor escolha entre as duas. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 06:07:03
+Target Language: Spanish
+Original Len: 3421 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more natural and precise Spanish rendition of the original text. Why V2 scores higher:\n- Accuracy: Both translations convey the same technical steps, but V2 tightens some phrasing for clarity (e.g., describing the activation nonlinearity with proper article usage: “la no linealidad”).\n- Fluency: V2 reads more like a cohesive, native Spanish explanation without the slight stiltedness that can appear in V1.\n- Tone: Maintains a neutral, instructional register appropriate for an educational text.\n- Terminology: Mostly consistent and standard (capa de entrada, nodos, sesgo, suma ponderada, activación, ReLU, sigmoide, tanh, propagación hacia adelante). The main minor issue is a brief inconsistency in terminology within V2 where one sentence uses “neurón” while the rest uses “nodo”; this distracts slightly from uniform terminology but does not alter meaning.\n- Grammar and punctuation: V2 is generally more precise, with improved punctuation and phrasing (e.g., explicit naming of tanh, ReLU, and clearer clause boundaries).\n\nOverall, V2 delivers higher accuracy and smoother fluency, with only a minor terminology inconsistency. V1 is solid but slightly more literal and a touch less polished."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 06:17:08
+Target Language: German
+Original Len: 3421 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 8,
+  "score_v2": 7,
+  "reasoning": "V1 is overall more accurate in key technical details. It preserves the intended meaning with correct phrasing, e.g., uses 'keine nichtlinearen Zusammenhänge' (correct). V2, while more fluent and consistent in terminology (Neuronen, Vorwärtspropagation), contains a grammatical slip: 'keine nichtlineareren Zusammenhänge' which is incorrect and could alter nuance. Additionally, V1 occasionally uses English terms (e.g., 'Forward Propagation'), but its core technical content remains precise. V2’s polish is notable, but the single error and slightly riskier phrasing reduce its overall reliability. Therefore, V1 is the better translation in this evaluation. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 06:29:00
+Target Language: Italian
+Original Len: 3477 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more natural and accurate Italian rendering. It maintains the technical meaning while achieving greater fluency and consistency. Specific improvements include: (a) replacing the English term forward propagation with the fully Italian propagazione in avanti, which enhances readability and correctness; (b) optimizing phrasing for smoother Italian (e.g., 'passa al primo livello nascosto' in V2 vs 'passa al primo strato nascosto' in V1, both acceptable but V2 flows better in context); (c) improved cohesion in the activation-function discussion (e.g., 'la somma pesata degli input e l'aggiunta del bias' in a single coherent clause); (d) consistent use of terminology such as 'livello/strato nascosto' and 'propagazione in avanti' throughout; (e) slightly tighter and more natural final summary. Despite these improvements, both versions preserve the original meaning and technical details well. V1 remains correct but feels more 'translated' and occasionally awkward (e.g., keeping 'forward propagation' in English)."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 06:37:47
+Target Language: Russian
+Original Len: 3406 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "Overall, V2 is the more accurate and fluent translation. Key improvements include: \n- Terminology and readability: V2 uses более natural phrasing for bias and activation (e.g., “сдвиг” better explained as “смещение, которое выполняет роль порога активации” and “смещение регулирует порог активации”). V1 uses awkward phrasing like “пороговый сдвиг” that sounds less idiomatic in Russian.\n- Consistency with standard terms: V2 keeps ReLU in English as Rectified Linear Unit (ReLU) while still naming the function, which aligns with common Russian technical usage and avoids over-literal translation (V1 uses “прямолинейная единица”). Also V2 consistently uses “сигмоида (логистическая функция)” and other standard terms.\n- Minor stylistic cleanups: V2 tightens sentences and punctuation (e.g., “Итак, на этом этапе вычисление — взвешенная сумма входов плюс смещение. Результат — взвешенная сумма плюс смещение — затем проходит через функцию активации.”) making the text flow more like a coherent, native Russian explanation.\n- Precision of meaning: V2 uses “обученных иерархических признаков” instead of “изученных” (both acceptable, but “обученных” better reflects the learning context in the original), and “поставленной задачи” at the end is a natural formal phrasing.\n\nSpecific points from the text: \n- V1 occasionally uses less natural phrasing (e.g., “пороговый сдвиг” and “значением от нуля до единицы” is fine, but the subsequent phrasing around bias is more clumsy). \n- V2 preserves the same sequence while delivering smoother Russian and more precise terminology, especially around bias, activation, and the ReLU term.\n\nOverall, V2 provides a more native-sounding, accurate, and terminologically consistent Russian translation of the original English text.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 10:26:50
+Target Language: Russian
+Original Len: 3407 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 8,
+  "score_v2": 9,
+  "reasoning": "V2 is the more fluent and precise rendering. It uses terminology closer to standard neural network language (интенсивность пикселя, соединён) and generally reads more naturally in Russian while preserving the meaning. A minor issue in V2 is a redundant sentence about nonlinear dependencies, which slightly affects flow but does not hurt accuracy. V1 is accurate and clear but in places sounds more like a direct translation (for example, яркость пикселя) and has slightly less natural rhythm."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 10:36:09
+Target Language: Russian
+Original Len: 5828 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 8,
+  "score_v2": 9,
+  "reasoning": "V2 is overall more fluent and natural in Russian, with tighter phrasing and more consistent terminology. For example, V2 uses a smoother opening comparison about not seeing everything, which reads more idiomatically than V1's phrasing. In complex passages, V2’s formulation is more concise and flow-friendly (for instance, восприятие — последующий процесс, в ходе которого мозг организует, интерпретирует и наделяет смыслом эти «сырые» сенсорные сигналы), whereas V1 sometimes reads as slightly stiffer or more verbose. V1 also contains a bit more repetition in describing environmental stimuli (окружающей среде — энергией стимула в окружающей среде). A minor caveat is the terminology for the illusion: V2 uses иллюзию шашечной доски, which could be rendered as иллюзия шахматной доски to align with standard Russian usage of the checker shadow illusion; this is a minor point compared to the overall fluency and accuracy improvements in V2."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 11:45:18
+Target Language: Russian
+Original Len: 7088 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "Overall, V2 is the more fluent and accurate rendering of the original English text. Key improvements include: \n- Clarity of meaning: V2 shifts some phrasing to more faithful equivalents of the English terms (e.g., ‘considerations’ -> «соображения», rather than treating them as outcomes). This yields closer alignment with the source’s nuance. \n- Terminology and readability: V2 uses more standard translations for technical concepts (RLHF, Reward Modeling, adversarial/sostiazatelno testing) and maintains a formal, scientific tone throughout. The use of ‘состязательное тестирование’ is more accurate than the somewhat awkward ‘враждебное тестирование’ in V1.\n- Flow and natural Russian style: V2 tends to be more concise and natural for Russian readers (e.g., “Мы пока ещё не на этом этапе” sounds smoother than V1’s “Мы пока не дошли”). The rearrangement of some sentences keeps the same meaning while improving readability.\n- Consistency and precision in nuance: V2 often options terms more faithful to the source’s nuance (e.g., “переход… истории Земли” vs “переломным моментом” is slightly rephrased but retains meaning; overall, the refined phrasing better preserves the conceptual structure).\n\nSpecific examples:\n- V2 uses “соображения, которые вызывает перспектива создания общего искусственного интеллекта…” vs V1’s “потенциальные последствия самой возможности создания…”; the former aligns better with the source’s use of ‘considerations/concerns’ rather than outcomes.\n- For the orthogonality concept, V2 keeps a clean, precise phrasing: “тезис об ортогональности” and “Сверхинтеллект может становиться всё умнее, но при этом преследовать цели, враждебные человеческому существованию”—clear and faithful.\n- Adversarial testing: V2 uses “состязательное тестирование,” which is the standard term, vs V1’s “«враждебное» тестирование,” which is less precise.\n\nAreas where V2 is slightly weaker but not decisive:\n- The phrase “когнитивную продуктивность” in the AGI/ASI definition is somewhat unusual in Russian technical wording (more typical would be “когнитивные возможности” or “когнитивная производительность”). This is a minor lexical imperfection that slightly harms accuracy, but does not significantly detract from meaning. Overall, V1 does better on that specific term, but V2 compensates with broader fluency and fidelity elsewhere.\n\nConclusion: V2 is the more polished and faithful translation overall, earning a higher score and being the preferable version for conveying the original text in Russian.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 12:01:09
+Target Language: Spanish
+Original Len: 7103 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 5,
+  "score_v2": 9,
+  "reasoning": "V2 is decisively better. It fixes clear errors present in V1 (e.g., the typo 'culturess' and the English word 'far' appearing where Spanish is required), which directly affect accuracy and readability. It also improves naturalness and fluency across multiple passages (e.g., 'Consideremos las implicaciones potencialmente transformadoras' instead of 'Pensemos en las consideraciones...'; 'mediante un escalado masivo' instead of 'masivamente escalando'), making the text read like an original Spanish piece rather than a literal translation. Terminology is consistently and more precisely rendered (e.g., 'aprendizaje por refuerzo a partir de retroalimentación humana', 'supervisión escalable', 'verificación y diseño basado en restricciones'), and the overall tone remains formal and aligned with the source. Although both versions convey the same ideas, the improvements in V2 yield higher accuracy, fluency, and terminology use, resulting in a near-native quality translation. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 12:21:55
+Target Language: Spanish
+Original Len: 7773 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 5,
+  "score_v2": 9,
+  "reasoning": "V2 is clearly the more accurate and fluent translation. The most serious flaw in V1 is the erroneous 'toca la cocina' (kitchen) where the original refers to the stove; V2 correctly reads 'toca la estufa', restoring factual accuracy. V1 also includes a clear typographical/terminology error ('coubicados' en lugar de 'colocalizados'), which undermines readability and technical precision; V2 fixes this to 'colocalizados' and corrects related phrasing ('interconectados y colocalizados'). Additionally, V2 aligns better with standard technical Spanish in several spots (e.g., 'el algoritmo de retropropagación', 'Von Neumann', consistent use of 'neuronas', 'sinapsis', etc.) and improves some stylistic choices (e.g., 'finalmente' en lugar de 'al final'). There remains a minor issue in V2 with a less natural rendering of 'feed-forward processing' as 'procesamiento de avance directo', which could be improved back to a more conventional 'procesamiento feed-forward'. Overall, the corrections in V2 restore meaning, improve terminology, and produce a more natural, native-sounding translation, making V2 definitively better."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 12:39:43
+Target Language: Russian
+Original Len: 7774 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is clearly the more accurate and fluent Russian rendering. Key improvements: (1) Terminology and concepts are fully translated, e.g., «massively parallel distributed processing systems» rendered as «массивно‑параллельные распределённые системы обработки информации», improving accuracy (V1 retains the English phrase). (2) Higher-level phrasing is natural and consistent, such as «на высоком уровне архитектуры» and «одна из главных причин» (V2) versus slightly awkward or mixed phrasing in V1. (3) Technical content is rendered more precisely, for example the memory–processing distinction is expressed as «обработка и память… тесно переплетены и сосуществуют в одном месте» (V2) instead of less clear wording in V1. (4) The neuromorphic and top‑down context sections read more smoothly and with consistent terminology in V2. (5) Minor but important fixes, like removing occasional literal or clumsy segments in V1 (e.g., the English phrases and awkward rhythm in some sentences), contribute to better fluency and readability in V2. Overall, V2 preserves all nuances, maintains an appropriate formal register, uses standard Russian terminology, and remains grammatically clean, yielding a near-native quality translation. V1, while understandable, includes untranslated terms and some awkward phrasing that slightly obscures meaning and diminishes fluency. Therefore V2 is the better translation. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 13:08:32
+Target Language: Russian
+Original Len: 3423 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is more accurate and natural in Russian. It consistently uses precise terminology and faithful phrasing to the English source. Notable improvements include: (1) classification terminology — V2 uses «классификацию» вместо «класс», aligning with the source's meaning; (2) terminology for bias — V2 uses «член смещения (bias)», avoiding the mixed parenthetical style found in V1; (3) activation range — V2 says «полезный диапазон», which faithfully conveys the idea of a useful range, whereas V1 uses «удобный диапазон» which is less precise; (4) phrasing and fluency — V2 preserves a more native, cohesive flow (e.g., “представляющие нашу задачу” and “прямым распространением” with natural transitions). Minor issues are present in both versions, but V2 generally preserves nuance more accurately and reads more like polished Russian technical prose. Therefore V2 is definitively better.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 13:39:23
+Target Language: Russian
+Original Len: 4773 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is definitively better primarily due to accuracy and fluency. Key issues in V1 undermine its quality: \n- Accuracy problem: V1 contains an English fragment in the middle of the translation (e.g., “потом процесс отступает к предыдущему слою и repeats the question: given the blame we just assigned …”). This directly breaks meaning and breaks the illusion of a native Russian text. V2 keeps everything in Russian and faithfully conveys the intended meaning. \n- Fluency and readability: V2 splits sentences more naturally (e.g., “прогноз. Она говорит, что на выходе ‘собака’…” instead of a long squeeze “прогноз: говорит, что на выходе ‘собака’, что …”). This makes V2 read more like a polished Russian article rather than a translation.\n- Tone and style: V2 maintains a consistent formal/educational tone throughout, with minimal colloquialisms (aside from occasional “знаете”) and without English breadcrumbs. V1 occasionally veers into informal phrasing (e.g., “you know”) and uses an English fragment, which disrupts tone and perceived fidelity to the source.\n- Terminology and grammar: Both versions use standard terminology (обратное распространение, функция потерь, веса). V2 generally preserves more natural Russian syntax and punctuation; for example, it uses clearer sentence boundaries around the prediction and its explanation, and correctly renders the backward-propagation explanation without stray English.\n- Final line: V1 uses a more formal term (двигатель), while V2 uses движок (slightly informal). This is a minor tonal drawback for V2, but it does not compensate for the major accuracy issue in V1 and the overall smoother Russian in V2.\nOverall, V2 delivers higher accuracy, better fluency, and a more consistent register. The only notable nudge is V2’s slight informality in a couple of spots, but it remains significantly closer to a native, technical Russian explanation than V1."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 14:17:33
+Target Language: Russian
+Original Len: 4001 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 8,
+  "score_v2": 9,
+  "reasoning": "V2 is more fluent and natural in Russian while preserving the source meaning. Specific improvements include: 1) terminology and tone consistency, e.g., using «окружение» and «изображение» uniformly, which reads more like contemporary Russian; 2) clearer, more natural phrasing in key passages, such as replacing a long, somewhat clumsy sentence with a cleaner split: «Сегментация изображения идёт ещё дальше, чем детекция. Она присваивает класс каждому отдельному пикселю...», which improves readability without changing meaning; 3) more precise nuance in several lines, for example «эти сырые пиксельные данные» and «сырые данные, лишённые присущего им смысла» (the latter in V2 is more idiomatic than the former’s phrasing); 4) improved consistency of examples and imagery (e.g., «цветное изображение» vs «цветную картинку»; V2 uses more uniform terminology); 5) slightly more formal, natural Russian overall, aligning better with the source's formal explanatory tone. While V1 is competent and accurate, V2 corrects several stylistic and readability issues, making it the definitively better translation."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 16:53:43
+Target Language: Russian
+Original Len: 7841 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is preferable because it preserves the source meaning more precisely (e.g., 'которые вдохновляют связи' matches the present-tense idea in the original, while V1 uses a past tense 'вдохновили'). It also reads more fluently and naturally in Russian: shorter, clearer sentences (e.g., 'Эти узлы не изолированы. Они соединены друг с другом' vs the somewhat awkward 'не существуют поодиночке — они соединены между собой'), and uses more consistent formal tone appropriate for a technical overview. Terminology is maintained (e.g., 'слои', 'пулинг', 'свёртка/свёрточная') with minor stylistic refinements (from 'линии' to 'границы' for edges, from 'очень хитрым способом' to a slightly more neutral but still formal phrasing). Overall, V2 reads more like an original, high-quality technical Russian text while preserving all essential details from the English source.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-10 17:23:06
+Target Language: Russian
+Original Len: 6826 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is definitively better mainly due to a crucial accuracy fix and overall refinement. The cat-example in V1 contains a clear error: it says the ambiguous shape is perceived as H in Z and A in cat, whereas it should be H in THE and A in CAT. V2 corrects this to “H в слове THE и как A в слове CAT,” preserving the original nuance and avoiding a misleading misprint. Beyond this, V2 presents more precise terminology and smoother fluency: it uses «сверху вниз» consistently, introduces quotation marks around «cat» appropriately, and maintains more natural Russian syntax (e.g., “практически понимание” is avoided in favor of clear phrasing). Terminology is consistently domain-appropriate (perceptual constancy as “перцептивной константности,” Gestalt principles as “гештальт-принципы,” etc.). Minor stylistic choices remain, but they do not undermine meaning or readability. V1, while largely accurate, contains that factual slip and occasionally slightly less natural phrasing (e.g., “перекрытий” as occlusion and the misprint with THE/Z). Overall, V2 achieves higher accuracy and more native, fluent Russian, aligning closer to the source’s tone and register.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-11 05:41:05
+Target Language: Portuguese
+Original Len: 22182 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more natural and consistent translation. It preserves all key meanings while improving fluency, tone, and terminology consistency across the text. Specific advantages include: 1) Terminology consistency and accuracy — V2 consistently uses Microsoft 365 Copilot and avoids mixing inconsistent product names (V1 alternates between Microsoft three sixty five Copilot and Microsoft 365 Copilot). 2) Fluency and naturalness — V2 smooths phrasing and uses more idiomatic Brazilian Portuguese (e.g., “Este é o lugar onde eu começo todo santo dia de trabalho” and “hub de navegação” rather than less natural calques). 3) Tone and register — the translated dialogue in V2 reads more like polished, native Portuguese suitable for a formal yet conversational tech talk, while retaining the casual, interview-like tone of the source. 4) Clarity of structure — V2 improves headings and sections (e.g., “Assunto: pontos de discussão…”), making the document more cohesive and readable. 5) Faithfulness to nuance — important names, concepts (WorkIQ, Copilot, agent/yielded content) and examples (itineraries, PowerPoint/Excel workflows) are preserved with clearer idiomatic rendering. For example, V2 renders the opening as “Agora estamos aqui com a Kelly August… Ela é diretora do Microsoft 365 Copilot” and later consistently uses “Microsoft 365 Copilot” instead of inconsistent variants; it also translates “morning commute” as “trajeto matinal” and keeps the concept explanations (WorkIQ) intact but in natural Portuguese. While V1 is solid, it contains minor inconsistencies and slightly awkward phrasing (e.g., inconsistent product naming, occasional literal translations), which reduce its overall polish. V2 minimizes these and delivers a near-native, high-quality Portuguese rendering.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-11 06:20:42
+Target Language: Spanish
+Original Len: 17062 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 (Refined) is the superior translation. It reads more fluently and sounds like natural Spanish rather than a literal rendering. It preserves the meaning and nuances of the original with consistent terminology (e.g., GraphRAG, knowledge graph, embedding, vector search, Neo4j). It also smooths phrasing and transitions (e.g., “voy a tomarme un pequeño desvío” vs. “pero antes de eso, voy a desviarme un momento”) and uses more idiomatic constructions in several places (e.g., Moscone Center, “desvío” phrasing, and the overall flow of the detour and demo sections). V1 is accurate but often reads a bit stilted or overly literal in places (e.g., occasional odd phrasing like “recuperados de golpe” and less natural detour wording). Both maintain the technical register and keep key terms intact, but V2’s fluency and cohesion are notably better, leading to a higher score on accuracy, fluency, tone, and readability. Minor potential quibbles in V2 (e.g., occasional long sentences, or choices like “jodidamente potente” not present in V1) do not significantly affect comprehension or accuracy, and overall V2 is the definitive better translation. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-12 05:26:31
+Target Language: Russian
+Original Len: 22176 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is definitively better because it preserves meaning more accurately, reads fluently as natural Russian, and uses consistent, industry-standard terminology. Specific improvements include: 1) Brand and product naming: V2 consistently uses Microsoft 365 Copilot, Word/Excel/PowerPoint, and Zavacore, avoiding mixed or awkward renderings found in V1 (e.g., «Microsoft три sixty five Copilot» and sporadic branding drift). 2) Fluency and style: V2 presents more natural sentence structure, smoother transitions, and fewer choppy repetitions (for example, V1 has repetitive fillers like «Это было бы потрясающе. Правда, потрясающе. Я в предвкушении»; V2 refines these into a coherent flow). 3) Terminology and concepts: V2 clearly explains WorkIQ and the hub concept with precise Russian phrasing, improving comprehension (e.g., «центр притяжения… хаб для навигации» vs V1’s rougher wording). 4) Tone and register: V2 maintains the informal, conversational tone appropriate to the interview while tightening phrases, resulting in a more natural, native-like Russian. 5) Consistency: V2 keeps proper names and features consistently referenced (Researcher, analyst, agent mode, computer use), reducing ambiguity present in V1. Overall, V2 demonstrates higher accuracy (nuances preserved), better fluency, and more precise terminology, yielding a near-native Russian translation. Examples: V2’s rendering of “Microsoft 365 Copilot” everywhere, the smoother treatment of WorkIQ, and the more natural translation of organizational details (e.g., “центр притяжения” and “центр притяжения для навигации”). In contrast, V1 contains several awkward phrasings and branding inconsistencies that slightly hinder readability and fidelity to the source.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-12 06:16:20
+Target Language: Spanish
+Original Len: 22195 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more fluent, accurate, and natural translation overall. It fixes several issues present in V1 and standardizes terminology, tone, and structure. Examples: - Subject line: V2 localizes to a proper Spanish header (","Asunto: puntos clave para la revisión ejecutiva sobre todos los planes de marketing) while V1 left an English, awkward phrasing (": 0.0  , "). - Consistency and terminology: V2 uses "  
+  		
+ 
+ 		:  "agentes preconfigurados"  	, "Microsoft tres sesenta y cinco"  	  	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+   	:  " but the translation is long." 
+  }
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-12 09:43:13
+Target Language: Russian
+Original Len: 4808 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 8,
+  "score_v2": 9,
+  "reasoning": "V2 is the more accurate and fluent translation. Key improvements include: 1) Terminology and typography corrected (e.g., экстрастриарной корой written as one word in V2; IT-кора used consistently after the initial reference). 2) Natural phrasing and possessive precision improved: «свет, попадающий в наши глаза» (V2) is more natural than «свет, попадающий в глаза» (V1) and better reflects the plural subject in the English. 3) Clarity and readability: V2 tends to split long sentences into clearer clauses and uses punctuation that enhances flow (e.g., “Они реагируют не просто на светлые пятна. Они избирательно отвечают …”). 4) Accuracy of nuance: V2 adds nuance without changing meaning, e.g., «действительно понимать, что именно мы видим» vs «позволяет нам понять…»; the former strengthens the sense of direct perception. 5) Minor stylistic polish: V2 corrects spacing/hyphenation issues (IT-кора, экстрастриарной) and uses standard scientific Russian terminology more consistently. 6) Remaining issue: there is a minor inconsistency in V2 regarding IT-кора versus инферотемпоральная кора earlier in the text (both terms refer to the same region, but switching between full term and abbreviation can be slightly abrupt). Overall, these factors make V2 read more like a high-quality native Russian text while preserving all technical content from the English source. Consequently, V2 is judged definitively better than V1."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-12 10:21:38
+Target Language: Russian
+Original Len: 5828 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more natural and accurate Russian rendering of the original. Key improvements include: \n- Accuracy and nuance: V2 preserves the intended meaning more faithfully and uses terminology common in Russian cognitive science discussions (e.g., «перцептивные константы», «гештальта»). It avoids awkwardly literal or partially anglicized phrases present in V1 (e.g., «prior knowledge», «attentional state» translated in V1). \n- Fluency and style: V2 reads like native prose, with smoother sentence flow and better word choices (e.g., заменяет лишние повторения «окружающей среде» в обоих предложениях на более естеные формулировки). \n- Tone and register: Both translations are formal, but V2 achieves a cleaner, more cohesive academic tone throughout, aligning well with the source’s didactic intent. \n- Terminology and accuracy of examples: V2 consistently uses standard Russian terms, and even improves the accuracy of a specific example—referring to the Kanizsa figure’s target as букву «n» (Latin) rather than Cyrillic «н» (V1). \n- Minor issues in V2: there is a small grammatical oddity in the phrase «о куда более сложном процессе восприятия» (where Russian would normally use «гораздо более сложном…»). This is a minor slip and does not undermine overall understanding, but it is a valid point against perfection. \n- Specific comparisons:\n  • The V2 rendition of the illusion description is more precise and natural; V1’s phrasing is slightly clunkier and includes English loanwords in awkward places. \n  • V2 fixes the more literal-but-less-fluent constructions found in V1 (e.g., better handling of active construction, and more idiomatic phrasing like «погружаться» instead of «углубляться» where appropriate). \n  • The Kanizsa figure example is notably better in V2 due to the correct reference to the Latin letter «n» rather than Cyrillic «н». \nOverall, V2 offers better accuracy, fluency, and terminology usage, with only a minor grammatical slip that could be corrected easily."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-12 10:34:20
+Target Language: Russian
+Original Len: 22153 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more accurate and fluent Russian rendering of the original English talk. Key improvements include: 1) Terminology consistency: V2 consistently uses Microsoft 365 Copilot, aligning with the source and product branding, whereas V1 alternates between 'Microsoft 365 Copilot' and a clumsy 'Microsoft три sixty пять Copilot'. 2) Fluency and naturalness: V2 choices of phrasing flow like native Russian (for example, 'центр притяжения' vs V1's 'центр притяжения', smoother clauses like 'Я покажу вам некоторые вещи, которыми я сама больше всего люблю пользоваться с нашими последними инновациями в Copilot'). 3) Tone: V2 preserves the formal, interview/tech demo register throughout, avoiding overly literal or casual bits seen in V1. 4) Clarity of concepts: V2 clarifies WorkIQ and the other Copilot features with smoother explanations (e.g., 'концепцию WorkIQ... интеллектуальный слой, который действительно приводит в действие' vs V1's more awkward phrasing). 5) Grammar/consistency: V2 fixes inconsistent pronouns, punctuation, and awkward translations; V1 includes several stilted sentences and odd insertions (for example, 'это было бы потрясающе' repeated awkwardly, inconsistent capitalization). Overall, V2 preserves meaning more faithfully while reading as a natural Russian text; hence it earns a higher score (9/10 vs 7/10 for V1)."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-12 18:09:45
+Target Language: Russian
+Original Len: 3469 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the superior translation overall. Accuracy: both versions preserve core meaning, but V2 aligns more closely with the source nuances in several places (e.g., “источник вдохновения — удивительную биологическую нейронную сеть” vs the more awkward phrasing in V1). Terminology and precision: V2 uses consistent and precise terms (e.g., “клеточное тело, или сома” instead of the more awkward “тело клетки, или сома” in parts, and explicitly adds “нейроном” after presynaptic/postsynaptic in the relevant sentence). Fluency and natural Russian: V2 reads more smoothly and idiomatically, with better flow (e.g., “важно понять их источник вдохновения — удивительную биологическую нейронную сеть, которой, конечно же, является наш мозг” is more natural than the corresponding V1 phrasing). Tone and register: both maintain a formal, educational tone appropriate for a technical overview; V2 preserves this while improving naturalness. Grammar and punctuation: V2 makes slight but meaningful improvements in phrasing and consistency (e.g., “Также называемого пресинаптическим нейроном” vs the simpler V1 phrasing), and in the use of terms like “клеточное тело” versus “тело клетки.” Minor quibbles exist in both versions (e.g., the recurring “к нашей следующей большой теме” could be more idiomatic as “в нашу следующую крупную тему”), but these do not undermine comprehension. Overall, V2 provides better fidelity to the source with native-level fluency, warranting it the higher score.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-12 18:53:05
+Target Language: Russian
+Original Len: 3457 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 9,
+  "score_v2": 9.5,
+  "reasoning": "Both V1 and V2 are accurate, fluent, and appropriate in tone. V2 is slightly better due to subtle refinements that improve naturalness and technical precision: (1) terminology flow – V2 uses «клеточные структуры» instead of «клеточные механизмы» in one place, which reads more smoothly in a scientific Russian context while staying faithful to the meaning; (2) improved phrasing for readability – V2 opts for «передаёт» instead of «уносит» for the axon’s signal, which is more technically accurate; (3) smoother connective phrasing – V2 uses «аксонного окончания, также называемого пресинаптическим нейроном» which reads more fluidly than the equivalent in V1; (4) minor stylistic polish without changing meaning (e.g., «И затем …» / «И наконец …» variants). These small adjustments make V2 read more like a native, high-quality Russian exposition while preserving all nuances from the original. Therefore, V2 is the definitively better translation, with near-perfect accuracy and improved fluency. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-12 19:37:20
+Target Language: Russian
+Original Len: 6213 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more accurate and fluent Russian rendering of the original English text. Key improvements include: \n- Terminology and nuance: V2 correctly renders “knowledge acquisition bottleneck” as a bottleneck of acquisition, instead of the slightly odd “извлечения знаний” found in V1. This aligns better with standard Russian usage for this technical term. \n- Stylistic and editorial fixes: V2 corrects the double word “сложная сложная” in the line about the field (“сложная, но перспективная область исследований”), which in V1 is a clear flaw. \n- Natural phrasing and fluency: V2 uses more idiomatic and precise phrasing throughout, for example replacing vague or awkward constructions with clearer equivalents (e.g., “модуля”; “модуля” is kept, but the surrounding phrasing is smoother in V2). \n- Precision in connective tissue: V2 improves cohesion, for instance by refining sentences like “Гибридная архитектура может, например, использовать…” and the description of interfaces and shared representations, making them sound more like native technical writing than a direct translation. \n- Better alignment with source tone: V2 maintains formal, technical register consistently, while V1 contains minor stylistic awkwardness (e.g., “сложная сложная область” and a less natural phrasing of integration and communication between components). \n- Specific content accuracy: V2 preserves and clarifies distinctions between symbolic vs. connectionist components (e.g., “слабая связка” vs. “Тесная интеграция … ACT-R относится именно сюда”) with slightly more precise wording. \nOverall, V2 retains all substantive nuances of the original while delivering a more natural, readable, and technically precise Russian text, earning it a higher score. The remaining gaps in V2 are minor and do not affect meaning or fluency to a noticeable degree." 
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-12 20:58:59
+Target Language: Russian
+Original Len: 7660 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is clearly the superior translation. It fixes several issues found in V1: (1) terminological accuracy and consistency improve with V2, notably aligning more closely with standard Russian for technical terms (vector embeddings, embedding models, approximate nearest neighbor, RAG) and correcting the audio model name to the conventional WAV2Vec 2.0; (2) there are fewer or no English fragments left in the text in V2, enhancing fluency and readability; (3) V2 uses more natural and precise phrasing in places where V1 was slightly awkward (for example, уточнения about the types of data and the examples of landscapes); (4) V2 provides clearer equivalents for the example about images, landscapes, and color context, reducing ambiguity (mountain vs beach, landscape phrasing); (5) the flow and tonality in V2 are more polished, making it read like high-quality Russian rather than a literal, clumsy rendering. Consequently, V2 preserves the meaning with higher accuracy and reads more fluently and formally, yielding higher scores across accuracy, fluency, tone, terminology, and grammar compared to V1. In particular, V2 achieves near-native fluency and precise terminology (score ~9/10) versus V1 (score ~7/10)."
+}
+--------------------------------------------------
