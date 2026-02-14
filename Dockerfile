@@ -7,6 +7,7 @@ ENV PYTHONUNBUFFERED=1
 # Install system dependencies (FFmpeg is required for burning subtitles)
 RUN apt-get update && apt-get install -y \
     ffmpeg \
+    fonts-liberation \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory

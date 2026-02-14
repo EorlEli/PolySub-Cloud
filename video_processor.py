@@ -21,6 +21,11 @@ def burn_subtitles(video_path, vtt_path, output_path):
         print(f"❌ Error: Subtitle file not found: {vtt_path}")
         return None
 
+    # Use absolute paths to avoid issues with CWD or filters
+    video_path = os.path.abspath(video_path)
+    vtt_path = os.path.abspath(vtt_path)
+    output_path = os.path.abspath(output_path)
+
     # Escape paths for ffmpeg filter
     # On Windows, we need to handle backslashes carefully for the filter string
     # Replace backslashes with forward slashes is usually safer for ffmpeg filters on Windows
@@ -52,5 +57,6 @@ def burn_subtitles(video_path, vtt_path, output_path):
         print("✅ Subtitles burned successfully.")
         return output_path
     except subprocess.CalledProcessError as e:
-        print(f"❌ Error burning subtitles: {e.stderr.decode('utf-8')}")
+        error_msg = e.stderr.decode('utf-8')
+        print(f"❌ Error burning subtitles: {error_msg}")
         return None

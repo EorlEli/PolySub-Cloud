@@ -40,7 +40,7 @@ def split_into_chunks(text, max_size=MAX_CHUNK_SIZE):
             current_chunk += part
             
     if current_chunk:
-        print (f"Last chunk: {current_chunk}")
+        #print (f"Last chunk: {current_chunk}")
         chunks.append(current_chunk)
         
     return chunks
