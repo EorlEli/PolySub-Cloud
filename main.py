@@ -18,7 +18,7 @@ async def read_index():
     return FileResponse("index.html")
 
 @app.post("/process_video/")
-async def process_video_endpoint(
+def process_video_endpoint(
     video_file: UploadFile = File(...),
     target_language: str = Form("Portuguese"), 
     use_correction: bool = Form(True),
