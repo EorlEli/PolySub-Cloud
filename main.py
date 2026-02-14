@@ -1,6 +1,18 @@
 import os
+import sys
 import shutil
 import uvicorn
+import builtins
+from functools import partial
+
+# 1. Force Unbuffered Output (Environment)
+os.environ["PYTHONUNBUFFERED"] = "1"
+
+# 2. Patch print to always flush (Application Level)
+builtins.print = partial(builtins.print, flush=True)
+
+# 3. Reconfigure stdout (System Level)
+sys.stdout.reconfigure(line_buffering=True)
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException, BackgroundTasks
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -71,4 +83,5 @@ def process_video_endpoint(
 if __name__ == "__main__":
     print("🚀 Starting PolySub Server...")
     print("👉 Open your browser at: http://127.0.0.1:8080")
-    uvicorn.run("main:app", host="127.0.0.1", port=8080, reload=True)
+    # RELOAD DISABLED to fix Windows sub-process output buffering issues
+    uvicorn.run("main:app", host="127.0.0.1", port=8080, reload=False)

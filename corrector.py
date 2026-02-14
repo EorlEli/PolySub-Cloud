@@ -1,6 +1,8 @@
 import json
 import time
 
+from utils import log_openai_usage
+
 def get_topic(text, client, model="gpt-5-nano"):
     """
     Step 1: Determine the main topic of the text.
@@ -13,6 +15,7 @@ def get_topic(text, client, model="gpt-5-nano"):
     """
     
     try:
+        start_time = time.perf_counter()
         response = client.chat.completions.create(
             model=model,
             messages=[
@@ -20,6 +23,7 @@ def get_topic(text, client, model="gpt-5-nano"):
                 {"role": "user", "content": text[:4000]} # Send first 4k chars for context
             ]
         )
+        log_openai_usage("TOPIC-DETECT", start_time, response)
         topic = response.choices[0].message.content.strip()
         print(f"   💡 Topic Detected: {topic}")
         return topic
@@ -62,6 +66,7 @@ def get_corrections(utterances, topic, client, model="gpt-5-nano"):
     """
 
     try:
+        start_time = time.perf_counter()
         response = client.chat.completions.create(
             model=model,
             messages=[
@@ -70,6 +75,7 @@ def get_corrections(utterances, topic, client, model="gpt-5-nano"):
             ],
             response_format={"type": "json_object"}
         )
+        log_openai_usage("CORRECTION-CHECK", start_time, response)
         content = response.choices[0].message.content
         result = json.loads(content)
         corrections = result.get("corrections", [])

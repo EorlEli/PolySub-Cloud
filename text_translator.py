@@ -176,7 +176,7 @@ def verify_translation_quality(source_chunks, translated_chunks, target_language
                     {"role": "user", "content": user_content}
                 ]
             )
-            # log_openai_usage(f"VERIFY-CHUNK-{i+1}", start_time, response) # Optional logging
+            log_openai_usage(f"VERIFY-CHUNK-{i+1}", start_time, response)
             
             refined_text = response.choices[0].message.content.strip()
             
