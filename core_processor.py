@@ -15,7 +15,7 @@ from translation_evaluator import evaluate_translations
 from video_processor import burn_subtitles
 from validator import validate_vtt_structure
 
-def process_video(video_path: str, target_language: str, use_correction: bool = True):
+def process_video(video_path: str, target_language: str, use_correction: bool = True, create_zip: bool = True):
     """
     Core video processing logic.
     Refactored from main.py to be environment-agnostic.
@@ -24,6 +24,7 @@ def process_video(video_path: str, target_language: str, use_correction: bool = 
         video_path (str): Absolute or relative path to the input video file.
         target_language (str): Target language for translation.
         use_correction (bool): Whether to use the correction step in transcription.
+        create_zip (bool): Whether to create a zip bundle of the outputs (default: True).
         
     Returns:
         dict: Contains paths to generated files and execution metadata.
@@ -162,17 +163,21 @@ def process_video(video_path: str, target_language: str, use_correction: bool = 
         print(f"⏰ TOTAL JOB TIME: {total_time/60:.2f} minutes")
 
         # --- 12. BUNDLE (ZIP) ---
-        # Create the zip file
-        zip_filename = f"output_{video_filename}.zip"
-        
-        with zipfile.ZipFile(zip_filename, 'w') as zipf:
-            # Add VTT
-            zipf.write(temp_vtt_path2, arcname=f"subtitles_{target_language}.vtt")
-            # Add Video if it exists
-            if final_video and os.path.exists(final_video):
-                zipf.write(final_video, arcname=f"subbed_{video_filename}")
-        
-        cleanup_files_list.append(zip_filename)
+        zip_filename = None
+        if create_zip:
+            # Create the zip file
+            zip_filename = f"output_{video_filename}.zip"
+            
+            with zipfile.ZipFile(zip_filename, 'w') as zipf:
+                # Add VTT
+                zipf.write(temp_vtt_path2, arcname=f"subtitles_{target_language}.vtt")
+                # Add Video if it exists
+                if final_video and os.path.exists(final_video):
+                    zipf.write(final_video, arcname=f"subbed_{video_filename}")
+            
+            cleanup_files_list.append(zip_filename)
+        else:
+             print("📦 Skipping Zip creation (create_zip=False)")
 
         return {
             "status": "success",
