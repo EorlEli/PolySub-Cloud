@@ -42,7 +42,7 @@ def main():
 
         # 3. Process Video (Core Logic)
         print("⚙️ Running Core Processor...")
-        result = process_video(local_video_path, TARGET_LANGUAGE)
+        result = process_video(local_video_path, TARGET_LANGUAGE, create_zip=False)
         
         # 4. Upload Results
         print("📤 Uploading Results...")
@@ -58,11 +58,13 @@ def main():
                 return f"gs://{OUTPUT_BUCKET_NAME}/{destination_blob_name}"
             return None
 
-        # Upload Zip
-        zip_gs_path = upload_file(result["zip_path"], f"output/{result['zip_path']}")
-        uploaded_files["zip_url"] = zip_gs_path
-        
-        # Upload Video (optional, maybe user just wants zip)
+        # Upload VTT
+        if result.get("output_vtt_path"):
+            vtt_name = f"{VIDEO_FILENAME}_{TARGET_LANGUAGE}.vtt"
+            vtt_gs_path = upload_file(result["output_vtt_path"], f"output/{vtt_name}")
+            uploaded_files["vtt_url"] = vtt_gs_path
+
+        # Upload Video
         if result.get("output_video_path"):
              vid_name = os.path.basename(result["output_video_path"])
              vid_gs_path = upload_file(result["output_video_path"], f"output/{vid_name}")
