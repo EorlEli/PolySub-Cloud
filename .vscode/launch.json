@@ -8,13 +8,11 @@
             "name": "Python: FastAPI (PolySub)",
             "type": "debugpy",
             "request": "launch",
-            "module": "uvicorn",
-            "args": [
-                "main:app",
-                "--reload",
-                "--port",
-                "8080"
-            ],
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            },
             "jinja": true,
             "python": "${workspaceFolder}/.venv/Scripts/python.exe"
         }

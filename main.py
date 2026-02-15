@@ -82,6 +82,6 @@ def process_video_endpoint(
 
 if __name__ == "__main__":
     print("🚀 Starting PolySub Server...")
-    print("👉 Open your browser at: http://127.0.0.1:8080")
+    print("👉 Open your browser at: http://127.0.0.1:8081")
     # RELOAD DISABLED to fix Windows sub-process output buffering issues
-    uvicorn.run("main:app", host="127.0.0.1", port=8080, reload=False)
+    uvicorn.run("main:app", host="127.0.0.1", port=8081, reload=False)

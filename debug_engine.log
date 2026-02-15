@@ -25167,3 +25167,1175 @@ BLOCK 10 (00:01:12.483 -> 00:01:13.283):
 ORG: Let's begin.
 MATCH: Давайте начнём.
 
+BLOCK 0 (00:00:00.640 -> 00:00:09.679):
+ORG: And we begin by defining a term that is central to both cognitive science and artificial intelligence, cognitive architecture.
+MATCH: Начнём с термина, который лежит в основе и когнитивной науки, и искусственного интеллекта, — «когнитивная архитектура».
+
+BLOCK 1 (00:00:10.639 -> 00:00:14.559):
+ORG: What exactly is a cognitive architecture, and why it's so important?
+MATCH: Что именно такое когнитивная архитектура и почему она так важна?
+
+BLOCK 2 (00:00:16.105 -> 00:00:25.304):
+ORG: In the simplest terms, a cognitive architecture is a blueprint or a framework for intelligence, whether it's human intelligence or artificial intelligence.
+MATCH: Проще говоря, когнитивная архитектура — это своего рода чертёж или каркас интеллекта, будь то человеческого или искусственного.
+
+BLOCK 3 (00:00:26.664 -> 00:00:39.719):
+ORG: It's a high level model that specifies the fundamental components of an intelligent system, how those components are organized, how they interact with each other, and how information flows through the system.
+MATCH: Это высокоуровневая модель, которая задаёт фундаментальные компоненты интеллектуальной системы, то, как эти компоненты организованы, как они взаимодействуют друг с другом и как по системе проходит поток информации.
+
+BLOCK 4 (00:00:40.755 -> 00:00:54.995):
+ORG: The idea of cognitive architectures arose when researchers realized that to simulate intelligence, we need not just algorithms for specific problems, but overarching systems that can flexibly tackle a range of tasks.
+MATCH: Идея когнитивных архитектур возникла, когда исследователи поняли: чтобы моделировать интеллект, недостаточно алгоритмов для отдельных задач — нужны общие системы, способные гибко решать широкий спектр задач.
+
+BLOCK 5 (00:00:55.939 -> 00:01:07.859):
+ORG: Since the 1970s, researchers in both psychology and AI have pursued these blueprints to move beyond narrow programs towards more general theories of intelligence.
+MATCH: С 1970-х годов исследователи в психологии и ИИ разрабатывают такие «чертежи», чтобы выйти за рамки узких программ и приблизиться к более общим теориям интеллекта.
+
+BLOCK 6 (00:01:09.844 -> 00:01:13.125):
+ORG: Think of it like the architectural plans for a building.
+MATCH: Представьте, что это архитектурный проект здания.
+
+BLOCK 7 (00:01:13.525 -> 00:01:23.924):
+ORG: The plans don't show every single brick and iron wire, but they do show the overall structure, the rooms, the hallways, the connections between them, and so on.
+MATCH: Планы не показывают каждый отдельный кирпич и каждую проволочку в арматуре, но они показывают общую структуру, комнаты, коридоры, связи между ними и так далее.
+
+BLOCK 8 (00:01:24.780 -> 00:01:37.500):
+ORG: Similarly, a cognitive architecture does not specify every single detail of the mind or an AI system, but it does specify the key components and their relationships like you can see in this image.
+MATCH: Точно так же когнитивная архитектура не задаёт каждую деталь разума или ИИ-системы, но она задаёт ключевые компоненты и их взаимосвязи, как вы можете видеть на этом изображении.
+
+BLOCK 9 (00:01:38.465 -> 00:01:45.265):
+ORG: So these architectures usually include key components like perception, memory, reasoning, learning.
+MATCH: Так что такие архитектуры обычно включают ключевые компоненты вроде восприятия, памяти, рассуждения и обучения.
+
+BLOCK 10 (00:01:45.905 -> 00:01:50.144):
+ORG: They are all interconnected with information flowing dynamically between them.
+MATCH: Все они связаны между собой, а информация динамически перетекает между ними.
+
+BLOCK 11 (00:01:51.409 -> 00:01:57.249):
+ORG: This system of feedback loops allows the entire architecture to adapt and change over time.
+MATCH: Эта система контуров обратной связи позволяет всей архитектуре со временем адаптироваться и меняться.
+
+BLOCK 12 (00:01:59.810 -> 00:02:05.890):
+ORG: In cognitive science, a cognitive architecture is a theoretical framework for understanding the human mind.
+MATCH: В когнитивной науке когнитивная архитектура — это теоретическая рамка для понимания человеческого ума.
+
+BLOCK 13 (00:02:06.665 -> 00:02:12.105):
+ORG: It's a hypothesis about how our minds are structured and how they function.
+MATCH: Это гипотеза о том, как устроен наш ум и как он функционирует.
+
+BLOCK 14 (00:02:13.145 -> 00:02:24.969):
+ORG: Cognitive scientists develop and test these architectures by conducting experiments, analyzing behavioral data, and building computational models that simulate human cognitive processes.
+MATCH: Когнитивные учёные разрабатывают и проверяют такие архитектуры, проводя эксперименты, анализируя поведенческие данные и создавая вычислительные модели, которые имитируют человеческие когнитивные процессы.
+
+BLOCK 15 (00:02:25.769 -> 00:02:38.045):
+ORG: The goal is to create a comprehensive and accurate model of the mind that can explain a wide range of cognitive phenomena, from perception and attention to learning and problem solving.
+MATCH: Цель — создать целостную и точную модель ума, способную объяснить широкий спектр когнитивных явлений — от восприятия и внимания до обучения и решения задач.
+
+BLOCK 16 (00:02:40.284 -> 00:02:48.925):
+ORG: In artificial intelligence, on the other hand, a cognitive architecture serves as a blueprint for building intelligent systems.
+MATCH: В искусственном интеллекте, напротив, когнитивная архитектура служит чертежом для построения интеллектуальных систем.
+
+BLOCK 17 (00:02:49.610 -> 00:03:00.889):
+ORG: It's a framework that guides the design and development of AI programs, specifying the components they should have, how those components should interact, and how information should be processed.
+MATCH: Это рамка, которая направляет проектирование и разработку ИИ-программ, задавая, какие компоненты в них должны быть, как эти компоненты должны взаимодействовать и как должна обрабатываться информация.
+
+BLOCK 18 (00:03:01.865 -> 00:03:12.185):
+ORG: AI researchers often draw inspiration for cognitive architectures in cognitive science, with the aim to create machines that can think and learn in a way that is similar to humans.
+MATCH: Исследователи ИИ часто черпают вдохновение для когнитивных архитектур в когнитивной науке, стремясь создавать машины, которые могут мыслить и учиться так же, как люди.
+
+BLOCK 19 (00:03:14.550 -> 00:03:20.629):
+ORG: It is important to distinguish between a cognitive architecture and a specific cognitive model.
+MATCH: Важно различать когнитивную архитектуру и конкретную когнитивную модель.
+
+BLOCK 20 (00:03:21.989 -> 00:03:28.870):
+ORG: A cognitive model is typically a more focused and detailed simulation of a particular cognitive process or task.
+MATCH: Когнитивная модель обычно представляет собой более узкую и детальную симуляцию конкретного когнитивного процесса или задачи.
+
+BLOCK 21 (00:03:29.685 -> 00:03:37.365):
+ORG: For example, you might have a cognitive model of how people learn a new language, or how they solve a specific type of puzzle.
+MATCH: Например, у вас может быть когнитивная модель того, как люди учат новый язык, или того, как они решают определённый тип головоломок.  
+
+BLOCK 22 (00:03:38.165 -> 00:03:45.640):
+ORG: A cognitive architecture, on the other hand, is a broader framework that can encompass many different cognitive models.
+MATCH: Когнитивная архитектура же — более широкий каркас, который может включать множество разных когнитивных моделей.
+
+BLOCK 23 (00:03:46.200 -> 00:03:52.760):
+ORG: It provides the underlying structure and mechanisms that can support a wide range of cognitive abilities.
+MATCH: Она предоставляет базовую структуру и механизмы, которые могут поддерживать широкий набор когнитивных способностей.
+
+BLOCK 24 (00:03:54.040 -> 00:03:58.599):
+ORG: Another important distinction is between a cognitive architecture and an algorithm.
+MATCH: Ещё одно важное различие — между когнитивной архитектурой и алгоритмом.
+
+BLOCK 25 (00:03:59.275 -> 00:04:04.555):
+ORG: An algorithm is a specific set of instructions for solving a particular problem.
+MATCH: Алгоритм — это конкретный набор инструкций для решения определённой проблемы.  
+
+
+BLOCK 26 (00:04:05.275 -> 00:04:12.155):
+ORG: A cognitive architecture, in contrast, is a more general framework that can incorporate many different algorithms.
+MATCH: Когнитивная архитектура, напротив, — более общий каркас, который может включать множество разных алгоритмов.
+
+BLOCK 27 (00:04:13.010 -> 00:04:21.490):
+ORG: It's like the difference between a recipe for a specific dish, an algorithm, and the overall layout of a kitchen, a cognitive architecture.
+MATCH: Это как разница между рецептом конкретного блюда — алгоритмом — и общей планировкой кухни — когнитивной архитектурой.  
+
+
+BLOCK 28 (00:04:22.050 -> 00:04:33.685):
+ORG: The kitchen provides the infrastructure and tools that allow you to cook many different dishes, while the recipe and the algorithm tells you how to make a specific one.
+MATCH: Кухня даёт инфраструктуру и инструменты, позволяющие готовить множество разных блюд, а рецепт и алгоритм говорят, как приготовить одно конкретное.
+
+BLOCK 29 (00:04:35.685 -> 00:04:49.620):
+ORG: So to wrap up, a cognitive architecture is a blueprint for human intelligence or artificial intelligence, it's a high level model that specifies components, organization and information flow in the system.
+MATCH: Итак, подводя итог, когнитивная архитектура — это своего рода чертёж человеческого или искусственного интеллекта. Это высокоуровневая модель, которая задаёт компоненты системы, её организацию и потоки информации в ней.
+
+BLOCK 30 (00:04:50.579 -> 00:04:56.514):
+ORG: In cognitive science, as we said, it's a theoretical framework for understanding the human mind.
+MATCH: В когнитивной науке, как мы уже говорили, это теоретическая основа для понимания человеческого разума.
+
+BLOCK 31 (00:04:56.995 -> 00:05:00.595):
+ORG: In AI, it's a guide for building intelligent machines.
+MATCH: В ИИ это руководство по созданию интеллектуальных машин.
+
+BLOCK 32 (00:05:01.646 -> 00:05:10.686):
+ORG: Working on cognitive architectures helps us understand how minds work and guides us toward AI that is more flexible and effective.
+MATCH: Работа над когнитивными архитектурами помогает нам понять, как работает разум, и направляет нас к ИИ, который будет более гибким и эффективным.
+
+BLOCK 0 (00:00:00.640 -> 00:00:15.188):
+ORG: So with this roadmap in mind, without further ado, let's start our philosophical journey right at the beginning, with the first module, and with that fundamental question: what is intelligence?
+MATCH: Итак, имея в виду эту дорожную карту, без лишних предисловий давайте начнём наше философское путешествие с самого начала, с первого модуля, и с того фундаментального вопроса: что такое интеллект?
+
+BLOCK 1 (00:00:16.068 -> 00:00:21.828):
+ORG: It sounds simple perhaps, but this is one of the most debated and elusive concepts.
+MATCH: Возможно, это звучит просто, но это одно из самых обсуждаемых и неуловимых понятий.
+
+BLOCK 0 (00:00:00.640 -> 00:00:15.188):
+ORG: So with this roadmap in mind, without further ado, let's start our philosophical journey right at the beginning, with the first module, and with that fundamental question: what is intelligence?
+MATCH: Also, mit diesem Fahrplan im Kopf starten wir ohne weiteres Vorgeplänkel unsere philosophische Reise direkt am Anfang, mit dem ersten Modul und mit dieser Grundfrage: Was ist Intelligenz?
+
+BLOCK 1 (00:00:16.068 -> 00:00:21.828):
+ORG: It sounds simple perhaps, but this is one of the most debated and elusive concepts.
+MATCH: Das klingt vielleicht simpel, aber das ist eines der meistdiskutierten und schwer zu fassenden Konzepte.
+
+BLOCK 0 (00:00:00.880 -> 00:00:07.839):
+ORG: We talk about intelligent people, intelligent animals, and now increasingly intelligent machines.
+MATCH: Falamos de pessoas inteligentes, animais inteligentes e, cada vez mais, máquinas inteligentes.
+
+BLOCK 1 (00:00:08.480 -> 00:00:10.160):
+ORG: But what's the core idea?
+MATCH: Mas qual é a ideia central?  
+
+BLOCK 2 (00:00:10.480 -> 00:00:14.000):
+ORG: Is it just one thing or many different things?
+MATCH: É uma coisa só ou várias coisas diferentes?
+
+BLOCK 3 (00:00:15.764 -> 00:00:27.684):
+ORG: In psychology, intelligence is often measured through standardized tests aiming to capture a general ability factor, so-called g-factor, that measures performance across many tasks.
+MATCH: Na psicologia, a inteligência é muitas vezes medida através de testes padronizados que procuram captar um fator de capacidade geral, o chamado fator g, que mede o desempenho em muitas tarefas.
+
+BLOCK 4 (00:00:28.429 -> 00:00:39.549):
+ORG: So intelligence is not some sort of philosophical abstraction, but something that is measurable, though it has been criticized for cultural bias and oversimplification.
+MATCH: Ou seja, a inteligência não é uma abstração filosófica, mas algo mensurável, embora tenha sido criticada por enviesamento cultural e por simplificação excessiva.  
+
+BLOCK 5 (00:00:41.524 -> 00:00:48.325):
+ORG: On the other hand, philosophers and early AI researchers approached the question of intelligence differently.
+MATCH: Por outro lado, filósofos e os primeiros investigadores de IA abordaram a questão da inteligência de outra forma.
+
+BLOCK 6 (00:00:48.965 -> 00:00:57.619):
+ORG: They linked it to thinking skills, things like solving tricky problems, using logic, or understanding complex ideas.
+MATCH: Associaram-na a competências de pensamento, coisas como resolver problemas difíceis, usar a lógica ou compreender ideias complexas.
+
+BLOCK 7 (00:00:58.100 -> 00:01:06.980):
+ORG: Think about someone who is great at math puzzles or playing some board games like chess or someone who is good at making logical arguments.
+MATCH: Pense em alguém que é ótimo em desafios de matemática, ou a jogar jogos de tabuleiro como o xadrez, ou alguém que é bom a construir argumentos lógicos.
+
+BLOCK 8 (00:01:08.114 -> 00:01:13.474):
+ORG: Early ideas about intelligence often focused on these kinds of mental abilities.
+MATCH: As primeiras conceções de inteligência focavam-se muitas vezes nesse tipo de capacidades mentais.
+
+BLOCK 9 (00:01:14.034 -> 00:01:25.400):
+ORG: This influenced the first way of AI research, where programmers tried to build machines that could play chess or follow some logical rules, seeing this as signs of thinking.
+MATCH: Isso influenciou a primeira abordagem da investigação em IA, em que programadores tentavam construir máquinas que pudessem jogar xadrez ou seguir regras lógicas, vendo nisso sinais de pensamento.  
+
+BLOCK 10 (00:01:27.719 -> 00:01:33.000):
+ORG: But is intelligence is only about that kind of abstract thinking?
+MATCH: Mas será que a inteligência é só esse tipo de pensamento abstrato?  
+
+BLOCK 11 (00:01:33.319 -> 00:01:40.724):
+ORG: Another popular idea is that it doesn't really matter how something thinks on the inside or even if it thinks like us, like humans.
+MATCH: Outra ideia popular é que, na verdade, não importa como algo “pensa” por dentro, ou sequer se pensa como nós, humanos.
+
+BLOCK 12 (00:01:41.045 -> 00:01:43.334):
+ORG: What matters is what it can do.
+MATCH: O que importa é o que consegue fazer.
+
+BLOCK 13 (00:01:43.334 -> 00:01:45.770):
+ORG: This is called a functional view.
+MATCH: A isso chama-se uma perspetiva funcional.
+
+BLOCK 14 (00:01:46.564 -> 00:01:49.364):
+ORG: Can it perform tasks that we consider intelligent?
+MATCH: Consegue executar tarefas que consideramos inteligentes?
+
+BLOCK 15 (00:01:49.444 -> 00:01:50.805):
+ORG: Think about a calculator.
+MATCH: Pense numa calculadora.
+
+BLOCK 16 (00:01:51.180 -> 00:01:53.569):
+ORG: It's not made of brain cells, right?
+MATCH: Não é feita de células cerebrais, pois não?
+
+BLOCK 17 (00:01:53.569 -> 00:01:56.953):
+ORG: But it performs the function of addition perfectly.
+MATCH: Mas desempenha na perfeição a função de somar.
+
+BLOCK 18 (00:01:57.739 -> 00:02:02.939):
+ORG: It was Alan Turing and his famous Turing test, which we will discuss next, who took this approach.
+MATCH: Foi Alan Turing e o seu famoso Teste de Turing, que iremos discutir a seguir, quem adotou esta abordagem.
+
+BLOCK 19 (00:02:03.915 -> 00:02:12.955):
+ORG: The essence is that if a machine can act intelligently enough in conversation to be fully human, maybe that's good enough to be artificially intelligent.
+MATCH: A ideia essencial é que, se uma máquina conseguir agir de forma suficientemente inteligente numa conversa para passar por humana, talvez isso seja suficiente para ser artificialmente inteligente.
+
+BLOCK 20 (00:02:13.914 -> 00:02:27.200):
+ORG: From a functional perspective, intelligence is about successful information processing and producing the right kind of result or behavior, even how it is done remains a black box.
+MATCH: Numa perspetiva funcional, a inteligência tem a ver com processar informação com sucesso e produzir o tipo certo de resultado ou comportamento, mesmo que a forma como o faz continue a ser uma caixa-preta.
+
+BLOCK 21 (00:02:28.800 -> 00:02:32.959):
+ORG: And then there is another powerful perspective inspired by looking at life.
+MATCH: E depois há outra perspetiva poderosa, inspirada na observação da vida.  
+
+BLOCK 22 (00:02:34.294 -> 00:02:37.015):
+ORG: This view emphasizes adaptation.
+MATCH: Esta visão dá ênfase à adaptação.
+
+BLOCK 23 (00:02:37.495 -> 00:02:42.215):
+ORG: How well can something learn and adjust to survive and succeed in its environment?
+MATCH: Quão bem algo consegue aprender e ajustar-se para sobreviver e ter sucesso no seu ambiente?
+
+BLOCK 24 (00:02:42.855 -> 00:02:44.694):
+ORG: Think about animals in the wild.
+MATCH: Pense nos animais na natureza.
+
+BLOCK 25 (00:02:45.270 -> 00:02:51.670):
+ORG: They learn where to find food, how to avoid danger, how to navigate their surroundings.
+MATCH: Aprendem onde encontrar comida, como evitar perigos, como orientar-se no meio envolvente.
+
+BLOCK 26 (00:02:51.990 -> 00:02:59.110):
+ORG: It's about figuring out how to achieve these goals in a changing world, not about following fixed rules.
+MATCH: Trata-se de descobrir como atingir objetivos num mundo em mudança, não de seguir regras fixas.
+
+BLOCK 27 (00:03:01.094 -> 00:03:08.055):
+ORG: Much of the modern AI, especially in areas like robotics, focuses on this kind of learning and adaptation.
+MATCH: Grande parte da IA moderna, especialmente em áreas como a robótica, centra-se neste tipo de aprendizagem e adaptação.
+
+BLOCK 28 (00:03:09.895 -> 00:03:14.775):
+ORG: Researchers and AI try to formalize intelligence mathematically.
+MATCH: Os investigadores de IA tentam formalizar a inteligência matematicamente.
+
+BLOCK 29 (00:03:15.530 -> 00:03:21.770):
+ORG: Shane Legg and Marcus Hutter in 2007 proposed a definition of universal intelligence.
+MATCH: Shane Legg e Marcus Hutter, em 2007, propuseram uma definição de inteligência universal.
+
+BLOCK 30 (00:03:22.330 -> 00:03:34.044):
+ORG: The definition is: agents' ability to achieve goals across a wide range of environments, which is grounding the adaptive view in a more rigorous computational framework.
+MATCH: A definição é: a capacidade dos agentes de alcançar objetivos numa vasta gama de ambientes, o que fundamenta a visão adaptativa num enquadramento computacional mais rigoroso.
+
+BLOCK 31 (00:03:35.965 -> 00:03:48.260):
+ORG: And finally, we must ask, is intelligent, is purely rational, functional, or adaptive, or does it include something else, something more?
+MATCH: E, por fim, temos de perguntar: a inteligência é puramente racional, funcional ou adaptativa, ou inclui algo mais, algo para lá disso?  
+
+BLOCK 32 (00:03:49.060 -> 00:03:59.780):
+ORG: Many would argue that true human intelligence, or perhaps even animal intelligence, involves aspects often neglected by purely computational or functional accounts.
+MATCH: Muitos defenderiam que a verdadeira inteligência humana, ou talvez até a inteligência animal, envolve aspetos muitas vezes ignorados por abordagens puramente computacionais ou funcionais.
+
+BLOCK 33 (00:04:00.735 -> 00:04:07.295):
+ORG: For example, does genuine intelligence require awareness, feeling or subjective experience?
+MATCH: Por exemplo, a inteligência genuína exige consciência, sentimentos ou experiência subjetiva?
+
+BLOCK 34 (00:04:07.615 -> 00:04:14.334):
+ORG: Can a system be truly intelligent if it's just a zombie executing functions without any sort of awareness?
+MATCH: Um sistema pode ser verdadeiramente inteligente se for apenas um “zombie” a executar funções sem qualquer tipo de consciência?
+
+BLOCK 35 (00:04:15.610 -> 00:04:18.130):
+ORG: How about having emotions and motivations?
+MATCH: E quanto a ter emoções e motivações?
+
+BLOCK 36 (00:04:18.130 -> 00:04:25.463):
+ORG: Emotions, as we all know, are important in human decision making, social interaction, or prioritizing our goals.
+MATCH: As emoções, como todos sabemos, são importantes na tomada de decisão humana, na interação social e na priorização dos nossos objetivos.
+
+BLOCK 37 (00:04:25.463 -> 00:04:27.072):
+ORG: Emotions are very important.
+MATCH: As emoções são muito importantes.
+
+BLOCK 38 (00:04:28.714 -> 00:04:35.435):
+ORG: Is intelligence, which is devoid of emotion, truly comparable to our human intelligence?
+MATCH: Será a inteligência, desprovida de emoção, realmente comparável à nossa inteligência humana?
+
+BLOCK 39 (00:04:36.154 -> 00:04:41.995):
+ORG: Creativity can also be associated with intelligence, for example, by generating genuinely novel ideas and art.
+MATCH: A criatividade também pode ser associada à inteligência, por exemplo, ao gerar ideias e arte genuinamente novas.
+
+BLOCK 40 (00:04:43.069 -> 00:04:45.242):
+ORG: Embodiment, that's also very important.
+MATCH: A incorporação num corpo também é muito importante.
+
+BLOCK 41 (00:04:45.242 -> 00:04:50.670):
+ORG: Can something be considered intelligent without interacting with the physical world?
+MATCH: Pode algo ser considerado inteligente sem interagir com o mundo físico?
+
+BLOCK 42 (00:04:51.069 -> 00:04:53.870):
+ORG: We'll discuss these very important topics in a bit.
+MATCH: Vamos falar destes temas tão importantes daqui a pouco.
+
+BLOCK 43 (00:04:55.305 -> 00:05:00.025):
+ORG: Finally, we will touch on social and cultural context, which is also important for intelligence.
+MATCH: Por fim, vamos abordar o contexto social e cultural, que também é importante para a inteligência.
+
+BLOCK 44 (00:05:00.264 -> 00:05:12.680):
+ORG: We humans develop and operate within rich social and cultural contexts, involving collaboration, sharing knowledge, and understanding general social dynamics of where we are.
+MATCH: Nós, seres humanos, desenvolvemo-nos e funcionamos em contextos sociais e culturais riquíssimos, que envolvem colaboração, partilha de conhecimento e compreensão das dinâmicas sociais gerais do lugar onde estamos.
+
+BLOCK 45 (00:05:14.839 -> 00:05:18.180):
+ORG: So defining intelligence is not that simple.
+MATCH: Por isso, definir inteligência não é assim tão simples.
+
+BLOCK 46 (00:05:18.180 -> 00:05:19.980):
+ORG: It's not that straightforward.
+MATCH: Não é assim tão direto.
+
+BLOCK 47 (00:05:20.279 -> 00:05:29.455):
+ORG: Is it calculation, function, adaptation, or does it require these additional, perhaps uniquely biological components?
+MATCH: É cálculo, função, adaptação, ou exige estes elementos adicionais, talvez exclusivamente biológicos?
+
+BLOCK 48 (00:05:29.935 -> 00:05:33.055):
+ORG: There is no single answer that everybody would agree upon.
+MATCH: Não há uma resposta única com a qual toda a gente concorde.
+
+BLOCK 49 (00:05:34.095 -> 00:05:43.290):
+ORG: But some functional definition, current AI systems already count as intelligent, though critics would argue that these definitions are too thin.
+MATCH: Mas, segundo uma certa definição funcional, os sistemas de IA atuais já contam como inteligentes, embora os críticos defendam que essas definições são demasiado superficiais.
+
+BLOCK 50 (00:05:43.769 -> 00:05:51.610):
+ORG: If intelligence requires adaptability and learning, AI is making rapid progress, but still it lacks human flexibility.
+MATCH: Se a inteligência exige adaptabilidade e aprendizagem, a IA está a avançar rapidamente, mas ainda lhe falta a flexibilidade humana.
+
+BLOCK 51 (00:05:53.345 -> 00:06:09.796):
+ORG: On the other hand, if intelligence intrinsically involves consciousness or subjective experience, then current AI systems are not there yet, and we face some sort of deep philosophical questions about whether machines could ever possess these qualities.
+MATCH: Por outro lado, se a inteligência envolve, por natureza, consciência ou experiência subjetiva, então os sistemas de IA atuais ainda não chegaram aí, e deparamo-nos com questões filosóficas profundas sobre se as máquinas poderão alguma vez possuir essas qualidades.  
+
+BLOCK 52 (00:06:09.796 -> 00:06:10.135):
+ORG: Right?
+MATCH: Certo?
+
+BLOCK 53 (00:06:10.135 -> 00:06:13.187):
+ORG: You know, consciousness, you know, subjective feeling.
+MATCH: Quer dizer, consciência, quer dizer, sensação subjetiva.
+
+BLOCK 54 (00:06:13.939 -> 00:06:16.020):
+ORG: We'll discuss this a bit later.
+MATCH: Vamos discutir isto um pouco mais à frente.
+
+BLOCK 0 (00:00:01.120 -> 00:00:08.719):
+ORG: Given the difficulty in defining intelligence, how then might we try to test whether a machine has achieved it?
+MATCH: Given the difficulty in defining intelligence, how can we test whether a machine has achieved it?
+
+BLOCK 1 (00:00:09.519 -> 00:00:16.914):
+ORG: One of the pioneers of computer science, Alan Turing, proposed a famous test to tackle this question.
+MATCH: One of the pioneers of computer science, Alan Turing, proposed a famous test to tackle this question.
+
+BLOCK 2 (00:00:18.914 -> 00:00:33.859):
+ORG: In his seminal 1950 paper called Computing Machinery and Intelligence, Turing, instead of asking the direct question of whether machines can think, proposed a concrete scenario and imitation game, today known as the Turing test.
+MATCH: In his seminal 1950 paper, *Computing Machinery and Intelligence*, Turing, instead of asking directly whether machines can think, proposed a concrete scenario and imitation game, now known as the Turing test.
+
+BLOCK 3 (00:00:34.340 -> 00:00:36.208):
+ORG: The setup is very simple.
+MATCH: The setup is very simple.
+
+BLOCK 4 (00:00:36.208 -> 00:00:57.734):
+ORG: Imagine a human judge communicating via text only interface with two hidden entities: another human and a machine judge's goal is to determine which entity is a human and which is a machine, simply by asking questions and evaluating their typed responses.
+MATCH:  Imagine a human judge communicating via a text-only interface with two hidden entities: another human and a machine. The judge’s goal is to determine which entity is the human and which is the machine, simply by asking questions and evaluating their typed responses.
+
+BLOCK 5 (00:00:58.480 -> 00:01:07.760):
+ORG: The machine's goal is to convince the judge that it is a human, while the human's goal is to help the judge to make the right decision, the right identification.
+MATCH: The machine’s goal is to convince the judge that it is human, while the human’s goal is to help the judge make the right decision—the right identification.
+
+BLOCK 6 (00:01:09.040 -> 00:01:24.265):
+ORG: Turing proposed that if a machine could play this game so well, the typical judge, after some reasonable amount of time, could not reliably tell the machine apart from the human, then we could consider the machine intelligent or capable of thinking.
+MATCH: Turing proposed that if a machine could play this game so well that the typical judge, after a reasonable amount of time, could not reliably tell the machine apart from the human, then we could consider the machine intelligent, or capable of thinking.
+
+BLOCK 7 (00:01:26.104 -> 00:01:29.144):
+ORG: Why did Turing propose these specific tests?
+MATCH: Why did Turing propose these specific tests?
+
+BLOCK 8 (00:01:30.399 -> 00:01:37.679):
+ORG: It strongly reflects a philosophical stance similar to behaviorism or functionalism, which was very influential at that time.
+MATCH: They strongly reflect a philosophical stance similar to behaviorism or functionalism, which was very influential at that time.
+
+BLOCK 9 (00:01:38.560 -> 00:01:49.174):
+ORG: Behaviorism in psychology and philosophy suggests that we should focus on observable behaviors rather than speculating about unobservable internal mental states.
+MATCH: Behaviorism in psychology and philosophy suggests that we should focus on observable behaviors rather than speculating about unobservable internal mental states.
+
+BLOCK 10 (00:01:49.895 -> 00:01:55.094):
+ORG: For behaviorists, mental states are just dispositions to behave in certain ways.
+MATCH: For behaviorists, mental states are just dispositions to behave in certain ways.
+
+BLOCK 11 (00:01:55.814 -> 00:02:07.479):
+ORG: So if a machine behaves conversationally in a way that is indistinguishable from an intelligent human, then based on its observable behavior, we should attribute intelligence to it.
+MATCH: So if a machine behaves conversationally in a way that is indistinguishable from an intelligent human, then, based on its observable behavior, we should attribute intelligence to it.
+
+BLOCK 12 (00:02:07.959 -> 00:02:15.444):
+ORG: It bypasses the thorny issue of how the machine achieves its behavior or what its its internal states are like.
+MATCH: This bypasses the thorny issue of how the machine achieves its behavior or what its internal states are like.
+
+BLOCK 13 (00:02:17.525 -> 00:02:22.724):
+ORG: But this is precisely where the main philosophical criticism of the Turing test arises.
+MATCH: But this is precisely where the main philosophical criticism of the Turing test arises.
+
+BLOCK 14 (00:02:23.204 -> 00:02:28.084):
+ORG: Critics argue that behavior mimicry is not the same as genuine intelligence.
+MATCH: Critics argue that behavior mimicry is not the same as genuine intelligence.
+
+BLOCK 15 (00:02:28.700 -> 00:02:34.700):
+ORG: Just because something acts intelligently, it doesn't mean that it is intelligent.
+MATCH: Just because something acts intelligently doesn’t mean that it is intelligent.
+
+BLOCK 16 (00:02:35.340 -> 00:02:39.900):
+ORG: The most famous philosophical counterargument here is John Searle's Chinese room argument.
+MATCH: The most famous philosophical counterargument here is John Searle’s Chinese Room argument.
+
+BLOCK 17 (00:02:40.635 -> 00:02:51.835):
+ORG: Searle asks us to imagine a person who doesn't know Chinese locked in a room following complex rules to manipulate Chinese symbols to produce correct answers to questions written in Chinese.
+MATCH: Searle asks us to imagine a person who doesn’t know Chinese, locked in a room, following complex rules to manipulate Chinese symbols to produce correct answers to questions written in Chinese.
+
+BLOCK 18 (00:02:52.810 -> 00:03:04.169):
+ORG: Several argue that even if the person produces perfectly fluent output, passing the so called Chinese Turing test, the person doesn't actually, you know, understand or speak Chinese.
+MATCH: Some argue that even if the person produces perfectly fluent output, passing a so-called Chinese Turing test, the person doesn’t actually understand or speak Chinese.
+
+BLOCK 19 (00:03:05.375 -> 00:03:18.415):
+ORG: Similarly, critics argue a computer passing the Turing test might just be manipulating symbols according to complex rule of statistical patterns without any real understanding or semantic grasp of the conversation.
+MATCH:  Similarly, critics argue that a computer passing the Turing test might just be manipulating symbols according to complex rules or statistical patterns, without any real understanding or semantic grasp of the conversation.
+
+BLOCK 20 (00:03:21.310 -> 00:03:28.349):
+ORG: And as a definitive test for machine intelligence, the Turing test has several other limitations beyond the core philosophical.
+MATCH:  And as a definitive test for machine intelligence, the Turing test has several other limitations beyond the core philosophical one.
+
+BLOCK 21 (00:03:29.069 -> 00:03:31.629):
+ORG: First, it's too language focused.
+MATCH: First, it’s too language-focused.
+
+BLOCK 22 (00:03:31.790 -> 00:03:35.469):
+ORG: It heavily relies on human like conversation in natural language.
+MATCH: It heavily relies on human-like conversation in natural language.
+
+BLOCK 23 (00:03:36.174 -> 00:03:48.254):
+ORG: Does this mean intelligence that manifests itself differently, different type of intelligence, for example complex visual reasoning in animals, wouldn't pass or isn't real intelligence?
+MATCH: Does this mean that intelligence that manifests differently—a different type of intelligence, for example complex visual reasoning in animals—wouldn’t pass, or isn’t real intelligence?
+
+BLOCK 24 (00:03:49.199 -> 00:03:52.319):
+ORG: It biases towards human linguistic abilities.
+MATCH: It biases toward human linguistic abilities.
+
+BLOCK 25 (00:03:53.599 -> 00:03:59.680):
+ORG: Second, test deception is not necessarily intelligent.
+MATCH:  Second, deception is not necessarily intelligence.
+
+BLOCK 26 (00:04:00.000 -> 00:04:05.645):
+ORG: The machine's goal is explicitly to imitate and potentially deceive the judge.
+MATCH: The machine’s goal is explicitly to imitate and potentially deceive the judge.
+
+BLOCK 27 (00:04:06.044 -> 00:04:15.805):
+ORG: A machine could potentially pass by employing clever conversational tricks, as it was done in the Chinese room argument, rather than demonstrating deep understanding or reasoning.
+MATCH: A machine could potentially pass by employing clever conversational tricks, as in the Chinese Room argument, rather than demonstrating deep understanding or reasoning.
+
+BLOCK 28 (00:04:16.939 -> 00:04:25.100):
+ORG: Then the test doesn't assess other facets of intelligence, because conversation is only one aspect of intelligence.
+MATCH: Third, the test doesn’t assess other facets of intelligence, because conversation is only one aspect of intelligence.
+
+BLOCK 29 (00:04:25.500 -> 00:04:42.435):
+ORG: The Turing test doesn't directly test creativity, learning ability, problem solving in novel domains, some ethical reasoning, emotional intelligence, physical interaction, what we would call embodiment, not to talk even about consciousness.
+MATCH: The Turing test doesn’t directly test creativity, learning ability, problem-solving in novel domains, ethical reasoning, emotional intelligence, physical interaction—what we would call embodiment—not to mention consciousness.
+
+BLOCK 30 (00:04:43.314 -> 00:04:46.990):
+ORG: And lastly, there are practical implementation issues as well.
+MATCH: And lastly, there are practical implementation issues as well.
+
+BLOCK 31 (00:04:46.990 -> 00:04:49.619):
+ORG: What constitutes a typical judge?
+MATCH: What constitutes a typical judge?
+
+BLOCK 32 (00:04:50.019 -> 00:04:52.180):
+ORG: How long should the test last?
+MATCH:  How long should the test last?  
+
+
+BLOCK 33 (00:04:52.500 -> 00:04:54.259):
+ORG: What topics are allowed?
+MATCH: What topics are allowed?  
+
+
+BLOCK 34 (00:04:54.899 -> 00:04:58.259):
+ORG: The specific parameters can drastically affect the outcome.
+MATCH: The specific parameters can drastically affect the outcome.  
+
+BLOCK 35 (00:05:00.555 -> 00:05:06.795):
+ORG: Therefore, some philosophers and AI researchers have suggested that original Turing test is too narrow.
+MATCH: Therefore, some philosophers and AI researchers have suggested that the original Turing test is too narrow.  
+
+BLOCK 36 (00:05:07.595 -> 00:05:17.840):
+ORG: Stefan Harnad, a Canadian cognitive scientist for instance, proposed the total Turing test, which expands the original to include perception and motor abilities.
+MATCH: For instance, Stefan Harnad, a Canadian cognitive scientist, proposed the Total Turing Test, which expands the original to include perception and motor abilities.  
+
+BLOCK 37 (00:05:18.319 -> 00:05:29.774):
+ORG: The idea is to really count as intelligent, a machine should not just converse, should not just talk, but also interact with the world, seeing, moving, and manipulating objects.
+MATCH: The idea is that, to truly count as intelligent, a machine shouldn’t just converse—shouldn’t just talk—but should also interact with the world, seeing, moving, and manipulating objects.
+
+BLOCK 38 (00:05:30.254 -> 00:05:35.774):
+ORG: This points towards embodiment, as I mentioned before, as a core component of intelligence.
+MATCH: This points toward embodiment, as I mentioned before, as a core component of intelligence.  
+
+BLOCK 39 (00:05:37.855 -> 00:05:42.175):
+ORG: And you will occasionally see headlines claiming a chatbot passing the Turing test.
+MATCH: And you will occasionally see headlines claiming a chatbot has passed the Turing test.  
+
+
+BLOCK 40 (00:05:42.689 -> 00:05:54.930):
+ORG: A famous example is Eugene Goostman in 2014, a program simulating a 13-year-old Ukrainian boy using youth and non-native speaker status as plausible excuses for errors.
+MATCH: A famous example is Eugene Goostman in 2014, a program simulating a 13-year-old Ukrainian boy, using youth and non-native-speaker status as plausible excuses for errors.  
+
+
+BLOCK 41 (00:05:55.865 -> 00:06:09.544):
+ORG: And it actually managed to deceive a substantial percentage of judges, but it was widely disputed within the AI community as relying on trickery and specific test constraints, not really genuine intelligence.
+MATCH: And it actually managed to deceive a substantial percentage of judges, but it was widely disputed within the AI community as relying on trickery and specific test constraints, not really genuine intelligence.  
+
+BLOCK 42 (00:06:10.699 -> 00:06:17.180):
+ORG: More recently, the incredible conversational abilities of large language models have reignited this discussion.
+MATCH: More recently, the incredible conversational abilities of large language models have reignited this discussion.
+
+BLOCK 43 (00:06:18.139 -> 00:06:28.085):
+ORG: These models can generate text that is often remarkably fluent, coherent and human-like, potentially fooling people and short and long interactions.
+MATCH: These models can generate text that is often remarkably fluent, coherent, and human-like, potentially fooling people in short and long interactions.  
+
+BLOCK 44 (00:06:29.365 -> 00:06:50.500):
+ORG: In the paper by Jones and Berge from University of California San Diego from March 2025, for example, ChatGPT 4.5, the leading model at that time, when prompted to adopt a human like persona, was judged to be human 73% of time, significantly more often than judges selected as real human participants.
+MATCH: In a March 2025 paper by Jones and Berge from the University of California, San Diego, for example, ChatGPT 4.5, the leading model at that time, when prompted to adopt a human-like persona, was judged to be human 73% of the time, significantly more often than judges selected as real human participants.  
+
+BLOCK 45 (00:06:51.345 -> 00:07:02.704):
+ORG: However, as you may know, their ability stems from mastering statistical patterns in vast text data, likely without genuine understanding.
+MATCH: However, as you may know, their ability stems from mastering statistical patterns in vast text data, likely without genuine understanding.  
+
+BLOCK 46 (00:07:02.704 -> 00:07:09.000):
+ORG: They are excellent simulators of conversation, but probably not really understanding.
+MATCH: They are excellent simulators of conversation, but probably not really understanding.  
+
+BLOCK 47 (00:07:09.639 -> 00:07:20.759):
+ORG: Most young researchers would argue that while impressive, LLMs haven't solved intelligence or passed the Turing test in a meaningful philosophical sense.
+MATCH: Most young researchers would argue that, while impressive, LLMs haven’t solved intelligence or passed the Turing test in a meaningful philosophical sense.  
+
+
+BLOCK 48 (00:07:21.399 -> 00:07:26.435):
+ORG: They would rather show how sophisticated behavioral mimicry can become.
+MATCH: They would rather show how sophisticated behavioral mimicry can become.  
+
+
+BLOCK 49 (00:07:28.355 -> 00:07:33.488):
+ORG: So to wrap up, the Turing test was a brilliant starting point, really.
+MATCH: So, to wrap up, the Turing test was a brilliant starting point, really.  
+
+
+BLOCK 50 (00:07:33.488 -> 00:07:38.194):
+ORG: It forces us to ask if something acts intelligently, is it enough?
+MATCH: It forces us to ask: if something acts intelligently, is it enough?  
+
+
+BLOCK 51 (00:07:38.729 -> 00:07:42.089):
+ORG: If something acts intelligently, is it really intelligent?
+MATCH: If something acts intelligently, is it really intelligent?
+
+BLOCK 52 (00:07:42.490 -> 00:07:48.970):
+ORG: The problem is the test really only measures clever imitation in conversation, not genuine understanding.
+MATCH: The problem is the test really only measures clever imitation in conversation, not genuine understanding.
+
+BLOCK 53 (00:07:49.529 -> 00:07:57.764):
+ORG: Modern AI can now imitate human chat incredibly well by mastering statistical patterns, easily passing the original Turing test.
+MATCH: Modern AI can now imitate human chat incredibly well by mastering statistical patterns, easily passing the original Turing test.
+
+BLOCK 54 (00:07:58.404 -> 00:08:01.433):
+ORG: This just shows how sophisticated mimicry can get.
+MATCH: This just shows how sophisticated mimicry can get.
+
+BLOCK 55 (00:08:01.433 -> 00:08:05.699):
+ORG: Not what we have created not not that we have created thinking machines.
+MATCH: Not that we have created thinking machines,
+
+BLOCK 56 (00:08:05.699 -> 00:08:06.054):
+ORG: Right?
+MATCH:  right?
+
+BLOCK 57 (00:08:06.054 -> 00:08:10.201):
+ORG: And the core question that we asked at the beginning remains the same.
+MATCH: And the core question that we asked at the beginning remains the same.
+
+BLOCK 58 (00:08:10.779 -> 00:08:15.020):
+ORG: Is acting intelligent is the same as being intelligent?
+MATCH: Is acting intelligent the same as being intelligent?  
+
+BLOCK 59 (00:08:15.500 -> 00:08:20.379):
+ORG: And this debate is central to the philosophy of AI until today.
+MATCH: And this debate is central to the philosophy of AI until today.
+
+BLOCK 0 (00:00:00.640 -> 00:00:09.679):
+ORG: And we begin by defining a term that is central to both cognitive science and artificial intelligence, cognitive architecture.
+MATCH: E começamos por definir um termo que é central tanto na ciência cognitiva como na inteligência artificial: arquitetura cognitiva.
+
+BLOCK 1 (00:00:10.639 -> 00:00:14.559):
+ORG: What exactly is a cognitive architecture, and why it's so important?
+MATCH: O que é exatamente uma arquitetura cognitiva e porque é tão importante?
+
+BLOCK 2 (00:00:16.105 -> 00:00:25.304):
+ORG: In the simplest terms, a cognitive architecture is a blueprint or a framework for intelligence, whether it's human intelligence or artificial intelligence.
+MATCH: Em termos simples, uma arquitetura cognitiva é um plano ou uma estrutura para a inteligência, seja ela humana ou artificial.
+
+BLOCK 3 (00:00:26.744 -> 00:00:39.719):
+ORG: It's a high level model that specifies the fundamental components of an intelligent system, how those components are organized, how they interact with each other, and how information flows through the system.
+MATCH: É um modelo de alto nível que especifica os componentes fundamentais de um sistema inteligente, como esses componentes estão organizados, como interagem entre si e como a informação flui através do sistema.
+
+BLOCK 4 (00:00:40.755 -> 00:00:54.995):
+ORG: The idea of cognitive architectures arose when researchers realized that to simulate intelligence, we need not just algorithms for specific problems, but overarching systems systems that can flexibly tackle a range of tasks.
+MATCH: A ideia de arquiteturas cognitivas surgiu quando os investigadores perceberam que, para simular a inteligência, não precisamos apenas de algoritmos para problemas específicos, mas de sistemas globais que consigam, com flexibilidade, enfrentar um conjunto variado de tarefas.
+
+BLOCK 5 (00:00:55.939 -> 00:01:07.859):
+ORG: Since the 1970s, researchers in both psychology and AI have pursued these blueprints to move beyond narrow programs towards more general theories of intelligence.
+MATCH: Desde a década de 1970, investigadores tanto na psicologia como na IA têm seguido estes planos para ir além de programas restritos e avançar para teorias mais gerais da inteligência.
+
+BLOCK 6 (00:01:09.844 -> 00:01:13.125):
+ORG: Think of it like the architectural plans for a building.
+MATCH: Pense nisto como as plantas de um edifício.
+
+BLOCK 7 (00:01:13.525 -> 00:01:23.924):
+ORG: The plans don't show every single brick and iron wire, but they do show the overall structure, the rooms, the hallways, the connections between them, and so on.
+MATCH: As plantas não mostram cada tijolo nem cada fio de ferro, mas mostram a estrutura geral, as salas, os corredores, as ligações entre eles, e assim por diante.
+
+BLOCK 8 (00:01:24.780 -> 00:01:37.500):
+ORG: Similarly, a cognitive architecture does not specify every single detail of the mind or an AI system, but it does specify the key components and their relationships like you can see in this image.
+MATCH: De forma semelhante, uma arquitetura cognitiva não especifica cada detalhe da mente ou de um sistema de IA, mas especifica os componentes-chave e as suas relações, como se pode ver nesta imagem.
+
+BLOCK 9 (00:01:38.465 -> 00:01:45.265):
+ORG: So these architectures usually include key components like perception, memory, reasoning, learning.
+MATCH: Assim, estas arquiteturas costumam incluir componentes essenciais como perceção, memória, raciocínio e aprendizagem.
+
+BLOCK 10 (00:01:45.905 -> 00:01:50.144):
+ORG: They are all interconnected with information flowing dynamically between them.
+MATCH: Estão todos interligados, com a informação a fluir de forma dinâmica entre eles.
+
+BLOCK 11 (00:01:51.409 -> 00:01:57.249):
+ORG: This system of feedback loops allows the entire architecture to adapt and change over time.
+MATCH: Este sistema de ciclos de feedback permite que toda a arquitetura se adapte e mude ao longo do tempo.
+
+BLOCK 12 (00:01:59.810 -> 00:02:05.890):
+ORG: In cognitive science, a cognitive architecture is a theoretical framework for understanding the human mind.
+MATCH: Na ciência cognitiva, uma arquitetura cognitiva é um enquadramento teórico para compreender a mente humana.
+
+BLOCK 13 (00:02:06.665 -> 00:02:12.105):
+ORG: It's a hypothesis about how our minds are structured and how they function.
+MATCH: É uma hipótese sobre como a nossa mente está estruturada e como funciona.
+
+BLOCK 14 (00:02:13.145 -> 00:02:24.969):
+ORG: Cognitive scientists develop and test these architectures by conducting experiments, analyzing behavioral data, and building computational models that simulate human cognitive processes.
+MATCH: Os cientistas cognitivos desenvolvem e testam estas arquiteturas realizando experiências, analisando dados comportamentais e construindo modelos computacionais que simulam processos cognitivos humanos.
+
+BLOCK 15 (00:02:25.769 -> 00:02:38.045):
+ORG: The goal is to create a comprehensive and accurate model of the mind that can explain a wide range of cognitive phenomena, from perception and attention to learning and problem solving.
+MATCH: O objetivo é criar um modelo abrangente e rigoroso da mente que possa explicar uma grande variedade de fenómenos cognitivos, desde a perceção e a atenção até à aprendizagem e à resolução de problemas.
+
+BLOCK 16 (00:02:40.284 -> 00:02:48.925):
+ORG: In artificial intelligence, on the other hand, a cognitive architecture serves as a blueprint for building intelligent systems.
+MATCH: Na inteligência artificial, por outro lado, uma arquitetura cognitiva serve de plano para construir sistemas inteligentes.
+
+BLOCK 17 (00:02:49.610 -> 00:03:00.889):
+ORG: It's a framework that guides the design and development of AI programs, specifying the components they should have, how those components should interact, and how information should be processed.
+MATCH: É uma estrutura que orienta a conceção e o desenvolvimento de programas de IA, especificando os componentes que devem ter, como esses componentes devem interagir e como a informação deve ser processada.
+
+BLOCK 18 (00:03:01.865 -> 00:03:12.185):
+ORG: AI researchers often draw inspiration for cognitive architectures in cognitive science, with the aim to create machines that can think and learn in a way that is similar to humans.
+MATCH: Os investigadores de IA inspiram-se frequentemente nas arquiteturas cognitivas da ciência cognitiva, com o objetivo de criar máquinas que consigam pensar e aprender de forma semelhante aos humanos.
+
+BLOCK 19 (00:03:14.550 -> 00:03:20.629):
+ORG: It is important to distinguish between a cognitive architecture and a specific cognitive model.
+MATCH: É importante distinguir entre uma arquitetura cognitiva e um modelo cognitivo específico.
+
+BLOCK 20 (00:03:21.989 -> 00:03:28.870):
+ORG: A cognitive model is typically a more focused and detailed simulation of a particular cognitive process or task.
+MATCH: Um modelo cognitivo é, em geral, uma simulação mais direcionada e detalhada de um processo cognitivo ou de uma tarefa em particular.
+
+BLOCK 21 (00:03:29.685 -> 00:03:37.365):
+ORG: For example, you might have a cognitive model of how people learn a new language, or how they solve a specific type of puzzle.
+MATCH: Por exemplo, pode haver um modelo cognitivo de como as pessoas aprendem uma nova língua ou de como resolvem um tipo específico de puzzle.
+
+BLOCK 22 (00:03:38.165 -> 00:03:45.640):
+ORG: A cognitive architecture, on the other hand, is a broader framework that can encompass many different cognitive models.
+MATCH: Uma arquitetura cognitiva, por sua vez, é uma estrutura mais ampla que pode englobar muitos modelos cognitivos diferentes.
+
+BLOCK 23 (00:03:46.200 -> 00:03:52.760):
+ORG: It provides the underlying structure and mechanisms that can support a wide range of cognitive abilities.
+MATCH: Fornece a estrutura subjacente e os mecanismos que podem sustentar um vasto conjunto de capacidades cognitivas.
+
+BLOCK 24 (00:03:54.040 -> 00:03:58.599):
+ORG: Another important distinction is between a cognitive architecture and an algorithm.
+MATCH: Outra distinção importante é entre uma arquitetura cognitiva e um algoritmo.
+
+BLOCK 25 (00:03:59.275 -> 00:04:04.555):
+ORG: An algorithm is a specific set of instructions for solving a particular problem.
+MATCH: Um algoritmo é um conjunto específico de instruções para resolver um determinado problema.
+
+BLOCK 26 (00:04:05.275 -> 00:04:12.155):
+ORG: A cognitive architecture, in contrast, is a more general framework that can incorporate many different algorithms.
+MATCH: Uma arquitetura cognitiva, em contraste, é uma estrutura mais geral que pode incorporar muitos algoritmos diferentes.
+
+BLOCK 27 (00:04:13.010 -> 00:04:21.490):
+ORG: It's like the difference between a recipe for a specific dish and an algorithm, and the overall layout of a kitchen, a cognitive architecture.
+MATCH: É como a diferença entre uma receita para um prato específico e um algoritmo. E a organização geral de uma cozinha, uma arquitetura cognitiva.
+
+BLOCK 28 (00:04:22.050 -> 00:04:33.685):
+ORG: The kitchen provides the infrastructure and tools that allow you to cook many different dishes, while the recipe and the algorithm tell you how to make a specific one.
+MATCH: A cozinha fornece a infraestrutura e as ferramentas que permitem cozinhar muitos pratos diferentes, enquanto a receita e o algoritmo dizem como fazer um prato em particular.
+
+BLOCK 29 (00:04:35.685 -> 00:04:49.620):
+ORG: So to wrap up, a cognitive architecture is a blueprint for human intelligence or artificial intelligence, it's a high level model that specifies a components, organization and information flow in the system.
+MATCH: Para concluir, uma arquitetura cognitiva é uma planta da inteligência humana ou da inteligência artificial. É um modelo de alto nível que especifica os componentes, a organização e o fluxo de informação no sistema.
+
+BLOCK 30 (00:04:50.579 -> 00:04:56.514):
+ORG: In cognitive science, as we said, it's a theoretical framework for understanding the human mind.
+MATCH: Na ciência cognitiva, como dissemos, é um quadro teórico para compreender a mente humana.
+
+BLOCK 31 (00:04:56.995 -> 00:05:00.595):
+ORG: In AI, it's a guide for building intelligent machines.
+MATCH: Na IA, é um guia para construir máquinas inteligentes.
+
+BLOCK 32 (00:05:01.646 -> 00:05:10.686):
+ORG: Working on cognitive architectures helps us understand how minds work and guides us toward AI that is more flexible and effective.
+MATCH: Trabalhar com arquiteturas cognitivas ajuda-nos a compreender como as mentes funcionam e orienta-nos para uma IA mais flexível e eficaz.
+
+BLOCK 0 (00:00:00.960 -> 00:00:10.719):
+ORG: This brings us to a fundamental distinction in the philosophy of AI, one that crystallizes the debate we touched upon with the Turing test.
+MATCH: Это подводит нас к фундаментальному различию в философии ИИ — к тому, которое проясняет спор, к которому мы прикоснулись, говоря о тесте Тьюринга.
+
+BLOCK 1 (00:00:11.519 -> 00:00:23.844):
+ORG: We have asked if machines can act intelligently, but now we must ask if they can possess genuine understanding and mental states, or if they are just simulating them effectively.
+MATCH: Мы спрашивали, могут ли машины вести себя разумно, но теперь должны спросить, способны ли они обладать подлинным пониманием и ментальными состояниями или они лишь эффективно их имитируют.
+
+BLOCK 2 (00:00:24.404 -> 00:00:29.765):
+ORG: This is a core difference between what philosophers call weak AI and strong AI.
+MATCH: В этом и состоит ключевое различие между тем, что философы называют слабым ИИ и сильным ИИ.
+
+BLOCK 3 (00:00:31.699 -> 00:00:39.140):
+ORG: This question gets to a core idea in artificial intelligence, and it also tells us a lot about our own minds.
+MATCH: Этот вопрос затрагивает центральную идею в искусственном интеллекте и одновременно многое говорит нам о нашем собственном разуме.
+
+BLOCK 4 (00:00:39.700 -> 00:00:46.340):
+ORG: Let's define these terms introduced by the philosopher John Searle, the same John Searle from the Chinese room argument.
+MATCH: Давайте определим эти термины, введённые философом Джоном Сёрлом — тем самым Джоном Сёрлом из аргумента «китайской комнаты».
+
+BLOCK 5 (00:00:48.634 -> 00:00:53.755):
+ORG: Weak AI is a hypothesis that computers can simulate aspects of human intelligence.
+MATCH: Слабый ИИ — это гипотеза о том, что компьютеры могут имитировать аспекты человеческого интеллекта.  
+
+BLOCK 6 (00:00:54.395 -> 00:00:58.634):
+ORG: According to this view, AI systems can act as if they were intelligent.
+MATCH: Согласно этой позиции, системы ИИ могут действовать так, будто они разумны.
+
+BLOCK 7 (00:00:59.280 -> 00:01:12.560):
+ORG: They can be incredibly useful tools for solving specific problems, like processing language, recognizing patterns, and performing tasks that normally require human intelligence, and do it sometimes even better than humans.
+MATCH: Они могут быть невероятно полезными инструментами для решения конкретных задач, таких как обработка языка, распознавание закономерностей и выполнение действий, которые обычно требуют человеческого интеллекта, и иногда даже делать это лучше людей.
+
+BLOCK 8 (00:01:14.015 -> 00:01:23.375):
+ORG: The key idea in the VKI position is that these simulations, no matter how sophisticated, do not possess genuine understanding.
+MATCH: Ключевая мысль позиции слабого ИИ в том, что эти имитации, какими бы изощрёнными они ни были, не обладают подлинным пониманием.
+
+BLOCK 9 (00:01:24.015 -> 00:01:28.734):
+ORG: The machine is merely manipulating symbols or processing data according to its programming.
+MATCH: Машина всего лишь манипулирует символами или обрабатывает данные в соответствии со своей программой.
+
+BLOCK 10 (00:01:29.750 -> 00:01:37.269):
+ORG: It might give the correct answer, but it doesn't have any real insight or grasp of what the information actually means.
+MATCH: Она может выдать правильный ответ, но у неё нет никакого реального прозрения или понимания того, что эта информация на самом деле означает.
+
+BLOCK 11 (00:01:37.989 -> 00:01:46.125):
+ORG: According to this definition, most current AI systems, including sophisticated LLMs, fall under the umbrella of weak AI.
+MATCH: Согласно этому определению большинство современных ИИ-систем, включая продвинутые LLM, относятся к слабому ИИ.
+
+BLOCK 12 (00:01:46.284 -> 00:01:49.564):
+ORG: They are just powerful simulations and tools.
+MATCH: Это просто мощные симуляции и инструменты.
+
+BLOCK 13 (00:01:51.645 -> 00:02:01.019):
+ORG: Strong AI, also called AGI, Artificial General Intelligence, is a much bolder, more controversial hypothesis.
+MATCH: Сильный ИИ, также называемый AGI (Artificial General Intelligence), то есть искусственным общим интеллектом, — это куда более смелая и спорная гипотеза.
+
+BLOCK 14 (00:02:01.500 -> 00:02:10.539):
+ORG: Strong AI claims that a computer running the right kind of program is not just simulating a mind, it can actually be a mind.
+MATCH: Сильный ИИ утверждает, что компьютер, запускающий программу нужного типа, не просто симулирует разум — он действительно может быть разумом.
+
+BLOCK 15 (00:02:11.645 -> 00:02:25.004):
+ORG: According to this view, if a system implements the right computational processes, then it literally has understanding and intentions, and it could potentially do any intellectual task a human can.
+MATCH: Согласно этой точке зрения, если система реализует правильные вычислительные процессы, то она в буквальном смысле обладает пониманием и намерениями и потенциально способна выполнять любую интеллектуальную задачу, доступную человеку.
+
+BLOCK 16 (00:02:27.010 -> 00:02:33.090):
+ORG: From this view, the hardware brain versus a computer chip doesn't really matter.
+MATCH: С этой точки зрения различие между «железом» — мозгом и компьютерным чипом — на самом деле не важно.
+
+BLOCK 17 (00:02:33.409 -> 00:02:37.730):
+ORG: It is the software, the computational structure that creates the mind.
+MATCH: Разум создаёт «софт», вычислительная структура.
+
+BLOCK 18 (00:02:38.594 -> 00:02:52.915):
+ORG: The goal of Strong AI research is not just about building useful tools, like in case of the weak AI, but potentially creating artificial persons or humanoids, if you want, with genuine mental lives.
+MATCH: Цель исследований сильного ИИ — не просто создание полезных инструментов, как в случае слабого ИИ, а потенциально создание искусственных личностей или, если хотите, гуманоидов с подлинной внутренней психической жизнью.
+
+BLOCK 19 (00:02:54.650 -> 00:02:57.770):
+ORG: So what are the arguments that support strong AI?
+MATCH: Так какие аргументы поддерживают сильный ИИ?
+
+BLOCK 20 (00:02:58.409 -> 00:03:01.930):
+ORG: First, there is computationalism or functionalism.
+MATCH: Во-первых, это вычислительный подход, или функционализм.
+
+BLOCK 21 (00:03:01.930 -> 00:03:23.939):
+ORG: This argument claims that if the mind is fundamentally an information processing system, and if intelligence and understanding are functional properties defined by what they do then any system, be it biological or artificial, that implements the correct functions should possess these properties.
+MATCH: Этот аргумент утверждает, что если разум в своей основе — система обработки информации, и если интеллект и понимание являются функциональными свойствами, определяемыми тем, что они делают, тогда любая система — биологическая или искусственная — которая реализует правильные функции, должна обладать этими свойствами.
+
+BLOCK 22 (00:03:24.739 -> 00:03:30.099):
+ORG: The physical substrate, be it a brain or a computer chip, is irrelevant.
+MATCH: Физический носитель — будь то мозг или компьютерный чип — не имеет значения.
+
+BLOCK 23 (00:03:32.739 -> 00:03:35.539):
+ORG: Then there is also the emergence argument.
+MATCH: Далее следует аргумент об эмерджентности.
+
+BLOCK 24 (00:03:36.375 -> 00:03:46.534):
+ORG: Perhaps genuine understanding is an emergent property that arises from sufficiently complex computational systems, even if we don't fully understand how it happens.
+MATCH: Возможно, подлинное понимание — это эмерджентное свойство, возникающее в достаточно сложных вычислительных системах, даже если мы до конца не понимаем, как именно это происходит.
+
+BLOCK 25 (00:03:47.175 -> 00:04:00.890):
+ORG: When we talk about emergence or emergent properties, we mean phenomena where a complex system starts to exhibit new properties or behaviors that cannot be easily predicted just by looking at its individual components.
+MATCH: Когда мы говорим об эмерджентности или эмерджентных свойствах, мы имеем в виду явления, когда сложная система начинает демонстрировать новые свойства или формы поведения, которые нельзя легко предсказать, просто рассматривая её отдельные компоненты.
+
+BLOCK 26 (00:04:01.370 -> 00:04:06.090):
+ORG: These properties emerge from the interaction between the simple parts.
+MATCH: Эти свойства возникают из взаимодействия простых частей.
+
+BLOCK 27 (00:04:07.155 -> 00:04:09.794):
+ORG: Think about the wetness of water.
+MATCH: Подумайте о мокроте воды.
+
+BLOCK 28 (00:04:10.354 -> 00:04:14.275):
+ORG: Individual water molecules are not wet, aren't they?
+MATCH: Отдельные молекулы воды сами по себе не «мокрые», верно?
+
+BLOCK 29 (00:04:14.594 -> 00:04:20.915):
+ORG: But when you get enough of them interacting together under the right conditions, the property of wetness emerges.
+MATCH: Но когда их достаточно много и они взаимодействуют при подходящих условиях, возникает свойство мокроты.
+
+BLOCK 30 (00:04:22.310 -> 00:04:33.669):
+ORG: Similarly, individual sugar molecules are not sweet, but when enough of them dissolve on your tongue, interacting with your taste receptors, the sensation of sweetness emerges.
+MATCH: Точно так же отдельные молекулы сахара не «сладкие», но когда достаточное их количество растворяется у вас на языке и взаимодействует с вкусовыми рецепторами, возникает ощущение сладости.
+
+BLOCK 31 (00:04:34.464 -> 00:04:44.064):
+ORG: So the idea is that at certain points there is a sudden qualitative leap, and a brand new property like wetness or sweetness emerges.
+MATCH: Идея в том, что в определённый момент происходит резкий качественный скачок, и возникает совершенно новое свойство — вроде мокроты или сладости.
+
+BLOCK 32 (00:04:44.785 -> 00:04:51.410):
+ORG: In the context of AIs, the idea is that perhaps genuine understanding could be an emergent property too.
+MATCH: В контексте ИИ идея в том, что, возможно, подлинное понимание тоже может быть эмерджентным свойством.
+
+BLOCK 33 (00:04:53.169 -> 00:05:12.995):
+ORG: So even if the individual companies, like artificial neurons or lines of code, are simple and non conscious, maybe when you connect billions of them in the right complex way, something generally new might arise from those complex interactions, even if we don't explicitly program it.
+MATCH: Даже если отдельные элементы — как искусственные нейроны или строки кода — просты и не обладают сознанием, возможно, если соединить миллиарды таких элементов правильным, достаточно сложным образом, из этих взаимодействий может возникнуть нечто принципиально новое, даже если мы это явно не запрограммируем.
+
+BLOCK 34 (00:05:17.459 -> 00:05:24.740):
+ORG: When we talk about emergent properties, we can extend the analogy beyond wetness and sweetness to the life itself.
+MATCH: Когда мы говорим об эмерджентных свойствах, мы можем расширить аналогию за пределы «мокроты» и «сладости» — вплоть до самой жизни.  
+
+BLOCK 35 (00:05:25.459 -> 00:05:35.365):
+ORG: Consider abiogenesis, as a process where non living matter, under the right condition, gave rise to living organisms on earth billions of years ago.
+MATCH: Рассмотрим абиогенез как процесс, при котором неживая материя при подходящих условиях миллиарды лет назад породила на Земле живые организмы.
+
+BLOCK 36 (00:05:36.245 -> 00:05:43.060):
+ORG: No single molecule was alive, but through complexity and interaction, life emerged.
+MATCH: Ни одна отдельная молекула не была живой, но благодаря сложности и взаимодействиям жизнь возникла.
+
+BLOCK 37 (00:05:43.620 -> 00:05:50.740):
+ORG: By analogy, perhaps genuine understanding could emerge in AI systems when the right kind of complexity and structure is achieved.
+MATCH: По аналогии, возможно, подлинное понимание может возникнуть в ИИ-системах, когда будет достигнут нужный тип сложности и структуры.
+
+BLOCK 38 (00:05:51.435 -> 00:05:58.794):
+ORG: This doesn't prove it will happen, but it illustrates how radical new properties can arise from simple components.
+MATCH: Это не доказывает, что так обязательно случится, но показывает, как радикально новые свойства могут возникать из простых компонентов.
+
+BLOCK 39 (00:06:01.435 -> 00:06:04.474):
+ORG: Another way of thinking about it is gradualism.
+MATCH: Ещё один способ думать об этом — градуализм.
+
+BLOCK 40 (00:06:04.879 -> 00:06:14.079):
+ORG: Instead of asking does AI understand or not, maybe it's better to ask to what degree or in what way might it understand.
+MATCH: Вместо вопроса «понимает ли ИИ или нет» лучше спросить: в какой степени или каким образом он может понимать?
+
+BLOCK 41 (00:06:14.479 -> 00:06:31.465):
+ORG: Here the idea is not necessarily a sudden quantitative leap, but a quantitative increase in capability that might eventually lead us to feel this qualitative distinction.
+MATCH: Здесь речь не обязательно о внезапном количественном скачке, а о количественном росте возможностей, который в какой-то момент может привести к тому, что мы почувствуем качественное различие.
+
+BLOCK 42 (00:06:34.400 -> 00:06:37.600):
+ORG: Then there are arguments also against strong AI.
+MATCH: Есть и аргументы против сильного ИИ.
+
+BLOCK 43 (00:06:38.080 -> 00:06:44.240):
+ORG: First, is the Chinese Room Argument by Searle, which was specifically designed to refute strong AI.
+MATCH: Во-первых, это аргумент «китайской комнаты» Джона Сёрла, который был специально разработан, чтобы опровергнуть сильный ИИ.
+
+BLOCK 44 (00:06:45.845 -> 00:06:56.245):
+ORG: Searle's central claim is that computers operate purely at the level of syntax, which, as you can see on this slide, is about manipulating symbols according to some rules.
+MATCH: Ключевой тезис Сёрла в том, что компьютеры работают исключительно на уровне синтаксиса — то есть манипулируют символами по правилам, как вы видите на этом слайде.
+
+BLOCK 45 (00:06:56.564 -> 00:07:11.990):
+ORG: We have a good example, right, Eight divided by two plus two equals two, which follows the rules of math, and a bad example, you know, which I cannot really even pronounce how to say it, and it obviously does not follow the rules of math.
+MATCH: Есть хороший пример: «восемь, делённое на два, плюс два, равно двум» — он следует правилам математики.  
+И есть плохой пример — я даже толком не могу произнести, как это сказать, и очевидно, что правилам математики он не соответствует.
+
+BLOCK 46 (00:07:12.805 -> 00:07:20.964):
+ORG: Humans, however, operate with semantics, which is about understanding the meaning associated with those symbols.
+MATCH: Люди же, напротив, оперируют семантикой — то есть понимают смысл, связанный с этими символами.
+
+BLOCK 47 (00:07:21.204 -> 00:07:38.610):
+ORG: For example, total equals price multiplied by quantity makes semantic sense, but total equals email multiplied by apple is confusing because the meaning of symbols doesn't fit the operation of multiplication.
+MATCH: Например, «итог равен цене, умноженной на количество» — семантически осмысленно, а «итог равен электронной почте, умноженной на яблоко» сбивает с толку, потому что значения символов не подходят к операции умножения.
+
+BLOCK 48 (00:07:40.064 -> 00:07:45.745):
+ORG: Searles argues that you can never get semantics purely from the syntax.
+MATCH: Сёрл утверждает, что получить семантику исключительно из синтаксиса невозможно.
+
+BLOCK 49 (00:07:46.225 -> 00:07:53.585):
+ORG: A computer running a program like the person in the Chinese room is just shuffling symbols without grasping their meaning.
+MATCH: Компьютер, исполняющий программу, подобно человеку в «китайской комнате», просто перекладывает символы, не схватывая их смысла.
+
+BLOCK 50 (00:07:57.399 -> 00:07:59.080):
+ORG: There is a grounding problem.
+MATCH: Существует проблема заземления.
+
+BLOCK 51 (00:07:59.080 -> 00:08:01.341):
+ORG: It highlights the key limitation of AI.
+MATCH: Она подчёркивает ключевое ограничение ИИ.
+
+BLOCK 52 (00:08:01.879 -> 00:08:05.800):
+ORG: AI has no direct link to the real world experience.
+MATCH: У ИИ нет прямой связи с опытом реального мира.
+
+BLOCK 53 (00:08:06.535 -> 00:08:11.254):
+ORG: For humans, words are tied back to perception and embodied experience.
+MATCH: У людей слова привязаны к восприятию и телесному опыту.
+
+BLOCK 54 (00:08:11.814 -> 00:08:18.535):
+ORG: A word dog, for example, means something because we have seen, touched, you know, and interacted with dogs.
+MATCH: Слово «собака», например, что-то значит, потому что мы видели собак, трогали их и взаимодействовали с ними.
+
+BLOCK 55 (00:08:19.339 -> 00:08:29.500):
+ORG: For AI, however, symbols are just tokens manipulated in relation to other symbols to other tokens without even relating it to the real world.
+MATCH: Для ИИ же символы — это просто токены, которыми он оперирует по отношению к другим символам и токенам, даже не соотнося их с реальным миром.
+
+BLOCK 56 (00:08:30.060 -> 00:08:37.165):
+ORG: This raises the question can genuine meaning or understanding even arise without such grounding?
+MATCH: Отсюда вопрос: может ли вообще возникнуть подлинный смысл или понимание без такого заземления?
+
+BLOCK 57 (00:08:39.565 -> 00:08:43.884):
+ORG: And of course, there is an issue of qualia or subjective experience.
+MATCH: И, конечно, есть проблема квалиа, то есть субъективного переживания.
+
+BLOCK 58 (00:08:44.409 -> 00:08:53.289):
+ORG: The word qualia refers to the raw subjective feel or experience, the, if you want, the what is like aspect.
+MATCH: Слово «квалиа» обозначает «сырое» субъективное ощущение или переживание — если хотите, аспект «каково это».
+
+BLOCK 59 (00:08:53.450 -> 00:08:56.169):
+ORG: What is it like to taste chocolate?
+MATCH: Каково это — чувствовать вкус шоколада?
+
+BLOCK 60 (00:08:56.169 -> 00:08:57.753):
+ORG: What is it like to see red?
+MATCH: Каково это — видеть красный цвет?
+
+BLOCK 61 (00:08:57.753 -> 00:08:59.631):
+ORG: What is like to have a headache?
+MATCH: Каково это — испытывать головную боль?
+
+BLOCK 62 (00:09:00.384 -> 00:09:10.705):
+ORG: Even if AI can correctly label the color as red, that doesn't mean there is inner experience of redness happening inside the system.
+MATCH: Даже если ИИ правильно обозначает цвет как красный, это ещё не значит, что внутри системы действительно происходит внутреннее переживание «красноты».
+
+BLOCK 63 (00:09:11.825 -> 00:09:19.159):
+ORG: And I will discuss the issue of, the qualia and these arguments that are very interesting in a bit.
+MATCH: И вопрос квалиа и эти очень интересные аргументы я чуть позже обсудю подробнее.
+
+BLOCK 64 (00:09:21.240 -> 00:09:27.639):
+ORG: Some philosophers argue that genuine understanding may be inseparable from the biological properties of brains.
+MATCH: Некоторые философы считают, что подлинное понимание может быть неотделимо от биологических свойств мозга.
+
+BLOCK 65 (00:09:28.394 -> 00:09:44.139):
+ORG: On this view, no matter how advanced computers become, replicating intelligence in silicon would miss some essential ingredients that are tied to living neural tissue that a computer chip does not have.
+MATCH: С этой точки зрения, какими бы продвинутыми ни становились компьютеры, воспроизведение интеллекта на кремнии упустит какие-то существенные ингредиенты, связанные с живой нервной тканью, которых у компьютерного чипа нет.
+
+BLOCK 66 (00:09:45.899 -> 00:09:53.500):
+ORG: There is also a counter analogy that challenges the idea that complexity alone is enough to create a mind, like with abiogenesis.
+MATCH: Есть и контраналогия, которая ставит под сомнение мысль, будто одной лишь сложности достаточно, чтобы возник разум, как в случае с абиогенезом.
+
+BLOCK 67 (00:09:54.059 -> 00:09:55.580):
+ORG: Think of a hurricane.
+MATCH: Подумайте об урагане.
+
+BLOCK 68 (00:09:56.214 -> 00:10:02.294):
+ORG: It's enormously complex with swirling dynamics, emergent patterns, even a distinct eye.
+MATCH: Он чрезвычайно сложен: вихревая динамика, эмерджентные паттерны, даже отчётливо выраженный «глаз».
+
+BLOCK 69 (00:10:02.774 -> 00:10:11.975):
+ORG: We also know that weather models are notoriously complex, and that's why you cannot know with sufficient certainty whether it's going to rain in a week from now or not.
+MATCH: Мы также знаем, что метеомодели печально известны своей сложностью, и именно поэтому нельзя с достаточной уверенностью сказать, пойдёт ли дождь через неделю или нет.
+
+BLOCK 70 (00:10:13.149 -> 00:10:18.350):
+ORG: Yet no one seriously claims that hurricane knows that it's a hurricane.
+MATCH: И всё же никто всерьёз не утверждает, что ураган «знает», что он ураган,
+
+BLOCK 71 (00:10:18.430 -> 00:10:18.949):
+ORG: Right?
+MATCH:  верно?
+
+BLOCK 72 (00:10:18.949 -> 00:10:24.670):
+ORG: So complexity may be necessary for understanding, but it's definitely not sufficient.
+MATCH: Так что сложность может быть необходимым условием понимания, но точно не достаточным.
+
+BLOCK 73 (00:10:25.144 -> 00:10:29.945):
+ORG: This is one of the core doubts raised against the emergence arguments of strong AI.
+MATCH: Это одно из ключевых сомнений, выдвигаемых против эмерджентистских аргументов в пользу сильного ИИ.
+
+BLOCK 74 (00:10:31.865 -> 00:10:35.225):
+ORG: So why does this distinction even matter?
+MATCH: Так почему это различие вообще важно?
+
+BLOCK 75 (00:10:35.865 -> 00:10:39.465):
+ORG: Well, the strong versus weak AI distinction is not just philosophical.
+MATCH: Дело в том, что различие между сильным и слабым ИИ — не просто философское.
+
+BLOCK 76 (00:10:39.750 -> 00:10:42.950):
+ORG: It has profound implications beyond philosophy.
+MATCH: Оно имеет глубокие последствия далеко за пределами философии.
+
+BLOCK 77 (00:10:43.350 -> 00:10:56.245):
+ORG: For example, in research goals, is the aim of AI to create tools to augment human intelligence with weak AI, or replicate or create genuine minds with strong AI.
+MATCH: Например, если говорить о целях исследований, то какова цель ИИ: создавать инструменты, которые усиливают человеческий интеллект с помощью слабого ИИ, или же воспроизводить либо создавать подлинные разумы с помощью сильного ИИ?
+
+BLOCK 78 (00:10:56.884 -> 00:11:00.004):
+ORG: The distinction is also important for ethical considerations.
+MATCH: Это различие важно и с этической точки зрения.
+
+BLOCK 79 (00:11:00.404 -> 00:11:11.419):
+ORG: If strong AI is possible, then creating such machines raise enormous ethical questions about their rights, their moral status, and our responsibilities towards them.
+MATCH: Если сильный ИИ возможен, то создание таких машин поднимает огромные этические вопросы об их правах, их моральном статусе и наших обязанностях по отношению к ним.
+
+BLOCK 80 (00:11:12.059 -> 00:11:16.299):
+ORG: These questions are less pressing if AI is merely a sophisticated tool.
+MATCH: Эти вопросы менее остры, если ИИ — всего лишь изощрённый инструмент.
+
+BLOCK 81 (00:11:17.179 -> 00:11:20.139):
+ORG: This will be the topic of the question three in this module.
+MATCH: Это будет темой третьего вопроса в этом модуле.
+
+BLOCK 82 (00:11:22.965 -> 00:11:31.764):
+ORG: Some philosophers like Daniel Dennett suggest that maybe we shouldn't obsess about whether AI has real understanding in some metaphysical sense.
+MATCH: Некоторые философы, например Дэниел Деннет, предполагают, что, возможно, нам не стоит зацикливаться на том, есть ли у ИИ «настоящее» понимание в каком-то метафизическом смысле.
+
+BLOCK 83 (00:11:32.085 -> 00:11:44.769):
+ORG: Instead, if a system behaves in ways that are best explained by treating it as if it has beliefs and intentions, then it is perfectly valid to adopt this stance, and this is called the intentional stance.
+MATCH: Вместо этого, если поведение системы лучше всего объясняется тем, что мы рассматриваем её так, будто у неё есть убеждения и намерения, то вполне оправданно занять такую позицию, и она называется интенциональной установкой.
+
+BLOCK 84 (00:11:45.490 -> 00:11:54.105):
+ORG: It is a pragmatic approach whether or not the machine truly has a mind might be less important than whether it consistently behaves like one.
+MATCH: Это прагматический подход.  
+Возможно, менее важно, есть ли у машины «ум» на самом деле, чем то, ведёт ли она себя последовательно так, как будто он у неё есть.
+
+BLOCK 85 (00:11:54.745 -> 00:12:03.865):
+ORG: For example, one can say that chess program wants to protect its queen, even though the program has no really inner mental life.
+MATCH: Например, можно сказать, что шахматная программа «хочет» защитить своего ферзя, хотя никакой внутренней психической жизни у программы нет.
+
+BLOCK 86 (00:12:04.264 -> 00:12:10.250):
+ORG: So the idea is focused on the predictive power, not just not on metaphysics.
+MATCH: Так что эта идея сосредоточена на предсказательной силе, а не на метафизике.
+
+BLOCK 87 (00:12:12.809 -> 00:12:17.370):
+ORG: So the idea is to focus on the predictive power and not on metaphysics.
+MATCH: Так что смысл в том, чтобы сосредоточиться на предсказательной силе, а не на метафизике.
+
+BLOCK 88 (00:12:17.370 -> 00:12:19.049):
+ORG: And here is a concrete example.
+MATCH: А вот конкретный пример.
+
+BLOCK 89 (00:12:19.370 -> 00:12:26.535):
+ORG: In a recent interview, OpenAI's Overs Tree model was asked about the biggest misconception people have about AI.
+MATCH: В недавнем интервью у модели OpenAI Overs Tree спросили о самом большом заблуждении людей об ИИ.
+
+BLOCK 90 (00:12:27.174 -> 00:12:33.014):
+ORG: Its answer was simple: that we think in the human sense of the word.
+MATCH: Ответ был прост: что мы думаем в человеческом смысле этого слова.
+
+BLOCK 91 (00:12:33.495 -> 00:12:41.309):
+ORG: Notice how the model uses first person language, but at the same time it openly denies having inner thoughts.
+MATCH: Обратите внимание, как модель использует язык от первого лица, но при этом открыто отрицает наличие внутренних мыслей.
+
+BLOCK 92 (00:12:42.669 -> 00:12:46.886):
+ORG: This highlights exactly what Dennett meant with intentional stance.
+MATCH: Это наглядно подчёркивает именно то, что Деннет имел в виду под интенциональной установкой.
+
+BLOCK 93 (00:12:46.886 -> 00:12:56.605):
+ORG: We can talk as if the system thinks, but what really matters is whether this stance helps us to predict and interact efficiently with the system.
+MATCH: Мы можем говорить так, будто система думает, но по-настоящему важно то, помогает ли такая установка нам предсказывать её поведение и эффективно взаимодействовать с системой.
+
+BLOCK 94 (00:12:57.644 -> 00:13:04.859):
+ORG: And by the way, the new Neural Nistra and Podcast from where the interview was taken is really interesting, so I can really recommend it.
+MATCH: И, кстати, новый Neural Nistra и подкаст, откуда было взято это интервью, действительно интересны, так что я могу их порекомендовать.
+
+BLOCK 95 (00:13:04.859 -> 00:13:08.240):
+ORG: This is not a commercial, that's just my private opinion.
+MATCH: Это не реклама, это просто моё личное мнение.
+
+BLOCK 96 (00:13:11.600 -> 00:13:19.279):
+ORG: So to conclude our discussion on this fundamental topic, we are left with a spectrum of powerful ideas as I presented before.
+MATCH: Итак, подводя итог нашему обсуждению этой фундаментальной темы, мы остаёмся с целым спектром мощных идей, как я уже показывал ранее.
+
+BLOCK 97 (00:13:20.174 -> 00:13:28.174):
+ORG: And ultimately, the debate between simulation and genuine understanding remains at the heart of AI philosophy.
+MATCH: И в конечном счёте спор между симуляцией и подлинным пониманием остаётся в самом центре философии ИИ.
+
+BLOCK 98 (00:13:28.495 -> 00:13:43.390):
+ORG: It hinges on whether computation alone is enough for meaning, or if there is something more than needed, like biological properties, or real world experience, or some grounding in the real world if this is also required.
+MATCH: Всё упирается в то, достаточно ли одного лишь вычисления для смысла, или нужно что-то ещё, например биологические свойства, опыт реального мира или какая-то укоренённость в реальном мире, если это тоже требуется.
+
+BLOCK 99 (00:13:43.710 -> 00:13:52.750):
+ORG: This forces us to look in the mirror and ask fundamental questions about our own intelligence and what it truly means to understand.
+MATCH: Это заставляет нас посмотреть в зеркало и задать фундаментальные вопросы о собственном интеллекте и о том, что на самом деле значит понимать.
+
+BLOCK 0 (00:00:00.160 -> 00:00:06.320):
+ORG: I'm excited to have you here, and I hope you find the material both informative and engaging so far.
+MATCH: I'm excited to have you here, and I hope you find the material both informative and engaging so far.
+
+BLOCK 1 (00:00:06.719 -> 00:00:15.834):
+ORG: As you go through the course, please keep in mind that your feedback is incredibly valuable because this is my first course, and I really want to know how you feel about it.
+MATCH: As you go through the course, please keep in mind that your feedback is incredibly valuable because this is my first course, and I really want to know how you feel about it.
+
+BLOCK 2 (00:00:15.834 -> 00:00:22.006):
+ORG: You think it will help me improve the content and it also guides future learners in making their decision.
+MATCH: I think it will help me improve the content and it also guides future learners in making their decision.
+
+BLOCK 3 (00:00:22.464 -> 00:00:28.384):
+ORG: Feel free to share your thoughts as you go, and don't hesitate to let me know if there is anything that needs clarification.
+MATCH: Feel free to share your thoughts as you go, and don't hesitate to let me know if there is anything that needs clarification.
+
+BLOCK 4 (00:00:28.864 -> 00:00:32.558):
+ORG: Thank you for being part of this course, and I'm looking forward to your feedback.
+MATCH: Thank you for being part of this course, and I'm looking forward to your feedback.
+

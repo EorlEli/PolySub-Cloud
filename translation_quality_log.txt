@@ -1381,3 +1381,126 @@ Evaluation Result:
   "reasoning": "V2 is the more accurate and fluent rendering of the source text. It preserves the meaning, tone, and structure of the original while read naturally in Russian. Notable strengths of V2 include precise phrasing of key ideas (e.g., shift from asking if a machine can think to how to build one; cognitive science and neuroscience as a blueprint for AI; cognitive architecture as a foundational blueprint), consistent terminology, and a smooth, formal register appropriate for an introductory module. The only potential nuance difference is the choice of some collocations (e.g., “выводы” vs “insights”) which remains a faithful rendering of the intended sense, and “Суть этой модели” is a clean equivalent of “This model is all about.” The closing line “Давайте начнём” adds natural, inclusive instruction, aligning with the instructional tone of the original.\n\nV1, while largely comprehensible, contains a grammatical flaw that diminishes its quality: “базового чертежа любого интеллектуального системы” is incorrect agreement; it should be “любой интеллектуальной системы.” This single error affects perceived accuracy and fluency. Additionally, some word choices (e.g., “меняем ракурс” vs “меняем перспективу”) are acceptable but slightly less natural for the exact context, and the final line “Начнём” feels more abrupt than the inclusive “Давайте начнём.” Overall, these issues prevent V1 from reaching V2’s level of native-like fluency and precision.}"
 }
 --------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-14 10:42:56
+Target Language: Russian
+Original Len: 4327 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is more faithful to the source and reads more naturally in Russian. Key improvements include: (1) terminology and precision — V2 consistently uses concepts closer to the source (чертежом for AI blueprint, ум instead of психика, фундаментальные компоненты, проход потока информации); (2) fluency and naturalness — V2 phrases flow more like a cohesive original text (например, «Проще говоря», «как эти компоненты организованы», «поток информации»); (3) nuance and tone — V2 preserves the formal, explanatory register and uses slightly more precise phrasing («теоретическая основа» vs «теоретическая рамка», «считает»/«функционирует» вместо «работает»); (4) consistency — V2 maintains a coherent analogy and structure throughout, including clearer distinctions between cognitive architecture, cognitive model, and algorithm. A few minor style points in V2 (e.g., предложенную фразу «эта система контуров обратной связи») are acceptable but could be polished further; overall V2 provides better accuracy, fluency, and terminology alignment than V1. In V1, there are occasional awkward phrasings (e.g., «каждая кирпичина»), slightly less natural tonal choices, and less precise terminology in places.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-14 11:07:58
+Target Language: Russian
+Original Len: 277 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more faithful and natural rendering overall. It preserves the source nuance more precisely: it uses дорожную карту for roadmap (literal and idiomatic in Russian contexts), and неуловимых for elusive (better matches the nuance). The phrase и с того фундаментального вопроса aligns with the source’s emphasis on a fundamental question. V2 also maintains a smoother, more formal tone appropriate to the philosophical subject. V1, while fluent, uses a slightly awkward phrasing (держа в голове этот план) and chooses базового вместо фундаментального, which weakens precision. It also uses ускользающих, which is an unusual collocation for concepts. Overall, V2 has higher accuracy, better terminology choice, and more natural Russian flow, yielding a higher score."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-14 11:11:29
+Target Language: German
+Original Len: 277 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more fluent and precise rendering. It preserves the meaning while delivering a smoother German that reads like an original text. Specific improvements: - Terminology: V2 uses «Konzepte» instead of «Begriffe», which is a more natural choice for philosophical content and aligns with the source's use of 'concepts'. - Fluency/flow: V2 uses «direkt am Anfang» rather than «ganz am Anfang», producing a crisperทร and more direct feel that matches the English source's immediacy. - Readability: V2 places the clause structure in a way that avoids the colon after «Anfang» in a somewhat awkward spot and uses punctuation that flows better into the core message. - Fidelity to nuance: Both versions convey the same essential meaning, but V2’s small substitutions (Direkt am Anfang, Konzepte) preserve nuance more idiomatically for German readers. The main remaining minor issue in V1 is the slightly less natural term choice and a punctuation/flow difference that makes it feel slightly more translated. Overall, V2 scores higher for accuracy, naturalness, and domain-appropriate terminology." 
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-14 11:16:05
+Target Language: Portuguese
+Original Len: 5053 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more natural, accurate, and consistent translation overall. Key improvements include: 1) Accuracy and wording: V2 fixes a less natural construction in V1 for the universal definition. It uses a clearer and more idiomatic phrase: 'a capacidade dos agentes de alcançar objetivos' rather than the less smooth 'a capacidade de agentes atingirem objetivos'. 2) Terminology and nuance: V2 opts for 'desafios de matemática' instead of 'enigmas de matemática', which better conveys challenges to solve in a formal context. 3) Consistency with European Portuguese: V2 consistently uses natural phrasing and register (for example, 'segundo uma certa definição funcional' vs the slightly more awkward 'numa certa definição funcional' in V1). 4) Flow and fluency: V2's sentences flow more like native prose, particularly in longer passages (e.g., the discussion of Turing, the functional view, and the adaptation/view sections). 5) Terminology alignment: both versions preserve core terms such as g-factor, functional view, and universal intelligence, but V2 refines surrounding phrasing to be more fluid and precise. 6) Minor drawback: in a clause about consciousness and subjective experience, V2 uses 'consciência, sentimentos ou experiência subjetiva' (plural 'sentimentos' with singular 'experiência subjetiva'), which is a small inconsistency with the rest of the list that could be improved (ideally 'sentimento' singular). Despite this minor issue, V2 provides a markedly better overall translation. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-14 11:18:48
+Target Language: English
+Original Len: 6882 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more accurate and fluent translation overall. Key improvements include: 1) faithful rendering of wording such as text-only interface and two hidden entities (V1 uses text only interface and two hidden participants, which is less faithful); 2) refined phrasing and punctuation in the opening and throughout (direct question vs asking directly; landmark 1950 paper formatting); 3) consistent and standard terminology (capitalization in the Chinese Room argument, proper use of problem-solving with hyphen, and refined references to the Total Turing Test); 4) improved readability and flow with natural connectives and punctuation (the right decision—the right identification; so, to wrap up); 5) better handling of examples and scholarly references (March 2025 paper formatting; ChatGPT 4.5 phrasing); 6) reduced translation artifacts, making the text read more like originally written English while preserving all nuances. Overall, V1 is understandable but contains several awkward phrasings and less consistent terminology that V2 corrects, leading to V2 earning a higher score. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-14 12:17:59
+Target Language: Portuguese
+Original Len: 4339 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 8,
+  "reasoning": "V2 apresenta maior fluidez e consistência terminológica na maior parte do texto, resultando em uma leitura mais natural em português. Exemplos de melhoria incluem: uso de uma formulação mais direta sobre o papel da arquitetura cognitiva na IA, melhoria de coesão ao descrever a relação entre componentes (estão organizados) e a expressão de planos/subjacentes (serve de plano para construir sistemas) em vez de termos menos específicos. A analogia com plantas de edifício permanece clara, e as distinções entre arquitetura, modelo cognitivo e algoritmo são articuladas com maior clareza (estrutura subjacente, capacidades cognitivas). Além disso, V2 tende a manter um tom mais formal e consistente em todo o texto, útil para um público acadêmico. No entanto, há falhas notáveis em V2: uma frase da comparação da cozinha está mal conectada gramaticalmente, gerando uma construção quebrada; além disso, o trecho inicial repete a escolha de por que/porque de modo que a versão mantém a escolha de por que, ainda que com a forma incorreta (ambas as versões possuem o problema). Há também pequenas inconsistências de pluralização que, embora menores, poderiam ser uniformizadas (por exemplo, a referência a mentes vs a mente). Em conjunto, as melhorias de V2 superam as falhas, tornando V2 a versão preferível, com uma nota ligeiramente superior a V1."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-14 12:35:14
+Target Language: Russian
+Original Len: 10974 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more fluent and accurate Russian rendering of the source. It improves on grammar, punctuation, and flow while preserving the original meaning and technical terminology. Specific improvements include:"
+  ,
+  "highlights": [
+    "Sharper opening: V2 uses a clearer phrasing of the core distinction and slightly tighter alignment with the source’s intent.",
+    "Terminology and precision: V2 explicitly presents AGI as (Artificial General Intelligence) and uses a more natural placement of this term; it also aligns references to LLMs more consistently (LLM vs LLMs) and improves noun-phrase construction in several places.",
+    "Syntactic polish: V2 generally reads more like an original Russian text than a translation, with better clause structuring (for example, smoother handling of long sentences and better connective phrasing).",
+    "Examples and explanations: V2 keeps the same concepts but renders some explanations more fluidly; the chess example and the grounding/semantics discussion flow more naturally."
+  ],
+  "minor_issues_in_both": [
+    "Both versions use the phrase о мокроте воды, which is somewhat awkward in standard Russian; a more natural choice would be о мокрости воды. This is a minor stylistic quirk in both translations.",
+    "A few technical nuances (such as pluralization of LLMs and certain phraseings like 'модель OpenAI Overs Tree' vs 'у модели OpenAI Overs Tree') could be tightened, but do not alter the overall meaning."
+  ]
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-15 07:36:06
+Target Language: English
+Original Len: 589 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 8,
+  "score_v2": 7,
+  "reasoning": "V1 is overall more faithful to the source in key areas and maintains a closer sense of hedging and self-reference. Specifically: \n- The core message about feedback being valuable and its role in improving content and guiding future learners is preserved with natural phrasing. In V1, the sentence becomes: “It helps me improve the content and also helps future learners decide whether it’s right for them,” which aligns with the intended function of feedback in the original.\n- V1 keeps the nuance of the author inviting ongoing input (“Feel free to share your thoughts along the way”) and the closing politeness, yielding a tone that sits well between formal and friendly.\n- V2 introduces a more significant shift in meaning by changing “you think it will help me improve the content” (the reader’s belief about the effect) to “I think it will help me improve the content” (the narrator’s belief). This alters who is attributed with the belief about usefulness, which reduces accuracy relative to the source.\n- Minor stylistic and grammatical differences in both translations exist, but V1’s changes are generally less intrusive to the source’s intent and overall message.\n\nOverall, both versions are fluent and usable, but V1 stays closer to the source’s meaning and hedging, making it the better translation." 
+}
+--------------------------------------------------
