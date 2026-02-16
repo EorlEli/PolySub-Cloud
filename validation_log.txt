@@ -999,3 +999,11 @@ apa...
 [2026-02-15 07:38:03] Video: temp_feedback_1.mp4 -> English
 ✅ VALIDATION PASSED
 ----------------------------------------
+[2026-02-15 15:34:38] Video: temp_1.3.4_f.mp4 -> Russian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (3):
+   - Cue 33 has 3 lines (Ideal is 2).
+   - Cue 110 is too fast (26.0 CPS). Text: Что это будет значить для
+чело...
+   - Found 1 blocks with CPS > 25.
+----------------------------------------

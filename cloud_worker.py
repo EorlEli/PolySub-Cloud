@@ -79,6 +79,14 @@ def main():
         
         print("✅ Job Completed Successfully.")
 
+        # 6. Cleanup Input File (Privacy/Cost)
+        try:
+            print(f"🗑️ Deleting input file {VIDEO_FILENAME} from {INPUT_BUCKET_NAME}...")
+            bucket.blob(VIDEO_FILENAME).delete()
+            print("✅ Input file deleted.")
+        except Exception as e:
+            print(f"⚠️ Failed to delete input file: {e}")
+
     except Exception as e:
         print(f"❌ Job Failed: {e}")
         doc_ref.update({

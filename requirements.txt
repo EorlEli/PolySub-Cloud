@@ -9,3 +9,4 @@ google-cloud-firestore
 
 ffmpeg-python
 deepgram-sdk
+google-cloud-run

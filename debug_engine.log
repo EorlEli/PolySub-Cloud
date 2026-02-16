@@ -26339,3 +26339,263 @@ BLOCK 4 (00:00:28.864 -> 00:00:32.558):
 ORG: Thank you for being part of this course, and I'm looking forward to your feedback.
 MATCH: Thank you for being part of this course, and I'm looking forward to your feedback.
 
+BLOCK 0 (00:00:01.439 -> 00:00:17.274):
+ORG: While these issues of bias, fairness, and control are pressing now, looking further ahead, the potential development of even more powerful AI systems raises even deeper questions about our long term future.
+MATCH: Хотя вопросы предвзятости, справедливости и контроля уже сейчас стоят остро, если заглянуть дальше, возможное появление ещё более мощных систем ИИ ставит перед нами куда более глубокие вопросы о нашем долгосрочном будущем.
+
+BLOCK 1 (00:00:18.554 -> 00:00:31.809):
+ORG: Let's consider the potentially transformative, even existential considerations raised by the prospect of developing artificial general intelligence and even artificial superintelligence.
+MATCH: Давайте рассмотрим потенциально преобразующие, а возможно и экзистенциальные вопросы, которые поднимает перспектива создания искусственного общего интеллекта и даже искусственного суперинтеллекта.  
+
+BLOCK 2 (00:00:32.369 -> 00:00:43.090):
+ORG: These long term questions about superintelligence and aligning AI with our values are speculative, but they are also a major focus in philosophy and computer science today.
+MATCH: Эти долгосрочные вопросы о суперинтеллекте и согласовании ИИ с нашими ценностями носят спекулятивный характер, но при этом сегодня они находятся в центре внимания философии и компьютерных наук.  
+
+BLOCK 3 (00:00:45.295 -> 00:00:48.015):
+ORG: First, what do we mean by these terms?
+MATCH: Для начала: что мы вообще понимаем под этими терминами?  
+
+BLOCK 4 (00:00:48.575 -> 00:00:51.854):
+ORG: We have already mentioned Artificial General Intelligence.
+MATCH: Мы уже упоминали искусственный общий интеллект.  
+
+BLOCK 5 (00:00:52.174 -> 00:01:05.459):
+ORG: It refers to AI with cognitive abilities broadly comparable to humans across a wide range of intellectual tasks, capable of learning, reasoning, and adapting in diverse environments.
+MATCH: Это ИИ, чьи когнитивные способности в целом сопоставимы с человеческими в широком спектре интеллектуальных задач, который умеет учиться, рассуждать и адаптироваться в самых разных средах.
+
+BLOCK 6 (00:01:05.780 -> 00:01:07.219):
+ORG: We are not there yet.
+MATCH: Мы до этого ещё не дошли.
+
+BLOCK 7 (00:01:08.099 -> 00:01:21.505):
+ORG: Artificial superintelligence, on the other hand, is defined by the philosopher Nick Bostrom as an intellect that greatly exceeds the cognitive performance of humans in virtually all domains of interest.
+MATCH: Искусственный суперинтеллект, напротив, философ Ник Бостром определяет как интеллект, который значительно превосходит когнитивные способности людей практически во всех значимых областях.  
+
+
+BLOCK 8 (00:01:23.120 -> 00:01:36.159):
+ORG: This could arise relatively quickly after AGI is achieved, potentially through recursive self-improvement, meaning an AI designing an ever better version of itself, leading to intelligence explosion.
+MATCH: Он может возникнуть довольно быстро после достижения ИОИ, потенциально за счёт рекурсивного самосовершенствования, то есть когда ИИ проектирует всё более совершенную версию самого себя, что ведёт к «взрыву интеллекта».
+
+BLOCK 9 (00:01:36.854 -> 00:01:41.174):
+ORG: Or maybe superintelligence could be achieved simply by massive scaling.
+MATCH: А может быть, суперинтеллекта удастся достичь просто за счёт масштабирования до гигантских размеров.
+
+BLOCK 10 (00:01:41.734 -> 00:01:54.520):
+ORG: The arrival of superintelligence, if it happens, would represent a unique transition in Earth's history: the emergence of a form of intelligence potentially far greater than our own.
+MATCH: Появление суперинтеллекта, если оно произойдёт, станет уникальным переломом в истории Земли.  
+Это будет возникновение формы разума, потенциально намного превосходящей нашу.
+
+BLOCK 11 (00:01:56.359 -> 00:02:05.079):
+ORG: Here lies perhaps the most critical challenge associated with artificial general intelligence and artificial superintelligence: the value alignment problem.
+MATCH: И здесь, пожалуй, находится самая критическая проблема, связанная с искусственным общим интеллектом и искусственным суперинтеллектом.
+Это проблема согласования ценностей.
+
+BLOCK 12 (00:02:05.775 -> 00:02:15.694):
+ORG: How do we ensure that highly intelligent autonomous systems pursue goals that are beneficial or at least not catastrophic for humanity?
+MATCH: Как нам обеспечить, чтобы высокоинтеллектуальные автономные системы преследовали цели, полезные для человечества или хотя бы не катастрофические для него?
+
+BLOCK 13 (00:02:16.335 -> 00:02:33.729):
+ORG: How do we specify complex nuanced human values like well-being, fairness, compassion, flourishing in ways that an AI system can understand, adopt, and reliably act upon, especially if it starts modifying its own code?
+MATCH: Как задать сложные, тонкие человеческие ценности, такие как благополучие, справедливость, сострадание, процветание, так, чтобы система ИИ могла их понять, принять и надёжно в соответствии с ними действовать, особенно если она начнёт менять собственный код?
+
+BLOCK 14 (00:02:34.585 -> 00:02:38.905):
+ORG: This is extraordinarily difficult for a few key reasons.
+MATCH: Это чрезвычайно трудно по нескольким ключевым причинам.
+
+BLOCK 15 (00:02:39.385 -> 00:02:45.145):
+ORG: First, human values are complex, often implicit or even contradictory.
+MATCH: Во-первых, человеческие ценности сложны, часто неявны и даже противоречивы.
+
+BLOCK 16 (00:02:45.305 -> 00:02:47.705):
+ORG: We struggle to define them by ourselves.
+MATCH: Нам самим трудно их чётко сформулировать.
+
+BLOCK 17 (00:02:48.830 -> 00:02:52.750):
+ORG: Second, specifying goals in the code is very tricky.
+MATCH: Во-вторых, прописывать цели в коде очень непросто.
+
+BLOCK 18 (00:02:53.389 -> 00:02:56.056):
+ORG: Third, whose values do we choose?
+MATCH: В-третьих, чьи именно ценности мы выбираем?
+
+BLOCK 19 (00:02:56.056 -> 00:02:56.431):
+ORG: Right?
+MATCH: Правда?
+
+BLOCK 20 (00:02:56.431 -> 00:03:01.745):
+ORG: As we already thought, different cultures and different people have different values.
+MATCH: Как мы уже отмечали, у разных культур и разных людей ценности различаются.
+
+BLOCK 21 (00:03:02.724 -> 00:03:11.284):
+ORG: And finally, is value drift: how do we ensure that AI's values stay aligned with ours as it learns and evolves?
+MATCH: И наконец, есть дрейф ценностей.
+Как гарантировать, что ценности ИИ будут оставаться согласованными с нашими по мере того, как он учится и развивается?
+
+BLOCK 22 (00:03:13.685 -> 00:03:23.650):
+ORG: And then there is an issue of orthogonality thesis: A superintelligence could be increasingly smart but pursue goals that are hostile to human existence.
+MATCH: И ещё есть вопрос о тезисе ортогональности.
+Суперинтеллект может становиться всё умнее, но при этом преследовать цели, враждебные человеческому существованию.
+
+BLOCK 23 (00:03:24.049 -> 00:03:36.165):
+ORG: It doesn't need to be evil in a human sense simply having goals that conflict with our survival or well-being could be catastrophic if it possesses vastly superior capabilities.
+MATCH: ствованию.  
+Ему не обязательно быть «злым» в человеческом смысле.  
+Одно лишь наличие целей, которые конфликтуют с нашим выживанием или благополучием, может оказаться катастрофическим, если у него будут несоизмеримо превосходящие возможности.
+
+BLOCK 24 (00:03:38.325 -> 00:03:45.284):
+ORG: The potential combination of superintelligence and misaligned values leads directly to discussions of existential risks.
+MATCH: Потенциальное сочетание суперинтеллекта и несогласованных ценностей напрямую выводит нас на разговор об экзистенциальных рисках.
+
+BLOCK 25 (00:03:46.099 -> 00:03:53.860):
+ORG: Risks that threaten the extinction of Earth-originating intelligent life, or risk of permanently curtailing its potential.
+MATCH: О рисках, которые грозят исчезновением разумной жизни земного происхождения или рисках навсегда необратимо ограничить её потенциал.
+
+BLOCK 26 (00:03:54.659 -> 00:04:06.605):
+ORG: Unaligned superintelligence is considered by many researchers and philosophers to be one of the most significant potential existential risks humanity faces in the long term.
+MATCH: Несогласованный суперинтеллект многие исследователи и философы считают одним из самых серьёзных потенциальных экзистенциальных рисков, с которыми человечество может столкнуться в долгосрочной перспективе.  
+
+BLOCK 27 (00:04:07.164 -> 00:04:07.996):
+ORG: Why is that?
+MATCH: Почему?  
+
+BLOCK 28 (00:04:07.996 -> 00:04:20.750):
+ORG: Well, because a superintelligent entity with conflicting goals and superior strategic abilities could potentially outmaneuver humanity exactly as humanity did to animals.
+MATCH: Потому что суперинтеллектуальная сущность с конфликтующими целями и превосходными стратегическими способностями потенциально может обойти человечество так же, как человечество обошло животных.
+
+BLOCK 29 (00:04:21.470 -> 00:04:28.829):
+ORG: This entity will reshape the world to achieve its objectives, viewing us as obstacles or just irrelevant resources.
+MATCH: Она будет перестраивать мир под свои задачи, рассматривая нас как препятствия или просто как несущественные ресурсы.
+
+BLOCK 30 (00:04:31.045 -> 00:04:35.125):
+ORG: And this is also linked to the control problems that we just have discussed.
+MATCH: И это также связано с проблемами контроля, о которых мы только что говорили.
+
+BLOCK 31 (00:04:35.524 -> 00:04:42.884):
+ORG: How could humans maintain meaningful control over an entity far more intelligent than ourselves?
+MATCH: Как людям сохранить реальный контроль над сущностью, которая намного умнее нас?
+
+BLOCK 32 (00:04:43.930 -> 00:04:53.129):
+ORG: Standard methods of containment or just switching off might be easily circumvented by sufficiently advanced superintelligence.
+MATCH: Стандартные методы изоляции или простое «выключить» могут быть легко обойдены достаточно развитым суперинтеллектом.
+
+BLOCK 33 (00:04:54.250 -> 00:05:07.535):
+ORG: It's an unresolved technical and philosophical challenge: how do we ensure that a superintelligent entity remains beneficial and controllable even as its capabilities vastly exceeds our own?
+MATCH: Это остаётся нерешённой технической и философской задачей: как обеспечить, чтобы суперинтеллектуальная сущность оставалась полезной и управляемой, даже когда её возможности многократно превзойдут наши?
+
+BLOCK 34 (00:05:10.560 -> 00:05:18.560):
+ORG: While the alignment problem is often presented in abstract terms, researchers are actively developing methods to address it.
+MATCH: Хотя проблему согласования часто формулируют в абстрактных терминах, исследователи активно разрабатывают методы её решения.
+
+BLOCK 35 (00:05:19.120 -> 00:05:33.785):
+ORG: Some approaches focus on learning human values and preferences, for example through Reinforcement Learning from Human Feedback  or Reward Modeling, which allows systems to be trained on human judgments.
+MATCH: Часть подходов нацелена на обучение человеческим ценностям и предпочтениям — например, через обучение с подкреплением на основе обратной связи от людей (Reinforcement Learning from Human Feedback) или моделирование вознаграждения (Reward Modeling), что позволяет обучать системы на человеческих оценках.
+
+BLOCK 36 (00:05:34.584 -> 00:05:43.250):
+ORG: Others emphasize interpretability and transparency, developing tools that make neural network decisions more understandable to humans.
+MATCH: Другие делают упор на интерпретируемость и прозрачность, разрабатывая инструменты, которые делают решения нейросетей более понятными для людей.
+
+BLOCK 37 (00:05:44.129 -> 00:05:56.014):
+ORG: A further line of work studies robustness and adversarial testing, ensuring that AI systems do not exploit loopholes or behave unpredictably when conditions change.
+MATCH: Ещё одно направление изучает надёжность и состязательное тестирование, чтобы ИИ-системы не использовали лазейки и не вели себя непредсказуемо при изменении условий.
+
+BLOCK 38 (00:05:56.975 -> 00:06:07.055):
+ORG: More formal strategies involve verification and constraint-based design, where AI systems are mathematically proven to respect certain safety properties.
+MATCH: Более формальные стратегии включают верификацию и проектирование на основе ограничений, когда математически доказывается, что ИИ-системы соблюдают определённые свойства безопасности.
+
+BLOCK 39 (00:06:08.319 -> 00:06:22.479):
+ORG: Finally, scalable oversight research, like for example by a European data protection supervisor, explores how humans can supervise increasingly complex systems without needing to check every single detail.
+MATCH: Наконец, исследования масштабируемого надзора — например, проводимые европейским надзорным органом по защите данных — рассматривают, как людям контролировать всё более сложные системы, не проверяя каждую мелочь.
+
+BLOCK 40 (00:06:27.595 -> 00:06:42.339):
+ORG: And then, even if alignment and control are somehow managed, the advent of AGI or ASI raises profound questions about our own future.
+MATCH: И даже если проблему согласования и контроля удастся как-то решить, появление AGI или ASI ставит глубокие вопросы о нашем собственном будущем.
+
+BLOCK 41 (00:06:43.060 -> 00:06:51.620):
+ORG: What is the role of human labor, creativity, and purpose in a world where AI can outperform us in most domains?
+MATCH: Какова будет роль человеческого труда, творчества и смысла в мире, где ИИ превосходит нас в большинстве областей?  
+
+BLOCK 42 (00:06:52.605 -> 00:06:56.045):
+ORG: How would our economies and societies restructure?
+MATCH: Как перестроятся наши экономики и общества?
+
+BLOCK 43 (00:06:56.764 -> 00:07:01.405):
+ORG: Will the future involve merging with AI, some sort of transhumanism?
+MATCH: Будет ли будущее связано со слиянием с ИИ — каким-то вариантом трансгуманизма?  
+
+BLOCK 44 (00:07:01.564 -> 00:07:03.564):
+ORG: What does it mean for human identity?
+MATCH: Что это будет значить для человеческой идентичности?
+
+BLOCK 45 (00:07:05.110 -> 00:07:17.669):
+ORG: Developing Artificial General Intelligence or Artificial Superintelligence in a safe way seems to require quite a high level of global cooperation and governance to manage the risks collectively.
+MATCH: Похоже, что безопасная разработка искусственного общего интеллекта или искусственного суперинтеллекта требует очень высокого уровня глобального сотрудничества и управления, чтобы совместно контролировать риски.
+
+BLOCK 46 (00:07:18.425 -> 00:07:24.105):
+ORG: Given how geopolitically our world is split right now, can humanity achieve this?
+MATCH: Учитывая, насколько сейчас мир геополитически расколот, сможет ли человечество этого добиться?  
+
+BLOCK 47 (00:07:24.665 -> 00:07:25.545):
+ORG: I don't know.
+MATCH: Не знаю.
+
+BLOCK 48 (00:07:26.504 -> 00:07:40.000):
+ORG: And then if we create artificial general intelligence or superintelligence, the question we asked earlier about machine consciousness suddenly become pressing with ethical implications for how we treat such entities.
+MATCH: И затем, если мы создадим искусственный общий интеллект или суперинтеллект, вопрос, который мы задавали раньше о машинном сознании, внезапно станет острым — с этическими последствиями для того, как мы будем относиться к таким сущностям.
+
+BLOCK 49 (00:07:41.439 -> 00:07:48.399):
+ORG: The timelines for artificial general intelligence or artificial superintelligence are highly uncertain and debated.
+MATCH: Сроки появления искусственного общего интеллекта или искусственного суперинтеллекта крайне неопределённы и остаются предметом споров.
+
+BLOCK 50 (00:07:49.024 -> 00:07:57.584):
+ORG: Some experts believe it could be decades away, or centuries, and some are skeptical it will ever be achieved with current paradigms.
+MATCH: Некоторые эксперты считают, что до этого могут пройти десятилетия или даже столетия, а некоторые скептически относятся к тому, что этого вообще удастся достичь в рамках нынешних парадигм.
+
+BLOCK 51 (00:07:58.144 -> 00:08:06.129):
+ORG: Some also argue that existential risk is overstated or this risk is based on flawed assumptions.
+MATCH: Некоторые также утверждают, что экзистенциальный риск преувеличен или что этот риск основан на ошибочных предпосылках.
+
+BLOCK 52 (00:08:06.449 -> 00:08:18.715):
+ORG: Nonetheless, given the potential stakes, many argue that serious research into AI safety and alignment should be done right now, even if superintelligence is still distant.
+MATCH: Тем не менее, учитывая возможные ставки, многие считают, что серьёзные исследования безопасности ИИ и согласования нужно вести уже сейчас, даже если суперинтеллект пока далёк.
+
+BLOCK 53 (00:08:19.194 -> 00:08:29.995):
+ORG: Beyond different expert predictions, there is also a deeper philosophical problem: how can we meaningfully reason about technologies that do not exist yet?
+MATCH: Помимо разных экспертных прогнозов есть и более глубокая философская проблема: как вообще осмысленно рассуждать о технологиях, которых ещё не существует?  
+
+BLOCK 54 (00:08:30.839 -> 00:08:47.024):
+ORG: Forecasting the trajectory of intelligence, society, or values decades into the future involves profound uncertainty, unknown unknowns, and the possibility of radical discontinuities, a qualitative jump.
+MATCH: Прогнозирование траектории развития интеллекта, общества или ценностей на десятилетия вперёд связано с глубокой неопределённостью, «неизвестными неизвестными» и возможностью радикальных разрывов — качественного скачка.
+
+BLOCK 55 (00:08:48.304 -> 00:09:04.419):
+ORG: This epistemic challenge does not invalidate discussion, of course, but it reminds us that claims about artificial general intelligence, let alone artificial superintelligence, must be approached with humility and a recognition of their speculative basis.
+MATCH: Эта эпистемическая трудность, конечно, не делает обсуждение бессмысленным, но напоминает нам, что к утверждениям об искусственном общем интеллекте, а тем более об искусственном суперинтеллекте, нужно подходить смиренно и помнить об их спекулятивной основе.  
+
+
+BLOCK 56 (00:09:04.579 -> 00:09:08.500):
+ORG:  we have reached the middle point of the course.
+MATCH: Мы дошли до середины курса.
+
+BLOCK 57 (00:09:08.819 -> 00:09:09.620):
+ORG: Well done!
+MATCH: Отличная работа!
+
+BLOCK 58 (00:09:10.019 -> 00:09:14.517):
+ORG: I would like again to remind you to rate this course and provide me your feedback.
+MATCH: Я ещё раз хочу попросить вас оценить этот курс и оставить мне отзыв.
+
+BLOCK 59 (00:09:14.517 -> 00:09:20.990):
+ORG: It's very valuable to me because, as I said, this is my first course, and I really want to know how you feel about it.
+MATCH: Для меня это очень важно, потому что, как я говорил, это мой первый курс, и мне действительно хочется понять, какие у вас впечатления.
+
+BLOCK 60 (00:09:20.990 -> 00:09:26.804):
+ORG: You feel it will help me improve the content, and it also guides future learners in making their decision.
+MATCH: Вы чувствуете, что это поможет мне улучшить содержание, а также поможет будущим слушателям принять решение.  
+
+BLOCK 61 (00:09:27.610 -> 00:09:33.210):
+ORG: Please engage in discussion, and don't hesitate to let me know if anything needs clarification.
+MATCH: Пожалуйста, участвуйте в обсуждениях и не стесняйтесь писать, если что-то нужно уточнить.
+
+BLOCK 62 (00:09:33.769 -> 00:09:38.009):
+ORG: Thank you again for being part of this course, and I'm looking forward to your feedback.
+MATCH: Ещё раз спасибо, что вы с этим курсом, и я буду ждать ваш отзыв.
+

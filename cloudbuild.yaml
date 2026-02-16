@@ -21,6 +21,8 @@ steps:
       - "gcr.io/$PROJECT_ID/polysub-worker"
       - "--region"
       - "europe-north1" # Finland (Best for Sweden)
+      - "--task-timeout"
+      - "3600s" # 1 hour timeout for video processing
 
 images:
   - "gcr.io/$PROJECT_ID/polysub-worker"

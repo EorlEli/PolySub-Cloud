@@ -132,16 +132,20 @@
             </select>
 
             <div style="margin-bottom: 1.5rem; text-align: left; display: flex; align-items: center; gap: 0.5rem;">
-                <input type="checkbox" id="useCorrection" checked style="width: auto; margin-right: 8px;">
+                <!-- <input type="checkbox" id="useCorrection" checked style="width: auto; margin-right: 8px;">
                 <label for="useCorrection" style="color: #64748b; font-size: 0.95rem; cursor: pointer;">
                     Enable AI Transcription Correction (Slower but more accurate)
-                </label>
+                </label> -->
             </div>
 
-            <button type="submit" id="btn">Start Processing</button>
+            <div style="display: flex; gap: 10px;">
+                <!-- <button type="button" id="btnLocal" style="background: #64748b;">Process Locally</button> -->
+                <button type="submit" id="btnCloud">☁️ Process in Cloud</button>
+            </div>
         </form>
 
         <div id="status"></div>
+        <div id="downloadLinks" style="margin-top: 1rem; display: none;"></div>
     </div>
 
     <script>
@@ -150,7 +154,9 @@
         const fileNameDisplay = document.getElementById('fileName');
         const form = document.getElementById('uploadForm');
         const statusDiv = document.getElementById('status');
-        const btn = document.getElementById('btn');
+        const downloadLinksDiv = document.getElementById('downloadLinks');
+        const btnCloud = document.getElementById('btnCloud');
+        // const btnLocal = document.getElementById('btnLocal');
 
         // Visual feedback when file is selected
         fileInput.addEventListener('change', () => {
@@ -160,56 +166,92 @@
             }
         });
 
+        // POLLING FUNCTION
+        async function pollStatus(jobId) {
+            const interval = setInterval(async () => {
+                try {
+                    const res = await fetch(`/check_status/${jobId}`);
+                    const data = await res.json();
+
+                    if (data.status === 'processing' || data.status === 'queued') {
+                        statusDiv.innerText = `⏳ Status: ${data.status.toUpperCase()}... Please wait.`;
+                        statusDiv.className = 'loading';
+                    } else if (data.status === 'done') {
+                        clearInterval(interval);
+                        statusDiv.innerText = "✅ Processing Complete!";
+                        statusDiv.style.background = "#dcfce7";
+                        statusDiv.style.color = "#15803d";
+                        btnCloud.disabled = false;
+                        btnCloud.innerText = "☁️ Process in Cloud";
+
+                        // Show Links
+                        downloadLinksDiv.style.display = 'block';
+                        downloadLinksDiv.innerHTML = '<h3>⬇️ Download Results:</h3>';
+                        
+                        for (const [key, url] of Object.entries(data.download_links)) {
+                            const link = document.createElement('a');
+                            link.href = url;
+                            link.innerText = `Download ${key}`;
+                            link.target = '_blank';
+                            link.style.display = 'block';
+                            link.style.margin = '0.5rem 0';
+                            link.style.color = '#6366f1';
+                            downloadLinksDiv.appendChild(link);
+                        }
+
+                    } else if (data.status === 'error') {
+                        clearInterval(interval);
+                        throw new Error(data.error || 'Unknown Error');
+                    }
+
+                } catch (error) {
+                    clearInterval(interval);
+                    statusDiv.className = 'error';
+                    statusDiv.innerText = "❌ Error: " + error.message;
+                    btnCloud.disabled = false;
+                    btnCloud.innerText = "☁️ Process in Cloud";
+                }
+            }, 3000); // Check every 3 seconds
+        }
+
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             if (!fileInput.files[0]) return alert("Please select a video file!");
 
             // UI Loading State
-            btn.disabled = true;
-            btn.innerText = "Extracting & Translating... (This takes time)";
+            btnCloud.disabled = true;
+            btnCloud.innerText = "🚀 Starting Cloud Job...";
             statusDiv.style.display = 'block';
             statusDiv.className = 'loading';
-            statusDiv.innerText = "⏳ Uploading video and processing... Please wait.";
+            statusDiv.innerText = "📤 Uploading Video...";
+            downloadLinksDiv.style.display = 'none';
 
             const formData = new FormData();
             formData.append('video_file', fileInput.files[0]);
             formData.append('target_language', document.getElementById('language').value);
-            formData.append('use_correction', document.getElementById('useCorrection').checked);
 
             try {
-                const response = await fetch('/process_video/', { method: 'POST', body: formData });
+                // 1. Trigger Cloud Job
+                const response = await fetch('/trigger_cloud_job/', { method: 'POST', body: formData });
 
                 if (!response.ok) {
                     const err = await response.json();
                     throw new Error(err.detail || 'Server Error');
                 }
 
-                // Download File
-                const blob = await response.blob();
-                const url = window.URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                // Get filename from header or default
-                const header = response.headers.get('Content-Disposition');
-                let filename = "subtitles.vtt";
-                if (header && header.indexOf('filename=') !== -1) {
-                    filename = header.split('filename=')[1].replace(/"/g, '');
-                }
-                a.download = filename;
-                document.body.appendChild(a);
-                a.click();
-                a.remove();
+                const data = await response.json();
+                const jobId = data.job_id;
 
-                statusDiv.innerText = "✅ Done! Download started.";
-                statusDiv.style.background = "#dcfce7";
-                statusDiv.style.color = "#15803d";
+                statusDiv.innerText = `✅ Uploaded! Job ID: ${jobId.substring(0, 8)}... Waiting for Cloud Run.`;
+                
+                // 2. Start Polling
+                pollStatus(jobId);
 
             } catch (error) {
                 statusDiv.className = 'error';
                 statusDiv.innerText = "❌ Error: " + error.message;
-            } finally {
-                btn.disabled = false;
-                btn.innerText = "Start Processing";
+                btnCloud.disabled = false;
+                btnCloud.innerText = "☁️ Process in Cloud";
             }
         });
     </script>
