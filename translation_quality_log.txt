@@ -1517,3 +1517,31 @@ Evaluation Result:
   "score_v2": 9,
   "reasoning": "V2 is definitively better. Key improvements include:\n- Accuracy: V2 eliminates a notable accuracy flaw present in V1 where an English phrase (Earth-originating intelligent life) remained untranslated or awkwardly rendered. V2 renders this concept as разумной жизни земного происхождения, which faithfully mirrors the source meaning. \n- Faithfulness to nuance: V2 tends to preserve the original’s logical structure and nuance more closely (e.g., splitting long sentences to reflect emphasis in the source, such as the transition around the potential arrival of superintelligence and the associated existential risks).\n- Orthogonality and control issues: V2 explicitly introduces and translates the term тезис ортогональности, aligning with the source’s conceptual emphasis, whereas V1 treats these topics more flattenly within the surrounding prose.\n- Terminology and phrasing: V2 consistently uses natural, domain-appropriate Russian, e.g., replacing awkward phrases with smoother equivalents (помощью обучения с подкреплением на основе обратной связи от людей and Reward Modeling is rendered clearly; интерпретируемость and прозрачность are described as tools to help humans understand decisions). It also corrects a number of small stylistic issues (e.g., replacing “на них опираться” with “держать их в отношении/в соответствии с ними действовать,” and using “риск навсегда необратимо ограничить её потенциал” for accuracy).\n- Readability and tone: V2’s punctuation and sentence segmentation yield a more fluent, native-sounding Russian text. It divides some long sentences into separate clauses, improving clarity without losing meaning.\n\nIn short, V2 fixes an accuracy lapse present in V1, enhances fidelity to the source’s nuance, and delivers a more fluent and natural Russian text while preserving the formal, academic tone."}
 --------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-17 20:54:29
+Target Language: Russian
+Original Len: 7754 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 8,
+  "score_v2": 9,
+  "reasoning": "V2 is the more fluent and precise translation overall. Key improvements include:\n- Accuracy and nuance: V2 updates terminology for recurring billing to a more natural phrasing in Russian («регулярное выставление счетов для подписок») vs V1’s «регулярные списания для подписок», which reads as slightly less precise.\n- Fluency and readability: V2 smooths several passages and uses more native Russian rhythm (e.g., «Вот простая схема того, как Stripe на самом деле работает» vs V1’s «за кулисами»), providing a more seamless flow.\n- Tone and register: V2 maintains a consistent formal-business tone throughout, aligning well with the source’s informative, instructional style.\n- Terminology consistency: V2 tends to use uniformly formal terms (например, «регулярное выставление счетов», «банкинг как сервис», « Stripe Issuing») and adds clarifying lines (e.g., «Вам не придётся беспокоиться о конвертации валют и международных способах оплаты») that reflect the source more faithfully.\n- Grammar and punctuation: minor refinements in V2 improve punctuation, sentence boundaries, and coherence (e.g., splitting sentences for clarity, avoiding overly long runs). For instance, V2 rephrases the end section to a slightly tighter, more natural close.\n\nOverall, V2 preserves the meaning with fewer potential ambiguities, reads more like native Russian, and better preserves the source’s formal, informational tone. Therefore, V2 is the better translation. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-20 23:52:34
+Target Language: Russian
+Original Len: 14490 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is clearly the more natural and faithful Russian rendering of the source. Key improvements include: (1) Fluency and idiomatic Russian — phrases such as two bedrooms, one bath described as a setup for friends’ envy are rendered more naturally in V2 (два спальни, один санузел — друзья тебя возненавидят). (2) Accurate handling of the slang/idiom — the line about the blind date being called a setup is rendered as подставой in V2, which sounds more colloquial and faithful than the V1 approach. (3) Tone and register — Gordon Lightfoot reference is expressed as Obожаю голос Гордона Лайтфута in V2, a smoother, more natural phrasing; the ship references Edmund Fitzgerald and Andrea Doria are preserved with appropriate explanations. (4) Terminology and phrasing consistency — terms like vasectomy, mail transfer, and eight bags of mail are translated with standard Russian equivalents and natural syntax, e.g., eight bags, Hawaii transfer, почтовые мешки, переводы на Гавайи. (5) Grammar and polish — V2 tends to use more natural verb choices and punctuation, contributing to a more native-sounding/dialogue flow (for example, Я ухожу, У нас кабинка, Срок годности не указан — Теперь указан). While both versions convey the same content, V2 reads more like a native Russian script and preserves nuance more faithfully, hence the higher score. Minor quibbles remain possible in any translation (e.g., occasional line-break choices), but they do not outweigh the overall quality advantage of V2."
+}
+--------------------------------------------------

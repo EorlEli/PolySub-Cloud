@@ -124,8 +124,6 @@ async def trigger_cloud_job(
             raise Exception(f"Bucket {INPUT_BUCKET} not found.")
 
         blob = bucket.blob(safe_filename)
-        print(blob)
-        
         # Rewind file just in case
         await video_file.seek(0)
         

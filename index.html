@@ -139,7 +139,7 @@
             </div>
 
             <div style="display: flex; gap: 10px;">
-                <!-- <button type="button" id="btnLocal" style="background: #64748b;">Process Locally</button> -->
+                <button type="button" id="btnLocal" style="background: #64748b;">Process Locally</button>
                 <button type="submit" id="btnCloud">☁️ Process in Cloud</button>
             </div>
         </form>
@@ -156,7 +156,7 @@
         const statusDiv = document.getElementById('status');
         const downloadLinksDiv = document.getElementById('downloadLinks');
         const btnCloud = document.getElementById('btnCloud');
-        // const btnLocal = document.getElementById('btnLocal');
+        const btnLocal = document.getElementById('btnLocal');
 
         // Visual feedback when file is selected
         fileInput.addEventListener('change', () => {
@@ -187,7 +187,7 @@
                         // Show Links
                         downloadLinksDiv.style.display = 'block';
                         downloadLinksDiv.innerHTML = '<h3>⬇️ Download Results:</h3>';
-                        
+
                         for (const [key, url] of Object.entries(data.download_links)) {
                             const link = document.createElement('a');
                             link.href = url;
@@ -213,6 +213,58 @@
                 }
             }, 3000); // Check every 3 seconds
         }
+
+        async function handleLocalProcessing() {
+            if (!fileInput.files[0]) return alert("Please select a video file!");
+
+            // UI Loading State
+            btnLocal.disabled = true;
+            btnLocal.innerText = "⏳ Processing Locally...";
+            statusDiv.style.display = 'block';
+            statusDiv.className = 'loading';
+            statusDiv.innerText = "⚙️ Processing video locally... This may take a while.";
+            downloadLinksDiv.style.display = 'none';
+
+            const formData = new FormData();
+            formData.append('video_file', fileInput.files[0]);
+            formData.append('target_language', document.getElementById('language').value);
+            formData.append('use_correction', 'true'); // Defaulting to true as per form
+
+            try {
+                const response = await fetch('/process_video/', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    const err = await response.json();
+                    throw new Error(err.detail || 'Server Error');
+                }
+
+                // File download handling
+                const blob = await response.blob();
+                const downloadUrl = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = downloadUrl;
+                a.download = "processed_video.zip"; // Default filename
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+
+                statusDiv.innerText = "✅ Local Processing Complete! Download started.";
+                statusDiv.style.background = "#dcfce7";
+                statusDiv.style.color = "#15803d";
+
+            } catch (error) {
+                statusDiv.className = 'error';
+                statusDiv.innerText = "❌ Error: " + error.message;
+            } finally {
+                btnLocal.disabled = false;
+                btnLocal.innerText = "Process Locally";
+            }
+        }
+
+        btnLocal.addEventListener('click', handleLocalProcessing);
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -243,7 +295,7 @@
                 const jobId = data.job_id;
 
                 statusDiv.innerText = `✅ Uploaded! Job ID: ${jobId.substring(0, 8)}... Waiting for Cloud Run.`;
-                
+
                 // 2. Start Polling
                 pollStatus(jobId);
 
