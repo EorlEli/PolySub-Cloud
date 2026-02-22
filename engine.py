@@ -37,6 +37,15 @@ def run_alignment_engine(blocks, full_target_text):
 
         matched_text = find_matching_translation(original_language_block_text, target_language_search_window, context_preview, next_block_text)
         
+        # --- PRE-VERIFY MATCH: PREVENT LARGE JUMPS ---
+        if matched_text:
+            found_idx = target_language_search_window.find(matched_text)
+            # If the match skips too much text, it's likely a future occurrence of a repeated word.
+            MAX_GAP = max(40, len(original_language_block_text) * 1.5)
+            if found_idx > MAX_GAP:
+                print(f"   ⚠️ [Block {i+1}] Match '{matched_text}' found but skips {found_idx} chars (Max allowed: {MAX_GAP}). Rejecting match to prevent misalignment.")
+                matched_text = ""
+
         print(f"   [DEBUG_ENGINE] Block {i} Input: '{original_language_block_text[:30]}...'")
         print(f"   [DEBUG_ENGINE] Block {i} Match: '{matched_text}'")
         with open("debug_engine.log", "a", encoding="utf-8") as log:

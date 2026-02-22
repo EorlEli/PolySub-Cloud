@@ -80,6 +80,8 @@ def find_matching_translation(original_language_block_text, target_language_sear
                 
             result_json = json.loads(content)
             matched_text = result_json.get("target_language_substring", "")
+            if matched_text:
+                matched_text = matched_text.replace('\x00', '')
 
             # RETRY LOGIC: If AI returns empty string, try again.
             if not matched_text.strip():

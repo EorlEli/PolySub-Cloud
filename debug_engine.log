@@ -27283,3 +27283,924 @@ BLOCK 97 (00:04:18.980 -> 00:04:20.740):
 ORG: There is now.
 MATCH: Это он.
 
+BLOCK 0 (00:01:45.465 -> 00:01:46.551):
+ORG: Where is your key?
+MATCH: Где твой ключ?
+
+BLOCK 1 (00:01:46.551 -> 00:01:46.853):
+ORG: Yeah.
+MATCH: 
+
+BLOCK 2 (00:01:46.853 -> 00:01:48.723):
+ORG: Well, Newman, he's he's got it.
+MATCH: Ну, Ньюман... он у него.
+
+BLOCK 3 (00:01:48.723 -> 00:01:52.041):
+ORG: You know, Kramer, I rented out half of my space to you.
+MATCH: Знаешь, Крамер, я сдал тебе половину своего места.
+
+BLOCK 4 (00:01:52.041 -> 00:01:52.343):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 5 (00:01:52.343 -> 00:01:54.937):
+ORG: And I rented out half that space to Newman.
+MATCH: А я сдал половину этого места Ньюману.
+
+BLOCK 0 (00:00:00.719 -> 00:00:04.799):
+ORG: Our journey will be structured into two main modules.
+MATCH: Наше путешествие будет структурировано в виде двух основных модулей.
+
+BLOCK 1 (00:00:05.120 -> 00:00:06.960):
+ORG: Module one is called Philosophical Foundations of AI.
+MATCH: Первый модуль называется «Философские основания ИИ».
+
+BLOCK 2 (00:00:06.960 -> 00:00:13.839):
+ORG: In this module, we will grapple with some of the most fundamental philosophical challenges posed by AI.
+MATCH: В этом модуле мы будем разбираться с некоторыми из самых фундаментальных философских вызовов, которые ставит искусственный интеллект.
+
+BLOCK 3 (00:00:14.434 -> 00:00:18.818):
+ORG: We will start by asking what is intelligence and can machines truly possess it.
+MATCH: Мы начнём с вопроса, что такое интеллект и могут ли машины действительно им обладать.
+
+BLOCK 4 (00:00:18.818 -> 00:00:27.419):
+ORG: We will then venture into the equally profound mystery of consciousness, asking whether AI could ever be genuinely aware or experience subjective feelings.
+MATCH: Затем мы обратимся к не менее глубокой загадке сознания и спросим, может ли ИИ когда‑нибудь быть подлинно осознающим или испытывать субъективные чувства.
+
+BLOCK 5 (00:00:28.129 -> 00:00:43.090):
+ORG: Finally, we will examine the ethical and existential implications that arise when creating advanced AI, considering questions of free will, moral responsibility, fairness, and the long term future of humanity alongside intelligent machines.
+MATCH: Наконец, мы рассмотрим этические и экзистенциальные последствия, возникающие при создании продвинутого ИИ, и обсудим вопросы свободы воли, моральной ответственности, справедливости и долгосрочного будущего человечества рядом с разумными машинами.  
+
+BLOCK 6 (00:00:44.594 -> 00:00:47.795):
+ORG: Module two is called Cognitive Foundations of AI.
+MATCH: Второй модуль называется «Когнитивные основания ИИ».
+
+BLOCK 0 (00:01:45.465 -> 00:01:46.551):
+ORG: Where is your key?
+MATCH: Где твой ключ?
+
+BLOCK 1 (00:01:46.551 -> 00:01:46.853):
+ORG: Yeah.
+MATCH: 
+
+BLOCK 2 (00:01:46.853 -> 00:01:48.723):
+ORG: Well, Newman, he's he's got it.
+MATCH: Ну, Ньюман... он у него.  
+
+
+BLOCK 3 (00:01:48.723 -> 00:01:52.041):
+ORG: You know, Kramer, I rented out half of my space to you.
+MATCH: Знаешь, Крамер, я сдал тебе половину своего места.
+
+BLOCK 4 (00:01:52.041 -> 00:01:52.343):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 5 (00:01:52.343 -> 00:01:54.937):
+ORG: And I rented out half that space to Newman.
+MATCH: А я сдал половину этого места Ньюману.
+
+BLOCK 0 (00:00:00.000 -> 00:00:17.075):
+ORG: The latest and some would say greatest AI model has just been released, Gemini 3.1 And in the twenty four hours since release, as well as a short period of early access, I have tested it hundreds of times and, of course, read its model card.
+MATCH: Только что вышла новейшая — и, как некоторые скажут, величайшая — ИИ‑модель: Gemini 3.1.  
+И за двадцать четыре часа после релиза, а также за короткий период раннего доступа, я протестировал её сотни раз и, разумеется, прочитал её model card.
+
+BLOCK 1 (00:00:17.075 -> 00:00:18.378):
+ORG: But here's the thing.
+MATCH: Но вот в чём дело.
+
+BLOCK 2 (00:00:18.378 -> 00:00:36.932):
+ORG: For the average user, I want to get beyond the headline scores and try to give you a sense of why every new hot take you see on x or YouTube or TikTok or podcast seems to contradict the last one you saw because there's actually a technical reason for the confusion over which model is best overall.
+MATCH: Для среднего пользователя я хочу выйти за рамки заголовочных результатов и попытаться дать вам понять, почему каждый новый горячий тейк, который вы видите в X, на YouTube, в TikTok или в подкасте, кажется, противоречит предыдущему: на самом деле есть техническая причина путаницы вокруг того, какая модель лучшая в целом.
+
+BLOCK 3 (00:00:36.932 -> 00:00:45.804):
+ORG: But I will say that there's one private benchmark, my own, that has recently seen a model pass a threshold that I think is worth talking about.
+MATCH: Но я скажу, что есть один закрытый бенчмарк — мой собственный — где недавно одна модель перешла порог, о котором, на мой взгляд, стоит поговорить.  
+
+BLOCK 4 (00:00:45.804 -> 00:01:01.069):
+ORG: First, thirty seconds of context because you may well know that the pretraining stage of growing or training LLMs involves training them on Internet scale data, but that actually now only accounts for 20% of the compute that is spent on training LLMs.
+MATCH: Для начала — тридцать секунд контекста, потому что вы, возможно, знаете: этап предобучения при «выращивании» или обучении LLM — это обучение на данных масштаба всего интернета, но сейчас он на самом деле составляет лишь 20% вычислений, которые тратятся на обучение LLM.
+
+BLOCK 5 (00:01:01.130 -> 00:01:09.285):
+ORG: So it's the post training stage as I wrote about in my newsletter where those generalist based models are honed against internal benchmarks on specific domains.
+MATCH: Значит, решающим становится посттренировочный этап, как я писал в своей рассылке, где эти модели‑универсалы оттачиваются на внутренних бенчмарках в конкретных доменах.
+
+BLOCK 6 (00:01:09.285 -> 00:01:14.247):
+ORG: This includes using industry source data to get particularly good at perhaps your domain.
+MATCH: Это включает использование отраслевых данных, чтобы сделать модель особенно сильной, возможно, именно в вашей области.
+
+BLOCK 7 (00:01:14.247 -> 00:01:15.194):
+ORG: Here's the catch.
+MATCH: Но есть подвох.
+
+BLOCK 8 (00:01:15.194 -> 00:01:17.313):
+ORG: Just a year ago, that wasn't the case.
+MATCH: Ещё год назад всё было не так.
+
+BLOCK 9 (00:01:17.313 -> 00:01:24.393):
+ORG: Dario Amodei, CEO of Anthropic, said back then, the amount being spent on the second stage, RL stage, is small for all players.
+MATCH: Дарио Амодеи, CEO Anthropic, тогда сказал: объём ресурсов, который у всех игроков уходит на второй этап, этап RL, невелик.
+
+BLOCK 10 (00:01:24.393 -> 00:01:26.623):
+ORG: Why did I give you that context, though?
+MATCH: Зачем я вообще дал этот контекст?
+
+BLOCK 11 (00:01:26.623 -> 00:01:39.333):
+ORG: Well, because if one of these labs have data relevant to your domain and post train their models to optimize for high scores in that area, then your experience of that model might be quite different to what other benchmarks say.
+MATCH: Потому что если у какой‑то из лабораторий есть данные, релевантные вашей области, и они посттренируют свои модели, оптимизируя их под высокие результаты именно там, ваш опыт с этой моделью может сильно отличаться от того, что показывают другие бенчмарки.  
+
+BLOCK 12 (00:01:39.333 -> 00:01:46.971):
+ORG: In the older paradigm, if a model was clearly better in one domain, it was much more likely that they'd be better in many or all domains.
+MATCH: В старой парадигме, если модель явно была лучше в одной области, было гораздо вероятнее, что она будет лучше и во многих — или во всех — областях.
+
+BLOCK 13 (00:01:46.971 -> 00:01:48.811):
+ORG: That just isn't the case anymore.
+MATCH: Сейчас это уже не так.
+
+BLOCK 14 (00:01:48.811 -> 00:01:53.103):
+ORG: In fact, my second point in this newsletter was precisely an example of that.
+MATCH: Более того, мой второй пункт в этой рассылке как раз был примером именно этого.
+
+BLOCK 15 (00:01:53.103 -> 00:02:01.577):
+ORG: Many of you would have heard about the intense discussions surrounding Claude code and all sorts of Claude powered agents that are now sweeping the web.
+MATCH: Многие из вас наверняка слышали про бурные обсуждения вокруг Claude Code и всевозможных агентов на базе Claude, которые сейчас захлёстывают интернет.
+
+BLOCK 16 (00:02:01.577 -> 00:02:05.201):
+ORG: So we're seeing exponential improvement, right, across the board.
+MATCH: То есть мы видим экспоненциальный прогресс, да, по всем фронтам.
+
+BLOCK 17 (00:02:05.201 -> 00:02:09.549):
+ORG: Well, take one chess puzzle benchmark made by Epoch AI and more on them later.
+MATCH: Но возьмём один бенчмарк по шахматным задачам от Epoch AI, и о них позже.
+
+BLOCK 18 (00:02:09.549 -> 00:02:14.789):
+ORG: Five months ago, Claude Sonnet 4.5, which is their smaller model compared to Opus, scored 12%.
+MATCH: Пять месяцев назад Claude Sonnet 4.5, который у них меньшая модель по сравнению с Opus, набрал 12%.
+
+BLOCK 19 (00:02:15.514 -> 00:02:21.293):
+ORG: But just last week, Claude Opus 4.6, five months further on, scored just 10%.
+MATCH: А буквально на прошлой неделе Claude Opus 4.6, ещё на пять месяцев позже, набрал всего 10%.
+
+BLOCK 20 (00:02:21.293 -> 00:02:23.375):
+ORG: That's not to knock Claude Opus 4.6.
+MATCH: Это не камень в огород Claude Opus 4.6.
+
+BLOCK 21 (00:02:23.375 -> 00:02:24.647):
+ORG: I use it all the time.
+MATCH: Я пользуюсь им постоянно.
+
+BLOCK 22 (00:02:24.647 -> 00:02:26.672):
+ORG: It's an incredible model at coding.
+MATCH: Это невероятная модель для программирования.
+
+BLOCK 23 (00:02:26.672 -> 00:02:31.588):
+ORG: And, of course, if the AI labs wanted to improve this performance, they easily could.
+MATCH: И, конечно, если бы ИИ‑лаборатории захотели улучшить этот показатель, они легко могли бы.
+
+BLOCK 24 (00:02:31.588 -> 00:02:34.434):
+ORG: I think GPT 5.2 on extra high gets around 50%.
+MATCH: Думаю, GPT 5.2 на extra high набирает около 50%.
+
+BLOCK 25 (00:02:34.434 -> 00:02:40.345):
+ORG: But you could say chess is a fairly pure measure of a general kind of forward thinking reasoning prowess.
+MATCH: Но можно сказать, что шахматы — довольно «чистая» метрика общей способности к продуманному, опережающему рассуждению.
+
+BLOCK 26 (00:02:40.345 -> 00:02:47.212):
+ORG: Back in the generalist era of AI, you would therefore expect chess performance to translate to all sorts of other domains.
+MATCH: В эпоху универсальных ИИ вы бы поэтому ожидали, что шахматная производительность будет переноситься на массу других областей.
+
+BLOCK 27 (00:02:47.212 -> 00:02:49.464):
+ORG: We're just not in that paradigm anymore.
+MATCH: Мы просто больше не в этой парадигме.
+
+BLOCK 28 (00:02:49.464 -> 00:02:51.829):
+ORG: It's gonna depend on the domain you're in.
+MATCH: Всё будет зависеть от того, в какой вы области.
+
+BLOCK 29 (00:02:51.829 -> 00:02:55.713):
+ORG: None of this is to say that Gemini 3.1 Pro isn't an incredible model.
+MATCH: Ничто из этого не означает, что Gemini 3.1 Pro не является невероятной моделью.
+
+BLOCK 30 (00:02:55.713 -> 00:02:56.051):
+ORG: It is.
+MATCH: Она является.
+
+BLOCK 31 (00:02:56.051 -> 00:03:03.031):
+ORG: In almost any domain you care to measure, it will be competitive with the best other models like Claude Opus 4.6 or GPT 5.3.
+MATCH: Почти в любой области, которую вы захотите измерять, она будет конкурентоспособной на уровне лучших других моделей, вроде Claude Opus 4.6 или GPT 5.3.
+
+BLOCK 32 (00:03:03.425 -> 00:03:20.475):
+ORG: But you would be understandably slightly confused to see it being better in all sorts of coding benchmarks, measures of scientific reasoning and academic reasoning, like GPQA Diamond and Humanities Last Exam respectively, as well as general pattern recognition, ARC AGI two, and I'll come back to that.
+MATCH: Но вы вполне закономерно немного растеряетесь, увидев, что она лучше во множестве бенчмарков по программированию, по научному и академическому мышлению, например GPQA Diamond и Humanities Last Exam соответственно, а также по общему распознаванию паттернов, ARC AGI 2, и я к этому ещё вернусь.
+
+BLOCK 33 (00:03:20.475 -> 00:03:32.745):
+ORG: But yet in a head to head on GDP val, which is a broad measure of expert tasks that human professionals do that I've covered many times on the channel before, it falls seemingly quite far behind Claude Opus 4.6 and even GPT 5.2.
+MATCH: И при этом в лобовом сравнении на GDP Val, который является широкой мерой экспертных задач, которые выполняют профессионалы‑люди и о котором я много раз рассказывал на канале, она, судя по всему, заметно уступает Claude Opus 4.6 и даже GPT 5.2.
+
+BLOCK 34 (00:03:32.745 -> 00:03:43.947):
+ORG: Now, yes, one big explanation of that is the domain specialization I talked about earlier, but there are three or four fascinating bits of context that I want you to be aware of in addition.
+MATCH: Да, одно большое объяснение этого — доменная специализация, о которой я говорил раньше, но помимо этого есть ещё три‑четыре увлекательных фрагмента контекста, о которых я хочу, чтобы вы знали вдобавок.
+
+BLOCK 35 (00:03:43.947 -> 00:03:53.799):
+ORG: First, let's zoom into ARC AGI two in which its score of 77.1% puts it way ahead of Claude Opus 4.6, which is the more expensive model, which got around 69%.
+MATCH: Во‑первых, давайте приблизим ARC AGI 2, где результат 77,1% выводит её далеко вперёд относительно Claude Opus 4.6 — более дорогой модели, которая набрала примерно 69%.
+
+BLOCK 36 (00:03:53.799 -> 00:04:01.913):
+ORG: I start with this one because Demis Hassabis, CEO of Google DeepMind, featured it prominently in his Twitter post announcing the launch of Gemini 3.1 Pro.
+MATCH: Я начинаю с этого, потому что Демис Хассабис, CEO Google DeepMind, особо выделил это в своём твите, где объявлял о запуске Gemini 3.1 Pro.
+
+BLOCK 37 (00:04:01.913 -> 00:04:08.972):
+ORG: And on puzzles that shouldn't be in its training data, the Gemini three series outperforms all other models on a cost efficient basis.
+MATCH: И на головоломках, которых не должно быть в его обучающих данных, линейка Gemini 3 превосходит все остальные модели по соотношению цена/качество.
+
+BLOCK 38 (00:04:08.972 -> 00:04:14.136):
+ORG: But the first additional caveat comes from Melanie Mitchell, a famous AI researcher and professor.
+MATCH: Но первая дополнительная оговорка — от Мелани Митчелл, известной исследовательницы ИИ и профессора.
+
+BLOCK 39 (00:04:14.136 -> 00:04:19.621):
+ORG: She pointed out that if they change the encoding from numbers to other symbols, accuracy goes down.
+MATCH: Она отметила, что если поменять кодирование с чисел на другие символы, точность падает.
+
+BLOCK 40 (00:04:19.621 -> 00:04:29.638):
+ORG: Digging deeper, the group found that the numbers representing colors in the input can be used by LLMs to find unintended arithmetic patterns that can lead to accidental correct solutions.
+MATCH: Копнув глубже, группа выяснила, что числа, обозначающие цвета во входных данных, LLM могут использовать, чтобы находить непреднамеренные арифметические закономерности, которые могут приводить к случайно правильным решениям.
+
+BLOCK 41 (00:04:29.638 -> 00:04:31.781):
+ORG: I wouldn't call that the model cheating.
+MATCH: Я бы не назвал это «жульничеством» модели.
+
+BLOCK 42 (00:04:31.781 -> 00:04:35.531):
+ORG: They're using any shortcuts they can find to get the correct solution.
+MATCH: Они используют любые короткие пути, которые удаётся найти, чтобы получить верный ответ.
+
+BLOCK 43 (00:04:35.531 -> 00:04:36.174):
+ORG: Fair's fair.
+MATCH: Что ж, честная игра.
+
+BLOCK 44 (00:04:36.174 -> 00:04:40.888):
+ORG: But it does remind us that even within a benchmark, how you set up the question matters.
+MATCH: Но это напоминает нам, что даже внутри одного бенчмарка важно, как именно вы задаёте вопрос.
+
+BLOCK 45 (00:04:40.888 -> 00:04:41.156):
+ORG: Okay.
+MATCH: Окей.
+
+BLOCK 46 (00:04:41.156 -> 00:04:47.209):
+ORG: Well, let's say you don't care about Arc AGI two or Symbol Bench or any other benchmark, just coding performance.
+MATCH: Ну, допустим, вам всё равно на ARC AGI 2, на Symbol Bench или на любые другие бенчмарки — вас интересует только качество кодинга.
+
+BLOCK 47 (00:04:47.209 -> 00:04:55.459):
+ORG: Well, the creator of Arc series, the Arc AGI test, Francois Chelet, has this to say, sufficiently advanced agentic coding is essentially machine learning.
+MATCH: Ну так вот, создатель серии ARC и теста ARC AGI, Франсуа Шоле, говорит об этом так: достаточно продвинутый агентный кодинг по сути и есть машинное обучение.  
+
+BLOCK 48 (00:04:55.459 -> 00:05:01.137):
+ORG: A goal is given to the agent or agent swarm, and then the coding agents iterate until the goal is reached.
+MATCH: Агенту — или рою агентов — задают цель, и затем кодинговые агенты итеративно работают, пока цель не будет достигнута.
+
+BLOCK 49 (00:05:01.137 -> 00:05:04.940):
+ORG: As in other areas of machine learning, the result is a black box model.
+MATCH: Как и в других областях машинного обучения, результат — это модель «чёрного ящика».
+
+BLOCK 50 (00:05:04.940 -> 00:05:10.190):
+ORG: You have a code base that performs the task, but you don't necessarily inspect the internal logic.
+MATCH: У вас есть кодовая база, которая выполняет задачу, но вы не обязательно изучаете её внутреннюю логику.
+
+BLOCK 51 (00:05:10.190 -> 00:05:20.721):
+ORG: Just like how Gemini 3.1 may have found spurious patterns in Arc AGI, in your code base, Claude or Codex may overfit to the spec or may drift from your original concept.
+MATCH: Точно так же, как Gemini 3.1 мог найти в ARC AGI ложные закономерности, в вашей кодовой базе Claude или Codex могут переобучиться под спецификацию или отклониться от вашей исходной задумки.  
+
+BLOCK 52 (00:05:20.721 -> 00:05:29.790):
+ORG: So the fallibilities presented in this video are relevant to you even if you only care about coding or letting your OpenCLAW agents code for you.
+MATCH: Так что уязвимости, о которых я говорю в этом видео, важны и для вас — даже если вам нужен только кодинг или вы просто даёте вашим агентам OpenCLAW писать код за вас.  
+
+BLOCK 53 (00:05:29.790 -> 00:05:35.994):
+ORG: Gemini 3.1 Pro indeed hit a record ELO in LiveCodeBench Pro, which involves competitive coding problems.
+MATCH: Gemini 3.1 Pro действительно поставил рекорд по ELO в LiveCodeBench Pro, где используются задачи по соревновательному программированию.  
+
+BLOCK 54 (00:05:35.994 -> 00:05:39.937):
+ORG: That's great, but you can turn that optimization dial a little too far.
+MATCH: Это здорово, но ручку оптимизации можно выкрутить и слишком далеко.
+
+BLOCK 55 (00:05:39.937 -> 00:05:44.490):
+ORG: Let me show you what happened last night when I used Gemini 3.1 Pro inside Cursor.
+MATCH: Сейчас покажу, что произошло прошлой ночью, когда я использовал Gemini 3.1 Pro внутри Cursor.
+
+BLOCK 56 (00:05:44.490 -> 00:05:48.600):
+ORG: How could we reconcile these pages of drivel with the record breaking Elo?
+MATCH: Как нам совместить эти страницы словесной каши с рекордным ELO?
+
+BLOCK 57 (00:05:48.600 -> 00:05:50.987):
+ORG: Well, again, that's the theme of the video.
+MATCH: Ну, опять же, в этом и тема видео.
+
+BLOCK 58 (00:05:50.987 -> 00:05:57.540):
+ORG: If I sound unduly skeptical of Gemini 3.1 Pro, by the way, let me try to balance that out with heaping on some praise.
+MATCH: Если я, кстати, звучал излишне скептически по отношению к Gemini 3.1 Pro, давайте уравновешу это щедрой порцией похвалы.  
+
+BLOCK 59 (00:05:57.540 -> 00:06:06.647):
+ORG: On my private SimpleBench, a test of, you could say, trick questions or common sense reasoning, it beat its own previous record from Gemini three Pro and got 79.6%.
+MATCH: На моём приватном SimpleBench — тесте на, можно сказать, каверзные вопросы или рассуждения на здравый смысл — он побил собственный прежний рекорд времён Gemini 3 Pro и набрал 79,6%.
+
+BLOCK 60 (00:06:06.980 -> 00:06:14.558):
+ORG: That essentially brings it within the margin of error for the human average baseline, at least among the nine participants that we used.
+MATCH: По сути, это выводит его в пределы погрешности относительно человеческого среднего уровня — по крайней мере, среди тех девяти участников, которых мы использовали.
+
+BLOCK 61 (00:06:14.558 -> 00:06:19.573):
+ORG: I do wanna spend just sixty seconds on marking the threshold that I think this represents.
+MATCH: Я хочу потратить буквально секунд шестьдесят на то, чтобы отметить порог, который, как мне кажется, это означает.
+
+BLOCK 62 (00:06:19.573 -> 00:06:30.549):
+ORG: All the time on podcasts and in articles, you hear about AI models being compared to professionals and experts and phrases like superintelligence being banded around and recursive self improvement.
+MATCH: В подкастах и статьях постоянно слышишь, как ИИ‑модели сравнивают с профессионалами и экспертами, как разбрасываются словами вроде «сверхинтеллект» и обсуждают рекурсивное самоулучшение.
+
+BLOCK 63 (00:06:30.549 -> 00:06:33.502):
+ORG: But what about comparing models to the average human?
+MATCH: Но что насчёт сравнения моделей со средним человеком?
+
+BLOCK 64 (00:06:33.502 -> 00:06:40.133):
+ORG: Now sure, of course, you can find audio or visual puzzles that they will still fail at that the average human wouldn't.
+MATCH: Да, конечно, можно найти аудио‑ или визуальные головоломки, на которых они всё ещё провалятся, хотя средний человек справится.
+
+BLOCK 65 (00:06:40.133 -> 00:06:52.447):
+ORG: But in English, in text alone, I think it's worth marking the moment wherein I don't think you can write a test at which the average human, the average man or woman on the street, would clearly outperform frontier models.
+MATCH: Но в английском, в одном только тексте, мне кажется, стоит отметить момент, когда, на мой взгляд, уже невозможно составить тест, в котором средний человек, обычный мужчина или женщина с улицы, явно превзойдёт фронтир‑модели.
+
+BLOCK 66 (00:06:52.447 -> 00:06:57.072):
+ORG: I'm not talking about exploiting tokenization bugs like how many r's in strawberry.
+MATCH: Я не говорю об эксплуатации багов токенизации вроде «сколько букв r в strawberry».
+
+BLOCK 67 (00:06:57.072 -> 00:07:01.473):
+ORG: I'm talking about a fair text based test in English with a nonspecialist human.
+MATCH: Я говорю о честном текстовом тесте на английском с неспециалистом‑человеком.
+
+BLOCK 68 (00:07:01.473 -> 00:07:06.878):
+ORG: Let me know if you disagree, but I think the passing of that threshold is a moment worth marking.
+MATCH: Дайте знать, если вы не согласны, но мне кажется, пересечение этого порога — событие, которое стоит отметить.
+
+BLOCK 69 (00:07:07.485 -> 00:07:13.548):
+ORG: I will note that even with SimpleBench, we get a reminder of the caveat I was just describing.
+MATCH: Отмечу, что даже с SimpleBench мы снова получаем напоминание об оговорке, которую я только что описывал.
+
+BLOCK 70 (00:07:13.548 -> 00:07:15.741):
+ORG: Models are brilliant at shortcuts.
+MATCH: Модели блестяще находят короткие пути.
+
+BLOCK 71 (00:07:15.884 -> 00:07:30.224):
+ORG: And I had noticed as long ago as I think at least twelve months that because SimpleBench was a set of multiple choice questions, sometimes one of the answers being, for example, zero would flag to the model that, wait, this might be a trick question.
+MATCH: Я заметил ещё, думаю, как минимум двенадцать месяцев назад, что из‑за того, что SimpleBench — это набор вопросов с вариантами ответов, иногда один из вариантов, скажем, «ноль», служит для модели сигналом: стоп, это может быть вопрос с подвохом.
+
+BLOCK 72 (00:07:30.224 -> 00:07:44.162):
+ORG: For example, if we go to try yourself, even in question one about frying eggs in a pan, the fact that there may be zero ice cubes left in the pan, even as just one of the options, may alert the model to think, hang on, how could there be zero?
+MATCH: Например, если зайти в «Try it yourself», то даже в первом вопросе про жарку яиц на сковороде сам факт, что среди вариантов есть «на сковороде осталось ноль кубиков льда», может навести модель на мысль: погодите, как это — ноль?  
+
+
+BLOCK 73 (00:07:44.162 -> 00:07:45.711):
+ORG: How would that be possible?
+MATCH: Как бы это могло быть возможно?
+
+BLOCK 74 (00:07:45.711 -> 00:07:57.354):
+ORG: So what happens if you take away the multiple choice questions, get the models to answer in an open ended fashion, and then get a blind grader model to compare their answers to the hidden correct answer?
+MATCH: Так что будет, если убрать варианты ответа, заставить модели отвечать в открытой форме, а затем дать «слепой» модели‑проверяющему сравнить их ответы со скрытым правильным ответом?
+
+BLOCK 75 (00:07:57.354 -> 00:08:01.828):
+ORG: Well, you still get some pretty impressive scores, but just not quite as high.
+MATCH: Что ж, оценки всё равно получаются довольно впечатляющими, просто уже не такими высокими.
+
+BLOCK 76 (00:08:01.828 -> 00:08:04.180):
+ORG: Call it a 15 to 20 percentage point drop.
+MATCH: Падение где‑то на 15–20 процентных пунктов.
+
+BLOCK 77 (00:08:04.180 -> 00:08:06.360):
+ORG: That's, by the way, a double reminder.
+MATCH: Это, кстати, двойное напоминание.
+
+BLOCK 78 (00:08:06.360 -> 00:08:06.589):
+ORG: Yes.
+MATCH: Да.
+
+BLOCK 79 (00:08:06.589 -> 00:08:08.195):
+ORG: Models are taking shortcuts.
+MATCH: Модели срезают углы.
+
+BLOCK 80 (00:08:08.735 -> 00:08:08.927):
+ORG: Yes.
+MATCH: Да.
+
+BLOCK 81 (00:08:08.927 -> 00:08:12.913):
+ORG: If you ask the same question in a different way, performance may well be different.
+MATCH: Если задать тот же вопрос иначе, результат вполне может быть другим.
+
+BLOCK 82 (00:08:12.913 -> 00:08:15.122):
+ORG: But it's not like performance dropped to zero.
+MATCH: Но это не так, что качество упало до нуля.
+
+BLOCK 83 (00:08:15.122 -> 00:08:19.492):
+ORG: Frontier models are genuinely getting better even in domains they didn't directly train on.
+MATCH: Фронтирные модели действительно становятся лучше даже в областях, на которых они напрямую не обучались.
+
+BLOCK 84 (00:08:19.492 -> 00:08:23.238):
+ORG: Time for the next big caveat before we return to the glory of the exponential.
+MATCH: Пора перейти к следующей большой оговорке, прежде чем мы вернёмся к славе экспоненты.
+
+BLOCK 85 (00:08:23.430 -> 00:08:30.084):
+ORG: Let's take a look at the brand new Gemini 3.1 Pro and Anthropic's Claude Sonic 4.6 from this week.
+MATCH: Давайте посмотрим на совершенно новые Gemini 3.1 Pro и Claude Sonnet 4.6 от Anthropic, вышедшие на этой неделе.
+
+BLOCK 86 (00:08:30.084 -> 00:08:33.476):
+ORG: How do they do in terms of hallucinations or factual accuracy?
+MATCH: Как у них дела с галлюцинациями или фактической точностью?  
+
+BLOCK 87 (00:08:33.476 -> 00:08:42.085):
+ORG: You'll notice that model providers don't often wanna talk about or measure hallucinations anymore because that was predicted to be a solved problem by now.
+MATCH: Вы заметите, что провайдеры моделей теперь нечасто хотят говорить о галлюцинациях или измерять их, потому что предполагалось, что к этому моменту проблема уже будет решена.
+
+BLOCK 88 (00:08:42.085 -> 00:08:46.918):
+ORG: And on this release chart from Google, there wasn't a direct measure of hallucinations.
+MATCH: И в этой релизной таблице от Google прямого показателя галлюцинаций не было.
+
+BLOCK 89 (00:08:47.029 -> 00:08:52.470):
+ORG: But in fairness, they did cite this benchmark from artificial analysis, AA omniscience.
+MATCH: Но, справедливости ради, они сослались на этот бенчмарк от Artificial Analysis — AA Omniscience.
+
+BLOCK 90 (00:08:52.549 -> 00:08:56.875):
+ORG: And on first glance, Gemini 3.1 Pro seems to shellac the other models.
+MATCH: И на первый взгляд Gemini 3.1 Pro просто катком проезжается по остальным моделям.
+
+BLOCK 91 (00:08:56.875 -> 00:09:04.661):
+ORG: Gemini's top score of positive 30 compares to Claude Opus 4.6 getting positive 11 and Claude Sonnet 4.6 getting negative four.
+MATCH: Топовый результат Gemini — «плюс 30» — сравнивается с «плюс 11» у Claude Opus 4.6 и «минус 4» у Claude Sonnet 4.6.
+
+BLOCK 92 (00:09:04.661 -> 00:09:10.470):
+ORG: And that's even accounting for penalizing hallucinations as well as rewarding correct answers.
+MATCH: И это даже с учётом того, что галлюцинации штрафуются, а правильные ответы поощряются.
+
+BLOCK 93 (00:09:10.470 -> 00:09:31.338):
+ORG: However, if we zoom in on just incorrect answers and whether the models hallucinated an incorrect answer or explanation versus refused to answer or admitted to not knowing the answer, Gemini 3.1 does well at 50% of its incorrect answers being hallucinations, but Claude Sonic 4.6 is down at 38%, which is better.
+MATCH: Однако если приблизить и посмотреть только на неправильные ответы и на то, галлюцинировали ли модели неверный ответ или объяснение, либо отказались отвечать или признали, что не знают ответа, Gemini 3.1 показывает, что у неё 50% неправильных ответов — это галлюцинации, а у Claude Sonnet 4.6 этот показатель — 38%, то есть лучше.
+
+BLOCK 94 (00:09:31.338 -> 00:09:34.909):
+ORG: Interestingly, GLM five, a Chinese model, is even better at 34%.
+MATCH: Интересно, что GLM‑5, китайская модель, ещё лучше — 34%.
+
+BLOCK 95 (00:09:34.909 -> 00:09:37.866):
+ORG: So hallucinations is definitely not a solved problem.
+MATCH: Так что галлюцинации — точно не решённая проблема.
+
+BLOCK 96 (00:09:37.866 -> 00:09:44.729):
+ORG: And just because a model is optimized or better at its best does not preclude the possibility that it's worse at its worst.
+MATCH: И то, что модель оптимизирована или лучше в своей лучшей форме, не исключает того, что в своей худшей она окажется хуже.
+
+BLOCK 97 (00:09:44.729 -> 00:09:45.789):
+ORG: What's that saying?
+MATCH: Как там говорится?
+
+BLOCK 98 (00:09:45.789 -> 00:09:50.252):
+ORG: If you can't take me in my bad moments, you don't deserve me in my good moments.
+MATCH: Если ты не можешь принять меня в мои плохие моменты, ты не заслуживаешь меня в хорошие.
+
+BLOCK 99 (00:09:50.252 -> 00:09:54.325):
+ORG: Well, for all models, you're gonna have to handle that kind of trade off.
+MATCH: Так вот, со всеми моделями вам придётся иметь дело с таким компромиссом.
+
+BLOCK 100 (00:09:54.325 -> 00:09:58.673):
+ORG: One quick note on the model card for Gemini 3.1, it's only nine pages.
+MATCH: Небольшое замечание про model card для Gemini 3.1: он всего на девять страниц.
+
+BLOCK 101 (00:09:58.673 -> 00:10:08.269):
+ORG: And as ever, these model or system or safety reports will serve the purpose of dehyping when the release post by the CEO or release video serves the purpose of hyping.
+MATCH: И, как всегда, эти отчёты о модели, системе или безопасности будут выполнять роль «снятия хайпа», тогда как пост о релизе от CEO или релизное видео будут выполнять роль «нагона хайпа».
+
+BLOCK 102 (00:10:08.269 -> 00:10:11.432):
+ORG: For example, let's focus on Gemini 3.1 in the cyber domain.
+MATCH: Например, давайте сосредоточимся на Gemini 3.1 в кибердомене.
+
+BLOCK 103 (00:10:11.432 -> 00:10:14.970):
+ORG: Well, if you are an ultra subscriber, you can use deep think mode.
+MATCH: Если у вас подписка Ultra, вы можете использовать режим Deep Think.
+
+BLOCK 104 (00:10:14.970 -> 00:10:22.743):
+ORG: And Google's model card says this, accounting for inference costs, the model with deep think performs considerably worse than without deep think.
+MATCH: И в model card от Google сказано следующее: с учётом стоимости инференса модель с Deep Think работает существенно хуже, чем без Deep Think.
+
+BLOCK 105 (00:10:22.743 -> 00:10:29.659):
+ORG: Even at high levels of inference, results for the model with deep think do not suggest higher capability than without deep think.
+MATCH: Даже при высоких уровнях инференса результаты модели с Deep Think не указывают на более высокие возможности по сравнению с режимом без Deep Think.
+
+BLOCK 106 (00:10:29.659 -> 00:10:29.927):
+ORG: Okay.
+MATCH: Окей.
+
+BLOCK 107 (00:10:29.927 -> 00:10:33.144):
+ORG: That's deep think mode, which we might discuss another time.
+MATCH: Это про Deep Think, к которому мы, возможно, вернёмся как‑нибудь в другой раз.
+
+BLOCK 108 (00:10:33.144 -> 00:10:34.645):
+ORG: But what about just 3.1 pro?
+MATCH: Но что насчёт просто 3.1 Pro?
+
+BLOCK 109 (00:10:34.645 -> 00:10:37.539):
+ORG: Well, back to that specializing in individual domains.
+MATCH: Ну, возвращаясь к специализации по отдельным доменам.
+
+BLOCK 110 (00:10:37.539 -> 00:10:53.890):
+ORG: They found out that in one test of machine learning and r and d, optimizing the LLM Foundry involving fine tuning, that 3.1 pro could indeed reduce the run time of a fine tuning script from three hundred seconds to forty seven seconds, better even than the human reference solution of ninety four seconds.
+MATCH: Они выяснили, что в одном тесте по машинному обучению и R&D, где оптимизировали LLM Foundry через файн‑тюнинг, 3.1 Pro действительно смог сократить время выполнения скрипта файн‑тюнинга с трёхсот секунд до сорока семи секунд, лучше даже, чем эталонное человеческое решение в девяносто четыре секунды.
+
+BLOCK 111 (00:10:53.890 -> 00:11:11.099):
+ORG: But whereas before, you might have read that as meaning that it's now gonna accelerate its own self improvement through machine learning r and d, you might now more so interpret that as being, oh, they added in some new fine tuning data, data about fine tuning, or an internal benchmark measuring fine tuning performance.
+MATCH: Но если раньше вы могли прочитать это так, будто он теперь ускорит собственное самоулучшение за счёт R&D в машинном обучении, то теперь вы скорее истолкуете это так: ага, они добавили новые данные для файн‑тюнинга, данные про файн‑тюнинг или внутренний бенчмарк, измеряющий качество файн‑тюнинга.  
+
+
+BLOCK 112 (00:11:11.099 -> 00:11:12.600):
+ORG: But enough with the caveats.
+MATCH: Но хватит оговорок.
+
+BLOCK 113 (00:11:12.600 -> 00:11:20.259):
+ORG: What do all of these models from the last few weeks, including Gemini 3.1, show about what we're about to unleash on the world?
+MATCH: Что все эти модели последних недель, включая Gemini 3.1, говорят о том, что мы вот‑вот выпустим в мир?
+
+BLOCK 114 (00:11:20.259 -> 00:11:24.245):
+ORG: Because many of the exponentials you do see are real and meaningful.
+MATCH: Потому что многие из тех экспонент, которые вы видите, реальны и значимы.
+
+BLOCK 115 (00:11:24.245 -> 00:11:32.768):
+ORG: But first, the sponsors of today's video, EpochAI, because they recently featured just yesterday one exponential that you may not have heard of.
+MATCH: Но сначала — спонсор сегодняшнего видео, EpochAI, потому что буквально вчера они подсветили одну экспоненту, о которой вы могли и не слышать.
+
+BLOCK 116 (00:11:32.768 -> 00:11:43.052):
+ORG: That's the Anthropix annualized revenue is 10x-ing per year until the tail end of 2025, whereas OpenAI's is 3.4 x ing per year, albeit starting from a bigger base.
+MATCH: Годовая выручка Anthropic, пересчитанная в годовом выражении, растёт в 10 раз в год до самого конца 2025‑го, тогда как у OpenAI — в 3,4 раза в год, хотя стартовая база у неё больше.
+
+BLOCK 117 (00:11:43.052 -> 00:11:50.147):
+ORG: It's a big if, but if those trends continue, by mid twenty twenty six, we could see Anthropic out earning OpenAI.
+MATCH: Это, конечно, большое «если», но если эти тренды сохранятся, то к середине 2026‑го Anthropic может начать зарабатывать больше OpenAI.
+
+BLOCK 118 (00:11:50.465 -> 00:11:57.167):
+ORG: And as you might have guessed, EpochAI's research is one of the main ways that I stay on top of AI research and developments.
+MATCH: И, как вы могли догадаться, исследования EpochAI — один из главных способов, с помощью которых я остаюсь в курсе AI‑исследований и разработок.
+
+BLOCK 119 (00:11:57.167 -> 00:12:02.903):
+ORG: I've been covering them for years even before they were a sponsor, and their newsletter is also incredible.
+MATCH: Я рассказываю о них уже много лет — ещё до того, как они стали спонсором, — и их рассылка тоже просто отличная.
+
+BLOCK 120 (00:12:02.903 -> 00:12:09.873):
+ORG: If you wanna learn what powers some of these exponentials, of course, you'll have to focus on their frontier data center analysis.
+MATCH: Если вы хотите понять, что подпитывает некоторые из этих экспонент, вам, конечно, стоит обратить внимание на их анализ передовых дата‑центров.
+
+BLOCK 121 (00:12:10.059 -> 00:12:12.895):
+ORG: I had to actually double check with them that it was free.
+MATCH: Мне даже пришлось перепроверить у них, правда ли это бесплатно.
+
+BLOCK 122 (00:12:12.895 -> 00:12:14.557):
+ORG: I just couldn't really believe it.
+MATCH: Я просто не мог в это поверить.
+
+BLOCK 123 (00:12:14.557 -> 00:12:15.046):
+ORG: But it is.
+MATCH: Но да, бесплатно.
+
+BLOCK 124 (00:12:15.046 -> 00:12:17.246):
+ORG: Check out the unique link in the description.
+MATCH: Переходите по уникальной ссылке в описании.
+
+BLOCK 125 (00:12:17.246 -> 00:12:21.745):
+ORG: Back to the central question of whether benchmark performance measures general intelligence.
+MATCH: Возвращаемся к центральному вопросу о том, измеряет ли бенчмарк‑производительность общий интеллект.
+
+BLOCK 126 (00:12:21.745 -> 00:12:32.014):
+ORG: Because I have given you lots of counterarguments, but Dario Amade, the CEO of Anthropic, did raise a point the other day that really gave an insight into the bet that Anthropic is making.
+MATCH: Потому что я привёл вам массу контраргументов, но Дарио Амодеи, CEO Anthropic, на днях сказал одну вещь, которая действительно проливает свет на ставку, которую делает Anthropic.
+
+BLOCK 127 (00:12:32.014 -> 00:12:37.933):
+ORG: He was asked, why do you need all these RL environments specializing in Slack, for example, or browser use?
+MATCH: Его спросили, зачем вам все эти RL‑среды, заточенные, например, под Slack или под работу в браузере?
+
+BLOCK 128 (00:12:37.933 -> 00:12:42.470):
+ORG: Surely all of that's redundant if models are gonna keep getting generally smarter.
+MATCH: Разве всё это не избыточно, если модели и так будут становиться умнее в общем смысле?  
+
+BLOCK 129 (00:12:42.470 -> 00:12:43.632):
+ORG: Amade said this, yes.
+MATCH: Амодеи сказал вот что: да.
+
+BLOCK 130 (00:12:43.632 -> 00:12:51.654):
+ORG: We're trying to get a whole bunch of data, not because we want to cover a specific document or specific skill, but because we want to generalize.
+MATCH: Мы пытаемся собрать очень много данных — не потому, что хотим покрыть какой‑то конкретный документ или конкретный навык, а потому, что хотим обобщать.
+
+BLOCK 131 (00:12:51.654 -> 00:13:00.829):
+ORG: For me, this is critical because what he is almost saying is that if you specialize in enough specialisms, you'll generalize to all specialisms.
+MATCH: Для меня это критически важно, потому что по сути он почти говорит: если достаточно глубоко специализироваться во множестве специализаций, то ты обобщишься на все специализации.
+
+BLOCK 132 (00:13:00.829 -> 00:13:15.275):
+ORG: This is why later in the same interview, he said that we can get most of the way there to a AGI or superintelligence or country of geniuses in a data center without continual learning, without learning on the job, without you teaching the model about your domain?
+MATCH: Вот почему позже в этом же интервью он сказал, что можно почти дойти до AGI, или суперинтеллекта, или «страны гениев в дата‑центре» без непрерывного обучения, без обучения «по месту работы», без того, чтобы вы обучали модель под вашу предметную область?  
+
+BLOCK 133 (00:13:15.275 -> 00:13:18.406):
+ORG: How could you get to superintelligence without that data?
+MATCH: Как можно дойти до суперинтеллекта без этих данных?
+
+BLOCK 134 (00:13:18.406 -> 00:13:26.742):
+ORG: Again, in my words, I think he thinks that if you specialize in enough specialisms, there are only so many patterns to be deduced from human training data.
+MATCH: Опять же, если пересказать моими словами, мне кажется, он думает так: если специализироваться в достаточном числе специализаций, то из человеческих обучающих данных можно вывести лишь конечное число паттернов.
+
+BLOCK 135 (00:13:26.742 -> 00:13:26.948):
+ORG: Yes.
+MATCH: Да.
+
+BLOCK 136 (00:13:26.948 -> 00:13:30.512):
+ORG: They're gonna work on continual learning in case that's not the case.
+MATCH: Они будут работать над непрерывным обучением на случай, если это окажется не так.
+
+BLOCK 137 (00:13:30.512 -> 00:13:34.334):
+ORG: But if it is the case, Anthropic might not need the data from your domain.
+MATCH: Но если это так, Anthropic может и не понадобиться данные из вашей предметной области.
+
+BLOCK 138 (00:13:34.334 -> 00:13:42.184):
+ORG: Or maybe he says later, models will almost get there but just need a bit more context about your domain in the context window in the prompt you give it.
+MATCH: Или, как он, кажется, говорит позже, модели почти дойдут сами, но им просто нужно чуть больше контекста о вашей области — в контекстном окне, в промпте, который вы им даёте.
+
+BLOCK 139 (00:13:42.184 -> 00:13:46.278):
+ORG: This is why he says, one idea they've got is just to make the context longer.
+MATCH: Вот почему он говорит: одна из их идей — просто сделать контекст длиннее.
+
+BLOCK 140 (00:13:46.278 -> 00:13:48.718):
+ORG: There's nothing preventing longer context from working.
+MATCH: Ничто не мешает длинному контексту работать.
+
+BLOCK 141 (00:13:48.718 -> 00:13:52.266):
+ORG: You just have to train at longer context and then learn to serve them inference.
+MATCH: Вам просто нужно обучать на более длинном контексте, а затем научиться обслуживать инференс с таким контекстом.
+
+BLOCK 142 (00:13:52.740 -> 00:14:00.783):
+ORG: In other words, there might be a little bit of nuance in your domain that this generalist model doesn't know even after specializing in all the specialisms.
+MATCH: Иными словами, в вашей области может быть небольшой нюанс, которого эта универсальная модель не знает даже после специализации во всех специализациях.
+
+BLOCK 143 (00:14:00.783 -> 00:14:04.804):
+ORG: It might only generalize so much and need a bit more context from your domain.
+MATCH: Она может обобщать лишь до определённого предела и нуждаться в немного большем контексте из вашей предметной области.
+
+BLOCK 144 (00:14:04.804 -> 00:14:08.208):
+ORG: But Claude 4.6 can now absorb 750,000 words in its context window.
+MATCH: Но Claude 4.6 теперь может «впитать» 750 00 слов в своём контекстном окне.
+
+BLOCK 145 (00:14:08.208 -> 00:14:10.845):
+ORG: In short order, that might be a couple million words.
+MATCH: В ближайшее время это может быть пара миллионов слов.
+
+BLOCK 146 (00:14:10.845 -> 00:14:14.974):
+ORG: Maybe that's enough specific context from your domain for the model to do the rest.
+MATCH: Может, этого достаточно — как раз той самой специфики вашей области, чтобы модель дальше сделала остальное.
+
+BLOCK 147 (00:14:14.974 -> 00:14:29.121):
+ORG: It can learn the patterns it needs in context learning and finish off what it needs to do in marketing or software engineering or back office automation or data analysis or finance and accounting as this chart of its activities and tool calls show.
+MATCH: Она может выучить нужные ей паттерны прямо в контексте и довести до конца то, что нужно сделать в маркетинге, разработке ПО, автоматизации бэк‑офиса, анализе данных, финансах и бухгалтерии, как показывает этот график её активностей и вызовов инструментов.
+
+BLOCK 148 (00:14:29.121 -> 00:14:31.621):
+ORG: Amade brought the conversation back to coding.
+MATCH: Амаде вернул разговор к программированию.
+
+BLOCK 149 (00:14:31.621 -> 00:14:40.259):
+ORG: He said, I don't think people would say that learning on the job, continual learning, is what is preventing the coding agents from doing everything end to end.
+MATCH: Он сказал: я не думаю, что люди стали бы утверждать, будто обучение на рабочем месте, непрерывное обучение — это то, что мешает кодовым агентам делать всё от начала до конца.
+
+BLOCK 150 (00:14:40.259 -> 00:14:41.617):
+ORG: They keep getting better.
+MATCH: Они продолжают становиться лучше.
+
+BLOCK 151 (00:14:41.617 -> 00:14:41.780):
+ORG: No.
+MATCH: Нет.
+
+BLOCK 152 (00:14:41.780 -> 00:14:47.377):
+ORG: They didn't train on your code base, but they were better than you at improving it anyway, he's saying.
+MATCH: Они не обучались на вашей кодовой базе, но всё равно оказались лучше вас в её улучшении, — говорит он.
+
+BLOCK 153 (00:14:47.377 -> 00:14:58.025):
+ORG: That question then of to what extent do you need to train on all the different domains and subdomains versus generalized patterns across them will be one of the central questions of 2026 and 2027.
+MATCH: И вопрос о том, в какой степени нужно обучать их всем разным доменам и поддоменам, а в какой — достаточно обобщённых паттернов, общих для них, — станет одним из центральных вопросов 2026 и 2027 годов.
+
+BLOCK 154 (00:14:58.025 -> 00:15:07.635):
+ORG: If you want a deeper analysis on some of Amade's points and some context behind the famous meter time horizon exponential, then do check out this recent post on my Patreon.
+MATCH: Если вам нужен более глубокий разбор некоторых тезисов Амаде и контекст вокруг знаменитого «экспоненциального временного горизонта метра», обязательно загляните в мой недавний пост на Patreon.
+
+BLOCK 155 (00:15:07.635 -> 00:15:12.944):
+ORG: Just one more word then on your hunt for that one true benchmark that measures general intelligence.
+MATCH: И ещё одно слово о вашей охоте за тем самым единственным истинным бенчмарком, который измеряет общий интеллект.
+
+BLOCK 156 (00:15:12.944 -> 00:15:16.395):
+ORG: The giveaway perhaps as to whether Amade's bet is correct or not.
+MATCH: Возможно, именно это и будет подсказкой, верна ставка Амаде или нет.
+
+BLOCK 157 (00:15:16.395 -> 00:15:20.560):
+ORG: Well, who would be the people most incentivized to have such a benchmark?
+MATCH: Ну а кто вообще больше всех заинтересован в таком бенчмарке?
+
+BLOCK 158 (00:15:20.560 -> 00:15:26.110):
+ORG: The labs themselves because then they could do reinforcement learning with verifiable rewards on that benchmark.
+MATCH: Сами лаборатории, потому что тогда они могли бы делать обучение с подкреплением с проверяемыми наградами на этом бенчмарке.
+
+BLOCK 159 (00:15:26.110 -> 00:15:32.082):
+ORG: If there was a pure general intelligence benchmark, they could optimize against it and have the most generally intelligent model.
+MATCH: Если бы существовал чистый бенчмарк общего интеллекта, они могли бы оптимизироваться под него и получить самую «в целом умную» модель.
+
+BLOCK 160 (00:15:32.082 -> 00:15:35.740):
+ORG: Many of these benchmarks come from small teams with sub million dollar budgets.
+MATCH: Многие из этих бенчмарков делают маленькие команды с бюджетом меньше миллиона долларов.
+
+BLOCK 161 (00:15:35.740 -> 00:15:43.100):
+ORG: But expecting those small teams to craft a benchmark that objectively captures real world performance without overestimating it is expecting a lot.
+MATCH: Но ожидать от таких команд, что они создадут бенчмарк, который объективно отражает реальную производительность и при этом не завышает её, — это слишком многого хотеть.
+
+BLOCK 162 (00:15:43.100 -> 00:15:51.057):
+ORG: As one researcher at MITRE said, that essentially means making more realistic reinforcement learning with the verifiable reward settings than labs, which is hard.
+MATCH: Как сказал один исследователь из MITRE, по сути это означает делать более реалистичное обучение с подкреплением с настройками проверяемой награды, чем у лабораторий, а это сложно.
+
+BLOCK 163 (00:15:51.057 -> 00:15:54.791):
+ORG: That's why so many of the benchmarks now are written by the labs themselves.
+MATCH: Вот почему так много нынешних бенчмарков пишут сами лаборатории.
+
+BLOCK 164 (00:15:55.375 -> 00:15:58.726):
+ORG: They're the only ones with the heft and budget to craft such benchmarks.
+MATCH: Только у них есть вес и бюджет, чтобы создавать такие бенчмарки.
+
+BLOCK 165 (00:15:58.726 -> 00:16:01.192):
+ORG: Although, obviously, that makes them somewhat biased.
+MATCH: Хотя, разумеется, из‑за этого они становятся в некоторой степени предвзятыми.
+
+BLOCK 166 (00:16:01.192 -> 00:16:07.289):
+ORG: Now this probably deserves the same video, but there is, of course, one truly objective benchmark, which is forecasting the future.
+MATCH: Наверное, этому нужен отдельный ролик, но, конечно, есть один по‑настоящему объективный бенчмарк, и это прогнозирование будущего.
+
+BLOCK 167 (00:16:07.289 -> 00:16:11.570):
+ORG: And Metaculous have noted that the predictive performance of models is rising significantly.
+MATCH: И Metaculous отмечают, что предсказательная точность моделей заметно растёт.
+
+BLOCK 168 (00:16:11.710 -> 00:16:15.950):
+ORG: It's almost at the level of an average human forecaster from Metaculous.
+MATCH: Она почти на уровне среднего прогнозиста‑человека на Metaculous.
+
+BLOCK 169 (00:16:16.110 -> 00:16:18.404):
+ORG: Not quite at pro level, but getting there.
+MATCH: До уровня профи ещё не дотягивает, но движется туда.
+
+BLOCK 170 (00:16:18.404 -> 00:16:20.643):
+ORG: But I did have a quick side note on that.
+MATCH: Но у меня есть к этому короткая ремарка.
+
+BLOCK 171 (00:16:20.643 -> 00:16:26.323):
+ORG: You've probably noticed how the world is going unfortunately wild for polymarket and predictive markets.
+MATCH: Вы, наверное, заметили, как мир, к сожалению, сходит с ума по Polymarket и предиктивным рынкам.
+
+BLOCK 172 (00:16:26.323 -> 00:16:30.801):
+ORG: I get the basic idea, but, of course, for many people, it's just akin to gambling.
+MATCH: Я понимаю базовую идею, но, конечно, для многих это просто разновидность азартных игр.
+
+BLOCK 173 (00:16:30.801 -> 00:16:32.112):
+ORG: But here's the question.
+MATCH: Но вот вопрос.
+
+BLOCK 174 (00:16:32.112 -> 00:16:41.641):
+ORG: What happens when there's so many open claw agents out there that a model can just make money by changing something and making a prediction on it at the same time.
+MATCH: Что будет, когда вокруг окажется так много агентов OpenCLORE, что модель сможет просто зарабатывать, одновременно меняя что‑то и тут же делая на это прогноз.
+
+BLOCK 175 (00:16:41.641 -> 00:16:42.633):
+ORG: Gaming the system.
+MATCH: Подстраивая систему под себя.
+
+BLOCK 176 (00:16:42.633 -> 00:16:53.820):
+ORG: How long until we get the first unfiltered OpenCLORE model that takes action in the real world to make it money on a prediction market, money which is perhaps fed back to the human controlling the model.
+MATCH: Сколько времени пройдёт до появления первой нефильтрованной модели OpenCLORE, которая начнёт действовать в реальном мире, чтобы заработать денег на рынке прогнозов, — денег, которые, возможно, будут возвращаться человеку, управляющему моделью.
+
+BLOCK 177 (00:16:53.820 -> 00:17:01.881):
+ORG: In other words, even forecasting the future, which seems the purest benchmark of them all, is still slightly in the future susceptible to gaming.
+MATCH: Иными словами, даже прогнозирование будущего, которое кажется самым «чистым» бенчмарком из всех, всё равно в ближайшем будущем остаётся уязвимым для манипуляций.
+
+BLOCK 178 (00:17:01.881 -> 00:17:07.775):
+ORG: And finally, for this video, of course, there are benchmarks that are nothing to do with those we've discussed so far.
+MATCH: И наконец, в этом видео, конечно, есть бенчмарки, которые вообще не связаны с тем, что мы обсуждали до сих пор.
+
+BLOCK 179 (00:17:07.775 -> 00:17:09.373):
+ORG: What about speed as a benchmark?
+MATCH: А что насчёт скорости как бенчмарка?  
+
+BLOCK 180 (00:17:09.373 -> 00:17:10.122):
+ORG: Check this out.
+MATCH: Смотрите.
+
+BLOCK 181 (00:17:10.122 -> 00:17:13.169):
+ORG: My question is, tell me about SimpleBench, the LLM benchmark.
+MATCH: Мой вопрос: расскажи мне про SimpleBench, бенчмарк для LLM.
+
+BLOCK 182 (00:17:13.529 -> 00:17:14.599):
+ORG: And I'm recording live.
+MATCH: И я записываю вживую.
+
+BLOCK 183 (00:17:14.599 -> 00:17:15.482):
+ORG: Watch what happens.
+MATCH: Смотрите, что происходит.
+
+BLOCK 184 (00:17:16.250 -> 00:17:16.970):
+ORG: Boom.
+MATCH: Бум.
+
+BLOCK 185 (00:17:17.130 -> 00:17:18.250):
+ORG: Full answer.
+MATCH: Полный ответ.
+
+BLOCK 186 (00:17:18.809 -> 00:17:20.834):
+ORG: Unbelievable tokens per second.
+MATCH: Невероятное количество токенов в секунду.
+
+BLOCK 187 (00:17:20.834 -> 00:17:24.822):
+ORG: This is a model made for a chip, but that's a discussion for another day.
+MATCH: Эта модель сделана под конкретный чип, но это разговор на другой раз.
+
+BLOCK 188 (00:17:24.822 -> 00:17:29.885):
+ORG: I just think this portends a future where entire apps are created in a single millisecond.
+MATCH: Просто мне кажется, это предвещает будущее, где целые приложения будут создаваться за одну миллисекунду.
+
+BLOCK 189 (00:17:29.885 -> 00:17:36.171):
+ORG: Then there's a benchmark for questions that you may have that no one else has, and that's what I use lmcouncil.ai for.
+MATCH: А ещё есть бенчмарк для вопросов, которые есть у вас, но ни у кого больше нет, — и именно для этого я использую lmcouncil.ai.
+
+BLOCK 190 (00:17:36.171 -> 00:17:42.180):
+ORG: That's my own site, of course, and it's free currently to compare the responses of, say, Gemini 3.1 Pro and GPT 5.2.
+MATCH: Это мой сайт, конечно, и сейчас он бесплатный, чтобы сравнивать ответы, скажем, Gemini 3.1 Pro и GPT 5.2.
+
+BLOCK 191 (00:17:42.180 -> 00:17:44.718):
+ORG: Lastly, what about bloody realism as a benchmark?
+MATCH: И последнее: а как насчёт, чёрт возьми, реализма как бенчмарка?  
+
+BLOCK 192 (00:17:44.718 -> 00:17:57.978):
+ORG: Of course, it would have been hard for you to have avoided the talk of SeaDance 2.0 from China's ByteDance, I but did think it was worth ending the video with maybe forty five seconds where you can see how it is a step up, I think, from VO 3.1 or Sora two.
+MATCH: Разумеется, вам было бы сложно не услышать разговоры о SeaDance 2.0 от китайской ByteDance, но я подумал, что стоит закончить видео примерно сорока пятью секундами, где вы увидите, как это, на мой взгляд, шаг вперёд по сравнению с VO 3.1 или Sora Two.
+
+BLOCK 193 (00:17:57.978 -> 00:18:02.018):
+ORG: If you're watching the video, you're seeing a video from Seadance two point o.
+MATCH: Если вы смотрите это видео, значит, вы видите ролик от SeaDance 2.0.
+
+BLOCK 194 (00:18:02.018 -> 00:18:08.960):
+ORG: But even if you're listening, here's a comparison between, again, SeaDance 2.0 and VO 3.1.
+MATCH: Но даже если вы просто слушаете, вот сравнение между — снова — SeaDance 2.0 и VO 3.1.  
+
+
+BLOCK 195 (00:18:08.960 -> 00:18:10.880):
+ORG: I'm so proud of my family.
+MATCH: Я так горжусь своей семьёй.
+
+BLOCK 196 (00:18:11.440 -> 00:18:14.939):
+ORG: My sweetie, you're the heart of our family.
+MATCH: Милая, ты — сердце нашей семьи.
+
+BLOCK 197 (00:18:14.939 -> 00:18:17.039):
+ORG: Folks, let's dance together to celebrate.
+MATCH: Друзья, давайте потанцуем вместе, чтобы отпраздновать.
+
+BLOCK 198 (00:18:18.255 -> 00:18:18.649):
+ORG: Music.
+MATCH: Музыку.
+
+BLOCK 199 (00:18:18.649 -> 00:18:20.029):
+ORG: I'll bring the music.
+MATCH: Я принесу музыку.
+
+BLOCK 200 (00:18:20.575 -> 00:18:26.095):
+ORG: I'm so proud of my family.
+MATCH: Я так горжусь своей семьёй.
+
+BLOCK 201 (00:18:26.335 -> 00:18:29.127):
+ORG: My sweetie, you're the heart of our family.
+MATCH: Милая, ты — сердце нашей семьи.
+
+BLOCK 202 (00:18:29.127 -> 00:18:31.790):
+ORG: Folks, let's dance together to celebrate.
+MATCH: Друзья, давайте потанцуем вместе, чтобы отпраздновать.
+
+BLOCK 203 (00:18:32.250 -> 00:18:34.009):
+ORG: I'll bring the music.
+MATCH: Я принесу музыку.
+
+BLOCK 204 (00:18:34.089 -> 00:18:37.032):
+ORG: In this domain, at least, the difference seems obvious to me.
+MATCH: По крайней мере в этой области разница, на мой взгляд, очевидна.
+
+BLOCK 205 (00:18:37.032 -> 00:18:37.997):
+ORG: So there we have it.
+MATCH: И вот мы здесь.
+
+BLOCK 206 (00:18:37.997 -> 00:18:40.554):
+ORG: Of course, DeepSeek v four is just around the corner.
+MATCH: Конечно, DeepSeek v4 уже не за горами.
+
+BLOCK 207 (00:18:40.554 -> 00:18:42.291):
+ORG: But what did you make of this video?
+MATCH: Но что вы думаете об этом видео?
+
+BLOCK 208 (00:18:42.291 -> 00:18:46.536):
+ORG: And the swirling ongoing debate about capturing the true general intelligence of models.
+MATCH: А как вам эта закручивающаяся, бесконечная дискуссия о том, как уловить у моделей настоящий общий интеллект?
+
+BLOCK 209 (00:18:46.536 -> 00:18:49.817):
+ORG: Thank you so much for watching to the end, and have a wonderful day.
+MATCH: Большое спасибо, что досмотрели до конца, и желаю вам прекрасного дня.
+

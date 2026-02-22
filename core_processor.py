@@ -90,6 +90,11 @@ def process_video(video_path: str, target_language: str, use_correction: bool = 
         # --- 5. VERIFY & REFINE TRANSLATION ---
         full_target_text = verify_translation_quality(source_chunks, translated_chunks, target_language)
 
+        # SANITIZE TEXTS: Remove problematic whitespace and potential NUL byte hallucinations
+        # FFmpeg subtitle drawing fails at \x00. NNBSP (\u202f) and NBSP (\xa0) sometimes cause LLM hallucination
+        full_english_text = full_english_text.replace('\x00', '').replace('\u202f', ' ').replace('\xa0', ' ')
+        full_target_text = full_target_text.replace('\x00', '').replace('\u202f', ' ').replace('\xa0', ' ')
+
         # START BACKGROUND EVALUATION
         # We start it here. It relies on files or data. 
         # Note: In a Cloud Run Job, we might want to wait for this? 
