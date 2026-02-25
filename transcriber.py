@@ -59,13 +59,26 @@ def format_timestamp(seconds):
 def generate_vtt_from_utterances(utterances):
     """
     Generates a WebVTT string from the list of utterances.
+    Formats multi-speaker utterances with dialogue dashes (-).
     """
     vtt_output = "WEBVTT\n\n"
+    
+    last_speaker = None
     
     for u in utterances:
         start_time = format_timestamp(u.get("start", 0))
         end_time = format_timestamp(u.get("end", 0))
         text = u.get("transcript", "").strip()
+        speaker = u.get("speaker", 0) # Default to 0 if diarization fails
+        
+        # Determine if we need a speaker dash
+        # We use a dash if the speaker changes, OR if it's the very first line and we want to be safe,
+        # but usually we only add a dash when there's a back-and-forth or overlap.
+        # Let's add a dash if there's a speaker transition.
+        if last_speaker is not None and speaker != last_speaker:
+            text = f"- {text}"
+            
+        last_speaker = speaker
         
         # Output block
         vtt_output += f"{start_time} --> {end_time}\n{text}\n\n"
@@ -92,6 +105,7 @@ def transcribe_audio(audio_path, use_correction=True):
             "smart_format": True,
             "utterances": True,      # Required for VTT conversion
             "detect_language": True, # Auto-detects language
+            "diarize": True,         # Required for identifying overlapping dialogue
         }
         
         # 3. Call API (Once)

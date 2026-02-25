@@ -63,6 +63,11 @@ def split_whisper_segment(segment):
         part = part.strip()
         if not part: continue
         
+        # Ensure we don't accidentally split and lose leading dashes if there happens to be a space after a punctuation inside a single utterance.
+        # Actually, the regex `(?<=[.?!])\s+` splits on spaces AFTER punctuation. So if the original text started with `- `, it will stay attached to the *first* part created by the split.
+        # But if the segment is like "- Hello. What's up?", it becomes ["- Hello.", "What's up?"]. This is correct because the second sentence is still the same speaker.
+        # So we just need to ensure the duration estimation is correct.
+        
         # Estimate duration based on length
         part_duration = duration * (len(part) / total_chars)
         

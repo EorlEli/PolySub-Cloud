@@ -77,6 +77,7 @@ def translate_full_text(full_text, target_language="Portuguese"):
     9. **Repetitions**: Keep repeated phrases (e.g., "Doing good. Doing good." -> "Estou bem. Estou bem.").
     10. **1:1 rule**: Translate one original sentence, the one which ends with a dot, question mark or exclamation mark, into one translated sentence, which ends with a dot, question mark or exclamation mark.
     11. **Short words and fillers**: Pay meticulous attention to short sentences, interjections, and filler words (e.g., "Yeah.", "Right?", "No?", "Okay.", "Well,"). You MUST translate every single one of them. NEVER drop or merge them.
+    12. **Dialogue Dashes**: If a source sentence starts with a hyphen/dash (-), it indicates a change in speaker or overlapping dialogue. You MUST preserve the starting dash in your translation.
 
     OUTPUT:
     Return ONLY the translated text. No notes, no explanations, no preambles, no postambles.
@@ -150,6 +151,7 @@ def verify_translation_quality(source_chunks, translated_chunks, target_language
     7. **Sentence Splitting**: If the translation combines sentences using colons, semicolons, or dashes, SPLIT them with a period (.). NEVER combine multiple source sentences into one.
     8. **COMPLETENESS**: CRITICAL. Ensure EVERY source sentence logic is preserved. Do not skip content or summarize.
     9. **Short words and Fillers**: NEVER drop short sentences like "Yeah.", "Right.", or "Okay.". Ensure they are present in the final target text.
+    10. **Dialogue Dashes**: Preserve any leading dashes (-) present in the source text, as they denote speaker changes.
 
 
     If the draft is already perfect, output it exactly as is.
