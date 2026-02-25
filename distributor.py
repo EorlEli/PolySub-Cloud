@@ -56,7 +56,7 @@ def distribute_translation(original_block, translated_text):
     # 4. MERGE PHASE (The Fix for "The Stutter")
     # If a block is too short (< 1.5s) or text is too short (< 15 chars),
     # merge it with the next one to create a readable subtitle.
-    merged_segments = merge_micro_segments(temp_segments)
+    merged_segments = merge_micro_segments(temp_segments, max_chars_per_block)
 
     # 5. FORMATTING PHASE
     final_segments = []
@@ -94,7 +94,13 @@ def intelligent_split(text, max_len=80):
             continue
             
         # 3. Split by Comma (Only if long)
-        comma_parts = sent.split(',')
+        if ',' in sent:
+            comma_parts = sent.split(',')
+        else:
+            # If there are no commas and it's > max_len, we MUST hard split it now
+            final_chunks.extend(split_hard_by_space(sent, max_len))
+            continue
+            
         buffer = ""
         
         for i, part in enumerate(comma_parts):
@@ -196,11 +202,11 @@ def balanced_split_helper(text, max_len):
 
 # --- THE MERGER (NEW) ---
 
-def merge_micro_segments(segments):
+def merge_micro_segments(segments, max_chars_per_block=80):
     """
     Iterates through segments. If one is too short, glues it to the next.
     Prevents 0.3s flashes.
-    Enforces that merged segments do not exceed readable limits (approx 80 chars / 2 lines).
+    Enforces that merged segments do not exceed max_chars_per_block (approx 80 chars / 2 lines, or 110/3).
     """
     if not segments: return []
     
@@ -226,7 +232,7 @@ def merge_micro_segments(segments):
         
         # Safety Check: Don't create giant blocks
         combined_len = len(current_seg["text"]) + len(next_seg["text"]) + 1
-        will_be_too_long = combined_len > 80
+        will_be_too_long = combined_len > max_chars_per_block
         
         should_merge_current = (current_too_short and not current_ends_sentence)
         should_absorb_next = next_is_tiny_widow
@@ -259,6 +265,13 @@ def wrap_text(text, max_line=42, high_density=False):
     # 2. Try to split into balanced lines
     import textwrap
     
+    # If the text is fundamentally too massive because greedy merging failed to constrain it, 
+    # we force a hard cap. (e.g. A 200 char block should NOT be in one subtitle cue, it should have been 2 cues).
+    # If we get here, textwrap will just do what it has to do, which might result in 4+ lines.
+    # We will let textwrap handle it, but we log a warning locally.
+    if len(text) > (max_line * 3):
+        print(f"   [WARNING] Text extremely long for wrapping ({len(text)} chars). Wrapper will exceed 3 lines.")
+
     if high_density and len(text) > (max_line * 1.8):
         # We likely need 3 lines. 
         # Calculate optimal width for 3 lines to make them look balanced.
@@ -266,6 +279,12 @@ def wrap_text(text, max_line=42, high_density=False):
         # Ensure optimal width doesn't exceed screen limits
         optimal_width = min(optimal_width, max_line)
         lines = textwrap.wrap(text, width=optimal_width)
+        
+        # Failsafe for long words (like Russian/German) that cause textwrap to cascade into 4+ lines
+        if len(lines) > 3:
+             # Force a literal 3-way balanced split
+             return _force_balanced_split(text, 3)
+             
         return "\n".join(lines)
     else:
         # Standard 2-line balancing (same as before, but delegated to textwrap logic for simplicity 
@@ -296,7 +315,43 @@ def wrap_text(text, max_line=42, high_density=False):
 
         # 3. Fallback: standard textwrap
         lines = textwrap.wrap(text, width=max_line)
+        
+        # Failsafe for long words avoiding 4+ lines on standard density
+        if len(lines) > 2 and len(text) <= (max_line * 2):
+            return _force_balanced_split(text, 2)
+            
         return "\n".join(lines)
+
+def _force_balanced_split(text, num_lines):
+    """
+    Forces text into N lines as evenly as possible using spaces, 
+    ignoring `max_line` widths if words are too long.
+    """
+    words = text.split(' ')
+    if not words: return text
+    
+    # Calculate ideal characters per line
+    target_length = len(text) / num_lines
+    
+    lines = []
+    current_line = []
+    current_length = 0
+    
+    for word in words:
+        # If adding this word exceeds the target length, AND we have words in the current line,
+        # AND we haven't reached the final line yet -> commit the line
+        if current_length + len(word) > target_length and current_line and len(lines) < num_lines - 1:
+            lines.append(" ".join(current_line))
+            current_line = [word]
+            current_length = len(word)
+        else:
+            current_line.append(word)
+            current_length += len(word) + 1 # +1 for space
+            
+    if current_line:
+        lines.append(" ".join(current_line))
+        
+    return "\n".join(lines)
 
 def parse_time(t_str):
     parts = t_str.replace(',', '.').split(':')

@@ -54,7 +54,7 @@ def get_corrections(utterances, topic, client, model="gpt-5-nano"):
     2. Check that the adjectives describing nouns make sense in the context of the identified topic.
     
     RULES:
-    1. Only correct CLEAR errors where the word is out of place.
+    1. Only correct CLEAR errors where the word is out of place. Do NOT overcorrect seemingly unknown but phonetically valid proper nouns, recent technologies, product names, or newly released LLM models into older, more common entities. Trust that the speaker is referencing real, modern terms.
     2. Example: "The code is intent" -> "The code is indented" (if topic is Programming).
     3. Example: "The sky is blue" -> NO CHANGE.
     4. Provide the output as a JSON object with a key "corrections" containing a list of objects.
