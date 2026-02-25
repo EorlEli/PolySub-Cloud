@@ -9,12 +9,22 @@ def distribute_translation(original_block, translated_text):
     end_seconds = parse_time(original_block[-1]['end'])
     total_duration = end_seconds - start_seconds
 
+    # --- HIGH DENSITY MODE DETECTION ---
+    # If the user speaks very fast, we need to allow longer subtitles (e.g. 3 lines) 
+    # to prevent rapid flashing of short text on screen.
+    # 22 Characters Per Second is considered fast speech.
+    char_count = len(translated_text)
+    cps = char_count / total_duration if total_duration > 0 else 0
+    is_high_density = cps > 22.0
+    max_chars_per_block = 110 if is_high_density else 80
+
     print(f"   [DEBUG DISTRIBUTOR] Start: {start_seconds}s | End: {end_seconds}s | Dur: {total_duration}s")
+    print(f"   [DEBUG DISTRIBUTOR] Char Count: {char_count} | CPS: {cps:.1f} | High Density: {is_high_density}")
     print(f"   [DEBUG DISTRIBUTOR] Text: {translated_text[:30]}...")
 
     # 2. SPLIT PHASE: Sentence -> Comma -> Space
     # We use a hierarchical splitting strategy
-    raw_chunks = intelligent_split(translated_text)
+    raw_chunks = intelligent_split(translated_text, max_chars_per_block)
  
     #print(f"DEBUG: distribute_translation total_chars={len(translated_text)}")
     #print(f"DEBUG: raw_chunks count={len(raw_chunks)}")
@@ -50,23 +60,26 @@ def distribute_translation(original_block, translated_text):
 
     # 5. FORMATTING PHASE
     final_segments = []
+    
+    # Calculate ideal line length. For high density (3 lines), we wrap at roughly ~42 chars per line (110 / 3 = ~36, using 42 is safe).
+    # Standard is also 42 for 2 lines (max 80 chars).
     for seg in merged_segments:
         final_segments.append({
             "start": format_timestamp(seg["start_sec"]),
             "end": format_timestamp(seg["end_sec"]),
-            "text": wrap_text(seg["text"])
+            "text": wrap_text(seg["text"], high_density=is_high_density)
         })
 
     return final_segments
 
 # --- INTELLIGENT SPLITTER ---
 
-def intelligent_split(text):
+def intelligent_split(text, max_len=80):
     """
     Splits text into chunks. 
     Priority 1: Split by Sentence Endings (. ? !)
-    Priority 2: If sentence > 80 chars, Split by Comma
-    Priority 3: If part > 80 chars, Split by Space
+    Priority 2: If sentence > max_len chars, Split by Comma
+    Priority 3: If part > max_len chars, Split by Space
     """
     # 1. Split by Sentence
     sentences = re.split(r'(?<=[.?!])\s+', text)
@@ -76,7 +89,7 @@ def intelligent_split(text):
         if not sent.strip(): continue
         
         # 2. Check Length
-        if len(sent) < 80:
+        if len(sent) < max_len:
             final_chunks.append(sent)
             continue
             
@@ -90,14 +103,14 @@ def intelligent_split(text):
             fragment = part.strip() + suffix
             
             # Accumulate buffer
-            if len(buffer) + len(fragment) < 80: # Try to fill up to 80 chars
+            if len(buffer) + len(fragment) < max_len: # Try to fill up to max chars
                 buffer += " " + fragment
             else:
                 # Flush buffer
                 if buffer:
-                    # Check if buffer is HUGE (e.g. 180 chars because one comma segment was massive)
-                    if len(buffer) > 80:
-                        final_chunks.extend(split_hard_by_space(buffer))
+                    # Check if buffer is HUGE (because one comma segment was massive)
+                    if len(buffer) > max_len:
+                        final_chunks.extend(split_hard_by_space(buffer, max_len))
                     else:
                         final_chunks.append(buffer.strip())
                 
@@ -105,19 +118,19 @@ def intelligent_split(text):
         
         if buffer:
             # Check if the leftover buffer is huge
-            if len(buffer) > 80:
-                final_chunks.extend(split_hard_by_space(buffer))
+            if len(buffer) > max_len:
+                final_chunks.extend(split_hard_by_space(buffer, max_len))
             else:
                 final_chunks.append(buffer.strip())
                 
     return final_chunks
 
-def split_hard_by_space(text):
+def split_hard_by_space(text, max_len=80):
     """
-    Last resort: chop by words if > 80 chars.
+    Last resort: chop by words if > max_len chars.
     Uses balanced splitting instead of greedy filling.
     """
-    return balanced_split_helper(text, 80)
+    return balanced_split_helper(text, max_len)
 
 def balanced_split_helper(text, max_len):
     if len(text) <= max_len: 
@@ -232,46 +245,58 @@ def merge_micro_segments(segments):
 
 # --- HELPERS ---
 
-def wrap_text(text, max_line=42):
+def wrap_text(text, max_line=42, high_density=False):
     """
-    Wraps text to max_line, ensuring at most 2 balanced lines.
+    Wraps text to max_line.
+    Standard mode: Ensures at most 2 balanced lines.
+    High Density mode: Can split into 3 lines if text > max_line * 2.
     Uses textwrap for safety.
     """
     # 1. If it fits on one line, return it.
     if len(text) <= max_line:
         return text
 
-    # 2. Try to split into 2 balanced lines
-    # We want the split to be near the middle to avoid "top heavy" or "bottom heavy" lines.
-    mid_point = len(text) // 2
-    
-    # Search for the best space to split on near the middle
-    # Check 15 chars variance around the middle
-    best_split = -1
-    min_diff = 100
-    
-    # Look for spaces
-    for i in range(len(text)):
-        if text[i] == ' ':
-            # How balanced would this split be?
-            len_a = i
-            len_b = len(text) - (i + 1)
-            
-            # Constraints: Both must be <= max_line
-            if len_a <= max_line and len_b <= max_line:
-                diff = abs(len_a - len_b)
-                if diff < min_diff:
-                    min_diff = diff
-                    best_split = i
-                    
-    if best_split != -1:
-         return text[:best_split] + '\n' + text[best_split+1:]
-
-    # 3. Fallback: standard textwrap (might produce > 2 lines if text is huge, but we capped it earlier)
-    # This handles edge cases where no good middle space exists (e.g. long timestamps or garbage)
+    # 2. Try to split into balanced lines
     import textwrap
-    lines = textwrap.wrap(text, width=max_line)
-    return "\n".join(lines) # Return ALL lines. Never delete text.
+    
+    if high_density and len(text) > (max_line * 1.8):
+        # We likely need 3 lines. 
+        # Calculate optimal width for 3 lines to make them look balanced.
+        optimal_width = max(20, (len(text) // 3) + 2)
+        # Ensure optimal width doesn't exceed screen limits
+        optimal_width = min(optimal_width, max_line)
+        lines = textwrap.wrap(text, width=optimal_width)
+        return "\n".join(lines)
+    else:
+        # Standard 2-line balancing (same as before, but delegated to textwrap logic for simplicity 
+        # unless specifically needed to be middle-aligned). 
+        # For strict 2-line balancing, the existing middle split is actually better:
+        mid_point = len(text) // 2
+        
+        # Search for the best space to split on near the middle
+        best_split = -1
+        min_diff = 100
+        
+        # Look for spaces
+        for i in range(len(text)):
+            if text[i] == ' ':
+                # How balanced would this split be?
+                len_a = i
+                len_b = len(text) - (i + 1)
+                
+                # Constraints: Both must be <= max_line
+                if len_a <= max_line and len_b <= max_line:
+                    diff = abs(len_a - len_b)
+                    if diff < min_diff:
+                        min_diff = diff
+                        best_split = i
+                        
+        if best_split != -1:
+             return text[:best_split] + '\n' + text[best_split+1:]
+
+        # 3. Fallback: standard textwrap
+        lines = textwrap.wrap(text, width=max_line)
+        return "\n".join(lines)
 
 def parse_time(t_str):
     parts = t_str.replace(',', '.').split(':')

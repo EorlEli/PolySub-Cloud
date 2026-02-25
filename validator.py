@@ -70,6 +70,8 @@ def validate_vtt_structure(original_vtt_path, target_vtt_path):
 
     # --- 1. Line Count Check ---
     max_lines_found = 0
+    three_line_count = 0
+    
     for i, cue in enumerate(target_cues):
         if cue['lines'] > max_lines_found:
             max_lines_found = cue['lines']
@@ -77,7 +79,8 @@ def validate_vtt_structure(original_vtt_path, target_vtt_path):
         if cue['lines'] > 3:
             errors.append(f"Cue {i+1} has {cue['lines']} lines (Limit is 3).")
         elif cue['lines'] == 3:
-             warnings.append(f"Cue {i+1} has 3 lines (Ideal is 2).")
+             three_line_count += 1
+             warnings.append(f"Cue {i+1} has 3 lines (Ideal is 2, allowed in High Density).")
 
     # --- 2. Global Timing Check ---
     orig_start = original_cues[0]['start']
@@ -139,21 +142,25 @@ def validate_vtt_structure(original_vtt_path, target_vtt_path):
         if cue['duration'] < 0.1 or not cue['text']: 
             continue
             
-        char_count = len(cue['text'])
+        char_count = len(cue['text'].replace('\n', ' '))
         cps = char_count / cue['duration']
         
-        if cps > 25:
+        if cps > 30.0:  # Increased from 25 to 30 for high density tolerance
              high_cps_count += 1
              warnings.append(f"Cue {i+1} is too fast ({cps:.1f} CPS). Text: {cue['text'][:30]}...")
 
     if high_cps_count > 0:
-        warnings.append(f"Found {high_cps_count} blocks with CPS > 25.")
+        warnings.append(f"Found {high_cps_count} blocks with CPS > 30.")
 
     # --- Summary ---
     is_valid = len(errors) == 0
     
     if is_valid:
         print("   ✅ VTT Structure Validated. Looks good.")
+        if three_line_count > 0:
+             pct = (three_line_count / len(target_cues)) * 100
+             print(f"   ℹ️  Used 3-line subtitles for {three_line_count} blocks ({pct:.1f}% of total).")
+             
         if warnings:
             print(f"   ⚠️  ({len(warnings)} Warnings found)")
     else:
@@ -166,6 +173,8 @@ def validate_vtt_structure(original_vtt_path, target_vtt_path):
         "stats": {
             "max_lines": max_lines_found,
             "orig_duration": orig_duration,
-            "target_duration": target_duration
+            "target_duration": target_duration,
+            "three_line_count": three_line_count,
+            "high_cps_count": high_cps_count
         }
     }
