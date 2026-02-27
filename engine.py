@@ -11,8 +11,9 @@ def run_alignment_engine(blocks, full_target_text):
     WINDOW_SIZE = 500  # Adjust if needed for Nano context limits
 
     print(f"   🚀 Starting Alignment Engine on {len(blocks)} blocks...")
-
-    for i, block in enumerate(blocks):
+    i = 0
+    while i < len(blocks):
+        block = blocks[i]
         original_language_block_text = " ".join([l['text'] for l in block])
         block_start = block[0]['start']
         block_end = block[-1]['end']
@@ -46,13 +47,34 @@ def run_alignment_engine(blocks, full_target_text):
                 print(f"   ⚠️ [Block {i+1}] Match '{matched_text}' found but skips {found_idx} chars (Max allowed: {MAX_GAP}). Rejecting match to prevent misalignment.")
                 matched_text = ""
 
+        # --- NEW: MERGE RECOVERY STRATEGY ---
+        if not matched_text and i + 1 < len(blocks):
+            print(f"   ⚠️ [Block {i+1}] No match found. Attempting MERGE RECOVERY with next block...")
+            merged_source_text = original_language_block_text + " " + next_block_text
+            
+            # Use block i+2 as the new negative constraint
+            next_next_block_text = ""
+            if i + 2 < len(blocks):
+                 next_next_block_text = " ".join([l['text'] for l in blocks[i+2]])
+                 
+            # Try matching the merged block
+            merged_match = find_matching_translation(merged_source_text, target_language_search_window, context_preview, next_next_block_text)
+            
+            if merged_match:
+                 print(f"   ✅ [Block {i+1} + {i+2}] MERGE RECOVERY SUCCESSFUL. Found unified translation.")
+                 block = block + blocks[i+1] # Combine the VTT lines
+                 original_language_block_text = merged_source_text
+                 matched_text = merged_match
+                 # Skip the next block since we consumed it
+                 i += 1 
+
         print(f"   [DEBUG_ENGINE] Block {i} Input: '{original_language_block_text[:30]}...'")
         print(f"   [DEBUG_ENGINE] Block {i} Match: '{matched_text}'")
         with open("debug_engine.log", "a", encoding="utf-8") as log:
             log.write(f"BLOCK {i} ({block_start} -> {block_end}):\nORG: {original_language_block_text}\nMATCH: {matched_text}\n\n")
         
         if not matched_text:
-            print(f"   ⚠️ [Block {i+1}] No match found. Cursor at {pt_cursor}.")
+            print(f"   ⚠️ [Block {i+1}] No match found even after recovery. Cursor at {pt_cursor}.")
             
             # --- LOOKAHEAD RECOVERY ---
             recov = False
@@ -103,5 +125,7 @@ def run_alignment_engine(blocks, full_target_text):
         # distribute_translation uses GPT-5-nano internally now
         new_segments = distribute_translation(block, matched_text)
         final_segments.extend(new_segments)
+        
+        i += 1
 
     return final_segments
