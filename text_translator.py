@@ -2,15 +2,15 @@ import os
 import re
 from openai import OpenAI
 from dotenv import load_dotenv
-from utils import log_openai_usage
+from utils import log_openai_usage, get_llm_client, get_model_name
 import time
 
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = get_llm_client()
 
 MAX_CHUNK_SIZE = 4000  # Characters (approx 1000 tokens) - Safe size for reliable translation
 CONTEXT_SIZE = 200     # Characters of overlap/context
-MODEL_NAME = "gpt-5.2" # Global model setting
+MODEL_NAME = get_model_name("gpt-5.2") # Global model setting
 
 def split_into_chunks(text, max_size=MAX_CHUNK_SIZE):
     """

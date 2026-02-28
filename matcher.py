@@ -3,10 +3,10 @@ import json
 import time
 from openai import OpenAI
 from dotenv import load_dotenv
-from utils import log_openai_usage
+from utils import log_openai_usage, get_llm_client, get_model_name
 
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = get_llm_client()
 
 def find_matching_translation(original_language_block_text, target_language_search_window, context_preview="", next_block_text=""):
     """
@@ -54,7 +54,7 @@ def find_matching_translation(original_language_block_text, target_language_sear
     {target_language_search_window}
     """
 
-    current_model = "gpt-5.2"
+    current_model = get_model_name("gpt-5.2")
     max_retries = 3
 
     for attempt in range(max_retries):

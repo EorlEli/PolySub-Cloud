@@ -28204,3 +28204,3563 @@ BLOCK 209 (00:18:46.536 -> 00:18:49.817):
 ORG: Thank you so much for watching to the end, and have a wonderful day.
 MATCH: Большое спасибо, что досмотрели до конца, и желаю вам прекрасного дня.
 
+BLOCK 0 (00:00:01.040 -> 00:00:01.851):
+ORG: Hey, everyone.
+MATCH: Olá, pessoal.
+
+BLOCK 1 (00:00:01.851 -> 00:00:03.184):
+ORG: Welcome to the session.
+MATCH: Bem-vindos à sessão.
+
+BLOCK 2 (00:00:03.184 -> 00:00:09.327):
+ORG: I'm Corey Knowles coming to you today from Microsoft Ignite twenty twenty five in beautiful San Francisco.
+MATCH: Eu sou Corey Knowles e falo com vocês hoje direto do Microsoft Ignite 2025, na linda São Francisco.
+
+BLOCK 3 (00:00:09.327 -> 00:00:11.662):
+ORG: And today, we're joined by Kelly August.
+MATCH: E hoje, estamos acompanhados da Kelly August.
+
+BLOCK 4 (00:00:11.662 -> 00:00:16.336):
+ORG: She's the director of Microsoft 365 Copilot and is going to show us some awesome new stuff this week.
+MATCH: Ela é diretora do Microsoft 365 Copilot e vai mostrar pra gente algumas novidades incríveis esta semana.
+
+BLOCK 5 (00:00:16.336 -> 00:00:17.169):
+ORG: How are you Kelly?
+MATCH: Como você está, Kelly?
+
+BLOCK 6 (00:00:17.169 -> 00:00:17.632):
+ORG: I'm great.
+MATCH: Estou ótima.
+
+BLOCK 7 (00:00:17.632 -> 00:00:18.465):
+ORG: How are you doing?
+MATCH: E você, como está?
+
+BLOCK 8 (00:00:18.465 -> 00:00:19.159):
+ORG: I'm doing good.
+MATCH: Estou bem.
+
+BLOCK 9 (00:00:19.159 -> 00:00:19.668):
+ORG: Doing good.
+MATCH: Estou bem.
+
+BLOCK 10 (00:00:19.668 -> 00:00:22.491):
+ORG: Looks like you guys have a lot of big stuff coming this week.
+MATCH: Pelo visto, vocês têm muita coisa grande chegando esta semana.
+
+BLOCK 11 (00:00:22.491 -> 00:00:24.619):
+ORG: We've got a lot of stuff coming out at Ignite.
+MATCH: Temos muita coisa sendo anunciada no Ignite.
+
+BLOCK 12 (00:00:24.619 -> 00:00:25.545):
+ORG: It's super exciting.
+MATCH: Está super empolgante.
+
+BLOCK 13 (00:00:25.545 -> 00:00:28.784):
+ORG: I wanted to take some time to walk you through our latest innovations.
+MATCH: Eu queria reservar um tempo para apresentar nossas inovações mais recentes.
+
+BLOCK 14 (00:00:28.784 -> 00:00:29.802):
+ORG: That would be amazing.
+MATCH: Isso seria incrível.
+
+BLOCK 15 (00:00:29.802 -> 00:00:30.635):
+ORG: That'd be amazing.
+MATCH: Isso seria incrível.
+
+BLOCK 16 (00:00:30.635 -> 00:00:31.191):
+ORG: I'm excited.
+MATCH: Estou animado.
+
+BLOCK 17 (00:00:31.191 -> 00:00:35.764):
+ORG: Well, - I'm gonna kind of take the lens here of an everyday professional.
+MATCH: Bom, vou trazer aqui a perspectiva de um profissional do dia a dia.
+
+BLOCK 18 (00:00:35.764 -> 00:00:40.503):
+ORG: I'm gonna show you kind of some of the things that I love to use with our latest innovations in Copilot.
+MATCH: Vou mostrar algumas das coisas que eu mais gosto de usar com as nossas inovações mais recentes no Copilot.
+
+BLOCK 0 (00:00:02.960 -> 00:00:12.960):
+ORG: Maybe you can talk about the current two big competitors in terms of models, Claude 4/6 and GPT-3.5 Codex.
+MATCH: Talvez possas falar dos dois grandes concorrentes atuais, em termos de modelos, o Claude 4/6 e o GPT-3.5 Codex.  
+
+BLOCK 1 (00:00:13.875 -> 00:00:14.835):
+ORG: Which is better?
+MATCH: Qual é melhor?  
+
+BLOCK 2 (00:00:14.835 -> 00:00:16.214):
+ORG: How different are they?
+MATCH: Em que é que diferem?
+
+BLOCK 3 (00:00:16.995 -> 00:00:30.897):
+ORG: I think you've spoken about Codex reading more and Opus being more willing to take action faster and maybe being more creative in the actions it takes.
+MATCH: Acho que já falaste de o Codex ler mais e o Opus estar mais disposto a agir mais depressa e talvez ser mais criativo nas ações que toma.
+
+BLOCK 4 (00:00:30.897 -> 00:00:36.852):
+ORG: But because Codex reads more, it's able to deliver maybe better code.
+MATCH: Mas, como o Codex lê mais, consegue talvez entregar código melhor.
+
+BLOCK 5 (00:00:36.852 -> 00:00:39.411):
+ORG: Can you speak to the differences - there?
+MATCH: Podes falar dessas diferenças?
+
+BLOCK 6 (00:00:39.411 -> 00:00:40.535):
+ORG: Oh, I have a lot of words there.
+MATCH: Eh pá, disse aí uma carrada de coisas.
+
+BLOCK 7 (00:00:43.324 -> 00:00:50.020):
+ORG: - As a general purpose model, Claude is the best.
+MATCH: Como modelo de uso geral, o Claude é o melhor.
+
+BLOCK 8 (00:00:50.020 -> 00:00:58.940):
+ORG: Like, for OpenAI's Claude, Opus is extremely good in terms of role play.
+MATCH: Tipo, no Claude da OpenAI, o Opus é extremamente bom em termos de roleplay.
+
+BLOCK 9 (00:00:59.260 -> 00:01:12.135):
+ORG: Like, really going into the character that you give it, it's very good at it was really bad, but it really made an effort to be really good at following commands.
+MATCH: Tipo, entra mesmo na personagem que lhe dás, é muito bom nisso.  
+Antes era mesmo mau, mas esforçou-se mesmo para ficar muito bom a seguir instruções.
+
+BLOCK 10 (00:01:14.215 -> 00:01:17.956):
+ORG: It is usually quite fast at trying something.
+MATCH: Normalmente, é bastante rápido a tentar alguma coisa.
+
+BLOCK 11 (00:01:17.956 -> 00:01:20.249):
+ORG: It's much more tailored to, like, trial and error.
+MATCH: Está muito mais virado para, tipo, tentativa e erro.
+
+BLOCK 12 (00:01:22.450 -> 00:01:24.290):
+ORG: It's very pleasant to use.
+MATCH: É muito agradável de usar.
+
+BLOCK 13 (00:01:25.329 -> 00:01:36.891):
+ORG: In general, it's almost like Opus is is a little bit too American, and I should maybe it is bad analogy.
+MATCH: No geral, é quase como se o Opus fosse um bocadinho americano demais, e se calhar é uma analogia parva.
+
+BLOCK 14 (00:01:36.891 -> 00:01:38.197):
+ORG: You probably could roast him.
+MATCH: Tu provavelmente até o podias gozar.
+
+BLOCK 15 (00:01:38.197 -> 00:01:38.782):
+ORG: Know exactly.
+MATCH: Sei exatamente.
+
+BLOCK 16 (00:01:38.782 -> 00:01:40.088):
+ORG: It's because Codex is German.
+MATCH: É porque o Codex é alemão.
+
+BLOCK 17 (00:01:40.088 -> 00:01:41.304):
+ORG: Is that what you're saying?
+MATCH: É isso que estás a dizer?
+
+BLOCK 18 (00:01:42.125 -> 00:01:45.521):
+ORG: - Actually, now that you say it, it makes perfect sense.
+MATCH: Na verdade, agora que dizes isso, faz todo o sentido.
+
+BLOCK 19 (00:01:45.521 -> 00:01:47.583):
+ORG: Or you could explain it sometimes.
+MATCH: Ou então, podes explicar isso às vezes.
+
+BLOCK 20 (00:01:48.260 -> 00:01:50.846):
+ORG: I will never be able to forget what you just said.
+MATCH: Eu nunca vou conseguir esquecer o que acabaste de dizer.
+
+BLOCK 21 (00:01:50.846 -> 00:01:51.622):
+ORG: That's so true.
+MATCH: É tão verdade.
+
+BLOCK 22 (00:01:51.622 -> 00:01:55.037):
+ORG: But you also know that a lot of the Codex team is, like, European.
+MATCH: Mas também sabes que uma boa parte da equipa do Codex é, tipo, europeia.
+
+BLOCK 23 (00:01:57.540 -> 00:01:59.219):
+ORG: So maybe there's a bit more to it.
+MATCH: Por isso, se calhar há mais qualquer coisa aí.
+
+BLOCK 0 (00:00:02.960 -> 00:00:12.960):
+ORG: Maybe you can talk about the current two big competitors in terms of models, Claude 4 and GPT-4, Codex.
+MATCH: Может, ты расскажешь про двух главных конкурентов сейчас, если говорить о моделях: Claude 4 и GPT-4, Codex.  
+
+BLOCK 1 (00:00:13.875 -> 00:00:14.835):
+ORG: Which is better?
+MATCH: Какая лучше?
+
+BLOCK 2 (00:00:14.835 -> 00:00:16.214):
+ORG: How different are they?
+MATCH: Насколько они отличаются?
+
+BLOCK 3 (00:00:16.995 -> 00:00:30.897):
+ORG: I think you've spoken about Codex reading more and Opus being more willing to take action faster and maybe being more creative in the actions it takes.
+MATCH: Мне кажется, ты говорил, что Codex больше читает, а Opus охотнее и быстрее переходит к действиям и, возможно, действует более креативно.
+
+BLOCK 4 (00:00:30.897 -> 00:00:36.852):
+ORG: But because Codex reads more, it's able to deliver maybe better code.
+MATCH: Но из‑за того, что Codex больше читает, он, возможно, выдаёт код получше.
+
+BLOCK 5 (00:00:36.852 -> 00:00:39.411):
+ORG: Can you speak to the differences - there?
+MATCH: Можешь рассказать, в чём там разница?
+
+BLOCK 6 (00:00:39.411 -> 00:00:40.535):
+ORG: Oh, I have a lot of words there.
+MATCH: Ой, я тут наговорил кучу слов.
+
+BLOCK 7 (00:00:43.324 -> 00:00:50.241):
+ORG: - As a general purpose model, Opus is the best.
+MATCH: Если брать универсальную модель, то Opus — лучший.
+
+BLOCK 8 (00:00:50.241 -> 00:00:58.940):
+ORG: Like, for OpenAI, Opus is extremely good in terms of role play.
+MATCH: То есть, если говорить про OpenAI, Opus невероятно хорош в ролевых сценариях.
+
+BLOCK 9 (00:00:59.260 -> 00:01:12.135):
+ORG: Like, really going into the character that you give it, it's very good at it was really bad, but it really made an effort to be really good at following commands.
+MATCH: Он прямо реально входит в заданный тобой образ.
+У него это отлично получается.
+Раньше это было очень плохо, но он правда очень постарался стать действительно хорошим в том, чтобы следовать командам.
+
+BLOCK 10 (00:01:14.215 -> 00:01:17.991):
+ORG: It is usually quite fast at trying something.
+MATCH: Обычно он довольно быстро пробует что‑то сделать.
+
+BLOCK 11 (00:01:17.991 -> 00:01:20.248):
+ORG: It's much more tailored to like trial and error.
+MATCH: Он куда больше заточен под подход «проба и ошибка».
+
+BLOCK 12 (00:01:22.450 -> 00:01:24.290):
+ORG: It's very pleasant to use.
+MATCH: Им очень приятно пользоваться.
+
+BLOCK 13 (00:01:25.329 -> 00:01:36.891):
+ORG: In general, it's almost like Opus was is a little bit too American, and I should maybe it is bad analogy.
+MATCH: В целом это почти как будто Opus… он слегка слишком «американский», хотя, может, это плохая аналогия.
+
+BLOCK 14 (00:01:36.891 -> 00:01:38.197):
+ORG: You probably could roast him.
+MATCH: Ты, наверное, мог бы его прожарить.
+
+BLOCK 15 (00:01:38.197 -> 00:01:38.782):
+ORG: Know exactly.
+MATCH: Точно.
+
+BLOCK 16 (00:01:38.782 -> 00:01:40.088):
+ORG: It's because Codex is German.
+MATCH: Это потому, что Codex — «немец»?
+
+BLOCK 17 (00:01:40.088 -> 00:01:41.304):
+ORG: Is that what you're saying?
+MATCH: Это ты хочешь сказать?
+
+BLOCK 18 (00:01:42.125 -> 00:01:45.521):
+ORG: - Actually, now that you say it, it makes perfect sense.
+MATCH: Вообще-то, когда ты так сказал, это идеально укладывается.
+
+BLOCK 19 (00:01:45.521 -> 00:01:47.583):
+ORG: Or you could sometimes explain it.
+MATCH: И иногда так можно это объяснить.
+
+BLOCK 20 (00:01:48.260 -> 00:01:50.814):
+ORG: I will never be able to unsee what you just said.
+MATCH: Я теперь никогда не смогу развидеть то, что ты сказал.
+
+BLOCK 21 (00:01:50.814 -> 00:01:51.596):
+ORG: That's so true.
+MATCH: Это настолько правда.
+
+BLOCK 22 (00:01:51.596 -> 00:01:55.036):
+ORG: But you also know that a lot of the Codex team is, like, European.
+MATCH: Но ты же знаешь, что большая часть команды Codex — типа европейцы.
+
+BLOCK 23 (00:01:57.540 -> 00:01:59.219):
+ORG: So maybe there's a bit more to it.
+MATCH: Так что, может, дело не только в этом.
+
+BLOCK 0 (00:00:04.480 -> 00:00:06.599):
+ORG: So Whatley's still Jewish, Oh, sure.
+MATCH: Значит, Уотли всё ещё еврей, ну конечно.
+
+BLOCK 1 (00:00:06.599 -> 00:00:08.660):
+ORG: Without the parents, it's a breeze.
+MATCH: Без родителей — вообще красота.
+
+BLOCK 2 (00:00:10.080 -> 00:00:10.400):
+ORG: Hey.
+MATCH: Эй.
+
+BLOCK 3 (00:00:10.400 -> 00:00:11.598):
+ORG: Happy Hanukkah.
+MATCH: С Ханукой.
+
+BLOCK 4 (00:00:11.598 -> 00:00:12.317):
+ORG: Hey, Tim.
+MATCH: Эй, Тим.
+
+BLOCK 5 (00:00:12.317 -> 00:00:13.276):
+ORG: Great party.
+MATCH: Отличная вечеринка.
+
+BLOCK 6 (00:00:13.276 -> 00:00:13.675):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 7 (00:00:13.675 -> 00:00:14.235):
+ORG: Uh-huh.
+MATCH: Ага.
+
+BLOCK 8 (00:00:16.315 -> 00:00:16.932):
+ORG: - Hey, George.
+MATCH: Эй, Джордж.
+
+BLOCK 9 (00:00:16.932 -> 00:00:19.090):
+ORG: Thanks again for getting me those Yankee tickets.
+MATCH: Ещё раз спасибо, что достал мне билеты на «Янкиз».
+
+BLOCK 10 (00:00:19.090 -> 00:00:19.486):
+ORG: Oh, yeah.
+MATCH: О, да.
+
+BLOCK 11 (00:00:19.486 -> 00:00:19.706):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 12 (00:00:19.706 -> 00:00:21.380):
+ORG: Still doing good with the ground crew.
+MATCH: С наземной командой всё так же хорошо.
+
+BLOCK 13 (00:00:21.380 -> 00:00:21.909):
+ORG: That's good.
+MATCH: Это хорошо.
+
+BLOCK 14 (00:00:21.909 -> 00:00:23.010):
+ORG: Look, I better circulate.
+MATCH: Слушай, мне лучше пройтись, со всеми поздороваться.
+
+BLOCK 15 (00:00:23.515 -> 00:00:25.355):
+ORG: - Happy Hanukkah, Tiffany.
+MATCH: С Ханукой, Тиффани.
+
+BLOCK 16 (00:00:25.675 -> 00:00:28.428):
+ORG: - This place is like Studio 54 with a menorah.
+MATCH: Тут как в «Студио 54», только с менорой.
+
+BLOCK 17 (00:00:28.428 -> 00:00:31.300):
+ORG: Let me get some of these kosher cocktail franks.
+MATCH: Пойду возьму этих кошерных коктейльных сосисок.
+
+BLOCK 18 (00:00:31.300 -> 00:00:36.079):
+ORG: Oh, - I got denim vests checking me out.
+MATCH: О, да на меня запали джинсовые жилеты.
+
+BLOCK 19 (00:00:37.199 -> 00:00:39.350):
+ORG: - Have fake phone numbers coming out tonight.
+MATCH: Сегодня вечером из меня будут сыпаться фальшивые номера телефонов.
+
+BLOCK 20 (00:00:39.350 -> 00:00:40.784):
+ORG: Are you out of standard faith?
+MATCH: Ты не из стандартной веры?
+
+BLOCK 21 (00:00:40.784 -> 00:00:41.023):
+ORG: Mhmm.
+MATCH: М-м.
+
+BLOCK 22 (00:00:41.600 -> 00:00:44.354):
+ORG: - Spells out no Elaine.
+MATCH: Получается «нет Элейн».
+
+BLOCK 23 (00:00:44.994 -> 00:00:46.533):
+ORG: Isn't that eight letters?
+MATCH: Разве это не восемь букв?
+
+BLOCK 24 (00:00:46.533 -> 00:00:48.133):
+ORG: The extra e is for Elaine.
+MATCH: Лишняя «э» — для Элейн.
+
+BLOCK 25 (00:00:48.994 -> 00:00:51.634):
+ORG: - That's neat.
+MATCH: Здорово.
+
+BLOCK 26 (00:00:52.674 -> 00:00:54.056):
+ORG: - Do we know please?
+MATCH: Мы можем, пожалуйста?
+
+BLOCK 27 (00:00:54.056 -> 00:00:54.816):
+ORG: Denim vest.
+MATCH: Джинсовый жилет.
+
+BLOCK 28 (00:00:54.816 -> 00:00:56.059):
+ORG: He's smoothing it.
+MATCH: Он его заглаживает.
+
+BLOCK 29 (00:00:56.059 -> 00:00:56.750):
+ORG: Very good.
+MATCH: Очень хорошо.
+
+BLOCK 30 (00:00:56.750 -> 00:00:56.958):
+ORG: Hi.
+MATCH: Привет.
+
+BLOCK 31 (00:01:00.010 -> 00:01:00.319):
+ORG: - Hi.
+MATCH: Привет.
+
+BLOCK 32 (00:01:00.319 -> 00:01:00.936):
+ORG: I'm Jerry.
+MATCH: Я Джерри.
+
+BLOCK 33 (00:01:00.936 -> 00:01:01.121):
+ORG: Hi.
+MATCH: Привет.
+
+BLOCK 34 (00:01:01.121 -> 00:01:05.504):
+ORG: You might not know it to look at me, but I can run really, really fast.
+MATCH: По мне, может, не скажешь, но я умею бегать очень, очень быстро.
+
+BLOCK 35 (00:01:07.930 -> 00:01:09.049):
+ORG: - Nice vest.
+MATCH: Классный жилет.
+
+BLOCK 36 (00:01:09.209 -> 00:01:12.489):
+ORG: I like the big metal buttons.
+MATCH: Мне нравятся большие металлические пуговицы.
+
+BLOCK 37 (00:01:12.650 -> 00:01:13.450):
+ORG: - They're snaps.
+MATCH: Это кнопки.
+
+BLOCK 38 (00:01:13.855 -> 00:01:16.974):
+ORG: Listen, maybe we should go out sometime?
+MATCH: Слушай, может, как-нибудь сходим куда-нибудь?
+
+BLOCK 39 (00:01:17.135 -> 00:01:18.974):
+ORG: - Why don't I give you my phone number?
+MATCH: Почему бы мне не дать тебе свой номер?
+
+BLOCK 40 (00:01:23.935 -> 00:01:25.249):
+ORG: - How'd it go with that girl?
+MATCH: Ну как прошло с той девушкой?
+
+BLOCK 41 (00:01:25.249 -> 00:01:25.521):
+ORG: Great.
+MATCH: Отлично.
+
+BLOCK 42 (00:01:25.521 -> 00:01:26.972):
+ORG: I'm going out with her tomorrow.
+MATCH: Завтра иду с ней на свидание.
+
+BLOCK 43 (00:01:26.972 -> 00:01:28.648):
+ORG: How'd it go with the cocktail, Frank?
+MATCH: Ну как там коктейльные сосиски?
+
+BLOCK 44 (00:01:28.648 -> 00:01:28.920):
+ORG: Great.
+MATCH: Отлично.
+
+BLOCK 45 (00:01:28.920 -> 00:01:30.053):
+ORG: I ate the entire platter.
+MATCH: Я сожрал всё блюдо целиком.
+
+BLOCK 46 (00:01:30.359 -> 00:01:31.827):
+ORG: - I had to call in sick today.
+MATCH: Сегодня пришлось отпроситься по болезни.
+
+BLOCK 47 (00:01:31.827 -> 00:01:33.490):
+ORG: Didn't you call in sick yesterday?
+MATCH: Разве ты вчера не отпросился по болезни?
+
+BLOCK 48 (00:01:33.490 -> 00:01:35.642):
+ORG: Hey, I work for Kruger Industrial Smoothing.
+MATCH: Эй, я работаю в «Крюгер Индастриал Смузинг».
+
+BLOCK 49 (00:01:35.642 -> 00:01:37.012):
+ORG: We don't care, and it shows.
+MATCH: Нам всё равно, и это видно.
+
+BLOCK 50 (00:01:37.399 -> 00:01:38.777):
+ORG: Do you open your mail here?
+MATCH: Ты тут почту вскрываешь?
+
+BLOCK 51 (00:01:38.777 -> 00:01:41.074):
+ORG: Hey, at least I'm bringing something to this.
+MATCH: Эй, по крайней мере я хоть что-то сюда привношу.
+
+BLOCK 52 (00:01:41.924 -> 00:01:43.285):
+ORG: Have you seen me?
+MATCH: Ты меня видел?
+
+BLOCK 53 (00:01:43.285 -> 00:01:43.685):
+ORG: Nope.
+MATCH: Не-а.
+
+BLOCK 54 (00:01:44.405 -> 00:01:46.245):
+ORG: Something from Whatley.
+MATCH: Что-то от Уотли.
+
+BLOCK 55 (00:01:46.484 -> 00:01:47.125):
+ORG: See?
+MATCH: Видишь?
+
+BLOCK 56 (00:01:47.284 -> 00:01:48.334):
+ORG: You give and you get.
+MATCH: Ты даёшь, и ты получаешь.
+
+BLOCK 57 (00:01:48.334 -> 00:01:50.185):
+ORG: This is what I'm trying to teach you.
+MATCH: Вот чему я пытаюсь тебя научить.
+
+BLOCK 58 (00:01:50.185 -> 00:01:54.486):
+ORG: This holiday season, a donation has been made in your name to the Children's Alliance.
+MATCH: В этот праздничный сезон от вашего имени сделано пожертвование в «Детский альянс».
+
+BLOCK 59 (00:01:54.486 -> 00:01:55.286):
+ORG: Oh, that's nice.
+MATCH: О, как мило.
+
+BLOCK 60 (00:01:55.286 -> 00:01:56.537):
+ORG: I got him Yankee tickets.
+MATCH: Я ему билеты на «Янкиз».
+
+BLOCK 61 (00:01:56.537 -> 00:02:00.087):
+ORG: He got me a piece of paper saying I've given your gift to someone else.
+MATCH: А он мне — бумажку, где написано, что мой подарок он отдал кому-то другому.
+
+BLOCK 62 (00:02:00.087 -> 00:02:01.288):
+ORG: To a children's charity.
+MATCH: В детскую благотворительность.
+
+BLOCK 63 (00:02:01.288 -> 00:02:02.888):
+ORG: Don't you see how wrong that is?
+MATCH: Ты не видишь, насколько это неправильно?
+
+BLOCK 64 (00:02:02.888 -> 00:02:04.389):
+ORG: Where's your Christmas spirit?
+MATCH: Где твой рождественский дух?
+
+BLOCK 65 (00:02:04.389 -> 00:02:05.289):
+ORG: An eye for an eye.
+MATCH: Око за око.
+
+BLOCK 66 (00:02:06.715 -> 00:02:07.515):
+ORG: - Don't give me anything this year.
+MATCH: Ничего мне в этом году не дари.
+
+BLOCK 67 (00:02:07.515 -> 00:02:08.794):
+ORG: give me anything this year.
+MATCH: Ничего мне в этом году не дари.
+
+BLOCK 68 (00:02:09.754 -> 00:02:10.394):
+ORG: Hey.
+MATCH: Эй.
+
+BLOCK 69 (00:02:10.394 -> 00:02:11.034):
+ORG: Hey.
+MATCH: Эй.
+
+BLOCK 70 (00:02:12.634 -> 00:02:13.995):
+ORG: - Oh, nothing for me.
+MATCH: О, ничего для меня.
+
+BLOCK 71 (00:02:14.314 -> 00:02:16.233):
+ORG: I'm going to the Atomic Sub later.
+MATCH: Потом зайду в «Атомик Саб».
+
+BLOCK 72 (00:02:16.233 -> 00:02:16.853):
+ORG: Atomic sub?
+MATCH: «Атомик Саб»?
+
+BLOCK 73 (00:02:16.853 -> 00:02:18.038):
+ORG: Why are eating there?
+MATCH: Почему ты там ешь?
+
+BLOCK 74 (00:02:18.038 -> 00:02:21.086):
+ORG: I get a card and they stamp it every time I buy a sub.
+MATCH: У меня карточка, и мне ставят штамп каждый раз, когда я покупаю саб.
+
+BLOCK 75 (00:02:21.086 -> 00:02:23.963):
+ORG: 24 stamps and I become a submarine captain.
+MATCH: 24 штампа — и я становлюсь капитаном подводной лодки.
+
+BLOCK 76 (00:02:23.963 -> 00:02:25.398):
+ORG: What does that mean?
+MATCH: Это что значит?
+
+BLOCK 77 (00:02:26.270 -> 00:02:27.629):
+ORG: Are you a sub?
+MATCH: Ты — саб?
+
+BLOCK 78 (00:02:31.835 -> 00:02:32.465):
+ORG: - Nothing.
+MATCH: Ничего.
+
+BLOCK 79 (00:02:32.465 -> 00:02:33.976):
+ORG: It's a card from my dad.
+MATCH: Это открытка от моего отца.
+
+BLOCK 80 (00:02:33.976 -> 00:02:34.669):
+ORG: What is it?
+MATCH: Что там?
+
+BLOCK 81 (00:02:35.354 -> 00:02:35.995):
+ORG: - Blank.
+MATCH: Пустая.
+
+BLOCK 82 (00:02:37.754 -> 00:02:39.355):
+ORG: Dear son, happy festivus.
+MATCH: «Дорогой сын, с праздником Фестивус».
+
+BLOCK 83 (00:02:39.914 -> 00:02:40.875):
+ORG: festivus.
+MATCH: Фестивус.
+
+BLOCK 84 (00:02:41.115 -> 00:02:42.463):
+ORG: - What is Festivus?
+MATCH: Что такое Фестивус?
+
+BLOCK 85 (00:02:42.463 -> 00:02:43.385):
+ORG: It's nothing.
+MATCH: Ничего.
+
+BLOCK 86 (00:02:43.385 -> 00:02:50.974):
+ORG: George's father hated all the commercial and religious aspects of Christmas, so he made up his own holiday.
+MATCH: Отец Джорджа терпеть не мог всю эту коммерцию и религию вокруг Рождества, так что он придумал свой собственный праздник.
+
+BLOCK 87 (00:02:50.974 -> 00:02:51.187):
+ORG: Oh.
+MATCH: А.
+
+BLOCK 88 (00:02:51.400 -> 00:02:54.120):
+ORG: - And another piece of the puzzle falls into place.
+MATCH: И ещё один кусочек мозаики встал на место.
+
+BLOCK 89 (00:02:54.519 -> 00:02:55.319):
+ORG: - Alright.
+MATCH: Ладно.
+
+BLOCK 90 (00:02:55.319 -> 00:02:58.432):
+ORG: And instead of a tree, didn't your father put up an aluminum pole?
+MATCH: И вместо ёлки твой отец ведь ставил алюминиевый шест?
+
+BLOCK 91 (00:02:58.432 -> 00:02:59.140):
+ORG: Jerry, stop it.
+MATCH: Джерри, прекрати.
+
+BLOCK 92 (00:02:59.140 -> 00:03:02.583):
+ORG: And weren't there feats of strength that always ended up with you crying?
+MATCH: И ещё были «испытания силы», которые всегда заканчивались тем, что ты ревел?
+
+BLOCK 93 (00:03:02.583 -> 00:03:03.857):
+ORG: Can't talk to them anymore.
+MATCH: Я больше не могу с ними разговаривать.
+
+BLOCK 94 (00:03:03.857 -> 00:03:04.706):
+ORG: I'm going to work.
+MATCH: Я на работу.
+
+BLOCK 95 (00:03:04.706 -> 00:03:05.366):
+ORG: You happy now?
+MATCH: Ну что, доволен?
+
+BLOCK 0 (00:00:04.480 -> 00:00:06.570):
+ORG: So Watley's still Jewish, Oh, sure.
+MATCH: Значит, Уотли всё ещё еврей, а, конечно.
+
+BLOCK 1 (00:00:06.570 -> 00:00:08.659):
+ORG: Without the parents, it's a breeze.
+MATCH: Без родителей — вообще раз плюнуть.
+
+BLOCK 2 (00:00:10.080 -> 00:00:10.400):
+ORG: Hey.
+MATCH: Эй.
+
+BLOCK 3 (00:00:10.400 -> 00:00:11.598):
+ORG: Happy Hanukkah.
+MATCH: Счастливой Хануки.
+
+BLOCK 4 (00:00:11.598 -> 00:00:12.317):
+ORG: Hey, Tim.
+MATCH: Эй, Тим.
+
+BLOCK 5 (00:00:12.317 -> 00:00:13.276):
+ORG: Great party.
+MATCH: Отличная вечеринка.
+
+BLOCK 6 (00:00:13.276 -> 00:00:13.675):
+ORG: Yeah.
+MATCH: Ага.
+
+BLOCK 7 (00:00:13.675 -> 00:00:14.235):
+ORG: Uh-huh.
+MATCH: Угу.
+
+BLOCK 8 (00:00:16.315 -> 00:00:16.932):
+ORG: - Hey, George.
+MATCH: Эй, Джордж.
+
+BLOCK 9 (00:00:16.932 -> 00:00:19.090):
+ORG: Thanks again for getting me those Yankee tickets.
+MATCH: Ещё раз спасибо, что достал мне билеты на «Янкиз».
+
+BLOCK 10 (00:00:19.090 -> 00:00:19.486):
+ORG: Oh, yeah.
+MATCH: О да.
+
+BLOCK 11 (00:00:19.486 -> 00:00:19.706):
+ORG: Yeah.
+MATCH: Ага.
+
+BLOCK 12 (00:00:19.706 -> 00:00:21.380):
+ORG: Still doing good with the ground crew.
+MATCH: Всё ещё хорошо у тебя с наземной командой.
+
+BLOCK 13 (00:00:21.380 -> 00:00:21.909):
+ORG: That's good.
+MATCH: Это хорошо.
+
+BLOCK 14 (00:00:21.909 -> 00:00:22.129):
+ORG: Look.
+MATCH: Слушай.
+
+BLOCK 15 (00:00:22.129 -> 00:00:22.966):
+ORG: I better circulate.
+MATCH: Мне лучше пойти пообщаться.
+
+BLOCK 16 (00:00:23.515 -> 00:00:25.355):
+ORG: - Happy Hanukkah, Tiffany.
+MATCH: Счастливой Хануки, Тиффани.
+
+BLOCK 17 (00:00:25.675 -> 00:00:28.428):
+ORG: - This place is like Studio 54 with a menorah.
+MATCH: Тут как в «Студии 54», только с менорой.
+
+BLOCK 18 (00:00:28.428 -> 00:00:31.300):
+ORG: Let me get some of these kosher cocktail franks.
+MATCH: Дай-ка я возьму этих кошерных коктейльных сосисок.
+
+BLOCK 19 (00:00:31.300 -> 00:00:36.079):
+ORG: Oh, - I got denim vests checking me out.
+MATCH: О, на меня тут запали джинсовые жилетки.
+
+BLOCK 20 (00:00:37.199 -> 00:00:39.105):
+ORG: - Have fake IDs coming out tonight.
+MATCH: Сегодня будут делать фальшивые айдишники.
+
+BLOCK 21 (00:00:39.105 -> 00:00:40.738):
+ORG: Are you out of standard faith?
+MATCH: Ты вообще не из традиционной веры?
+
+BLOCK 22 (00:00:40.738 -> 00:00:41.010):
+ORG: Mhmm.
+MATCH: М-м.
+
+BLOCK 23 (00:00:41.600 -> 00:00:44.320):
+ORG: - Spells out 'no'.
+MATCH: На лбу написано «нет».
+
+BLOCK 24 (00:00:43.475 -> 00:00:44.354):
+ORG: Elaine.
+MATCH: Элейн.
+
+BLOCK 25 (00:00:44.994 -> 00:00:46.813):
+ORG: Isn't that eight letters?
+MATCH: Разве это не восемь букв?
+
+BLOCK 26 (00:00:46.813 -> 00:00:51.634):
+ORG: The extra e is for - That's neat.
+MATCH: Лишняя «э» — для «Как мило».
+
+BLOCK 27 (00:00:52.674 -> 00:00:54.056):
+ORG: - Do we know please?
+MATCH: Мы, пожалуйста, знаем?
+
+BLOCK 28 (00:00:54.056 -> 00:00:54.816):
+ORG: Denim vest.
+MATCH: Джинсовая жилетка.
+
+BLOCK 29 (00:00:54.816 -> 00:00:56.059):
+ORG: He's smoothing it.
+MATCH: Он разглаживает.
+
+BLOCK 30 (00:00:56.059 -> 00:00:56.750):
+ORG: Very good.
+MATCH: Очень хорошо.
+
+BLOCK 31 (00:00:56.750 -> 00:00:56.958):
+ORG: Hi.
+MATCH: Привет.
+
+BLOCK 32 (00:01:00.010 -> 00:01:00.319):
+ORG: - Hi.
+MATCH: Привет.
+
+BLOCK 33 (00:01:00.319 -> 00:01:00.936):
+ORG: I'm Jerry.
+MATCH: Я Джерри.
+
+BLOCK 34 (00:01:00.936 -> 00:01:01.121):
+ORG: Hi.
+MATCH: Привет.
+
+BLOCK 35 (00:01:01.121 -> 00:01:05.504):
+ORG: You might not know it to look at me, but I can run really, really fast.
+MATCH: По мне, может, и не скажешь, но я умею бегать очень, очень быстро.
+
+BLOCK 36 (00:01:07.930 -> 00:01:09.049):
+ORG: - Nice vest.
+MATCH: Хорошая жилетка.
+
+BLOCK 37 (00:01:09.209 -> 00:01:12.489):
+ORG: I like the big metal buttons.
+MATCH: Мне нравятся большие металлические пуговицы.
+
+BLOCK 38 (00:01:12.650 -> 00:01:13.450):
+ORG: - They're snaps.
+MATCH: Это кнопки.
+
+BLOCK 39 (00:01:13.855 -> 00:01:16.974):
+ORG: Listen, maybe we should go out sometime?
+MATCH: Слушай, может, сходим куда-нибудь как-нибудь?
+
+BLOCK 40 (00:01:17.135 -> 00:01:18.974):
+ORG: - Why don't I give you my phone number?
+MATCH: Почему бы мне не дать тебе свой номер?
+
+BLOCK 41 (00:01:23.935 -> 00:01:25.105):
+ORG: - How'd go with that girl?
+MATCH: Ну как с той девушкой?
+
+BLOCK 42 (00:01:25.105 -> 00:01:25.375):
+ORG: Great.
+MATCH: Отлично.
+
+BLOCK 43 (00:01:25.375 -> 00:01:27.085):
+ORG: I'm going out with her tomorrow night.
+MATCH: Завтра вечером я с ней иду.
+
+BLOCK 44 (00:01:27.085 -> 00:01:28.750):
+ORG: How'd it go with the cocktail, Frank?
+MATCH: Ну как с коктейльными сосисками?
+
+BLOCK 45 (00:01:28.750 -> 00:01:29.020):
+ORG: Great.
+MATCH: Отлично.
+
+BLOCK 46 (00:01:29.020 -> 00:01:30.055):
+ORG: Ate the entire platter.
+MATCH: Съел всё блюдо целиком.
+
+BLOCK 47 (00:01:30.359 -> 00:01:31.827):
+ORG: - I had to call in sick today.
+MATCH: Сегодня пришлось отпроситься по болезни.
+
+BLOCK 48 (00:01:31.827 -> 00:01:33.490):
+ORG: Didn't you call in sick yesterday?
+MATCH: Ты же вчера отпросился по болезни?
+
+BLOCK 49 (00:01:33.490 -> 00:01:35.642):
+ORG: Hey, I work for Kruger Industrial Smoothing.
+MATCH: Эй, я работаю в «Крюгер Индастриал Смузинг».
+
+BLOCK 50 (00:01:35.642 -> 00:01:37.012):
+ORG: We don't care, and it shows.
+MATCH: Нам плевать, и это видно.
+
+BLOCK 51 (00:01:37.399 -> 00:01:38.809):
+ORG: You got open your mail here?
+MATCH: Ты почту тут открываешь?
+
+BLOCK 52 (00:01:38.809 -> 00:01:41.075):
+ORG: Hey, at least I'm bringing something to this.
+MATCH: Эй, ну хоть что-то я сюда принёс.
+
+BLOCK 53 (00:01:41.924 -> 00:01:43.285):
+ORG: Have you seen me?
+MATCH: Меня видел?
+
+BLOCK 54 (00:01:43.285 -> 00:01:43.685):
+ORG: Nope.
+MATCH: Не-а.
+
+BLOCK 55 (00:01:44.405 -> 00:01:46.245):
+ORG: Something from Whatley.
+MATCH: Это от Уотли.
+
+BLOCK 56 (00:01:46.484 -> 00:01:47.125):
+ORG: See?
+MATCH: Видишь?
+
+BLOCK 57 (00:01:47.284 -> 00:01:48.334):
+ORG: You give and you get.
+MATCH: Ты даёшь — и получаешь.
+
+BLOCK 58 (00:01:48.334 -> 00:01:50.185):
+ORG: This is what I'm trying to teach you.
+MATCH: Вот чему я пытаюсь тебя научить.
+
+BLOCK 59 (00:01:50.185 -> 00:01:54.486):
+ORG: This holiday season, a donation has been made in your name to the Children's Alliance.
+MATCH: В этот праздничный сезон от вашего имени сделано пожертвование в «Детский альянс».
+
+BLOCK 60 (00:01:54.486 -> 00:01:55.286):
+ORG: Oh, that's nice.
+MATCH: О, как мило.
+
+BLOCK 61 (00:01:55.286 -> 00:01:56.537):
+ORG: I got him Yankee tickets.
+MATCH: Я ему билеты на «Янкиз».
+
+BLOCK 62 (00:01:56.537 -> 00:02:00.087):
+ORG: He got me a piece of paper saying I've given your gift to someone else.
+MATCH: А он мне — бумажку, что мой подарок отдал кому-то ещё.
+
+BLOCK 63 (00:02:00.087 -> 00:02:01.288):
+ORG: To a children's charity.
+MATCH: В детскую благотворительность.
+
+BLOCK 64 (00:02:01.288 -> 00:02:02.888):
+ORG: Don't you see how wrong that is?
+MATCH: Ты не видишь, насколько это неправильно?
+
+BLOCK 65 (00:02:02.888 -> 00:02:04.389):
+ORG: Where's your Christmas spirit?
+MATCH: Где твой рождественский дух?  
+
+BLOCK 66 (00:02:04.389 -> 00:02:05.289):
+ORG: An eye for an eye.
+MATCH: Око за око.
+
+BLOCK 67 (00:02:06.715 -> 00:02:08.794):
+ORG: - Don't give me anything this year.
+MATCH: В этом году мне ничего не дари.
+
+BLOCK 68 (00:02:09.754 -> 00:02:10.394):
+ORG: Hey.
+MATCH: Эй.
+
+BLOCK 69 (00:02:10.394 -> 00:02:11.034):
+ORG: Hey.
+MATCH: Эй.
+
+BLOCK 70 (00:02:12.634 -> 00:02:13.995):
+ORG: - Oh, nothing for me.
+MATCH: О, мне — ничего.
+
+BLOCK 71 (00:02:14.314 -> 00:02:16.029):
+ORG: I'm going to Atomic Sub later.
+MATCH: Я позже зайду в «Атомик Саб».
+
+BLOCK 72 (00:02:16.029 -> 00:02:16.657):
+ORG: Atomic Sub?
+MATCH: «Атомик Саб»?
+
+BLOCK 73 (00:02:16.657 -> 00:02:17.915):
+ORG: Why am I eating there?
+MATCH: С чего это я там ем?
+
+BLOCK 74 (00:02:17.915 -> 00:02:21.058):
+ORG: I get a card, and they stamp it every time I buy a sub.
+MATCH: У меня карточка, и мне ставят штамп каждый раз, когда я покупаю саб.
+
+BLOCK 75 (00:02:21.058 -> 00:02:23.963):
+ORG: 24 stamps and I become a submarine captain.
+MATCH: 24 штампа — и я становлюсь капитаном подводной лодки.
+
+BLOCK 76 (00:02:23.963 -> 00:02:25.398):
+ORG: What does that mean?
+MATCH: Это что вообще значит?
+
+BLOCK 77 (00:02:26.270 -> 00:02:27.221):
+ORG: Are you a sub?
+MATCH: Ты подлодка?
+
+BLOCK 78 (00:02:27.221 -> 00:02:27.561):
+ORG: What?
+MATCH: Что?
+
+BLOCK 79 (00:02:31.835 -> 00:02:32.465):
+ORG: - Nothing.
+MATCH: Ничего.
+
+BLOCK 80 (00:02:32.465 -> 00:02:33.976):
+ORG: It's a card from my dad.
+MATCH: Это открытка от моего отца.
+
+BLOCK 81 (00:02:33.976 -> 00:02:34.669):
+ORG: What is it?
+MATCH: Что там?
+
+BLOCK 82 (00:02:35.354 -> 00:02:35.995):
+ORG: - Blank.
+MATCH: Пустая.
+
+BLOCK 83 (00:02:37.754 -> 00:02:40.875):
+ORG: Dear son, happy festivus.
+MATCH: Дорогой сын, с праздником Фестивус.
+
+BLOCK 84 (00:02:41.115 -> 00:02:42.189):
+ORG: - What is Festivus?
+MATCH: Что такое Фестивус?
+
+BLOCK 85 (00:02:42.189 -> 00:02:42.923):
+ORG: It's nothing.
+MATCH: Ничего.
+
+BLOCK 86 (00:02:42.923 -> 00:02:43.658):
+ORG: It's nothing.
+MATCH: Ничего.
+
+BLOCK 87 (00:02:43.658 -> 00:02:44.901):
+ORG: George was growing up.
+MATCH: Когда Джордж рос,
+
+BLOCK 88 (00:02:44.901 -> 00:02:49.196):
+ORG: his father hated all the commercial and religious aspects of Christmas Yeah.
+MATCH: его отец ненавидел все коммерческие и религиозные аспекты Рождества.  
+Ага.
+
+BLOCK 89 (00:02:49.196 -> 00:02:50.891):
+ORG: So he made up his own holiday.
+MATCH: Так что он придумал свой собственный праздник.
+
+BLOCK 90 (00:02:50.891 -> 00:02:51.061):
+ORG: Oh.
+MATCH: О.
+
+BLOCK 91 (00:02:51.400 -> 00:02:54.120):
+ORG: - And another piece of the puzzle falls into place.
+MATCH: И ещё один кусочек пазла встал на место.
+
+BLOCK 92 (00:02:54.519 -> 00:02:55.319):
+ORG: - Alright.
+MATCH: Ладно.
+
+BLOCK 93 (00:02:55.319 -> 00:02:58.362):
+ORG: And instead of a tree, didn't your father put up an aluminum pole?
+MATCH: И вместо ёлки твой отец разве не ставил алюминиевый шест?
+
+BLOCK 94 (00:02:58.362 -> 00:02:59.054):
+ORG: Jerry, stop it.
+MATCH: Джерри, прекрати.
+
+BLOCK 95 (00:02:59.054 -> 00:03:02.651):
+ORG: And then weren't there feats of strength that always ended up with you crying?
+MATCH: И потом там же были испытания силы, которые всегда заканчивались тем, что ты плакал?
+
+BLOCK 96 (00:03:02.651 -> 00:03:03.896):
+ORG: Can't talk to them anymore.
+MATCH: Я больше не могу с ними говорить.
+
+BLOCK 97 (00:03:03.896 -> 00:03:04.726):
+ORG: I'm going to work.
+MATCH: Я на работу.
+
+BLOCK 98 (00:03:04.726 -> 00:03:05.371):
+ORG: You happy now?
+MATCH: Доволен теперь?
+
+BLOCK 0 (00:00:04.480 -> 00:00:06.599):
+ORG: So Whatley's still Jewish, Oh, sure.
+MATCH: Так Уотли всё ещё еврей, да? Конечно.
+
+BLOCK 1 (00:00:06.599 -> 00:00:08.660):
+ORG: Without the parents, it's a breeze.
+MATCH: Без родителей — вообще раз плюнуть.
+
+BLOCK 2 (00:00:10.080 -> 00:00:10.400):
+ORG: Hey.
+MATCH: Эй.
+
+BLOCK 3 (00:00:10.400 -> 00:00:11.598):
+ORG: Happy Hanukkah.
+MATCH: С Ханукой.
+
+BLOCK 4 (00:00:11.598 -> 00:00:12.317):
+ORG: Hey, Tim.
+MATCH: Эй, Тим.
+
+BLOCK 5 (00:00:12.317 -> 00:00:13.276):
+ORG: Great party.
+MATCH: Классная вечеринка.
+
+BLOCK 6 (00:00:13.276 -> 00:00:13.675):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 7 (00:00:13.675 -> 00:00:14.235):
+ORG: Uh-huh.
+MATCH: Ага.
+
+BLOCK 8 (00:00:16.315 -> 00:00:16.932):
+ORG: - Hey, George.
+MATCH: Эй, Джордж.
+
+BLOCK 9 (00:00:16.932 -> 00:00:19.090):
+ORG: Thanks again for getting me those Yankee tickets.
+MATCH: Ещё раз спасибо, что достал мне билеты на «Янкиз».
+
+BLOCK 10 (00:00:19.090 -> 00:00:19.486):
+ORG: Oh, yeah.
+MATCH: О да.
+
+BLOCK 11 (00:00:19.486 -> 00:00:19.706):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 12 (00:00:19.706 -> 00:00:21.380):
+ORG: Still doing good with the ground crew.
+MATCH: Всё ещё нормально на наземной службе?
+
+BLOCK 13 (00:00:21.380 -> 00:00:21.909):
+ORG: That's good.
+MATCH: Это хорошо.
+
+BLOCK 14 (00:00:21.909 -> 00:00:22.129):
+ORG: Look.
+MATCH: Слушай.
+
+BLOCK 15 (00:00:22.129 -> 00:00:22.966):
+ORG: I better circulate.
+MATCH: Я лучше пойду пообщаюсь.
+
+BLOCK 16 (00:00:23.515 -> 00:00:25.355):
+ORG: - Happy Hanukkah, Tiffany.
+MATCH: С Ханукой, Тиффани.
+
+BLOCK 17 (00:00:25.675 -> 00:00:28.428):
+ORG: - This place is like Studio 54 with a menorah.
+MATCH: Тут как в «Студии 54», только с менорой.
+
+BLOCK 18 (00:00:28.428 -> 00:00:31.300):
+ORG: Let me get some of these kosher cocktail franks.
+MATCH: Дай-ка я возьму этих кошерных коктейльных сосисок.
+
+BLOCK 19 (00:00:31.300 -> 00:00:36.079):
+ORG: Oh, - I got denim vests checking me out.
+MATCH: О, на меня тут запали ребята в джинсовых жилетах.
+
+BLOCK 20 (00:00:37.199 -> 00:00:39.306):
+ORG: Have fake phone numbers coming out tonight.
+MATCH: Сегодня вечером буду раздавать фальшивые номера телефона пачками.
+
+BLOCK 21 (00:00:39.306 -> 00:00:40.776):
+ORG: Are you out of standard faith?
+MATCH: Ты не из традиционной веры?
+
+BLOCK 22 (00:00:40.776 -> 00:00:41.021):
+ORG: Mhmm.
+MATCH: М-м.
+
+BLOCK 23 (00:00:41.600 -> 00:00:44.354):
+ORG: Spells out no Elaine.
+MATCH: Складывается в «нет Элейн».
+
+BLOCK 24 (00:00:44.994 -> 00:00:46.813):
+ORG: Isn't that eight letters?
+MATCH: Разве это не восемь букв?
+
+BLOCK 25 (00:00:46.813 -> 00:00:51.634):
+ORG: The extra e is for - That's neat.
+MATCH: Лишняя «э» — это за «классно». Мы знакомы, что ли?
+
+BLOCK 26 (00:00:52.674 -> 00:00:54.056):
+ORG: - Do we know please?
+MATCH: 
+
+BLOCK 0 (00:00:00.240 -> 00:00:05.818):
+ORG: There's this life that I knew growing up, and it's everyone's Irish.
+MATCH: Есть такая жизнь, в которой я рос, — и там все ирландцы.
+
+BLOCK 1 (00:00:05.818 -> 00:00:07.188):
+ORG: Everybody's Irish.
+MATCH: Все — ирландцы.
+
+BLOCK 2 (00:00:07.188 -> 00:00:09.928):
+ORG: Everybody's Irish and Massachusetts.
+MATCH: Все — ирландцы, и Массачусетс.
+
+BLOCK 3 (00:00:10.320 -> 00:00:16.795):
+ORG: And so and, you know, we don't get to choose what our makeup is.
+MATCH: И вот, понимаете, мы же не выбираем, из чего мы «сделаны».
+
+BLOCK 4 (00:00:17.754 -> 00:00:19.704):
+ORG: That's just what we are.
+MATCH: Мы просто такие.
+
+BLOCK 5 (00:00:19.704 -> 00:00:26.983):
+ORG: And it's so interesting to me how comedy was just it was just I don't know.
+MATCH: И мне так интересно, что комедия — она просто была… я даже не знаю.
+
+BLOCK 6 (00:00:26.983 -> 00:00:28.815):
+ORG: It just felt like a cellular thing.
+MATCH: Это ощущалось как что-то на уровне клеток.
+
+BLOCK 7 (00:00:28.815 -> 00:00:30.595):
+ORG: It didn't even feel like a choice.
+MATCH: Это даже не казалось выбором.
+
+BLOCK 8 (00:00:30.595 -> 00:00:32.583):
+ORG: And I don't even mean as a profession.
+MATCH: И я даже не про профессию.
+
+BLOCK 9 (00:00:32.583 -> 00:00:36.280):
+ORG: I mean, everybody would be funny.
+MATCH: Я про то, что все были смешные.
+
+BLOCK 10 (00:00:36.359 -> 00:00:36.629):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 11 (00:00:36.629 -> 00:00:43.421):
+ORG: You've probably had this experience where I hung out with some Irish comics in Dublin, and everybody was really hilarious.
+MATCH: Наверняка у вас тоже было такое: я тусовался с ирландскими комиками в Дублине, и все были очень смешные.
+
+BLOCK 12 (00:00:43.421 -> 00:00:46.068):
+ORG: And then we decided to go into town and get a drink.
+MATCH: А потом мы решили поехать в центр выпить.
+
+BLOCK 13 (00:00:46.068 -> 00:00:49.274):
+ORG: We hailed a cab, and the cab driver was funnier than any of us.
+MATCH: Поймали такси, и таксист оказался смешнее всех нас.
+
+BLOCK 14 (00:00:49.274 -> 00:00:49.528):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 15 (00:00:49.528 -> 00:00:49.783):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 16 (00:00:49.783 -> 00:00:50.190):
+ORG: Exactly.
+MATCH: Вот именно.
+
+BLOCK 17 (00:00:50.190 -> 00:00:50.953):
+ORG: Just something.
+MATCH: Просто что-то такое.
+
+BLOCK 18 (00:00:50.953 -> 00:00:56.399):
+ORG: But that and your family, I'm I know from what I've heard you say before I know in my family, this is true.
+MATCH: Но это — и ваша семья.
+Я знаю по тому, что слышал, как вы раньше говорили, — и я знаю, что в моей семье это было так.
+
+BLOCK 19 (00:00:56.399 -> 00:00:57.875):
+ORG: My parents were really funny.
+MATCH: Мои родители были очень смешные.
+
+BLOCK 20 (00:00:57.875 -> 00:00:58.129):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 21 (00:00:58.129 -> 00:00:59.911):
+ORG: All my aunts were really sarcastic.
+MATCH: Все мои тётки были жутко саркастичные.
+
+BLOCK 22 (00:00:59.911 -> 00:01:00.165):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 23 (00:01:00.165 -> 00:01:02.455):
+ORG: And so and I'm sure your family was the same.
+MATCH: И я уверен, у вас в семье было то же самое.
+
+BLOCK 24 (00:01:02.455 -> 00:01:06.018):
+ORG: And really funny stories and people just laughing their asses off Yes.
+MATCH: И истории — уморительные, и люди просто ржут до упаду.
+Да.
+
+BLOCK 25 (00:01:06.018 -> 00:01:07.086):
+ORG: Around the table Yep.
+MATCH: Да.  
+За столом.  
+Ага.
+
+BLOCK 26 (00:01:09.319 -> 00:01:12.547):
+ORG: Eating some of the unhealthiest food that you can imagine.
+MATCH: И едят самую нездоровую еду, какую только можно вообразить.
+
+BLOCK 27 (00:01:12.547 -> 00:01:13.326):
+ORG: Oh, the worst.
+MATCH: Ох, худшую.
+
+BLOCK 28 (00:01:13.326 -> 00:01:13.883):
+ORG: The worst.
+MATCH: Худшую.
+
+BLOCK 29 (00:01:14.394 -> 00:01:14.924):
+ORG: Oh my god.
+MATCH: Боже мой.
+
+BLOCK 30 (00:01:14.924 -> 00:01:20.389):
+ORG: I keep waiting for the surgeon general to say, you know, ham is fried ham with butter Oh my god.
+MATCH: Я всё жду, когда главный санитарный врач скажет: знаете, ветчина… жареная ветчина с маслом…
+Боже мой.
+
+BLOCK 31 (00:01:20.389 -> 00:01:22.062):
+ORG: Is actually lengthens your life.
+MATCH: На самом деле продлевает жизнь.
+
+BLOCK 32 (00:01:22.062 -> 00:01:22.324):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 33 (00:01:22.324 -> 00:01:24.154):
+ORG: Because then I'd be in great shape.
+MATCH: Потому что тогда я был бы в идеальной форме.
+
+BLOCK 34 (00:01:24.154 -> 00:01:28.025):
+ORG: I remember there was an Italian family that lived next door, the Corellis.
+MATCH: Помню, по соседству жила итальянская семья, Корелли.
+
+BLOCK 35 (00:01:28.930 -> 00:01:30.165):
+ORG: - Their mother used to cook.
+MATCH: Их мать готовила.
+
+BLOCK 36 (00:01:30.165 -> 00:01:37.300):
+ORG: Like, while you were out playing football or baseball or street hockey in the street in the summertime, she would come out with homemade pizza or or yeah.
+MATCH: Типа, пока ты летом гоняешь в футбол, или бейсбол, или уличный хоккей на улице, она выходила и приносила домашнюю пиццу или… ну да.
+
+BLOCK 37 (00:01:37.300 -> 00:01:38.723):
+ORG: I mean, just unbelievable.
+MATCH: То есть, просто невероятно.
+
+BLOCK 38 (00:01:38.723 -> 00:01:42.883):
+ORG: So my brother my brother and I my brother ended up marrying an Italian girl.
+MATCH: И вот мы с братом… мой брат в итоге женился на итальянке.
+
+BLOCK 39 (00:01:42.883 -> 00:01:46.551):
+ORG: My brother was like, you know, mom, missus Carrelly makes the best.
+MATCH: И брат такой: знаешь, мам, миссис Корелли готовит лучше всех.
+
+BLOCK 40 (00:01:46.551 -> 00:01:48.357):
+ORG: And she's like, I can make pasta.
+MATCH: А она: я могу сделать пасту.
+
+BLOCK 41 (00:01:48.357 -> 00:01:49.506):
+ORG: I can make spaghetti.
+MATCH: Я могу сделать спагетти.
+
+BLOCK 42 (00:01:49.506 -> 00:01:51.422):
+ORG: And we were like, oh, please don't.
+MATCH: А мы такие: о, пожалуйста, только не надо.
+
+BLOCK 43 (00:01:51.422 -> 00:01:51.751):
+ORG: Right?
+MATCH: Да?
+
+BLOCK 44 (00:01:52.454 -> 00:01:55.261):
+ORG: And so one night, she made This I'll never forget.
+MATCH: И вот однажды вечером она приготовила… я никогда не забуду.
+
+BLOCK 45 (00:01:55.261 -> 00:01:56.216):
+ORG: She, I loved her.
+MATCH: Она… я её любил.
+
+BLOCK 46 (00:01:56.216 -> 00:01:57.227):
+ORG: I loved my mother.
+MATCH: Я любил свою маму.
+
+BLOCK 47 (00:01:57.227 -> 00:01:58.967):
+ORG: She just passed away this year.
+MATCH: Она умерла в этом году.
+
+BLOCK 48 (00:01:58.967 -> 00:01:59.585):
+ORG: She was 98.
+MATCH: Ей было 98.
+
+BLOCK 49 (00:01:59.585 -> 00:01:59.809):
+ORG: Wow.
+MATCH: Вау.
+
+BLOCK 50 (00:02:00.969 -> 00:02:02.871):
+ORG: And she was lucid right up to the end.
+MATCH: И она до самого конца сохраняла ясность ума.
+
+BLOCK 51 (00:02:02.871 -> 00:02:04.372):
+ORG: But she was a high Irish cook.
+MATCH: Но готовила она по-ирландски, на старый лад.
+
+BLOCK 52 (00:02:04.372 -> 00:02:05.473):
+ORG: You know what that is.
+MATCH: Вы знаете, что это значит.
+
+BLOCK 53 (00:02:05.473 -> 00:02:05.973):
+ORG: Yes, I do.
+MATCH: Да, знаю.
+
+BLOCK 54 (00:02:05.973 -> 00:02:06.374):
+ORG: Boil it.
+MATCH: Отварить.
+
+BLOCK 55 (00:02:06.374 -> 00:02:10.027):
+ORG: It's like that like, do you remember Don Gavin, the comedian from Boston?
+MATCH: Это как… помните Дона Гэвина, комика из Бостона?
+
+BLOCK 56 (00:02:10.027 -> 00:02:10.227):
+ORG: Yep.
+MATCH: Ага.
+
+BLOCK 57 (00:02:10.227 -> 00:02:10.927):
+ORG: Like one time.
+MATCH: 
+
+BLOCK 58 (00:02:10.927 -> 00:02:16.432):
+ORG: He was like, I was I was eating my mother's food, and my brother turned to me and said, this tastes like shit.
+MATCH: Он как-то сказал: я ел мамину еду, и брат повернулся ко мне и говорит: это на вкус как дерьмо.
+
+BLOCK 59 (00:02:16.432 -> 00:02:17.933):
+ORG: And he went, you can taste it?
+MATCH: А он такой: так ты что, различаешь вкус?
+
+BLOCK 60 (00:02:17.933 -> 00:02:19.134):
+ORG: That sums up Irish food.
+MATCH: Вот это и есть ирландская еда в двух словах.
+
+BLOCK 61 (00:02:19.134 -> 00:02:19.435):
+ORG: Right?
+MATCH: Да?
+
+BLOCK 62 (00:02:20.305 -> 00:02:31.349):
+ORG: So - I remember my what I remember very clearly is my mom would say she wanted to make spaghetti with meat sauce.
+MATCH: Так вот, я очень хорошо помню: мама говорила, что хочет сделать спагетти с мясным соусом.
+
+BLOCK 63 (00:02:31.510 -> 00:02:34.657):
+ORG: What you know, she thought it was spaghetti meat sauce.
+MATCH: Ну, она думала, что это и есть спагетти с мясным соусом.
+
+BLOCK 64 (00:02:34.657 -> 00:02:38.032):
+ORG: Basically, what it was was many packages of hamburger meat.
+MATCH: По сути, это было просто много упаковок фарша.
+
+BLOCK 65 (00:02:38.032 -> 00:02:38.261):
+ORG: Yes.
+MATCH: Да.
+
+BLOCK 66 (00:02:38.261 -> 00:02:42.552):
+ORG: That are that are fried up in a giant and then you put some pasta in there.
+MATCH: Который обжаривали в огромной…  
+А потом туда кидали макароны.
+
+BLOCK 67 (00:02:43.044 -> 00:02:45.764):
+ORG: And there was I don't even know if there was sauce.
+MATCH: И я даже не знаю, был ли там вообще соус.
+
+BLOCK 68 (00:02:46.004 -> 00:02:51.706):
+ORG: But for years and I loved it, but I thought that that was spaghetti with meat sauce.
+MATCH: Но годами — и мне нравилось — я думал, что это и есть спагетти с мясным соусом.
+
+BLOCK 69 (00:02:51.706 -> 00:03:02.040):
+ORG: And so when I went to when I, you know, finally left home and then I'm in New York and I go to an Italian restaurant, I think I was berating a waiter.
+MATCH: И потом, когда я, понимаете, наконец уехал из дома, и вот я в Нью-Йорке, захожу в итальянский ресторан…  
+Кажется, я отчитывал официанта.
+
+BLOCK 70 (00:03:02.280 -> 00:03:05.479):
+ORG: Like, sir, there should be six hamburgers.
+MATCH: Мол, сэр, тут должно быть шесть котлет.
+
+BLOCK 71 (00:03:06.264 -> 00:03:13.153):
+ORG: There should be at least three pounds of ground beef that's been fried in this.
+MATCH: Тут должно быть минимум три фунта обжаренного фарша.
+
+BLOCK 72 (00:03:13.153 -> 00:03:15.005):
+ORG: I mean, basically, I thought it was a burger.
+MATCH: Я имею в виду, по сути, я думал, что это бургер.  
+
+BLOCK 73 (00:03:15.005 -> 00:03:16.157):
+ORG: And there's too much flavor.
+MATCH: И тут слишком много вкуса.
+
+BLOCK 74 (00:03:16.157 -> 00:03:17.021):
+ORG: What's going on here?
+MATCH: Что вообще происходит?
+
+BLOCK 75 (00:03:18.669 -> 00:03:20.518):
+ORG: - Do I suddenly taste things?
+MATCH: Я что, внезапно начал чувствовать вкус?
+
+BLOCK 76 (00:03:20.518 -> 00:03:21.984):
+ORG: Why does it taste good?
+MATCH: Почему это вкусно?
+
+BLOCK 77 (00:03:21.984 -> 00:03:22.303):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 78 (00:03:23.469 -> 00:03:23.980):
+ORG: It was great.
+MATCH: Это было прекрасно.
+
+BLOCK 79 (00:03:23.980 -> 00:03:25.707):
+ORG: And also then my brother married an Italian.
+MATCH: А ещё мой брат женился на итальянке.
+
+BLOCK 80 (00:03:25.707 -> 00:03:27.749):
+ORG: And there was a lot of Italians in the neighborhood.
+MATCH: И в районе было много итальянцев.
+
+BLOCK 81 (00:03:27.749 -> 00:03:29.359):
+ORG: There were Armenians in our neighborhood.
+MATCH: В нашем районе были армяне.
+
+BLOCK 82 (00:03:29.359 -> 00:03:31.203):
+ORG: There was it was crazy.
+MATCH: Там вообще было полно народу.
+
+BLOCK 83 (00:03:31.203 -> 00:03:33.194):
+ORG: We went to the same school for twelve years.
+MATCH: Мы ходили в одну и ту же школу двенадцать лет.
+
+BLOCK 84 (00:03:33.194 -> 00:03:33.465):
+ORG: Right?
+MATCH: Да?
+
+BLOCK 85 (00:03:33.465 -> 00:03:39.572):
+ORG: So you had all these different Puerto Ricans, these different kinds of food, and every night, you're eating stuff that you can't taste.
+MATCH: И вот у тебя все эти пуэрториканцы, вся эта разная еда, а ты каждый вечер ешь то, у чего вкуса нет.
+
+BLOCK 86 (00:03:39.572 -> 00:03:39.799):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 87 (00:03:39.799 -> 00:03:42.468):
+ORG: And then on Fridays, when they have fish, it's fish sticks.
+MATCH: А по пятницам, когда рыба, это рыбные палочки.
+
+BLOCK 88 (00:03:43.469 -> 00:03:44.038):
+ORG: Oh my god.
+MATCH: Боже мой.
+
+BLOCK 89 (00:03:44.038 -> 00:03:44.322):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 90 (00:03:44.322 -> 00:03:44.606):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 91 (00:03:44.606 -> 00:03:45.175):
+ORG: Oh my god.
+MATCH: Боже мой.
+
+BLOCK 92 (00:03:45.175 -> 00:03:47.563):
+ORG: And my dad would put ketchup on the pasta.
+MATCH: А отец ещё кетчуп в пасту лил.
+
+BLOCK 93 (00:03:48.030 -> 00:03:48.192):
+ORG: Oh.
+MATCH: Ох.
+
+BLOCK 94 (00:03:48.192 -> 00:03:48.676):
+ORG: Oh, yeah.
+MATCH: Ох, да.
+
+BLOCK 95 (00:03:48.676 -> 00:03:50.453):
+ORG: Well, that's I mean I mean, what?
+MATCH: Ну это… я имею в виду… что?
+
+BLOCK 96 (00:03:50.453 -> 00:03:51.691):
+ORG: Where where do we live?
+MATCH: Где мы вообще живём?
+
+BLOCK 97 (00:03:51.691 -> 00:03:53.468):
+ORG: And, like, you're like, I listen.
+MATCH: И ты такой: слушай.
+
+BLOCK 98 (00:03:53.468 -> 00:03:57.776):
+ORG: Go out the back door on the porch and look across at the porch across the alley.
+MATCH: Выйди через заднюю дверь на крыльцо и посмотри через переулок на крыльцо напротив.
+
+BLOCK 99 (00:03:57.776 -> 00:04:00.791):
+ORG: You there's Puerto Rican people eating really good food.
+MATCH: Там пуэрториканцы едят реально вкусную еду.
+
+BLOCK 100 (00:04:00.791 -> 00:04:01.922):
+ORG: Can we go over there?
+MATCH: Можем пойти туда?  
+
+
+BLOCK 101 (00:04:01.922 -> 00:04:03.699):
+ORG: The Corrales are right over here.
+MATCH: Корралесы вот прямо здесь.
+
+BLOCK 102 (00:04:03.699 -> 00:04:04.237):
+ORG: Oh my god.
+MATCH: Боже мой.
+
+BLOCK 103 (00:04:04.237 -> 00:04:04.776):
+ORG: Oh my god.
+MATCH: Боже мой.
+
+BLOCK 104 (00:04:05.555 -> 00:04:11.385):
+ORG: My father my father ate literally, he ate meat at every meal he ate had to have meat.
+MATCH: Мой отец, мой отец буквально... он ел мясо в каждый приём пищи, он должен был есть мясо в каждый приём пищи.
+
+BLOCK 105 (00:04:11.385 -> 00:04:11.688):
+ORG: Yeah.
+MATCH: Ага.
+
+BLOCK 106 (00:04:11.688 -> 00:04:13.569):
+ORG: Bacon and eggs, steak and eggs.
+MATCH: Бекон с яйцами, стейк с яйцами.
+
+BLOCK 107 (00:04:13.569 -> 00:04:15.450):
+ORG: And he smoked five packs a day.
+MATCH: И он курил по пять пачек в день.
+
+BLOCK 108 (00:04:15.450 -> 00:04:17.270):
+ORG: I shouldn't have been talking.
+MATCH: Мне не следовало говорить.
+
+BLOCK 109 (00:04:17.270 -> 00:04:19.029):
+ORG: I smoked for fifty-two years.
+MATCH: Я курил пятьдесят два года.
+
+BLOCK 110 (00:04:19.029 -> 00:04:19.454):
+ORG: Well, I
+MATCH: Ну, я...
+
+BLOCK 0 (00:02:06.374 -> 00:02:10.027):
+ORG: It's like that like, do you remember Don Gavin, the comedian from Boston?
+MATCH: Это как… помните Дона Гэвина, комика из Бостона?
+
+BLOCK 1 (00:02:10.027 -> 00:02:10.227):
+ORG: Yep.
+MATCH: Ага.
+
+BLOCK 2 (00:02:10.227 -> 00:02:10.927):
+ORG: Like one time.
+MATCH: Он как-то сказал:
+
+BLOCK 3 (00:02:10.927 -> 00:02:15.000):
+ORG: He was like, I was I was eating my mother's food, and my brother turned to me and said, this tastes like shit.
+MATCH: я ел мамину еду, и брат повернулся ко мне и говорит: это на вкус как дерьмо.
+
+BLOCK 4 (00:02:15.000 -> 00:02:16.000):
+ORG: And he went, you can taste it?
+MATCH: А он такой: так ты что, различаешь вкус?
+
+BLOCK 0 (00:02:06.374 -> 00:02:10.027):
+ORG: It's like that like, do you remember Don Gavin, the comedian from Boston?
+MATCH: Это как… помните Дона Гэвина, комика из Бостона?
+
+BLOCK 1 (00:02:10.027 -> 00:02:10.227):
+ORG: Yep.
+MATCH: Ага.
+
+BLOCK 2 (00:02:10.227 -> 00:02:10.927):
+ORG: Like one time.
+MATCH:  Он как-то сказал:
+
+BLOCK 3 (00:02:10.927 -> 00:02:15.000):
+ORG: He was like, I was I was eating my mother's food, and my brother turned to me and said, this tastes like shit.
+MATCH: я ел мамину еду, и брат повернулся ко мне и говорит: это на вкус как дерьмо.
+
+BLOCK 4 (00:02:15.000 -> 00:02:16.000):
+ORG: And he went, you can taste it?
+MATCH: А он такой: так ты что, различаешь вкус?
+
+BLOCK 0 (00:02:06.374 -> 00:02:10.027):
+ORG: It's like that like, do you remember Don Gavin, the comedian from Boston?
+MATCH: Это как… помните Дона Гэвина, комика из Бостона?
+
+BLOCK 1 (00:02:10.027 -> 00:02:10.227):
+ORG: Yep.
+MATCH: Ага.
+
+BLOCK 2 (00:02:10.227 -> 00:02:10.927):
+ORG: Like one time.
+MATCH: Он как-то сказал:
+
+BLOCK 3 (00:02:10.927 -> 00:02:15.000):
+ORG: He was like, I was I was eating my mother's food, and my brother turned to me and said, this tastes like shit.
+MATCH:  я ел мамину еду, и брат повернулся ко мне и говорит: это на вкус как дерьмо.
+
+BLOCK 4 (00:02:15.000 -> 00:02:16.000):
+ORG: And he went, you can taste it?
+MATCH: А он такой: так ты что, различаешь вкус?
+
+BLOCK 0 (00:00:00.240 -> 00:00:05.818):
+ORG: There's this life that I knew growing up, and it's everyone's Irish.
+MATCH: Есть та жизнь, которую я знал, когда рос, и там все ирландцы.
+
+BLOCK 1 (00:00:05.818 -> 00:00:07.188):
+ORG: Everybody's Irish.
+MATCH: Все — ирландцы.
+
+BLOCK 2 (00:00:07.188 -> 00:00:09.928):
+ORG: Everybody's Irish and Massachusetts.
+MATCH: Все — ирландцы, и Массачусетс.
+
+BLOCK 3 (00:00:10.320 -> 00:00:16.795):
+ORG: And so and and, you know, we don't get to choose what our makeup is.
+MATCH: И вот, знаешь, мы же не выбираем, из чего мы «сделаны».
+
+BLOCK 4 (00:00:17.754 -> 00:00:19.704):
+ORG: That's just what we are.
+MATCH: Мы просто такие.
+
+BLOCK 5 (00:00:19.704 -> 00:00:26.983):
+ORG: And it's so interesting to me how comedy was just it was just I don't know.
+MATCH: И мне так интересно, как комедия была… она была просто… не знаю.
+
+BLOCK 6 (00:00:26.983 -> 00:00:28.815):
+ORG: It just felt like a cellular thing.
+MATCH: Это ощущалось как что-то на клеточном уровне.
+
+BLOCK 7 (00:00:28.815 -> 00:00:30.595):
+ORG: It didn't even feel like a choice.
+MATCH: Это даже не ощущалось как выбор.
+
+BLOCK 8 (00:00:30.595 -> 00:00:32.583):
+ORG: And I don't even mean as a profession.
+MATCH: И я даже не про профессию.
+
+BLOCK 9 (00:00:32.583 -> 00:00:36.280):
+ORG: I mean, everybody would be funny.
+MATCH: Я про то, что все были смешные.
+
+BLOCK 10 (00:00:36.359 -> 00:00:36.629):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 11 (00:00:36.629 -> 00:00:43.374):
+ORG: You've probably had this experience where I hung out with some Irish comics in Dublin, and everybody was really hilarious.
+MATCH: Наверняка у тебя было такое: я тусовался с ирландскими комиками в Дублине, и все были очень смешные.
+
+BLOCK 12 (00:00:43.374 -> 00:00:45.950):
+ORG: And then we decided to go into town and get a drink.
+MATCH: А потом мы решили поехать в центр и выпить.
+
+BLOCK 13 (00:00:45.950 -> 00:00:49.072):
+ORG: We hailed a cab, and the cab driver was funnier than any of us.
+MATCH: Поймали такси, и таксист был смешнее всех нас.
+
+BLOCK 14 (00:00:49.072 -> 00:00:49.319):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 15 (00:00:49.319 -> 00:00:49.567):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 16 (00:00:49.567 -> 00:00:49.963):
+ORG: Exactly.
+MATCH: Вот именно.
+
+BLOCK 17 (00:00:49.963 -> 00:00:50.706):
+ORG: Just something.
+MATCH: Просто что-то такое.
+
+BLOCK 18 (00:00:50.706 -> 00:00:56.008):
+ORG: But that and your family, I'm I know from what I've heard you say before I know in my family, this is true.
+MATCH: Но это — и семья. Я… я знаю по тому, что слышал, как ты раньше говорил, и я знаю: в моей семье это точно так.
+
+BLOCK 19 (00:00:56.008 -> 00:00:57.444):
+ORG: My parents were really funny.
+MATCH: Мои родители были очень смешные.
+
+BLOCK 20 (00:00:57.444 -> 00:00:57.692):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 21 (00:00:57.692 -> 00:01:00.120):
+ORG: All my aunts were really everybody was sarcastic.
+MATCH: Все мои тётки были… все были саркастичные.
+
+BLOCK 22 (00:01:00.120 -> 00:01:00.367):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 23 (00:01:00.367 -> 00:01:02.597):
+ORG: And so and I'm sure your family was the same.
+MATCH: И я уверен, у тебя в семье было так же.
+
+BLOCK 24 (00:01:02.597 -> 00:01:06.065):
+ORG: And really funny stories and people just laughing their asses off Yes.
+MATCH: И истории — уморительные, и люди просто ржут до упаду. Да.
+
+BLOCK 25 (00:01:06.065 -> 00:01:07.105):
+ORG: Around the table Yep.
+MATCH: За столом. Ага.
+
+BLOCK 26 (00:01:09.319 -> 00:01:12.547):
+ORG: Eating some of the unhealthiest food that you can imagine.
+MATCH: Едят самую вредную еду, какую только можно представить.
+
+BLOCK 27 (00:01:12.547 -> 00:01:13.326):
+ORG: Oh, the worst.
+MATCH: Ох, худшую.
+
+BLOCK 28 (00:01:13.326 -> 00:01:13.883):
+ORG: The worst.
+MATCH: Худшую.
+
+BLOCK 29 (00:01:14.394 -> 00:01:14.924):
+ORG: Oh my god.
+MATCH: О боже.
+
+BLOCK 30 (00:01:14.924 -> 00:01:20.389):
+ORG: I keep waiting for the surgeon general to say, you know, ham is fried ham with butter Oh my god.
+MATCH: Я всё жду, когда главный санитарный врач страны скажет: «Знаете, ветчина, жаренная в масле…» О боже.
+
+BLOCK 31 (00:01:20.389 -> 00:01:22.062):
+ORG: Is actually lengthens your life.
+MATCH: «…на самом деле продлевает жизнь».
+
+BLOCK 32 (00:01:22.062 -> 00:01:22.324):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 33 (00:01:22.324 -> 00:01:24.154):
+ORG: Because then I'd be in great shape.
+MATCH: Потому что тогда я был бы в отличной форме.
+
+BLOCK 34 (00:01:24.154 -> 00:01:28.025):
+ORG: I remember there was an Italian family that lived next door, the Corellis.
+MATCH: Помню, рядом жила итальянская семья — Корелли.
+
+BLOCK 35 (00:01:28.930 -> 00:01:30.165):
+ORG: - Their mother used to cook.
+MATCH: Их мама готовила.
+
+BLOCK 36 (00:01:30.165 -> 00:01:37.306):
+ORG: Like, while you were out playing football or baseball or street hockey in the street in the summertime, she would come out with homemade pizza or or yeah.
+MATCH: Типа, летом, пока ты гоняешь мяч — играешь в американский футбол, или в бейсбол, или в уличный хоккей прямо на улице, — она выходила с домашней пиццей или… да.
+
+BLOCK 37 (00:01:37.306 -> 00:01:38.739):
+ORG: I mean, just unbelievable.
+MATCH: В смысле, просто невероятно.
+
+BLOCK 38 (00:01:38.739 -> 00:01:42.929):
+ORG: So my brother my brother and I my brother ended up marrying an Italian girl.
+MATCH: И мой брат… мой брат и я… мой брат в итоге женился на итальянке.
+
+BLOCK 39 (00:01:42.929 -> 00:01:46.512):
+ORG: My brother was like, you know, mom, Mrs. Carrelly makes the best.
+MATCH: Мой брат такой: «Знаешь, мам, миссис Карелли готовит лучше всех».
+
+BLOCK 40 (00:01:46.512 -> 00:01:48.331):
+ORG: And she's like, I can make pasta.
+MATCH: А мама: «Я могу сделать пасту.
+
+BLOCK 41 (00:01:48.331 -> 00:01:49.488):
+ORG: I can make spaghetti.
+MATCH: Я могу сделать спагетти».
+
+BLOCK 42 (00:01:49.488 -> 00:01:51.417):
+ORG: And we were like, oh, please don't.
+MATCH: А мы такие: «О, пожалуйста, только не надо».
+
+BLOCK 43 (00:01:51.417 -> 00:01:51.748):
+ORG: Right?
+MATCH: Да?
+
+BLOCK 44 (00:01:52.454 -> 00:01:55.433):
+ORG: And so one night, she made this I'll never forget this.
+MATCH: И вот однажды вечером она это сделала. Я никогда не забуду.
+
+BLOCK 45 (00:01:55.433 -> 00:01:56.353):
+ORG: She— I loved her.
+MATCH: Она… Я её обожал.
+
+BLOCK 46 (00:01:56.353 -> 00:01:57.328):
+ORG: I loved my mother.
+MATCH: Я обожал свою маму.
+
+BLOCK 47 (00:01:57.328 -> 00:01:59.007):
+ORG: She just passed away this year.
+MATCH: Она умерла в этом году.
+
+BLOCK 48 (00:01:59.007 -> 00:01:59.603):
+ORG: She was 98.
+MATCH: Ей было 98.
+
+BLOCK 49 (00:01:59.603 -> 00:01:59.819):
+ORG: Wow.
+MATCH: Ух ты.
+
+BLOCK 50 (00:02:00.969 -> 00:02:02.798):
+ORG: And she was lucid right up to the end.
+MATCH: И до самого конца была в ясном уме.
+
+BLOCK 51 (00:02:02.798 -> 00:02:04.820):
+ORG: But she she was she was a high Irish cook.
+MATCH: Но она… она была… она была из тех ирландских поваров.
+
+BLOCK 52 (00:02:04.820 -> 00:02:05.928):
+ORG: You know what that Yes.
+MATCH: Знаешь, что это? Да.
+
+BLOCK 53 (00:02:05.928 -> 00:02:06.168):
+ORG: I do.
+MATCH: Знаю.
+
+BLOCK 54 (00:02:06.168 -> 00:02:06.553):
+ORG: Boil it.
+MATCH: Сварить.
+
+BLOCK 55 (00:02:06.553 -> 00:02:10.068):
+ORG: It's like that like, do you remember Don Gavin, the comedian from Boston?
+MATCH: Это как… помнишь Дона Гэвина, бостонского комика из Бостона?
+
+BLOCK 56 (00:02:10.068 -> 00:02:10.260):
+ORG: Yep.
+MATCH: Ага.
+
+BLOCK 57 (00:02:10.260 -> 00:02:10.934):
+ORG: Line one time.
+MATCH: У него была одна фраза.
+
+BLOCK 58 (00:02:10.934 -> 00:02:16.423):
+ORG: He was like, I was I was eating my mother's food, and and my brother turned to me and said, this tastes like shit.
+MATCH: Он такой: «Я ел мамину еду, и мой брат повернулся ко мне и сказал: “На вкус как говно”.
+
+BLOCK 59 (00:02:16.423 -> 00:02:17.722):
+ORG: And went, you can taste it?
+MATCH: А я: “Ты что, чувствуешь вкус?”»
+
+BLOCK 60 (00:02:17.722 -> 00:02:19.167):
+ORG: That sums up Irish Irish food.
+MATCH: Вот это и есть ирландская еда.
+
+BLOCK 61 (00:02:19.167 -> 00:02:19.455):
+ORG: Right?
+MATCH: Да?
+
+BLOCK 62 (00:02:20.305 -> 00:02:31.349):
+ORG: So - I remember my what I remember very clearly is my mom would say she wanted to make she used to make spaghetti with meat sauce.
+MATCH: Так вот, я очень чётко помню: мама говорила, что хочет сделать… она делала спагетти с мясным соусом.
+
+BLOCK 63 (00:02:31.510 -> 00:02:34.673):
+ORG: What you know, she thought it was spaghetti meat sauce.
+MATCH: То есть она думала, что это «спагетти с мясным соусом».
+
+BLOCK 64 (00:02:34.673 -> 00:02:38.296):
+ORG: Basically, what it was was many packages of hamburger meat Yes.
+MATCH: По факту это было — много упаковок говяжьего фарша. Да.
+
+BLOCK 65 (00:02:38.296 -> 00:02:42.609):
+ORG: That are that are fried up in a giant and then you put some pasta in there.
+MATCH: Которые обжариваются в огромной… и потом ты туда кидаешь макароны.
+
+BLOCK 66 (00:02:43.044 -> 00:02:45.764):
+ORG: And there was I don't even know if there was sauce.
+MATCH: И я даже не знаю, был ли там вообще соус.
+
+BLOCK 67 (00:02:46.004 -> 00:02:51.706):
+ORG: But for years and I loved it, but I thought that that was spaghetti with meat sauce.
+MATCH: Но годами — и мне нравилось, — я думал, что вот это и есть спагетти с мясным соусом.
+
+BLOCK 68 (00:02:51.706 -> 00:03:02.040):
+ORG: And so when I went to when I, you know, finally left home and then I'm in New York and I go to an Italian restaurant, I was I think I was berating a waiter.
+MATCH: А потом, когда я… знаешь, наконец уехал из дома, и я в Нью-Йорке, захожу в итальянский ресторан, — я, кажется, отчитывал официанта.
+
+BLOCK 69 (00:03:02.280 -> 00:03:05.479):
+ORG: Like, sir, there should be six hamburgers.
+MATCH: Типа: «Сэр, тут должно быть шесть котлет».
+
+BLOCK 70 (00:03:06.264 -> 00:03:13.335):
+ORG: There should be at least three pounds of ground beef that's been fried in this dish.
+MATCH: «Тут должно быть как минимум полтора кило обжаренного фарша в этом блюде».
+
+BLOCK 71 (00:03:13.335 -> 00:03:15.102):
+ORG: I mean, basically, I thought it was a burger.
+MATCH: В смысле, по сути, я думал, что это бургер.
+
+BLOCK 72 (00:03:15.102 -> 00:03:16.201):
+ORG: And there's too much flavor.
+MATCH: И тут слишком много вкуса.
+
+BLOCK 73 (00:03:16.201 -> 00:03:17.026):
+ORG: What's going on here?
+MATCH: Что вообще происходит?
+
+BLOCK 74 (00:03:18.669 -> 00:03:20.400):
+ORG: - Do I suddenly taste things?
+MATCH: Я что, внезапно начал что-то чувствовать?
+
+BLOCK 75 (00:03:20.400 -> 00:03:22.012):
+ORG: Why why does it taste good?
+MATCH: Почему… почему это вкусно?
+
+BLOCK 76 (00:03:22.012 -> 00:03:22.311):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 77 (00:03:23.469 -> 00:03:23.967):
+ORG: It was great.
+MATCH: Это было прекрасно.
+
+BLOCK 78 (00:03:23.967 -> 00:03:25.807):
+ORG: And and also then my brother married an Italian.
+MATCH: И… и ещё — мой брат женился на итальянке.
+
+BLOCK 79 (00:03:25.807 -> 00:03:27.800):
+ORG: And there was a lot of Italians in the neighborhood.
+MATCH: И в районе было много итальянцев.
+
+BLOCK 80 (00:03:27.800 -> 00:03:29.372):
+ORG: There were Armenians in our neighborhood.
+MATCH: В нашем районе были армяне.
+
+BLOCK 81 (00:03:29.372 -> 00:03:31.197):
+ORG: There was it was crazy.
+MATCH: Это было безумие.
+
+BLOCK 82 (00:03:31.197 -> 00:03:33.165):
+ORG: We went to the same school for twelve years.
+MATCH: Мы учились в одной и той же школе двенадцать лет.
+
+BLOCK 83 (00:03:33.165 -> 00:03:33.433):
+ORG: Right?
+MATCH: Да?
+
+BLOCK 84 (00:03:33.433 -> 00:03:39.473):
+ORG: So you had all these different Puerto Ricans, these different kinds of food, and every night, you're eating stuff that you can't taste.
+MATCH: И вот у тебя все эти разные пуэрториканцы, всякая разная еда, а ты каждый вечер ешь то, у чего нет вкуса.
+
+BLOCK 85 (00:03:39.473 -> 00:03:39.697):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 86 (00:03:39.697 -> 00:03:42.470):
+ORG: Or and then on Fridays, when they have fish, it's fish sticks.
+MATCH: Или… а по пятницам, когда «рыба», это рыбные палочки.
+
+BLOCK 87 (00:03:43.469 -> 00:03:44.053):
+ORG: Oh my god.
+MATCH: О боже.
+
+BLOCK 88 (00:03:44.053 -> 00:03:44.345):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 89 (00:03:44.345 -> 00:03:44.637):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 90 (00:03:44.637 -> 00:03:45.221):
+ORG: Oh my god.
+MATCH: О боже.
+
+BLOCK 91 (00:03:45.221 -> 00:03:47.556):
+ORG: And my dad putting ketchup on the pasta.
+MATCH: И мой отец добавлял кетчуп в пасту.
+
+BLOCK 92 (00:03:48.030 -> 00:03:48.192):
+ORG: Oh.
+MATCH: О.
+
+BLOCK 93 (00:03:48.192 -> 00:03:48.676):
+ORG: Oh, yeah.
+MATCH: О да.
+
+BLOCK 94 (00:03:48.676 -> 00:03:50.453):
+ORG: Well, that's I mean I mean, what?
+MATCH: Ну это… я имею в виду… что?
+
+BLOCK 95 (00:03:50.453 -> 00:03:51.691):
+ORG: Where where do we live?
+MATCH: Где… где мы вообще живём?
+
+BLOCK 96 (00:03:51.691 -> 00:03:53.468):
+ORG: And, like, you're like, I listen.
+MATCH: И ты такой: «Я, слушай.
+
+BLOCK 97 (00:03:53.468 -> 00:03:57.776):
+ORG: Go out the back door on the porch and look across at the porch across the alley.
+MATCH: Выйди через заднюю дверь на крыльцо и посмотри на крыльцо через переулок».
+
+BLOCK 98 (00:03:57.776 -> 00:04:00.791):
+ORG: You there's Puerto Rican people eating really good food.
+MATCH: Слушай, там пуэрториканцы едят такую вкуснятину.
+
+BLOCK 99 (00:04:00.791 -> 00:04:01.922):
+ORG: Can we go over there?
+MATCH: Можно мы туда пойдём?
+
+BLOCK 100 (00:04:01.922 -> 00:04:03.699):
+ORG: The Corrales are right over here.
+MATCH: Коралесы прямо вот здесь.
+
+BLOCK 101 (00:04:03.699 -> 00:04:04.237):
+ORG: Oh my god.
+MATCH: О боже.
+
+BLOCK 102 (00:04:04.237 -> 00:04:04.776):
+ORG: Oh my god.
+MATCH: О боже.
+
+BLOCK 103 (00:04:05.555 -> 00:04:11.385):
+ORG: My father my father ate literally, he ate meat at every meal he ate had to have meat.
+MATCH: Мой отец, мой отец буквально — он ел мясо при каждом приёме пищи, в каждом блюде у него должно было быть мясо.
+
+BLOCK 104 (00:04:11.385 -> 00:04:11.688):
+ORG: Yeah.
+MATCH: Да.
+
+BLOCK 105 (00:04:11.688 -> 00:04:13.569):
+ORG: Bacon and eggs, steak and eggs.
+MATCH: Бекон с яйцами, стейк с яйцами.
+
+BLOCK 106 (00:04:13.569 -> 00:04:15.450):
+ORG: And he smoked five packs a day.
+MATCH: И он выкуривал по пять пачек в день.
+
+BLOCK 107 (00:04:15.450 -> 00:04:17.270):
+ORG: I shouldn't have been talking.
+MATCH: Мне не стоило об этом говорить.
+
+BLOCK 108 (00:04:17.270 -> 00:04:19.029):
+ORG: I smoked for fifty two years.
+MATCH: Я курил пятьдесят два года.
+
+BLOCK 109 (00:04:19.029 -> 00:04:19.454):
+ORG: Well, I
+MATCH: Ну, я…
+
+BLOCK 0 (00:00:01.439 -> 00:00:20.094):
+ORG: This deep uncertainty surrounding the hard problem and the diverse philosophical framings naturally lead us to revisit the idea of substrate independence, but this time focusing not just on function, but on the far more challenging question of the experience itself.
+MATCH: Эта глубокая неопределённость вокруг трудной проблемы и разнообразие философских формулировок естественным образом подводят нас к тому, чтобы снова вернуться к идее независимости от субстрата, но на этот раз сосредоточиться не только на функции, а на куда более сложном вопросе — о самом переживании.
+
+BLOCK 1 (00:00:22.254 -> 00:00:34.329):
+ORG: We are asking: If consciousness arises from physical processes in the brain, could conscious experience itself also arise in a non-biological medium such as silicon computer?
+MATCH: Мы спрашиваем: если сознание возникает из физических процессов в мозге, может ли само сознательное переживание также возникнуть в небиологической среде, например в кремниевом компьютере?  
+
+BLOCK 2 (00:00:36.250 -> 00:00:45.344):
+ORG: First, it is important to distinguish this question from question 1.4 which asked about substrate independence for function.
+MATCH: Во-первых, важно отличать этот вопрос от вопроса 1.4, который спрашивал о независимости от субстрата для функции.
+
+BLOCK 3 (00:00:46.145 -> 00:00:52.304):
+ORG: That question asked if intelligent processes like reasoning or learning could run on silicon.
+MATCH: Тот вопрос был о том, могут ли интеллектуальные процессы вроде рассуждения или обучения работать на кремнии.
+
+BLOCK 4 (00:00:52.704 -> 00:00:55.585):
+ORG: The general answer was yes, in principle.
+MATCH: Общий ответ был: да, в принципе.
+
+BLOCK 5 (00:00:56.259 -> 00:01:00.979):
+ORG: Intelligence seems tied to patterns of computation, not to biology.
+MATCH: Похоже, интеллект связан с паттернами вычислений, а не с биологией.
+
+BLOCK 6 (00:01:01.780 -> 00:01:06.979):
+ORG: Now in question 2.4 here, we are asking something much deeper.
+MATCH: Теперь же, в вопросе 2.4, мы спрашиваем о чём-то гораздо более глубоком.
+
+BLOCK 7 (00:01:07.299 -> 00:01:13.984):
+ORG: We are asking about substrate independence for experience, for qualia, for subjective feeling.
+MATCH: Мы спрашиваем о независимости от субстрата для переживания, для квалиа, для субъективного чувства.
+
+BLOCK 8 (00:01:14.944 -> 00:01:21.344):
+ORG: Can the feeling of seeing red or the pang of regret arise from computation running on silicon chips?
+MATCH: Может ли чувство «видеть красный» или укол сожаления возникнуть из вычислений, выполняемых на кремниевых чипах?
+
+BLOCK 9 (00:01:23.185 -> 00:01:29.209):
+ORG: Also notice the question's premise, if consciousness arises from physical processes.
+MATCH: Также обратите внимание на предпосылку вопроса: «если сознание возникает из физических процессов».
+
+BLOCK 10 (00:01:29.689 -> 00:01:35.849):
+ORG: By starting this way, we are deliberately working with the physicalist framework, which is the dominant view in science.
+MATCH: Начиная именно так, мы сознательно работаем в рамках физикалистской модели, которая является доминирующей в науке.
+
+BLOCK 11 (00:01:36.170 -> 00:01:39.369):
+ORG: We are setting aside dualism and idealism for this discussion.
+MATCH: Дуализм и идеализм в этом обсуждении мы откладываем в сторону.
+
+BLOCK 12 (00:01:40.474 -> 00:01:45.515):
+ORG: If consciousness is fundamentally non physical, the answer is likely no as we saw.
+MATCH: Если сознание в своей основе нефизично, то, как мы видели, ответ, скорее всего, будет «нет».
+
+BLOCK 13 (00:01:45.994 -> 00:01:57.439):
+ORG: But even if consciousness is the result of physical processes in the brain, that doesn't automatically mean those same processes could generate experience on just any suitable hardware.
+MATCH: Но даже если сознание — результат физических процессов в мозге, из этого автоматически не следует, что те же самые процессы смогут порождать переживание на любом подходящем «железе».
+
+BLOCK 14 (00:01:57.840 -> 00:02:02.400):
+ORG: This is where options diverge sharply, even among physicalists.
+MATCH: Именно здесь варианты резко расходятся — даже среди физикалистов.
+
+BLOCK 15 (00:02:04.000 -> 00:02:15.665):
+ORG: I have already mentioned it before, but it's worth saying it again that the most optimistic view for artificial consciousness comes from functionalism, one of the main branches of physicalism.
+MATCH: Я уже упоминал это раньше, но стоит повторить: самый оптимистичный взгляд на искусственное сознание исходит из функционализма, одной из главных ветвей физикализма.
+
+BLOCK 16 (00:02:16.625 -> 00:02:27.450):
+ORG: The idea here is that consciousness, like intelligence, is defined by its functional role, by the complex patterns of information processing happening in the system.
+MATCH: Идея здесь в том, что сознание, как и интеллект, определяется своей функциональной ролью — сложными паттернами обработки информации, происходящими в системе.
+
+BLOCK 17 (00:02:28.569 -> 00:02:38.169):
+ORG: According to this view, consciousness is not tied to specific wetware of neurons, it's tied to the abstract software of the functional architecture.
+MATCH: Согласно этой позиции, сознание не привязано к конкретной «мокрой» нейронной ткани, оно привязано к абстрактному «софту» функциональной архитектуры.
+
+BLOCK 18 (00:02:39.294 -> 00:02:49.215):
+ORG: So if you could perfectly simulate the functional processes of a conscious human brain on a sufficiently powerful computer, that simulation would be conscious.
+MATCH: Так что, если бы вы смогли идеально смоделировать функциональные процессы сознательного человеческого мозга на достаточно мощном компьютере, такая симуляция была бы сознательной.
+
+BLOCK 19 (00:02:52.060 -> 00:02:59.740):
+ORG: Philosopher David Chalmers offers a famous thought experiment called Dancing Qualia to support this functionalist view.
+MATCH: Философ Дэвид Чалмерс предлагает знаменитый мысленный эксперимент под названием «Танцующие квалиа», чтобы поддержать эту функционалистскую позицию.
+
+BLOCK 20 (00:03:00.379 -> 00:03:07.974):
+ORG: He argues that consciousness is tied to the organization of a system, not its physical material.
+MATCH: Он утверждает, что сознание связано с организацией системы, а не с её физическим материалом.
+
+BLOCK 21 (00:03:08.375 -> 00:03:18.134):
+ORG: To make this vivid, he asked us to imagine gradually placing each neuron in a conscious brain with a silicon chip that performs the exact same function.
+MATCH: Чтобы сделать это наглядным, он предлагает представить, что мы постепенно заменяем каждый нейрон в сознательном мозге кремниевым чипом, который выполняет в точности ту же функцию.
+
+BLOCK 22 (00:03:19.180 -> 00:03:23.659):
+ORG: The person's external behavior would stay exactly the same throughout this process.
+MATCH: Внешнее поведение человека на всём протяжении этого процесса оставалось бы абсолютно неизменным.
+
+BLOCK 23 (00:03:24.539 -> 00:03:40.745):
+ORG: Now, if the silicon version lacked consciousness, there would be specific moment where the person's inner experience just switches off, even though they would continue to act and report that they could see red or feel pain and so on.
+MATCH: Теперь, если бы кремниевая версия была лишена сознания, должен был бы существовать конкретный момент, когда внутреннее переживание человека просто «выключится», хотя он продолжит действовать и сообщать, что видит красный, чувствует боль и так далее.  
+
+BLOCK 24 (00:03:41.865 -> 00:03:44.665):
+ORG: Chalmers argues this scenario seems incoherent.
+MATCH: Чалмерс утверждает, что такой сценарий выглядит непоследовательным.
+
+BLOCK 25 (00:03:44.665 -> 00:03:52.069):
+ORG: Therefore, he concludes, consciousness must be tied to the system's organization, not to its biological makeup.
+MATCH: Следовательно, делает вывод он, сознание должно быть связано с организацией системы, а не с её биологической основой.
+
+BLOCK 26 (00:03:53.189 -> 00:04:05.685):
+ORG: A prominent neuroscientific example of this functionalist perspective is the global workspace theory It explains consciousness using the metaphor of a theater.
+MATCH: Яркий нейронаучный пример этой функционалистской перспективы — теория глобального рабочего пространства.  
+Она объясняет сознание через метафору театра.  
+
+BLOCK 27 (00:04:06.324 -> 00:04:11.444):
+ORG: Our brain performs many processes in parallel, in the dark and unconsciously.
+MATCH: Наш мозг выполняет множество процессов параллельно — в темноте и бессознательно.
+
+BLOCK 28 (00:04:12.004 -> 00:04:20.660):
+ORG: Attention acts like a spotlight, selecting some of this information and broadcasting it onto the main stage of the central global workspace.
+MATCH: Внимание действует как прожектор, выбирая часть этой информации и «транслируя» её на главную сцену центрального глобального рабочего пространства.
+
+BLOCK 29 (00:04:21.300 -> 00:04:25.220):
+ORG: Once information is on this global stage, it becomes conscious.
+MATCH: Когда информация оказывается на этой глобальной сцене, она становится сознательной.
+
+BLOCK 30 (00:04:26.175 -> 00:04:31.694):
+ORG: This means it is widely available to other system like memory, planning, and language, etc.
+MATCH: Это означает, что она становится широко доступной другим системам, таким как память, планирование и язык, и так далее.
+
+BLOCK 31 (00:04:32.814 -> 00:04:44.290):
+ORG: Experiments show that while subliminal, unconscious stimuli cause local brain activity, consciously perceived stimuli trigger widespread global brain activation.
+MATCH: Эксперименты показывают, что тогда как подпороговые, бессознательные стимулы вызывают локальную активность мозга, сознательно воспринимаемые стимулы запускают широкомасштабную глобальную активацию мозга.
+
+BLOCK 32 (00:04:45.089 -> 00:04:56.944):
+ORG: As a functionalist theory, GWT strongly suggests that any system, even one made of silicon, that implements this global workspace architecture, could be conscious.
+MATCH: Как функционалистская теория, ГРП настойчиво подсказывает: любая система — даже кремниевая, — которая реализует архитектуру глобального рабочего пространства, может обладать сознанием.
+
+BLOCK 33 (00:04:59.985 -> 00:05:06.384):
+ORG: Another major theory, Integrated Information Theory or IIT, takes a different approach.
+MATCH: Другая крупная теория, Теория интегрированной информации, или IIT, предлагает иной подход.
+
+BLOCK 34 (00:05:07.300 -> 00:05:13.779):
+ORG: Instead of starting with brain function, IIT starts with the qualities of experience itself.
+MATCH: Вместо того чтобы начинать с функций мозга, IIT начинает с качеств самого переживания.
+
+BLOCK 35 (00:05:14.259 -> 00:05:29.095):
+ORG: It argues that conscious experience is always both integrated a whole scene rather than separate pixels and differentiated as the scene is extremely rich rich with details.
+MATCH: Она утверждает, что сознательный опыт всегда одновременно и интегрирован — это цельная сцена, а не набор отдельных пикселей, — и дифференцирован, поскольку сцена чрезвычайно богата деталями.
+
+BLOCK 36 (00:05:30.214 -> 00:05:37.629):
+ORG: IIT proposes a mathematical measure called Phi which calculates how integrated a system information is.
+MATCH: IIT вводит математическую меру под названием «фи» (Phi), которая вычисляет, насколько интегрирована информация в системе.
+
+BLOCK 37 (00:05:38.350 -> 00:05:43.629):
+ORG: The theory posits that the higher the system phi, the more conscious it is.
+MATCH: Теория постулирует: чем выше «фи» у системы, тем более она сознательна.
+
+BLOCK 38 (00:05:44.270 -> 00:05:49.470):
+ORG: The important point for our discussion is that IIT is substrate independent.
+MATCH: Важный для нашего разговора момент в том, что IIT не зависит от субстрата.
+
+BLOCK 39 (00:05:50.085 -> 00:05:52.645):
+ORG: It doesn't limit consciousness to brains.
+MATCH: Она не ограничивает сознание мозгами.
+
+BLOCK 40 (00:05:52.964 -> 00:06:00.165):
+ORG: In principle, any system, biological or artificial, that has a high enough Phi, could be conscious.
+MATCH: В принципе любая система — биологическая или искусственная, — у которой «фи» достаточно высоко, может быть сознательной.
+
+BLOCK 41 (00:06:01.365 -> 00:06:04.884):
+ORG: Many philosophers and scientists are however skeptical.
+MATCH: Однако многие философы и учёные относятся к этому скептически.
+
+BLOCK 42 (00:06:05.759 -> 00:06:15.040):
+ORG: They argue that consciousness might depend on specific biological properties of neurons and brain chemistries that cannot be perfectly replicated on silicon circuits.
+MATCH: Они утверждают, что сознание может зависеть от специфических биологических свойств нейронов и химии мозга, которые невозможно идеально воспроизвести на кремниевых схемах.
+
+BLOCK 43 (00:06:15.759 -> 00:06:22.095):
+ORG: Perhaps consciousness requires the specific dynamics of our neurotransmitters or other uniquely biological features.
+MATCH: Возможно, сознанию нужны особые динамические режимы наших нейромедиаторов или другие уникально биологические особенности.
+
+BLOCK 44 (00:06:23.134 -> 00:06:28.495):
+ORG: John Searle's biological naturalism, as was mentioned in the previous lesson, is a version of this.
+MATCH: Биологический натурализм Джона Сёрла, как упоминалось в предыдущем уроке, — одна из версий этой позиции.
+
+BLOCK 45 (00:06:28.894 -> 00:06:43.410):
+ORG: He argues that consciousness is a biological phenomenon like digestion or metabolism caused by specific brain biology, and simply running a simulation of that biology is not the same as having the biological process itself.
+MATCH: Он утверждает, что сознание — биологический феномен вроде пищеварения или обмена веществ, вызванный конкретной биологией мозга, и что просто запустить симуляцию этой биологии — не то же самое, что иметь сам биологический процесс.
+
+BLOCK 46 (00:06:43.970 -> 00:06:49.569):
+ORG: You can create a perfect computer simulation of digestion, but your computer won't digest a pizza.
+MATCH: Можно сделать идеальную компьютерную симуляцию пищеварения, но компьютер не переварит пиццу.
+
+BLOCK 47 (00:06:50.665 -> 00:06:58.425):
+ORG: In the same way, simulating brain processes may not make a computer genuinely consciousness.
+MATCH: Точно так же моделирование мозговых процессов может и не сделать компьютер по-настоящему сознательным.
+
+BLOCK 48 (00:06:58.745 -> 00:07:02.504):
+ORG: It is an argument that the physical and biological stuff do matter.
+MATCH: Это аргумент в пользу того, что физическая и биологическая «начинка» действительно важна.
+
+BLOCK 49 (00:07:04.670 -> 00:07:07.470):
+ORG: Another possibility lies in emergentism.
+MATCH: Ещё одна возможность — эмерджентизм.
+
+BLOCK 50 (00:07:07.470 -> 00:07:17.149):
+ORG: This view suggests that consciousness might emerge when any physical system, not necessarily biological one, reaches a certain threshold of organizational complexity.
+MATCH: Согласно этому взгляду, сознание может возникать, когда любая физическая система — не обязательно биологическая — достигает определённого порога организационной сложности.
+
+BLOCK 51 (00:07:18.225 -> 00:07:25.425):
+ORG: However, this may rely on dynamics that are very hard, though not theoretically impossible, to replicate in silicon.
+MATCH: Однако это может опираться на динамику, которую очень трудно, хотя и не невозможно в принципе, воспроизвести на кремнии.
+
+BLOCK 52 (00:07:26.544 -> 00:07:44.020):
+ORG: For example, it could require perfectly mimicking the precise spike timing and synchrony of neurons, or mimicking the effect of neuromodulation where chemicals tune the network dynamics, or the contribution of other brain cells like glial cells which add layers of complexity.
+MATCH: Например, может потребоваться идеально копировать точное время спайков и синхронность нейронов, или воспроизводить эффект нейромодуляции, когда химические вещества «настраивают» динамику сети, или учитывать вклад других клеток мозга, например глиальных клеток, которые добавляют новые уровни сложности.
+
+BLOCK 53 (00:07:44.580 -> 00:07:51.194):
+ORG: If a silicon system could reproduce this kind of complex interactions, conscious experience might emerge.
+MATCH: Если кремниевая система сможет воспроизвести такого рода сложные взаимодействия, может возникнуть сознательный опыт.
+
+BLOCK 54 (00:07:51.595 -> 00:07:58.475):
+ORG: If it cannot, then even a smart AI would remain without any inner experience essentially.
+MATCH: Если не сможет, то даже очень умный ИИ, по сути, останется без какого-либо внутреннего переживания.
+
+BLOCK 55 (00:07:58.955 -> 00:08:01.115):
+ORG: This is why emergentism is a maybe.
+MATCH: Вот почему эмерджентизм — это «возможно».
+
+BLOCK 56 (00:08:01.759 -> 00:08:09.920):
+ORG: It all depends on hitting the right incredibly high bar of complexity, which we are still far from fully understanding.
+MATCH: Всё зависит от того, удастся ли достичь нужной, невероятно высокой планки сложности, которую мы до сих пор далеко не до конца понимаем.
+
+BLOCK 57 (00:08:12.720 -> 00:08:16.800):
+ORG: But we have to be very careful with the idea of emergent emergence from complexity.
+MATCH: Но с идеей эмерджентного возникновения из сложности нужно быть очень осторожными.
+
+BLOCK 58 (00:08:17.264 -> 00:08:19.025):
+ORG: It's not a magic wand.
+MATCH: Это не волшебная палочка.
+
+BLOCK 59 (00:08:19.425 -> 00:08:22.865):
+ORG: The key question is what kind of complexity is required.
+MATCH: Ключевой вопрос — какая именно сложность требуется.
+
+BLOCK 60 (00:08:23.105 -> 00:08:27.264):
+ORG: As you can see on this slide, we can think of other highly complex systems.
+MATCH: Как видно на этом слайде, можно вспомнить и другие крайне сложные системы.
+
+BLOCK 61 (00:08:27.745 -> 00:08:29.504):
+ORG: Consider an example of a hurricane.
+MATCH: Возьмём, например, ураган.
+
+BLOCK 62 (00:08:31.460 -> 00:08:39.860):
+ORG: It is an enormously complex physical system with swirling dynamics and emergent patterns, with a distinct eye.
+MATCH: Это чрезвычайно сложная физическая система с вихревой динамикой и возникающими структурами, с отчётливым «глазом».
+
+BLOCK 63 (00:08:40.259 -> 00:08:42.899):
+ORG: But no one seriously claims a hurricane is conscious.
+MATCH: Но никто всерьёз не утверждает, что ураган сознателен.
+
+BLOCK 64 (00:08:43.894 -> 00:08:55.495):
+ORG: Or things about amoeba: from a biochemical standpoint, it is an incredibly complex, self organizing, living organism and living system that senses and reacts to its environment.
+MATCH: Или вот амёба: с биохимической точки зрения это невероятно сложный, самоорганизующийся живой организм и живая система, которая чувствует и реагирует на среду.
+
+BLOCK 65 (00:08:56.399 -> 00:09:02.799):
+ORG: Yet, without a nervous system, and certainly without a brain, no one argues that amoeba is conscious.
+MATCH: И всё же без нервной системы — и уж тем более без мозга — никто не говорит, что амёба сознательна.
+
+BLOCK 66 (00:09:03.519 -> 00:09:09.120):
+ORG: These examples show that complexity or even being alive is not enough on its own.
+MATCH: Эти примеры показывают, что одной сложности — или даже просто факта «быть живым» — недостаточно.
+
+BLOCK 67 (00:09:09.875 -> 00:09:23.875):
+ORG: The emergentist argument for consciousness points towards a very specific threshold of informational and organizational complexity, likely related to how a system processes and integrates information in some unified way.
+MATCH: Эмерджентистский аргумент в пользу сознания указывает на очень специфический порог информационной и организационной сложности, вероятно связанный с тем, как система обрабатывает и интегрирует информацию в едином целом.
+
+BLOCK 68 (00:09:25.480 -> 00:09:31.000):
+ORG: The hypothesis is that brains cross this threshold.
+MATCH: Гипотеза состоит в том, что мозг этот порог пересекает.
+
+BLOCK 69 (00:09:31.480 -> 00:09:41.044):
+ORG: The open question for AI is whether a silicon system by replicating this particular kind of complex information processing could cross the same threshold too.
+MATCH: Открытый вопрос об ИИ — может ли кремниевая система, воспроизведя именно такой сложный тип обработки информации, тоже пересечь тот же порог.
+
+BLOCK 70 (00:09:41.845 -> 00:09:47.445):
+ORG: There is also a subtle intermediate position that I will call maybe not.
+MATCH: Есть и тонкая промежуточная позиция, которую я назову «может быть, нет».
+
+BLOCK 71 (00:09:47.924 -> 00:09:58.289):
+ORG: This perspective highlights the possibility that consciousness could depend on specific biological or high level features of the brain that may not be about processing information.
+MATCH: Эта точка зрения подчёркивает возможность того, что сознание может зависеть от специфических биологических или высокоуровневых особенностей мозга, которые могут быть вовсе не про обработку информации.
+
+BLOCK 72 (00:09:59.009 -> 00:10:13.264):
+ORG: a cognitive psychologist Benny Shanon in his study of ayahuasca experiences emphasized that even detailed knowledge of neurochemistry or neural activity may fail to capture the full richness of conscious experience.
+MATCH: Когнитивный психолог Бенни Шанон в своём исследовании переживаний, связанных с аяуаской, подчёркивал, что даже подробные знания нейрохимии или нейронной активности могут не передать всей полноты и богатства сознательного опыта.  
+
+BLOCK 73 (00:10:13.825 -> 00:10:18.384):
+ORG: He said: Admittedly, without a piano, piano music cannot exist.
+MATCH: Он говорил: Признаться, без пианино фортепианной музыки существовать не может.
+
+BLOCK 74 (00:10:19.169 -> 00:10:28.850):
+ORG: Yet to truly understand what is essential about piano music, it is meaningless to focus solely on the physics of the chords and their acoustics.
+MATCH: И всё же, чтобы по-настоящему понять, что в фортепианной музыке существенно, бессмысленно сосредоточиваться только на физике аккордов и их акустике.
+
+BLOCK 75 (00:10:29.409 -> 00:10:31.169):
+ORG: This leads to a powerful parallel.
+MATCH: Это приводит к сильной параллели.
+
+BLOCK 76 (00:10:31.674 -> 00:10:40.315):
+ORG: We know that just ingesting the same biochemical compounds in ayahuasca does not guarantee the same subjective experience for everyone.
+MATCH: Мы знаем, что простое употребление тех же самых биохимических соединений в аяуаске не гарантирует всем одного и того же субъективного переживания.
+
+BLOCK 77 (00:10:40.795 -> 00:10:43.035):
+ORG: The experience is deeply personal.
+MATCH: Этот опыт глубоко личный.
+
+BLOCK 78 (00:10:43.830 -> 00:10:54.950):
+ORG: So even with identical physical input, you know, the biochemical compounds in ayahuasca, the resulting subjective experience can vary dramatically from person to person.
+MATCH: Так что даже при идентичном физическом «входе», знаете, тех самых биохимических соединениях в аяуаске, итоговый субъективный опыт может радикально различаться от человека к человеку.
+
+BLOCK 79 (00:10:55.269 -> 00:11:00.125):
+ORG: This powerfully underscores the complexity and the subjective nature of consciousness.
+MATCH: Это очень наглядно подчёркивает сложность и субъективную природу сознания.
+
+BLOCK 80 (00:11:00.845 -> 00:11:13.404):
+ORG: This view suggests that consciousness could hinge on unique system properties of the brain, its chemistry, its network dynamics, that we do not yet fully understand and may not be able to reproduce.
+MATCH: Согласно этому взгляду, сознание может держаться на уникальных системных свойствах мозга, на его химии, на динамике его сетей, которые мы пока не до конца понимаем и, возможно, не сможем воспроизвести.
+
+BLOCK 81 (00:11:14.419 -> 00:11:28.179):
+ORG: And so just as Shanon argues that the psychological effects of ayahuasca cannot be reduced to the molecular level, it may be that conscious experience cannot be fully captured and reproduced by silicon systems alone.
+MATCH: И потому, как Шанон утверждает, что психологические эффекты аяуаски нельзя свести к молекулярному уровню, так и сознательный опыт, возможно, нельзя полностью описать и воспроизвести одними лишь кремниевыми системами.
+
+BLOCK 82 (00:11:30.695 -> 00:11:37.654):
+ORG: Ultimately, our inability to definitely answer this question stems directly from the heart problem and the explanatory gap.
+MATCH: В конечном счёте наша неспособность однозначно ответить на этот вопрос напрямую вытекает из «трудной проблемы» и объяснительного разрыва.
+
+BLOCK 83 (00:11:38.054 -> 00:11:53.180):
+ORG: Since we don't have a scientific theory that explains why and how any physical system, including our our brains, give rise to subjective experience, we can we cannot say for sure what those necessary conditions are.
+MATCH: Поскольку у нас нет научной теории, которая объясняла бы, почему и как любая физическая система, включая наш мозг, порождает субъективный опыт, мы не можем точно сказать, каковы необходимые условия.
+
+BLOCK 84 (00:11:53.899 -> 00:12:00.415):
+ORG: We don't know if they are tied strictly to biology or if they could also be made on a silicon computer.
+MATCH: Мы не знаем, жёстко ли они привязаны к биологии или могут быть реализованы и на кремниевом компьютере.
+
+BLOCK 85 (00:12:01.054 -> 00:12:10.415):
+ORG: We lack the understanding to specify what a non-biological system would need to do to cross the threshold into genuine phenomenal consciousness.
+MATCH: Нам не хватает понимания, чтобы описать, что именно должна делать небиологическая система, чтобы пересечь порог и обрести подлинное феноменальное сознание.
+
+BLOCK 86 (00:12:11.839 -> 00:12:22.320):
+ORG: Before finishing this question, I would like to present a very speculative but extremely fascinating view of how consciousness might be tied to physics at the quantum level.
+MATCH: Прежде чем завершить этот вопрос, я хочу представить одну очень спекулятивную, но чрезвычайно увлекательную точку зрения на то, как сознание может быть связано с физикой на квантовом уровне.  
+
+
+BLOCK 87 (00:12:22.959 -> 00:12:31.475):
+ORG: This is an Orc or hypothesis proposed by Nobel Prize Prize-winning Roger Penrose and an anesthesiologist Stuart Hameroff.
+MATCH: Это гипотеза Orch OR, предложенная нобелевским лауреатом Роджером Пенроузом и анестезиологом Стюартом Хамероффом.  
+
+
+BLOCK 88 (00:12:31.955 -> 00:12:41.269):
+ORG: The theory pinpoints specific structures inside our brain neurons called microtubules, tiny protein cylinders that form the cell's skeleton.
+MATCH: Эта теория указывает на особые структуры внутри нейронов нашего мозга, называемые микротрубочками, — крошечные белковые цилиндры, образующие «скелет» клетки.
+
+BLOCK 89 (00:12:42.149 -> 00:12:51.910):
+ORG: Penrose and Hameroff argue that these microtubules are uniquely structured to be able to sustain delicate quantum states, a bit like a tiny quantum computer.
+MATCH: Пенроуз и Хамерофф утверждают, что микротрубочки устроены так, что способны поддерживать тонкие квантовые состояния — примерно как крошечный квантовый компьютер.
+
+BLOCK 90 (00:12:52.904 -> 00:13:02.745):
+ORG: The core idea is that when these quantum states inside the microtubule reach a certain physical threshold, they collapse in a specific non random way.
+MATCH: Ключевая идея в том, что когда эти квантовые состояния внутри микротрубочки достигают определённого физического порога, они коллапсируют специфическим, неслучайным образом.
+
+BLOCK 91 (00:13:03.544 -> 00:13:13.800):
+ORG: And here, admittedly, a bit of knowledge of quantum mechanics is required to understand what it means to collapse in this context, but it's a bit outside the scope of this course.
+MATCH: И тут, честно говоря, нужно кое-что знать о квантовой механике, чтобы понять, что значит «коллапсировать» в этом контексте, но это немного выходит за рамки этого курса.  
+
+BLOCK 92 (00:13:14.840 -> 00:13:29.325):
+ORG: Anyway, as I said, this hypothesis is highly controversial anyway and far from but it illustrates one way consciousness might be strictly substrate dependent, rooted in specific biological structures and their quantum properties.
+MATCH: В любом случае, как я уже сказал, эта гипотеза крайне спорна и далека от общепринятой, но она иллюстрирует один из способов, которым сознание может жёстко зависеть от субстрата, будучи укоренённым в конкретных биологических структурах и их квантовых свойствах.  
+
+BLOCK 93 (00:13:30.044 -> 00:13:40.940):
+ORG: Even if silicon could replicate the functional patterns of the brain, it might mean these subtle quantum dynamics are essential for phenomenal experience.
+MATCH: Даже если кремний сможет воспроизвести функциональные паттерны работы мозга, возможно, для феноменального опыта существенна именно эта тонкая квантовая динамика.
+
+BLOCK 94 (00:13:43.660 -> 00:13:52.834):
+ORG: In conclusion, the question of whether conscious experience is substrate independent is far more challenging than whether intelligence is.
+MATCH: В заключение: вопрос о том, является ли сознательный опыт субстратно независимым, куда сложнее, чем вопрос о том, является ли субстратно независимым интеллект.
+
+BLOCK 95 (00:13:54.195 -> 00:13:59.634):
+ORG: Again, I compare here the current question to the parallel question we asked before about intelligence.
+MATCH: И снова я сопоставляю нынешний вопрос с параллельным вопросом, который мы раньше задавали об интеллекте.
+
+BLOCK 96 (00:14:00.195 -> 00:14:09.070):
+ORG: So while physicalism suggests it's possible in principle if consciousness arise from physical processes, strong arguments exist on both sides.
+MATCH: Так что, хотя физикализм в принципе допускает такую возможность, если сознание возникает из физических процессов, веские аргументы существуют с обеих сторон.
+
+BLOCK 97 (00:14:09.789 -> 00:14:14.190):
+ORG: Functionalists believe replicating the right information processing structure is enough.
+MATCH: Функционалисты считают, что достаточно воспроизвести правильную структуру обработки информации.
+
+BLOCK 98 (00:14:14.985 -> 00:14:20.985):
+ORG: Biological naturalists do not agree and argue that specific biological properties might be essential.
+MATCH: Биологические натуралисты с этим не согласны и утверждают, что специфические биологические свойства могут быть необходимы.
+
+BLOCK 99 (00:14:21.705 -> 00:14:29.865):
+ORG: Emergentist views suggest that it depends on achieving a specific type of complexity, which may or may not be feasible in silicon.
+MATCH: С точки зрения эмерджентизма всё зависит от достижения определённого типа сложности, что может быть или не быть осуществимо на кремнии.
+
+BLOCK 100 (00:14:30.919 -> 00:14:36.679):
+ORG: Because we haven't solved the hard problem, we don't know why we are conscious.
+MATCH: Поскольку мы не решили «трудную проблему», мы не знаем, почему мы обладаем сознанием.
+
+BLOCK 101 (00:14:36.839 -> 00:14:40.600):
+ORG: We fundamentally don't know if an AI running for silicon could be.
+MATCH: Мы в принципе не знаем, может ли быть сознательным ИИ, работающий на кремнии.
+
+BLOCK 102 (00:14:41.315 -> 00:14:48.034):
+ORG: So it remains one of the deepest and the most fascinating unanswered question in the philosophy and science today.
+MATCH: Поэтому этот вопрос остаётся одним из самых глубоких и самых захватывающих неотвеченных вопросов в современной философии и науке.
+
+BLOCK 0 (00:00:00.719 -> 00:00:16.285):
+ORG: The conclusions of the previous questions lead us directly back to the crux of the issue with physicalism itself: the profound challenge of explaining subjective experience, also referred to as the hard problem of consciousness.
+MATCH: Выводы из предыдущих вопросов напрямую возвращают нас к сути проблемы самого физикализма: к глубочайшей трудности объяснить субъективный опыт, также называемой «трудной проблемой сознания».
+
+BLOCK 1 (00:00:17.644 -> 00:00:26.285):
+ORG: We have established that physicalism, the idea that mind arises from physical processes in the brain, is the dominant view in science today.
+MATCH: Мы установили, что физикализм — взгляд, согласно которому психика возникает из физических процессов в мозге, — сегодня является доминирующим в науке.
+
+BLOCK 2 (00:00:27.350 -> 00:00:31.109):
+ORG: In principle, this opens the door to artificial consciousness.
+MATCH: В принципе это открывает дверь к искусственному сознанию.
+
+BLOCK 3 (00:00:31.670 -> 00:00:37.829):
+ORG: However, simply saying consciousness is physical doesn't magically explain how it happens.
+MATCH: Однако простое утверждение «сознание физично» само по себе никак не объясняет, как оно возникает.
+
+BLOCK 4 (00:00:38.469 -> 00:00:41.909):
+ORG: This brings us face to face with the hard problem of consciousness.
+MATCH: И вот мы оказываемся лицом к лицу с трудной проблемой сознания.
+
+BLOCK 5 (00:00:42.854 -> 00:00:59.270):
+ORG: This echoes long standing philosophical concerns such as those raised already by Immanuel Kant about the limits of our ability to objectively explain subjective experience since our understanding is always structured by our own minds.
+MATCH: Это перекликается с давними философскими сомнениями — например, с теми, которые ещё Иммануил Кант высказывал о пределах нашей способности объективно объяснять субъективный опыт, поскольку наше понимание всегда структурируется нашим же сознанием.
+
+BLOCK 6 (00:01:01.189 -> 00:01:04.330):
+ORG: Let's reiterate the distinction Chalmers made.
+MATCH: Давайте ещё раз повторим различие, которое провёл Чалмерс.
+
+BLOCK 7 (00:01:04.330 -> 00:01:17.025):
+ORG: The easy problems involve explaining the function associated with the consciousness, for example, how the brain integrates information, focuses attention, controls behavior, reports states, etc.
+MATCH: «Лёгкие» проблемы — это объяснение функций, связанных с сознанием: например, как мозг интегрирует информацию, фокусирует внимание, управляет поведением, сообщает о своих состояниях и так далее.
+
+BLOCK 8 (00:01:17.265 -> 00:01:25.344):
+ORG: We can study this using objective third person scientific methods, looking for neural correlates and building computational models.
+MATCH: Это можно изучать объективными научными методами от третьего лица, выявляя нейронные корреляты и строя вычислительные модели.
+
+BLOCK 9 (00:01:26.430 -> 00:01:31.469):
+ORG: While this is incredibly complex, we have a methodological framework for tackling them.
+MATCH: Хотя это невероятно сложно, у нас есть методологическая рамка, чтобы с этим работать.
+
+BLOCK 10 (00:01:32.829 -> 00:01:36.670):
+ORG: The hard problem however asks a fundamentally different question.
+MATCH: А вот «трудная» проблема задаёт принципиально другой вопрос.
+
+BLOCK 11 (00:01:37.549 -> 00:01:45.825):
+ORG: It asks why any physical processing, no matter how complex, give rise to subjective experience?
+MATCH: Она спрашивает: почему любая физическая обработка, какой бы сложной она ни была, порождает субъективный опыт?
+
+BLOCK 12 (00:01:46.304 -> 00:01:50.944):
+ORG: Why isn't all this sophisticated information processing just happening in the dark?
+MATCH: Почему вся эта сложнейшая обработка информации не происходит просто «в темноте»?
+
+BLOCK 13 (00:01:51.799 -> 00:01:55.400):
+ORG: Why do we have inner feeling or awareness at all?
+MATCH: Почему вообще существует внутреннее чувство или осознавание?
+
+BLOCK 14 (00:01:56.600 -> 00:02:02.280):
+ORG: Flowing from that, we ask: how do specific processes create specific experiences?
+MATCH: Из этого вытекает следующий вопрос: как конкретные процессы создают конкретные переживания?
+
+BLOCK 15 (00:02:04.135 -> 00:02:07.974):
+ORG: So why this problem is considered so hard?
+MATCH: Так почему же эту проблему считают настолько трудной?
+
+BLOCK 16 (00:02:08.135 -> 00:02:10.295):
+ORG: There are several factors that contribute.
+MATCH: Есть несколько факторов, которые этому способствуют.
+
+BLOCK 17 (00:02:10.854 -> 00:02:25.480):
+ORG: First, there seems to be a fundamental gap in our understanding between descriptions of physical mechanisms, such as firing of neurons in our brain, and description of subjective qualities, like the taste of the chocolate.
+MATCH: Во-первых, кажется, что в нашем понимании есть фундаментальный разрыв между описаниями физических механизмов — например, разрядами нейронов в мозге — и описаниями субъективных качеств, вроде вкуса шоколада.  
+
+BLOCK 18 (00:02:26.120 -> 00:02:31.560):
+ORG: How do you get from electrochemical interactions to the feeling itself?
+MATCH: Как перейти от электрохимических взаимодействий к самому ощущению?
+
+BLOCK 19 (00:02:32.474 -> 00:02:37.514):
+ORG: Our standard scientific explanations seem ill equipped to bridge this gap.
+MATCH: Похоже, наши стандартные научные объяснения плохо приспособлены к тому, чтобы перекинуть мост через этот разрыв.
+
+BLOCK 20 (00:02:39.594 -> 00:02:42.794):
+ORG: Next, there is a problem of intrinsic subjectivity.
+MATCH: Далее — проблема внутренней субъективности.
+
+BLOCK 21 (00:02:43.514 -> 00:02:47.194):
+ORG: Consciousness is fundamentally first person experience.
+MATCH: Сознание по своей сути — опыт от первого лица.
+
+BLOCK 22 (00:02:48.099 -> 00:02:51.379):
+ORG: My experience is accessible only to me.
+MATCH: Мой опыт доступен только мне.
+
+BLOCK 23 (00:02:51.860 -> 00:02:56.340):
+ORG: This intrinsic privacy makes objective study incredibly difficult.
+MATCH: Эта врождённая «приватность» делает объективное исследование невероятно трудным.
+
+BLOCK 24 (00:02:56.900 -> 00:03:02.419):
+ORG: Philosopher Thomas Nagel famously captured this in his essay What's it like to be a bat?
+MATCH: Философ Томас Нагель знаменитым образом сформулировал это в эссе «Каково быть летучей мышью?».
+
+BLOCK 25 (00:03:03.004 -> 00:03:19.720):
+ORG: He argued that even if we knew everything about a bat's physical brain and its sonar system, we could never truly know the subjective experience of being a bat, like how it is to navigate the world through echolocation.
+MATCH: Он утверждал, что даже если бы мы знали всё о физическом мозге летучей мыши и о её системе сонара, мы всё равно не смогли бы по-настоящему узнать субъективный опыт быть летучей мышью, например, каково ориентироваться в мире с помощью эхолокации.
+
+BLOCK 26 (00:03:20.360 -> 00:03:30.439):
+ORG: And this highlights a key challenge: the subjective first-person viewpoint seems impossible to fully capture from an objective third person perspective.
+MATCH: И это подчёркивает ключевую трудность: субъективную точку зрения от первого лица, похоже, невозможно полностью ухватить с объективной позиции от третьего лица.
+
+BLOCK 27 (00:03:32.424 -> 00:03:39.064):
+ORG: This leads us to the third factor, the feeling that subjective qualities are irreducible.
+MATCH: Это подводит нас к третьему фактору — ощущению, что субъективные качества несводимы.
+
+BLOCK 28 (00:03:40.104 -> 00:03:46.104):
+ORG: One would argue that you can't fully capture an experience by just describing its physical parts.
+MATCH: Можно утверждать, что нельзя исчерпывающе передать переживание, просто описав его физические составляющие.
+
+BLOCK 29 (00:03:46.670 -> 00:03:57.870):
+ORG: As you can see on this slide, we can describe the physics of the light from a strawberry, the chemistry of its molecules, and the biology of how our brain processes the strawberry's taste.
+MATCH: Как вы видите на этом слайде, мы можем описать физику света от клубники, химию её молекул и биологию того, как наш мозг обрабатывает вкус клубники.
+
+BLOCK 30 (00:03:58.955 -> 00:04:05.754):
+ORG: But does that list of facts truly explain what what it's like to actually taste the strawberry?
+MATCH: Но объясняет ли этот набор фактов, каково это на самом деле — почувствовать вкус клубники?
+
+BLOCK 31 (00:04:06.235 -> 00:04:13.915):
+ORG: It seems like the experience itself, the raw quality of the taste is something essential that is still missing.
+MATCH: Кажется, что в этом всё ещё отсутствует нечто существенное: само переживание, «сырая» качественность вкуса.
+
+BLOCK 32 (00:04:16.209 -> 00:04:24.129):
+ORG: An important distinction here is between an epistemic gap and an ontological gap, to use proper philosophical terms.
+MATCH: Здесь важно различать эпистемический разрыв и онтологический разрыв, если пользоваться точной философской терминологией.
+
+BLOCK 33 (00:04:24.370 -> 00:04:33.205):
+ORG: An epistemic gap is a gap in our knowledge an ontological gap, on the other hand, would be a gap in reality itself.
+MATCH: Эпистемический разрыв — это разрыв в нашем знании.  
+Онтологический разрыв, с другой стороны, был бы разрывом в самой реальности.  
+
+BLOCK 34 (00:04:33.685 -> 00:04:42.564):
+ORG: The epistemic gap means that even if we knew all the physical facts, it still seems like we would be missing something, the subjective field.
+MATCH: Эпистемический разрыв означает, что даже если бы мы знали все физические факты, всё равно кажется, будто нам не хватает чего-то — субъективного поля.
+
+BLOCK 35 (00:04:43.129 -> 00:04:48.410):
+ORG: And this is captured most vividly in Frank Jackson's famous Mary's Room experiment.
+MATCH: И наиболее наглядно это выражено в знаменитом мысленном эксперименте Фрэнка Джексона «Комната Мэри».
+
+BLOCK 36 (00:04:49.370 -> 00:05:04.394):
+ORG: Mary is a brilliant scientist who knows everything there is to know about the physical processes of color vision: the wavelengths of light, the retinal photoreceptors, the neural pathways in the brain to process color vision, everything.
+MATCH: Мэри — блестящий учёный, который знает всё, что только можно знать о физических процессах цветового зрения: длины волн света, фоторецепторы сетчатки, нейронные пути в мозге, обрабатывающие цветовое зрение, — всё.
+
+BLOCK 37 (00:05:05.274 -> 00:05:08.714):
+ORG: But she has lived all her life in a black and white room.
+MATCH: Но всю жизнь она прожила в чёрно-белой комнате.
+
+BLOCK 38 (00:05:09.589 -> 00:05:18.389):
+ORG: The question is, when Mary finally steps outside and sees the color red for the first time, does she learn something new?
+MATCH: Вопрос такой: когда Мэри наконец выходит наружу и впервые в жизни видит красный цвет, узнаёт ли она что-то новое?
+
+BLOCK 39 (00:05:19.430 -> 00:05:36.935):
+ORG: Most people's intuition is yes, she learns what it's like to experience red, and this suggests that physical information that she possessed, like, you know, all the knowledge that she had, no matter how complete, doesn't capture the qualitative side of the experience.
+MATCH: Интуиция большинства людей подсказывает: да — она узнаёт, каково это, переживать красный, и это наводит на мысль, что физическая информация, которой она обладала, ну вы понимаете, все её знания, какими бы полными они ни были, не схватывают качественную сторону переживания.
+
+BLOCK 40 (00:05:38.290 -> 00:05:49.889):
+ORG: Some philosophers take this as evidence for an ontological gap: that subjective experience is something over and above the physical, a fundamentally different kind of property.
+MATCH: Некоторые философы видят в этом аргумент в пользу онтологического разрыва: субъективный опыт — это нечто сверх физического, принципиально иной тип свойства.
+
+BLOCK 41 (00:05:51.154 -> 00:06:03.634):
+ORG: Others argue it only shows an epistemic gap; they might say that Mary doesn't really learn a new fact, but she gains a new ability, the ability to recognize and imagine red.
+MATCH: Другие утверждают, что это показывает лишь эпистемический разрыв.  
+Они могли бы сказать, что Мэри на самом деле не узнаёт новый факт, а приобретает новую способность — способность распознавать и воображать красный.
+
+BLOCK 42 (00:06:04.430 -> 00:06:10.830):
+ORG: This ability hypothesis suggests that new knowledge that she has learned is like learning to ride a bike.
+MATCH: Эта «гипотеза способности» предполагает, что новое знание, которое она получает, похоже на обучение езде на велосипеде.
+
+BLOCK 43 (00:06:11.149 -> 00:06:16.910):
+ORG: It's a skill that you acquire through experience, not a new piece of some factual information.
+MATCH: Это навык, который приобретается через опыт, а не новый фрагмент фактической информации.
+
+BLOCK 44 (00:06:18.564 -> 00:06:24.084):
+ORG: So either way, the Mary’s Room scenario captures why the hard problem feels so pressing.
+MATCH: Так или иначе, сценарий «Комнаты Мэри» хорошо показывает, почему трудная проблема кажется такой острой.
+
+BLOCK 45 (00:06:24.404 -> 00:06:35.269):
+ORG: It highlights a gap in explaining the explanation that may be due to either our concepts or an epistemic gap, or the nature itself, you know, an ontological gap.
+MATCH: Он высвечивает разрыв в объяснении, который может быть связан либо с нашими понятиями, либо с эпистемическим разрывом, либо с самой природой вещей, ну вы понимаете, с онтологическим разрывом.
+
+BLOCK 46 (00:06:39.430 -> 00:06:49.855):
+ORG: So having established the profound difficulty of the hard problem, we can now turn this philosophical lens back onto our central topic: artificial intelligence.
+MATCH: И вот, установив, насколько глубока трудность трудной проблемы, мы можем теперь вернуть этот философский взгляд к нашей центральной теме: искусственному интеллекту.  
+
+
+BLOCK 47 (00:06:50.415 -> 00:06:56.814):
+ORG: How do these different philosophical stances on consciousness inform our understanding of AI?
+MATCH: Как эти разные философские позиции о сознании влияют на наше понимание ИИ?  
+
+BLOCK 48 (00:06:58.110 -> 00:07:03.470):
+ORG: Could AI ever possess subjective experience?
+MATCH: Может ли ИИ когда-нибудь обладать субъективным опытом?
+
+BLOCK 49 (00:07:04.189 -> 00:07:09.149):
+ORG: The most optimistic answer comes from views such as functionalism or emergentism.
+MATCH: Самый оптимистичный ответ дают такие взгляды, как функционализм или эмерджентизм.  
+
+BLOCK 50 (00:07:10.035 -> 00:07:15.235):
+ORG: The core idea here is yes in principle.
+MATCH: Ключевая идея здесь — в принципе да.
+
+BLOCK 51 (00:07:15.795 -> 00:07:27.110):
+ORG: If consciousness arises from specific complex patterns of information processing, then an AI that implements the right kind of computational structure could become conscious.
+MATCH: Если сознание возникает из определённых сложных паттернов обработки информации, то ИИ, реализующий правильную вычислительную структуру, мог бы стать сознательным.
+
+BLOCK 52 (00:07:27.669 -> 00:07:30.191):
+ORG: This view emphasizes substrate independence.
+MATCH: Этот взгляд подчёркивает независимость от субстрата.
+
+BLOCK 53 (00:07:30.191 -> 00:07:37.589):
+ORG: It argues that consciousness, in principle, could be realized in silicon just as it is in our biological brains.
+MATCH: Он утверждает, что сознание, в принципе, может быть реализовано на кремнии так же, как и в наших биологических мозгах.
+
+BLOCK 54 (00:07:38.194 -> 00:07:44.115):
+ORG: The specific hardware doesn't matter as much as the complexity and organization of the software.
+MATCH: Конкретное «железо» важно не так сильно, как сложность и организация «софта».
+
+BLOCK 55 (00:07:45.875 -> 00:07:51.074):
+ORG: Then there is also a pessimistic view associated with ideas like biological naturalism.
+MATCH: Есть и пессимистичный взгляд, связанный с идеями вроде биологического натурализма.
+
+BLOCK 56 (00:07:51.490 -> 00:07:56.529):
+ORG: This perspective answers the with a firm no.
+MATCH: Эта перспектива отвечает на это твёрдым «нет».
+
+BLOCK 57 (00:07:57.009 -> 00:08:03.250):
+ORG: The argument here is that consciousness requires specific biological properties that are absent in silicon.
+MATCH: Аргумент здесь в том, что сознание требует специфических биологических свойств, которых нет в кремнии.
+
+BLOCK 58 (00:08:04.035 -> 00:08:11.634):
+ORG: Things like our brain's unique chemistry or other organic processes that may be essential ingredients for consciousness.
+MATCH: Вроде уникальной химии нашего мозга или других органических процессов, которые могут быть необходимыми ингредиентами сознания.
+
+BLOCK 59 (00:08:12.275 -> 00:08:24.029):
+ORG: From this viewpoint, an AI could become a perfect simulation of conscious being, a sophisticated zombie if you like, but it would never have genuine subjective feelings.
+MATCH: С этой точки зрения ИИ может стать идеальной симуляцией сознательного существа — если хотите, изощрённым зомби, — но у него никогда не будет подлинных субъективных чувств.
+
+BLOCK 60 (00:08:24.509 -> 00:08:32.909):
+ORG: This view insists that the substrate does matter only living biological brains can give rise to subjective experience.
+MATCH: Этот взгляд настаивает на том, что субстрат всё-таки имеет значение.
+Только живые биологические мозги могут порождать субъективный опыт.
+
+BLOCK 61 (00:08:35.894 -> 00:08:38.812):
+ORG: The link between these two is the agnostic view.
+MATCH: Связующим звеном между этими двумя позициями является агностический взгляд.
+
+BLOCK 62 (00:08:38.812 -> 00:08:44.953):
+ORG: This perspective suggests that we may never be able to definitely know or bridge the explanatory gap.
+MATCH: Он предполагает, что мы, возможно, никогда не сможем наверняка узнать это или преодолеть объяснительный разрыв.
+
+BLOCK 63 (00:08:46.399 -> 00:08:53.600):
+ORG: So to summarize the hard problem, thinkers like Nagel, Jackson and Chalmers have highlighted this central challenge in philosophy.
+MATCH: Итак, подводя итог трудной проблеме, такие мыслители, как Нагель, Джексон и Чалмерс, подчеркнули этот центральный вызов философии.
+
+BLOCK 64 (00:08:54.160 -> 00:09:00.399):
+ORG: It asks why physical processes in the brain give rise to subjective experience at all.
+MATCH: Он спрашивает, почему физические процессы в мозге вообще порождают субъективный опыт.
+
+BLOCK 65 (00:09:01.605 -> 00:09:14.245):
+ORG: The distinction between epistemic gap, a gap in our knowledge, and an ontological gap, a gap in reality, helps to clarify this debate, and Mary's thought experiment vividly illustrates this.
+MATCH: Различие между эпистемическим разрывом — разрывом в нашем знании — и онтологическим разрывом — разрывом в самой реальности — помогает прояснить этот спор, и мысленный эксперимент Мэри ярко это иллюстрирует.
+
+BLOCK 66 (00:09:15.549 -> 00:09:20.589):
+ORG: In the end, the hard problem underscores the limits of our current understanding.
+MATCH: В конечном счёте трудная проблема подчёркивает пределы нашего нынешнего понимания.
+
+BLOCK 67 (00:09:20.589 -> 00:09:29.070):
+ORG: It challenges us to clarify the nature of subjective experience and the condition under which it may arise.
+MATCH: Она заставляет нас прояснить природу субъективного опыта и условия, при которых он может возникать.
+
+BLOCK 0 (00:00:01.040 -> 00:00:21.785):
+ORG: Having introduced the mystery of consciousness and the challenge of explaining subjective experience, the hard problem, we now turn to one of the oldest and the most fundamental philosophical puzzles, one that directly impacts our thinking about artificial consciousness: the mind body problem.
+MATCH: Мы познакомились с загадкой сознания и трудностью объяснить субъективный опыт — «трудной проблемой», — и теперь переходим к одной из самых древних и фундаментальных философских головоломок, которая напрямую влияет на наши представления об искусственном сознании: проблеме «разум — тело».
+
+BLOCK 1 (00:00:23.625 -> 00:00:29.704):
+ORG: At its core, this problem asks: What is the fundamental nature of reality?
+MATCH: В своей основе эта проблема спрашивает: какова фундаментальная природа реальности?
+
+BLOCK 2 (00:00:30.369 -> 00:00:33.489):
+ORG: What kind of stuff exists?
+MATCH: Что вообще существует?
+
+BLOCK 3 (00:00:33.809 -> 00:00:38.369):
+ORG: Is it just physical matter, just mental substance, or both?
+MATCH: Есть ли только физическая материя, только ментальная субстанция — или и то и другое?
+
+BLOCK 4 (00:00:39.409 -> 00:00:52.085):
+ORG: Critically, how do our minds, thoughts, beliefs, feelings, and consciousness and physical matter relate to each other?
+MATCH: И главное: как соотносятся друг с другом наш разум, мысли, убеждения, чувства и сознание и физическая материя?
+
+BLOCK 5 (00:00:52.564 -> 00:01:01.309):
+ORG: It's absolutely vital to understand the major viewpoint on this problem for assessing the very possibility of conscious AI.
+MATCH: Понимание основных позиций по этому вопросу абсолютно необходимо, чтобы оценивать саму возможность сознательного ИИ.
+
+BLOCK 6 (00:01:03.229 -> 00:01:10.189):
+ORG: Historically, there are three broad ways to think about this problem with many variations within each.
+MATCH: Исторически выделяют три широких способа думать об этой проблеме, и у каждого есть множество вариантов.
+
+BLOCK 7 (00:01:10.670 -> 00:01:12.030):
+ORG: Let's start with dualism.
+MATCH: Начнём с дуализма.
+
+BLOCK 8 (00:01:12.625 -> 00:01:22.944):
+ORG: This view is most famously associated with Rene Descartes, and he proposed that the universe is made of two fundamentally different kinds of stuff.
+MATCH: Этот взгляд чаще всего связывают с Рене Декартом, и он утверждал, что Вселенная состоит из двух принципиально разных видов «субстанции».
+
+BLOCK 9 (00:01:23.664 -> 00:01:31.180):
+ORG: First, there is physical substance, matter, which has size and location and follows the laws of physics.
+MATCH: Во‑первых, есть физическая субстанция — материя, у которой есть размер и положение в пространстве и которая подчиняется законам физики.
+
+BLOCK 10 (00:01:31.819 -> 00:01:40.060):
+ORG: Second, there is mental substance, the mind, which can think but is non physical, has no size and no location.
+MATCH: Во‑вторых, есть ментальная субстанция — разум, который способен мыслить, но при этом нефизичен, не имеет ни размера, ни местоположения.
+
+BLOCK 11 (00:01:41.094 -> 00:01:49.254):
+ORG: The big challenge then becomes explaining how a non physical mind can possibly interact with the physical body.
+MATCH: Тогда главная трудность — объяснить, как нефизический разум вообще может взаимодействовать с физическим телом.
+
+BLOCK 12 (00:01:49.974 -> 00:02:02.109):
+ORG: Descartes himself suggests a pineal gland in the brain that was the point of interaction, as we can see in this famous image, but that idea is not scientifically supported today.
+MATCH: Сам Декарт предполагал, что точкой взаимодействия служит эпифиз в мозге, как мы видим на этом знаменитом изображении, но сегодня наука эту идею не поддерживает.
+
+BLOCK 13 (00:02:03.229 -> 00:02:07.950):
+ORG: So what are the implications of dualism for AI consciousness?
+MATCH: Так что означает дуализм для сознания ИИ?
+
+BLOCK 14 (00:02:08.915 -> 00:02:22.435):
+ORG: If consciousness is fundamentally non physical, then creating conscious AI by building complex physical machines seems incredibly difficult, if not impossible by scientific means alone.
+MATCH: Если сознание по своей природе нефизично, то создать сознательный ИИ, просто строя сложные физические машины, кажется невероятно трудным — если вообще не невозможным одними лишь научными средствами.
+
+BLOCK 15 (00:02:23.180 -> 00:02:28.860):
+ORG: I mean, how would you create in those machines something that is non-physical?
+MATCH: В смысле, как вы создадите в этих машинах нечто нефизическое?
+
+BLOCK 16 (00:02:31.580 -> 00:02:39.325):
+ORG: Another category of answers to the fundamental question, the mind body problem, is materialism or physicalism.
+MATCH: Другая группа ответов на фундаментальный вопрос — проблему «разум — тело» — это материализм, или физикализм.
+
+BLOCK 17 (00:02:39.564 -> 00:02:43.724):
+ORG: This is the dominant view in contemporary science and philosophy.
+MATCH: Это доминирующая позиция в современной науке и философии.
+
+BLOCK 18 (00:02:44.605 -> 00:02:48.525):
+ORG: Physicalism asserts that everything that exists is physical.
+MATCH: Физикализм утверждает, что всё существующее — физично.
+
+BLOCK 19 (00:02:49.129 -> 00:02:58.650):
+ORG: There is only one fundamental kind of stuff, matter or energy, and its properties as described by the laws of physics.
+MATCH: Есть только один фундаментальный «вид вещества» — материя или энергия — и их свойства, описываемые законами физики.
+
+BLOCK 20 (00:03:00.010 -> 00:03:24.680):
+ORG: Mental states like thoughts, feelings, beliefs, consciousness are seen as being physical in one of several ways: identical to physical brain states specific biological products products of brain activity emergent properties that can arise from brain complexity, or, as has been discussed, functional states realized by brain processes.
+MATCH: Ментальные состояния — мысли, чувства, убеждения, сознание — рассматриваются как физические в одном из нескольких смыслов: как тождественные определённым состояниям мозга, как специфические биологические продукты, как продукты мозговой активности, как эмерджентные свойства, возникающие из сложности мозга, или — как уже обсуждалось — как функциональные состояния, реализуемые мозговыми процессами.
+
+
+BLOCK 21 (00:03:28.094 -> 00:03:42.550):
+ORG: Before we move on, let's take a brief intermezzo to quickly recap a core philosophical idea that has come up several times and is absolutely crucial for the next part of our discussion: functionalism.
+MATCH: Прежде чем двигаться дальше, сделаем короткое интермеццо и быстро вспомним одну ключевую философскую идею, которая уже несколько раз всплывала и абсолютно важна для следующей части разговора: функционализм.
+
+BLOCK 22 (00:03:42.870 -> 00:03:53.228):
+ORG: As you can see on this slide, the central idea of functionalism is that a mental state is defined by its function, by the job it does in a system.
+MATCH: Как видно на этом слайде, центральная идея функционализма в том, что ментальное состояние определяется своей функцией — то есть работой, которую оно выполняет в системе.
+
+BLOCK 23 (00:03:53.228 -> 00:04:03.025):
+ORG: It's not about what the state is made of, but about its causal role in connecting inputs, outputs and other mental states.
+MATCH: Важно не то, из чего это состояние «сделано», а его причинная роль — как оно связывает входы, выходы и другие ментальные состояния.
+
+BLOCK 24 (00:04:03.584 -> 00:04:16.569):
+ORG: We saw this idea earlier in two key places: First, when we defined intelligence, the functionalist view was that intelligence is about performance, what a system can do.
+MATCH: Мы уже встречали эту идею в двух ключевых местах. Во‑первых, когда мы определяли интеллект, функционалистский взгляд был в том, что интеллект — это про результат, про то, что система умеет делать.
+
+BLOCK 25 (00:04:17.529 -> 00:04:31.615):
+ORG: Second, when we discussed substrate independence, functionalism provides the basis for multiple realizabilities, the idea that the same process like belief could run on both, on the brain or a computer.
+MATCH: Во‑вторых, когда мы обсуждали независимость от субстрата, функционализм даёт основание для множественной реализуемости — идеи, что один и тот же процесс, например убеждение, может «работать» и на мозге, и на компьютере.
+
+BLOCK 26 (00:04:33.069 -> 00:04:37.470):
+ORG: Now we are about to apply this same logic to consciousness itself.
+MATCH: Сейчас мы собираемся применить ту же логику к самому сознанию.
+
+BLOCK 27 (00:04:38.110 -> 00:04:48.645):
+ORG: The functionalist argument will be that if consciousness is also a functional property, then it too could be replicated on any suitable hardware.
+MATCH: Функционалистский аргумент будет таким: если сознание — тоже функциональное свойство, тогда его тоже можно воспроизвести на любом подходящем «железе».
+
+BLOCK 28 (00:04:51.125 -> 00:05:11.960):
+ORG: Functionalism is one of the four main ways to understand the mind within a materialist or physicalist framework, as you can see on this slide, Functionalism among those four has particular importance for AI since it suggests that what matters for consciousness is the functional organization of brain processes.
+MATCH: Функционализм — один из четырёх основных способов понимать разум в рамках материалистской или физикалистской картины, как вы видите на этом слайде. Среди этих четырёх функционализм особенно важен для ИИ, поскольку он предполагает, что для сознания решающую роль играет функциональная организация мозговых процессов.
+
+BLOCK 29 (00:05:12.865 -> 00:05:20.785):
+ORG: If silicon systems can realize the same functional patterns, they could, in principle, be conscious too.
+MATCH: Если системы на кремнии способны реализовать те же функциональные паттерны, то, в принципе, они тоже могут быть сознательными.
+
+BLOCK 30 (00:05:21.425 -> 00:05:28.144):
+ORG: So functionalism is a philosophical view most naturally aligned with the possibility of machine consciousness.
+MATCH: Функционализм — философская позиция, которая наиболее естественным образом согласуется с возможностью машинного сознания.
+
+BLOCK 31 (00:05:28.759 -> 00:05:33.080):
+ORG: We will discuss the other three a bit later in a somewhat different context.
+MATCH: Остальные три мы обсудим чуть позже, в несколько ином контексте.
+
+BLOCK 32 (00:05:35.000 -> 00:05:46.004):
+ORG: So, essentially, when it comes to materialism or physicalism, we can say that the mind is what the brain does, or a property of what the brain is.
+MATCH: Итак, по сути, когда речь идёт о материализме или физикализме, можно сказать, что разум — это то, что делает мозг, или свойство того, чем мозг является.
+
+BLOCK 33 (00:05:48.165 -> 00:05:52.004):
+ORG: What are the implications of functionalism for AI consciousness?
+MATCH: Каковы следствия функционализма для сознания ИИ?  
+
+BLOCK 34 (00:05:52.725 -> 00:06:00.670):
+ORG: If functionalism is true, the possibility of artificial consciousness seems much more plausible, at least in principle.
+MATCH: Если функционализм верен, возможность искусственного сознания выглядит куда более правдоподобной — по крайней мере, в принципе.
+
+BLOCK 35 (00:06:01.389 -> 00:06:18.295):
+ORG: If consciousness arises from specific physical processes or organizational structures, then perhaps recreating those, or their functionally equivalent, in different physical substrates like silicon could also recreate consciousness.
+MATCH: Если сознание возникает из определённых физических процессов или организационных структур, то, возможно, воспроизведение их — или функционально эквивалентных им — на другом физическом носителе, например на кремнии, тоже сможет воспроизвести сознание.
+
+BLOCK 36 (00:06:18.935 -> 00:06:26.615):
+ORG: The challenge shifts to understanding which specific physical conditions are necessary and sufficient.
+MATCH: Задача смещается к пониманию того, какие именно физические условия необходимы и достаточны.
+
+BLOCK 37 (00:06:29.500 -> 00:06:36.379):
+ORG: The third major view on the mind body problem after discussing dualism and physicalism is idealism.
+MATCH: Третья крупная позиция в проблеме «разум—тело» после обсуждения дуализма и физикализма — это идеализм.
+
+BLOCK 38 (00:06:36.939 -> 00:06:42.300):
+ORG: This view proposes that reality is fundamentally mental or mind dependent.
+MATCH: Согласно этой позиции, реальность в своей основе ментальна или зависит от разума.
+
+BLOCK 39 (00:06:42.964 -> 00:06:53.845):
+ORG: It argues that consciousness or thought is the primary stuff of the universe and the physical world is either an illusion or a construct of our minds.
+MATCH: Она утверждает, что сознание или мышление — первичная «материя» Вселенной, а физический мир либо иллюзия, либо конструкт нашего разума.
+
+BLOCK 40 (00:06:54.725 -> 00:07:01.920):
+ORG: Prominent idealists include George Berkeley, who said 'to be is to be perceived.' think about it.
+MATCH: Среди известных идеалистов — Джордж Беркли, который говорил: «быть — значит быть воспринимаемым».
+Подумайте об этом.
+
+BLOCK 41 (00:07:01.920 -> 00:07:10.800):
+ORG: I really like it, and in more complex ways, philosophers like Georg Wilhelm Friedrich Hegel, my favorite philosopher.
+MATCH: Мне это очень нравится, и — в более сложных вариантах — у философов вроде Георга Вильгельма Фридриха Гегеля, моего любимого философа.
+
+BLOCK 42 (00:07:12.044 -> 00:07:22.125):
+ORG: In his strongest form, these few claim that what we call physical matter has no independent existence outside of conscious experience.
+MATCH: В своей сильнейшей форме идеалисты утверждают, что то, что мы называем физической материей, не существует независимо — вне сознательного опыта.
+
+BLOCK 43 (00:07:24.550 -> 00:07:29.670):
+ORG: The idealist perspective radically reframes the questions of AI consciousness.
+MATCH: Идеалистическая перспектива радикально переосмысляет вопросы о сознании ИИ.
+
+BLOCK 44 (00:07:30.310 -> 00:07:45.955):
+ORG: If all reality is fundamentally mental, then the challenge is not how matter produces a mind, the challenge is understanding how different physical structures like brains or AIs can manifest different patterns of consciousness.
+MATCH: Если вся реальность по своей природе ментальна, то задача не в том, как материя порождает разум.  
+Задача в том, как разные физические структуры — вроде мозгов или ИИ — могут проявлять разные паттерны сознания.
+
+BLOCK 45 (00:07:46.915 -> 00:08:00.779):
+ORG: For an AI to be conscious, it might need to participate in or tapped into some fundamental mental reality just as human minds do, if we accept idealism.
+MATCH: Чтобы ИИ был сознательным, возможно, ему нужно каким-то образом участвовать в этой фундаментальной ментальной реальности или «подключаться» к ней так же, как это делают человеческие умы, если мы принимаем идеализм.
+
+BLOCK 46 (00:08:01.339 -> 00:08:06.699):
+ORG: This suggests that consciousness isn't something we build from scratch out of nonconscious parts.
+MATCH: Это наводит на мысль, что сознание — не то, что мы создаём с нуля из несознающих частей.
+
+BLOCK 47 (00:08:07.495 -> 00:08:20.055):
+ORG: Instead, it might be something that different systems, whether they're biological or artificial, can express or channel if they have the right kind of complex organizational organizational structure.
+MATCH: Скорее, это нечто, что разные системы — биологические или искусственные — могут выражать или «проводить», если у них есть правильная, сложная организационная структура.
+
+BLOCK 48 (00:08:20.669 -> 00:08:26.189):
+ORG: This is a very different goal from physicalist's attempt to generate consciousness from zero.
+MATCH: Это совсем другая цель по сравнению с попыткой физикалиста породить сознание с нуля.
+
+BLOCK 49 (00:08:28.430 -> 00:08:34.190):
+ORG: So, the mind body problem offers a whole spectrum of views on the nature of reality.
+MATCH: Итак, проблема «разум—тело» предлагает целый спектр взглядов на природу реальности.
+
+BLOCK 50 (00:08:34.595 -> 00:08:42.915):
+ORG: We have looked at the big three here, but it is important to know there are some many other nuanced positions between them and within them.
+MATCH: Мы рассмотрели здесь «большую тройку», но важно помнить, что между ними и внутри них существует множество других, более тонких позиций.
+
+BLOCK 51 (00:08:43.795 -> 00:08:45.290):
+ORG: So what did we see?
+MATCH: И что же мы увидели?  
+
+BLOCK 52 (00:08:45.290 -> 00:08:52.371):
+ORG: Dualism struggles to explain how a non physical mind can interact with the physical world.
+MATCH: Дуализм с трудом объясняет, как нефизический разум может взаимодействовать с физическим миром.
+
+BLOCK 53 (00:08:53.170 -> 00:09:00.690):
+ORG: Idealism challenges our common sense view that the physical world exists independently of our minds.
+MATCH: Идеализм ставит под сомнение наше здравосмысленное представление о том, что физический мир существует независимо от нашего разума.
+
+BLOCK 54 (00:09:01.730 -> 00:09:08.435):
+ORG: And physicalism, while it aligns best with modern science, still faces its own massive challenge.
+MATCH: А физикализм, хотя он лучше всего согласуется с современной наукой, всё равно сталкивается с собственной колоссальной трудностью.
+
+BLOCK 55 (00:09:09.075 -> 00:09:22.500):
+ORG: Even if we accept that the mind is physical, we still have to explain how why physical brain processes give rise to rich subjective experience of consciousness.
+MATCH: Даже если мы примем, что разум физичен, нам всё равно нужно объяснить, как и почему физические процессы в мозге порождают богатый субъективный опыт сознания.
+
+BLOCK 56 (00:09:23.139 -> 00:09:38.726):
+ORG: This means that in the best case scenario for building conscious AI, the most promising path leads directly into the brick wall of the hard problem of consciousness, which we will explore next.
+MATCH: Это означает, что даже в самом благоприятном сценарии создания сознательного ИИ самый многообещающий путь упирается прямо в кирпичную стену «трудной проблемы» сознания, которую мы рассмотрим дальше.
+
+BLOCK 0 (00:00:00.799 -> 00:00:12.960):
+ORG: We have explored the complex landscape of intelligence, its definitions, tests, and the very possibility of replicating intelligent functions on different substrates like computers.
+MATCH: Мы разобрали сложный ландшафт интеллекта — его определения, тесты и саму возможность воспроизводить интеллектуальные функции на разных носителях, например на компьютерах.
+
+BLOCK 1 (00:00:14.205 -> 00:00:21.644):
+ORG: Now we venture into even deeper, more mysterious territory in question two, consciousness.
+MATCH: Теперь во втором вопросе мы заходим на ещё более глубокую и загадочную территорию — сознание.
+
+BLOCK 2 (00:00:23.964 -> 00:00:30.850):
+ORG: Beyond mere processing or intelligent behavior, we must ask, What does it mean to be aware?
+MATCH: Помимо простой обработки или интеллектуального поведения, мы должны спросить: что значит быть осознающим?  
+
+
+BLOCK 3 (00:00:31.250 -> 00:00:34.850):
+ORG: Could an AI ever possess subjective experience?
+MATCH: Может ли ИИ когда-нибудь обладать субъективным опытом?  
+
+
+BLOCK 4 (00:00:36.690 -> 00:00:46.244):
+ORG: And before we can tackle whether AI could be conscious, we first need to deal with the profound challenge of defining what consciousness even is.
+MATCH: И прежде чем обсуждать, может ли ИИ быть сознательным, нам сначала нужно столкнуться с глубокой задачей — вообще определить, что такое сознание.  
+
+BLOCK 5 (00:00:48.564 -> 00:00:51.524):
+ORG: Defining consciousness is notoriously difficult.
+MATCH: Определять сознание, как известно, чрезвычайно трудно.
+
+BLOCK 6 (00:00:51.765 -> 00:01:00.530):
+ORG: Philosophers and cognitive scientists have wrestled with it for centuries, and there is no single universally agreed upon definition.
+MATCH: Философы и когнитивные учёные бьются над этим веками, и единого, универсально принятого определения не существует.
+
+BLOCK 7 (00:01:01.170 -> 00:01:05.409):
+ORG: Here we are focusing on what philosophers call phenomenal consciousness.
+MATCH: Здесь мы сосредоточимся на том, что философы называют феноменальным сознанием.  
+
+BLOCK 8 (00:01:05.409 -> 00:01:13.325):
+ORG: This is a raw, first-person feel of experience, not just being awake or processing information.
+MATCH: Это непосредственное, «изнутри», ощущение переживания — не просто бодрствование или обработка информации.
+
+BLOCK 9 (00:01:14.125 -> 00:01:22.844):
+ORG: This type of consciousness is slippery because it is fundamentally subjective it is about your personal, internal perspective on the world.
+MATCH: Этот тип сознания ускользает, потому что он по своей природе субъективен.  
+Он связан с вашей личной внутренней перспективой на мир.  
+
+
+BLOCK 10 (00:01:24.319 -> 00:01:29.519):
+ORG: Science, on the other hand, typically deals with objective, third-person facts.
+MATCH: Наука же, напротив, обычно имеет дело с объективными фактами от третьего лица.
+
+BLOCK 11 (00:01:30.079 -> 00:01:40.784):
+ORG: We can observe the brain activity associated with experience, as shown on the left, but we can't directly observe the subjective feeling itself.
+MATCH: Мы можем наблюдать мозговую активность, связанную с переживанием, как показано слева, но не можем напрямую наблюдать само субъективное чувство.
+
+BLOCK 12 (00:01:43.185 -> 00:01:48.625):
+ORG: So how do scientists even begin to study something as private as awareness?
+MATCH: Так с чего вообще учёным начинать изучать нечто настолько приватное, как осознанность?  
+
+BLOCK 13 (00:01:49.560 -> 00:01:54.520):
+ORG: A key approach involves searching for the neural correlates of consciousness.
+MATCH: Один из ключевых подходов — искать нейронные корреляты сознания.
+
+BLOCK 14 (00:01:55.240 -> 00:01:57.319):
+ORG: What are those neural correlates?
+MATCH: Что такое нейронные корреляты?
+
+BLOCK 15 (00:01:58.040 -> 00:02:06.325):
+ORG: In general, it's just a pattern of brain activity that consistently happens along with a specific thought, feeling, or action.
+MATCH: В общем виде это просто паттерн мозговой активности, который устойчиво возникает вместе с определённой мыслью, чувством или действием.
+
+BLOCK 16 (00:02:06.884 -> 00:02:16.324):
+ORG: For example, specific patterns of activity in the motor cortex correlate with moving your hand, as you can see on the left-hand side of this slide.
+MATCH: Например, специфические паттерны активности в моторной коре коррелируют с движением руки, как вы видите в левой части этого слайда.
+
+BLOCK 17 (00:02:17.490 -> 00:02:25.170):
+ORG: The neural correlates of consciousness are the minimal neural activity required for a specific conscious experience.
+MATCH: Нейронные корреляты сознания — это минимальная нейронная активность, необходимая для конкретного сознательного переживания.
+
+BLOCK 18 (00:02:26.530 -> 00:02:38.625):
+ORG: Scientists try to find this by looking for brain patterns that are present when a person reports being aware of something, like seeing a face, but are absent when they don't report awareness of that same stimulus.
+MATCH: Учёные пытаются найти их, сравнивая мозговые паттерны, которые присутствуют, когда человек сообщает, что он что-то осознаёт, например видит лицо, и отсутствуют, когда он не сообщает об осознании того же самого стимула.  
+
+BLOCK 19 (00:02:39.504 -> 00:02:45.664):
+ORG: The goal is to isolate the brain activity that specifically tracks the subjective awareness itself.
+MATCH: Цель — выделить мозговую активность, которая отслеживает именно субъективную осознанность как таковую.
+
+BLOCK 20 (00:02:47.069 -> 00:02:52.510):
+ORG: Finding the neural correlates of consciousness is a major goal of consciousness research.
+MATCH: Поиск нейронных коррелятов сознания — одна из главных целей исследований сознания.
+
+BLOCK 21 (00:02:52.750 -> 00:02:57.789):
+ORG: It's like trying to identify the physical fingerprint of awareness in the brain.
+MATCH: Это похоже на попытку обнаружить в мозге физический «отпечаток пальца» осознанности.
+
+BLOCK 22 (00:02:59.914 -> 00:03:03.754):
+ORG: However, there is a huge methodological challenge here.
+MATCH: Однако здесь есть огромная методологическая проблема.
+
+BLOCK 23 (00:03:04.235 -> 00:03:12.155):
+ORG: The only way we know if someone is conscious of something is when they tell us, for example, by saying I see red.
+MATCH: Единственный способ узнать, осознаёт ли человек что-то, — это когда он нам об этом говорит, например произносит: «Я вижу красный».
+
+BLOCK 24 (00:03:12.969 -> 00:03:21.050):
+ORG: But a verbal report is an outward, observable behavior, not the inner experience itself.
+MATCH: Но словесный отчёт — это внешнее, наблюдаемое поведение, а не внутреннее переживание само по себе.
+
+BLOCK 25 (00:03:21.689 -> 00:03:27.449):
+ORG: This means that even our best experiments only give us indirect evidence of consciousness.
+MATCH: Это значит, что даже лучшие эксперименты дают нам лишь косвенные свидетельства сознания.
+
+BLOCK 26 (00:03:27.974 -> 00:03:35.495):
+ORG: We are never directly measuring the first-person experience, only the behaviors that we assume correlate with it.
+MATCH: Мы никогда не измеряем опыт от первого лица напрямую.
+Мы измеряем только поведение, которое, как мы предполагаем, с ним связано.
+
+BLOCK 27 (00:03:36.775 -> 00:03:44.050):
+ORG: And it's also important to remember that correlation is not causation nor is it an explanation.
+MATCH: И также важно помнить, что корреляция — не причинность.  
+Корреляция — это и не объяснение.
+
+BLOCK 28 (00:03:44.689 -> 00:03:51.490):
+ORG: Finding the neural correlates of consciousness only tells us what brain activity happens along with consciousness.
+MATCH: Нахождение нейронных коррелятов сознания говорит нам лишь о том, какая мозговая активность происходит вместе с сознанием.
+
+BLOCK 29 (00:03:51.810 -> 00:04:03.085):
+ORG: It doesn't, by itself, tell us how and why that specific physical activity generates or simply is this subjective experience.
+MATCH: Само по себе это не объясняет, как и почему именно эта физическая активность порождает — или просто и является — данным субъективным переживанием.
+
+BLOCK 30 (00:04:03.564 -> 00:04:07.245):
+ORG: This distinction is vital as we move forward.
+MATCH: Это различение жизненно важно, когда мы будем двигаться дальше.
+
+BLOCK 31 (00:04:08.764 -> 00:04:16.540):
+ORG: At the heart of this subjective experience are qualia, as the plural of a singular Latin word, quale.
+MATCH: В центре этого субъективного опыта находятся qualia — множественное число от латинского quale.
+
+BLOCK 32 (00:04:17.019 -> 00:04:27.819):
+ORG: This philosophical term refers to the raw qualitative feel of our experiences, the subjective sensation itself, separated from its informational content.
+MATCH: Этот философский термин обозначает сырой, качественный «привкус» наших переживаний — само субъективное ощущение, отделённое от его информационного содержания.
+
+BLOCK 33 (00:04:28.904 -> 00:04:36.665):
+ORG: Examples include the redness of red, the pain of a headache, the taste of chocolate, or the feeling of warmth.
+MATCH: Примеры — «красность» красного, боль при головной боли, вкус шоколада или ощущение тепла.
+
+BLOCK 34 (00:04:37.384 -> 00:04:47.240):
+ORG: These qualities seem irreducible Describing the neural correlates of seeing red doesn't seem to fully capture the experience of redness itself.
+MATCH: Похоже, что эти качества несводимы.  
+Описание нейронных коррелятов того, что вы видите красный, не кажется таким, которое полностью схватывает само переживание «красности».
+
+BLOCK 35 (00:04:48.279 -> 00:04:50.040):
+ORG: What is it like to see red?
+MATCH: Каково это — видеть красный?
+
+BLOCK 36 (00:04:51.160 -> 00:04:56.495):
+ORG: That 'what it's like' quality is the essence of qualia.
+MATCH: Это «каково это» и есть сущность qualia.
+
+BLOCK 37 (00:04:58.814 -> 00:05:09.670):
+ORG: To help structure the immense difficulty of studying consciousness, philosopher David Chalmers famously distinguished between the easy problems and the hard problems of consciousness.
+MATCH: Чтобы помочь структурировать колоссальную трудность изучения сознания, философ Дэвид Чалмерс знаменитым образом различил «лёгкие проблемы» и «трудную проблему» сознания.
+
+BLOCK 38 (00:05:10.789 -> 00:05:12.470):
+ORG: Easy is a bit ironic.
+MATCH: «Лёгкие» — это, конечно, немного иронично.
+
+BLOCK 39 (00:05:12.470 -> 00:05:22.115):
+ORG: These problems are still incredibly complex scientific challenges, but they are considered solvable in principle, using the standard tools of science.
+MATCH: Эти проблемы по‑прежнему невероятно сложны с научной точки зрения, но считается, что в принципе они решаемы с помощью стандартных инструментов науки.
+
+BLOCK 40 (00:05:22.834 -> 00:05:27.394):
+ORG: The easy problems are all about explaining the functions of consciousness.
+MATCH: «Лёгкие проблемы» связаны с объяснением функций сознания.
+
+BLOCK 41 (00:05:27.474 -> 00:05:39.080):
+ORG: These include things like our ability to discriminate and react to environmental stimuli, to report our mental states, to focus attention, and to integrate information.
+MATCH: Сюда относится, например, наша способность различать и реагировать на стимулы окружающей среды, сообщать о своих ментальных состояниях, фокусировать внимание и интегрировать информацию.
+
+BLOCK 42 (00:05:39.800 -> 00:05:46.120):
+ORG: We can study the brain activity behind these functions, and we can even build AI models that replicate them.
+MATCH: Мы можем изучать мозговую активность, лежащую в основе этих функций, и даже создавать модели ИИ, которые их воспроизводят.
+
+BLOCK 43 (00:05:46.705 -> 00:05:52.145):
+ORG: These are problems about explaining objective observable abilities.
+MATCH: Это задачи об объяснении объективных, наблюдаемых способностей.
+
+BLOCK 44 (00:05:54.545 -> 00:05:58.865):
+ORG: The hard problem, on the other hand, is a really deep mystery.
+MATCH: «Трудная проблема», напротив, — это действительно глубокая загадка.
+
+BLOCK 45 (00:05:59.529 -> 00:06:03.129):
+ORG: The question here is why and how?
+MATCH: Вопрос здесь — почему и как?  
+
+BLOCK 46 (00:06:03.449 -> 00:06:05.290):
+ORG: Is any physical processing?
+MATCH: Почему вообще имеет место какая‑то физическая обработка?
+
+BLOCK 47 (00:06:05.689 -> 00:06:08.250):
+ORG: Any arrangement of neurons firing?
+MATCH: Любая организация активирующихся нейронов?
+
+BLOCK 48 (00:06:09.129 -> 00:06:13.050):
+ORG: Why this arrangement should feel like anything from the inside?
+MATCH: Почему такая организация должна ощущаться изнутри хоть как‑то?
+
+BLOCK 49 (00:06:13.904 -> 00:06:17.745):
+ORG: Why should this give rise to subjective experience at all?
+MATCH: Почему из этого вообще должен возникать субъективный опыт?
+
+BLOCK 50 (00:06:18.464 -> 00:06:28.625):
+ORG: Why isn't all this sophisticated information processing just happening inside in the dark without any inner feeling, like in a calculator?
+MATCH: Почему вся эта изощрённая обработка информации не может просто происходить «в темноте», без всякого внутреннего переживания, как в калькуляторе?
+
+BLOCK 51 (00:06:29.860 -> 00:06:39.220):
+ORG: There is a huge gap in our understanding between describing the physical mechanics and explaining the subjective qualitative feeling itself.
+MATCH: Между описанием физических механизмов и объяснением самого субъективного, качественного ощущения лежит огромный разрыв в нашем понимании.
+
+BLOCK 52 (00:06:40.259 -> 00:06:45.535):
+ORG: Like, why does processing information about tissue damage feel like pain?
+MATCH: Например, почему обработка информации о повреждении ткани ощущается как боль?
+
+BLOCK 53 (00:06:45.694 -> 00:06:51.134):
+ORG: Why does processing certain wavelengths of light feel like seeing red?
+MATCH: Почему обработка определённых длин волн света ощущается как видение красного?
+
+BLOCK 54 (00:06:53.774 -> 00:06:56.894):
+ORG: This distinction is crucial when we think about AI.
+MATCH: Это различение принципиально важно, когда мы думаем об ИИ.
+
+BLOCK 55 (00:06:57.629 -> 00:07:06.430):
+ORG: Current AI research is making great progress on the easy problems, but the hard problem remains largely untouched.
+MATCH: Современные исследования ИИ делают большой прогресс в «лёгких проблемах», но «трудная проблема» остаётся во многом нетронутой.
+
+BLOCK 56 (00:07:06.910 -> 00:07:18.275):
+ORG: We still don't know if a purely computational system, no matter how complex, can ever bridge that explanatory gap and give rise to genuine subjective experience.
+MATCH: Мы до сих пор не знаем, может ли чисто вычислительная система — какой бы сложной она ни была — когда‑нибудь преодолеть этот объяснительный разрыв и породить подлинный субъективный опыт.
+
+BLOCK 57 (00:07:19.074 -> 00:07:27.475):
+ORG: Understanding this framework is essential as we move on to explore the mind body problem and the possibility of artificial consciousness.
+MATCH: Понимание этой рамки необходимо по мере того, как мы переходим к исследованию психофизической проблемы и возможности искусственного сознания.
+
+BLOCK 0 (00:00:01.280 -> 00:00:13.119):
+ORG: The debate between strong AI and weak AI, where the machines can generally understand or merely simulate, often hinges on assumptions about the relationship between mind and matter.
+MATCH: Дискуссия о сильном ИИ и слабом ИИ — о том, способны ли машины в целом действительно понимать или лишь имитировать понимание, — часто упирается в предположения о связи между сознанием и материей.
+
+BLOCK 1 (00:00:14.174 -> 00:00:23.134):
+ORG: This is because in strong AI hypotheses, machines really have minds, which requires that intelligence is not tied to biology.
+MATCH: Дело в том, что в гипотезах сильного ИИ у машин действительно есть сознание, а это требует, чтобы интеллект не был привязан к биологии.
+
+BLOCK 2 (00:00:24.015 -> 00:00:34.609):
+ORG: That leads us to another fundamental question and the intersection between philosophy, cognitive science and computer science, the idea of substrate independence.
+MATCH: Отсюда мы выходим на ещё один фундаментальный вопрос и на стык философии, когнитивной науки и информатики — на идею независимости от субстрата.
+
+BLOCK 3 (00:00:36.850 -> 00:00:47.744):
+ORG: Specifically, we are asking: can intelligent processes, things like reasoning, problem solving, learning, decision making, be replicated on different physical hardware?
+MATCH: Конкретно мы спрашиваем: можно ли интеллектуальные процессы — такие как рассуждение, решение задач, обучение, принятие решений — воспроизвести на другом физическом «железе»?
+
+BLOCK 4 (00:00:48.545 -> 00:00:58.465):
+ORG: Is the stuff something is made of essential for our intelligence, or is it the pattern, the process, the computation that matters?
+MATCH: Важно ли для интеллекта, из чего именно сделана система, или важнее структура, процесс, вычисление?  
+
+BLOCK 5 (00:00:59.780 -> 00:01:06.420):
+ORG: Could thinking in principle happen just as well on silicon chips as it does in our biological brain?
+MATCH: Может ли мышление в принципе происходить на кремниевых чипах так же хорошо, как в нашем биологическом мозге?  
+
+BLOCK 6 (00:01:07.859 -> 00:01:19.355):
+ORG: This question is deeply connected to the philosophical stance known as functionalism that we briefly mentioned earlier, particularly influential in the philosophy of mind and cognitive science.
+MATCH: Этот вопрос тесно связан с философской позицией, известной как функционализм, которую мы вскользь упоминали ранее, — особенно влиятельной в философии сознания и когнитивной науке.
+
+BLOCK 7 (00:01:20.155 -> 00:01:29.530):
+ORG: Functionalism defines mental states like beliefs, desires or even intelligence itself purely by their function.
+MATCH: Функционализм определяет ментальные состояния — такие как убеждения, желания или даже сам интеллект — исключительно через их функцию.
+
+BLOCK 8 (00:01:29.850 -> 00:01:38.489):
+ORG: A mental state is identified by its causal role, how it connects inputs, outputs, and other mental states within a system.
+MATCH: Ментальное состояние определяется своей каузальной ролью — тем, как оно связывает входы, выходы и другие ментальные состояния внутри системы.
+
+BLOCK 9 (00:01:39.370 -> 00:01:42.030):
+ORG: Take for example the belief in our diagram.
+MATCH: Возьмём, например, убеждение на нашей схеме.
+
+BLOCK 10 (00:01:42.030 -> 00:01:45.493):
+ORG: Its role is to guide actions based on what is perceived.
+MATCH: Его роль — направлять действия на основе того, что воспринимается.
+
+BLOCK 11 (00:01:46.034 -> 00:01:55.979):
+ORG: According to functionalism, performing this specific job is what makes it a belief, regardless of whether it's made of neurons or silicon.
+MATCH: С точки зрения функционализма, именно выполнение этой конкретной работы и делает состояние убеждением, независимо от того, реализовано оно нейронами или кремнием.
+
+BLOCK 12 (00:01:57.260 -> 00:02:05.260):
+ORG: If functionalism is correct, then intelligence viewed as a set of complex functions should exhibit multiple realizability.
+MATCH: Если функционализм верен, то интеллект, понимаемый как набор сложных функций, должен обладать множественной реализуемостью.
+
+BLOCK 13 (00:02:05.659 -> 00:02:13.825):
+ORG: And this is a key concept: it means that the same function can be implemented or realized in different physical systems.
+MATCH: И это ключевое понятие: оно означает, что одна и та же функция может быть реализована в разных физических системах.
+
+BLOCK 14 (00:02:14.465 -> 00:02:24.640):
+ORG: Think of a simple function like addition: you can perform addition using your fingers, an abacus, a mechanical calculator, or a silicon-based computer.
+MATCH: Подумайте о простой функции вроде сложения: вы можете складывать на пальцах, на счётах, на механическом калькуляторе или на компьютере на кремниевой основе.
+
+BLOCK 15 (00:02:25.199 -> 00:02:32.719):
+ORG: The underlying physical mechanisms are very different, but they all realize the same mathematical function.
+MATCH: Физические механизмы, лежащие в основе, очень разные, но все они реализуют одну и ту же математическую функцию.
+
+BLOCK 16 (00:02:33.995 -> 00:02:41.035):
+ORG: The functionalist argument is that intelligence, like addition, might also be multiply realizable.
+MATCH: Функционалистский довод состоит в том, что интеллект, как и сложение, тоже может быть множественно реализуем.  
+
+BLOCK 17 (00:02:44.395 -> 00:02:49.530):
+ORG: From computer science, this aligns well with the computational theory of mind.
+MATCH: С точки зрения информатики это хорошо согласуется с вычислительной теорией сознания.
+
+BLOCK 18 (00:02:50.090 -> 00:02:56.250):
+ORG: This view sees cognitive processes, including intelligent ones, as fundamentally computational.
+MATCH: Согласно этому взгляду, когнитивные процессы, включая интеллектуальные, по своей сути являются вычислительными.
+
+BLOCK 19 (00:02:56.969 -> 00:03:07.235):
+ORG: Reasoning can be modeled as algorithmic processes, learning can be seen as updating parameters based on data, problem solving involves for example search algorithms.
+MATCH: Рассуждение можно моделировать как алгоритмические процессы, обучение можно понимать как обновление параметров на основе данных, а решение задач включает, например, алгоритмы поиска.
+
+BLOCK 20 (00:03:07.955 -> 00:03:21.919):
+ORG: If intelligent functions are just computations, and computations can run on any computing device, then intelligent functions should also be able to run on any computing device, regardless of what it's made of.
+MATCH: Если интеллектуальные функции — это просто вычисления, а вычисления могут выполняться на любом вычислительном устройстве, то интеллектуальные функции тоже должны выполняться на любом вычислительном устройстве, независимо от того, из чего оно сделано.
+
+BLOCK 21 (00:03:24.400 -> 00:03:37.215):
+ORG: So to reiterate, the argument for substrate independence for function goes like this: Intelligent processes like reasoning or learning can be understood as complex computational functions.
+MATCH: Итак, повторим: аргумент в пользу независимости функции от субстрата выглядит так.  
+Интеллектуальные процессы вроде рассуждения или обучения можно понимать как сложные вычислительные функции.
+
+BLOCK 22 (00:03:38.335 -> 00:03:49.990):
+ORG: Computations and functions are in principle multiply realizable; they depend on the abstract procedure, the algorithm or function organization, not the specific physical material.
+MATCH: Вычисления и функции в принципе множественно реализуемы.  
+Они зависят от абстрактной процедуры, алгоритма или функциональной организации, а не от конкретного физического материала.
+
+BLOCK 23 (00:03:50.789 -> 00:04:02.595):
+ORG: Therefore, intelligent processes should be replicable on any physical hardware capable of performing the necessary computations, like for example sufficiently powerful computers.
+MATCH: Следовательно, интеллектуальные процессы должны быть воспроизводимы на любом физическом «железе», способном выполнять необходимые вычисления, например на достаточно мощных компьютерах.
+
+BLOCK 24 (00:04:04.835 -> 00:04:09.635):
+ORG: While it seems possible in principle, there are some big challenges to this idea.
+MATCH: Хотя в принципе это кажется возможным, у этой идеи есть несколько серьёзных трудностей.
+
+BLOCK 25 (00:04:09.955 -> 00:04:12.915):
+ORG: First, there is sheer complexity and practicality.
+MATCH: Во-первых, это просто колоссальная сложность и практическая осуществимость.
+
+BLOCK 26 (00:04:13.280 -> 00:04:22.639):
+ORG: The human brain is just incredibly complex, with around 86,000,000,000 neurons and trillions of connections.
+MATCH: Человеческий мозг невероятно сложен: около 86 000 000 000 нейронов и триллионы связей.
+
+BLOCK 27 (00:04:23.199 -> 00:04:29.495):
+ORG: Trying to replicate that scale and efficiency on a silicon chip is a massive practical hurdle.
+MATCH: Попытка воспроизвести такой масштаб и такую эффективность на кремниевом чипе — огромный практический барьер.
+
+BLOCK 28 (00:04:30.055 -> 00:04:39.574):
+ORG: The brain's wetware may have specific physical properties that make it exceptionally efficient or suitable for certain types of tasks.
+MATCH: «Мокрое» оборудование мозга может обладать особыми физическими свойствами, которые делают его исключительно эффективным или особенно подходящим для определённых типов задач.
+
+BLOCK 29 (00:04:42.180 -> 00:04:46.819):
+ORG: Then, the question is whether all intelligent functions are purely computational.
+MATCH: Затем возникает вопрос: действительно ли все интеллектуальные функции чисто вычислительные.
+
+BLOCK 30 (00:04:47.300 -> 00:04:53.188):
+ORG: Some argue that aspects of our intelligence are deeply tied to having a physical body.
+MATCH: Некоторые утверждают, что аспекты нашего интеллекта глубоко связаны с наличием физического тела.
+
+BLOCK 31 (00:04:53.188 -> 00:04:56.579):
+ORG: This is the idea of embodiment, which we mentioned before.
+MATCH: Это и есть идея воплощённости, о которой мы уже говорили.
+
+BLOCK 32 (00:04:57.964 -> 00:04:59.565):
+ORG: Think about it.
+MATCH: Подумайте об этом.
+
+BLOCK 33 (00:04:59.565 -> 00:05:07.645):
+ORG: Could an AI truly understand what it means to keep its balance if it doesn't have a body to feel gravity?
+MATCH: Может ли ИИ по‑настоящему понимать, что значит удерживать равновесие, если у него нет тела, чтобы чувствовать гравитацию?
+
+BLOCK 34 (00:05:08.285 -> 00:05:09.004):
+ORG: Probably not.
+MATCH: Скорее всего, нет.
+
+BLOCK 35 (00:05:09.660 -> 00:05:15.500):
+ORG: This suggests that some intelligent functions may require a physical body to be fully realized.
+MATCH: Это наводит на мысль, что некоторые интеллектуальные функции могут быть полностью реализованы только при наличии физического тела.
+
+BLOCK 36 (00:05:17.419 -> 00:05:22.220):
+ORG: And finally, it's crucial to make a distinction, from consciousness.
+MATCH: И, наконец, крайне важно провести различие — с сознанием.
+
+BLOCK 37 (00:05:22.814 -> 00:05:31.455):
+ORG: Just because we might be able to replicate intelligent functions like problem solving, it doesn't automatically mean that we can replicate subjective experience.
+MATCH: То, что мы, возможно, сумеем воспроизвести интеллектуальные функции вроде решения задач, вовсе не означает автоматически, что мы сможем воспроизвести субъективный опыт.
+
+BLOCK 38 (00:05:32.175 -> 00:05:41.319):
+ORG: Many experts who believe a computer could reason like us, are very skeptical about whether it could feel like us.
+MATCH: Многие эксперты, которые верят, что компьютер способен рассуждать как мы, очень скептически относятся к тому, сможет ли он чувствовать как мы.
+
+BLOCK 39 (00:05:41.560 -> 00:05:42.839):
+ORG: Do you see the difference?
+MATCH: Видите разницу?
+
+BLOCK 40 (00:05:43.879 -> 00:05:55.615):
+ORG: This idea of functionally perfect but inwardly empty AI is sometimes known as a philosophical zombie, We will discuss this topic extensively in the next question.
+MATCH: Эта идея о функционально совершенном, но внутренне пустом ИИ иногда называется философским зомби.  
+Мы подробно обсудим эту тему в следующем вопросе.
+
+BLOCK 41 (00:05:58.415 -> 00:06:01.851):
+ORG: There is another important nuance to consider here.
+MATCH: Здесь есть ещё один важный нюанс, который стоит учитывать.
+
+BLOCK 42 (00:06:01.851 -> 00:06:08.189):
+ORG: When we say computation, we usually think of digital processes that run on our computers.
+MATCH: Когда мы говорим о вычислениях, мы обычно имеем в виду цифровые процессы, которые выполняются на наших компьютерах.
+
+BLOCK 43 (00:06:08.990 -> 00:06:12.430):
+ORG: But what if the brain is not just a digital computer?
+MATCH: Но что, если мозг — не просто цифровой компьютер?  
+
+BLOCK 44 (00:06:12.829 -> 00:06:17.629):
+ORG: Some critics argue that our brains might rely on different kinds of physical processes.
+MATCH: Некоторые критики утверждают, что наш мозг может опираться на иные типы физических процессов.
+
+BLOCK 45 (00:06:19.665 -> 00:06:25.985):
+ORG: This could include things like continuous analog signals or a certain level of biochemical randomness.
+MATCH: Это может включать, например, непрерывные аналоговые сигналы или определённый уровень биохимической случайности.
+
+BLOCK 46 (00:06:26.305 -> 00:06:38.379):
+ORG: Some even speculate about quantum effects happening in our neurons, a very controversial but very interesting idea which I will talk about later.
+MATCH: Некоторые даже предполагают, что в наших нейронах происходят квантовые эффекты — идея крайне спорная, но очень интересная, и я позже о ней расскажу.
+
+BLOCK 47 (00:06:39.819 -> 00:06:47.259):
+ORG: All these are still forms of information processing, but they are not the kind that the standard digital computer is built to handle.
+MATCH: Всё это всё равно формы обработки информации, но не такие, с которыми рассчитан справляться стандартный цифровой компьютер.
+
+BLOCK 48 (00:06:49.104 -> 00:06:59.345):
+ORG: So if these processes are essential for intelligence, it might be very difficult or even impossible to replicate them perfectly on our current silicon hardware.
+MATCH: Так что если эти процессы существенны для интеллекта, их может быть очень трудно — или даже невозможно — идеально воспроизвести на современном кремниевом «железе».
+
+BLOCK 49 (00:07:00.009 -> 00:07:12.410):
+ORG: This doesn't completely disprove substrate independence, but it does suggest that the brain's unique physics might play a subtle but crucial role in how it functions.
+MATCH: Это не полностью опровергает независимость от субстрата, но предполагает, что уникальная физика мозга может играть тонкую, но решающую роль в том, как он работает.
+
+BLOCK 50 (00:07:16.115 -> 00:07:24.675):
+ORG: Substrate independence means, as we said, that intelligence is not tied to specific material like neurons or even silicon.
+MATCH: Независимость от субстрата означает, как мы говорили, что интеллект не привязан к конкретному материалу — будь то нейроны или даже кремний.
+
+BLOCK 51 (00:07:25.395 -> 00:07:28.995):
+ORG: An interesting example comes from the field of neuromorphic chemistry.
+MATCH: Интересный пример приходит из области нейроморфной химии.
+
+BLOCK 52 (00:07:29.819 -> 00:07:40.779):
+ORG: Researchers have used a specific chemical reaction, one that creates pulsing and wavelike patterns, to mimic the function of cochlea in our inner ear.
+MATCH: Исследователи использовали определённую химическую реакцию — ту, что создаёт пульсирующие и волнообразные узоры, — чтобы имитировать функцию улитки нашего внутреннего уха.
+
+BLOCK 53 (00:07:41.764 -> 00:07:48.805):
+ORG: Cochlear is a spiral shaped part of our inner ear that converts sound vibrations into neural signals.
+MATCH: Улитка — это спиралевидная часть нашего внутреннего уха, которая преобразует звуковые колебания в нейронные сигналы.
+
+BLOCK 54 (00:07:49.125 -> 00:08:01.980):
+ORG: So it converts the mechanical energy, the sound that enters into our ear, into the electrical energy, the neural signals that propagate in our brain to reach our auditory cortex.
+MATCH: То есть она переводит механическую энергию — звук, который попадает в ухо, — в электрическую энергию, нейронные сигналы, которые распространяются в мозге и достигают слуховой коры.
+
+BLOCK 55 (00:08:02.860 -> 00:08:06.860):
+ORG: And I personally spent several years studying this fascinating organ.
+MATCH: И я лично потратил несколько лет на изучение этого удивительного органа.
+
+BLOCK 56 (00:08:08.220 -> 00:08:13.868):
+ORG: Amazingly, chemical system was made to do the same thing as the cochlea does.
+MATCH: Поразительно, но химическую систему заставили делать то же самое, что делает улитка.
+
+BLOCK 57 (00:08:13.868 -> 00:08:18.492):
+ORG: It translated sound energy into distinct chemical wave patterns.
+MATCH: Она переводила звуковую энергию в характерные химические волновые паттерны.
+
+BLOCK 58 (00:08:19.204 -> 00:08:29.800):
+ORG: And this interesting example is a powerful reminder that cognitive-like processes can, in principle, emerge in very different and unexpected physical systems.
+MATCH: И этот пример — мощное напоминание о том, что процессы, похожие на когнитивные, в принципе могут возникать в очень разных и неожиданных физических системах.
+
+BLOCK 59 (00:08:32.519 -> 00:08:37.559):
+ORG: So where does this leave us on the question of substrate independence for intelligent functions?
+MATCH: Так к чему это нас приводит в вопросе о независимости от субстрата для интеллектуальных функций?
+
+BLOCK 60 (00:08:37.985 -> 00:08:43.904):
+ORG: The question of whether intelligent processes or functions could be replicated on different physical hardware.
+MATCH: То есть к вопросу о том, можно ли воспроизвести интеллектуальные процессы или функции на другом физическом «железе».
+
+BLOCK 61 (00:08:44.945 -> 00:08:56.450):
+ORG: The prevailing view, the answer to this question, especially among functionalists and computer scientists, is that yes, in principle.
+MATCH: Доминирующая точка зрения, ответ на этот вопрос — особенно среди функционалистов и специалистов по компьютерным наукам, — такова: да, в принципе.
+
+BLOCK 62 (00:08:56.850 -> 00:09:04.210):
+ORG: The idea is that intelligence is defined by what a system does, its processes, not what it is made of.
+MATCH: Идея в том, что интеллект определяется тем, что система делает, её процессами, а не тем, из чего она сделана.
+
+BLOCK 63 (00:09:05.075 -> 00:09:10.514):
+ORG: We have seen success in simulating many cognitive functions on computers, which support this idea.
+MATCH: Мы уже видели успехи в моделировании на компьютерах многих когнитивных функций, и это поддерживает эту идею.
+
+BLOCK 64 (00:09:11.794 -> 00:09:23.769):
+ORG: While the brain's biology might be super efficient, there doesn't seem to be a fundamental barrier to realizing the functions of intelligence on silicon, given enough power and the right design.
+MATCH: Хотя биология мозга может быть сверхэффективной, фундаментального барьера для реализации функций интеллекта на кремнии, при достаточной мощности и правильном проектировании, похоже, нет.  
+
+BLOCK 65 (00:09:25.690 -> 00:09:29.769):
+ORG: But it's crucial to remember what it doesn't answer.
+MATCH: Но важно помнить, на что это не отвечает.
+
+BLOCK 66 (00:09:30.570 -> 00:09:35.769):
+ORG: Does replicating the function also replicates the feelings or the subjective experience?
+MATCH: Означает ли воспроизведение функции также воспроизведение чувств, или субъективного опыта?  
+
+BLOCK 67 (00:09:36.524 -> 00:09:41.084):
+ORG: That's a much deeper question to which I will return shortly.
+MATCH: Это куда более глубокий вопрос, к которому я скоро вернусь.  
+
+BLOCK 68 (00:09:42.284 -> 00:09:46.447):
+ORG: And this also leads us to one critical challenge to this idea.
+MATCH: И это также подводит нас к одному ключевому вызову этой идее.
+
+BLOCK 69 (00:09:46.447 -> 00:09:58.060):
+ORG: Even if the functions of intelligence can be replicated abstractly, does achieving truly flexible human like intelligence require more than just computations?
+MATCH: Даже если функции интеллекта можно воспроизвести в абстрактном виде, требует ли по‑настоящему гибкий, человекоподобный интеллект чего‑то большего, чем просто вычисления?
+
+BLOCK 70 (00:09:58.220 -> 00:10:03.180):
+ORG: Does it require being grounded in physical body that interact with our mind?
+MATCH: Требует ли он укоренённости в физическом теле, которое взаимодействует с нашим разумом?
+

@@ -1,4 +1,6 @@
 import sys
+import os
+from openai import OpenAI
 
 # --- PRICING TABLE (Adjust as needed) ---
 # Prices in USD
@@ -6,8 +8,25 @@ PRICING = {
     # Cost per 1 Million Tokens
     "gpt-5-nano":  {"input": 0.05, "output": 0.40},
     "gpt-5.2":  {"input": 1.75, "output": 14.00},
+    "deepseek/deepseek-v3.2": {"input": 0.25, "output": 0.40},
     "whisper-1":   0.0065 #0.0043  # Cost per MINUTE of audio
 }
+
+def get_llm_client():
+    provider = os.getenv("LLM_PROVIDER", "openai").lower()
+    if provider == "openrouter":
+        return OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=os.getenv("OPENROUTER_API_KEY")
+        )
+    return OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+def get_model_name(default_model="gpt-5.2"):
+    provider = os.getenv("LLM_PROVIDER", "openai").lower()
+    if provider == "openrouter":
+        return "deepseek/deepseek-v3.2" # Default openrouter model
+    return default_model
+
 
 # Global accumulation variable
 TOTAL_SESSION_COST = 0.0

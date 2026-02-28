@@ -1058,3 +1058,88 @@ Str...
 настоящи...
    - Found 15 blocks with CPS > 25.
 ----------------------------------------
+[2026-02-25 06:32:43] Video: temp_videoplayback_30sec.mp4 -> Portuguese
+✅ VALIDATION PASSED
+⚠️ WARNINGS (4):
+   - Cue 8 is too fast (26.4 CPS). Text: Como você está, Kelly?...
+   - Cue 9 is too fast (25.9 CPS). Text: Estou ótima....
+   - Cue 19 is too fast (25.2 CPS). Text: Estou animado....
+   - Found 3 blocks with CPS > 25.
+----------------------------------------
+[2026-02-25 07:51:04] Video: temp_2min_Opus-4-6-vs-GPT-5-3-Codex.mp4 -> Portuguese
+✅ VALIDATION PASSED
+⚠️ WARNINGS (5):
+   - Cue 9 is too fast (33.8 CPS). Text: Eh pá, disse aí uma carrada de...
+   - Cue 20 is too fast (27.6 CPS). Text: Tu provavelmente até o podias ...
+   - Cue 21 is too fast (25.6 CPS). Text: Sei exatamente....
+   - Cue 29 is too fast (27.4 CPS). Text: Por isso, se calhar há
+mais qu...
+   - Found 4 blocks with CPS > 25.
+----------------------------------------
+[2026-02-25 09:19:03] Video: temp_2min_Opus-4-6-vs-GPT-5-3-Codex.mp4 -> Russian
+✅ VALIDATION PASSED
+----------------------------------------
+[2026-02-25 09:59:12] Video: temp_3min_Seinf_9_10.mp4 -> Russian
+❌ VALIDATION FAILED (1 errors)
+   - ERROR: Cue 95 has 4 lines (Limit is 3).
+⚠️ WARNINGS (6):
+   - Cue 15 is too fast (46.3 CPS). Text: Слушай, мне лучше пройтись,
+со...
+   - Cue 20 is too fast (30.7 CPS). Text: Сегодня вечером из меня будут
+...
+   - Cue 31 is too fast (33.7 CPS). Text: Привет....
+   - Cue 34 is too fast (37.8 CPS). Text: Привет....
+   - Cue 68 is too fast (38.8 CPS). Text: Ничего мне в этом году не дари...
+   - Found 5 blocks with CPS > 30.
+----------------------------------------
+[2026-02-25 10:21:50] Video: temp_3min_Seinf_9_10.mp4 -> Russian
+❌ VALIDATION FAILED (1 errors)
+   - ERROR: Cue 97 has 4 lines (Limit is 3).
+⚠️ WARNINGS (5):
+   - Cue 15 is too fast (31.8 CPS). Text: Слушай....
+   - Cue 16 is too fast (32.3 CPS). Text: Мне лучше пойти пообщаться....
+   - Cue 32 is too fast (33.7 CPS). Text: Привет....
+   - Cue 35 is too fast (37.8 CPS). Text: Привет....
+   - Found 4 blocks with CPS > 30.
+----------------------------------------
+[2026-02-27 14:21:59] Video: temp_4_20min_Conan-Swap-Irish-Food.mp4 -> Russian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (4):
+   - Cue 35 has 3 lines (Ideal is 2, allowed in High Density).
+   - Cue 66 is too fast (36.6 CPS). Text: Вот это и есть ирландская
+еда ...
+   - Cue 86 is too fast (37.2 CPS). Text: Это было прекрасно....
+   - Found 2 blocks with CPS > 30.
+----------------------------------------
+[2026-02-27 14:55:23] Video: temp_4_20min_Conan-Swap-Irish-Food.mp4 -> Russian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (5):
+   - Cue 41 has 3 lines (Ideal is 2, allowed in High Density).
+   - Cue 42 has 3 lines (Ideal is 2, allowed in High Density).
+   - Cue 64 is too fast (34.1 CPS). Text: У него была одна фраза....
+   - Cue 88 is too fast (38.2 CPS). Text: Это было прекрасно....
+   - Found 2 blocks with CPS > 30.
+----------------------------------------
+[2026-02-27 18:11:54] Video: temp_1.2.4.mp4 -> Russian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (1):
+   - Cue 116 has 3 lines (Ideal is 2, allowed in High Density).
+----------------------------------------
+[2026-02-27 18:54:47] Video: temp_1.2.3.mp4 -> Russian
+✅ VALIDATION PASSED
+----------------------------------------
+[2026-02-27 19:05:57] Video: temp_1.2.2.mp4 -> Russian
+✅ VALIDATION PASSED
+----------------------------------------
+[2026-02-27 19:15:39] Video: temp_1.2.1.mp4 -> Russian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (2):
+   - Cue 90 is too fast (30.4 CPS). Text: Почему вообще имеет место
+кака...
+   - Found 1 blocks with CPS > 30.
+----------------------------------------
+[2026-02-27 19:35:26] Video: temp_1.1.4.mp4 -> Russian
+✅ VALIDATION PASSED
+⚠️ WARNINGS (1):
+   - Cue 82 has 3 lines (Ideal is 2, allowed in High Density).
+----------------------------------------

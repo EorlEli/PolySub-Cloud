@@ -1573,3 +1573,170 @@ Evaluation Result:
   "reasoning": "V2 (Refined) is definitively better. It preserves meaning more precisely while reading as a natural Russian original rather than a translated text. Key improvements include: \n- Accuracy and nuance: V2 uses clearer wording for the post-training context and domain specialization (e.g., «посттренировочный этап» and «в внутренних доменах»), which aligns more closely with the source’s meaning than V1’s phrasing. \n- Grammar and syntax: V2 fixes or better handles several grammatical points (e.g., «Для среднего пользователя» vs V1’s awkward «Обычному пользователю»; V2 uses «и затем» instead of a clunkier construction; improved flow in long clauses). \n- Fluency and naturalness: V2 reads more smoothly and idiomatically in Russian, with more consistent terminology and phrasing (e.g., «посттренировочный этап», «посттренировочные данные», «посттрениру»). \n- Terminology consistency: V2 keeps terms like RL, ARC AGI 2, GDP Val, SimpleBench, Deep Think, etc., in a coherent Russian style, mirroring the source’s emphasis on benchmarks and domain-specific effects. \n- Tone: Both are formal, but V2’s phrasing generally adheres more closely to standard Russian technical exposition, aiding comprehension without drifting into unnatural constructions. \n\nSpecific illustrative examples:\n- Opening and general framing: V1 uses «для обычному пользователю» (grammatical awkwardness) vs V2 «Для среднего пользователя» (more natural and accurate after «для»).\n- Contextual explanation: V2 uses «посттренировочный этап, как я писал в своей рассылке» vs V1 «после обучения — как я писал в своей рассылке»; the former is closer to the standard term used in ML discussions.\n- Clause flow: V2 tends to join phrases more fluidly (e.g., «а также за короткий период раннего доступа» in V2 vs a slightly more disjointed variant in V1).\n- Specific phrasing adjustments: V2 corrects some awkward forms and keeps a consistent register, such as «посттренировочные данные» and \"я протестировал её сотни раз\" vs the less natural equivalents in V1.\n\nMinor caveats:\n- There are a few micro-issues in V2 (e.g., minor punctuation or a couple of spots where a dash would improve readability), but none detract from overall accuracy. Overall, V2 better captures nuance and reads more like a polished Russian original. \n"
 }
 --------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-25 06:33:12
+Target Language: Portuguese
+Original Len: 798 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 9,
+  "score_v2": 6,
+  "reasoning": "V1 is the more faithful and natural translation overall. Key points:\n- Accuracy of proper noun: V1 preserves the original city name as \"San Francisco,\" which aligns with common Portuguese usage for that location. V2 changes it to \"São Francisco,\" altering the proper noun and reducing accuracy.\n- Nuance and stance: V1 uses a closer literal render of the English lines. For example, \"Temos muita coisa saindo no Ignite\" matches \"We've got a lot of stuff coming out at Ignite\" more directly than V2’s \"Temos muita coisa sendo anunciada no Ignite,\" which introduces a nuance (being announced) not explicit in the source.\n- Tone and register: Both versions maintain an informal, conversational tone appropriate for the source. V1’s phrasing like \"aproveitar um tempo\" for \"take some time\" feels more natural in PT than V2’s \"reservar um tempo\".\n- Minor consistency: V1 generally keeps phrasing that aligns with common Brazilian Portuguese usage and rhythm, with few punctuation or flow issues. V2 makes some stylistic tweaks (e.g., \"na linda São Francisco\" vs. \"a linda San Francisco,\" and the shift to \"sendo anunciada\"), which, while acceptable, introduce deviations from the literal meaning and a slightly altered nuance.\n\nOverall, V1 preserves meaning more faithfully, uses a more natural PT style, and avoids altering the intended nuance of the original text. Therefore V1 is the better translation."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-25 07:50:47
+Target Language: Portuguese
+Original Len: 1316 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the better translation because it preserves the meaning while improving fluency and readability. It resolves a potential run-on feel by splitting a long sentence into two, replacing a semicolon with a period, and smoothing punctuation. It maintains the informal, conversational tone of the source and keeps the same terminology. Overall, V2 reads more naturally in Portuguese and avoids minor awkwardness present in V1, with all nuances retained."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-25 09:17:30
+Target Language: Russian
+Original Len: 1300 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 8,
+  "score_v2": 9,
+  "reasoning": "V2 is more natural and precise in Russian while preserving all the nuances of the original. Specific improvements include: 1) smoother verb choice and syntax, e.g. \"Можешь рассказать, в чём там разница?\" instead of the slightly awkward \"Можешь объяснить\"; 2) more idiomatic phrasing, e.g. \"И иногда так можно это объяснить\" vs \"Или иногда так можно это объяснить\"; 3) clearer translation of the line about entering a role: \"Он прямо реально входит в заданный тобой образ\" with subsequent \"У него это отлично получается\"; 4) refinement of purpose/command-following nuance: \"слова о следовать командам\" reads more naturally as \"следовать командам\" rather than \"исполнении команд\"; 5) overall consistency and fluency improve the tone to match the informal, conversational source. V1 is solid and accurate but includes a couple of clumsy phrasings that V2 cleans up, leading to a higher score for V2." 
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-25 09:58:48
+Target Language: Russian
+Original Len: 2486 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 8,
+  "reasoning": "Overall, V2 reads more naturally and preserves the source’s tone and nuances with fewer awkward constructions. Key improvements include:\n- Natural phrasing: V2 uses more idiomatic Russian (e.g., “С наземной командой всё так же хорошо” rather than V1’s awkward “На наземной службе всё так же хорошо”).\n- Glossary and terminology: V2 favors consistent, common terms (e.g., “кошерных коктейльных сосисок” vs V1’s awkward “кошерных сосисочек для коктейля”). \"Cocktail frank\" becomes more natural in V2.\n- Clarity on names and organizations: V2 correctly preserves the reference to the organization as «Детский альянс» in context and uses clearer phrasing around the donation segment, though there is a minor slip later (“В детскую благотворительность” is still ambiguous).\n- Fluency and punctuation: V2 generally employs smoother sentence flow and more natural punctuation, e.g., “С Ханукой, Тиффани” and “Ну как там коктейльные сосиски?” versus some slightly more disjointed Yandex/wording in V1.\n\nNotable issues found:\n- Both translations have a minor error in the donation segment: V1 correctly uses the name «Детский альянс» earlier, but later in V1 the line “В детскую благотворительность” appears; V2 also contains a similar blip, though it’s less disruptive because the surrounding context clarifies the intended entity (the earlier line mentions «Детский альянс»).\n- A few phrases remain slightly literal or unusual in both (e.g., the Festivus-related lines are long and could be tightened stylistically), but these are minor compared to the overall fluency gain in V2.\n\nConclusion: V2 provides a more natural, fluent, and contextually accurate Russian rendering overall, with more idiomatic choices, better flow, and clearer terminology for most lines. This makes V2 the better translation.}"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-25 10:20:59
+Target Language: Russian
+Original Len: 2480 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 6,
+  "score_v2": 8,
+  "reasoning": "V2 в целом точнее и натуральнее передаёт разговорный стиль оригинала. У большинства фрагментов он звучит как нормальная речь на русском, а не как дословная переработка с ярко обозначенными признаками перевода. Примеры улучшений в V2: вместо резких или неестественных формулировок в V1 (например, «Лишняя «э» — за «ну и класс»») появляются более естественные варианты («Лишняя «э» — для «Как мило»» или близкие по смыслу формулировки); фраза о том, чтобы «пойти пообщаться» звучит плавнее, чем «пройтись, пообщаться»; вопрос о принадлежности к вере переведён нейтральнее и естественнее: «Ты вообще не из традиционной веры?» вместо более грубого варианта в V1. Великая часть диалогов сохраняет смысл и стиль персонажей, включая юмор и каламбуры, хотя и передачи отдельных словесных игр (например, «Are you a sub?») остаются проблематичными для точной передачи на русский язык. В целом V2 держит тон, темп и лексику диалога лучше, чем V1, что делает её более удачным выбором. Некоторые мелочи остаются спорными (например, как передать игра слов «Are you a sub?»), но они не перекрывают общую победу V2 по точности и естественности."}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-27 13:18:34
+Target Language: Russian
+Original Len: 4287 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 9,
+  "score_v2": 7,
+  "reasoning": "V1 is overall more faithful to the source in terms of meaning, nuance and terminology. It preserves the key names and cultural references (e.g., Corelli/Корелли family, Irish/Italian American family dynamics, the Don Gavin joke, the spaghetti with meat sauce misperception, Friday fish sticks, and the description of the neighborhood mix) with natural Russian phrasing and consistent tone. It also keeps the sequence of anecdotes intact (family dynamics, food humor, memory of the mother, the shift to New York, etc.). In contrast, V2, while generally fluent, introduces noticeable accuracy issues: it alters a factual detail by replacing 'There were Armenians in our neighborhood' with a generic 'там вообще было полно народу,' which changes the specific ethnic reference and thereby the intended context; it also interchanges some proper nouns (e.g., Корелли vs Карелли) and awkwardly rephrases other lines, producing minor shifts in meaning. Additionally, V2 adds a connective line 'Но это — и ваша семья. Я знаю...' that, although stylistically plausible, is not strictly present in the source at that point and slightly tacks on meaning. These factors reduce V2’s fidelity despite its refined surface. Overall, V1 scores higher on accuracy, fluency, and tone alignment, making it the better translation." 
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-27 14:54:02
+Target Language: Russian
+Original Len: 4359 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is definitively better. It preserves the original meaning while producing natural, fluent Russian that reads like original prose rather than a translation. Key improvements include: smoother, more idiomatic phrasing (e.g., replacing some stilted or overly literal choices in V1 with natural equivalents in V2), more precise and consistent terminology (например, саркастичные вместо язвительные), and improved handling of quotes and direct speech, which enhances readability and fidelity to the casual, humorous tone. The Italian family anecdote and the Don Gavin joke are rendered with better cadence and locality-specific nuance (e.g., more natural description of the Italian neighborhood, the meat-sauce misunderstanding, and the cadence of the punchlines). V1 contains phrases that feel slightly literal or awkward in Russian and sometimes lacks the conversational flow found in V2. Overall, V2 maintains the same meaning and tone while achieving a native-level fluency that V1 struggles to reach. "}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-27 18:10:24
+Target Language: Russian
+Original Len: 12302 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is definitively better than V1 for several reasons. First, it fixes a clear accuracy flaw in V1: a duplicated phrase (“наш наш мозг”) and a misspelling (“небилогической” instead of “небиологической”). These fixes directly improve readability and trust in the translation. Second, V2 selects more precise and natural terminology in key spots, e.g., using “небиологической среде” and “непоследовательным” to render the original nuance of incoherence more accurately, while V1 uses weaker choices. Third, V2 maintains faithful representation of the technical content and structure (Dancing Qualia, GWT, IIT, biological naturalism, emergentism, Orch OR) with improved phrasing that better matches Russian academic style. Fourth, V2 enhances coherence in several sentences (e.g., “Теперь же, в вопросе 2.4, мы спрашиваем…” and “Яркий нейронаучный пример…”), and uses more precise framing such as “в рамках физикалистской модели, которая является доминирующей в науке,” which aligns with the source’s stance. Fifth, V2 adjusts small but important details to better reflect nuance: replacing “несостоятельным” with “непоследовательным” to convey incoherence more appropriately, and updating “неотвеченных вопросов” at the end to a more natural phrasing. Overall, V2 preserves all major ideas and terminology while significantly improving fluency, tone, and grammatical correctness. Based on the rubric, V1 would score around 7 (good but with noticeable flaws), while V2 earns around 9 (native-level fluency and accurate preservation of meaning)."
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-27 18:54:19
+Target Language: Russian
+Original Len: 7586 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "Both translations are solid and faithful to the source, but Translation V2 is overall more fluent, precise, and natural in Russian. Key improvements include: \n- Nuanced terminology and phrasing: V2 uses «выявляя нейронные корреляты» (more precise than the more generic «искать» in V1), and tightens small formulations (e.g., «поскольку наше понимание…» instead of the more casual «ведь…»). \n- Smoother logical linking and reduced awkwardness: V2 revises several transitions for smoother reading, such as replacing awkward or overly literal segments (e.g., V2’s refinements around the string of clauses in the hard problem discussion and the Mary’s Room explanation). \n- Consistency and clarity in the epistemological distinctions: V2 clarifies the distinction between epistemic vs ontological gaps with tighter phrasing (e.g., “Эпистемический разрыв означает, что даже если бы мы знали все физические факты, всё равно кажется…”). \n- Style and register alignment: V2 generally adopts a more formal and polished register appropriate for philosophical exposition, with minor edits that reduce phonetic oddities (e.g., replacing some informal connectors with formal ones like «поскольку», «выявляя»). \n- Mary’s Room and AI sections: V2 preserves the same core ideas but tightens syntax (e.g., “каково это быть летучей мышью” and smoother transitions in the concluding summary about AI). \n\nPotential quibbles are minor: in a few spots V2 uses slightly more direct address (e.g., «Как вы видите на этом слайде»), which can feel a touch less formal than V1 in a strictly written/academic context. Overall, these changes improve readability without changing meaning. \n\nConclusion: V2 is the better translation because it achieves higher fluency, tighter accuracy, and more precise terminology while maintaining the formal tone of the source text.)"
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-27 19:05:49
+Target Language: Russian
+Original Len: 7252 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is the more fluent, accurate, and well-structured translation. Key improvements over V1 include:\n- Accuracy and nuance: V2 preserves meaning more precisely (e.g., better rendering of the functionalism discussion, mind-body distinctions, and idealism). It fixes awkward or ambiguous phrasing found in V1, such as smoother handling of the contrast between mind and matter and between different philosophical positions.\n- Fluency and natural Russian: V2 reads like native academic Russian with tighter syntax, appropriate punctuation, and more coherent flow. For example, it uses clearer connective phrasing and more natural clause ordering in sections about dualism, materialism, functionalism, and idealism.\n- Term consistency: V2 maintains consistent terminology (материализм, физикализм, идеализм, функционализм) and presents them in a uniformly formal register suitable for the source’s audience.\n- Style corrections: V2 fixes noticeable issues in V1, such as the duplication «организационная организационная» (V1) which is corrected to «организационной» in V2, and removes stray English phrases inserted in V1 (e.g., «think about it», «my favorite philosopher») that undermined the translation’s quality.\n- Punctuation and readability: V2 uses punctuation more accurately (e.g., proper dash/comma placement around remarks and parenthetical phrases) and maintains consistent sentence boundaries, which enhances readability without altering meaning.\n\nOverall, V2 achieves near-native fluency and superior accuracy, aligning best with the criteria for a perfect translation in this context. V1, while largely conveying the content, contains several awkward formulations and at least one instance of English phrases embedded in the translation, which reduces its quality.",""
+  	:
+ 	"}" }
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-27 19:15:12
+Target Language: Russian
+Original Len: 5735 chars
+
+Evaluation Result:
+{
+  "better_version": "V2",
+  "score_v1": 7,
+  "score_v2": 9,
+  "reasoning": "V2 is overall more accurate and natural in Russian. Specific improvements include: 1) Fixing awkward phrasing in V1 such as \"Определить сознание печально известно как крайне трудно\" to the smoother \"Определять сознание, как известно, чрезвычайно трудно.\" 2) Replacing clunky or overly literal renderings with idiomatic phrasing (e.g., \"простy обработки\" vs \"обработку\"; splitting long sentences like the note on reporting vs internal experience). 3) More precise terminology and consistency (e.g., \"мозговые паттерны\" vs \"паттерны мозговой активности\"; translation of easy/hard problems uses более natural wording). 4) Improved handling of the key philosophical distinctions, including clearer articulation of the neural correlates, the role of verbal report, and the caveat that correlation is not causation, by rephrasing to avoid redundancy (e.g., separating sentences about measurement and interpretation). 5) Refinements in the closing sections, with V2 using \"помочь структурировать\" and \"преодолеть»\" (instead of \"перекинуть мост через\"), which read more fluently and accurately in Russian. 6) Minor stylistic updates, such as consistent use of quotes and smoother transitions between sections, while preserving the original meaning and emphasis. Overall, V2 yields a more native, fluent, and precise Russian rendering with minimal loss of nuance. "
+}
+--------------------------------------------------
+
+--------------------------------------------------
+Timestamp: 2026-02-27 19:34:38
+Target Language: Russian
+Original Len: 7944 chars
+
+Evaluation Result:
+{
+  "better_version": "V1",
+  "score_v1": 9,
+  "score_v2": 7,
+  "reasoning": "Overall, V1 is the more faithful and natural rendering of the source. Key points:\n- Accuracy: The source uses the idea of ‘minds’ (not consciousness) in relation to strong AI. V1 renders this as “у машин действительно есть разум,” which preserves the original nuance. V2 uses “у машин действительно есть сознание” in that spot, which shifts the nuance toward consciousness rather than mind and is less faithful to the source phrase.\n- Terminology and consistency: V1 keeps terminology that aligns with the broader Russian academic register used in the passage (e.g., “ментальные состояния,” “функционализм,” “множественная реализуемость”). V2 sometimes diverges in phrasing (e.g., “Физические механизмы, лежащие в основе” vs “Физические механизмы в основе этого”), which, while acceptable, is less precise in places.\n- Wetware reference: V2 introduces the phrase “мокрое оборудование мозга,” which accurately targets the wetware concept but shifts away from the more parallel structural reference in V1 (which discusses the brain more plainly as neurobiological hardware). This shift, combined with the earlier shift to consciousness, slightly destabilizes the overall alignment with the source.\n- Fluency and tone: Both are fluent and formal, suitable for an academic discussion. V1 tends to read more like a seamless Russian exposition of the original argument, while V2, despite higher precision on wetware, contains small mismatches in nuance and consistency that affect perceived accuracy.\n\nIn sum, V1 preserves the core meanings and tonal register more consistently across the text, making it the better translation overall. V2 provides some valuable refinements (notably the wetware reference), but its early substitution of “разум” with “сознание” and some shifts in phrasing reduce its overall fidelity to the source."
+}
+--------------------------------------------------

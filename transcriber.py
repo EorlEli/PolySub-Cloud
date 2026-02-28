@@ -3,13 +3,14 @@ import ffmpeg
 from openai import OpenAI
 from dotenv import load_dotenv
 from deepgram import DeepgramClient
+from utils import get_llm_client
 # REMOVE deepgram_captions logic
 # from deepgram_captions import DeepgramConverter, webvtt
 
 from corrector import apply_corrections
 
 load_dotenv()
-openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+openai_client = get_llm_client()
 deepgram_client = DeepgramClient(api_key=os.getenv("DEEPGRAM_API_KEY"))
 
 def extract_audio(video_path, output_audio_path="temp_audio.mp3"):

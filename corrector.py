@@ -1,7 +1,7 @@
 import json
 import time
 
-from utils import log_openai_usage
+from utils import log_openai_usage, get_model_name
 
 def get_topic(text, client, model="gpt-5-nano"):
     """
@@ -17,7 +17,7 @@ def get_topic(text, client, model="gpt-5-nano"):
     try:
         start_time = time.perf_counter()
         response = client.chat.completions.create(
-            model=model,
+            model=get_model_name(model),
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": text[:4000]} # Send first 4k chars for context
@@ -68,7 +68,7 @@ def get_corrections(utterances, topic, client, model="gpt-5-nano"):
     try:
         start_time = time.perf_counter()
         response = client.chat.completions.create(
-            model=model,
+            model=get_model_name(model),
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": numbered_transcript}
