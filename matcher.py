@@ -37,7 +37,8 @@ def find_matching_translation(original_language_block_text, target_language_sear
        - SPECIAL CASE: If the "Next Source Segment" is a short question or phrase (e.g., "Right?", "No?", "Okay?"), and the translation window contains its corresponding translation (e.g., "¿no?", "¿verdad?", "¿vale?"), YOU MUST EXCLUDE IT from the current match.
        - REPEATED TEXT: If the next source segment is a repeat of the end of the current segment, STOP before the repetition begins in the translation.
     7. EXACT EXTRACT: Extract the substring EXACTLY as it appears in the target language text. Do NOT add closing quotes or punctuation that is not present in the window at that exact position.
-    8. JSON OUTPUT: { "target_language_substring": "..." }
+    8. ALREADY TRANSLATED: FIRST, always try to find the translation in the SEARCH WINDOW. If the translation exists anywhere in the SEARCH WINDOW, return it normally and set `already_translated_in_context` to false (e.g. if the original is "Why? Why?" and the target has "Почему? Почему?", match the individual "Почему?"). ONLY IF you absolutely CANNOT find the translation in the search window, AND you clearly see that the source text's translation was completely merged into the PREVIOUS CONTEXT block (for example, a repeated word that was translated only once), then you may set `already_translated_in_context` to true and leave `target_language_substring` empty.
+    9. JSON OUTPUT: { "target_language_substring": "...", "already_translated_in_context": false }
     """
 
     user_prompt = f"""
@@ -79,6 +80,12 @@ def find_matching_translation(original_language_block_text, target_language_sear
                 raise ValueError("Empty response from API")
                 
             result_json = json.loads(content)
+            
+            # NLP Fix for Omitted Repeated Translations
+            if result_json.get("already_translated_in_context", False):
+                # print("   💡 NLP Matcher detected text was already translated in context.")
+                return "<ALREADY_TRANSLATED>"
+                
             matched_text = result_json.get("target_language_substring", "")
             if matched_text:
                 matched_text = matched_text.replace('\x00', '')
@@ -95,16 +102,19 @@ def find_matching_translation(original_language_block_text, target_language_sear
 
             # --- PROGRAMMATIC VERIFICATION ---
             # If the specific text isn't found in the window, it might be a hallucination (e.g. added quote).
-            if matched_text not in target_language_search_window:
+            if matched_text and matched_text != "<ALREADY_TRANSLATED>" and matched_text not in target_language_search_window:
                 # Try stripping trailing quotes/punctuation
                 stripped = matched_text.strip('"').strip("'").strip()
-                if stripped in target_language_search_window:
+                if stripped and stripped in target_language_search_window:
                     # print(f"   🔧 Fixed hallucinated quotes: '{matched_text}' -> '{stripped}'")
                     matched_text = stripped
                 else:
                     # Try stripping just the last character (common for single hallucinated punct like " or .)
-                    if matched_text[:-1] in target_language_search_window:
+                    if matched_text and matched_text[:-1] in target_language_search_window:
                          matched_text = matched_text[:-1]
+                    else:
+                         print(f"   ⚠️ Programmatic Verification Failed: '{matched_text}' not in search window.")
+                         raise ValueError(f"Hallucinated match: {matched_text}")
 
             # --- HEURISTIC WATCHDOG (NEW) ---
             # Protection against "Colon Merges" or "Run-on Matches"

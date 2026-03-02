@@ -19,6 +19,8 @@ def run_alignment_engine(blocks, full_target_text):
         block_end = block[-1]['end']
         print(f"[{i+1}/{len(blocks)}] Processing lines {block[0]['id']}-{block[-1]['id']} ({block_start}->{block_end})...")
         
+        log_block_num = i
+        
         # --- STEP A: Window and Context ---
         CONTEXT_SIZE = 100
         search_window_start = pt_cursor
@@ -38,6 +40,12 @@ def run_alignment_engine(blocks, full_target_text):
 
         matched_text = find_matching_translation(original_language_block_text, target_language_search_window, context_preview, next_block_text)
         
+        is_already_translated = False
+        if matched_text == "<ALREADY_TRANSLATED>":
+            is_already_translated = True
+            matched_text = ""
+            print(f"   💡 [Block {i+1}] NLP Matcher handled this block as already translated. Leaving cursor in place.")
+
         # --- PRE-VERIFY MATCH: PREVENT LARGE JUMPS ---
         if matched_text:
             found_idx = target_language_search_window.find(matched_text)
@@ -60,7 +68,20 @@ def run_alignment_engine(blocks, full_target_text):
             # Try matching the merged block
             merged_match = find_matching_translation(merged_source_text, target_language_search_window, context_preview, next_next_block_text)
             
+            if merged_match == "<ALREADY_TRANSLATED>":
+                 is_already_translated = True
+                 merged_match = ""
+                 print(f"   💡 [Block {i+1} + {i+2}] NLP Matcher handled MERGED block as already translated. Leaving cursor in place.")
+
+            # --- PRE-VERIFY MERGED MATCH ---
             if merged_match:
+                found_idx = target_language_search_window.find(merged_match)
+                MAX_GAP = max(40, len(merged_source_text) * 1.5)
+                if found_idx > MAX_GAP:
+                    print(f"   ⚠️ [Block {i+1} + {i+2}] Merged match '{merged_match[:30]}...' found but skips {found_idx} chars (Max allowed: {MAX_GAP}). Rejecting match.")
+                    merged_match = ""
+
+            if merged_match or is_already_translated:
                  print(f"   ✅ [Block {i+1} + {i+2}] MERGE RECOVERY SUCCESSFUL. Found unified translation.")
                  block = block + blocks[i+1] # Combine the VTT lines
                  original_language_block_text = merged_source_text
@@ -68,12 +89,12 @@ def run_alignment_engine(blocks, full_target_text):
                  # Skip the next block since we consumed it
                  i += 1 
 
-        print(f"   [DEBUG_ENGINE] Block {i} Input: '{original_language_block_text[:30]}...'")
-        print(f"   [DEBUG_ENGINE] Block {i} Match: '{matched_text}'")
+        print(f"   [DEBUG_ENGINE] Block {log_block_num} Input: '{original_language_block_text[:30]}...'")
+        print(f"   [DEBUG_ENGINE] Block {log_block_num} Match: '{matched_text}'")
         with open("debug_engine.log", "a", encoding="utf-8") as log:
-            log.write(f"BLOCK {i} ({block_start} -> {block_end}):\nORG: {original_language_block_text}\nMATCH: {matched_text}\n\n")
+            log.write(f"BLOCK {log_block_num} ({block_start} -> {block_end}):\nORG: {original_language_block_text}\nMATCH: {matched_text}\n\n")
         
-        if not matched_text:
+        if not matched_text and not is_already_translated:
             print(f"   ⚠️ [Block {i+1}] No match found even after recovery. Cursor at {pt_cursor}.")
             
             # --- LOOKAHEAD RECOVERY ---
@@ -87,6 +108,14 @@ def run_alignment_engine(blocks, full_target_text):
                  
                  if peek_match:
                      idx = target_language_search_window.find(peek_match)
+                     
+                     # --- PRE-VERIFY PEEK MATCH ---
+                     if idx != -1:
+                         MAX_PEEK_GAP = max(100, len(original_language_block_text) * 3)
+                         if idx > MAX_PEEK_GAP:
+                             print(f"   ⚠️ [Block {i+2}] Anchor '{peek_match[:30]}...' found but skips {idx} chars (Max allowed: {MAX_PEEK_GAP}). Rejecting anchor.")
+                             idx = -1
+                             
                      if idx != -1: 
                          # Found the anchor!
                          # Everything from 0 to idx is the "Gap".
@@ -115,11 +144,27 @@ def run_alignment_engine(blocks, full_target_text):
                 absolute_start = search_window_start + found_index
                 absolute_end = absolute_start + len(matched_text)
                 
+                # --- SNAP TO WORD BOUNDARIES ---
+                # Expand to include the full word if the match cuts a word in half
+                while absolute_start > 0 and full_target_text[absolute_start-1].isalnum() and full_target_text[absolute_start].isalnum():
+                    absolute_start -= 1
+                while absolute_end < len(full_target_text) and full_target_text[absolute_end-1].isalnum() and full_target_text[absolute_end].isalnum():
+                    absolute_end += 1
+                    
+                matched_text = full_target_text[absolute_start:absolute_end]
+                
                 # Jump to the end of the match
                 pt_cursor = absolute_end
             else:
-                print(f"   ⚠️ [Block {i+1}] Match text returned by AI not found in search window.")
-                pt_cursor += len(matched_text)
+                print(f"   ⚠️ [Block {i+1}] Match text returned by AI not found in search window. Rejecting.")
+                estimated_len = len(original_language_block_text)
+                pt_cursor += estimated_len
+                
+                # Snap the fallback cursor forward to the next word boundary (don't land in the middle of a word)
+                while pt_cursor > 0 and pt_cursor < len(full_target_text) and full_target_text[pt_cursor-1].isalnum() and full_target_text[pt_cursor].isalnum():
+                    pt_cursor += 1
+                    
+                matched_text = ""
 
         # --- STEP D: Distribute Lines ---
         # distribute_translation uses GPT-5-nano internally now
