@@ -8,6 +8,7 @@ ENV PYTHONUNBUFFERED=1
 RUN apt-get update && apt-get install -y \
     ffmpeg \
     fonts-liberation \
+    fonts-noto-cjk \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
