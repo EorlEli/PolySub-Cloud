@@ -1,33 +1,34 @@
 const { Storage } = require('@google-cloud/storage');
+require('dotenv').config({ path: '.env.local' });
 
-const storage = new Storage({
-    projectId: 'polysub',
-    keyFilename: 'C:\\Users\\46760\\Downloads\\polysub-f9aa64b5d040.json'
-});
+async function configureCors() {
+    try {
+        const storage = new Storage({
+            projectId: process.env.GCP_PROJECT_ID,
+            credentials: {
+                client_email: process.env.GCP_CLIENT_EMAIL,
+                private_key: process.env.GCP_PRIVATE_KEY.replace(/\\n/g, '\n'),
+            },
+        });
 
-async function setCors() {
-    // CORS configuration to allow PUT requests from browsers
-    const corsConfiguration = [
-        {
-            maxAgeSeconds: 3600,
-            method: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
-            origin: ['*'], // Allowing all origins for ease of development; can restrict to actual domain later
-            responseHeader: ['Content-Type', 'Access-Control-Allow-Origin', 'x-goog-resumable']
-        }
-    ];
+        const bucketName = process.env.INPUT_BUCKET_NAME || 'polysub_input';
+        console.log(`Configuring CORS for bucket: ${bucketName}...`);
 
-    const buckets = ['polysub_input', 'polysub_output'];
+        const corsConfiguration = [
+            {
+                maxAgeSeconds: 3600,
+                method: ['GET', 'PUT', 'HEAD', 'OPTIONS', 'POST'],
+                origin: ['*'], // Allow requests from any origin (including Vercel/localhost)
+                responseHeader: ['Content-Type', 'Authorization', 'x-goog-resumable'],
+            },
+        ];
 
-    for (const bucketName of buckets) {
-        try {
-            const bucket = storage.bucket(bucketName);
-            console.log(`Setting CORS config for ${bucketName} bucket...`);
-            await bucket.setCorsConfiguration(corsConfiguration);
-            console.log(`CORS for ${bucketName} bucket updated successfully!`);
-        } catch (e) {
-            console.error(`Failed to set CORS for ${bucketName}:`, e.message);
-        }
+        await storage.bucket(bucketName).setCorsConfiguration(corsConfiguration);
+
+        console.log(`Successfully configured CORS for ${bucketName}`);
+    } catch (error) {
+        console.error('Failed to configure CORS:', error);
     }
 }
 
-setCors().catch(console.error);
+configureCors();

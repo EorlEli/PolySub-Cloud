@@ -13,7 +13,11 @@ PRICING = {
 }
 
 def get_llm_client():
-    provider = os.getenv("LLM_PROVIDER", "openai").lower()
+    provider = os.getenv("LLM_PROVIDER")
+    if not provider:
+        provider = "openrouter" if os.getenv("OPENROUTER_API_KEY") else "openai"
+    
+    provider = provider.lower()
     if provider == "openrouter":
         return OpenAI(
             base_url="https://openrouter.ai/api/v1",
@@ -22,7 +26,11 @@ def get_llm_client():
     return OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def get_model_name(default_model="gpt-5.2"):
-    provider = os.getenv("LLM_PROVIDER", "openai").lower()
+    provider = os.getenv("LLM_PROVIDER")
+    if not provider:
+        provider = "openrouter" if os.getenv("OPENROUTER_API_KEY") else "openai"
+    
+    provider = provider.lower()
     if provider == "openrouter":
         return "deepseek/deepseek-v3.2" # Default openrouter model
     return default_model
