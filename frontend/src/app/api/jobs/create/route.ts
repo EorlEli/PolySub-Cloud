@@ -35,6 +35,11 @@ export async function POST(request: Request) {
         const { GoogleAuth } = await import("google-auth-library");
         const auth = new GoogleAuth({
             scopes: ["https://www.googleapis.com/auth/cloud-platform"],
+            projectId: process.env.GCP_PROJECT_ID,
+            credentials: {
+                client_email: process.env.GCP_CLIENT_EMAIL,
+                private_key: process.env.GCP_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+            },
         });
         const client = await auth.getClient();
 
