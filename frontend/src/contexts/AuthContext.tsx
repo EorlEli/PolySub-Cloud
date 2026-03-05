@@ -42,7 +42,11 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
                 // Bulletproof fallback: Ensure doc exists on auth
                 const docSnap = await getDoc(userDocRef);
                 if (!docSnap.exists()) {
-                    await setDoc(userDocRef, { creditBalanceMinutes: 10 });
+                    await setDoc(userDocRef, {
+                        email: currentUser.email,
+                        creditBalanceMinutes: 10,
+                        createdAt: new Date(),
+                    });
                 }
 
                 unsubscribeCredits = onSnapshot(userDocRef, (doc) => {
