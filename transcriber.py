@@ -10,8 +10,6 @@ from utils import get_llm_client
 from corrector import apply_corrections
 
 load_dotenv()
-openai_client = get_llm_client()
-deepgram_client = DeepgramClient(api_key=os.getenv("DEEPGRAM_API_KEY"))
 
 def extract_audio(video_path, output_audio_path="temp_audio.mp3"):
     """
@@ -91,6 +89,10 @@ def transcribe_audio(audio_path, use_correction=True):
     Step 3: Sends audio to Deepgram (Nova-3) to get VTT and Text.
     """
     print("   🎙️ Sending audio to Deepgram Nova-3 API...")
+    
+    # Initialize clients locally to avoid crashing at import-time
+    openai_client = get_llm_client()
+    deepgram_client = DeepgramClient(api_key=os.getenv("DEEPGRAM_API_KEY"))
     
     try:
         # 1. Read Audio File

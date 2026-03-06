@@ -6,7 +6,6 @@ from utils import log_openai_usage, get_llm_client, get_model_name
 import time
 
 load_dotenv()
-client = get_llm_client()
 
 MAX_CHUNK_SIZE = 4000  # Characters (approx 1000 tokens) - Safe size for reliable translation
 CONTEXT_SIZE = 200     # Characters of overlap/context
@@ -51,6 +50,9 @@ def translate_full_text(full_text, target_language="Portuguese"):
     Returns: (full_translated_text, source_chunks, translated_chunks)
     """
     print(f"\n   🌍 Translating full text to {target_language}...")
+    
+    # Initialize client locally to avoid crashing at import-time
+    client = get_llm_client()
     
     chunks = split_into_chunks(full_text)
     translated_chunks = []
@@ -131,6 +133,9 @@ def verify_translation_quality(source_chunks, translated_chunks, target_language
     Verifies and refines the translation chunk by chunk using a rigorous QA process.
     """
     print(f"\n   🕵️ Verifying and Refining Translation Quality...")
+    
+    # Initialize client locally to avoid crashing at import-time
+    client = get_llm_client()
     
     refined_chunks = []
     
