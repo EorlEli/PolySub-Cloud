@@ -55,14 +55,15 @@ def get_corrections(utterances, topic, client, model="gpt-5-nano"):
     
     RULES:
     1. Only correct CLEAR errors where the word is out of place. Do NOT overcorrect seemingly unknown but phonetically valid proper nouns, recent technologies, product names, or newly released LLM models into older, more common entities. Trust that the speaker is referencing real, modern terms.
-    2. Example: "The code is intent" -> "The code is indented" (if topic is Programming).
-    3. Example: "The sky is blue" -> NO CHANGE.
-    4. Provide the output as a JSON object with a key "corrections" containing a list of objects.
-    5. Each object must have: 
+    2. STRICT DOMAIN RULE: If the topic is related to Tech, Software, AI, or similar fields, NEVER autocorrect unknown nouns. Assume unknown names (like 'OpenClaw' or newly released LLM models) are real. When in doubt, DO NOT CORRECT.
+    3. Example: "The code is intent" -> "The code is indented" (if topic is Programming).
+    4. Example: "The sky is blue" -> NO CHANGE.
+    5. Provide the output as a JSON object with a key "corrections" containing a list of objects.
+    6. Each object must have: 
        - "utterance_id": The ID of the line containing the error (Usage: reference the [ID: X] tags) It *must* be an int.
        - "original": The exact word/phrase to change.
        - "replacement": The corrected word/phrase.
-    6. If no corrections are needed, return "corrections": [].
+    7. If no corrections are needed, return "corrections": [].
     """
 
     try:
