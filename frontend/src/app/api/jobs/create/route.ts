@@ -6,7 +6,7 @@ const COST_PER_MINUTE = 1; // Example: 1 credit = 1 minute
 
 export async function POST(request: Request) {
     try {
-        const { gsPath, targetLanguage, originalFilename, durationSeconds, uid } = await request.json();
+        const { gsPath, sourceLanguage, targetLanguage, originalFilename, durationSeconds, uid } = await request.json();
 
         if (!gsPath || !targetLanguage || !uid) {
             return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
@@ -19,6 +19,7 @@ export async function POST(request: Request) {
         await jobRef.set({
             uid,
             gsPath,
+            sourceLanguage: sourceLanguage || null,
             targetLanguage,
             originalFilename,
             durationSeconds,
@@ -46,6 +47,18 @@ export async function POST(request: Request) {
         const projectId = process.env.GCP_PROJECT_ID || "polysub";
         const url = `https://run.googleapis.com/v2/projects/${projectId}/locations/${GCP_REGION}/jobs/${CLOUD_RUN_JOB_NAME}:run`;
 
+        const envVars = [
+            { name: "INPUT_BUCKET", value: INPUT_BUCKET },
+            { name: "OUTPUT_BUCKET", value: OUTPUT_BUCKET },
+            { name: "VIDEO_FILENAME", value: videoFilename },
+            { name: "FIRESTORE_DOC_ID", value: jobRef.id },
+            { name: "TARGET_LANGUAGE", value: targetLanguage },
+        ];
+
+        if (sourceLanguage && sourceLanguage !== "auto") {
+            envVars.push({ name: "SOURCE_LANGUAGE", value: sourceLanguage });
+        }
+
         const res = await client.request({
             url,
             method: "POST",
@@ -53,13 +66,7 @@ export async function POST(request: Request) {
                 overrides: {
                     containerOverrides: [
                         {
-                            env: [
-                                { name: "INPUT_BUCKET", value: INPUT_BUCKET },
-                                { name: "OUTPUT_BUCKET", value: OUTPUT_BUCKET },
-                                { name: "VIDEO_FILENAME", value: videoFilename },
-                                { name: "FIRESTORE_DOC_ID", value: jobRef.id },
-                                { name: "TARGET_LANGUAGE", value: targetLanguage },
-                            ]
+                            env: envVars
                         }
                     ]
                 }

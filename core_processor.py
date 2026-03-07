@@ -15,7 +15,7 @@ from translation_evaluator import evaluate_translations
 from video_processor import burn_subtitles
 from validator import validate_vtt_structure
 
-def process_video(video_path: str, target_language: str, use_correction: bool = True, create_zip: bool = True):
+def process_video(video_path: str, target_language: str, use_correction: bool = True, create_zip: bool = True, source_language: str = None):
     """
     Core video processing logic.
     Refactored from main.py to be environment-agnostic.
@@ -49,7 +49,7 @@ def process_video(video_path: str, target_language: str, use_correction: bool = 
     job_start_time = time.time()
     
     video_filename = os.path.basename(video_path)
-    print(f"\n🎬 CORE: Processing {video_filename} -> {target_language}")
+    print(f"\n🎬 CORE: Processing {video_filename} -> {target_language} (Source: {source_language or 'Auto'})")
 
     cleanup_files_list = []
 
@@ -62,7 +62,7 @@ def process_video(video_path: str, target_language: str, use_correction: bool = 
         cleanup_files_list.append(audio_path)
 
         # --- 3. TRANSCRIBE ---
-        vtt_content, full_english_text = transcribe_audio(audio_path, use_correction=use_correction)
+        vtt_content, full_english_text = transcribe_audio(audio_path, use_correction=use_correction, source_language=source_language)
 
         # CALCULATE Speech2Text COST
         audio_duration = 0

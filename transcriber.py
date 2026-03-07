@@ -84,7 +84,7 @@ def generate_vtt_from_utterances(utterances):
         
     return vtt_output
 
-def transcribe_audio(audio_path, use_correction=True):
+def transcribe_audio(audio_path, use_correction=True, source_language=None):
     """
     Step 3: Sends audio to Deepgram (Nova-3) to get VTT and Text.
     """
@@ -107,9 +107,13 @@ def transcribe_audio(audio_path, use_correction=True):
             "model": "nova-3",
             "smart_format": True,
             "utterances": True,      # Required for VTT conversion
-            "detect_language": True,        
             "diarize": True,         # Required for identifying overlapping dialogue
         }
+        
+        if source_language and source_language != "auto":
+            options["language"] = source_language
+        else:
+            options["detect_language"] = True
         
         # 3. Call API (Once)
         # Using deepgram-sdk v3+ structure: listen.v1.media.transcribe_file

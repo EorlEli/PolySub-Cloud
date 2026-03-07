@@ -30,6 +30,7 @@ import {
 import { toast } from "sonner"
 import {
   SUPPORTED_LANGUAGES,
+  SOURCE_LANGUAGES,
   ACCEPTED_VIDEO_TYPES,
   MAX_FILE_SIZE_BYTES,
 } from "@/lib/constants"
@@ -51,6 +52,7 @@ function formatFileSize(bytes: number): string {
 export default function UploadPage() {
   const [file, setFile] = useState<File | null>(null)
   const [duration, setDuration] = useState<number>(0)
+  const [sourceLanguage, setSourceLanguage] = useState("")
   const [language, setLanguage] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [uploadProgress, setUploadProgress] = useState(0)
@@ -158,6 +160,7 @@ export default function UploadPage() {
         },
         body: JSON.stringify({
           gsPath,
+          sourceLanguage: sourceLanguage || null,
           targetLanguage: language,
           originalFilename: file.name,
           durationSeconds: Math.ceil(duration),
@@ -264,33 +267,63 @@ export default function UploadPage() {
         </Card>
 
         {/* Language selector */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Subtitle Language</CardTitle>
-            <CardDescription>
-              Choose the language for your subtitles.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-col gap-2">
-              <Label htmlFor="language" className="sr-only">
-                Language
-              </Label>
-              <Select value={language} onValueChange={setLanguage}>
-                <SelectTrigger id="language">
-                  <SelectValue placeholder="Select a language" />
-                </SelectTrigger>
-                <SelectContent>
-                  {SUPPORTED_LANGUAGES.map((lang) => (
-                    <SelectItem key={lang.code} value={lang.code}>
-                      {lang.name}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="grid gap-6 md:grid-cols-2">
+          <Card>
+            <CardHeader>
+              <CardTitle>Video Language</CardTitle>
+              <CardDescription>
+                Original language (used for transcription)
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="sourceLanguage" className="sr-only">
+                  Source Language
+                </Label>
+                <Select value={sourceLanguage} onValueChange={setSourceLanguage}>
+                  <SelectTrigger id="sourceLanguage">
+                    <SelectValue placeholder="Auto-Detect" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {SOURCE_LANGUAGES.map((lang) => (
+                      <SelectItem key={lang.code || "auto"} value={lang.code || "auto"}>
+                        {lang.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Subtitle Language</CardTitle>
+              <CardDescription>
+                Choose the language for your subtitles.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col gap-2">
+                <Label htmlFor="language" className="sr-only">
+                  Language
+                </Label>
+                <Select value={language} onValueChange={setLanguage}>
+                  <SelectTrigger id="language">
+                    <SelectValue placeholder="Select a language" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {SUPPORTED_LANGUAGES.map((lang) => (
+                      <SelectItem key={lang.code} value={lang.code}>
+                        {lang.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
 
         {/* Cost estimate */}
         {file && duration > 0 && language && (

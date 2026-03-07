@@ -55,6 +55,7 @@ async def read_index():
 def process_video_endpoint(
     video_file: UploadFile = File(...),
     target_language: str = Form("Portuguese"), 
+    source_language: str = Form(None),
     use_correction: bool = Form(True),
     background_tasks: BackgroundTasks = None
 ):
@@ -68,7 +69,7 @@ def process_video_endpoint(
 
         # 2. Call Core Processor
         # This runs the logic synchronously.
-        result = process_video(video_filename, target_language, use_correction)
+        result = process_video(video_filename, target_language, use_correction, source_language=source_language)
         
         zip_path = result["zip_path"]
         cleanup_list = result["cleanup_files"]
@@ -105,7 +106,8 @@ def process_video_endpoint(
 @app.post("/trigger_cloud_job/")
 async def trigger_cloud_job(
     video_file: UploadFile = File(...),
-    target_language: str = Form("Portuguese")
+    target_language: str = Form("Portuguese"),
+    source_language: str = Form(None)
 ):
     try:
         # 1. Generate Unique Job ID
@@ -155,17 +157,21 @@ async def trigger_cloud_job(
         client = run_v2.JobsClient()
         job_path = client.job_path(PROJECT_ID, REGION, JOB_NAME)
         
+        env_vars = [
+            {"name": "VIDEO_FILENAME", "value": safe_filename},
+            {"name": "TARGET_LANGUAGE", "value": target_language},
+            {"name": "FIRESTORE_DOC_ID", "value": job_id},
+            {"name": "OUTPUT_BUCKET", "value": OUTPUT_BUCKET}
+        ]
+        if source_language and source_language != "auto":
+            env_vars.append({"name": "SOURCE_LANGUAGE", "value": source_language})
+
         request = run_v2.RunJobRequest(
             name=job_path,
             overrides=run_v2.RunJobRequest.Overrides(
                 container_overrides=[
                     run_v2.RunJobRequest.Overrides.ContainerOverride(
-                        env=[
-                            {"name": "VIDEO_FILENAME", "value": safe_filename},
-                            {"name": "TARGET_LANGUAGE", "value": target_language},
-                            {"name": "FIRESTORE_DOC_ID", "value": job_id},
-                            {"name": "OUTPUT_BUCKET", "value": OUTPUT_BUCKET}
-                        ]
+                        env=env_vars
                     )
                 ]
             )
