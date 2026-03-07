@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useAuth } from "@/contexts/AuthContext";
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth, db } from "@/lib/firebase";
 import { doc, setDoc, getDoc } from "firebase/firestore";
@@ -13,6 +14,13 @@ export default function LoginPage() {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const router = useRouter();
+    const { user, loading } = useAuth();
+
+    useEffect(() => {
+        if (!loading && user) {
+            router.replace("/dashboard");
+        }
+    }, [user, loading, router]);
 
     const handleEmailLogin = async (e: React.FormEvent) => {
         e.preventDefault();

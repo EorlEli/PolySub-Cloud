@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
+import { useAuth } from "@/contexts/AuthContext"
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -19,6 +20,7 @@ const navLinks = [
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
+  const { user, loading } = useAuth()
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-xl">
@@ -52,12 +54,22 @@ export function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Button variant="outline" size="sm" className="border-primary/50 hover:border-primary" asChild>
-            <Link href="/login">Sign In</Link>
-          </Button>
-          <Button variant="outline" size="sm" className="border-primary/50 hover:border-primary" asChild>
-            <Link href="/signup">Sign Up</Link>
-          </Button>
+          {!loading && (
+            user ? (
+              <Button size="sm" asChild>
+                <Link href="/dashboard">Dashboard</Link>
+              </Button>
+            ) : (
+              <>
+                <Button variant="outline" size="sm" className="border-primary/50 hover:border-primary" asChild>
+                  <Link href="/login">Sign In</Link>
+                </Button>
+                <Button variant="outline" size="sm" className="border-primary/50 hover:border-primary" asChild>
+                  <Link href="/signup">Sign Up</Link>
+                </Button>
+              </>
+            )
+          )}
         </div>
 
         {/* Mobile menu toggle */}
@@ -96,12 +108,22 @@ export function Navbar() {
               </Link>
             ))}
             <div className="mt-2 flex flex-col gap-2 border-t border-border pt-4">
-              <Button variant="outline" className="border-primary/50" asChild>
-                <Link href="/login">Sign In</Link>
-              </Button>
-              <Button variant="outline" className="border-primary/50" asChild>
-                <Link href="/signup">Sign Up</Link>
-              </Button>
+              {!loading && (
+                user ? (
+                  <Button asChild>
+                    <Link href="/dashboard">Dashboard</Link>
+                  </Button>
+                ) : (
+                  <>
+                    <Button variant="outline" className="border-primary/50" asChild>
+                      <Link href="/login">Sign In</Link>
+                    </Button>
+                    <Button variant="outline" className="border-primary/50" asChild>
+                      <Link href="/signup">Sign Up</Link>
+                    </Button>
+                  </>
+                )
+              )}
             </div>
           </div>
         </div>
