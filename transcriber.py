@@ -107,7 +107,7 @@ def transcribe_audio(audio_path, use_correction=True):
             "model": "nova-3",
             "smart_format": True,
             "utterances": True,      # Required for VTT conversion
-            "detect_language": True, # Auto-detects language
+            "detect_language": True,        
             "diarize": True,         # Required for identifying overlapping dialogue
         }
         
