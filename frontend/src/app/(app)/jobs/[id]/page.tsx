@@ -226,18 +226,20 @@ export default function JobDetailPage({
               </CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-3 sm:flex-row">
-              <Button
-                onClick={() => handleDownload('video')}
-                disabled={isDownloading}
-                className="flex-1"
-              >
-                {isDownloading ? (
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                ) : (
-                  <FileVideo className="mr-2 h-4 w-4" />
-                )}
-                Download Video
-              </Button>
+              {job.burnVideo !== false && (
+                <Button
+                  onClick={() => handleDownload('video')}
+                  disabled={isDownloading}
+                  className="flex-1"
+                >
+                  {isDownloading ? (
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  ) : (
+                    <FileVideo className="mr-2 h-4 w-4" />
+                  )}
+                  Download Video
+                </Button>
+              )}
               <Button
                 variant="outline"
                 onClick={() => handleDownload('vtt')}
