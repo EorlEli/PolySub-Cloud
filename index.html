@@ -182,6 +182,22 @@
                 </div>
             </div>
 
+            <div style="margin-bottom: 1.5rem; text-align: left;">
+                <label for="subtitleColor"
+                    style="display: block; margin-bottom: 0.5rem; text-align: left; font-size: 0.9rem; color: #64748b;">Subtitle
+                    Color</label>
+                <select id="subtitleColor" style="margin-bottom: 0;">
+                    <option value="&H00FFFFFF&" selected>White</option>
+                    <option value="&H0000FFFF&">Yellow</option>
+                    <option value="&H0000FF00&">Green</option>
+                    <option value="&H00FFFF00&">Cyan</option>
+                    <option value="&H00FF0000&">Blue</option>
+                    <option value="&H00FF00FF&">Magenta</option>
+                    <option value="&H000000FF&">Red</option>
+                    <option value="&H00000000&">Black</option>
+                </select>
+            </div>
+
             <div style="margin-bottom: 1.5rem; text-align: left; display: flex; align-items: center; gap: 0.5rem;">
                 <!-- <input type="checkbox" id="useCorrection" checked style="width: auto; margin-right: 8px;">
                 <label for="useCorrection" style="color: #64748b; font-size: 0.95rem; cursor: pointer;">
@@ -280,6 +296,7 @@
             formData.append('video_file', fileInput.files[0]);
             formData.append('target_language', document.getElementById('language').value);
             formData.append('source_language', document.getElementById('sourceLanguage').value);
+            formData.append('subtitle_color', document.getElementById('subtitleColor').value);
             formData.append('use_correction', 'true'); // Defaulting to true as per form
 
             try {

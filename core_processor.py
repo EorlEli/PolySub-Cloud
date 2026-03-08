@@ -15,7 +15,15 @@ from translation_evaluator import evaluate_translations
 from video_processor import burn_subtitles
 from validator import validate_vtt_structure
 
-def process_video(video_path: str, target_language: str, use_correction: bool = True, create_zip: bool = True, source_language: str = None):
+def process_video(
+    video_path: str,
+    target_language: str,
+    use_correction: bool = True,
+    create_zip: bool = True,
+    source_language: str = None,
+    subtitle_color: str = None,
+    burn_video: bool = True
+):
     """
     Core video processing logic.
     Refactored from main.py to be environment-agnostic.
@@ -149,15 +157,19 @@ def process_video(video_path: str, target_language: str, use_correction: bool = 
             vf.write(log_entry)
 
         # --- 10. BURN SUBTITLES ---
-        output_video_path = f"final_output_{video_filename}"
-        print(f"🔥 Burning subtitles into video: {output_video_path}")
-        
-        final_video = burn_subtitles(video_path, temp_vtt_path2, output_video_path, target_language)
-        
-        if not final_video:
-             print("⚠️ Subtitle burning failed.")
+        final_video = None
+        if burn_video:
+            output_video_path = f"final_output_{video_filename}"
+            print(f"🔥 Burning subtitles into video: {output_video_path}")
+            
+            final_video = burn_subtitles(video_path, temp_vtt_path2, output_video_path, subtitle_color=subtitle_color)
+            
+            if not final_video:
+                 print("⚠️ Subtitle burning failed.")
+            else:
+                 cleanup_files_list.append(final_video)
         else:
-             cleanup_files_list.append(final_video)
+            print("⏩ Skipping Subtitle Burn-In Phase (burn_video=False).")
 
         # --- 11. STATS ---
         job_end_time = time.time()

@@ -4,7 +4,7 @@ import shlex
 
 import platform
 
-def burn_subtitles(video_path, vtt_path, output_path, target_language=None):
+def burn_subtitles(video_path, vtt_path, output_path, target_language=None, subtitle_color=None):
     """
     Burns VTT subtitles into a video file using ffmpeg.
     
@@ -13,7 +13,7 @@ def burn_subtitles(video_path, vtt_path, output_path, target_language=None):
         vtt_path (str): Path to the VTT subtitle file.
         output_path (str): Path to save the output video file.
         target_language (str): Optional. Target language of the subtitles.
-
+        subtitle_color (str): Optional. ASS Subtitle Color hex code.
         
     Returns:
         str: Path to the output video file if successful, None otherwise.
@@ -36,7 +36,8 @@ def burn_subtitles(video_path, vtt_path, output_path, target_language=None):
     vtt_path_filter = vtt_path.replace("\\", "/").replace(":", "\\:")
 
     # Determine fallback font style for CJK languages to avoid white squares
-    font_style = ""
+    force_styles = []
+    
     if target_language:
         lang_lower = target_language.lower()
         if any(cjk in lang_lower for cjk in ["chinese", "japanese", "korean"]):
@@ -47,7 +48,14 @@ def burn_subtitles(video_path, vtt_path, output_path, target_language=None):
                 cjk_font = "PingFang SC"
             else:
                 cjk_font = "Noto Sans CJK SC"
-            font_style = f":force_style='Fontname={cjk_font}'"
+            force_styles.append(f"Fontname={cjk_font}")
+            
+    if subtitle_color:
+        force_styles.append(f"PrimaryColour={subtitle_color}")
+        
+    font_style = ""
+    if force_styles:
+        font_style = f":force_style='{','.join(force_styles)}'"
 
     # Construct the ffmpeg command
     # -i input_video -vf "subtitles=filename:force_style='Fontname=Fallback'" -c:a copy output_video

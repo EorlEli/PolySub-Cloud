@@ -6,7 +6,7 @@ const COST_PER_MINUTE = 1; // Example: 1 credit = 1 minute
 
 export async function POST(request: Request) {
     try {
-        const { gsPath, sourceLanguage, targetLanguage, originalFilename, durationSeconds, uid } = await request.json();
+        const { gsPath, sourceLanguage, targetLanguage, originalFilename, durationSeconds, uid, subtitleColor, burnVideo } = await request.json();
 
         if (!gsPath || !targetLanguage || !uid) {
             return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
@@ -21,6 +21,8 @@ export async function POST(request: Request) {
             gsPath,
             sourceLanguage: sourceLanguage || null,
             targetLanguage,
+            subtitleColor: subtitleColor || null,
+            burnVideo: burnVideo !== undefined ? burnVideo : true,
             originalFilename,
             durationSeconds,
             costCredits,
@@ -58,6 +60,12 @@ export async function POST(request: Request) {
         if (sourceLanguage && sourceLanguage !== "auto") {
             envVars.push({ name: "SOURCE_LANGUAGE", value: sourceLanguage });
         }
+
+        if (subtitleColor) {
+            envVars.push({ name: "SUBTITLE_COLOR", value: subtitleColor });
+        }
+
+        envVars.push({ name: "BURN_VIDEO", value: String(burnVideo !== undefined ? burnVideo : true) });
 
         const res = await client.request({
             url,

@@ -12,6 +12,8 @@ FIRESTORE_COLLECTION = os.environ.get("FIRESTORE_COLLECTION", "jobs")
 FIRESTORE_DOC_ID = os.environ.get("FIRESTORE_DOC_ID")
 TARGET_LANGUAGE = os.environ.get("TARGET_LANGUAGE", "Portuguese")
 SOURCE_LANGUAGE = os.environ.get("SOURCE_LANGUAGE")
+SUBTITLE_COLOR = os.environ.get("SUBTITLE_COLOR") # E.g., &H00FFFFFF&
+BURN_VIDEO = os.environ.get("BURN_VIDEO", "true").lower() == "true"
 
 def main():
     print(f"🚀 CLOUD WORKER STARTED for {VIDEO_FILENAME}")
@@ -43,7 +45,14 @@ def main():
 
         # 3. Process Video (Core Logic)
         print("⚙️ Running Core Processor...")
-        result = process_video(local_video_path, TARGET_LANGUAGE, source_language=SOURCE_LANGUAGE, create_zip=False)
+        result = process_video(
+            local_video_path,
+            TARGET_LANGUAGE,
+            source_language=SOURCE_LANGUAGE,
+            subtitle_color=SUBTITLE_COLOR,
+            burn_video=BURN_VIDEO,
+            create_zip=False
+        )
         
         # 4. Upload Results
         print("📤 Uploading Results...")

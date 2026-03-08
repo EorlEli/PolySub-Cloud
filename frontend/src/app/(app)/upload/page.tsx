@@ -18,6 +18,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { Switch } from "@/components/ui/switch"
 import { Progress } from "@/components/ui/progress"
 import {
   Upload,
@@ -33,6 +34,7 @@ import {
   SOURCE_LANGUAGES,
   ACCEPTED_VIDEO_TYPES,
   MAX_FILE_SIZE_BYTES,
+  SUBTITLE_COLORS,
 } from "@/lib/constants"
 import { useAuth } from "@/contexts/AuthContext"
 
@@ -54,6 +56,8 @@ export default function UploadPage() {
   const [duration, setDuration] = useState<number>(0)
   const [sourceLanguage, setSourceLanguage] = useState("")
   const [language, setLanguage] = useState("")
+  const [subtitleColor, setSubtitleColor] = useState(SUBTITLE_COLORS[0].value)
+  const [burnVideo, setBurnVideo] = useState(true)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [uploadProgress, setUploadProgress] = useState(0)
   const fileInputRef = useRef<HTMLInputElement>(null)
@@ -165,6 +169,8 @@ export default function UploadPage() {
           originalFilename: file.name,
           durationSeconds: Math.ceil(duration),
           uid: user.uid,
+          subtitleColor: subtitleColor,
+          burnVideo: burnVideo,
         }),
       });
 
@@ -323,6 +329,38 @@ export default function UploadPage() {
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-1 border border-border rounded-lg p-6 bg-card">
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-row items-center justify-between">
+              <div>
+                <CardTitle className="text-lg">Burn Subtitles to Video</CardTitle>
+                <CardDescription className="mt-1">
+                  Render subtitles permanently into a new video file. If toggled off, you'll only receive the generated subtitle .vtt file.
+                </CardDescription>
+              </div>
+              <Switch checked={burnVideo} onCheckedChange={setBurnVideo} />
+            </div>
+
+            <div className={`transition-opacity duration-200 ${burnVideo ? "opacity-100" : "opacity-50 pointer-events-none"}`}>
+              <Label htmlFor="subtitleColor" className="mb-2 block font-semibold">
+                Subtitle Color
+              </Label>
+              <Select value={subtitleColor} onValueChange={setSubtitleColor} disabled={!burnVideo}>
+                <SelectTrigger id="subtitleColor">
+                  <SelectValue placeholder="Select a color" />
+                </SelectTrigger>
+                <SelectContent>
+                  {SUBTITLE_COLORS.map((color) => (
+                    <SelectItem key={color.value} value={color.value}>
+                      {color.name}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
         </div>
 
         {/* Cost estimate */}

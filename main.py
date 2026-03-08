@@ -56,11 +56,13 @@ def process_video_endpoint(
     video_file: UploadFile = File(...),
     target_language: str = Form("Portuguese"), 
     source_language: str = Form(None),
+    subtitle_color: str = Form(None),
+    burn_video: bool = Form(True),
     use_correction: bool = Form(True),
     background_tasks: BackgroundTasks = None
 ):
     video_filename = f"temp_{video_file.filename}"
-    print(f"\n📥 RECEIVING UPLOAD: {video_filename} -> {target_language}")
+    print(f"\n📥 RECEIVING UPLOAD: {video_filename} -> {target_language} | Color: {subtitle_color}")
     
     try:
         # 1. Save Uploaded File to Disk
@@ -69,7 +71,14 @@ def process_video_endpoint(
 
         # 2. Call Core Processor
         # This runs the logic synchronously.
-        result = process_video(video_filename, target_language, use_correction, source_language=source_language)
+        result = process_video(
+            video_filename,
+            target_language,
+            use_correction,
+            source_language=source_language,
+            subtitle_color=subtitle_color,
+            burn_video=burn_video
+        )
         
         zip_path = result["zip_path"]
         cleanup_list = result["cleanup_files"]
@@ -107,7 +116,9 @@ def process_video_endpoint(
 async def trigger_cloud_job(
     video_file: UploadFile = File(...),
     target_language: str = Form("Portuguese"),
-    source_language: str = Form(None)
+    source_language: str = Form(None),
+    subtitle_color: str = Form(None),
+    burn_video: bool = Form(True)
 ):
     try:
         # 1. Generate Unique Job ID
@@ -149,7 +160,9 @@ async def trigger_cloud_job(
             "status": "queued",
             "created_at": firestore.SERVER_TIMESTAMP,
             "filename": video_file.filename,
-            "target_language": target_language
+            "target_language": target_language,
+            "subtitle_color": subtitle_color,
+            "burn_video": burn_video
         })
 
         # 4. Trigger Cloud Run Job
@@ -165,6 +178,10 @@ async def trigger_cloud_job(
         ]
         if source_language and source_language != "auto":
             env_vars.append({"name": "SOURCE_LANGUAGE", "value": source_language})
+        if subtitle_color:
+            env_vars.append({"name": "SUBTITLE_COLOR", "value": subtitle_color})
+            
+        env_vars.append({"name": "BURN_VIDEO", "value": str(burn_video).lower()})
 
         request = run_v2.RunJobRequest(
             name=job_path,

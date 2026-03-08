@@ -100,3 +100,14 @@ export const ACCEPTED_VIDEO_TYPES = [
 
 export const SESSION_COOKIE_NAME = "__session"
 export const SESSION_EXPIRY_DAYS = 5
+
+export const SUBTITLE_COLORS = [
+  { name: "White", value: "&H00FFFFFF&" },
+  { name: "Yellow", value: "&H0000FFFF&" },
+  { name: "Green", value: "&H0000FF00&" },
+  { name: "Cyan", value: "&H00FFFF00&" },
+  { name: "Blue", value: "&H00FF0000&" },
+  { name: "Magenta", value: "&H00FF00FF&" },
+  { name: "Red", value: "&H000000FF&" },
+  { name: "Black", value: "&H00000000&" },
+]
