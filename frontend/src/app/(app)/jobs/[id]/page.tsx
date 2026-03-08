@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import Link from "next/link"
 import {
   Card,
@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
+import { Progress } from "@/components/ui/progress"
 import { JobStatusBadge } from "@/components/app/job-status-badge"
 import {
   ArrowLeft,
@@ -203,10 +204,13 @@ export default function JobDetailPage({
                     ? "Job is queued for processing"
                     : "Processing your video..."}
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  This page will update automatically. You can safely close
-                  this tab.
-                </p>
+                <div className="mt-2 w-full max-w-md">
+                  <ApproximateProgress
+                    status={job.status}
+                    durationSeconds={job.durationSeconds}
+                    burnVideo={job.burnVideo}
+                  />
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -276,6 +280,80 @@ export default function JobDetailPage({
           </Card>
         )}
       </div>
+    </div>
+  )
+}
+
+function ApproximateProgress({
+  status,
+  durationSeconds,
+  burnVideo
+}: {
+  status: string,
+  durationSeconds?: number,
+  burnVideo?: boolean
+}) {
+  const [progress, setProgress] = useState(0)
+
+  // Calculate estimated total time in seconds
+  const estimatedTotalSeconds = useMemo(() => {
+    if (!durationSeconds) return 180; // default 3 mins if unknown
+
+    // Base processing time: 1.25x duration
+    const baseTime = durationSeconds * 1.5;
+
+    // Burning time: +0.16x duration
+    const isBurning = burnVideo !== false;
+
+    if (isBurning) {
+      return baseTime + (durationSeconds * 0.16);
+    } else {
+      return baseTime;
+    }
+  }, [durationSeconds, burnVideo])
+
+  useEffect(() => {
+    if (status !== "processing" && status !== "pending") return
+
+    if (status === "pending") {
+      setProgress(0)
+      return
+    }
+
+    // Start with a small progress
+    setProgress(5)
+
+    // We want to go from 5% to 95% (which is 90% total) over `estimatedTotalSeconds`
+    // If we update every 1 second, the increment is:
+    const updateIntervalMs = 1000
+    const incrementPerInterval = 90 / (estimatedTotalSeconds / (updateIntervalMs / 1000))
+
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 95) return 95
+
+        return Math.min(prev + incrementPerInterval, 95)
+      })
+    }, updateIntervalMs)
+
+    return () => clearInterval(interval)
+  }, [status, estimatedTotalSeconds])
+
+  if (status !== "pending" && status !== "processing") {
+    return null
+  }
+
+  const estimatedMins = Math.ceil(estimatedTotalSeconds / 60)
+
+  return (
+    <div className="w-full space-y-2">
+      <div className="flex justify-between text-xs text-muted-foreground">
+        <span>
+          {status === "pending" ? "Waiting to start..." : `Running (~${estimatedMins} min${estimatedMins > 1 ? 's' : ''})...`}
+        </span>
+        <span>{Math.round(progress)}%</span>
+      </div>
+      <Progress value={progress} className="h-2" />
     </div>
   )
 }
