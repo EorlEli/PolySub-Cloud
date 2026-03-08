@@ -72,6 +72,7 @@ export async function POST(request: Request) {
             method: "POST",
             data: {
                 overrides: {
+                    timeout: "14400s",
                     containerOverrides: [
                         {
                             env: envVars

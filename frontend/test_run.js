@@ -13,6 +13,7 @@ async function main() {
     const runRequest = {
         name,
         overrides: {
+            timeout: { seconds: 14400 },
             containerOverrides: [
                 {
                     name: "polysub-worker-1",
