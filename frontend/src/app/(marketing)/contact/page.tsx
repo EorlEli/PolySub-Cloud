@@ -28,7 +28,7 @@ export default function ContactPage() {
             </div>
             <h3 className="mt-4 font-semibold text-foreground">Email</h3>
             <p className="mt-1 text-sm text-muted-foreground">
-              support@polysub.com
+              hello@polysub.com
             </p>
           </div>
           <div className="rounded-xl border border-border bg-card p-6">
