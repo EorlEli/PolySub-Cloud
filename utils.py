@@ -9,7 +9,7 @@ PRICING = {
     "gpt-5-nano":  {"input": 0.05, "output": 0.40},
     "gpt-5.2":  {"input": 1.75, "output": 14.00},
     "deepseek/deepseek-v3.2": {"input": 0.25, "output": 0.40},
-    "whisper-1":   0.0065 #0.0043  # Cost per MINUTE of audio
+    "whisper-1": 0.0043  # Cost per MINUTE of audio
 }
 
 def get_llm_client():
