@@ -1,6 +1,6 @@
-import os
 import json
 import time
+import difflib
 from openai import OpenAI
 from dotenv import load_dotenv
 from utils import log_openai_usage, get_llm_client, get_model_name
@@ -113,8 +113,14 @@ def find_matching_translation(original_language_block_text, target_language_sear
                     if matched_text and matched_text[:-1] in target_language_search_window:
                          matched_text = matched_text[:-1]
                     else:
-                         print(f"   ⚠️ Programmatic Verification Failed: '{matched_text}' not in search window.")
-                         raise ValueError(f"Hallucinated match: {matched_text}")
+                         # --- FUZZY FALLBACK ---
+                         fuzzy_match = fuzzy_find_substring(matched_text, target_language_search_window)
+                         if fuzzy_match:
+                             # print(f"   🪄 Fuzzy Match Recovered: '{matched_text}' -> '{fuzzy_match}'")
+                             matched_text = fuzzy_match
+                         else:
+                             print(f"   ⚠️ Programmatic Verification Failed: '{matched_text}' not in search window.")
+                             raise ValueError(f"Hallucinated match: {matched_text}")
 
             # --- HEURISTIC WATCHDOG (NEW) ---
             # Protection against "Colon Merges" or "Run-on Matches"
@@ -190,4 +196,31 @@ def heuristic_trim_match(source_text, match_text):
              return best_candidate
              
     return match_text
+
+def fuzzy_find_substring(query, text, threshold=0.85):
+    """
+    Finds the substring in `text` that most closely resembles `query`.
+    Returns the substring if the similarity ratio is >= threshold, else empty string.
+    """
+    if not query or not text: return ""
+    if query in text: return query
+         
+    best_ratio = 0
+    best_substring = ""
+    
+    q_len = len(query)
+    min_len = max(1, q_len - 5)
+    max_len = min(len(text), q_len + 5)
+    
+    for l in range(min_len, max_len + 1):
+        for i in range(len(text) - l + 1):
+            sub = text[i:i+l]
+            ratio = difflib.SequenceMatcher(None, query, sub).ratio()
+            if ratio > best_ratio:
+                best_ratio = ratio
+                best_substring = sub
+                
+    if best_ratio >= threshold:
+        return best_substring
+    return ""
 
