@@ -26,9 +26,10 @@ def evaluate_translations(original_text, text_v1, text_v2, target_language="Port
     CRITERIA FOR PERFECT TRANSLATION (Score 10/10):
     1. **Accuracy**: Zero loss of meaning. All nuances are preserved.
     2. **Fluency**: Reads like a high-quality original text in {target_language}, not a translation.
-    3. **Tone**: Perfectly matches the register (formal/informal/technical) of the source.
-    4. **Terminology**: Uses standard, domain-appropriate terminology consistently. Does not overcorrect valid but newer proper nouns, recent tech terms, or product names into older, more common entities.
-    5. **Grammar**: Flawless grammar and punctuation.
+    3. **Variant Adherence**: Strictly adheres to the requested language variant (e.g., Brazilian vs European Portuguese) in terms of spelling, grammar, and idioms. Mixed variants should be penalized.
+    4. **Tone**: Perfectly matches the register (formal/informal/technical) of the source.
+    5. **Terminology**: Uses standard, domain-appropriate terminology consistently. Does not overcorrect valid but newer proper nouns, recent tech terms, or product names into older, more common entities.
+    6. **Grammar**: Flawless grammar and punctuation.
     
     SCORING GUIDE:
     - 9-10: Exceptional. Native-level naturalness, perfect accuracy.

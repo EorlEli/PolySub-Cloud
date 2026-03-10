@@ -54,7 +54,7 @@ async def read_index():
 @app.post("/process_video/")
 def process_video_endpoint(
     video_file: UploadFile = File(...),
-    target_language: str = Form("Portuguese"), 
+    target_language: str = Form("Portuguese (Brazilian)"), 
     source_language: str = Form(None),
     subtitle_color: str = Form(None),
     burn_video: bool = Form(True),

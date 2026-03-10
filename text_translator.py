@@ -65,7 +65,8 @@ def translate_full_text(full_text, target_language="Portuguese"):
     
     YOUR MISSION:
     Produce a translation that is 100% natural, idiomatic, and culturally appropriate for {target_language} audiences.
-    massively improving upon literal or machine-like translations.
+    Adhere strictly to the requested variant (e.g., if "Portuguese (Brazilian)" is requested, use Brazilian spelling, grammar, and idioms).
+    Massively improve upon literal or machine-like translations.
     
     GUIDELINES:
     1. **Natural Flow**: The text must read as if it was originally written in {target_language}. Avoid "translationese".
@@ -141,7 +142,7 @@ def verify_translation_quality(source_chunks, translated_chunks, target_language
     
     system_prompt = f"""
     You are a Senior Translation Editor and Quality Assurance Specialist for {target_language}.
-    Your goal is perfection. 
+    Your goal is perfection, ensuring the translation adheres strictly to the nuances and idioms of {target_language}.
     
     TASK:
     Review the [SOURCE] and [DRAFT TRANSLATION]. 
