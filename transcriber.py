@@ -8,6 +8,7 @@ from utils import get_llm_client
 # from deepgram_captions import DeepgramConverter, webvtt
 
 from corrector import apply_corrections
+from normalizer import normalize_proper_nouns
 
 load_dotenv()
 
@@ -122,6 +123,15 @@ def transcribe_audio(audio_path, use_correction=True, source_language=None):
             **options
         )
         
+        # 3b. Normalize inconsistent proper nouns using confidence data
+        #     Must run on dict form so we can access word-level confidence
+        import json
+        if not isinstance(response, dict):
+            if hasattr(response, "to_dict"): response = response.to_dict()
+            elif hasattr(response, "model_dump"): response = response.model_dump()
+            else: response = json.loads(response.to_json())
+        response = normalize_proper_nouns(response)
+
         # 4. LLM Correction
         if use_correction:
             print("   🧠 Analyzing and correcting transcription...")
@@ -129,16 +139,8 @@ def transcribe_audio(audio_path, use_correction=True, source_language=None):
             response, transcript_text = apply_corrections(response, openai_client)
         else:
             print("   ⏩ Skipping LLM correction (User disabled it).")
-            transcript_text = response.results.channels[0].alternatives[0].transcript
+            transcript_text = response["results"]["channels"][0]["alternatives"][0]["transcript"]
         
-        # 5. Generate VTT (Custom Logic)
-        
-        # Normalize to dict if not already (for the VTT generator & normalization)
-        import json
-        if not isinstance(response, dict):
-             if hasattr(response, "to_dict"): response = response.to_dict()
-             elif hasattr(response, "model_dump"): response = response.model_dump()
-             else: response = json.loads(response.to_json())
 
         # 5b. Normalize Text (Fix "U. S." -> "U.S.")
         transcript_text = normalize_spaced_acronyms(transcript_text)
