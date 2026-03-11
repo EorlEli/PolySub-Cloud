@@ -162,7 +162,7 @@ def process_video(
             output_video_path = f"final_output_{video_filename}"
             print(f"🔥 Burning subtitles into video: {output_video_path}")
             
-            final_video = burn_subtitles(video_path, temp_vtt_path2, output_video_path, subtitle_color=subtitle_color)
+            final_video = burn_subtitles(video_path, temp_vtt_path2, output_video_path, target_language=target_language, subtitle_color=subtitle_color)
             
             if not final_video:
                  print("⚠️ Subtitle burning failed.")
