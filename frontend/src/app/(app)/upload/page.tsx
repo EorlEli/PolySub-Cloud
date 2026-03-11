@@ -73,7 +73,11 @@ export default function UploadPage() {
       const fileExtension = selectedFile.name.split('.').pop()?.toLowerCase() || '';
       const validExtensions = ['mp4', 'mov', 'avi', 'webm', 'mkv'];
 
-      if (!ACCEPTED_VIDEO_TYPES.includes(selectedFile.type) && !validExtensions.includes(fileExtension)) {
+      // Check by extension first (more reliable for AVI/MKV), then fallback to MIME type
+      const isValidExtension = validExtensions.includes(fileExtension);
+      const isValidMimeType = selectedFile.type && ACCEPTED_VIDEO_TYPES.includes(selectedFile.type);
+      
+      if (!isValidExtension && !isValidMimeType) {
         toast.error("Unsupported file format. Please use MP4, MOV, AVI, WebM, or MKV.")
         return
       }
