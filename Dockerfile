@@ -9,7 +9,10 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     fonts-liberation \
     fonts-noto-cjk \
-    && rm -rf /var/lib/apt/lists/*
+    fonts-noto-core \
+    fontconfig \
+    && rm -rf /var/lib/apt/lists/* \
+    && fc-cache -fv
 
 # Set working directory
 WORKDIR /app

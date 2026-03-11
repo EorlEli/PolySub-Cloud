@@ -49,14 +49,15 @@ def burn_subtitles(video_path, vtt_path, output_path, target_language=None, subt
             else:
                 cjk_font = "Noto Sans CJK SC"
             force_styles.append(f"Fontname={cjk_font}")
-        elif "arabic" in lang_lower:
+        elif "arabic" in lang_lower or any(rtl in lang_lower for rtl in ["hebrew", "persian", "farsi", "urdu"]):
             os_name = platform.system()
             if os_name == "Windows":
                 arabic_font = "Arial"
             elif os_name == "Darwin":
                 arabic_font = "Arial"
             else:
-                arabic_font = "Noto Sans Arabic"
+                # Use Noto Sans which includes Arabic glyphs from fonts-noto-core
+                arabic_font = "Noto Sans"
             force_styles.append(f"Fontname={arabic_font}")            
     if subtitle_color:
         force_styles.append(f"PrimaryColour={subtitle_color}")
