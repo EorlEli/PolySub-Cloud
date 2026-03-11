@@ -93,8 +93,8 @@ export default function UploadPage() {
       }
       video.onerror = () => {
         window.URL.revokeObjectURL(video.src)
-        toast.error("Could not read video metadata. Please try another file.")
-        setFile(null)
+        toast.warning("Could not automatically read video duration. Cost will be calculated during processing.")
+        setDuration(0)
       }
       video.src = URL.createObjectURL(selectedFile)
     },
@@ -111,7 +111,7 @@ export default function UploadPage() {
   )
 
   const handleSubmit = async () => {
-    if (!file || !language || !duration || !user) return
+    if (!file || !language || !user) return
 
     setIsSubmitting(true)
     setUploadProgress(0)
@@ -367,7 +367,7 @@ export default function UploadPage() {
         </div>
 
         {/* Cost estimate */}
-        {file && duration > 0 && language && (
+        {file && language && (
           <Card
             className={
               hasEnoughCredits
@@ -384,8 +384,9 @@ export default function UploadPage() {
                 )}
                 <div>
                   <p className="text-sm font-medium text-foreground">
-                    Cost: {costCredits} credit{costCredits !== 1 ? "s" : ""}{" "}
-                    ({costCredits} min)
+                    {duration > 0
+                      ? `Cost: ${costCredits} credit${costCredits !== 1 ? "s" : ""} (${costCredits} min)`
+                      : "Cost: Calculated during processing"}
                   </p>
                   <p className="text-xs text-muted-foreground">
                     Your balance: {credits} minutes
@@ -418,7 +419,7 @@ export default function UploadPage() {
         <Button
           size="lg"
           disabled={
-            !file || !language || !duration || !hasEnoughCredits || isSubmitting
+            !file || !language || !hasEnoughCredits || isSubmitting
           }
           onClick={handleSubmit}
         >
