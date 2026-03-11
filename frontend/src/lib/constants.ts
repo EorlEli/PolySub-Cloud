@@ -94,6 +94,8 @@ export const ACCEPTED_VIDEO_TYPES = [
   "video/mp4",
   "video/quicktime",
   "video/x-msvideo",
+  "video/avi",
+  "video/msvideo",
   "video/webm",
   "video/x-matroska",
 ]

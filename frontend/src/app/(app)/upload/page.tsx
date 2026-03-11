@@ -70,7 +70,10 @@ export default function UploadPage() {
 
   const handleFileSelect = useCallback(
     (selectedFile: File) => {
-      if (!ACCEPTED_VIDEO_TYPES.includes(selectedFile.type)) {
+      const fileExtension = selectedFile.name.split('.').pop()?.toLowerCase() || '';
+      const validExtensions = ['mp4', 'mov', 'avi', 'webm', 'mkv'];
+
+      if (!ACCEPTED_VIDEO_TYPES.includes(selectedFile.type) && !validExtensions.includes(fileExtension)) {
         toast.error("Unsupported file format. Please use MP4, MOV, AVI, WebM, or MKV.")
         return
       }
@@ -122,7 +125,7 @@ export default function UploadPage() {
         },
         body: JSON.stringify({
           filename: file.name,
-          contentType: file.type,
+          contentType: file.type || "application/octet-stream",
         }),
       });
 
@@ -260,7 +263,7 @@ export default function UploadPage() {
                 <input
                   ref={fileInputRef}
                   type="file"
-                  accept="video/*"
+                  accept="video/*,.mkv,.avi,.webm,.mov,.mp4"
                   className="hidden"
                   onChange={(e) => {
                     const f = e.target.files?.[0]
