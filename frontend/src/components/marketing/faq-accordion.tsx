@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "What video formats are supported?",
     answer:
-      "We support MP4, MOV (QuickTime), AVI, WebM, and MKV formats. The maximum file size is 2GB, and the maximum duration is 3 hours.",
+      "We support MP4, MOV (QuickTime), WebM, and MKV formats. The maximum file size is 2GB, and the maximum duration is 3 hours.",
   },
   {
     question: "How does the credit system work?",
