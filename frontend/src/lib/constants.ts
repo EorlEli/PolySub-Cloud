@@ -93,9 +93,6 @@ export const MAX_DURATION_SECONDS = 3 * 60 * 60 // 3 hours
 export const ACCEPTED_VIDEO_TYPES = [
   "video/mp4",
   "video/quicktime",
-  "video/x-msvideo",
-  "video/avi",
-  "video/msvideo",
   "video/webm",
   "video/x-matroska",
 ]

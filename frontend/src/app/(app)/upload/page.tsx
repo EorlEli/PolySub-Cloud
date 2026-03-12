@@ -71,14 +71,14 @@ export default function UploadPage() {
   const handleFileSelect = useCallback(
     (selectedFile: File) => {
       const fileExtension = selectedFile.name.split('.').pop()?.toLowerCase() || '';
-      const validExtensions = ['mp4', 'mov', 'avi', 'webm', 'mkv'];
+      const validExtensions = ['mp4', 'mov', 'webm', 'mkv'];
 
       // Check by extension first (more reliable for AVI/MKV), then fallback to MIME type
       const isValidExtension = validExtensions.includes(fileExtension);
       const isValidMimeType = selectedFile.type && ACCEPTED_VIDEO_TYPES.includes(selectedFile.type);
 
       if (!isValidExtension && !isValidMimeType) {
-        toast.error("Unsupported file format. Please use MP4, MOV, AVI, WebM, or MKV.")
+        toast.error("Unsupported file format. Please use MP4, MOV, WebM, or MKV.")
         return
       }
       if (selectedFile.size > MAX_FILE_SIZE_BYTES) {
@@ -213,7 +213,7 @@ export default function UploadPage() {
           <CardHeader>
             <CardTitle>Video File</CardTitle>
             <CardDescription>
-              Supported formats: MP4, MOV, AVI, WebM, MKV. Maximum size: 2GB.
+              Supported formats: MP4, MOV, WebM, MKV. Maximum size: 2GB.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -263,13 +263,13 @@ export default function UploadPage() {
                     Drop your video here or click to browse
                   </p>
                   <p className="mt-1 text-xs text-muted-foreground">
-                    MP4, MOV, AVI, WebM, MKV up to 2GB
+                    MP4, MOV, WebM, MKV up to 2GB
                   </p>
                 </div>
                 <input
                   ref={fileInputRef}
                   type="file"
-                  accept="video/*,.mkv,.avi,.webm,.mov,.mp4"
+                  accept="video/*,.mkv,.webm,.mov,.mp4"
                   className="hidden"
                   onChange={(e) => {
                     const f = e.target.files?.[0]
