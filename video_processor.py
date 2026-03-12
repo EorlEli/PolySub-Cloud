@@ -56,12 +56,8 @@ def burn_subtitles(video_path, vtt_path, output_path, target_language=None, subt
             elif os_name == "Darwin":
                 arabic_font = "Geeza Pro"
             else:
-                # Use Liberation Sans which has Arabic support and is in fonts-liberation
-                # as a fallback, or specify path to actual font file for reliability
-                arabic_font = "/usr/share/fonts/opentype/liberation/LiberationSans-Regular.otf"
-                # Check if font file exists, if not fall back to font name
-                if not os.path.exists(arabic_font):
-                    arabic_font = "Liberation Sans"
+                # Use FreeSans which has full Arabic/RTL support (from fonts-freefont-ttf package)
+                arabic_font = "FreeSans"
             force_styles.append(f"Fontname={arabic_font}")            
     if subtitle_color:
         force_styles.append(f"PrimaryColour={subtitle_color}")
