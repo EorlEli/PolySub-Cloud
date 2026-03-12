@@ -23,7 +23,6 @@ export const CREDIT_PACKS: CreditPack[] = [
 ]
 
 export const SOURCE_LANGUAGES: SupportedLanguage[] = [
-  { code: "", name: "Auto-Detect" },
   { code: "bg", name: "Bulgarian" },
   { code: "ca", name: "Catalan" },
   { code: "cs", name: "Czech" },

@@ -297,11 +297,11 @@ export default function UploadPage() {
                 </Label>
                 <Select value={sourceLanguage} onValueChange={setSourceLanguage}>
                   <SelectTrigger id="sourceLanguage">
-                    <SelectValue placeholder="Auto-Detect" />
+                    <SelectValue placeholder="Select video language" />
                   </SelectTrigger>
                   <SelectContent>
                     {SOURCE_LANGUAGES.map((lang) => (
-                      <SelectItem key={lang.code || "auto"} value={lang.code || "auto"}>
+                      <SelectItem key={lang.code} value={lang.code}>
                         {lang.name}
                       </SelectItem>
                     ))}
