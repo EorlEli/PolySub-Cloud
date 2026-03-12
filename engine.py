@@ -1,7 +1,7 @@
 from matcher import find_matching_translation
 from distributor import distribute_translation
 
-def run_alignment_engine(blocks, full_target_text):
+def run_alignment_engine(blocks, full_target_text, is_vertical=False):
     """
     The Core Logic: Takes Source VTT Blocks + Translated Text
     Returns: A list of aligned segment dictionaries.
@@ -168,7 +168,7 @@ def run_alignment_engine(blocks, full_target_text):
 
         # --- STEP D: Distribute Lines ---
         # distribute_translation uses GPT-5-nano internally now
-        new_segments = distribute_translation(block, matched_text)
+        new_segments = distribute_translation(block, matched_text, is_vertical=is_vertical)
         final_segments.extend(new_segments)
         
         i += 1

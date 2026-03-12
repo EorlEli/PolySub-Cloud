@@ -15,6 +15,21 @@ from translation_evaluator import evaluate_translations
 from video_processor import burn_subtitles
 from validator import validate_vtt_structure
 
+def is_vertical_video(video_path):
+    try:
+        import subprocess
+        import json
+        cmd = ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "json", video_path]
+        output = subprocess.check_output(cmd).decode('utf-8')
+        data = json.loads(output)
+        width = int(data['streams'][0]['width'])
+        height = int(data['streams'][0]['height'])
+        return height > width
+    except Exception as e:
+        print(f"⚠️ Could not detect video dimensions: {e}")
+        return False
+
+
 def process_video(
     video_path: str,
     target_language: str,
@@ -122,7 +137,8 @@ def process_video(
 
         # --- 7. ALIGNMENT ENGINE ---
         blocks = read_vtt(temp_vtt_path)
-        final_segments = run_alignment_engine(blocks, full_target_text)
+        is_vertical = is_vertical_video(video_path)
+        final_segments = run_alignment_engine(blocks, full_target_text, is_vertical=is_vertical)
 
         # --- 8. OUTPUT GENERATION (VTT) ---
         output_vtt = "WEBVTT\n\n"

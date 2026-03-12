@@ -1,6 +1,6 @@
 import re
 
-def distribute_translation(original_block, translated_text):
+def distribute_translation(original_block, translated_text, is_vertical=False):
     if not translated_text:
         return []
 
@@ -16,7 +16,13 @@ def distribute_translation(original_block, translated_text):
     char_count = len(translated_text)
     cps = char_count / total_duration if total_duration > 0 else 0
     is_high_density = cps > 22.0
-    max_chars_per_block = 110 if is_high_density else 80
+    
+    if is_vertical:
+        max_chars_per_block = 50 if is_high_density else 35
+        max_line_len = 20
+    else:
+        max_chars_per_block = 110 if is_high_density else 80
+        max_line_len = 42
 
     print(f"   [DEBUG DISTRIBUTOR] Start: {start_seconds}s | End: {end_seconds}s | Dur: {total_duration}s")
     print(f"   [DEBUG DISTRIBUTOR] Char Count: {char_count} | CPS: {cps:.1f} | High Density: {is_high_density}")
@@ -67,7 +73,7 @@ def distribute_translation(original_block, translated_text):
         final_segments.append({
             "start": format_timestamp(seg["start_sec"]),
             "end": format_timestamp(seg["end_sec"]),
-            "text": wrap_text(seg["text"], high_density=is_high_density)
+            "text": wrap_text(seg["text"], max_line=max_line_len, high_density=is_high_density)
         })
 
     return final_segments
