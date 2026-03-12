@@ -54,10 +54,11 @@ def get_corrections(utterances, topic, client, model="gpt-5-nano"):
     2. Check that the adjectives describing nouns make sense in the context of the identified topic.
     
     RULES:
-    1. Only correct CLEAR errors where the word is out of place. Do NOT overcorrect seemingly unknown but phonetically valid proper nouns, recent technologies, product names, or newly released LLM models into older, more common entities. Trust that the speaker is referencing real, modern terms.
-    2. STRICT DOMAIN RULE: If the topic is related to Tech, Software, AI, or similar fields, NEVER autocorrect unknown nouns. Assume unknown names (like 'OpenClaw' or newly released LLM models) are real. When in doubt, DO NOT CORRECT.
-    3. Example: "The code is intent" -> "The code is indented" (if topic is Programming).
-    4. Example: "The sky is blue" -> NO CHANGE.
+    1. Only correct CLEAR errors where the word is out of place and the replacement SOUNDS HIGHLY SIMILAR to the original text. You are fixing audio mistranscriptions, not factual errors.
+    2. PROPER NOUN RULE: You MUST NOT autocorrect proper nouns (e.g., names of people, places, organizations) UNLESS they are clearly mistranscribed technical jargon.
+    3. STRICT DOMAIN RULE: If the topic is related to Tech, Software, AI, or similar fields, NEVER autocorrect unknown technologies. Assume unknown names (like 'OpenClaw' or newly released LLM models) are real. When in doubt, DO NOT CORRECT.
+    4. Example: "The code is intent" -> "The code is indented" (sounds similar, makes sense in Programming).
+    5. Example: "General Caine, Chairman of Joint Chiefs" -> NO CHANGE. Do not fix factual errors or hallucinations from the transcription if they do not sound similar.
     5. Provide the output as a JSON object with a key "corrections" containing a list of objects.
     6. Each object must have: 
        - "utterance_id": The ID of the line containing the error (Usage: reference the [ID: X] tags) It *must* be an int.
