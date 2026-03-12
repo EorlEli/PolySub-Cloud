@@ -52,9 +52,9 @@ def burn_subtitles(video_path, vtt_path, output_path, target_language=None, subt
         elif "arabic" in lang_lower or any(rtl in lang_lower for rtl in ["hebrew", "persian", "farsi", "urdu"]):
             os_name = platform.system()
             if os_name == "Windows":
-                arabic_font = "Arial"
+                arabic_font = "Tahoma"
             elif os_name == "Darwin":
-                arabic_font = "Arial"
+                arabic_font = "Geeza Pro"
             else:
                 # Use Noto Sans which includes Arabic glyphs from fonts-noto-core
                 arabic_font = "Noto Sans"
