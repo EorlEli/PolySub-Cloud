@@ -76,7 +76,7 @@ export default function UploadPage() {
       // Check by extension first (more reliable for AVI/MKV), then fallback to MIME type
       const isValidExtension = validExtensions.includes(fileExtension);
       const isValidMimeType = selectedFile.type && ACCEPTED_VIDEO_TYPES.includes(selectedFile.type);
-      
+
       if (!isValidExtension && !isValidMimeType) {
         toast.error("Unsupported file format. Please use MP4, MOV, AVI, WebM, or MKV.")
         return
@@ -121,6 +121,8 @@ export default function UploadPage() {
     setUploadProgress(0)
 
     try {
+      const uploadContentType = file.type || "application/octet-stream";
+
       // 1. Get Signed URL from our backend
       const signRes = await fetch("/api/upload/sign", {
         method: "POST",
@@ -129,7 +131,7 @@ export default function UploadPage() {
         },
         body: JSON.stringify({
           filename: file.name,
-          contentType: file.type || "application/octet-stream",
+          contentType: uploadContentType,
         }),
       });
 
@@ -159,7 +161,7 @@ export default function UploadPage() {
         })
 
         xhr.open("PUT", signedUrl)
-        xhr.setRequestHeader("Content-Type", file.type)
+        xhr.setRequestHeader("Content-Type", uploadContentType)
         xhr.send(file)
       })
 
