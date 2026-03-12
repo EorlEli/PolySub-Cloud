@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     fonts-liberation \
     fonts-noto-cjk \
     fonts-noto-core \
-    fonts-noto-mono \
+    fonts-freefont-ttf \
     fontconfig \
     && rm -rf /var/lib/apt/lists/* \
     && fc-cache -fv
