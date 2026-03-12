@@ -56,8 +56,8 @@ def burn_subtitles(video_path, vtt_path, output_path, target_language=None, subt
             elif os_name == "Darwin":
                 arabic_font = "Geeza Pro"
             else:
-                # Use Noto Sans which includes Arabic glyphs from fonts-noto-core
-                arabic_font = "Noto Sans"
+                # Use Noto Sans Arabic for proper Arabic glyph support (from fonts-noto-extra)
+                arabic_font = "Noto Sans Arabic"
             force_styles.append(f"Fontname={arabic_font}")            
     if subtitle_color:
         force_styles.append(f"PrimaryColour={subtitle_color}")
