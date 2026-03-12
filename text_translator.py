@@ -78,7 +78,7 @@ def translate_full_text(full_text, target_language="Portuguese"):
     7. **Structure**: Use natural sentence structure in {target_language}.    
     8. **Completeness**: Translate every single sentence. Do not summarize or skip text.
     9. **Repetitions**: Keep repeated phrases (e.g., "Doing good. Doing good." -> "Estou bem. Estou bem.").
-    10. **1:1 rule**: Translate one original sentence, the one which ends with a dot, question mark or exclamation mark, into one translated sentence, which ends with a dot, question mark or exclamation mark.
+    10. **1:1 rule**: Translate one original sentence, the one which ends with a dot, question mark or exclamation mark, into one translated sentence, which ends with a dot, question mark or exclamation mark. You may freely restructure word order, clause order, and phrasing *within that translated sentence* to make the result fully natural in {target_language}.
     11. **Short words and fillers**: Pay meticulous attention to short sentences, interjections, and filler words (e.g., "Yeah.", "Right?", "No?", "Okay.", "Well,"). You MUST translate every single one of them. NEVER drop or merge them.
     12. **Dialogue Dashes**: If a source sentence starts with a hyphen/dash (-), it indicates a change in speaker or overlapping dialogue. You MUST preserve the starting dash in your translation.
     13. **Proper Nouns & Tech Names**: Do NOT "correct", alter, or "localize" seemingly unknown but valid proper nouns, recent technologies, product names, or newly released LLM models into older, more common entities. Trust the source text for proper nouns.
