@@ -14,7 +14,7 @@ const faqs = [
   {
     question: "How does the credit system work?",
     answer:
-      "1 credit equals 1 minute of video processing. Credits are deducted when you submit a video based on its duration (rounded up to the nearest minute). Credits never expire.",
+      "1 credit equals 1 minute of video processing for a standard subtitle file (.vtt). If you want the subtitles permanently burned into your video, it costs 1.5 credits per minute. Credits are deducted based on the video duration (rounded up to the nearest minute) and never expire.",
   },
   {
     question: "What languages are supported?",
