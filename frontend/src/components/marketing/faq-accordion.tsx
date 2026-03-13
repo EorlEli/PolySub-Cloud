@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "How long does processing take?",
     answer:
-      "Processing time depends on the video length and current load. Most videos under 30 minutes are processed within 5-15 minutes. You can track progress in real-time from your dashboard.",
+      "As a rule of thumb, processing time is typically about 1.5 times the length of your video. For example, a 10-minute video usually takes around 15 minutes to process. If you select the burn-in option for longer videos, processing may take slightly longer. You can track progress in real-time from your dashboard.",
   },
   {
     question: "What do I get after processing?",
