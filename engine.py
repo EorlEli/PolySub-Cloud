@@ -1,7 +1,7 @@
 from matcher import find_matching_translation
 from distributor import distribute_translation
 
-def run_alignment_engine(blocks, full_target_text, is_vertical=False):
+def run_alignment_engine(blocks, full_target_text, is_vertical=False, progress_callback=None):
     """
     The Core Logic: Takes Source VTT Blocks + Translated Text
     Returns: A list of aligned segment dictionaries.
@@ -9,10 +9,14 @@ def run_alignment_engine(blocks, full_target_text, is_vertical=False):
     pt_cursor = 0
     final_segments = []
     WINDOW_SIZE = 500  # Adjust if needed for Nano context limits
+    total_blocks = len(blocks)
 
-    print(f"   🚀 Starting Alignment Engine on {len(blocks)} blocks...")
+    print(f"   🚀 Starting Alignment Engine on {total_blocks} blocks...")
     i = 0
     while i < len(blocks):
+        # Report matching progress
+        if progress_callback:
+            progress_callback("matching", i + 1, total_blocks)
         block = blocks[i]
         original_language_block_text = " ".join([l['text'] for l in block])
         block_start = block[0]['start']

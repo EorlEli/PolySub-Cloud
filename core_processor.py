@@ -37,7 +37,8 @@ def process_video(
     create_zip: bool = True,
     source_language: str = None,
     subtitle_color: str = None,
-    burn_video: bool = True
+    burn_video: bool = True,
+    progress_callback=None
 ):
     """
     Core video processing logic.
@@ -85,6 +86,8 @@ def process_video(
         cleanup_files_list.append(audio_path)
 
         # --- 3. TRANSCRIBE ---
+        if progress_callback:
+            progress_callback("transcribing")
         vtt_content, full_english_text = transcribe_audio(audio_path, use_correction=use_correction, source_language=source_language)
 
         # CALCULATE Speech2Text COST
@@ -106,6 +109,8 @@ def process_video(
         cleanup_files_list.append(temp_vtt_path)
 
         # --- 4. TRANSLATE TEXT (GPT) ---
+        if progress_callback:
+            progress_callback("translating")
         full_target_text1, source_chunks, translated_chunks = translate_full_text(full_english_text, target_language)
         if not full_target_text1:
             raise Exception("Translation failed.")
@@ -138,7 +143,7 @@ def process_video(
         # --- 7. ALIGNMENT ENGINE ---
         blocks = read_vtt(temp_vtt_path)
         is_vertical = is_vertical_video(video_path)
-        final_segments = run_alignment_engine(blocks, full_target_text, is_vertical=is_vertical)
+        final_segments = run_alignment_engine(blocks, full_target_text, is_vertical=is_vertical, progress_callback=progress_callback)
 
         # --- 8. OUTPUT GENERATION (VTT) ---
         output_vtt = "WEBVTT\n\n"
@@ -175,6 +180,8 @@ def process_video(
         # --- 10. BURN SUBTITLES ---
         final_video = None
         if burn_video:
+            if progress_callback:
+                progress_callback("burning")
             output_video_path = f"final_output_{video_filename}"
             print(f"🔥 Burning subtitles into video: {output_video_path}")
             
