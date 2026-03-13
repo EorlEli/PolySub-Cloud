@@ -205,9 +205,9 @@ export default function JobDetailPage({
                     : "Processing your video..."}
                 </p>
                 <div className="mt-2 w-full max-w-md">
-                  <ApproximateProgress
+                  <StageProgress
                     status={job.status}
-                    durationSeconds={job.durationSeconds}
+                    progress={job.progress}
                     burnVideo={job.burnVideo}
                   />
                 </div>
@@ -284,76 +284,104 @@ export default function JobDetailPage({
   )
 }
 
-function ApproximateProgress({
+const PROCESSING_STAGES = [
+  { key: "downloading", label: "Downloading" },
+  { key: "transcribing", label: "Transcribing" },
+  { key: "translating", label: "Translating" },
+  { key: "matching", label: "Matching" },
+  { key: "burning", label: "Burning subtitles" },
+  { key: "uploading", label: "Uploading" },
+] as const
+
+type StageKey = typeof PROCESSING_STAGES[number]["key"]
+
+function StageProgress({
   status,
-  durationSeconds,
-  burnVideo
+  progress,
+  burnVideo,
 }: {
-  status: string,
-  durationSeconds?: number,
+  status: string
+  progress?: {
+    stage?: StageKey
+    stageCurrent?: number
+    stageTotal?: number
+  }
   burnVideo?: boolean
 }) {
-  const [progress, setProgress] = useState(0)
-
-  // Calculate estimated total time in seconds
-  const estimatedTotalSeconds = useMemo(() => {
-    if (!durationSeconds) return 180; // default 3 mins if unknown
-
-    // Base processing time: 1.25x duration
-    const baseTime = durationSeconds * 1.5;
-
-    // Burning time: +0.16x duration
-    const isBurning = burnVideo !== false;
-
-    if (isBurning) {
-      return baseTime + (durationSeconds * 0.16);
-    } else {
-      return baseTime;
-    }
-  }, [durationSeconds, burnVideo])
-
-  useEffect(() => {
-    if (status !== "processing" && status !== "pending") return
-
-    if (status === "pending") {
-      setProgress(0)
-      return
-    }
-
-    // Start with a small progress
-    setProgress(5)
-
-    // We want to go from 5% to 95% (which is 90% total) over `estimatedTotalSeconds`
-    // If we update every 1 second, the increment is:
-    const updateIntervalMs = 1000
-    const incrementPerInterval = 90 / (estimatedTotalSeconds / (updateIntervalMs / 1000))
-
-    const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 95) return 95
-
-        return Math.min(prev + incrementPerInterval, 95)
-      })
-    }, updateIntervalMs)
-
-    return () => clearInterval(interval)
-  }, [status, estimatedTotalSeconds])
-
   if (status !== "pending" && status !== "processing") {
     return null
   }
 
-  const estimatedMins = Math.ceil(estimatedTotalSeconds / 60)
+  // Filter out burning stage if burnVideo is false
+  const stages = burnVideo === false 
+    ? PROCESSING_STAGES.filter(s => s.key !== "burning")
+    : PROCESSING_STAGES
+
+  const currentStage = progress?.stage
+  const currentStageIndex = currentStage 
+    ? stages.findIndex(s => s.key === currentStage)
+    : -1
+
+  // Get the display label for the current stage
+  const currentStageInfo = currentStage 
+    ? stages.find(s => s.key === currentStage)
+    : null
+
+  // Build the progress text
+  let progressText = "Waiting to start..."
+  if (status === "processing" && currentStageInfo) {
+    progressText = currentStageInfo.label
+    // Add block progress for matching stage
+    if (currentStage === "matching" && progress?.stageCurrent && progress?.stageTotal) {
+      progressText += ` (${progress.stageCurrent}/${progress.stageTotal})`
+    }
+    progressText += "..."
+  }
 
   return (
-    <div className="w-full space-y-2">
-      <div className="flex justify-between text-xs text-muted-foreground">
-        <span>
-          {status === "pending" ? "Waiting to start..." : `Running (~${estimatedMins} min${estimatedMins > 1 ? 's' : ''})...`}
-        </span>
-        <span>{Math.round(progress)}%</span>
+    <div className="w-full space-y-3">
+      {/* Stage indicator pills */}
+      <div className="flex flex-wrap gap-1.5">
+        {stages.map((stage, index) => {
+          const isCompleted = currentStageIndex > index
+          const isCurrent = currentStageIndex === index
+          const isPending = currentStageIndex < index
+
+          return (
+            <div
+              key={stage.key}
+              className={`
+                flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium transition-colors
+                ${isCompleted ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400" : ""}
+                ${isCurrent ? "bg-primary/15 text-primary" : ""}
+                ${isPending ? "bg-muted text-muted-foreground/60" : ""}
+              `}
+            >
+              {isCompleted && (
+                <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              )}
+              {isCurrent && (
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                </span>
+              )}
+              <span>{stage.label}</span>
+              {/* Show block count for matching */}
+              {isCurrent && stage.key === "matching" && progress?.stageCurrent && progress?.stageTotal && (
+                <span className="text-[10px] opacity-70">
+                  {progress.stageCurrent}/{progress.stageTotal}
+                </span>
+              )}
+            </div>
+          )
+        })}
       </div>
-      <Progress value={progress} className="h-2" />
+
+      {/* Current stage description */}
+      <p className="text-xs text-muted-foreground">{progressText}</p>
     </div>
   )
 }

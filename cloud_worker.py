@@ -30,12 +30,27 @@ def main():
 
     doc_ref = firestore_client.collection(FIRESTORE_COLLECTION).document(FIRESTORE_DOC_ID)
 
+    # Progress callback to update Firestore with current stage
+    def update_progress(stage: str, current: int = None, total: int = None):
+        """Update Firestore with processing progress."""
+        progress_data = {"stage": stage}
+        if current is not None:
+            progress_data["stageCurrent"] = current
+        if total is not None:
+            progress_data["stageTotal"] = total
+        try:
+            doc_ref.update({"progress": progress_data})
+            print(f"📊 Progress: {stage}" + (f" ({current}/{total})" if current is not None else ""))
+        except Exception as e:
+            print(f"⚠️ Failed to update progress: {e}")
+
     try:
         # 1. Update Status to Processing
         # Use set(merge=True) so it creates the document if it doesn't exist (e.g. manual testing)
         doc_ref.set({"status": "processing", "worker_id": os.environ.get("HOSTNAME")}, merge=True)
 
         # 2. Download Video
+        update_progress("downloading")
         print(f"📥 Downloading {VIDEO_FILENAME} from {INPUT_BUCKET_NAME}...")
         bucket = storage_client.bucket(INPUT_BUCKET_NAME)
         blob = bucket.blob(VIDEO_FILENAME)
@@ -51,10 +66,12 @@ def main():
             source_language=SOURCE_LANGUAGE,
             subtitle_color=SUBTITLE_COLOR,
             burn_video=BURN_VIDEO,
-            create_zip=False
+            create_zip=False,
+            progress_callback=update_progress
         )
         
         # 4. Upload Results
+        update_progress("uploading")
         print("📤 Uploading Results...")
         output_bucket = storage_client.bucket(OUTPUT_BUCKET_NAME)
         
