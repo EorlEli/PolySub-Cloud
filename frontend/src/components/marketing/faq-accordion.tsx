@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "What languages are supported?",
     answer:
-      "We support 24+ languages including English, Spanish, French, German, Italian, Portuguese, Dutch, Russian, Japanese, Korean, Chinese (Simplified and Traditional), Arabic, Hindi, Turkish, Polish, Swedish, Danish, Finnish, Norwegian, Thai, Vietnamese, Indonesian, and Ukrainian.",
+      "We support transcription (speech-to-text) in 24+ languages. Subtitles can be translated to 50+ languages, with best results for major languages like English, Spanish, French, German, Russian, Chinese, Japanese, and Portuguese.",
   },
   {
     question: "How long does processing take?",
